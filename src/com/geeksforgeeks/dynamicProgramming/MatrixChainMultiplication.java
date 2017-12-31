@@ -46,7 +46,7 @@ public class MatrixChainMultiplication {
         System.out.print("Test Case ==>");
         printArray(arr);
         print2DArray(operations);
-        print2DArray(brackets);
+        //print2DArray(brackets);
         return operations[0][N - 2];
     }
 
@@ -67,10 +67,6 @@ public class MatrixChainMultiplication {
             System.out.println();
         }
         System.out.println("<============END=======================>");
-    }
-
-    public static void printPartition(String Matrices, int[][] brackets) {
-
     }
 }
 
