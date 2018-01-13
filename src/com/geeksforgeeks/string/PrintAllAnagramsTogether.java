@@ -7,6 +7,7 @@ public class PrintAllAnagramsTogether {
     public static void main(String[] args) {
 
         printAnagramTogether(Arrays.asList("cat", "dog", "tac", "god", "act"));
+        printAnagramTogether(Arrays.asList("geeksquiz", "geeksforgeeks", "abcd", "forgeeksgeeks", "zuiqkeegs","cat","act","tac"));
 
     }
 
