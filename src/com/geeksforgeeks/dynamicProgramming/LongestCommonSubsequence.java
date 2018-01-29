@@ -8,7 +8,7 @@ import java.util.Set;
 public class LongestCommonSubsequence {
 
     public static void main(String[] args) {
-        getLongestCommonSubsequence("abcdaf".toCharArray(), "acbf".toCharArray());
+        getLongestCommonSubsequence("abcdaf".toCharArray(), "acbcf".toCharArray());
     }
 
     /**

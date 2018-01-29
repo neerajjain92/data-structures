@@ -6,12 +6,12 @@ package com.datastructures.mustDoInterviewQuestions.string;
 public class MinimumNumberOfInsertionForPalindrome {
 
     public static void main(String[] args) {
-//        System.out.println(getMinimumNumberOfInsertions("AB",0,1));
-//        System.out.println(getMinimumNumberOfInsertions("AA", 0, 1));
+        System.out.println(getMinimumNumberOfInsertions("AB",0,1));
+        System.out.println(getMinimumNumberOfInsertions("AA", 0, 1));
         System.out.println(getMinimumNumberOfInsertions("AAA",0,2));
-//        System.out.println(getMinimumNumberOfInsertions("ABCD",0,3));
-//        System.out.println(getMinimumNumberOfInsertions("ABCDA",0,4));
-//        System.out.println(getMinimumNumberOfInsertions("ABCDE",0,4));
+        System.out.println(getMinimumNumberOfInsertions("ABCD",0,3));
+        System.out.println(getMinimumNumberOfInsertions("ABCDA",0,4));
+        System.out.println(getMinimumNumberOfInsertions("ABCDE",0,4));
     }
 
 

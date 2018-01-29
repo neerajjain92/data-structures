@@ -4,6 +4,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Created by jaine03 on 24/07/17.
@@ -20,11 +21,11 @@ public class Anagram {
         int[] answers = new int[a.length];
 
         //Assuming Length of A and B is same
-        for(int i=0;i<a.length && i<b.length;i++){
+        for (int i = 0; i < a.length && i < b.length; i++) {
             String first = a[i];
             String second = b[i];
 
-            if(first.length() != second.length()){
+            if (first.length() != second.length()) {
                 answers[i] = -1;
             }
         }
@@ -32,29 +33,20 @@ public class Anagram {
     }
 
     public static Boolean isAnagram(String first, String second) {
-        Map<Character, Integer> frequencyCountMap1 = new HashMap<>();
-        Map<Character, Integer> frequencyCountMap2 = new HashMap<>();
 
-        for (char c : first.toCharArray()) {
-            if (frequencyCountMap1.containsKey(c)) {
-                frequencyCountMap1.put(c, frequencyCountMap1.get(c) + 1);
-            } else {
-                frequencyCountMap1.put(c, 1);
-            }
-        }
+        Map<Character, Long> frequencyCountMap1 = first.chars()
+                .mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
-        for (char c : second.toCharArray()) {
-            if (frequencyCountMap2.containsKey(c)) {
-                frequencyCountMap2.put(c, frequencyCountMap2.get(c) + 1);
-            } else {
-                frequencyCountMap2.put(c, 1);
-            }
-        }
+        Map<Character, Long> frequencyCountMap2 = second.chars()
+                .mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
-        for (Map.Entry<Character, Integer> entry : frequencyCountMap1.entrySet()) {
+
+        for (Map.Entry<Character, Long> entry : frequencyCountMap1.entrySet()) {
             Character key = entry.getKey();
-            Integer value = entry.getValue();
-            if(frequencyCountMap2.get(key) != value){
+            Long value = entry.getValue();
+            if (frequencyCountMap2.get(key) != value) {
                 return false;
             }
         }

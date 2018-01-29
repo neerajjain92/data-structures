@@ -6,7 +6,7 @@ package com.datastructures.mustDoInterviewQuestions.string;
 public class PermutationOfString {
 
     public static void main(String[] args) {
-        printAllPermutations("", "ABC");
+        printAllPermutations("", "AABC");
     }
 
     public static void printAllPermutations(String prefix, String str) {

@@ -1,4 +1,4 @@
-package com.geeksforgeeks.array;
+package com.geeksforgeeks.string;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -17,7 +17,7 @@ public class StringPermutation {
 
     public static void main(String[] args) {
 
-        String input = "1234";
+        String input = "ABC";
         char[] result = new char[input.length()];
         int level = 0;
         List<String> allPermutations = new LinkedList<>();

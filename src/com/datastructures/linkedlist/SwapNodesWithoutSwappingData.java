@@ -18,9 +18,9 @@ public class SwapNodesWithoutSwappingData {
 
         linkedListUtil.traverseList();
 
-        System.out.println("Swapping Nodes 10 and 20");
+        System.out.println("Swapping Nodes 10 and 14");
 
-        swapNodes(20,14,linkedListUtil);
+        swapNodes(14,10,linkedListUtil);
         System.out.println("After Swapping");
 
         linkedListUtil.traverseList();

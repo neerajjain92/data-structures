@@ -7,6 +7,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 1,2,5  = 6 ( minimum coins required to give you a sum)
+ *
+ *
+ * 1,2,5,10 = 12345
+ */
 public class CoinChangeMinimumNoOfCoinsRequired {
     public static void main(String[] args) {
 //        System.out.println("Minimum Coins required to form a sum of 11 with {1,5,6,8} is " + getMinimumNoOfCoinChangeRequired(new int[]{1, 5, 6, 8}, 11));
@@ -16,8 +22,8 @@ public class CoinChangeMinimumNoOfCoinsRequired {
 
 
         getMinimumNoOfCoinsRequiredToAchieve(13,new int[]{7,2,3,6});
-        getMinimumNoOfCoinsRequiredToAchieve(30,new int[]{25,10,5});
-        getMinimumNoOfCoinsRequiredToAchieve(11,new int[]{1,5,6,9});
+//        getMinimumNoOfCoinsRequiredToAchieve(30,new int[]{25,10,5});
+//        getMinimumNoOfCoinsRequiredToAchieve(11,new int[]{1,5,6,9});
     }
 
     public static int getMinimumNoOfCoinChangeRequired(int[] coins, int total) {
@@ -73,7 +79,7 @@ public class CoinChangeMinimumNoOfCoinsRequired {
                     }
                 }
             }
-            //ArrayRotation.printArray(minCoins);
+            ArrayRotation.printArray(minCoins);
         }
         ArrayRotation.printArray(minCoins);
 

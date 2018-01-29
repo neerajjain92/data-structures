@@ -381,9 +381,10 @@ public class LinkedListUtil {
         Node left = mergeSort(head);
         Node right = mergeSort(nextOfMiddle);
 
-        Node sortedList = sortedMergeRecursively(left, right);
+        LinkedListUtil sortedList = new LinkedListUtil();
+        sortedMerge(left, right, sortedList);
 
-        return sortedList;
+        return sortedList.head;
     }
 
 //    public Node reverseEveryKNodeRecursively(Node head, int k) {

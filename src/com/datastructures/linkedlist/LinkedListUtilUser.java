@@ -85,23 +85,22 @@ public class LinkedListUtilUser {
 //        sublist2.traverseList();
 
 
-//        list1 = new LinkedListUtil();
-//        list1.append(5);
-//        list1.append(4);
-//        list1.append(3);
-//        list1.append(2);
-//        list1.append(1);
-//        list1.append(0);
-//
-//        list1.traverseList();
-//
-//        System.out.println(list1.getMiddleNode(list1.head).data);
-//
-//        out.println("Before Sorting");
-//        list1.traverseList();
-//        out.println("After Sorting");
-//        list1.head = list1.mergeSort(list1.head);
-//        list1.traverseList();
+        list1 = new LinkedListUtil();
+        list1.append(5);
+        list1.append(4);
+        list1.append(3);
+        list1.append(2);
+        list1.append(1);
+
+        list1.traverseList();
+
+        System.out.println(list1.getMiddleNode(list1.head).data);
+
+        out.println("Before Sorting");
+        list1.traverseList();
+        out.println("After Sorting");
+        list1.head = list1.mergeSort(list1.head);
+        list1.traverseList();
 
         list1 = new LinkedListUtil();
         list1.append(1);
