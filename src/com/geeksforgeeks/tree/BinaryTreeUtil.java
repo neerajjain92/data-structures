@@ -255,6 +255,30 @@ public class BinaryTreeUtil {
         sizeUtil.levelOrderTraversalUsingQueue(sizeUtil.root);
         newLine();
 
+
+        letsDo("Find Maximum Path Sum Between 2 leaves of a binary tree");
+        sizeUtil.root = getSampleTree();
+        sizeUtil.printMaximumPathSumBetween2Leaves(sizeUtil.root);
+        newLine();
+
+
+        letsDo(" Find Maximum Path Sum between any 2 nodes of a binary tree");
+        sizeUtil.root = getSampleTreeForMaximumPathSumProblem();
+        sizeUtil.findMaximumPathSumBetweenAnyNode(sizeUtil.root);
+        newLine();
+
+    }
+
+    public static Node getSampleTreeForMaximumPathSumProblem() {
+        Node root = new Node(10);
+        root.left = new Node(2);
+        root.right = new Node(10);
+        root.left.left = new Node(20);
+        root.left.right = new Node(1);
+        root.right.right = new Node(-25);
+        root.right.right.left = new Node(3);
+        root.right.right.right = new Node(4);
+        return root;
     }
 
     public static void printDoublyLinkedListConvertedFromTree(Node root) {
@@ -1322,5 +1346,67 @@ public class BinaryTreeUtil {
         root.data += maxTillNow;
         maxTillNow = root.data;
         addAllGreaterNodesToBinaryTree(root.left);
+    }
+
+    private static Integer maximumPathSum = 0;
+
+    public void printMaximumPathSumBetween2Leaves(Node root) {
+        maximumPathSum = 0;
+        getMaximumSumFromRootToLeafInBinaryTree(root);
+
+        System.out.println(" Maximum Path Sum between 2 leaves is " + maximumPathSum);
+    }
+
+    public int getMaximumSumFromRootToLeafInBinaryTree(Node root) {
+        if (root == null)
+            return 0;
+
+        if (isLeafNode(root))
+            return root.data;
+
+        int leftSum = getMaximumSumFromRootToLeafInBinaryTree(root.left);
+        int rightSum = getMaximumSumFromRootToLeafInBinaryTree(root.right);
+
+        // If Left and Right subtree is not empty
+        // Then maximumSumFromRootToLeaf can be either left sum + root.data OR rightSum + root.data
+        // i.e Math.max(leftSum, rightSum) + root.data
+        if (root.left != null && root.right != null) {
+
+            // THis line is used for printing the Maximum Path Sum between 2 leaves
+            maximumPathSum = Math.max(maximumPathSum, leftSum + rightSum + root.data);
+
+            return Math.max(leftSum, rightSum) + root.data;
+        }
+
+        return root.left != null ? leftSum + root.data : rightSum + root.data;
+    }
+
+
+    public void findMaximumPathSumBetweenAnyNode(Node root) {
+        maximumPathSum = 0;
+        maximumPathSumBetweenAnyNodeUtil(root);
+
+        System.out.println(" Maximum Path Sum between 2 nodes is " + maximumPathSum);
+    }
+
+    public int maximumPathSumBetweenAnyNodeUtil(Node root) {
+        if (root == null)
+            return 0;
+
+        // l and r store maximum path sum going through left and
+        // right child of root respectively
+        int leftSum = maximumPathSumBetweenAnyNodeUtil(root.left);
+        int rightSum = maximumPathSumBetweenAnyNodeUtil(root.right);
+
+        //For each node there can be four ways that the max path goes through the node:
+        //1. Node only
+        //2. Max path through Left Child + Node
+        //3. Max path through Right Child + Node
+        //4. Max path through Left Child + Node + Max path through Right Child
+        maximumPathSum = Math.max(maximumPathSum, root.data);
+        maximumPathSum = Math.max(maximumPathSum, root.data + leftSum);
+        maximumPathSum = Math.max(maximumPathSum, root.data + rightSum);
+        maximumPathSum = Math.max(maximumPathSum, root.data + rightSum + leftSum);
+        return Math.max(root.data, Math.max(leftSum, rightSum) + root.data);
     }
 }
