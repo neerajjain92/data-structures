@@ -12,8 +12,8 @@ public class TopViewOfBinaryTree {
         BinaryTreeUtil util = new BinaryTreeUtil();
         util = util.getVerticalOrderSampleData();
         System.out.println("vertical order traversal is :");
-//        util.printVerticalOrder(util.root);
+        util.printVerticalOrder(util.root);
 
-        util.printTopView(util.root);
+//        util.printTopView(util.root);
     }
 }

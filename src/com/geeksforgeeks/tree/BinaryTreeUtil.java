@@ -267,6 +267,40 @@ public class BinaryTreeUtil {
         sizeUtil.findMaximumPathSumBetweenAnyNode(sizeUtil.root);
         newLine();
 
+        letsDo("Find if Tree is Complete or Not");
+        sizeUtil.root = getSampleTreeForCompleteTreeProblem();
+        System.out.println(isCompleteTree(sizeUtil.root));
+
+
+        letsDo("Find if tree is complete or Not Recursively....");
+        System.out.println(isCompleteTreeRecursively(sizeUtil.root));
+
+        letsDo("Find if Tree is BINARY HEAP");
+        System.out.println(binaryTreeIsMaxHeap(sizeUtil.root));
+
+    }
+
+
+    public static Node getSampleTreeForCompleteTreeProblem() {
+//        Node root = new Node(1);
+//        root.left = new Node(2);
+//        root.right = new Node(3);
+//        root.left.left = new Node(4);
+//        root.left.right = new Node(5);
+//        root.right.left = new Node(6);
+
+        Node root = new Node(10);
+        root.left = new Node(9);
+        root.right = new Node(8);
+        root.left.left = new Node(7);
+        root.left.right = new Node(6);
+        root.right.left = new Node(5);
+        root.right.right = new Node(4);
+        root.left.left.left = new Node(3);
+        root.left.left.right = new Node(2);
+        root.left.right.left = new Node(1);
+
+        return root;
     }
 
     public static Node getSampleTreeForMaximumPathSumProblem() {
@@ -1408,5 +1442,129 @@ public class BinaryTreeUtil {
         maximumPathSum = Math.max(maximumPathSum, root.data + rightSum);
         maximumPathSum = Math.max(maximumPathSum, root.data + rightSum + leftSum);
         return Math.max(root.data, Math.max(leftSum, rightSum) + root.data);
+    }
+
+    /**
+     * A complete binary tree is a binary tree in which every level, except possibly the last, is completely
+     * filled, and all nodes are as far left as possible.
+     * 1
+     * /   \
+     * 2     3
+     * <p>
+     * 1
+     * /    \
+     * 2       3
+     * /
+     * 4
+     * <p>
+     * the easiest way seems to be a breadth first (left to right) traversal of the tree.
+     * At each node push both left and right onto the list be traversed (even if they are NULL).
+     * After you hit the first NULL there should only be NULL objects left to find.
+     * If you find a non NULL object after this it is not a complete tree.
+     *
+     * @param root
+     * @return
+     */
+    private static boolean isCompleteTree(Node root) {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node dequed = queue.poll();
+
+            if (dequed == null)
+                break;
+            queue.add(dequed.left);
+            queue.add(dequed.right);
+        }
+
+        while (!queue.isEmpty()) {
+            if (queue.poll() != null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean isCompleteTreeRecursively(Node root) {
+        int count = countNodesInTree(root);
+        return isCompleteTreeUtil(root, 0, count);
+    }
+
+    public static int countNodesInTree(Node root) {
+        if (root == null)
+            return 0;
+
+        return 1 + countNodesInTree(root.left) + countNodesInTree(root.right);
+    }
+
+    public static boolean isCompleteTreeUtil(Node root, int index, int count) {
+        if (root == null)
+            return true;
+
+        if (index >= count)
+            return false;
+
+        return isCompleteTreeUtil(root.left, 2 * index + 1, count) &&
+                isCompleteTreeUtil(root.right, 2 * index + 2, count);
+    }
+
+
+    /**
+     * Simply do a Level Order Traversal and while doing that make sure that children to be enqued in the queue
+     * is smaller than the parent.
+     * <p>
+     * Also once a null is encountered into the queue, after that any non null will result into
+     * not a complete tree
+     * <p>
+     * if both property satisfies then it's a MIN_HEAP
+     *
+     * @param root
+     * @return
+     */
+    public static boolean binaryTreeIsMaxHeap(Node root) {
+        Queue<Node> queue = new LinkedList();
+        queue.add(root);
+        Boolean nullInserted = false;
+
+        while (!queue.isEmpty()) {
+            Node dequed = queue.poll();
+
+            if (nullInserted && dequed != null) {
+                System.out.println("NOT A MIN_HEAP due to Complete Tree Property Failure");
+                return false;
+            }
+
+            if (!nullInserted) {
+                if (dequed == null) {
+                    nullInserted = true;
+                    continue;
+                }
+                // if Queue has left child
+                if (dequed.left != null) {
+                    if (dequed.left.data > dequed.data) {
+                        System.out.println("MIN_HEAP LEFT CHILD GREATER THAN ROOT PROPERTY NOT SATISFIED");
+                        return false;
+                    } else {
+                        queue.add(dequed.left);
+                    }
+                } else {
+                    queue.add(dequed.left);
+                }
+
+                // if Queue has left child
+                if (dequed.right != null) {
+                    if (dequed.right.data > dequed.data) {
+                        System.out.println("MIN_HEAP RIGHT CHILD GREATER THAN ROOT PROPERTY NOT SATISFIED");
+                        return false;
+                    } else {
+                        queue.add(dequed.right);
+                    }
+                } else {
+                    queue.add(dequed.right);
+                }
+            }
+        }
+        return true;
     }
 }

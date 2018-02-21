@@ -1,6 +1,8 @@
 package com.geeksforgeeks.heap;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 @SuppressWarnings({"SpellCheckingInspection", "Duplicates"})
 public class MaxHeap {
@@ -120,6 +122,22 @@ public class MaxHeap {
         }
     }
 
+
+    private static List<Integer> findKLargestElement(int[] arr, int k) {
+        List<Integer> kLargestElement = new ArrayList<>();
+        MaxHeap maxHeap = new MaxHeap();
+
+        for (int i = 0; i < arr.length; i++) {
+            maxHeap.add(arr[i]);
+        }
+
+        // Find k largest element
+        for (int i = 0; i < k; i++) {
+            kLargestElement.add(maxHeap.extractMax());
+        }
+        return kLargestElement;
+    }
+
     public static void main(String[] args) {
         MaxHeap maxHeap = new MaxHeap();
 
@@ -137,5 +155,17 @@ public class MaxHeap {
         System.out.println("Now the maximum is ::-->" + maxHeap.peek());
         maxHeap.extractMax();
         System.out.println("Now the maximum is ::-->" + maxHeap.peek());
+
+
+        // Max Heap Also solves the K largest Elements Problem
+        // The Problem is given and unsorted array, find the k largest element
+        //For example, if given array is [1, 23, 12, 9, 30, 2, 50] and
+        // you are asked for the largest 3 elements i.e., k = 3 then your program should print 50, 30 and 23.
+
+        List<Integer> kLargestElement = findKLargestElement(new int[]{1, 23, 12, 9, 30, 2, 50}, 3);
+        System.out.print("K Largest Elements are ::::---> ");
+        System.out.println(kLargestElement);
+
     }
+
 }

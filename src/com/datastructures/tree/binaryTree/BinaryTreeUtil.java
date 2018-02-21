@@ -297,11 +297,11 @@ public class BinaryTreeUtil {
     public void printPath(int[] path, int pathLen) {
         int sum = 0;
         for (int i = 0; i <= pathLen; i++) {
-            //System.out.print(path[i] + " --> ");
-            sum+=path[i];
+            System.out.print(path[i] + " --> ");
+            sum += path[i];
         }
-        //System.out.println();
-        System.out.println(sum);
+        System.out.println();
+//        System.out.println(sum);
     }
 
     public void convertBinaryTreeIntoCircularDoublyLinkedList(Node root) {
@@ -739,26 +739,26 @@ public class BinaryTreeUtil {
 
     /************************************** Bottom View  ORDER in O(N) complexity ***********************************/
 
-    public void printBottomView(Node root){
+    public void printBottomView(Node root) {
         Queue<TopViewNode> queue = new LinkedList<>();
-        Map<Integer,Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         int hd = 0;
 
         queue.add(new TopViewNode(root, hd));
 
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             TopViewNode temp = queue.poll();
 
-            map.put(temp.horizontalDistance,temp.node.data);
+            map.put(temp.horizontalDistance, temp.node.data);
 
-            if(temp.node.left != null){
-                queue.add(new TopViewNode(temp.node.left, temp.horizontalDistance-1));
+            if (temp.node.left != null) {
+                queue.add(new TopViewNode(temp.node.left, temp.horizontalDistance - 1));
             }
-            if(temp.node.right != null){
-                queue.add(new TopViewNode(temp.node.right, temp.horizontalDistance+1));
+            if (temp.node.right != null) {
+                queue.add(new TopViewNode(temp.node.right, temp.horizontalDistance + 1));
             }
         }
-        for(Map.Entry<Integer,Integer> entry: map.entrySet()){
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             System.out.println(entry.getValue());
         }
     }
@@ -883,11 +883,20 @@ public class BinaryTreeUtil {
 //        root.left.right = new Node(5);
 //        root.right.left = new Node(2);
 
-        Node root = new Node(10);
-        root.left = new Node(-2);
-        root.right = new Node(7);
-        root.left.left = new Node(8);
-        root.left.right = new Node(-4);
+//        Node root = new Node(10);
+//        root.left = new Node(-2);
+//        root.right = new Node(7);
+//        root.left.left = new Node(8);
+//        root.left.right = new Node(-4);
+
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
 
         return root;
     }
