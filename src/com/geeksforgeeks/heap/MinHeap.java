@@ -10,9 +10,9 @@ public class MinHeap<T> {
     int[] items = new int[capacity];
     private Map<Integer, Integer> itemPositionMap = new HashMap<>();
 
-    class Node {
-        int weight;
-        T key;
+    public class Node {
+        public int weight;
+        public T key;
 
         public Node() {
         }
@@ -165,7 +165,7 @@ public class MinHeap<T> {
         }
     }
 
-    public T extractMinimumNode() {
+    public Node extractMinimumNode() {
         Node node = allNodes.get(0);
         Node lastNode = allNodes.get(size - 1);
         allNodes.remove(node);
@@ -180,7 +180,7 @@ public class MinHeap<T> {
             nodePositionMap.put(lastNode.key, 0);
             heapifyNodesDown();
         }
-        return node.key;
+        return node;
     }
 
     private void heapifyNodesDown() {

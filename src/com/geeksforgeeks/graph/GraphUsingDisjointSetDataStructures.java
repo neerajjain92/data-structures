@@ -44,6 +44,10 @@ public class GraphUsingDisjointSetDataStructures<T> {
         }
     }
 
+    public Vertex<T> getVertex(long id) {
+        return allVertex.get(id);
+    }
+
     public List<Edge<T>> getAllEdges() {
         return allEdges;
     }
