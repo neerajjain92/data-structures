@@ -86,6 +86,18 @@ public class BinarySearchTreeUtil {
         letsDo("Construct BST from PreOrder Traversal Using Stack in O(N) time complexity");
         util.constructBSTFromPreOrderUsingStack(new int[]{10, 5, 1, 7, 40, 50});
         newLine();
+
+        letsDo("Find Inorder Successor");
+        util = new BinarySearchTreeUtil();
+        util.insert(20);
+        util.insert(8);
+        util.insert(22);
+        util.insert(4);
+        util.insert(12);
+        util.insert(10);
+        util.insert(14);
+
+        System.out.println(util.findInorderSuccessor(util.root, util.root.left.right.left));
     }
 
     public void insertRecursiveUtil(int key) {
@@ -244,18 +256,27 @@ public class BinarySearchTreeUtil {
             return -1;
 
         if (node.right != null) {
-            return findInorderSuccessor(node);
+            return mininumValueNodeInBST(root.right);
         }
 
         Node successor = null;
-        while (root != null) {
-            if (root.data > node.data) {
-                successor = root;
-                root = root.left;
+        Node temp = root;
+        while (temp != null) {
+            if (temp.data > node.data) { // Node is Present in Left Side of the tree
+                successor = temp;
+                temp = temp.left;
             } else {
-                root = root.right;
+                temp = temp.right;
             }
         }
         return successor != null ? successor.data : -1;
     }
+
+    public int mininumValueNodeInBST(Node root) {
+        while (root.left != null) {
+            root = root.left;
+        }
+        return root.data;
+    }
+
 }

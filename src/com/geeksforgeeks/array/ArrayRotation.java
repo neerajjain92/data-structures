@@ -9,12 +9,12 @@ public class ArrayRotation {
 
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5, 6, 7};
-        // printArray(arr);
-        //rotateArray(arr, 2, 7);
-//        printArray(arr);
-
-        cyclicRotate(arr);
         printArray(arr);
+        rotateArray(arr, 2, 7);
+        printArray(arr);
+
+//        cyclicRotate(arr);
+//        printArray(arr);
     }
 
     public static void printArray(int[] input) {
@@ -57,25 +57,22 @@ public class ArrayRotation {
 
     public static void reverseArray(int[] data, int start, int end) {
         int temp = 0;
-        for (int i = start, t = end - 1; i < start + (end - start) / 2; i++) {
+        for (int i = start, tempEnd = end - 1; i < (start + end) / 2; i++, tempEnd--) {
             temp = data[i];
-            data[i] = data[t];
-            data[t] = temp;
-            t--;
+            data[i] = data[tempEnd];
+            data[tempEnd] = temp;
         }
     }
 
     /**
      * Input:  arr[] = {1, 2, 3, 4, 5}
-     *  Output: arr[] = {5, 1, 2, 3, 4}
-     *
+     * Output: arr[] = {5, 1, 2, 3, 4}
      */
     public static void cyclicRotate(int[] data) {
         int n = data.length;
-        int temp = data[n-1];
-        for(int i=n-1;i>0;i--)
-        {
-            data[i] = data[i-1];
+        int temp = data[n - 1];
+        for (int i = n - 1; i > 0; i--) {
+            data[i] = data[i - 1];
         }
         data[0] = temp;
     }
