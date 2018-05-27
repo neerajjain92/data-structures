@@ -1,5 +1,7 @@
 package com.geeksforgeeks.dynamicProgramming;
 
+import com.geeksforgeeks.array.ArrayRotation;
+
 import java.util.Arrays;
 
 public class MaximumSumInLongestIncreasingSubsequence {
@@ -27,6 +29,7 @@ public class MaximumSumInLongestIncreasingSubsequence {
                 i=0;
             }
         }
+        ArrayRotation.printArray(sumMatrix);
         Arrays.sort(sumMatrix);
         return sumMatrix[input.length - 1];
     }

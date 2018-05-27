@@ -29,23 +29,35 @@ public class InversionCount {
 
             long []sortedArray = new long[sizeOfArray];
 
-//            System.out.println("Before Sorting");
-//            printArr(sample);
+            System.out.println("Before Sorting");
+            printArr(sample);
 
-            //mergeSort(sample,0,sample.length-1);
+            mergeSort(sample,sortedArray,0,sample.length-1);
 
-            System.out.println(mergeSort(sample,sortedArray,0,sample.length-1));
+//            System.out.println(mergeSort(sample,sortedArray,0,sample.length-1));
 
-//            System.out.println("After Sorting");
-//            printArr(sample);
+            System.out.println("After Sorting");
+            printArr(sample);
         }
     }
 
-    public static void printArr(int []sample){
-        for(int i:sample){
+    public static void printArr(long []sample){
+        for(long i:sample){
             System.out.print(i+",");
         }
         System.out.println();
+    }
+
+    public static Integer getMaxInversionCount(int []sample){
+        Integer maxInversionCount = 0;
+        for(int i=0;i<sample.length;i++){
+            for(int j=i+1;j<sample.length;j++){
+                if(sample[i] > sample[j]){
+                    maxInversionCount++;
+                }
+            }
+        }
+        return maxInversionCount;
     }
 
     public static Integer getMaxInversionCount(long []sample){

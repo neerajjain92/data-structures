@@ -3,11 +3,11 @@ package com.geeksforgeeks.array;
 public class RearrangePositiveAndNegativeNumbers {
 
     public static void main(String[] args) {
-//        int arr[] = {-1, 2, -3, 4, 5, 6, -7, 8, 9};
-//        rearrange(arr);
-//        ArrayRotation.printArray(arr);
+        int arr[] = {-1, 2, -3, 4, 5, 6, -7, 8, 9};
+        rearrange(arr);
+        ArrayRotation.printArray(arr);
 
-        int arr[] = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
+        arr = new int[]{-12, 11, -13, -5, 6, -7, 5, -3, -6};
         rearrangeToPreserveOrder(arr, 0, 8);
         ArrayRotation.printArray(arr);
     }
@@ -42,22 +42,22 @@ public class RearrangePositiveAndNegativeNumbers {
     }
 
 
-    public static void modifiedMerge(int[] arr,  int l, int m, int r) {
+    public static void modifiedMerge(int[] arr, int l, int m, int r) {
         int i, j, k;
         int n1 = m - l + 1;
         int n2 = r - m;
 
-    /* create temp arrays */
-        int [] L = new int[n1];
-        int [] R = new int[n2];
+        /* create temp arrays */
+        int[] L = new int[n1];
+        int[] R = new int[n2];
 
-    /* Copy data to temp arrays L[] and R[] */
+        /* Copy data to temp arrays L[] and R[] */
         for (i = 0; i < n1; i++)
             L[i] = arr[l + i];
         for (j = 0; j < n2; j++)
             R[j] = arr[m + 1 + j];
 
-    /* Merge the temp arrays back into arr[l..r]*/
+        /* Merge the temp arrays back into arr[l..r]*/
         i = 0; // Initial index of first subarray
         j = 0; // Initial index of second subarray
         k = l; // Initial index of merged subarray

@@ -1,7 +1,8 @@
 package com.geeksforgeeks.tree;
 
-import java.util.Arrays;
-import java.util.Stack;
+import com.company.amazon.BinaryTree;
+
+import java.util.*;
 
 public class BinarySearchTreeUtil {
 
@@ -98,6 +99,17 @@ public class BinarySearchTreeUtil {
         util.insert(14);
 
         System.out.println(util.findInorderSuccessor(util.root, util.root.left.right.left));
+
+        letsDo("Convert Binary Tree to Binary Search Tree");
+        util = new BinarySearchTreeUtil();
+        util.root = new Node(10);
+        util.root.right = new Node(7);
+        util.root.left = new Node(2);
+        util.root.left.right = new Node(4);
+        util.root.left.left = new Node(8);
+
+        util.convertBinaryTreeToBinarySearchTree(util);
+
     }
 
     public void insertRecursiveUtil(int key) {
@@ -277,6 +289,56 @@ public class BinarySearchTreeUtil {
             root = root.left;
         }
         return root.data;
+    }
+
+    /**
+     * 1) Store Inorder Traversal of Original Tree
+     * 2) Sort this stored inorder traversal
+     * 3) Convert binaryTreeToBST
+     * *   * a) convertBToBST(root.left);
+     * *   * b) root.data = sortedTraversedInorder[index++]; // here index is the static integer.
+     * *   * c) convertBToBST(root.right);
+     * *   * 4) Print the BST
+     *
+     * @param root
+     */
+    public static void convertBinaryTreeToBinarySearchTree(BinarySearchTreeUtil util) {
+        Node root = util.root;
+        List<Integer> inorderList = new ArrayList<>();
+        storeInorder(root, inorderList);
+
+        // Sort the Traversed Inorder
+        Collections.sort(inorderList);
+
+        //Before Converting
+        letsDo("Inorder Before Converting");
+        util.inorderTraversal(root);
+        System.out.println();
+
+        // Let's convert
+        binaryTreeToBST(root, inorderList);
+
+        // After Converting
+        letsDo("Inorder after Converting");
+        util.inorderTraversal(root);
+    }
+
+    private static void storeInorder(Node root, List<Integer> inorderList) {
+        if (root == null)
+            return;
+        storeInorder(root.left, inorderList);
+        inorderList.add(root.data);
+        storeInorder(root.right, inorderList);
+    }
+
+    private static Integer index = 0;
+
+    public static void binaryTreeToBST(Node root, List<Integer> inorderList) {
+        if (root == null)
+            return;
+        binaryTreeToBST(root.left, inorderList);
+        root.data = inorderList.get(index++);
+        binaryTreeToBST(root.right, inorderList);
     }
 
 }

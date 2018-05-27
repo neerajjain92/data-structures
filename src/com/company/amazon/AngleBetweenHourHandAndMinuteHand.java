@@ -3,7 +3,7 @@ package com.company.amazon;
 public class AngleBetweenHourHandAndMinuteHand {
 
     public static void main(String[] args) {
-        String[] time = {"9:60", "3:30", "4:49", "12:45", "12:60"};
+        String[] time = {"9:60", "3:30", "4:49", "12:45", "12:60", "12:00", "06:00"};
         for (String str : time) {
             String[] split = str.split(":");
             System.out.println("Angle Between " + str + " is: " + getAngle(Integer.parseInt(split[0]), Integer.parseInt(split[1])));

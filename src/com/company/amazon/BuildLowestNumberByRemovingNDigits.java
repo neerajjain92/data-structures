@@ -7,7 +7,7 @@ import java.util.Stack;
 public class BuildLowestNumberByRemovingNDigits {
 
     public static void main(String[] args) {
-        Integer[] inputs = {4325043, 765028321, 121198, 567891234};
+        Integer[] inputs = {4325043, 765028321, 121168, 567891234};
         Integer[] removing = {3, 5, 2, 5};
         int counter = 0;
         for (Integer num : inputs) {

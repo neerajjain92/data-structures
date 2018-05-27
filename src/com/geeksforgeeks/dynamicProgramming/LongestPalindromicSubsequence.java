@@ -26,8 +26,8 @@ public class LongestPalindromicSubsequence {
         // Every letter has only 1 as LPS
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if(i == j)
-                LPS[i][j] = 1;
+                if (i == j)
+                    LPS[i][j] = 1;
             }
         }
 
@@ -38,10 +38,14 @@ public class LongestPalindromicSubsequence {
         // Now let's compare each letter with the letter at distance 1 ..... So [a d b b c a] we will compare a with d then
 
         int distance = 1;
-        while (distance <= N - 1) {
+        while (distance < N) {
 
             int row = 0;
-            while (row + distance <= N - 1) {
+
+            // Why row + distance and not only row <= N-1, because we are doing comparision in 1D Array
+            // [a,d,b,b,c,a] ==> If i will only put row<=N-1, we might end up comparing 2nd (d) with char after last (a)
+            // hence this safe check
+            while (row + distance < N) {
 
                 int column = row + distance;
 
@@ -50,9 +54,9 @@ public class LongestPalindromicSubsequence {
                 } else { // If doesn't match then it will be the max of previous adjacent diagonals
                     LPS[row][column] = Math.max(LPS[row][column - 1], LPS[row + 1][column]);
                 }
-                row+=1;
+                row += 1;
             }
-            distance+=1;
+            distance += 1;
         }
 
         Rotate2DMatrix.print2DArray(LPS);
