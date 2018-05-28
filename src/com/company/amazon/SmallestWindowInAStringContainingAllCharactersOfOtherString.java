@@ -43,15 +43,14 @@ public class SmallestWindowInAStringContainingAllCharactersOfOtherString {
                 if (whatIsFrequencyNowMap.get(value) < shouldHaveFrequencyMap.get(value)) {
                     whatIsFrequencyNowMap.put(value, whatIsFrequencyNowMap.get(value) + 1);
                     COUNT_OF_PATTERN_MATCHED_LENGTH++;
-                    if (COUNT_OF_PATTERN_MATCHED_LENGTH >= pattern.length()) {
-                        COUNT_OF_PATTERN_MATCHED_LENGTH = pattern.length(); // Resetting it to the original pattern length
-                        checkSmallestWindowSize(arrOfStr, str);
-                    }
                 } else { // Simply Remove the previous occurence
                     removePreviousOccurrence(str, arrOfStr, value);
-                    if (COUNT_OF_PATTERN_MATCHED_LENGTH >= pattern.length()) {
-                        checkSmallestWindowSize(arrOfStr, str);
-                    }
+                }
+
+                // If Count reached to the length of the Input Pattern, let's find the window.
+                if (COUNT_OF_PATTERN_MATCHED_LENGTH >= pattern.length()) {
+                    COUNT_OF_PATTERN_MATCHED_LENGTH = pattern.length(); // Resetting it to the original pattern length
+                    checkSmallestWindowSize(arrOfStr, str);
                 }
             }
         }
