@@ -1,10 +1,10 @@
-package com.geeksforgeeks.array;
+package com.geeksforgeeks.array.sub_array_problem;
 
 public class SubArrayWithGivenSum {
 
     public static void main(String[] args) {
         findSubArrayWithGivenSum(new int[]{1, 4, 20, 3, 10, 5}, 33);
-        findSubArrayWithGivenSum(new int[]{1, 4, 0, 0, 3, 10, 5}, 7);
+        findSubArrayWithGivenSum(new int[]{1, 4, 0, 0, 3, 10, 5}, 4);
         findSubArrayWithGivenSum(new int[]{2, 4}, 1);
     }
 
