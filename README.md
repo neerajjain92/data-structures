@@ -13,3 +13,4 @@ This is the collection of algorithms, data structures and Interview Questions wi
 
 ### COMPANY PREP
 - :fire: [AMAZON INTERVIEW QUESTIONS](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/amazon)
+- :fire: [Near Buy Interview Questions](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/nearbuy)
