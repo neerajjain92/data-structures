@@ -14,6 +14,14 @@ import java.util.Queue;
  */
 public class RottenOrange {
 
+    static class TotalPassRequired {
+        int val;
+
+        TotalPassRequired(int val) {
+            this.val = val;
+        }
+    }
+
     static class Orange {
         int x;
         int y;
@@ -39,12 +47,9 @@ public class RottenOrange {
         return false;
     }
 
-    public static Boolean isDelim(Orange orange) {
-        return orange.x == -1 && orange.y == -1;
-    }
-
-    public static Boolean isValid(int x, int y) {
-        return x > -1 && y > -1 && x < R && y < C;
+    private static boolean isSafeToRot(int[][] lot, int x, int y) {
+        return x >= 0 && x < lot.length &&
+                y >= 0 && y < lot[0].length;
     }
 
     /**
@@ -54,73 +59,67 @@ public class RottenOrange {
      * @return
      */
     public static int rotOranges(int[][] lot) {
+        TotalPassRequired totalPassRequired = new TotalPassRequired(0);
+        Boolean flag = false; //hasThisOrangeAlreadyRottenAnyAdjacentOrange
         Queue<Orange> queue = new LinkedList<>();
-        Integer totalPassRequired = 0;
-        for (int i = 0; i < lot.length; i++)
-            for (int j = 0; j < lot[i].length; j++)
-                queue.add(new Orange(i, j));
 
-        // Adding Delimiter
-        queue.add(new Orange(-1, -1));
-
-        while (!queue.isEmpty()) {
-            Boolean flag = false;
-
-            while (!isDelim(queue.peek())) {
-
-                Orange temp = queue.peek();
-
-                // Checking the Bottom side of Element
-                if (isValid(temp.x + 1, temp.y) && lot[temp.x + 1][temp.y] == 1) {
-                    if (!flag) {
-                        totalPassRequired++;
-                        flag = true;
-                    }
-                    //Making fresh orange as rotten.
-                    lot[temp.x + 1][temp.y] = 2;
-                    queue.add(new Orange(temp.x + 1, temp.y));
+        // Let's add all Rotten Oranges to the Queue
+        for (int i = 0; i < lot.length; i++) {
+            for (int j = 0; j < lot[i].length; j++) {
+                if (lot[i][j] == 2) {
+                    queue.add(new Orange(i, j));
                 }
-                // Checking the Top side of Element
-                if (isValid(temp.x - 1, temp.y) && lot[temp.x - 1][temp.y] == 1) {
-                    if (!flag) {
-                        totalPassRequired++;
-                        flag = true;
-                    }
-                    //Making fresh orange as rotten.
-                    lot[temp.x - 1][temp.y] = 2;
-                    queue.add(new Orange(temp.x - 1, temp.y));
-                }
-                // Checking the Right side of Element
-                if (isValid(temp.x, temp.y + 1) && lot[temp.x][temp.y + 1] == 1) {
-                    if (!flag) {
-                        totalPassRequired++;
-                        flag = true;
-                    }
-                    //Making fresh orange as rotten.
-                    lot[temp.x][temp.y + 1] = 2;
-                    queue.add(new Orange(temp.x, temp.y + 1));
-                }
-                // Checking the Left side of Element
-                if (isValid(temp.x, temp.y - 1) && lot[temp.x][temp.y - 1] == 1) {
-                    if (!flag) {
-                        totalPassRequired++;
-                        flag = true;
-                    }
-                    //Making fresh orange as rotten.
-                    lot[temp.x][temp.y - 1] = 2;
-                    queue.add(new Orange(temp.x, temp.y - 1));
-                }
-                queue.remove();
-            }
-            queue.remove();
-
-            if(!queue.isEmpty()){
-                queue.add(new Orange(-1,-1));
             }
         }
-        if(anyFreshOrangeInLot(lot))
-            return -1;
-        return totalPassRequired;
+
+        // Separate the Rotten Orange with the (new fresh one's) these will destroy on each pass
+        queue.add(null); // Using Null as delimiter
+
+        while (!queue.isEmpty()) {
+
+            flag = false;
+            while (queue.peek() != null) {
+                Orange rottenOrange = queue.peek();
+                int X = rottenOrange.x;
+                int Y = rottenOrange.y;
+
+                // Check Top Adjacent Orange, if it is fresh
+                flag = rotAdjacentOrange(lot, X - 1, Y, flag, totalPassRequired, queue);
+
+                // Check Bottom Adjacent Orange, if it is fresh
+                flag = rotAdjacentOrange(lot, X + 1, Y, flag, totalPassRequired, queue);
+
+                // Check left Adjacent
+                flag = rotAdjacentOrange(lot, X, Y - 1, flag, totalPassRequired, queue);
+
+                // Check Right Adjacent
+                flag = rotAdjacentOrange(lot, X, Y + 1, flag, totalPassRequired, queue);
+
+                queue.remove();
+            }
+            queue.remove(); // Dequeue this delimiter
+
+            if (!queue.isEmpty()) {
+                queue.add(null); // Enqueue Another delimiter at the end of newly Added Rotten Oranges So that they can rot others
+            }
+        }
+        if (!anyFreshOrangeInLot(lot)) {
+            return totalPassRequired.val;
+        }
+        return -1;
+    }
+
+    public static boolean rotAdjacentOrange(int[][] lot, int X, int Y, Boolean hasThisOrangeAlreadyRottenAnyAdjacentOrange, TotalPassRequired totalPassRequired, Queue<Orange> queue) {
+        // Check Top Adjacent Orange, if it is fresh
+        if (isSafeToRot(lot, X, Y) && lot[X][Y] == 1) {
+            if (!hasThisOrangeAlreadyRottenAnyAdjacentOrange) { // If Not then let's increment passRequired
+                totalPassRequired.val += 1;
+                hasThisOrangeAlreadyRottenAnyAdjacentOrange = true;
+            }
+            lot[X][Y] = 2;
+            queue.add(new Orange(X, Y));
+        }
+        return hasThisOrangeAlreadyRottenAnyAdjacentOrange;
     }
 
 

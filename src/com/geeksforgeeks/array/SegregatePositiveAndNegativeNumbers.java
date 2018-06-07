@@ -1,6 +1,6 @@
 package com.geeksforgeeks.array;
 
-public class RearrangePositiveAndNegativeNumbers {
+public class SegregatePositiveAndNegativeNumbers {
 
     public static void main(String[] args) {
         int arr[] = {-1, 2, -3, 4, 5, 6, -7, 8, 9};
@@ -10,6 +10,22 @@ public class RearrangePositiveAndNegativeNumbers {
         arr = new int[]{-12, 11, -13, -5, 6, -7, 5, -3, -6};
         rearrangeToPreserveOrder(arr, 0, 8);
         ArrayRotation.printArray(arr);
+
+        arr = new int[]{-12, 11, -13, -5, 6, -7, 5, -3, -6};
+        segregatePositiveAndNegativeNumbers(arr);
+        ArrayRotation.printArray(arr);
+
+
+    }
+
+    public static int segregatePositiveAndNegativeNumbers(int[] arr) {
+        int low = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                QuickSort.swap(arr, low++, i);
+            }
+        }
+        return low; // Point where the positive number start
     }
 
     public static void rearrangeToPreserveOrder(int[] arr, int low, int high) {

@@ -208,6 +208,13 @@ public class BinaryTreeUtil {
         letsDo("Check if Tree is Height Balanced ? " + sizeUtil.isTreeHeightBalanced(sizeUtil.root));
         newLine();
 
+        BinaryTreeUtil treeBalancedUtil = new BinaryTreeUtil();
+
+        treeBalancedUtil.root = getSampleTreeForHeightBalanced();
+
+        letsDo("Check if Tree is Height Balanced (optimized calculating height on the fly) " + sizeUtil.isTreeHeightBalanced(sizeUtil.root, new HeightOfTree()));
+        newLine();
+
 
         letsDo("Find Diameter of a Tree ? " + sizeUtil.getDiameterOfTree(sizeUtil.root, new HeightOfTree()));
         newLine();
@@ -353,6 +360,14 @@ public class BinaryTreeUtil {
         root.left.right.right = new Node(14);
 
         root.right.right = new Node(25);
+        return root;
+    }
+
+    public static Node getSampleTreeForHeightBalanced() {
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
         return root;
     }
 
@@ -1021,6 +1036,17 @@ public class BinaryTreeUtil {
         System.out.println(visitedNodes);
     }
 
+    public static Node LCAOfBinarySearchTreeIteratively(Node root, Integer n1, Integer n2) {
+        while (root != null) {
+            if (root.data > Math.max(n1, n2)) {
+                root = root.left;
+            } else if (root.data < Math.min(n1, n2)) {
+                root = root.right;
+            } else
+                break;
+        }
+        return root;
+    }
 
     public static Node LCAOfBinarySearchTree(Node node, Integer n1, Integer n2) {
 
@@ -1153,6 +1179,24 @@ public class BinaryTreeUtil {
         return level1 + level2;
     }
 
+    public Boolean isTreeHeightBalanced(Node root, HeightOfTree heightOfTree) {
+        if (root == null) {
+            heightOfTree.height = 0;
+            return true; // Empty tree is always height balanced
+        } else {
+            HeightOfTree leftHeight = new HeightOfTree(0);
+            HeightOfTree rightHeight = new HeightOfTree(0);
+
+            Boolean isLeftBalanced = isTreeHeightBalanced(root.left, leftHeight);
+            Boolean isRightBalanced = isTreeHeightBalanced(root.right, rightHeight);
+
+            heightOfTree.height = Math.max(leftHeight.height, rightHeight.height) + 1;
+            Boolean isDifferenceCorrect = Math.abs(rightHeight.height - leftHeight.height) <= 1;
+
+            return isLeftBalanced && isRightBalanced && isDifferenceCorrect;
+        }
+    }
+
     public Boolean isTreeHeightBalanced(Node root) {
         if (root == null)
             return true;
@@ -1169,6 +1213,14 @@ public class BinaryTreeUtil {
 
     static class HeightOfTree {
         int height;
+
+        HeightOfTree() {
+
+        }
+
+        HeightOfTree(int height) {
+
+        }
     }
 
     public int getDiameterOfTree(Node root, HeightOfTree heightOfTree) {

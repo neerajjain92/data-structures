@@ -21,12 +21,13 @@ public class SearchInRotatedSortedArray {
             } else {
                 search(arr, mid + 1, high, data);
             }
-        } else if (arr[mid] >= arr[high]) {
+        } else {
             if (arr[mid] <= data && arr[high] >= data) {
                 search(arr, mid + 1, high, data);
             } else {
                 search(arr, low, mid, data);
             }
         }
+
     }
 }

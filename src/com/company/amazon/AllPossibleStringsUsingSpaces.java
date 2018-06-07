@@ -8,16 +8,14 @@ public class AllPossibleStringsUsingSpaces {
     }
 
     public static void printPermutations(String soFar, String rest) {
-        if (rest.equals("")) {
+        if(rest.length() <= 0) {
             System.out.println(soFar);
             return;
         }
 
-        for (int i = 0; i < rest.length(); i++) {
-
-            printPermutations(soFar + rest.substring(0, i + 1) + " ", rest.substring(i + 1));
+        for(int i=0;i<rest.length();i++) {
+            printPermutations(soFar+rest.substring(0,i+1)+" ", rest.substring(i+1));
         }
-
     }
 
 }

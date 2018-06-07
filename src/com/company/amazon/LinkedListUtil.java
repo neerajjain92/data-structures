@@ -26,7 +26,7 @@ public class LinkedListUtil {
         temp.next = newNode;
     }
 
-    public void printList(Node head) {
+    public static void printList(Node head) {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " , ");
@@ -115,6 +115,57 @@ public class LinkedListUtil {
         return true;
     }
 
+    public void swapListInGroup(Node head, int groupCount) {
+        Node prevHead = null;
+        Node thisHead = null;
+        Node prev = null;
+        Node curr = head;
+        Node currNext = null;
+        int count = 0;
+
+        while (curr != null) {
+            thisHead = curr;
+            count = 0;
+            prev = null;
+            while (curr != null && count++ < groupCount) {
+                currNext = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = currNext;
+            }
+
+            if (prevHead == null) {
+                head = prev;
+            } else {
+                prevHead.next = prev;
+            }
+            prevHead = thisHead;
+        }
+        printList(head);
+    }
+
+    public void removeEveryKNode(Node head, int k) {
+        int count = 1;
+        Node prev = null;
+
+        while (head != null) {
+            if (count == k) {
+                count = 1;
+                if (prev != null) {
+                    prev.next = head.next;
+                    prev = prev.next;
+                    head = head.next;
+                } else {
+                    this.head = head.next;
+                }
+            } else {
+                prev = head;
+                head = head.next;
+                count++;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         LinkedListUtil util = new LinkedListUtil();
 
@@ -131,5 +182,26 @@ public class LinkedListUtil {
 //        util.printList();
 
         System.out.println("Is List Palindrome ? " + util.isListPalindrome(util.head));
+
+        util = new LinkedListUtil();
+        util.append(1);
+        util.append(2);
+        util.append(3);
+        util.append(4);
+        util.append(5);
+        util.append(6);
+        util.append(7);
+        util.append(8);
+        util.append(9);
+        util.append(10);
+        util.append(11);
+
+        util.printList(util.head);
+//        util.swapListInGroup(util.head, 3);
+
+
+        System.out.println("Removing every kth Node");
+        util.removeEveryKNode(util.head, 3);
+        util.printList(util.head);
     }
 }

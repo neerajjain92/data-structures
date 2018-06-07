@@ -11,7 +11,7 @@ public class SubSetOfArray {
 
     public static void printAllSubSet(int[] arr) {
         for (int i = 0; i <= Math.pow(2, arr.length); i++) {
-            int[] binaryRepresentation = getBinRepresentation(i, (int) Math.pow(2, arr.length));
+            int[] binaryRepresentation = getBinRepresentation(i, (int) Math.pow(2, arr.length), null);
 //            ArrayRotation.printArray(binaryRepresentation);
             List<Integer> subset = new ArrayList<>();
 
@@ -26,13 +26,17 @@ public class SubSetOfArray {
         }
     }
 
-    private static int[] getBinRepresentation(int i, int maxSizeOfBinArray) {
+    public static int[] getBinRepresentation(int i, int maxSizeOfBinArray, int[] sumOfBinaryRepresentation) {
         int[] binRepresentation = new int[maxSizeOfBinArray];
         int num = i;
         int counter = binRepresentation.length - 1;
         List<Integer> list = new ArrayList<>();
         while (num > 0) {
-            binRepresentation[counter--] = num % 2;
+            binRepresentation[counter] = num % 2;
+            if (sumOfBinaryRepresentation != null) {
+                sumOfBinaryRepresentation[counter] += binRepresentation[counter];
+            }
+            counter--;
             num = num / 2;
         }
         return binRepresentation;

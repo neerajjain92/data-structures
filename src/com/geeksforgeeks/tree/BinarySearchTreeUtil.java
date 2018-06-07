@@ -1,7 +1,5 @@
 package com.geeksforgeeks.tree;
 
-import com.company.amazon.BinaryTree;
-
 import java.util.*;
 
 public class BinarySearchTreeUtil {

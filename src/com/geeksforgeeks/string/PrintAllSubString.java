@@ -8,7 +8,7 @@ import java.util.List;
 public class PrintAllSubString {
 
     public static void main(String[] args) {
-        printAllSubString("1234");
+        printAllSubString("ABCD");
     }
 
     public static void printAllSubString(String str) {
@@ -18,15 +18,7 @@ public class PrintAllSubString {
                 sortedList.add(str.substring(i, j));
             }
         }
-        Collections.sort(sortedList, new LengthComparator());
+        sortedList.sort(Comparator.comparingInt(String::length));
         System.out.println(sortedList);
-    }
-}
-
-class LengthComparator implements Comparator<String> {
-
-    @Override
-    public int compare(String o1, String o2) {
-        return Integer.compare(o1.length(), o2.length());
     }
 }
