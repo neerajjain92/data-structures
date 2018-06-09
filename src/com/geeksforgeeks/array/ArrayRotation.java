@@ -24,6 +24,13 @@ public class ArrayRotation {
         System.out.println();
     }
 
+        public static void printArray(Integer[] input) {
+        for (int i = 0; i < input.length; i++) {
+            System.out.print(input[i] + ",");
+        }
+        System.out.println();
+    }
+
     public static void leftRotateArray(int[] input, int d, int n) {
         int[] temp = new int[d];
         for (int i = 0; i < d; i++) {

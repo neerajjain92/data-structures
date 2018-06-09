@@ -6,7 +6,7 @@ public class CelebrityProblem {
     private static boolean[][] connections = {
             {false, false, true, false},
             {false, false, true, false},
-            {false, false, false, true},
+            {false, false, false, false},
             {false, false, true, false}};
 
     private static boolean knows(int A, int B) {

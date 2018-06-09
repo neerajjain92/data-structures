@@ -1,8 +1,27 @@
 package com.company.amazon;
 
+import java.util.Stack;
+
 import static com.company.amazon.BinaryTree.*;
 
 public class DiameterOfBinaryTree {
+
+    private static class Path {
+        Stack<Integer> stack = new Stack<>();
+
+        public Stack<Integer> getStack() {
+            return this.stack;
+        }
+
+        public void setStack(Stack<Integer> stack) {
+            this.stack = stack;
+        }
+    }
+
+    private static class Height {
+        int height;
+    }
+
 
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -34,10 +53,6 @@ public class DiameterOfBinaryTree {
         if (root == null)
             return 0;
         return Math.max(getHeight(root.left), getHeight(root.right)) + 1;
-    }
-
-    private static class Height {
-        int height;
     }
 
     public static int getDiameterOptimized(Node root, Height height) {

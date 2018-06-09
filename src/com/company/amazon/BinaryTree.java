@@ -18,7 +18,7 @@ public class BinaryTree {
         }
     }
 
-    private static void inorder(Node root) {
+    public static void inorder(Node root) {
         if (root == null)
             return;
         inorder(root.left);
