@@ -1,117 +1,148 @@
 package com.company.amazon;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class NextGreaterPalindrome {
 
-    // Returns next palindrome of a given
-    // number num[]. This function is for
-    // input type 2 and 3
-    static void generateNextPalindromeUtil(int num[], int n) {
-        int mid = n / 2;
-
-        // end of left side is always 'mid -1'
-        int i = mid - 1;
-
-        // Begining of right side depends
-        // if n is odd or even
-        int j = (n % 2 == 0) ? mid : mid + 1;
-
-        // A bool variable to check if copy of left
-        // side to right
-        // is sufficient or not
-        boolean leftsmaller = false;
-
-        // Initially, ignore the middle same digits
-        while (i >= 0 && num[i] == num[j]) {
-            i--;
-            j++;
-        }
-
-        // Find if the middle digit(s) need to
-        // be incremented or not (or copying left
-        // side is not sufficient)
-        if (i < 0 || num[i] < num[j]) {
-            leftsmaller = true;
-        }
-
-        // Copy the mirror of left to tight
-        while (i >= 0) {
-            num[j++] = num[i--];
-        }
-
-        // Handle the case where middle digit(s)
-        // must be incremented. This part of code
-        // is for CASE 1 and CASE 2.2
-        if (leftsmaller) {
-            int carry = 1;
-
-            // If there are odd digits, then increment
-            // the middle digit and store the carry
-            if (n % 2 == 1) {
-                num[mid] += 1;
-                carry = num[mid] / 10;
-                num[mid] %= 10;
-            }
-            i = mid - 1;
-            j = (n % 2 == 0 ? mid : mid + 1);
-
-            // Add 1 to the rightmost digit of the left
-            // side, propagate the carry towards MSB digit
-            // and simultaneously copying mirror of the
-            // left side to the right side.
-            while (i >= 0) {
-                num[i] = num[i] + carry;
-                carry = num[i] / 10;
-                num[i] %= 10;
-                num[j] = num[i];// copy mirror to right
-                i--;
-                j++;
-            }
-
-        }
-    }
-
-    // The function that prints next palindrome
-    // of a given number num[] with n digits.
-    static void generateNextPalindrome(int num[], int n) {
-        System.out.println("Next Palindrome is:");
-
-        // Input type 1: All the digits are 9,
-        // simply o/p 1 followed by n-1 0's
-        // followed by 1.
-        if (isAll9(num, n)) {
-            System.out.print("1");
-            for (int i = 0; i < n - 1; i++)
-                System.out.print("0");
-            System.out.println("1");
-
-        }
-
-        // Input type 2 and 3
-        else {
-            generateNextPalindromeUtil(num, n);
-            printarray(num);
-        }
-    }
-
-    // A utility function to check if num has all 9s
-    static boolean isAll9(int num[], int n) {
-        for (int i = 0; i < n; i++)
-            if (num[i] != 9)
-                return false;
-        return true;
-    }
-
-    /* Utility that prints out an array on a line */
-    static void printarray(int num[]) {
-        for (int i = 0; i < num.length; i++)
-            System.out.print(num[i]);
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-// 		int num[] = { 9, 4, 1, 8, 7, 9, 7, 8, 3, 2, 2 };
-//        int num[] = {8,9,9};
-        int num[] = {8, 3, 4, 2, 2, 4, 6, 9};
-        generateNextPalindrome(num, num.length);
+        printNextGreaterPalindrome("1");
+        printNextGreaterPalindrome("9");
+        printNextGreaterPalindrome("89");
+        printNextGreaterPalindrome("90");
+        printNextGreaterPalindrome("99");
+        printNextGreaterPalindrome("900");
+        printNextGreaterPalindrome("999");
+        printNextGreaterPalindrome("899");
+        printNextGreaterPalindrome("123321");
+        printNextGreaterPalindrome("12921");
+        printNextGreaterPalindrome("12345");
+        printNextGreaterPalindrome("713322");
+        printNextGreaterPalindrome("783322");
+        printNextGreaterPalindrome("123450000004");
+    }
+
+    /**
+     * 3 Cased to be handled
+     * <p>
+     * Case 1: When all the integers are 9 we have to handle specifically
+     * Case 2: When input is already a palindrome (and digit is not all 9)
+     * Case 3: When input is not a palindrome
+     *
+     * @param input
+     */
+    public static void printNextGreaterPalindrome(String input) {
+        int[] arr = convertStringToIntArray(input);
+
+        // if Single digit number
+        if (arr.length == 1) {
+            System.out.print("Next Smallest Palindrome larger than number : " + input + " is ");
+            if (arr[0] == 9) {
+                System.out.println(11);
+            } else {
+                System.out.println(arr[0] + 1);
+            }
+        } else if (all9s(arr)) { // First check if all 9's are there
+            System.out.print("Next Smallest Palindrome larger than number : " + input + " is ");
+            System.out.print(1);
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print(0);
+            }
+            System.out.println(1);
+        } else {  // Case 2 and Case 3
+            handlePalindromeForOtherCases(arr);
+            System.out.print("Next Smallest Palindrome larger than number : " + input + " is ");
+            printArr(arr);
+        }
+    }
+
+    private static void handlePalindromeForOtherCases(int[] arr) {
+
+        // Let's divide the input into 2 parts
+        int mid = arr.length / 2;
+        int carry = 1;
+        int leftPointer = mid - 1;
+        int rightPointer = arr.length % 2 == 0 ? mid : mid + 1;
+
+
+        while (leftPointer >= 0 && rightPointer < arr.length) {
+            if (arr[leftPointer] == arr[rightPointer]) {
+                leftPointer--;
+                rightPointer++;
+            } else {
+                break;
+            }
+        }
+
+        // Palindrome Case 123321  OR 12921
+        if (leftPointer < 0 && rightPointer >= arr.length) {
+
+            // Increment the middle node and propagate carry till the end while keep mirroring as well
+            leftPointer = mid - 1;
+            rightPointer = arr.length % 2 == 0 ? mid : mid + 1;
+
+            // If Number is Even length then we will not increment the mid pointer 1 2 3 3 2 1 ==> 1 2 4 4 2 1
+            // We will increment that only in case of odd pointer 1 2 3 2 1 ==>  1 2 4 2 1
+
+            addCarryAndPropagate(arr, carry);
+
+        } else { // Number is not a palindrome ... 1 2 3 4 5...... 1 2 3 4 5 6 ........ 8 3 4 2 2 4 6 9
+
+
+            // Now there a 2 cases value at leftPointer is smaller than right pointer
+            // If this is the case then increment the middle node and propagate the carry
+            // and simultaneously keep on putting the left half to the right half
+            if (arr[leftPointer] < arr[rightPointer]) {
+                addCarryAndPropagate(arr, carry);
+            } else {
+                // Case where value at left pointer is greater than right pointer
+                // If this is the case copy the left half into the right half
+                copyLeftHalfToRightHalf(arr, leftPointer, rightPointer);
+            }
+        }
+    }
+
+    private static void addCarryAndPropagate(int[] arr, int carry) {
+        int mid = arr.length / 2;
+        int leftPointer = mid - 1;
+        int rightPointer = arr.length % 2 == 0 ? mid : mid + 1;
+        if (arr.length % 2 != 0) {
+            arr[mid] += carry;
+            carry = arr[mid] / 10;
+            arr[mid] %= 10;
+        }
+
+        while (leftPointer >= 0) {
+            arr[leftPointer] = arr[leftPointer] + carry;
+            carry = arr[leftPointer] / 10;
+            arr[rightPointer] = arr[leftPointer];
+
+            leftPointer--;
+            rightPointer++;
+        }
+    }
+
+    private static void copyLeftHalfToRightHalf(int[] arr, int leftPointer, int rightPointer) {
+        while (leftPointer >= 0) {
+            arr[rightPointer] = arr[leftPointer];
+            leftPointer--;
+            rightPointer++;
+        }
+    }
+
+    private static int[] convertStringToIntArray(String input) {
+        return input.chars().map(s -> s - '0').toArray();
+    }
+
+    private static void printArr(int[] arr) {
+        System.out.println(Arrays.stream(arr).boxed().collect(Collectors.toList()));
+    }
+
+    private static boolean all9s(int[] arr) {
+        for (int i : arr) {
+            if (i != 9)
+                return false;
+        }
+        return true;
     }
 }
