@@ -1,11 +1,9 @@
 package com.company.amazon;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
-import static com.company.amazon.BinaryTree.*;
+import static com.company.amazon.BinaryTree.Node;
 
 public class BoundryTraversalOfBinaryTree {
 
@@ -47,8 +45,11 @@ public class BoundryTraversalOfBinaryTree {
     public static void printBoundry(Node root) {
         int levelOfTree = getHeight(root);
 
+        // A) First Add the Root to the Result as it is the first Node
+        result.add(root.data);
+
         // 1) Traverse all level and add only 1st element from left to right
-        for (int i = 0; i < levelOfTree - 1; i++) {
+        for (int i = 1; i < levelOfTree - 1; i++) {
             traverseLevel(root, i, 0, true);
             firstElementTraversed = false;
         }

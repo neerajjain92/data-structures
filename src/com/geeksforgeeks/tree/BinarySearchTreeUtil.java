@@ -96,7 +96,7 @@ public class BinarySearchTreeUtil {
         util.insert(10);
         util.insert(14);
 
-        System.out.println(util.findInorderSuccessor(util.root, util.root.left.right.left));
+        System.out.println(util.findInorderSuccessor(util.root, util.root.left.left));
 
         letsDo("Convert Binary Tree to Binary Search Tree");
         util = new BinarySearchTreeUtil();

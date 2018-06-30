@@ -73,7 +73,7 @@ public class GraphUtil {
         recursiveDFS(graph, 0);
         newLine();
 
-        letsDo("Find Out WTF is Strongly Connected Component");
+        letsDo("Find Out WTF is Strongly Connected Component ( KOSARAJUS STRONGLY COMPONENT ALGORITHM )");
         printStronglyConnectedComponents(graph);
         newLine();
 
@@ -81,7 +81,7 @@ public class GraphUtil {
         findMotherVertex(graph);
         newLine();
 
-        letsDo("Find Transitive Closure using Floyd Warshall Algorithm");
+        letsDo("Find Transitive Closure using Floyd Warshall Algorithm (Shortest Path from Vertex to Vertex)");
         int[][] distanceMatrix = {
                 {0, 3, 6, 15},
                 {INF, 0, -2, INF},
@@ -106,15 +106,24 @@ public class GraphUtil {
 
 
         letsDo("Let's Check if Directed Graph Has Cycle");
-        graph = new Graph(7);
-        addEdge(graph, 1, 2, true);
-        addEdge(graph, 2, 3, true);
-        addEdge(graph, 1, 3, true);
+//        graph = new Graph(7);
+//        addEdge(graph, 1, 2, true);
+//        addEdge(graph, 2, 3, true);
+//        addEdge(graph, 1, 3, true);
+//
+//        addEdge(graph, 4, 1, true);
+//        addEdge(graph, 4, 5, true);
+//        addEdge(graph, 5, 6, true);
+//        addEdge(graph, 6, 4, true);
 
-        addEdge(graph, 4, 1, true);
-        addEdge(graph, 4, 5, true);
-        addEdge(graph, 5, 6, true);
-        addEdge(graph, 6, 4, true);
+        graph = new Graph(4);
+
+        addEdge(graph, 0, 1, true);
+        addEdge(graph, 0, 2, true);
+        addEdge(graph, 1, 2, true);
+        addEdge(graph, 2, 0, true);
+        addEdge(graph, 2, 3, true);
+        addEdge(graph, 3, 3, true);
 
         System.out.println(directedGraphHasCycle(graph));
 
@@ -187,7 +196,7 @@ public class GraphUtil {
         krushkalGraph.addEdge(3, 6, 4);
         krushkalGraph.addEdge(6, 5, 2);
 
-//        findMinimumSpanningTree(krushkalGraph);
+        findMinimumSpanningTree(krushkalGraph);
 
         letsDo("Find Minimum Spanning Tree using Prim's Algorithm");
         // Reusing the same graph of Kruskal Algo.

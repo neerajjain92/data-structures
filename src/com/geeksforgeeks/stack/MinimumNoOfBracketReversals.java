@@ -5,32 +5,39 @@ import java.util.Stack;
 public class MinimumNoOfBracketReversals {
 
     public static void main(String[] args) {
-        System.out.println(findMinimumNoOfBracketReversals("{{{{"));
-        System.out.println(findMinimumNoOfBracketReversals("{{{{}}"));
-        System.out.println(findMinimumNoOfBracketReversals("}{{}}{{{"));
+        // Optimized version
+        System.out.println("Optimized Version");
+        System.out.println(findMinimumNoOfBracketsReversalsOptimized("{{{{"));
+        System.out.println(findMinimumNoOfBracketsReversalsOptimized("{{{{}}"));
+        System.out.println(findMinimumNoOfBracketsReversalsOptimized("}{{}}{{{"));
     }
 
-    public static int findMinimumNoOfBracketReversals(String input) {
-        char[] expression = input.toCharArray();
+    /**
+     * Initialize Result as 0
+     * <p>
+     * 1) If traversed character is "{" then simply push into stack
+     * 2) If traversed character is "}", pop from stack and if now stack is empty then result++ and push "{" into stack.
+     * 3) When traversal is completed, result += stack.size() / 2;
+     *
+     * @param input
+     * @return
+     */
+    public static int findMinimumNoOfBracketsReversalsOptimized(String input) {
+        int result = 0;
         Stack<Character> stack = new Stack<>();
-        Integer result = 0;
-        for (char c : expression) {
+        for (char c : input.toCharArray()) {
             if (c == '{') {
                 stack.push(c);
             } else {
-                stack.push('{');
-                result += 1;
+                if (stack.size() > 0) {
+                    stack.pop();
+                }
+                if (stack.isEmpty()) {
+                    result++;
+                    stack.push('{');
+                }
             }
         }
-        if (stack.isEmpty())
-            return result;
-        else {
-            if (stack.size() % 2 == 0) {
-                return result + (stack.size() / 2);
-            } else {
-                System.out.println("Expression can't be balanced");
-                return -1;
-            }
-        }
+        return result + stack.size() / 2;
     }
 }

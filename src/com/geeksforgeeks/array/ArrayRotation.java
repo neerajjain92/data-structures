@@ -1,5 +1,8 @@
 package com.geeksforgeeks.array;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 /**
  * int arr[] = {1, 2, 3, 4, 5, 6, 7};
  * leftRotate(arr, 2, 7);
@@ -18,13 +21,10 @@ public class ArrayRotation {
     }
 
     public static void printArray(int[] input) {
-        for (int i = 0; i < input.length; i++) {
-            System.out.print(input[i] + ",");
-        }
-        System.out.println();
+        System.out.println(Arrays.stream(input).boxed().collect(Collectors.toList()));
     }
 
-        public static void printArray(Integer[] input) {
+    public static void printArray(Integer[] input) {
         for (int i = 0; i < input.length; i++) {
             System.out.print(input[i] + ",");
         }

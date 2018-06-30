@@ -283,6 +283,14 @@ public class BinaryTreeUtil {
         System.out.println(isCompleteTreeRecursively(sizeUtil.root));
 
         letsDo("Find if Tree is BINARY HEAP");
+
+        Node root = new Node(100);
+        root.left = new Node(25);
+        root.right = new Node(20);
+        root.left.right = new Node(17);
+
+        sizeUtil.root = root;
+
         System.out.println(binaryTreeIsMaxHeap(sizeUtil.root));
 
     }
@@ -552,16 +560,39 @@ public class BinaryTreeUtil {
         Node temp;
 
         queue.add(root);
-        while (!queue.isEmpty()) {
-            if (stack.size() > 0) {
-                stack.push(null);
-            }
-            int sz = queue.size();
+        queue.add(null);
+//        while (!queue.isEmpty()) {
+//            if (stack.size() > 0) {
+//                stack.push(null);
+//            }
+//            int sz = queue.size();
+//
+//            for (int i = 0; i < sz; ++i) {  // Processing Each Level, So for first level this loop will run upto 1 time, for level 2 it will run upto 2, level 3 it will run upto 4
+//                temp = queue.poll();
+//                stack.push(temp);
+//                // Enqueue first Right then left because we are storing the end result in stack which is actually LIFO
+//                if (temp.right != null) {
+//                    queue.add(temp.right);
+//                }
+//                if (temp.left != null) {
+//                    queue.add(temp.left);
+//                }
+//            }
+//        }
 
-            for (int i = 0; i < sz; ++i) {  // Processing Each Level, So for first level this loop will run upto 1 time, for level 2 it will run upto 2, level 3 it will run upto 4
-                temp = queue.poll();
+        // New Technique similar to having new line in Level Order Traversal using Queue
+        while (!queue.isEmpty()) {
+            temp = queue.poll();
+
+            if (temp == null) {
+                if (queue.isEmpty()) {
+                    break;
+                } else {
+                    queue.add(null);
+                    stack.push(null);
+                }
+            } else {
                 stack.push(temp);
-                // Enqueue first Right then left because we are storing the end result in stack which is actually LIFO
                 if (temp.right != null) {
                     queue.add(temp.right);
                 }
