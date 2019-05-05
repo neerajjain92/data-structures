@@ -2,33 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed499735-fb6e-4a90-9656-1ffccd36e4bb" name="Default" comment="NearBuy Interview Questions : HackerRank">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/BinaryTreeIsHeap.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/DeleteNodeInBinarySearchTree.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/DistanceBetween2NodesInBinaryTree.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/Heap.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/InorderSuccessorAndPredecessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/PrintPostOrderFromPreorderAndInorder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/RatNdMazeProblem.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/SnakeNdLadder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/SolveNQueensProblem.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/StackWithFindMiddle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/CuttingTheRod.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/LongestBitonicSubsequence.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/datastructures/queue/ReverseFirstKElementsInQueue.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/datastructures/queue/ReverseQueue.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/datastructures/queue/SortQueue.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/BoundryTraversalOfBinaryTree.java" afterPath="$PROJECT_DIR$/src/com/company/amazon/BoundryTraversalOfBinaryTree.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/array/ArrayRotation.java" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/array/ArrayRotation.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/stack/MinimumNoOfBracketReversals.java" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/stack/MinimumNoOfBracketReversals.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinarySearchTreeUtil.java" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinarySearchTreeUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java" />
+      <change afterPath="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/util/LogUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/JDA/JobScheduler$JobRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/JDA/JobScheduler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/JDA/ScheduleJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/amazon/SimpleQueries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/amazon/Source.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/amazon/TransformingWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerearth/MarbleGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerearth/ModifyArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerrank/PatternCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerrank/PrimeNumberOfAppearences.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerrank/TwinArrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/AggresiveCowProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/BytelandianGoldCoin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/InversionCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/NextPalindromeStackOverflow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/TheNextPalindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/algorithms/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/ArrayUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/CurrencyWordConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/LargestSumContiguousSubArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/MaxIncreasingDecreasing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/SnakeAndLadder$BoardEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/SnakeAndLadder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/BreadthFirstTraversal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/ConnectedComponentsInUndirectedGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/DetectCycleInADirectedGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/NumberOfIsland.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/heap/HeapSort$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/heap/HeapSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/heap/MinHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/DoublyCircularLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/DoublyCircularLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/InsertNodeInList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/IntersectionOfLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/LinkedListUtil$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/LinkedListUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/LinkedListUtilUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/SwapNodesWithoutSwappingData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/CuttingTheRod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/JumpTheArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/LongestCommonSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/LongestIncreasingSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/SubsetSumProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/ZeroOneKnapSack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/EquilibriumPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/LeaderIntheArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximizeSumOfConsecutiveDifferenceInCircularArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximumBitonicSubArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximumDifferenceTwoElements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximumOfAllSubArraysOfSizeK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MinimumNumberOfPlatForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/PetrolStationCircularTour$PetrolStation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/PetrolStationCircularTour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/RearrangeMaximumMinimum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/RottenOrange$Orange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/RottenOrange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SegregateZeroAndOnes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SlidingWindowMaximum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SortZeroOneAndTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SpiralMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/StockBuyAndSell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SubArraySum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/Anagram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/LongestCommonSubstring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/MinimumNumberOfInsertionForPalindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/PermutationOfString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/ConnectNodesAtSameLevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/DiagonalOrderTraversal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/LeftViewOfBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/TopViewOfBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/VerticalOrderTraversal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/queue/QueueUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/stack/StackUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil$HorizontalDistance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil$TopViewNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtilUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/ArrayRotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/LongestIncreasingSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/MaximumSumWithArrayRotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/PairInSortedRotatedArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/RearrangePositiveAndNegativeNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/Rotate2DMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SearchInRotatedSortedArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SegregateOddAndEven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SegregateZeroAndOnes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SortArrayAbsoluteDifference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/ThreeWayPartitioning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/WaveSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/EditDistance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/MatrixChainMultiplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/MinimumCostPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/MinimumEditDistance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/string/ReverseWordInString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/stackoverflow/GetIP$CheckIP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/stackoverflow/GetIP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/string/PrintAllSubsequences.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/string/PrintAllSubsequences.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/multithreading/UnsafeReadModifyWriteWithLatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/multithreading/UnsafeReadModifyWriteWithLatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,34 +138,57 @@
     <expand />
     <select />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LongestBitonicSubsequence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/LongestBitonicSubsequence.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="415">
+              <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubsetSumProblem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/SubsetSumProblem.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/util/LogUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="615">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JumpTheArray.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/DP/JumpTheArray.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/SpiralMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="194">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -94,9 +204,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>level order traversal</find>
-      <find>Level Order Traversal in Reverse Order using Stack and 1 Queue</find>
-      <find>Arrays.cop</find>
       <find>vertic</find>
       <find>Top View</find>
       <find>distance between 2 nodes</find>
@@ -122,8 +229,11 @@
       <find>Add one to</find>
       <find>addOneToNumberRepresentedByListRecursively</find>
       <find>add</find>
-      <find>print2D</find>
       <find>[arr.length]</find>
+      <find>logIt</find>
+      <find>print2D</find>
+      <find>[</find>
+      <find>0</find>
     </findStrings>
     <replaceStrings>
       <replace>public</replace>
@@ -146,30 +256,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/../../../Smart_Doers/qrcode-generator" value="2967777640000" />
-        <entry key="$PROJECT_DIR$/../../Smart-Doers/qrcode-generator" value="2969167053000" />
-        <entry key="$PROJECT_DIR$/../BehaviourDrivenDevelopment-poc" value="2969102956000" />
-        <entry key="$PROJECT_DIR$/../SpringSecurityWithAngular" value="1487053046000" />
-        <entry key="$PROJECT_DIR$/../strman-java" value="2973937467000" />
-        <entry key="$PROJECT_DIR$/../../../jhipster_tutorial" value="2973797416000" />
-      </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/amazon/AllPossibleStringsUsingSpaces.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/RearrangeOddEvenIndexedNodesTogether.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/RearrangeCharactersInStringSuchThatNoTwoAdjacentCharactersAreSame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/ReverseLevelOrderTraversal.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/RootToLeafPathSumEqualToGivenNumber.java" />
-        <option value="$PROJECT_DIR$/src/com/datastructures/tree/binaryTree/BinaryTreeUtil.java" />
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/SearchInRotatedSortedArray.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/RearrangeOddEvenIndexedLinkedListNodesTogether.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/LinkedListUtil.java" />
@@ -215,20 +304,20 @@
         <option value="$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/CuttingTheRod.java" />
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/LongestBitonicSubsequence.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java" />
+        <option value="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" />
+        <option value="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java" />
+        <option value="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver2.java" />
+        <option value="$PROJECT_DIR$/src/com/util/LogUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -244,8 +333,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -327,21 +417,12 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
+    <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
-      <sortByType />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -365,30 +446,6 @@
               <item name="data-structures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamicProgramming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="datastructures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,70 +454,39 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="datastructures" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
+              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
-              <item name="mustDoInterviewQuestions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
-              <item name="mustDoInterviewQuestions" type="462c0819:PsiDirectoryNode" />
-              <item name="DP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="geeksforgeeks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="geeksforgeeks" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamicProgramming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="geeksforgeeks" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="MinimumJum&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.DP.JumpTheArray#getMinimumNumberOfJumps&#10;bitonic&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java&#10;MaximumSumInc&#9;PSI&#9;JAVA://com.geeksforgeeks.dynamicProgramming.MaximumSumInLongestIncreasingSubsequence&#10;Cuttin&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/dynamicProgramming/CuttingTheRodProblem.java&#10;LinkedListUti&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/linkedlist/LinkedListUtil.java&#10;Rot&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/mustDoInterviewQuestions/array/RottenOrange.java&#10;MinimumNo&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.MinimumNoOfBracketReversals&#10;Parentheses&#9;PSI&#9;JAVA://com.company.amazon.LongestPalindromicParenthesesSubstring&#10;tower&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.TowerOfHanoi&#10;StockSpan&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.StockSpanProblem&#10;StackWit&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/stack/StackWithFindMiddle.java&#10;BinaryTreeUt&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;BinarySear&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinarySearchTreeUtil.java&#10;toBinarySe&#9;PSI&#9;JAVA://com.geeksforgeeks.tree.BinarySearchTreeUtil#convertBinaryTreeToBinarySearchTree&#10;BinaryTreeTo&#9;PSI&#9;JAVA://com.geeksforgeeks.tree.BinarySearchTreeUtil#convertBinaryTreeToBinarySearchTree&#10;Bound&#9;PSI&#9;JAVA://com.company.amazon.BoundryTraversalOfBinaryTree&#10;Binar&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;diagonal&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.tree.DiagonalOrderTraversal&#10;BinaryT&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;sna&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/array/SnakeAndLadder.java&#10;Rat&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#isSafeCellForRat&#10;SolveN&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/SolveNQueensProblem.java&#10;queen&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#solveNQueenProblem&#10;solve&#9;PSI&#9;JAVA://com.company.amazon.SolveNQueensProblem&#10;GraphUtil.java&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/graph/GraphUtil.java&#10;Graph&#9;RUN_CONFIGURATION&#9;GraphUtil&#10;binaryTr&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;GraphUti&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/graph/GraphUtil.java&#10;MinHe&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/heap/MinHeap.java&#10;Heap&#9;PSI&#9;JAVA://com.datastructures.heap.HeapSort&#10;Disjoin&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.DisjointSet&#10;Direct&#9;PSI&#9;JAVA://com.datastructures.graph.DetectCycleInADirectedGraph&#10;DepthFirs&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#DepthFirstTraversal&#10;graph&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/graph/GraphUtil.java&#10;ArrayRot&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/array/ArrayRotation.java&#10;Next&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/NextGreaterPalindrome.java&#10;Permu&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.string.PermutationOfString&#10;SnakeAnd&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#getSnakeAndLadderPuzzle&#10;Snake&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/array/SnakeAndLadder.java&#10;MinHea&#9;PSI&#9;JAVA://com.geeksforgeeks.heap.MinHeap&#10;LongestIncre&#9;PSI&#9;JAVA://com.geeksforgeeks.array.LongestIncreasingSubsequence&#10;MaximumSUmIN&#9;PSI&#9;JAVA://com.geeksforgeeks.dynamicProgramming.MaximumSumInLongestIncreasingSubsequence&#10;Height&#9;PSI&#9;JAVA://com.company.amazon.DiameterOfBinaryTree.Height&#10;Diamet&#9;PSI&#9;JAVA://com.company.amazon.DiameterOfBinaryTree&#10;Cele&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.CelebrityProblem&#10;StockB&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.array.StockBuyAndSell&#10;BinaryTree&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/BinaryTree.java&#10;ZeroOneAnd&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.array.SortZeroOneAndTwo&#10;Exactl&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/TotalNumberOfPathsToReachFromTopLeftToBottomRightWithExactlyKCoins.java&#10;Bina&#9;PSI&#9;JAVA://com.geeksforgeeks.tree.BinarySearchTreeUtil" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32068965" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="SearchEverywhereHistoryKey" value="MinimumJum&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.DP.JumpTheArray#getMinimumNumberOfJumps&#10;bitonic&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java&#10;MaximumSumInc&#9;PSI&#9;JAVA://com.geeksforgeeks.dynamicProgramming.MaximumSumInLongestIncreasingSubsequence&#10;Cuttin&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/dynamicProgramming/CuttingTheRodProblem.java&#10;LinkedListUti&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/linkedlist/LinkedListUtil.java&#10;Rot&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/mustDoInterviewQuestions/array/RottenOrange.java&#10;MinimumNo&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.MinimumNoOfBracketReversals&#10;Parentheses&#9;PSI&#9;JAVA://com.company.amazon.LongestPalindromicParenthesesSubstring&#10;tower&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.TowerOfHanoi&#10;StockSpan&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.StockSpanProblem&#10;StackWit&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/stack/StackWithFindMiddle.java&#10;BinaryTreeUt&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;BinarySear&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinarySearchTreeUtil.java&#10;toBinarySe&#9;PSI&#9;JAVA://com.geeksforgeeks.tree.BinarySearchTreeUtil#convertBinaryTreeToBinarySearchTree&#10;BinaryTreeTo&#9;PSI&#9;JAVA://com.geeksforgeeks.tree.BinarySearchTreeUtil#convertBinaryTreeToBinarySearchTree&#10;Bound&#9;PSI&#9;JAVA://com.company.amazon.BoundryTraversalOfBinaryTree&#10;Binar&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;diagonal&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.tree.DiagonalOrderTraversal&#10;BinaryT&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;sna&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/array/SnakeAndLadder.java&#10;Rat&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#isSafeCellForRat&#10;SolveN&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/SolveNQueensProblem.java&#10;queen&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#solveNQueenProblem&#10;solve&#9;PSI&#9;JAVA://com.company.amazon.SolveNQueensProblem&#10;GraphUtil.java&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/graph/GraphUtil.java&#10;Graph&#9;RUN_CONFIGURATION&#9;GraphUtil&#10;binaryTr&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/tree/BinaryTreeUtil.java&#10;GraphUti&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/graph/GraphUtil.java&#10;MinHe&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/heap/MinHeap.java&#10;Heap&#9;PSI&#9;JAVA://com.datastructures.heap.HeapSort&#10;Disjoin&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.DisjointSet&#10;Direct&#9;PSI&#9;JAVA://com.datastructures.graph.DetectCycleInADirectedGraph&#10;DepthFirs&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#DepthFirstTraversal&#10;graph&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/graph/GraphUtil.java&#10;ArrayRot&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/geeksforgeeks/array/ArrayRotation.java&#10;Next&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/NextGreaterPalindrome.java&#10;Permu&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.string.PermutationOfString&#10;SnakeAnd&#9;PSI&#9;JAVA://com.geeksforgeeks.graph.GraphUtil#getSnakeAndLadderPuzzle&#10;Snake&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/datastructures/array/SnakeAndLadder.java&#10;MinHea&#9;PSI&#9;JAVA://com.geeksforgeeks.heap.MinHeap&#10;LongestIncre&#9;PSI&#9;JAVA://com.geeksforgeeks.array.LongestIncreasingSubsequence&#10;MaximumSUmIN&#9;PSI&#9;JAVA://com.geeksforgeeks.dynamicProgramming.MaximumSumInLongestIncreasingSubsequence&#10;Height&#9;PSI&#9;JAVA://com.company.amazon.DiameterOfBinaryTree.Height&#10;Diamet&#9;PSI&#9;JAVA://com.company.amazon.DiameterOfBinaryTree&#10;Cele&#9;PSI&#9;JAVA://com.geeksforgeeks.stack.CelebrityProblem&#10;StockB&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.array.StockBuyAndSell&#10;BinaryTree&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/BinaryTree.java&#10;ZeroOneAnd&#9;PSI&#9;JAVA://com.datastructures.mustDoInterviewQuestions.array.SortZeroOneAndTwo&#10;Exactl&#9;FILE&#9;file:///Users/jaine03/Projects/github/neerajjain92/data-structures/src/com/company/amazon/TotalNumberOfPathsToReachFromTopLeftToBottomRightWithExactlyKCoins.java&#10;Bina&#9;PSI&#9;JAVA://com.geeksforgeeks.tree.BinarySearchTreeUtil" />
-    <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -482,201 +508,130 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JumpTheArray">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
+  <component name="RunManager" selected="Application.SudokuSolver">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="CuttingTheRod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+    <configuration name="PrintAllPalindromicPartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PrintAllPalindromicPartition" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.amazon.dynamicProgramming.*" />
+          <option name="PATTERN" value="com.datastructures.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.company.amazon.dynamicProgramming.CuttingTheRod" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="data-structures" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="CuttingTheRodProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+    <configuration name="PrintAllSubsequenceOfString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PrintAllSubsequenceOfString" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.dynamicProgramming.*" />
+          <option name="PATTERN" value="com.datastructures.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.CuttingTheRodProblem" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="data-structures" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="JumpTheArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+    <configuration name="PrintAllSubsequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.string.PrintAllSubsequences" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.datastructures.mustDoInterviewQuestions.DP.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.mustDoInterviewQuestions.DP.JumpTheArray" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="data-structures" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="LongestBitonicSubsequence (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+    <configuration name="SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.backtracking.SudokuSolver" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.amazon.dynamicProgramming.*" />
+          <option name="PATTERN" value="com.datastructures.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.company.amazon.dynamicProgramming.LongestBitonicSubsequence" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="data-structures" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="LongestBitonicSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+    <configuration name="SudokuSolver2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.backtracking.SudokuSolver2" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.dynamicProgramming.*" />
+          <option name="PATTERN" value="com.datastructures.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.LongestBitonicSubsequence" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="data-structures" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.CuttingTheRodProblem" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CuttingTheRod" />
-      <item index="2" class="java.lang.String" itemvalue="Application.LongestBitonicSubsequence" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LongestBitonicSubsequence (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.JumpTheArray" />
+    <list>
+      <item itemvalue="Application.PrintAllPalindromicPartition" />
+      <item itemvalue="Application.PrintAllSubsequences" />
+      <item itemvalue="Application.PrintAllSubsequenceOfString" />
+      <item itemvalue="Application.SudokuSolver" />
+      <item itemvalue="Application.SudokuSolver2" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.JumpTheArray" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LongestBitonicSubsequence (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LongestBitonicSubsequence" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CuttingTheRod" />
-        <item index="4" class="java.lang.String" itemvalue="Application.CuttingTheRodProblem" />
+      <list>
+        <item itemvalue="Application.SudokuSolver" />
+        <item itemvalue="Application.SudokuSolver2" />
+        <item itemvalue="Application.PrintAllPalindromicPartition" />
+        <item itemvalue="Application.PrintAllSubsequenceOfString" />
+        <item itemvalue="Application.PrintAllSubsequences" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -778,6 +733,7 @@
       <workItem from="1530207066309" duration="221000" />
       <workItem from="1530268393657" duration="719000" />
       <workItem from="1530293553264" duration="10556000" />
+      <workItem from="1556959640747" duration="12469000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Problems">
       <created>1520156000626</created>
@@ -895,7 +851,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335975000" />
+    <option name="totallyTimeSpent" value="348444000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -907,73 +863,76 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527205" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3555018" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29020557" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31402004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39540508" sideWeight="0.49570817" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21916972" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Tool Output" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="ANTLR Preview" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.35408163" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.37653062" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29020557" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3244898" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297568" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3297568" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48125756" sideWeight="0.49570817" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527205" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3555018" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23247497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23247497" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.3555018" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.48125756" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32889965" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32527205" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3297568" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Graph Problems" />
@@ -1365,12 +1324,6 @@
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="157" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sub_array_problem/SubArrayWithZeroSum.java</url>
           <line>52</line>
           <properties />
@@ -1737,13 +1690,50 @@
           <properties />
           <option name="timeStamp" value="286" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="287" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1764,6 +1754,35 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>printMultiDimensionArray(board)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.util.LogUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>LogUtil.newLine()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.util.LogUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>printMultiDimensionArray(board);</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.util.LogUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>LogUtil.newLine();</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.util.LogUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>printMultiDimensionArray(board);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>file.getName().toLowerCase()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -1783,146 +1802,13 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>maxStack</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>maxStack.push(5)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>maxStack.pop()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.ceil(arr.length / 2d)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.ceil(arr.length / 2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>CANDIDATE - 'A'</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/Heap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="96" column="42" lean-forward="true" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/heap/MinHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="148" column="28" lean-forward="false" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/stackoverflow/FileSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/BinaryTreeIsHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="28" column="53" lean-forward="true" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/PrintAllPathBetween2Nodes.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/SolveNQueensProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/RatNdMazeProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="1333" column="62" lean-forward="true" selection-start-line="1333" selection-start-column="62" selection-end-line="1333" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/SnakeNdLadder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/SnakeAndLadder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/Splitwise_MinimizeCashFlowInFriends.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="61" column="13" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/tree/binaryTree/BinaryTreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8925">
-          <caret line="838" column="0" lean-forward="true" selection-start-line="838" selection-start-column="0" selection-end-line="838" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/tree/DiagonalOrderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1939,16 +1825,16 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/amazon/BoundryTraversalOfBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/amazon/DistanceBetween2NodesInBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" />
           </folding>
         </state>
       </provider>
@@ -1956,30 +1842,28 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/amazon/DeleteNodeInBinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/amazon/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinarySearchTreeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1993,28 +1877,28 @@
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3444">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackWithFindMiddle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/amazon/StackWithFindMiddle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#269#270#0" expanded="true" />
@@ -2026,24 +1910,21 @@
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StockSpanProblem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/TowerOfHanoi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/amazon/LongestPalindromicParenthesesSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -2064,14 +1945,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/BalancedParentheses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/datastructures/queue/QueueUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2082,7 +1963,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/datastructures/queue/ReverseQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -2090,7 +1971,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/datastructures/queue/ReverseFirstKElementsInQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -2098,9 +1979,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/datastructures/queue/SortQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" />
           </folding>
         </state>
       </provider>
@@ -2108,8 +1989,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/datastructures/linkedlist/LinkedListUtilUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
-          <caret line="40" column="45" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="45" />
-          <folding />
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -2124,16 +2004,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestPalindromicSubsequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
-          <caret line="51" column="80" lean-forward="false" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
-          <folding />
+          <caret line="51" column="80" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
-          <caret line="1307" column="0" lean-forward="true" selection-start-line="1307" selection-start-column="0" selection-end-line="1307" selection-end-column="0" />
-          <folding />
+          <caret line="1307" lean-forward="true" selection-start-line="1307" selection-end-line="1307" />
         </state>
       </provider>
     </entry>
@@ -2141,7 +2019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="474" column="28" lean-forward="true" selection-start-line="474" selection-start-column="28" selection-end-line="474" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2149,22 +2026,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumInLongestIncreasingSubsequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding />
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/CuttingTheRod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2175,39 +2050,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="70" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="657">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/LongestBitonicSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/SubsetSumProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/DP/JumpTheArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/SubsetSumProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/LongestBitonicSubsequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="1957" column="18" selection-start-line="1957" selection-start-column="18" selection-end-line="1957" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="659" column="37" selection-start-line="659" selection-start-column="37" selection-end-line="659" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/SmallestWindowInAStringContainingAllCharactersOfOtherString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/SpiralMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/util/LogUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

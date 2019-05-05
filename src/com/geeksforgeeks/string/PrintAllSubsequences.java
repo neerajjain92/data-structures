@@ -7,21 +7,22 @@ import java.util.List;
 public class PrintAllSubsequences {
 
     public static void main(String[] args) {
-        combinations("","ABCD");
+        combinations("", "ABCD");
 
-        subsequences.sort(Comparator.comparingInt(String::length));
+//        subsequences.sort(Comparator.comparingInt(String::length));
         System.out.println(subsequences);
     }
 
     private static List<String> subsequences = new ArrayList<>();
+
     public static void combinations(String suffix, String prefix) {
-        if(prefix.length() <0) {
+        if (prefix.length() < 0) {
             return;
         }
 //        System.out.println(suffix);
         subsequences.add(suffix);
-        for(int i=0;i<prefix.length();i++) {
-            combinations(suffix + prefix.charAt(i), prefix.substring(i+1, prefix.length()));
+        for (int i = 0; i < prefix.length(); i++) {
+            combinations(suffix + prefix.charAt(i), prefix.substring(i + 1));
         }
     }
 }
