@@ -1,6 +1,7 @@
 package com.geeksforgeeks.dynamicProgramming;
 
 import com.geeksforgeeks.array.Rotate2DMatrix;
+import com.util.LogUtil;
 
 /**
  * https://www.youtube.com/watch?v=ZaVM057DuzE
@@ -12,6 +13,14 @@ import com.geeksforgeeks.array.Rotate2DMatrix;
  * 1) (Excluding the new coin)
  * 2) (Including the new coin)
  * 3) ( Sum step (1) + (2)
+ * <p>
+ * Input: amount = 5, coins = [1, 2, 5]
+ * Output: 4
+ * <p>
+ * 5=5
+ * 5=2+2+1
+ * 5=2+1+1+1
+ * 5=1+1+1+1+1
  */
 public class CoinChangingNoOfWays {
 
@@ -21,7 +30,15 @@ public class CoinChangingNoOfWays {
 //        System.out.println(getNoOfWaysSumCanBeAchieved(new int[]{2, 3, 5, 6}, 10));
 //        System.out.println(getNoOfWaysSumCanBeAchieved(new int[]{3, 5}, 17));
 
-        System.out.println(getNoOfWays(new int[]{1, 2, 3, 4, 5}, 5));
+//        System.out.println(getNoOfWays(new int[]{1, 2, 5}, 5));
+
+        /**
+         *
+         * NOTE this is the correct approach which gives correct answer.
+         *
+         */
+        // This is the correct way.
+        System.out.println(change(5, new int[]{1, 2, 5}));
     }
 
     public static int getNoOfWaysSumCanBeAchieved(int[] coins, int sum) {
@@ -67,4 +84,55 @@ public class CoinChangingNoOfWays {
         Rotate2DMatrix.print2DArray(ways);
         return ways[coins.length][sum];
     }
+
+    /**
+     * @authored on 09 May 2019
+     * <p>
+     * Solve by if I include the coin and if i exclude the coin
+     */
+    public static int change(int amount, int[] coins) {
+
+        int[][] numberOfWays = new int[coins.length + 1][amount + 1];
+
+        // Base Conditions
+
+        // 1)  when Amount to be achieved is 0
+        // So in that case there is only 1 way to achieve the sum by not including the coin.
+
+
+        // 2) When we don't have any coins, then in that case, we cannot make any sum, hence 0 ways
+
+        for (int i = 0; i < numberOfWays.length; i++) {
+            for (int j = 0; j <= amount; j++) {
+
+                // Base Condition 1
+                if (i == 0 && j != 0) {  // When Sum is 0, since at 0th index, sum is 0
+                    numberOfWays[i][j] = 0;
+                    continue;
+                }
+                // Base Condition 2
+                if (j == 0) { // When Coins is 0, since in 2D matrix we assumed we have 0 coins at 1st Row
+                    numberOfWays[i][j] = 1;
+                    continue;
+                }
+
+                // If new Coin face value is greater than the sum, so no point including the new value, let's just use previous value (i.e. without including this coin).
+                if (coins[i - 1] > j) {
+                    numberOfWays[i][j] = numberOfWays[i - 1][j];
+                } else {
+
+
+                    // Now let's calculate the number of ways by including the new coin and excluding it.
+                    // numberOfWays[row][col] = By Excluding the coin (numberOfWays[row-1][col] (Since new coin is excluded so amount didn't decrease)
+                    //                         + By Including the coin (numberOfWays[row][col - coin[i-1]]) (Since new coin is included, so the amount left is minus the coin face value
+                    numberOfWays[i][j] = numberOfWays[i - 1][j] + numberOfWays[i][j - coins[i - 1]];
+                }
+            }
+        }
+        LogUtil.logIt("Number of ways for amount " + amount + " using coin ");
+        LogUtil.printArray(coins);
+        return numberOfWays[numberOfWays.length - 1][amount];
+    }
+
+
 }

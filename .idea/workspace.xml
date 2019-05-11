@@ -2,117 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed499735-fb6e-4a90-9656-1ffccd36e4bb" name="Default" comment="NearBuy Interview Questions : HackerRank">
-      <change afterPath="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/util/LogUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/RangeSumQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/UniqueBinarySearchTree_CatalanNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/JDA/JobScheduler$JobRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/JDA/JobScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/JDA/ScheduleJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/amazon/SimpleQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/amazon/Source.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/amazon/TransformingWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerearth/MarbleGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerearth/ModifyArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerrank/PatternCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerrank/PrimeNumberOfAppearences.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/hackerrank/TwinArrays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/AggresiveCowProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/BytelandianGoldCoin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/InversionCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/NextPalindromeStackOverflow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/competitive/coding/spoj/TheNextPalindrome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/algorithms/BinarySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/ArrayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/CurrencyWordConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/LargestSumContiguousSubArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/MaxIncreasingDecreasing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/SnakeAndLadder$BoardEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/array/SnakeAndLadder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/BreadthFirstTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/ConnectedComponentsInUndirectedGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/DetectCycleInADirectedGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/graph/NumberOfIsland.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/heap/HeapSort$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/heap/HeapSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/heap/MinHeap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/DoublyCircularLinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/DoublyCircularLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/InsertNodeInList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/IntersectionOfLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/LinkedListUtil$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/LinkedListUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/LinkedListUtilUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/linkedlist/SwapNodesWithoutSwappingData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/CuttingTheRod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/JumpTheArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/LongestCommonSubsequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/LongestIncreasingSubsequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/SubsetSumProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/DP/ZeroOneKnapSack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/EquilibriumPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/LeaderIntheArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximizeSumOfConsecutiveDifferenceInCircularArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximumBitonicSubArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximumDifferenceTwoElements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MaximumOfAllSubArraysOfSizeK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/MinimumNumberOfPlatForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/PetrolStationCircularTour$PetrolStation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/PetrolStationCircularTour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/RearrangeMaximumMinimum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/RottenOrange$Orange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/RottenOrange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SegregateZeroAndOnes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SlidingWindowMaximum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SortZeroOneAndTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SpiralMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/StockBuyAndSell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/array/SubArraySum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/Anagram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/LongestCommonSubstring.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/MinimumNumberOfInsertionForPalindrome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/string/PermutationOfString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/ConnectNodesAtSameLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/DiagonalOrderTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/LeftViewOfBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/TopViewOfBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/mustDoInterviewQuestions/tree/VerticalOrderTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/queue/QueueUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/stack/StackUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil$HorizontalDistance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil$TopViewNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/datastructures/tree/binaryTree/BinaryTreeUtilUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/ArrayRotation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/LongestIncreasingSubsequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/MaximumSumWithArrayRotation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/MergeSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/PairInSortedRotatedArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/QuickSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/RearrangePositiveAndNegativeNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/Rotate2DMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SearchInRotatedSortedArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SegregateOddAndEven.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SegregateZeroAndOnes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/SortArrayAbsoluteDifference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/ThreeWayPartitioning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/array/WaveSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/EditDistance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/MatrixChainMultiplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/MinimumCostPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/dynamicProgramming/MinimumEditDistance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/geeksforgeeks/string/ReverseWordInString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/stackoverflow/GetIP$CheckIP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/com/stackoverflow/GetIP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/string/PrintAllSubsequences.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/string/PrintAllSubsequences.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/multithreading/UnsafeReadModifyWriteWithLatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/multithreading/UnsafeReadModifyWriteWithLatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/array/MaxSumContiguousSubArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/array/MaxSumContiguousSubArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/util/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/util/LogUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,63 +36,36 @@
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
     <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java">
+        <entry file="file://$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="281">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="33" lean-forward="true" selection-start-column="8" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/util/LogUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-              <folding>
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/SpiralMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -204,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vertic</find>
       <find>Top View</find>
       <find>distance between 2 nodes</find>
       <find>result =</find>
@@ -233,6 +109,7 @@
       <find>logIt</find>
       <find>print2D</find>
       <find>[</find>
+      <find>Egg</find>
       <find>0</find>
     </findStrings>
     <replaceStrings>
@@ -259,15 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/SearchInRotatedSortedArray.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/RearrangeOddEvenIndexedLinkedListNodesTogether.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/LinkedListUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/RearrangeOddEvenDataLinkedListNodes.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/BinaryTree.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/ConstructBSTFromPreOrder.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/SerializeAndDeserializeTree.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/SlidingWindowMaximum.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/SortZeroOneAndTwo.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/SortStackUsingRecursion.java" />
         <option value="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/StockBuyAndSell.java" />
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/stack/CelebrityProblem.java" />
@@ -308,8 +176,17 @@
         <option value="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" />
         <option value="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java" />
         <option value="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver2.java" />
-        <option value="$PROJECT_DIR$/src/com/util/LogUtil.java" />
         <option value="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/RangeSumQuery.java" />
+        <option value="$PROJECT_DIR$/src/com/util/LogUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java" />
+        <option value="$PROJECT_DIR$/src/com/datastructures/backtracking/GenerateBalancedParenthesis.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/UniqueBinarySearchTree_CatalanNumber.java" />
+        <option value="$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java" />
       </list>
     </option>
   </component>
@@ -332,7 +209,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -422,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -453,21 +329,22 @@
               <item name="data-structures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
-              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -508,20 +385,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SudokuSolver">
+  <component name="RunManager" selected="Application.UniqueBinarySearchTree_CatalanNumber">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintAllPalindromicPartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PrintAllPalindromicPartition" />
+    <configuration name="CoinChangingNoOfWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.CoinChangingNoOfWays" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.datastructures.recursion.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.dynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -529,13 +406,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintAllSubsequenceOfString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PrintAllSubsequenceOfString" />
+    <configuration name="GenerateBalancedParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.backtracking.GenerateBalancedParenthesis" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.datastructures.recursion.*" />
+          <option name="PATTERN" value="com.leetcode.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -543,13 +420,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintAllSubsequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.string.PrintAllSubsequences" />
+    <configuration name="MaxSumContiguousSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.array.MaxSumContiguousSubArray" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.string.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -557,13 +434,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.backtracking.SudokuSolver" />
+    <configuration name="MaximumSumRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.MaximumSumRectangle" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.datastructures.backtracking.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.dynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -571,13 +448,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuSolver2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.backtracking.SudokuSolver2" />
+    <configuration name="UniqueBinarySearchTree_CatalanNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.UniqueBinarySearchTree_CatalanNumber" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.datastructures.backtracking.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.dynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -617,19 +494,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PrintAllPalindromicPartition" />
-      <item itemvalue="Application.PrintAllSubsequences" />
-      <item itemvalue="Application.PrintAllSubsequenceOfString" />
-      <item itemvalue="Application.SudokuSolver" />
-      <item itemvalue="Application.SudokuSolver2" />
+      <item itemvalue="Application.MaxSumContiguousSubArray" />
+      <item itemvalue="Application.MaximumSumRectangle" />
+      <item itemvalue="Application.CoinChangingNoOfWays" />
+      <item itemvalue="Application.GenerateBalancedParenthesis" />
+      <item itemvalue="Application.UniqueBinarySearchTree_CatalanNumber" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SudokuSolver" />
-        <item itemvalue="Application.SudokuSolver2" />
-        <item itemvalue="Application.PrintAllPalindromicPartition" />
-        <item itemvalue="Application.PrintAllSubsequenceOfString" />
-        <item itemvalue="Application.PrintAllSubsequences" />
+        <item itemvalue="Application.UniqueBinarySearchTree_CatalanNumber" />
+        <item itemvalue="Application.GenerateBalancedParenthesis" />
+        <item itemvalue="Application.CoinChangingNoOfWays" />
+        <item itemvalue="Application.MaximumSumRectangle" />
+        <item itemvalue="Application.MaxSumContiguousSubArray" />
       </list>
     </recent_temporary>
   </component>
@@ -733,7 +610,12 @@
       <workItem from="1530207066309" duration="221000" />
       <workItem from="1530268393657" duration="719000" />
       <workItem from="1530293553264" duration="10556000" />
-      <workItem from="1556959640747" duration="12469000" />
+      <workItem from="1556959640747" duration="17312000" />
+      <workItem from="1557254798398" duration="1395000" />
+      <workItem from="1557321589292" duration="4032000" />
+      <workItem from="1557422140996" duration="1473000" />
+      <workItem from="1557498168681" duration="250000" />
+      <workItem from="1557555496434" duration="5156000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Problems">
       <created>1520156000626</created>
@@ -851,7 +733,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348444000" />
+    <option name="totallyTimeSpent" value="365593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -863,32 +745,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21916972" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22893773" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Tool Output" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="ANTLR Preview" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.35408163" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.37653062" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.3433155" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.3764706" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29020557" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3244898" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.50481284" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32406417" />
+      <window_info anchor="bottom" id="Docker" order="11" />
+      <window_info anchor="bottom" id="Tool Output" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -899,36 +780,42 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23247497" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21916972" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.3555018" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.48125756" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32889965" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32527205" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3297568" />
+      <window_info anchor="bottom" id="Docker" order="0" />
+      <window_info anchor="bottom" id="Tool Output" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49713877" visible="true" weight="0.35408163" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49570817" weight="0.37653062" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32889965" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32889965" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.50510204" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3244898" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297568" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1715,22 +1602,58 @@
           <option name="timeStamp" value="291" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java</url>
           <line>76</line>
           <properties />
           <option name="timeStamp" value="294" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java</url>
           <line>97</line>
           <properties />
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java</url>
           <line>98</line>
           <properties />
           <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/RangeSumQuery.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java</url>
+          <line>133</line>
+          <properties />
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/UniqueBinarySearchTree_CatalanNumber.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="304" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1753,6 +1676,18 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>LogUtil.printMultiDimensionArray(numberOfWays)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.util.LogUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>LogUtil.printMultiDimensionArray(numberOfWays);</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.util.LogUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>printMultiDimensionArray(board)</expression-string>
         <language-id>JAVA</language-id>
@@ -1792,102 +1727,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>arr[leftPointer] &lt; arr[rightPointer]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>path</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/tree/DiagonalOrderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/PrintPostOrderFromPreorderAndInorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/BoundryTraversalOfBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/DistanceBetween2NodesInBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/DeleteNodeInBinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinarySearchTreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/InorderSuccessorAndPredecessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3444">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackWithFindMiddle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1997,7 +1839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2133,10 +1974,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver2.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+        <state relative-caret-position="340">
+          <caret line="80" column="18" lean-forward="true" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2147,17 +1992,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver2.java">
+    <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        <state relative-caret-position="192">
+          <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/util/LogUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        <state relative-caret-position="660">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="e#198#199#0" expanded="true" />
             <element signature="e#242#243#0" expanded="true" />
@@ -2165,19 +2020,89 @@
             <element signature="e#341#342#0" expanded="true" />
             <element signature="e#385#386#0" expanded="true" />
             <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java">
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="319">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#678#709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/RangeSumQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/javafx-src.zip!/javafx/collections/ListChangeBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3615">
+          <caret line="275" column="16" selection-start-line="275" selection-start-column="16" selection-end-line="275" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/UniqueBinarySearchTree_CatalanNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="8" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -2239,7 +2164,6 @@
             <option name="proportions">
               <list>
                 <option value="0.32068965" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

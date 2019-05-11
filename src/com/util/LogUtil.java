@@ -44,7 +44,7 @@ public class LogUtil {
             logInSingleLine(arr[i]);
         }
         newLine();
-        logIt("Start of Array", true);
+        logIt("End of Array", true);
     }
 
     public static void printMultiDimensionArray(char[][] arr) {
