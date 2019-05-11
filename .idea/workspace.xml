@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed499735-fb6e-4a90-9656-1ffccd36e4bb" name="Default" comment="NearBuy Interview Questions : HackerRank">
-      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/RangeSumQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/UniqueBinarySearchTree_CatalanNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/array/MaxSumContiguousSubArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/array/MaxSumContiguousSubArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/backtracking/SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestCommonSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/util/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/util/LogUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +38,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="393">
+              <caret line="48" column="104" lean-forward="true" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
+              <folding>
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="33" lean-forward="true" selection-start-column="8" selection-end-column="33" />
+              <caret column="33" selection-start-column="8" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -385,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UniqueBinarySearchTree_CatalanNumber">
+  <component name="RunManager" selected="Application.NextPermutationOfNumericSequence">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -420,20 +410,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSumContiguousSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.array.MaxSumContiguousSubArray" />
-      <module name="data-structures" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MaximumSumRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.MaximumSumRectangle" />
       <module name="data-structures" />
@@ -441,6 +417,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.geeksforgeeks.dynamicProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NextPermutationOfNumericSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.NextPermutationOfNumericSequence" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -494,19 +484,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MaxSumContiguousSubArray" />
       <item itemvalue="Application.MaximumSumRectangle" />
       <item itemvalue="Application.CoinChangingNoOfWays" />
       <item itemvalue="Application.GenerateBalancedParenthesis" />
       <item itemvalue="Application.UniqueBinarySearchTree_CatalanNumber" />
+      <item itemvalue="Application.NextPermutationOfNumericSequence" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NextPermutationOfNumericSequence" />
         <item itemvalue="Application.UniqueBinarySearchTree_CatalanNumber" />
         <item itemvalue="Application.GenerateBalancedParenthesis" />
         <item itemvalue="Application.CoinChangingNoOfWays" />
         <item itemvalue="Application.MaximumSumRectangle" />
-        <item itemvalue="Application.MaxSumContiguousSubArray" />
       </list>
     </recent_temporary>
   </component>
@@ -615,7 +605,7 @@
       <workItem from="1557321589292" duration="4032000" />
       <workItem from="1557422140996" duration="1473000" />
       <workItem from="1557498168681" duration="250000" />
-      <workItem from="1557555496434" duration="5156000" />
+      <workItem from="1557555496434" duration="6725000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Problems">
       <created>1520156000626</created>
@@ -733,7 +723,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365593000" />
+    <option name="totallyTimeSpent" value="367162000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,7 +738,7 @@
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22893773" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22893773" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -757,14 +747,14 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.3433155" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.3433155" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.3764706" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.50481284" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.50481284" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32406417" />
       <window_info anchor="bottom" id="Docker" order="11" />
       <window_info anchor="bottom" id="Tool Output" order="12" />
@@ -1655,6 +1645,12 @@
           <properties />
           <option name="timeStamp" value="304" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -2092,7 +2088,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="33" lean-forward="true" selection-start-column="8" selection-end-column="33" />
+          <caret column="33" selection-start-column="8" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2101,8 +2097,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="393">
+          <caret line="48" column="104" lean-forward="true" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
+          <folding>
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
