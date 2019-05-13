@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed499735-fb6e-4a90-9656-1ffccd36e4bb" name="Default" comment="NearBuy Interview Questions : HackerRank">
-      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/util/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/util/LogUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,12 +35,37 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="315">
+              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="599" column="6" selection-start-line="599" selection-start-column="6" selection-end-line="599" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/util/LogUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+              <folding>
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/stack/CelebrityProblem.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/DiameterOfBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/PrintLongestLeafToLeafPathInBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/TappingRainWaterProblem.java" />
@@ -163,8 +184,9 @@
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/UniqueBinarySearchTree_CatalanNumber.java" />
         <option value="$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java" />
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java" />
-        <option value="$PROJECT_DIR$/src/com/util/LogUtil.java" />
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java" />
+        <option value="$PROJECT_DIR$/src/com/util/LogUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java" />
       </list>
     </option>
   </component>
@@ -277,8 +299,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -370,7 +392,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MinimumEditDistance">
+  <component name="RunManager" selected="Application.Partition_To_K_EqualSum_SubSets">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -419,13 +441,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TotalWaysToDecodeAString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.TotalWaysToDecodeAString" />
+    <configuration name="Partition_To_K_EqualSum_SubSets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.backtracking.Partition_To_K_EqualSum_SubSets" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.dynamicProgramming.*" />
+          <option name="PATTERN" value="com.leetcode.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -433,8 +455,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniqueBinarySearchTree_CatalanNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.UniqueBinarySearchTree_CatalanNumber" />
+    <configuration name="TotalWaysToDecodeAString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.dynamicProgramming.TotalWaysToDecodeAString" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -479,19 +501,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UniqueBinarySearchTree_CatalanNumber" />
       <item itemvalue="Application.NextPermutationOfNumericSequence" />
       <item itemvalue="Application.CoinChangeMinimumNoOfCoinsRequired" />
       <item itemvalue="Application.TotalWaysToDecodeAString" />
       <item itemvalue="Application.MinimumEditDistance" />
+      <item itemvalue="Application.Partition_To_K_EqualSum_SubSets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Partition_To_K_EqualSum_SubSets" />
         <item itemvalue="Application.MinimumEditDistance" />
         <item itemvalue="Application.TotalWaysToDecodeAString" />
         <item itemvalue="Application.CoinChangeMinimumNoOfCoinsRequired" />
         <item itemvalue="Application.NextPermutationOfNumericSequence" />
-        <item itemvalue="Application.UniqueBinarySearchTree_CatalanNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -601,7 +623,8 @@
       <workItem from="1557422140996" duration="1473000" />
       <workItem from="1557498168681" duration="250000" />
       <workItem from="1557555496434" duration="7160000" />
-      <workItem from="1557643625345" duration="8954000" />
+      <workItem from="1557643625345" duration="10244000" />
+      <workItem from="1557748924538" duration="2811000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Problems">
       <created>1520156000626</created>
@@ -719,7 +742,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376551000" />
+    <option name="totallyTimeSpent" value="380652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,7 +757,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22893773" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23137973" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -743,14 +766,14 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.327551" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.327551" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.37551022" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.50481284" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5040816" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3234694" />
       <window_info anchor="bottom" id="Docker" order="11" />
       <window_info anchor="bottom" id="Tool Output" order="12" />
@@ -1689,6 +1712,12 @@
           <properties />
           <option name="timeStamp" value="317" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1768,13 +1797,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/LongestPalindromicParenthesesSubstring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/MinimumNoOfBracketReversals.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -2126,25 +2148,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/util/LogUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        <state relative-caret-position="780">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="599" column="6" selection-start-line="599" selection-start-column="6" selection-end-line="599" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="315">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
