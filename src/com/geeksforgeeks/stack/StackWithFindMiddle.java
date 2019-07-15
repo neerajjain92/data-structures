@@ -1,5 +1,8 @@
 package com.geeksforgeeks.stack;
 
+import static com.util.LogUtil.logIt;
+
+@SuppressWarnings("Duplicates")
 public class StackWithFindMiddle {
 
     DLLNode top;
@@ -11,7 +14,7 @@ public class StackWithFindMiddle {
     }
 
     // Helper class for Stack with Find Middle and Delete Middle operation
-    class  DLLNode {
+    class DLLNode {
         DLLNode prev;
         DLLNode next;
         int data;
@@ -40,6 +43,7 @@ public class StackWithFindMiddle {
      * @param data
      */
     public void push(int data) {
+        logIt("Pushing Element " + data);
         DLLNode newNode = new DLLNode(data);
 
         if (top == null) {
@@ -53,13 +57,14 @@ public class StackWithFindMiddle {
             top = temp.prev;
             size++;
         }
-        if (size % 2 == 0) {
+
+        if (size > 1 && size % 2 != 0) {
             middle = middle.prev;
         }
     }
 
     public int pop() {
-
+        logIt("Popping Element " + top.data);
         // If No Item in stack
         if (top == null) {
             System.out.println("Stack Underflow");
@@ -78,18 +83,61 @@ public class StackWithFindMiddle {
         temp.next.prev = null;
         size--;
         top = temp.next;
-        if (size % 2 == 1) {
+
+        if (size % 2 == 0) {
             middle = middle.next;
         }
         return temp.data;
     }
 
+    public void printStack() {
+        logIt("Middle Element in Stack of size [" + size + "] is ");
+        DLLNode temp = top;
+        while (temp != null) {
+            System.out.print(temp.data);
+            if (temp.data == middle.data) {
+                System.out.println(" <========== middle element");
+            } else {
+                System.out.println();
+            }
+            temp = temp.next;
+        }
+    }
+
     public DLLNode findMiddle() {
+        printStack();
         return middle;
+    }
+
+    public void deleteMiddle() {
+        logIt("Deleting the current middle Element ==>  " + middle.data, true);
+        if (size == 1) {
+            logIt("This is the only node present in the Stack which is " + top.data);
+            --size;
+            top = middle = null;
+        } else {
+            DLLNode prev = middle.prev;
+            DLLNode next = middle.next;
+
+            prev.next = next;
+            next.prev = prev;
+
+            --size;
+
+            if (size % 2 == 0) { // After deletion total items inside Stack is Even.
+                middle = next;
+            } else {
+                middle = prev;
+            }
+
+        }
     }
 
     public static void main(String[] args) {
         StackWithFindMiddle stack = new StackWithFindMiddle();
+
+        // Middle Element [Assuming 0 based index]
+        // int mid = firstElementIndex + (lastElementIndex - firstElementIndex) / 2;
 
         stack.push(11);
         stack.push(22);
@@ -99,8 +147,30 @@ public class StackWithFindMiddle {
         stack.push(66);
         stack.push(77);
 
-        System.out.println("Item popped is " + stack.pop());
-        System.out.println("Item popped is " + stack.pop());
-        System.out.println("Middle Element is " + stack.findMiddle().data);
+        logIt("Middle Element is " + stack.findMiddle().data, true);
+
+        stack.deleteMiddle();
+        logIt("Middle Element is " + stack.findMiddle().data, true);
+
+        stack.deleteMiddle();
+        stack.findMiddle();
+
+        stack.push(88);
+        stack.findMiddle();
+
+        stack.pop();
+        stack.findMiddle();
+
+        stack.pop();
+        stack.findMiddle();
+
+
+//        logIt("Middle Element is " + stack.findMiddle().data, true);
+//        System.out.println("Item popped is " + stack.pop());
+//
+//        logIt("Middle Element is " + stack.findMiddle().data, true);
+//        System.out.println("Item popped is " + stack.pop());
+//
+//        logIt("Middle Element is " + stack.findMiddle().data, true);
     }
 }
