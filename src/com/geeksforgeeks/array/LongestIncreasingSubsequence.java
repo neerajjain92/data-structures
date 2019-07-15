@@ -1,9 +1,14 @@
 package com.geeksforgeeks.array;
 
+import com.util.LogUtil;
+
 public class LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
         int arr[] = {50, 3, 10, 7, 40, 80};
+        System.out.println(getLengthOfLis(arr));
+
+        arr = new int[]{-1, 3, 4, 5, 2, 2, 2, 2};
         System.out.println(getLengthOfLis(arr));
 
         System.out.println("Now checking LIS greater than specific length");
@@ -24,12 +29,14 @@ public class LongestIncreasingSubsequence {
         for (int i = 1; i < arr.length; i++) {
             for (int j = 0; j < i; j++) {
 
-                if (arr[i] > arr[j] && LIS[i] < LIS[j] + 1) {
+                if (arr[i] >= arr[j] && LIS[i] < LIS[j] + 1) {
                     LIS[i] = LIS[j] + 1;
                     actualSequence[i] = j;
                 }
             }
         }
+
+        LogUtil.printArray(actualSequence);
 
         // Find the index of maximum LIS
         int max = Integer.MIN_VALUE;

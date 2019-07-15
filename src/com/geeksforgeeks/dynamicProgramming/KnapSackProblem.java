@@ -23,7 +23,7 @@ public class KnapSackProblem {
 
         for (int i = 0; i < weights.length; i++) { // All Weights
 
-            for (int j = 1; j <= knapSackCapacity; j++) {
+            for (int j = 0; j <= knapSackCapacity; j++) {
 
                 if (i == 0 || j == 0) { // Hypothetical 1'st Row and 1st column to have a base condition
                     calculations[i][j] = 0;

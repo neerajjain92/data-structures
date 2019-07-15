@@ -20,7 +20,7 @@ public class SwapNodesWithoutSwappingData {
 
         System.out.println("Swapping Nodes 10 and 14");
 
-        swapNodes(14,10,linkedListUtil);
+        swapNodes(14, 10, linkedListUtil);
         System.out.println("After Swapping");
 
         linkedListUtil.traverseList();
@@ -36,65 +36,47 @@ public class SwapNodesWithoutSwappingData {
         Boolean nodeAPresent = false;
         Boolean nodeBPresent = false;
 
-        while (nodeA != null && nodeB != null)
-        {
-            if(!nodeAPresent)
-            {
-                if(nodeA.data == A)
-                {
+        while (nodeA != null && nodeB != null) {
+            if (!nodeAPresent) {
+                if (nodeA.data == A) {
                     nodeAPresent = true;
-                }
-                else
-                {
+                } else {
                     prevA = nodeA;
                     nodeA = nodeA.next;
                 }
             }
 
-            if(!nodeBPresent)
-            {
-                if(nodeB.data == B)
-                {
+            if (!nodeBPresent) {
+                if (nodeB.data == B) {
                     nodeBPresent = true;
-                }
-                else
-                {
+                } else {
                     prevB = nodeB;
                     nodeB = nodeB.next;
                 }
             }
 
-            if(nodeAPresent && nodeBPresent)
-            {
+            if (nodeAPresent && nodeBPresent) {
                 break;
             }
         }
 
-        if(nodeAPresent && nodeBPresent)
-        {
-            if(prevA == null)
-            {
+        if (nodeAPresent && nodeBPresent) {
+            if (prevA == null) {
                 linkedListUtil.head = nodeB;
-            }
-            else
-            {
+            } else {
                 prevA.next = nodeB;
             }
-                LinkedListUtil.Node temp = nodeB.next;
-                if(nodeA.next == nodeB) // If Adjacent Nodes
-                {
-                    nodeB.next = nodeA;
-                    nodeA.next = temp;
-                }
-                else
-                {
-                    nodeB.next = nodeA.next;
-                    prevB.next = nodeA;
-                    nodeA.next = temp;
-                }
-        }
-        else
-        {
+            LinkedListUtil.Node temp = nodeB.next;
+            if (nodeA.next == nodeB) // If Adjacent Nodes
+            {
+                nodeB.next = nodeA;
+                nodeA.next = temp;
+            } else {
+                nodeB.next = nodeA.next;
+                prevB.next = nodeA;
+                nodeA.next = temp;
+            }
+        } else {
             System.out.println("Either NodeA or NodeB is missing from the list");
         }
     }

@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
-        System.out.println(getLengthOfLIS(new int[]{ 10, 22, 9, 33, 21, 50, 41, 60 }));
+        System.out.println(getLengthOfLIS(new int[]{10, 22, 9, 33, 21, 50, 41, 60}));
         System.out.println(getLengthOfLIS(new int[]{50, 3, 10, 7, 40, 80}));
         //System.out.println(maxTillNow);
 
@@ -17,70 +17,69 @@ public class LongestIncreasingSubsequence {
 
     }
 
-    public static int maxTillNow=1;
+    public static int maxTillNow = 1;
 
     /**
      * Recursive Solution
+     *
      * @param array
      * @param n
      * @return
      */
-    private static int getLengthOfLIS(int []array, int n){
-            if(n == 1)
-                return 1;
+    private static int getLengthOfLIS(int[] array, int n) {
+        if (n == 1)
+            return 1;
 
-            int res,maxEndingHere = 1;
-            for(int i=1;i<n;i++){
+        int res, maxEndingHere = 1;
+        for (int i = 1; i < n; i++) {
 
-                res = getLengthOfLIS(array, i);
-                if(array[i] > array[i-1] && res+1 > maxEndingHere){
-                    maxEndingHere = res+1;
-                }
+            res = getLengthOfLIS(array, i);
+            if (array[i] > array[i - 1] && res + 1 > maxEndingHere) {
+                maxEndingHere = res + 1;
             }
-
-            if(maxEndingHere > maxTillNow){
-                maxTillNow = maxEndingHere;
-            }
-            return maxEndingHere;
-    }
-
-    public static int getLengthOfLIS(int []array){
-        int []LIS = new int[array.length];
-
-        for(int i=0;i<array.length;i++){
-            LIS[i] = 1;
         }
 
-        for(int i=1;i<array.length;i++){
-            for(int j=0;j<i;j++){
-                if(array[i] > array[j] && LIS[i] < LIS[j]+1 ){
-                    LIS[i] = LIS[j]+1;
+        if (maxEndingHere > maxTillNow) {
+            maxTillNow = maxEndingHere;
+        }
+        return maxEndingHere;
+    }
+
+    public static int getLengthOfLIS(int[] array) {
+        int[] LIS = new int[array.length];
+
+        Arrays.fill(LIS, 1);
+
+        for (int i = 1; i < array.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (array[i] > array[j] && LIS[i] < LIS[j] + 1) {
+                    LIS[i] = LIS[j] + 1;
                 }
             }
         }
         Arrays.sort(LIS);
-        return LIS[LIS.length-1];
+        return LIS[LIS.length - 1];
     }
 
-    public static int getMaxSumIncreasingSubsequence(int []array,int n){
-        int []LIS = new int[n];
+    public static int getMaxSumIncreasingSubsequence(int[] array, int n) {
+        int[] LIS = new int[n];
 
         // Set the LIS for each element
-        for(int i=0;i<array.length;i++){
+        for (int i = 0; i < array.length; i++) {
             LIS[i] = array[i];
         }
 
         // Now calculate the maxSum once
-        for(int i=0;i<n;i++){
-            for(int j=0;j<i;j++){
-                if(array[i] > array[j] && LIS[i] < LIS[j] +array[i]){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (array[i] > array[j] && LIS[i] < LIS[j] + array[i]) {
                     LIS[i] = LIS[j] + array[i];
                 }
             }
         }
 
         Arrays.sort(LIS);
-        return LIS[LIS.length -1];
+        return LIS[LIS.length - 1];
 
     }
 }

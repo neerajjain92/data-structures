@@ -11,7 +11,8 @@ public class LinkedListUtil {
         int data;
         Node next;
         int size;
-        Node down;
+        Node down; // ===> For Flattening Purpose
+
 
         public Node(int data) {
             this.data = data;
@@ -828,22 +829,32 @@ public class LinkedListUtil {
      * the list should be modified to 50->60->10->20->30->40.
      */
     public static void rotateList(Node head, int k) {
-        int count = 0;
+        int count = 1;
         Node temp = head;
-        Node next = null;
-        Node toBeFirstNode = null;
-        while (++count < k) {
+        Node next;
+        Node toBeFirstNode;
+        while (++count <= k) {
             temp = temp.next;
+            if (temp == null) {
+                temp = head;
+            }
         }
         next = temp.next;
         temp.next = null;
+
+        if (next == null) { // This situation is possible when (K is multiple of list size) k ==  (n * size) of the list [1,2,3] k = 3,6,9 ... etc;
+            next = head; // So in that situation list will always come to it's original shape even after multiple rounds of rotation.
+        }
+
         toBeFirstNode = next;
         temp = next;
 
         while (temp.next != null) {
             temp = temp.next;
         }
-        temp.next = head;
+        if (next != head) { // This situation is similar to the comment above, So (k = n * size);
+            temp.next = head; // if that is the case then we shouldn't be appending the second half to the first half, because then it will make go list round and round indefinitely.
+        }
         head = toBeFirstNode;
         printList(head);
     }
@@ -1269,7 +1280,7 @@ public class LinkedListUtil {
         rotateList.append(50);
         rotateList.append(60);
         printList(rotateList.head);
-        rotateList.rotateList(rotateList.head, 4);
+        rotateList.rotateList(rotateList.head, 13);
 
 
         // =======================Let's Flatten the list =================================

@@ -46,4 +46,26 @@ public class CuttingTheRodProblem {
         System.out.println("Used Pieces --->" + usedPieces);
         return usedPieces;
     }
+
+
+    public static void solveCuttingTheRodProblem(int[] piece, int[] price, int lengthOfRod) {
+        int[][] profit = new int[price.length + 1][lengthOfRod + 1];
+
+        // 1st row and 1st column is zero, Dummy Row and column
+
+        for (int i = 1; i < profit.length; i++) {
+            for (int j = 1; j < profit[i].length; j++) {
+
+                if (piece[i - 1] <= j) {
+                    profit[i][j] = Math.max(price[i - 1] + profit[i][j - piece[i - 1]], profit[i - 1][j]);
+                } else {
+                    profit[i][j] = profit[i - 1][j];
+                }
+            }
+        }
+
+        System.out.println(profit[profit.length - 1][lengthOfRod]);
+    }
+
+
 }

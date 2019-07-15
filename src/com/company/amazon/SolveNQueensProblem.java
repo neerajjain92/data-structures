@@ -17,7 +17,7 @@ public class SolveNQueensProblem {
     }
 
     public static void main(String[] args) {
-        solveNQueenProblem(16);
+        solveNQueenProblem(8);
     }
 
     public static void solveNQueenProblem(int noOfQueens) {

@@ -163,7 +163,7 @@ public class MaxHeap {
         // you are asked for the largest 3 elements i.e., k = 3 then your program should print 50, 30 and 23.
 
         List<Integer> kLargestElement = findKLargestElement(new int[]{1, 23, 12, 9, 30, 2, 50}, 3);
-        System.out.print("K Largest Elements are ::::---> ");
+        System.out.print("3 Largest Elements are ::::---> ");
         System.out.println(kLargestElement);
 
     }
