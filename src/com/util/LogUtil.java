@@ -61,4 +61,14 @@ public class LogUtil {
     public static void printList(List list) {
         System.out.println(list);
     }
+
+    public static String getArrayAsString(int[] arr) {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("[");
+        for (int a : arr) {
+            stringBuffer.append(a).append(",");
+        }
+        stringBuffer.append("]");
+        return stringBuffer.toString();
+    }
 }
