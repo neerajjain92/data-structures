@@ -12,8 +12,9 @@ public class CountNegativeIntegersInRowColumnSortedMatrix {
 
     public static int getNegativeNumbersCount(int[][] matrix) {
         int count = findIndexOfFirstPositiveNumberInTheRow(matrix[0], 0, matrix[0].length);
+        int indexOfFirstPositiveNumber = count;
         for (int i = 1; i < matrix.length; i++) {
-            int indexOfFirstPositiveNumber = findIndexOfFirstPositiveNumberInTheRow(matrix[i], 0, count - 1);
+            indexOfFirstPositiveNumber = findIndexOfFirstPositiveNumberInTheRow(matrix[i], 0, indexOfFirstPositiveNumber - 1);
             count += indexOfFirstPositiveNumber;
         }
         return count;

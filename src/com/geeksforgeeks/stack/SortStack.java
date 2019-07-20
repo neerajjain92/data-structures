@@ -56,13 +56,9 @@ public class SortStack {
         if (stack.isEmpty() || stack.peek() < item) {
             stack.push(item);
         } else {
-            if (!stack.isEmpty()) {
-                if (stack.peek() > item) {
-                    Integer popped = stack.pop();
-                    insertAtBottom(stack, item);
-                    stack.push(popped);
-                }
-            }
+            Integer popped = stack.pop();
+            insertAtBottom(stack, item);
+            stack.push(popped);
         }
     }
 

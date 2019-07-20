@@ -43,6 +43,7 @@ public class FindSmallestPositiveNumberMissingFromUnsortedArray {
         // Note: We can also handle the numbers greater than the size of array, by simply ignoring them for processing.
         FindSmallestPositiveMissingNumber(new int[]{1, 3, 7, 6, 8, -1, -10, 15});
         FindSmallestPositiveMissingNumber(new int[]{7, 8, 9, 11, 12});
+        FindSmallestPositiveMissingNumber(new int[]{1,1,1});
     }
 
     public static int FindSmallestPositiveMissingNumber(int[] arr) {

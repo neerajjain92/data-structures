@@ -2,12 +2,78 @@ package com.geeksforgeeks.array;
 
 import java.util.Arrays;
 
+import static com.util.LogUtil.logIt;
+import static com.util.LogUtil.printArray;
 import static java.lang.Math.abs;
 
+@SuppressWarnings("Duplicates")
 public class FindSmallestPositiveNumberMissingFromUnsortedArray {
 
     public static void main(String[] args) {
-        findSmallestPositiveUtil(new int[]{2, 3, 7, 6, 8, -1, -10, 15});
+//        findSmallestPositiveUtil(new int[]{2, 3, 7, 6, 8, -1, -10, 15});
+
+        // Another approach.
+        /**
+         * This is taking in assumption that all elements in the array are < size of array.
+         * Traverse array from Left to Right
+         * and ensure every positive value is at it's original index
+         *
+         * Assuming Array index start from 1 instead of 0
+         * So for
+         * ---------------
+         * 3 | 4 | -1 | 1
+         * ---------------
+         * (1) (2) (3)  (4)
+         * after ensuring the output should be
+         * ---------------
+         * 1 | -1 | 3 | 4
+         * ---------------
+         * (1) (2) (3)  (4)
+         *
+         * Now just traverse the array again and compare `index != arr[index]` that's our answer.
+         *
+         * Note: We can also handle the numbers greater than the size of array, by simply ignoring them for processing.
+         *
+         */
+        findSmallestPosiiveMissingNumber(new int[]{3, 4, -1, 1});
+        findSmallestPosiiveMissingNumber(new int[]{1, 2, 0});
+        findSmallestPosiiveMissingNumber(new int[]{4, 4, -1, 4});
+
+        // Testing Note
+        // Note: We can also handle the numbers greater than the size of array, by simply ignoring them for processing.
+        findSmallestPosiiveMissingNumber(new int[]{1, 3, 7, 6, 8, -1, -10, 15});
+        findSmallestPosiiveMissingNumber(new int[]{7,8,9,11,12});
+    }
+
+    public static int findSmallestPosiiveMissingNumber(int[] arr) {
+        logIt("Smallest Positive Missing Number in ", true);
+        printArray(arr);
+
+        for (int i = 0; i < arr.length; ) {
+            // We have to take care of special case when we have duplicates
+            // For Example with Input :  4	4	-1	4
+            if (arr[i]-1 < arr.length && arr[i] > 0 && arr[i] != i + 1 && arr[i] != arr[arr[i] - 1]) {
+                swap(arr, i, arr[i] - 1);
+            } else {
+                i++;
+            }
+        }
+
+        // Now let's traverse and find the answer
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != i + 1) {
+                System.out.println(i + 1);
+                return i + 1;
+            }
+        }
+        System.out.println("No missing number");
+        return -1;
+    }
+
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
     public static void findSmallestPositiveUtil(int[] arr) {

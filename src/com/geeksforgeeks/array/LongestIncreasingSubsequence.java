@@ -2,6 +2,8 @@ package com.geeksforgeeks.array;
 
 import com.util.LogUtil;
 
+import java.util.Arrays;
+
 public class LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
@@ -20,9 +22,10 @@ public class LongestIncreasingSubsequence {
         int[] LIS = new int[arr.length];
         int[] actualSequence = new int[arr.length];
 
+        Arrays.fill(LIS, 1);
+
         // Initially every index has LIS = 1
         for (int i = 0; i < arr.length; i++) {
-            LIS[i] = 1;
             actualSequence[i] = i;
         }
 

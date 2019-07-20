@@ -1,5 +1,7 @@
 package com.geeksforgeeks.array;
 
+import com.util.LogUtil;
+
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -14,7 +16,6 @@ public class ArrayRotation {
         int arr[] = {1, 2, 3, 4, 5, 6, 7};
         printArray(arr);
         rotateArray(arr, 2, 7);
-        printArray(arr);
 
 //        cyclicRotate(arr);
 //        printArray(arr);
@@ -54,20 +55,30 @@ public class ArrayRotation {
      * @param n
      */
     public static void rotateArray(int[] input, int d, int n) {
-        reverseArray(input, 0, d);
+        reverseArray(input, 0, d - 1);
+        LogUtil.logIt("After Reversing 1st Half", true);
         printArray(input);
-        reverseArray(input, d, n);
+        reverseArray(input, d, n - 1);
+        LogUtil.logIt("After Reversing 2nd Half", true);
         printArray(input);
-        reverseArray(input, 0, n);
+        reverseArray(input, 0, n - 1);
+        LogUtil.logIt("Solution : Left Rotate Array by  " + d, true);
         printArray(input);
     }
 
     public static void reverseArray(int[] data, int start, int end) {
-        int temp = 0;
-        for (int i = start, tempEnd = end - 1; i < (start + end) / 2; i++, tempEnd--) {
-            temp = data[i];
-            data[i] = data[tempEnd];
-            data[tempEnd] = temp;
+        int temp;
+//        for (int i = start, tempEnd = end - 1; i < (start + end) / 2; i++, tempEnd--) {
+//            temp = data[i];
+//            data[i] = data[tempEnd];
+//            data[tempEnd] = temp;
+//        }
+        while (start < end) {
+            temp = data[end];
+            data[end] = data[start];
+            data[start] = temp;
+            start++;
+            end--;
         }
     }
 
