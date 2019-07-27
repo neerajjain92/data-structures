@@ -5,6 +5,12 @@ public class LongestPalindromicParenthesesSubstring {
     public static void main(String[] args) {
         String input = "((()(()((()))";
         System.out.println(getLongestPalindromicSubstring(input));
+        input = "((()";
+        System.out.println(getLongestPalindromicSubstring(input));
+        input = ")()())";
+        System.out.println(getLongestPalindromicSubstring(input));
+        input = "()(()))))";
+        System.out.println(getLongestPalindromicSubstring(input));
     }
 
     @SuppressWarnings("Duplicates")

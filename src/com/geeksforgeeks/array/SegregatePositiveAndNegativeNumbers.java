@@ -4,7 +4,7 @@ public class SegregatePositiveAndNegativeNumbers {
 
     public static void main(String[] args) {
         int arr[] = {-1, 2, -3, 4, 5, 6, -7, 8, 9};
-        rearrange(arr);
+        segregate(arr);
         ArrayRotation.printArray(arr);
 
         arr = new int[]{-12, 11, -13, -5, 6, -7, 5, -3, -6};
@@ -36,6 +36,23 @@ public class SegregatePositiveAndNegativeNumbers {
             rearrangeToPreserveOrder(arr, low, mid);
             rearrangeToPreserveOrder(arr, mid + 1, high);
             modifiedMerge(arr, low, mid, high);
+        }
+    }
+
+    public static void segregate(int[] arr) {
+        int L = 0;
+        int R = arr.length - 1;
+
+        while (L < R) {
+            while (arr[L] < 0) {
+                L++;
+            }
+            while (arr[R] > 0) {
+                R--;
+            }
+            if(L < R) {
+                QuickSort.swap(arr, L, R);
+            }
         }
     }
 

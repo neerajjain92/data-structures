@@ -1,8 +1,10 @@
 package com.datastructures.array;
 
-import java.util.HashMap;
+import com.util.LogUtil;
+
+import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Map;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -77,16 +79,19 @@ public class ArrayUtil {
     }
 
     public static void main(String[] args) {
-        int M = 4;
-        int N = 4;
-        int a[][] = {{1, 2, 3, 4},
-                {5, 6, 7, 8},
-                {9, 10, 11, 12},
-                {13, 14, 15, 16}
-        };
-        print2DArray(a,M,N);
-        inplanceRotateMatrix(a,4);
-        print2DArray(a,M,N);
+//        int M = 4;
+//        int N = 4;
+//        int a[][] = {{1, 2, 3, 4},
+//                {5, 6, 7, 8},
+//                {9, 10, 11, 12},
+//                {13, 14, 15, 16}
+//        };
+//        print2DArray(a,M,N);
+//        inplanceRotateMatrix(a,4);
+//        print2DArray(a,M,N);
+
+        LogUtil.printArray(plusOne(new int[]{9, 9, 9, 9, 9}));
+        LogUtil.printArray(plusOne(new int[]{0, 3, 7, 6, 4, 0, 5, 5, 5}));
 
         //printArrayInSpiralForm(a, M, N);
 
@@ -272,6 +277,7 @@ public class ArrayUtil {
     }
 
     public static Set<String> distinctPalindrome = new HashSet<>();
+
     public static void getDistinctPalindrome(String inputString) {
         char[] input = inputString.toCharArray();
         int low = 0;
@@ -284,7 +290,7 @@ public class ArrayUtil {
             high = i;
 
             while (low >= 0 && high < input.length && input[low] == input[high]) {
-                distinctPalindrome.add(inputString.substring(low,low + (high-low+1)));
+                distinctPalindrome.add(inputString.substring(low, low + (high - low + 1)));
                 low--;
                 high++;
             }
@@ -294,7 +300,7 @@ public class ArrayUtil {
             high = i + 1;
 
             while (low >= 0 && high < input.length && input[low] == input[high]) {
-                distinctPalindrome.add(inputString.substring(low,low + (high-low+1)));
+                distinctPalindrome.add(inputString.substring(low, low + (high - low + 1)));
                 low--;
                 high++;
             }
@@ -304,34 +310,79 @@ public class ArrayUtil {
 
     /**
      * http://www.geeksforgeeks.org/?p=753
+     *
      * @param n
      * @return
      */
-    public static int getCountUglyNumbers(int n){
-        int i=1;
+    public static int getCountUglyNumbers(int n) {
+        int i = 1;
         int count = 1;
-        while (n > count){
+        while (n > count) {
             i++;
-            if(isUgly(i)){
+            if (isUgly(i)) {
                 count++;
             }
         }
         return i;
     }
 
-    private static Boolean isUgly(int number){
+    private static Boolean isUgly(int number) {
 
-        number = maxDivide(number,2);
-        number = maxDivide(number,3);
-        number = maxDivide(number,5);
+        number = maxDivide(number, 2);
+        number = maxDivide(number, 3);
+        number = maxDivide(number, 5);
 
-        return number==1 ? true : false;
+        return number == 1 ? true : false;
     }
 
-    private static int maxDivide(int a,int b){
-        while (a%b==0){
-            a = a/b;
+    private static int maxDivide(int a, int b) {
+        while (a % b == 0) {
+            a = a / b;
         }
         return a;
     }
+
+
+    public static int[] plusOne(int[] arr) {
+
+        int carry = 1;
+        int tempSum = 0;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            tempSum = arr[i] + carry;
+
+            if (tempSum > 9) {
+                carry = tempSum / 10;
+                arr[i] = tempSum % 10;
+            } else {
+                carry = 0;
+                arr[i] = tempSum;
+            }
+        }
+
+        if (carry != 0) {
+            // check if carry still exist, then we might have to add one more array block
+            int[] newArray = new int[arr.length + 1];
+
+            newArray[0] = carry;
+
+            for (int i = 0; i < arr.length; i++) {
+                newArray[i + 1] = arr[i];
+            }
+            return newArray;
+        }
+
+        int pointer = 0;
+        int totalInsignificantZeros = 0;
+        while (arr[pointer++]==0) {
+            totalInsignificantZeros++;
+        }
+
+        int []tempArr = new int[arr.length-totalInsignificantZeros];
+        for(int i=0;i<tempArr.length;i++) {
+            tempArr[i] = arr[i+totalInsignificantZeros];
+        }
+
+        return tempArr;
+    }
+
 }

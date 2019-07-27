@@ -3,9 +3,9 @@ package com.geeksforgeeks.array;
 public class WaveSort {
 
     public static void main(String[] args) {
-//        int arr[] = {10, 5, 6, 3, 2, 20, 100, 80};
+        int arr[] = {10, 5, 6, 3, 2, 20, 100, 80};
 //        int  arr[] = {20, 10, 8, 6, 4, 2};
-        int  arr[] = {2, 4, 6, 8, 10, 20};
+//        int  arr[] = {2, 4, 6, 8, 10, 20};
         sort(arr);
         ArrayRotation.printArray(arr);
     }

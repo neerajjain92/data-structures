@@ -1,7 +1,5 @@
 package com.company.amazon;
 
-import com.geeksforgeeks.array.ArrayRotation;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -43,30 +41,36 @@ public class TrappingRainWaterProblem {
         System.out.println("\n is " + calculate(arr));
     }
 
-    private static int calculate(Integer[] arr) {
-        int leftMax = 0;
-        int rightMax = 0;
-        int left = 0;
-        int right = arr.length - 1;
-        int totalWaterTrapped = 0;
+    private static int calculate(Integer[] height) {
+        int LEFT_TOWER_INDEX = 0;
+        int RIGHT_TOWER_INDEX = height.length - 1;
+        int MAXIMUM_TOWER_IN_LEFT = 0;
+        int MAXIMUM_TOWER_IN_RIGHT = 0;
+        int WATER_TRAPPED = 0;
 
-        while (left <= right) {
+        while (LEFT_TOWER_INDEX < RIGHT_TOWER_INDEX) {
 
-            if (arr[left] < arr[right]) { // Left wall is smaller than right wall
-                if (arr[left] > leftMax) { // Update left Max
-                    leftMax = arr[left];
+            // Find Out which tower is big
+            if (height[LEFT_TOWER_INDEX] < height[RIGHT_TOWER_INDEX]) {
+
+                if (MAXIMUM_TOWER_IN_LEFT < height[LEFT_TOWER_INDEX]) {
+                    MAXIMUM_TOWER_IN_LEFT = height[LEFT_TOWER_INDEX];
                 } else {
-                    totalWaterTrapped += leftMax - arr[left++];
+                    // Trap the water;
+                    WATER_TRAPPED += MAXIMUM_TOWER_IN_LEFT - height[LEFT_TOWER_INDEX];
                 }
-            } else { // Right wall is smaller than left wall
-                if (arr[right] > rightMax) { // Update left Max
-                    rightMax = arr[left];
+                LEFT_TOWER_INDEX++;
+            } else {
+                if (MAXIMUM_TOWER_IN_RIGHT < height[RIGHT_TOWER_INDEX]) {
+                    MAXIMUM_TOWER_IN_RIGHT = height[RIGHT_TOWER_INDEX];
                 } else {
-                    totalWaterTrapped += rightMax - arr[right--];
+                    // Trap the water;
+                    WATER_TRAPPED += MAXIMUM_TOWER_IN_RIGHT - height[RIGHT_TOWER_INDEX];
                 }
+                RIGHT_TOWER_INDEX--;
             }
         }
-        return totalWaterTrapped;
+        return WATER_TRAPPED;
     }
 
     private static void printStructure(Integer[] arr) {

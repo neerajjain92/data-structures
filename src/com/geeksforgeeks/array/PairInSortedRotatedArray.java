@@ -4,7 +4,8 @@ package com.geeksforgeeks.array;
  * Input: arr[] = {11, 15, 6, 8, 9, 10}, x = 16
  * Output: true
  * <p>
- * This is same as finding a pair in sorted array but the min and max element are not in first and last position but rotated we need to find it and then apply same logic to find pair
+ * This is same as finding a pair in sorted array but the min and max element are not in first and last position
+ * but rotated we need to find it and then apply same logic to find pair
  */
 public class PairInSortedRotatedArray {
 

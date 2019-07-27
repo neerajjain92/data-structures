@@ -1,5 +1,7 @@
 package com.geeksforgeeks.array.sliding_window;
 
+import com.util.LogUtil;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,6 +12,10 @@ public class LengthOfLongestSubStringWithoutRepeatingCharacters {
         findLongestSubString("GEEKSFORGEEKS");
         findLongestSubString("ABDEFGABEF");
         findLongestSubString("AAAA");
+
+        findLongestSubStringWithNonRepeatingCharacters("GEEKSFORGEEKS");
+        findLongestSubStringWithNonRepeatingCharacters("ABDEFGABEF");
+        findLongestSubStringWithNonRepeatingCharacters("AAAA");
     }
 
     public static void findLongestSubString(String str) {
@@ -44,5 +50,45 @@ public class LengthOfLongestSubStringWithoutRepeatingCharacters {
             System.out.print(c + ",");
         }
         System.out.println();
+    }
+
+    public static void findLongestSubStringWithNonRepeatingCharacters(String str) {
+        LogUtil.logIt("findLongestSubStringWithNonRepeatingCharacters in New way 23rd July 2019 inside " + str, true);
+        char[] arr = str.toCharArray();
+        List<Character> allVisitedCharacters = new ArrayList<>();
+        int Left = 0;
+        int Right = 0;
+        int maximumWindowLeft = 0;
+        int maximumWindowRight = 0;
+        int MAX_WINDOW_LENGTH = 0;
+        char repeatedCharacter;
+
+        while (Right < arr.length) {
+            if (!allVisitedCharacters.contains(arr[Right])) {
+                allVisitedCharacters.add(arr[Right++]);
+            } else {
+                // Means Right is standing on a character which is already present in the window.
+                // So first let's check our window size
+                repeatedCharacter = arr[Right];
+                if (MAX_WINDOW_LENGTH < Right - Left) {
+                    MAX_WINDOW_LENGTH = Right - Left;
+                    maximumWindowLeft = Left;
+                    maximumWindowRight = Right;
+                }
+
+                // Now Let's traverse leftPointer upto the point  where we find our repeated character
+                while (arr[Left] != repeatedCharacter) {
+                    allVisitedCharacters.remove((Object) arr[Left]);
+                    Left++;
+                }
+                if (arr[Left] == repeatedCharacter) {
+                    allVisitedCharacters.remove((Object) repeatedCharacter);
+                    Left++;
+                }
+            }
+        }
+
+        char[] longestSubString = Arrays.copyOfRange(arr, maximumWindowLeft, maximumWindowRight);
+        System.out.println(LogUtil.getCharArrayAsString(longestSubString));
     }
 }

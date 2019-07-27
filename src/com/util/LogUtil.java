@@ -71,4 +71,14 @@ public class LogUtil {
         stringBuffer.append("]");
         return stringBuffer.toString();
     }
+
+    public static String getCharArrayAsString(char[] arr) {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("[");
+        for (char a : arr) {
+            stringBuffer.append(a).append(",");
+        }
+        stringBuffer.append("]");
+        return stringBuffer.toString();
+    }
 }

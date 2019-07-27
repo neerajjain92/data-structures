@@ -44,19 +44,19 @@ public class GenerateBalancedParenthesis {
                                                        List<String> allPairs) {
 
         // Base Case 1
-        // When we have no left or right paran count left
+        // When we have no left or right paren count left
         if (leftParamNeeded == 0 && rightParamNeeded == 0) {
             allPairs.add(currentParanInProcess);
             return;
         }
 
-        // If we still have leftParanNeeded, lets traverse left side
+        // If we still have leftParenNeeded, lets traverse left side
         if (leftParamNeeded > 0) {
             generateParenthesisRecursively(leftParamNeeded - 1, rightParamNeeded,
                     currentParanInProcess + "(", allPairs);
         }
 
-        // We can only close the paranthesis if we have any left paran open.
+        // We can only close the parenthesis if we have any left paren open.
         if (rightParamNeeded > leftParamNeeded) {
             generateParenthesisRecursively(leftParamNeeded, rightParamNeeded - 1,
                     currentParanInProcess + ")", allPairs);

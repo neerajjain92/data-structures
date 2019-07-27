@@ -2,13 +2,19 @@ package com.geeksforgeeks.array;
 
 import java.util.*;
 
+import static com.util.LogUtil.getArrayAsString;
+import static com.util.LogUtil.logIt;
+
 public class SortArrayAbsoluteDifference {
 
     public static void main(String[] args) {
 //        int arr[] = {10, 5, 3, 9, 2};
-        int arr[] = {1,2,3,4,5};
+        int arr[] = {1, 2, 3, 4, 5};
         sortArrayAsAbsoluteDifference(arr, 6);
         ArrayRotation.printArray(arr);
+
+        arr = new int[]{10, 5, 3, 9, 2};
+        sortArrayAsAbsoulteDifferenceWithNoExtraSpace(arr, 7);
     }
 
     private static void sortArrayAsAbsoluteDifference(int[] arr, int x) {
@@ -35,5 +41,17 @@ public class SortArrayAbsoluteDifference {
                 arr[counter++] = member;
             }
         }
+    }
+
+    private static void sortArrayAsAbsoulteDifferenceWithNoExtraSpace(int[] arr, int x) {
+        logIt("Sorting Array " + getArrayAsString(arr) + " based on Absolute difference with " + x);
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (Math.abs(arr[j] - x) > Math.abs(arr[j + 1] - x)) {
+                    QuickSort.swap(arr, j, j + 1);
+                }
+            }
+        }
+        logIt("After Sorting Array is " + getArrayAsString(arr));
     }
 }
