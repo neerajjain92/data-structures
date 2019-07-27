@@ -1,4 +1,4 @@
-package com.interviewbit;
+package com.interviewbit.array;
 
 import com.util.LogUtil;
 
