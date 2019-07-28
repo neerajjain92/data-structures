@@ -18,14 +18,14 @@ public class CheckIfPointFormSquare {
         p4 = new Point(50, 20);
         System.out.println(isSquare(p1, p2, p3, p4));
 
-        // Random Test Case fail
+        // Random AmazonPrimeOrdersSorting Case fail
         p1 = new Point(1, 1);
         p2 = new Point(-1, 1);
         p3 = new Point(-1, 1);
         p4 = new Point(-1, 1);
         System.out.println(isSquare(p1, p2, p3, p4));
 
-        // Random Test Case Pass
+        // Random AmazonPrimeOrdersSorting Case Pass
         p1 = new Point(1, 1);
         p2 = new Point(-1, 1);
         p3 = new Point(-1, -1);

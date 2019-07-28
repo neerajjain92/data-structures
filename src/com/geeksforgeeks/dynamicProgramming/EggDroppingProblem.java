@@ -17,7 +17,7 @@ public class EggDroppingProblem {
         System.out.println("Minimum No of Tries is " + getMinimumNoOfTries(2, 36));
         System.out.println("Minimum No of Tries is " + getMinimumNoOfTries(2, 50));
 
-        // Test using second approach
+        // AmazonPrimeOrdersSorting using second approach
         LogUtil.logIt("Testing Egg Dropping using second approach, recurse the way", true);
         dropTheEgg(3, 6);
         dropTheEgg(2, 100);

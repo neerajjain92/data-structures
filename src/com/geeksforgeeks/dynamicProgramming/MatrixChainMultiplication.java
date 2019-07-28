@@ -43,7 +43,7 @@ public class MatrixChainMultiplication {
 
             }
         }
-        System.out.print("Test Case ==>");
+        System.out.print("AmazonPrimeOrdersSorting Case ==>");
         printArray(arr);
         print2DArray(operations);
 //        print2DArray(brackets);

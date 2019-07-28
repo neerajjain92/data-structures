@@ -121,7 +121,7 @@ public class ArrayUtil {
 //
 //        //print2DArray(array, 3, 4);
 //
-//        // Test Case 1
+//        // AmazonPrimeOrdersSorting Case 1
 //        int arr[][] =
 //                {
 //                        {1, 2, 3, 4},

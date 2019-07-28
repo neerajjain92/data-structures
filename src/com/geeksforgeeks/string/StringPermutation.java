@@ -1,5 +1,6 @@
 package com.geeksforgeeks.string;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class StringPermutation {
 
     public static void main(String[] args) {
 
-        String input = "MARTY";
+        String input = "MARTYNEERAJ";
 //        char[] result = new char[input.length()];
 //        int level = 0;
 //        List<String> allPermutations = new LinkedList<>();
@@ -105,7 +106,5 @@ public class StringPermutation {
             str = charAtI + str;
             choosen = new StringBuffer(choosen).deleteCharAt(choosen.length() - 1).toString();
         }
-
-
     }
 }
