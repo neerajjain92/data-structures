@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed499735-fb6e-4a90-9656-1ffccd36e4bb" name="Default" comment="FindSmallestPositiveMissingNumberFindSmallestPositiveMissingNumber">
-      <change afterPath="$PROJECT_DIR$/src/com/company/amazon/AmazonFreshDeliveryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/amazon/AmazonPrimeOrdersSorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/CountElementOccurence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/ExcelColumnNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/ExcelColumnTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/GridUniquePaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/NumbersOfLengthNAndValueLessThanK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/PalindromeInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/PowerOfTwoIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/math/RearrangeArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Encryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/CheckIfPointFormSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazon/CheckIfPointFormSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/RatNdMazeProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazon/RatNdMazeProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MatrixChainMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MatrixChainMultiplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/string/StringPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/string/StringPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,19 +43,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="453" column="25" lean-forward="true" selection-start-line="453" selection-start-column="25" selection-end-line="453" selection-end-column="25" />
+            <state relative-caret-position="798">
+              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="611">
+              <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java">
+        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="273">
+              <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,12 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DoublyLinkedList</find>
-      <find>convertBinaryTreeIntoCircularDoublyLinkedList</find>
-      <find>predecessor</find>
-      <find>convertTo</find>
-      <find>conv</find>
-      <find>1 , 3 , 4 , 6 , 7 , 8 , 10 , 13 , 14 ,</find>
       <find>insertIntoBST</find>
       <find>infix</find>
       <find>Middle</find>
@@ -111,6 +113,12 @@
       <find>1,</find>
       <find>Permutation</find>
       <find>grouping</find>
+      <find>addEdge</find>
+      <find>printGr</find>
+      <find>toArra</find>
+      <find>(ArrayList&lt;Integer&gt;)</find>
+      <find>902</find>
+      <find>90</find>
     </findStrings>
     <replaceStrings>
       <replace>public</replace>
@@ -141,14 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/LongestIncreasingSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/MaximumSumWithArrayRotation.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/Median__Of_Two_Sorted_Arrays_With_Explanation.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindMinimumLengthSubArrayWithSumK.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/FindMissingNmberInIncreasingSequence.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/FindMissingNumberInIncreasingSequence.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/TrappingRainWaterProblem.java" />
         <option value="$PROJECT_DIR$/src/com/company/amazon/LongestPalindromicParenthesesSubstring.java" />
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/LongestValidParenthesisSubstring.java" />
         <option value="$PROJECT_DIR$/src/com/geeksforgeeks/stack/LongestValidParenthesisSubstring.java" />
@@ -192,6 +192,14 @@
         <option value="$PROJECT_DIR$/src/com/company/amazon/AmazonPrimeOrdersSorting.java" />
         <option value="$PROJECT_DIR$/src/com/util/LogUtil.java" />
         <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/CountElementOccurence.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" />
+        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java" />
+        <option value="$PROJECT_DIR$/src/Encryptor.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java" />
+        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java" />
+        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java" />
       </list>
     </option>
   </component>
@@ -214,9 +222,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -303,8 +311,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,45 +330,6 @@
               <item name="data-structures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="AmazonPrimeOrdersSorting.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="geeksforgeeks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="geeksforgeeks" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
@@ -433,43 +402,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CountElementOccurence">
+  <component name="RunManager" selected="Application.SortedInsertPosition">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazonFreshDeliveryService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.amazon.AmazonFreshDeliveryService" />
+    <configuration name="Encryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Encryptor" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.amazon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazonPrimeOrdersSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.amazon.AmazonPrimeOrdersSorting" />
-      <module name="data-structures" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.amazon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountElementOccurence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binary_search.CountElementOccurence" />
+    <configuration name="FindMinimumElementInRotatedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binary_search.FindMinimumElementInRotatedArray" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -482,13 +431,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.graph.GraphUtil" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binary_search.MatrixSearch" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.graph.*" />
+          <option name="PATTERN" value="com.interviewbit.binary_search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -496,13 +453,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RearrangeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewbit.math.RearrangeArray" />
+    <configuration name="SortedInsertPosition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binary_search.SortedInsertPosition" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.interviewbit.math.*" />
+          <option name="PATTERN" value="com.interviewbit.binary_search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -542,19 +499,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RearrangeArray" />
-      <item itemvalue="Application.GraphUtil" />
-      <item itemvalue="Application.AmazonPrimeOrdersSorting" />
-      <item itemvalue="Application.AmazonFreshDeliveryService" />
-      <item itemvalue="Application.CountElementOccurence" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Encryptor" />
+      <item itemvalue="Application.FindMinimumElementInRotatedArray" />
+      <item itemvalue="Application.MatrixSearch" />
+      <item itemvalue="Application.SortedInsertPosition" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountElementOccurence" />
-        <item itemvalue="Application.AmazonFreshDeliveryService" />
-        <item itemvalue="Application.AmazonPrimeOrdersSorting" />
-        <item itemvalue="Application.GraphUtil" />
-        <item itemvalue="Application.RearrangeArray" />
+        <item itemvalue="Application.SortedInsertPosition" />
+        <item itemvalue="Application.MatrixSearch" />
+        <item itemvalue="Application.FindMinimumElementInRotatedArray" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Encryptor" />
       </list>
     </recent_temporary>
   </component>
@@ -708,7 +665,9 @@
       <workItem from="1563991236133" duration="6511000" />
       <workItem from="1564030319723" duration="23000" />
       <workItem from="1564075319699" duration="7838000" />
-      <workItem from="1564164328225" duration="31202000" />
+      <workItem from="1564164328225" duration="34628000" />
+      <workItem from="1564411176453" duration="6374000" />
+      <workItem from="1564424265919" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Problems">
       <created>1520156000626</created>
@@ -861,7 +820,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576442000" />
+    <option name="totallyTimeSpent" value="588919000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -873,10 +832,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16300367" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16300367" />
       <window_info id="Structure" order="1" weight="0.24969475" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -885,7 +844,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.41326532" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.41326532" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.39489797" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -2138,6 +2097,36 @@
           <properties />
           <option name="timeStamp" value="489" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="491" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -2146,6 +2135,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/data_structures$SortedInsertPosition.ic" NAME="SortedInsertPosition Coverage Results" MODIFIED="1564427168868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.interviewbit.binary_search.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/data_structures$CoinChangeMinimumNoOfCoinsRequired.ic" NAME="CoinChangeMinimumNoOfCoinsRequired Coverage Results" MODIFIED="1557650821557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.geeksforgeeks.dynamicProgramming.*</FILTER>
     </SUITE>
@@ -2180,148 +2172,53 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>System.out.println(area);</expression-string>
+        <expression-string>a.get(148)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo matches&quot;.matches(&quot;&quot;)</expression-string>
+        <expression-string>a.get(mid)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo matches&quot;.matches(&quot;.*[a-zA-Z]+.*&quot;)</expression-string>
+        <expression-string>a.get(mid+1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo matches&quot;.matches(&quot;[a-zA-Z]?&quot;)</expression-string>
+        <expression-string>a.get(149)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo matches&quot;.matches(&quot;[a-zA-Z]&quot;)</expression-string>
+        <expression-string>a.get(147)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo matches&quot;.matches(&quot;^[a-zA-Z].*&quot;)</expression-string>
+        <expression-string>a.get(146)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo matches&quot;.matches(&quot;^[a-zA-Z]*&quot;)</expression-string>
+        <expression-string>a.get(145)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo matches&quot;.matches(&quot;^[a-zA-Z]*$&quot;)</expression-string>
+        <expression-string>a.get(144)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;echo&quot;.matches(&quot;^[a-zA-Z]*$&quot;)</expression-string>
+        <expression-string>a.get(mid+2)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/SubSetOfArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/ThreeWayPartitioning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/WaveSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindMinimumLengthSubArrayWithSumK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindZerosToBeFlipped_Sliding_Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/LengthOfLongestSubStringWithoutRepeatingCharacters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MaximumNoOfZerosByFlippingOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="375" column="33" selection-start-line="375" selection-start-column="33" selection-end-line="375" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/array/CurrencyWordConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1572">
-          <caret line="1492" column="26" selection-start-line="1492" selection-start-column="12" selection-end-line="1492" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MinimumWindowSubstring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/LongestPalindromicParenthesesSubstring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/BalancedParentheses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2448,13 +2345,6 @@
             <element signature="e#1115#1116#0" expanded="true" />
             <element signature="e#1160#1161#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="337" column="25" selection-start-line="337" selection-start-column="25" selection-end-line="337" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -2621,16 +2511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/CountElementOccurence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/interviewbit/array/MaxNonNegativeSubArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-447">
@@ -2657,15 +2537,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="453" column="25" lean-forward="true" selection-start-line="453" selection-start-column="25" selection-end-line="453" selection-end-column="25" />
+        <state relative-caret-position="222">
+          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="603">
+          <caret line="134" column="26" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/LinkedTransferQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="1342" column="19" selection-start-line="1342" selection-start-column="19" selection-end-line="1342" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="269" column="32" selection-start-line="269" selection-start-column="32" selection-end-line="269" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="338" column="29" lean-forward="true" selection-start-line="338" selection-start-column="29" selection-end-line="338" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar!/com/sun/crypto/provider/CipherCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="296" column="18" lean-forward="true" selection-start-line="296" selection-start-column="18" selection-end-line="296" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar!/com/sun/crypto/provider/AESCipher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar!/javax/crypto/Cipher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="667" selection-start-line="667" selection-end-line="667" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/CountElementOccurence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Encryptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="29" column="81" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding>
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/security/SecureRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="531" column="18" selection-start-line="531" selection-start-column="18" selection-end-line="531" selection-end-column="18" />
+          <folding>
+            <element signature="e#19068#19069#0" expanded="true" />
+            <element signature="e#19135#19136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
