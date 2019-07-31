@@ -13,8 +13,8 @@ This is the collection of algorithms, data structures and Interview Questions wi
 
 ### Interview Bit Problems 
 - :computer: [Array](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/array)
-- :computer: [Math](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/math)
-- :computer: [Binary Search](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/binary_search)
+- :heavy_plus_sign: :heavy_multiplication_x: [Math](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/math)
+- :arrows_counterclockwise: [Binary Search](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/binary_search)
 
 ### COMPANY PREP
 - :fire: [AMAZON INTERVIEW QUESTIONS](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/amazon)
