@@ -11,6 +11,11 @@ This is the collection of algorithms, data structures and Interview Questions wi
 - :tophat: [String](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/string)
 - :8ball: [Tree](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/tree)
 
+### Interview Bit Problems 
+- :computer: [Array](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/array)
+- :computer: [Math](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/math)
+- :computer: [Binary Search](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/binary_search)
+
 ### COMPANY PREP
 - :fire: [AMAZON INTERVIEW QUESTIONS](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/amazon)
 - :octocat: [Near Buy Interview Questions](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/nearbuy)
