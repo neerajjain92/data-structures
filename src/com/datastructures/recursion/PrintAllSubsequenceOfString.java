@@ -17,8 +17,8 @@ import com.util.LogUtil;
  */
 public class PrintAllSubsequenceOfString {
     public static void main(String[] args) {
-//        printAllSubsequence("abcd", "");
-        printAllSubString("nitin");
+        printAllSubsequence("abcd", "");
+//        printAllSubString("nitin");
     }
 
     public static void printAllSubsequence(String prefix, String suffix) {

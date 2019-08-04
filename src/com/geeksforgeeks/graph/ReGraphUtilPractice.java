@@ -106,6 +106,71 @@ public class ReGraphUtilPractice {
         }
     }
 
+    private static void findStronglyConnectedComponents(Graph graph) {
+        Stack<Integer> vertexSortedInFinishOrderOfTheirTime = new Stack<>();
+        boolean[] visited = new boolean[graph.V];
+
+        // Step 1 : Do DFS and store the node in Stack based on their finish time
+        for (int source = 0; source < graph.V; source++) {
+            if (!visited[source]) {
+                dfsForSCC(source, visited, vertexSortedInFinishOrderOfTheirTime, graph.adjacentListArray, false);
+            }
+        }
+
+        // STEP 2: Reverse the graph
+        reverseGraph(graph);
+
+        // Step 3: Now pop the item from stack and doDFS
+        visited = new boolean[graph.V];
+
+        while (!vertexSortedInFinishOrderOfTheirTime.isEmpty()) {
+            int popped = vertexSortedInFinishOrderOfTheirTime.pop();
+            if (!visited[popped]) {
+                dfsForSCC(popped, visited, null, graph.adjacentListArray, true);
+                newLine();
+            }
+        }
+    }
+
+    private static void reverseGraph(Graph graph) {
+        LinkedList<Integer>[] adjacentListArrNew = new LinkedList[graph.V];
+        // Initialize this new array
+        for (int i = 0; i < graph.V; i++) {
+            adjacentListArrNew[i] = new LinkedList<>();
+        }
+
+        // Now let's actually reverse the edges
+        for (int i = 0; i < graph.V; i++) {
+            // We are taking each vertex from original graph
+            // and reversing the edges
+            for (int vertex : graph.adjacentListArray[i]) {
+                adjacentListArrNew[vertex].add(i);
+            }
+        }
+        graph.adjacentListArray = adjacentListArrNew;
+    }
+
+
+    private static void dfsForSCC(int source, boolean[] visited,
+                                  Stack<Integer> vertexSortedInFinishOrderOfTheirTime,
+                                  LinkedList<Integer>[] adjacentListArray, Boolean shouldPrint) {
+        visited[source] = true;
+        if (shouldPrint) {
+            System.out.print(source + " ");
+        }
+
+        for (int vertex : adjacentListArray[source]) {
+            if (!visited[vertex]) {
+                dfsForSCC(vertex, visited, vertexSortedInFinishOrderOfTheirTime, adjacentListArray, shouldPrint);
+            }
+        }
+
+        // All adjacent vertex are traversed;
+        if (!shouldPrint) {
+            vertexSortedInFinishOrderOfTheirTime.add(source);
+        }
+    }
+
 
     public static void main(String[] args) {
         Graph graph = new Graph(5);
@@ -146,5 +211,15 @@ public class ReGraphUtilPractice {
         logIt("Depth FIRST TRAVERSAL OF DIRECTED GRAPH", true);
         recursiveDFS(graph, 2, new HashSet<>());
 
+        newLine();
+        logIt("Find Strongly Connected Components.........");
+        graph = new ReGraphUtilPractice.Graph(5);
+        addEdge(graph, 1, 0, true);
+        addEdge(graph, 0, 2, true);
+        addEdge(graph, 2, 1, true);
+        addEdge(graph, 0, 3, true);
+        addEdge(graph, 3, 4, true);
+
+        findStronglyConnectedComponents(graph);
     }
 }

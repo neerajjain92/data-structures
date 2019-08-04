@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed499735-fb6e-4a90-9656-1ffccd36e4bb" name="Default" comment="FindSmallestPositiveMissingNumberFindSmallestPositiveMissingNumber">
-      <change afterPath="$PROJECT_DIR$/src/Encryptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfTwoSortedArrayOfDifferentSizes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/RotatedSortedArraySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/AmazingSubArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/CountAndSay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/LengthOfLastWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/LongestCommonPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/MinimumCharactersRequiredToMakeAStringPalindromic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/NumeralToRoman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/PalindromeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/RomanToNumeral.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/ZigZagString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/FruitsIntoBasket_904.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/ValidMountainArray_941.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,46 +50,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -87,121 +57,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>insertIntoBST</find>
-      <find>infix</find>
-      <find>Middle</find>
-      <find>swap</find>
-      <find>Par</find>
-      <find>Generat</find>
-      <find>maximumPathSum</find>
-      <find>main</find>
-      <find>interviewb</find>
-      <find>23,</find>
-      <find>76,</find>
-      <find>73,</find>
-      <find>26,</find>
-      <find>34,</find>
-      <find>90,</find>
-      <find>toArray()</find>
-      <find>,\s+\d{0,20}\);</find>
-      <find>System.out.println</find>
-      <find>newLine</find>
-      <find>BreadthFirstTraversal</find>
-      <find>8</find>
-      <find>1,</find>
-      <find>Permutation</find>
-      <find>grouping</find>
-      <find>addEdge</find>
-      <find>printGr</find>
-      <find>toArra</find>
-      <find>(ArrayList&lt;Integer&gt;)</find>
-      <find>902</find>
-      <find>90</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>public</replace>
-      <replace>stack.push(</replace>
-      <replace>getName</replace>
-      <replace>true</replace>
-      <replace>printTypeOfArrayAndMax</replace>
-      <replace>romanValues.put</replace>
-      <replace>&quot;</replace>
-      <replace>append(arr[i])</replace>
-      <replace>get(arr[i])</replace>
-      <replace />
-      <replace>[N]</replace>
-      <replace>)</replace>
-      <replace>newLine();</replace>
-      <replace>);</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming</dir>
-      <dir>$PROJECT_DIR$/src/com/company/amazon</dir>
-      <dir>$PROJECT_DIR$/src/com/geeksforgeeks/array</dir>
-      <dir>$PROJECT_DIR$/src/com/datastructures</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/company/amazon/LongestPalindromicParenthesesSubstring.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/LongestValidParenthesisSubstring.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/stack/LongestValidParenthesisSubstring.java" />
-        <option value="$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/PairInSortedRotatedArray.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/PrintAllPossibleWordsFromMobileDigits.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/SegregatePositiveAndNegativeNumbers.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/SortArrayAbsoluteDifference.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/SortedSubsequenceOfLengthThreeInLinearTime.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/WaveSort.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindZerosToBeFlipped_Sliding_Window.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/LengthOfLongestSubStringWithoutRepeatingCharacters.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MaximumNoOfZerosByFlippingOne.java" />
-        <option value="$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/MaxNonNegativeSubArray.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/WaveArray.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/FindDuplicateInArray.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/array/FindDuplicateInArray.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/array/NextPermutation.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/array/MaxSProd.java" />
-        <option value="$PROJECT_DIR$/src/com/leetcode/array/FindSmallestPositiveNumberMissingFromUnsortedArray.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/array/MergeOverlappingIntervals.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/AllFactors.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/FizzBuzz.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/PowerOfTwoIntegers.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/ExcelColumnNumbers.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/ExcelColumnTitle.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivision.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivisior.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivisisor.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivissor.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivisor.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/PalindromeInteger.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/string/StringPermutation.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/NumbersOfLengthNAndValueLessThanK.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/RatNdMazeProblem.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/GridUniquePaths.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/math/RearrangeArray.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/AmazonFreshDeliveryService.java" />
-        <option value="$PROJECT_DIR$/src/com/company/amazon/AmazonPrimeOrdersSorting.java" />
-        <option value="$PROJECT_DIR$/src/com/util/LogUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/CountElementOccurence.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java" />
-        <option value="$PROJECT_DIR$/src/Encryptor.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java" />
-        <option value="$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java" />
-      </list>
-    </option>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -216,16 +73,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
-  </component>
+  <component name="ProjectId" id="1Omh7zQcVLZqjAD7oMBMZfu9eKb" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -305,61 +153,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <autoscrollFromSource ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewbit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewbit" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewbit" type="462c0819:PsiDirectoryNode" />
-              <item name="binary_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -402,28 +195,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SortedInsertPosition">
+  <component name="RunManager" selected="Application.ValidMountainArray_941">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Encryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Encryptor" />
-      <module name="data-structures" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindMinimumElementInRotatedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binary_search.FindMinimumElementInRotatedArray" />
+    <configuration name="FruitsIntoBasket_904" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.FruitsIntoBasket_904" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.interviewbit.binary_search.*" />
+          <option name="PATTERN" value="com.leetcode.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -431,21 +216,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="data-structures" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binary_search.MatrixSearch" />
+    <configuration name="GraphUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.graph.GraphUtil" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.interviewbit.binary_search.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,13 +230,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortedInsertPosition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binary_search.SortedInsertPosition" />
+    <configuration name="ReGraphUtilPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.graph.ReGraphUtilPractice" />
       <module name="data-structures" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.interviewbit.binary_search.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidMountainArray_941" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.ValidMountainArray_941" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZigZagString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviewbit.string_parsing.ZigZagString" />
+      <module name="data-structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviewbit.string_parsing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -499,19 +304,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Encryptor" />
-      <item itemvalue="Application.FindMinimumElementInRotatedArray" />
-      <item itemvalue="Application.MatrixSearch" />
-      <item itemvalue="Application.SortedInsertPosition" />
+      <item itemvalue="Application.ZigZagString" />
+      <item itemvalue="Application.FruitsIntoBasket_904" />
+      <item itemvalue="Application.GraphUtil" />
+      <item itemvalue="Application.ReGraphUtilPractice" />
+      <item itemvalue="Application.ValidMountainArray_941" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SortedInsertPosition" />
-        <item itemvalue="Application.MatrixSearch" />
-        <item itemvalue="Application.FindMinimumElementInRotatedArray" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Encryptor" />
+        <item itemvalue="Application.ValidMountainArray_941" />
+        <item itemvalue="Application.ReGraphUtilPractice" />
+        <item itemvalue="Application.GraphUtil" />
+        <item itemvalue="Application.FruitsIntoBasket_904" />
+        <item itemvalue="Application.ZigZagString" />
       </list>
     </recent_temporary>
   </component>
@@ -667,7 +472,14 @@
       <workItem from="1564075319699" duration="7838000" />
       <workItem from="1564164328225" duration="34628000" />
       <workItem from="1564411176453" duration="6374000" />
-      <workItem from="1564424265919" duration="2677000" />
+      <workItem from="1564424265919" duration="4563000" />
+      <workItem from="1564488504039" duration="8856000" />
+      <workItem from="1564556724717" duration="212000" />
+      <workItem from="1564588517569" duration="8328000" />
+      <workItem from="1564636860591" duration="187000" />
+      <workItem from="1564681038544" duration="2120000" />
+      <workItem from="1564813303155" duration="18997000" />
+      <workItem from="1564905574450" duration="4739000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Problems">
       <created>1520156000626</created>
@@ -819,9 +631,6 @@
     <option name="localTasksCounter" value="22" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="588919000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -831,90 +640,21 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16300367" />
-      <window_info id="Structure" order="1" weight="0.24969475" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.41326532" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.39489797" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.50306123" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32142857" />
-      <window_info anchor="bottom" id="Docker" order="11" />
-      <window_info anchor="bottom" id="Tool Output" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="15" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="16" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3297568" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32967034" />
-      <window_info anchor="right" id="Maven" order="10" />
-      <window_info anchor="right" id="Jenkins X" order="11" side_tool="true" />
-      <window_info anchor="right" id="Jenkins" order="12" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16300367" />
-      <window_info id="Structure" order="1" weight="0.24969475" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.41326532" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.39489797" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.39903265" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32889965" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.50306123" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32142857" />
-      <window_info anchor="bottom" id="Docker" order="11" />
-      <window_info anchor="bottom" id="Tool Output" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="15" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="16" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3297568" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32967034" />
-      <window_info anchor="right" id="Maven" order="10" />
-      <window_info anchor="right" id="Jenkins X" order="11" side_tool="true" />
-      <window_info anchor="right" id="Jenkins" order="12" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Graph Problems" />
@@ -946,1186 +686,1139 @@
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/stackoverflow/StringReverse.java</url>
           <line>7</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java</url>
           <line>1449</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/SpecialMinStack.java</url>
           <line>9</line>
-          <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/SpecialMinStackO_1_SpaceComplexity.java</url>
           <line>10</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/stackoverflow/Pattern.java</url>
           <line>15</line>
-          <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/InfixToPostfix.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/CelebrityProblem.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/CelebrityProblem.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/ReverseStack.java</url>
           <line>14</line>
-          <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/ReverseStack.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/FindPairWithProduct.java</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/NumberOfOccurrencesInArray.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/BuildLowestNumberByRemovingNDigits.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/IsBinaryTreeASumTree.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/XpowerY.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/CountNumberOfTriangles.java</url>
           <line>12</line>
-          <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/PrintAllRootToLeafPaths.java</url>
           <line>36</line>
-          <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/string/StringPermutation.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/string/StringPermutation.java</url>
           <line>36</line>
-          <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/AllAnagrams.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LongestPalindromicSubstring.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LongestPalindromicParenthesesSubstring.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MaximumSumSuchThatNo2ElementsAreAdjacent.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/PrintAllNodesThatDontHaveSibling.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/SegregatePositiveAndNegativeNumbers.java</url>
           <line>79</line>
-          <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/QuickSort.java</url>
           <line>7</line>
-          <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/RunLengthEncoding.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/TypeOfArrayAndMax.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/TypeOfArrayAndMax.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/AngleBetweenHourHandAndMinuteHand.java</url>
           <line>8</line>
-          <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/CheckIfPointFormSquare.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/isRobotMovesCircular.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/ConvertTreeIntoSumTree.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/QuickSort.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/MergeSort.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java</url>
           <line>1010</line>
-          <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/DiameterOfBinaryTree.java</url>
           <line>76</line>
-          <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <condition expression="number == 12421" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/com/competitive/coding/spoj/NextPalindromeStackOverflow.java</url>
           <line>115</line>
-          <properties />
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/KnapSackProblem.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/EvaluationOfExpression.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/ExcelColumnNameFromNumber.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MinimumElementInSortedRotatedArray.java</url>
           <line>7</line>
-          <properties />
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hackerearth/code_the_next_2k18/BobAndEditor.java</url>
           <line>1</line>
-          <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hackerearth/samsung/OddSumProblem_Mos_Algo_Variant.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hackerearth/samsung/OddSumProblem_Mos_Algo_Variant.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hackerearth/samsung/OddSumProblem_Mos_Algo_Variant.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/SubSetOfArray.java</url>
           <line>15</line>
-          <properties />
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/FindElementThatOccursOnlyOnce.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/FindElementThatOccursOnlyOnce.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sub_array_problem/SubArrayWithGivenSum.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/stackoverflow/MaxLengthZeroSumSub.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/SegregatePositiveAndNegativeNumbers.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/FindSmallestPositiveNumberMissingFromUnsortedArray.java</url>
           <line>83</line>
-          <properties />
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/stackoverflow/GFG.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/SmallestWindowInAStringContainingAllCharactersOfOtherString.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/SmallestWindowInAStringContainingAllCharactersOfOtherString.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/career_cup/FindZerosToBeFlipped_Sliding_Window.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubString.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sub_array_problem/SubArrayWithZeroSum.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sub_array_problem/LargestSubArrayWithEqualNumberOfZeroAndOne.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/LengthOfLongestSubStringWithoutRepeatingCharacters.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/LengthOfLongestSubStringWithoutRepeatingCharacters.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LongestConsecutiveSequenceInBinaryTree.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LongestConsecutiveSequenceInBinaryTree.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LookNSaySequence.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LowestCommonAncestor.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LowestCommonAncestor.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/nearbuy/MaximumDifferenceInAnArray.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MaximumNoOfZerosByFlippingOne.java</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MaximumSumPathInTwoArrays.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MaximumSumPathInTwoArrays.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MaximumSumPathInTwoArrays.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MaximumSumPathInTwoArrays.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MaximumSumPathInTwoArrays.java</url>
           <line>57</line>
-          <properties />
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MedianOfTwoSortedArrays.java</url>
           <line>14</line>
-          <properties />
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MinimumSumOfSquaresOfCharacterCount.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="193" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/MinimumSumOfSquaresOfCharacterCount.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="194" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/TotalNumberOfPathsToReachFromTopLeftToBottomRightWithExactlyKCoins.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="195" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/LinkedListUtil.java</url>
           <line>118</line>
-          <properties />
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/JumpingNumbersSmallerThanOrEqualToGivenValue.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/SpiralMatrix.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/AllPossibleStringsUsingSpaces.java</url>
           <line>10</line>
-          <properties />
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/RearrangeOddEvenIndexedLinkedListNodesTogether.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/RearrangeCharactersInStringSuchThatNoTwoAdjacentCharactersAreSame.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/SlidingWindowMaximum.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/PrintLongestLeafToLeafPathInBinaryTree.java</url>
           <line>72</line>
-          <properties />
           <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/TrappingRainWaterProblem.java</url>
           <line>82</line>
-          <properties />
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/heap/MinHeap.java</url>
           <line>133</line>
-          <properties />
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/heap/MinHeap.java</url>
           <line>141</line>
-          <properties />
           <option name="timeStamp" value="222" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/NextGreaterPalindrome.java</url>
           <line>10</line>
-          <properties />
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/Heap.java</url>
           <line>105</line>
-          <properties />
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/Heap.java</url>
           <line>99</line>
-          <properties />
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/Heap.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/Heap.java</url>
           <line>62</line>
-          <properties />
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/stackoverflow/FileSearch.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <condition expression="file.getName().equalsIgnoreCase(&quot;Pattern.java&quot;)" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/com/stackoverflow/FileSearch.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="247" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/BinaryTreeIsHeap.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/RatNdMazeProblem.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/SnakeNdLadder.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="251" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/PrintPostOrderFromPreorderAndInorder.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="257" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/DistanceBetween2NodesInBinaryTree.java</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="260" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/DistanceBetween2NodesInBinaryTree.java</url>
           <line>49</line>
-          <properties />
           <option name="timeStamp" value="261" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
           <line>1411</line>
-          <properties />
           <option name="timeStamp" value="262" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
           <line>1427</line>
-          <properties />
           <option name="timeStamp" value="263" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/DeleteNodeInBinarySearchTree.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="264" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/StackWithFindMiddle.java</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StockSpanProblem.java</url>
           <line>57</line>
-          <properties />
           <option name="timeStamp" value="269" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/queue/SortQueue.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="274" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java</url>
           <line>940</line>
-          <properties />
           <option name="timeStamp" value="275" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java</url>
           <line>959</line>
-          <properties />
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CuttingTheRodProblem.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="277" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java</url>
           <line>71</line>
-          <properties />
           <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java</url>
           <line>88</line>
-          <properties />
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java</url>
           <line>66</line>
-          <properties />
           <option name="timeStamp" value="282" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java</url>
           <line>78</line>
-          <properties />
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/LongestBitonicSubsequence.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="284" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/dynamicProgramming/LongestBitonicSubsequence.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="285" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/LongestBitonicSubsequence.java</url>
           <line>63</line>
-          <properties />
           <option name="timeStamp" value="286" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="287" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="289" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="290" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllPalindromicPartition.java</url>
           <line>70</line>
-          <properties />
           <option name="timeStamp" value="291" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java</url>
           <line>76</line>
-          <properties />
           <option name="timeStamp" value="294" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java</url>
           <line>97</line>
-          <properties />
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java</url>
           <line>98</line>
-          <properties />
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/EggDroppingProblem.java</url>
           <line>68</line>
-          <properties />
           <option name="timeStamp" value="299" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/RangeSumQuery.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="300" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/MaxSumContiguousSubArray.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="301" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangingNoOfWays.java</url>
           <line>133</line>
-          <properties />
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/UniqueBinarySearchTree_CatalanNumber.java</url>
           <line>70</line>
-          <properties />
           <option name="timeStamp" value="304" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/NextPermutationOfNumericSequence.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="305" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java</url>
           <line>87</line>
-          <properties />
           <option name="timeStamp" value="307" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java</url>
           <line>90</line>
-          <properties />
           <option name="timeStamp" value="308" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/CoinChangeMinimumNoOfCoinsRequired.java</url>
           <line>162</line>
-          <properties />
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java</url>
           <line>66</line>
-          <properties />
           <option name="timeStamp" value="314" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java</url>
           <line>73</line>
-          <properties />
           <option name="timeStamp" value="315" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="316" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java</url>
           <line>102</line>
-          <properties />
           <option name="timeStamp" value="317" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java</url>
           <line>85</line>
-          <properties />
           <option name="timeStamp" value="322" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateAllPossible_PowerSets.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="323" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/SolveNQueensProblem.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="328" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/string/StringPermutation.java</url>
           <line>102</line>
-          <properties />
           <option name="timeStamp" value="329" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="330" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/AllMneMonicsOfPhoneNumber.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/AllMneMonicsOfPhoneNumber.java</url>
           <line>78</line>
-          <properties />
           <option name="timeStamp" value="334" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MinimumWindowSubstring.java</url>
           <line>69</line>
-          <properties />
           <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/array/DutchNationalFlag.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="342" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java</url>
           <line>831</line>
-          <properties />
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java</url>
           <line>636</line>
-          <properties />
           <option name="timeStamp" value="374" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/tree/BinaryTreeUtil.java</url>
           <line>500</line>
-          <properties />
           <option name="timeStamp" value="385" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/tree/BinaryTreeUtil.java</url>
           <line>518</line>
-          <properties />
           <option name="timeStamp" value="386" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackWithFindMiddle.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="387" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/CountNegativeIntegersInRowColumnSortedMatrix.java</url>
           <line>15</line>
-          <properties />
           <option name="timeStamp" value="388" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/LongestIncreasingSubsequence.java</url>
           <line>87</line>
-          <properties />
           <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/MaximumSumWithArrayRotation.java</url>
           <line>135</line>
-          <properties />
           <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/Median__Of_Two_Sorted_Arrays_With_Explanation.java</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="393" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindMinimumLengthSubArrayWithSumK.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="394" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindMinimumLengthSubArrayWithSumK.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="395" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/FindMissingNumberInIncreasingSequence.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="401" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/RearrangeMaximumAndMinimumWithoutExtraSpace.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="407" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/SegregateOddAndEven.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="408" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/SegregatePositiveAndNegativeNumbers.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="409" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindZerosToBeFlipped_Sliding_Window.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="412" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/FindZerosToBeFlipped_Sliding_Window.java</url>
           <line>83</line>
-          <properties />
           <option name="timeStamp" value="413" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/LengthOfLongestSubStringWithoutRepeatingCharacters.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="414" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MaximumNoOfZerosByFlippingOne.java</url>
           <line>69</line>
-          <properties />
           <option name="timeStamp" value="415" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/array/ArrayUtil.java</url>
           <line>347</line>
-          <properties />
           <option name="timeStamp" value="416" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/MaxNonNegativeSubArray.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="429" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/MaxNonNegativeSubArray.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="432" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/FindDuplicateInArray.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="440" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/FindDuplicateInArray.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="443" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/NextPermutation.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="448" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/NextPermutation.java</url>
           <line>71</line>
-          <properties />
           <option name="timeStamp" value="449" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/NextPermutation.java</url>
           <line>92</line>
-          <properties />
           <option name="timeStamp" value="450" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/MaxSProd.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="453" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/MaxSProd.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="462" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/array/FindSmallestPositiveNumberMissingFromUnsortedArray.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="463" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/array/MergeOverlappingIntervals.java</url>
           <line>63</line>
-          <properties />
           <option name="timeStamp" value="466" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/AllFactors.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="469" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/PowerOfTwoIntegers.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="470" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivisor.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="471" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivisor.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="473" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/NumbersOfLengthNAndValueLessThanK.java</url>
           <line>59</line>
-          <properties />
           <option name="timeStamp" value="475" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/NumbersOfLengthNAndValueLessThanK.java</url>
           <line>85</line>
-          <properties />
           <option name="timeStamp" value="476" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/GridUniquePaths.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="481" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/GridUniquePaths.java</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="482" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/math/RearrangeArray.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="485" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/AmazonPrimeOrdersSorting.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="486" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/AmazonFreshDeliveryService.java</url>
           <line>62</line>
-          <properties />
           <option name="timeStamp" value="487" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/amazon/AmazonFreshDeliveryService.java</url>
           <line>82</line>
-          <properties />
           <option name="timeStamp" value="489" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="491" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="492" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="494" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java</url>
           <line>40</line>
-          <properties />
           <option name="timeStamp" value="495" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="499" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/array/ConvertNumberToWords.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="502" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/array/ConvertNumberToWords.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/RotatedSortedArraySearch.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="506" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/RotatedSortedArraySearch.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="507" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfArray.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/PalindromeString.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/AmazingSubArrays.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="510" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/LongestCommonPrefix.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="511" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/MinimumCharactersRequiredToMakeAStringPalindromic.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="513" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/MinimumCharactersRequiredToMakeAStringPalindromic.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="515" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/CountAndSay.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="516" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/LengthOfLastWord.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="518" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfTwoSortedArrayOfDifferentSizes.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="521" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfTwoSortedArrayOfDifferentSizes.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="522" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfTwoSortedArrayOfDifferentSizes.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="523" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="532" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="535" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="536" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/AggressiveCows.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="538" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/NumeralToRoman.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="541" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/NumeralToRoman.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="544" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/ZigZagString.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="545" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/ZigZagString.java</url>
           <line>46</line>
-          <properties />
-          <option name="timeStamp" value="496" />
+          <option name="timeStamp" value="546" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/ZigZagString.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="547" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/FruitsIntoBasket_904.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="548" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/FruitsIntoBasket_904.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="549" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/FruitsIntoBasket_904.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="552" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -2135,641 +1828,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/data_structures$SortedInsertPosition.ic" NAME="SortedInsertPosition Coverage Results" MODIFIED="1564427168868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.interviewbit.binary_search.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/data_structures$CoinChangeMinimumNoOfCoinsRequired.ic" NAME="CoinChangeMinimumNoOfCoinsRequired Coverage Results" MODIFIED="1557650821557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.geeksforgeeks.dynamicProgramming.*</FILTER>
     </SUITE>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>i == 1</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>array[Math.abs(i)] == 26</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.abs(i) == 26</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>file.getName().equalsIgnoreCase(&quot;Pattern.java&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>number == 12421</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>a.get(148)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(mid)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(mid+1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(149)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(147)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(146)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(145)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(144)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a.get(mid+2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/BalancedParentheses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/LongestValidParenthesisSubstring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/CharSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/array/WaveArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
-          <folding>
-            <element signature="e#5027#5028#0" expanded="true" />
-            <element signature="e#5098#5099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="556" column="16" selection-start-line="556" selection-start-column="16" selection-end-line="556" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leetcode/array/FindSmallestPositiveNumberMissingFromUnsortedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/SegregatePositiveAndNegativeNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leetcode/array/DutchNationalFlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="23" column="32" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/array/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/array/MaxSProd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/array/NextPermutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#swap#0;class#NextPermutation#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/AllFactors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/array/MergeOverlappingIntervals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="93" column="1" lean-forward="true" selection-start-line="88" selection-end-line="93" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#mergeOverlappingIntervals#0;class#MergeOverlappingIntervals#0" />
-            <element signature="method#mergeNewOverlappingIntervals#0;class#MergeOverlappingIntervals#0" />
-            <element signature="method#insertAndMergeNewInterval#0;class#MergeOverlappingIntervals#0" />
-            <element signature="method#merge#0;class#MergeOverlappingIntervals#0" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/FizzBuzz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/stream/IntStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="793" column="28" selection-start-line="793" selection-start-column="28" selection-end-line="793" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/PowerOfTwoIntegers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/NumbersOfLengthNAndValueLessThanK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#777#808#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/PalindromeInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/GreatestCommonDivisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/ExcelColumnTitle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/ExcelColumnNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/RearrangeArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="584" column="9" selection-start-line="584" selection-start-column="9" selection-end-line="584" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="2115" column="6" lean-forward="true" selection-start-line="2115" selection-start-column="6" selection-end-line="2115" selection-end-column="6" />
-          <folding>
-            <element signature="e#82616#82617#0" expanded="true" />
-            <element signature="e#82667#82668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/math/GridUniquePaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/RatNdMazeProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/AmazonFreshDeliveryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/amazon/AmazonPrimeOrdersSorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="50" column="69" lean-forward="true" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/util/LogUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/array/FindDuplicateInArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/array/MaxNonNegativeSubArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-447">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/string/PermutationOfString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/string/StringPermutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="72" column="28" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="72" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/GraphUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="134" column="26" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/LinkedTransferQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="1342" column="19" selection-start-line="1342" selection-start-column="19" selection-end-line="1342" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StrictMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="269" column="32" selection-start-line="269" selection-start-column="32" selection-end-line="269" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="338" column="29" lean-forward="true" selection-start-line="338" selection-start-column="29" selection-end-line="338" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar!/com/sun/crypto/provider/CipherCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="296" column="18" lean-forward="true" selection-start-line="296" selection-start-column="18" selection-end-line="296" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar!/com/sun/crypto/provider/AESCipher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar!/javax/crypto/Cipher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="667" selection-start-line="667" selection-end-line="667" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/CountElementOccurence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Encryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="29" column="81" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SquareRootOfInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-          <folding>
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/security/SecureRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="531" column="18" selection-start-line="531" selection-start-column="18" selection-end-line="531" selection-end-column="18" />
-          <folding>
-            <element signature="e#19068#19069#0" expanded="true" />
-            <element signature="e#19135#19136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binary_search/SortedInsertPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32068965" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32068965" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>angular-DefinitelyTyped</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32068965" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32068965" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>data-structures</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32068965" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32068965" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <SUITE FILE_PATH="coverage/data_structures$SortedInsertPosition.ic" NAME="SortedInsertPosition Coverage Results" MODIFIED="1564427168868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.interviewbit.binary_search.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/data_structures$LongestCommonPrefix.ic" NAME="LongestCommonPrefix Coverage Results" MODIFIED="1564597639558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.interviewbit.string_parsing.*</FILTER>
+    </SUITE>
   </component>
 </project>
