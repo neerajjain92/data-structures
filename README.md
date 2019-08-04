@@ -15,7 +15,7 @@ This is the collection of algorithms, data structures and Interview Questions wi
 - :computer: [Array](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/array)
 - :heavy_plus_sign: :heavy_multiplication_x: [Math](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/math)
 - :arrows_counterclockwise: [Binary Search](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/binary_search)
-- :string: [String](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/string_parsing)
+- :tophat: [String](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/string_parsing)
 
 ### COMPANY PREP
 - :fire: [AMAZON INTERVIEW QUESTIONS](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/amazon)
