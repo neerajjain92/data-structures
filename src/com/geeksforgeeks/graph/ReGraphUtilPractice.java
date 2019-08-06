@@ -171,6 +171,30 @@ public class ReGraphUtilPractice {
         }
     }
 
+    private static void findMotherVertex(Graph graph) {
+        int lastVisitedVertex = -1;
+        Set<Integer> visited = new HashSet<>();
+        for (int i = 0; i < graph.V; i++) {
+            if (!visited.contains(i)) {
+                recursiveDFS(graph, i, visited);
+                lastVisitedVertex = i;
+            }
+        }
+
+        // Now do the dfs with just lastVisitedVertex
+        // if it again revisit all the nodes then it is mother vertex
+        visited = new HashSet<>();
+        recursiveDFS(graph, lastVisitedVertex, visited);
+
+        for (int i = 0; i < graph.V; i++) {
+            if (!visited.contains(i)) {
+                logIt("There is no mother vertex in this graph", true);
+            }
+        }
+
+        logIt("Mother vertex of this graph is " + lastVisitedVertex);
+
+    }
 
     public static void main(String[] args) {
         Graph graph = new Graph(5);
@@ -213,7 +237,7 @@ public class ReGraphUtilPractice {
 
         newLine();
         logIt("Find Strongly Connected Components.........");
-        graph = new ReGraphUtilPractice.Graph(5);
+        graph = new Graph(5);
         addEdge(graph, 1, 0, true);
         addEdge(graph, 0, 2, true);
         addEdge(graph, 2, 1, true);
@@ -221,5 +245,15 @@ public class ReGraphUtilPractice {
         addEdge(graph, 3, 4, true);
 
         findStronglyConnectedComponents(graph);
+
+        newLine();
+        logIt("Find Mother Vertex.........");
+        graph = new Graph(5);
+        addEdge(graph, 1, 0, true);
+        addEdge(graph, 0, 2, true);
+        addEdge(graph, 2, 1, true);
+        addEdge(graph, 0, 3, true);
+        addEdge(graph, 3, 4, true);
+        findMotherVertex(graph);
     }
 }
