@@ -1,6 +1,9 @@
 # Algorithms and Data Structures
 This is the collection of algorithms, data structures and Interview Questions with solutions. This repository contains my solutions for classic algorithmic problems and implementation of Data Structures in Java. I've created this repository to learn about algorithms. I am adding solutions continuously.
 
+I have curated these list from famouse blogs, youtube etc. For Brushing up the basic data-structures skills, just go ahead and jump into GeekForGeeks Section(Topic Wise Questions), Once you feel confortable with them, then go ahead and try different companies questions and leetcode interview problems described here to ace the interview. Till then Happy Hacking :smile:
+
+
 ### GEEKS FOR GEEKS (Topic Wise)
 - :computer: [Array](src/com/geeksforgeeks/array)
 - :rowboat: [Dynamic Programming](src/com/geeksforgeeks/dynamicProgramming)
@@ -22,7 +25,6 @@ This is the collection of algorithms, data structures and Interview Questions wi
 - :octocat: [Near Buy Interview Questions](src/com/company/nearbuy)
 
 ### Leet-Code Problems
-
-- :rocket: [Easy](src/com/leetcode/problems/easy)
-- :rocket: [Medium](src/com/leetcode/problems/medium)
-- :rocket: [Hard](src/com/leetcode/problems/hard)
+- :bowtie: [Easy Level](src/com/leetcode/problems/easy)
+- :relaxed: [Medium Level](src/com/leetcode/problems/medium)
+- :rocket: [Hard Level](src/com/leetcode/problems/hard)
