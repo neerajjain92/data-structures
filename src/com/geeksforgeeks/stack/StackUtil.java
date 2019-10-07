@@ -127,6 +127,9 @@ public class StackUtil {
             queue.stack2.push(queue.stack1.pop());
         }
 
+        Queue<Integer> queue1 = new LinkedList<>();
+        queue1.poll();
+
         queue.stack1.push(x);
         if (isLogEnabled) {
             System.out.println("Enqueuing (costly) " + x + " into the stack");

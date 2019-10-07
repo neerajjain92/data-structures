@@ -7,7 +7,8 @@ import java.util.List;
 public class PrintAllSubsequences {
 
     public static void main(String[] args) {
-        combinations("", "ABCD");
+//        combinations("", "ABCD");
+        combinations("", "AAB");
 
 //        subsequences.sort(Comparator.comparingInt(String::length));
         System.out.println(subsequences);

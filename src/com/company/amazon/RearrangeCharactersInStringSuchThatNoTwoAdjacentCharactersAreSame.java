@@ -31,6 +31,11 @@ public class RearrangeCharactersInStringSuchThatNoTwoAdjacentCharactersAreSame {
      * <p>
      * Voting Algorithm is not really needed here because anyways we are using HashMap to store frequencies
      * which will be used for the above problem, So just for practice let's code it.
+     *
+     * Why Moore's Algo work, because if an element occurs > N/2 times then it's frequency can't be reduced to 0, even if the
+     * majority element is present in the initial subarray of array.
+     *
+     * Like here : A A A C C B B C C C B C C
      */
     public static boolean hasMajorityElement(char[] arr) {
         int CANDIDATE = -1;

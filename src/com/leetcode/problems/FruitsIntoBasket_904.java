@@ -6,8 +6,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.util.LogUtil.logIt;
-
 /**
  * https://leetcode.com/problems/fruit-into-baskets/
  * <p>
@@ -60,13 +58,101 @@ public class FruitsIntoBasket_904 {
     static int fruitB = -1;
 
     public static void main(String[] args) {
-//        findMaxFruits(new int[]{1, 2, 1});
-//        findMaxFruits(new int[]{0, 1, 2, 2});
-        findMaxFruits(new int[]{1, 2, 3, 2, 2});
-        findMaxFruits(new int[]{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4});
-        findMaxFruits(new int[]{0});
-        findMaxFruits(new int[]{0, 0, 1, 1});
+        totalFruit2(new int[]{1, 2, 1});
+        totalFruit2(new int[]{0, 1, 2, 2});
+        totalFruit2(new int[]{1, 2, 3, 2, 2});
+        totalFruit2(new int[]{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4});
+        totalFruit2(new int[]{0});
+        totalFruit2(new int[]{0, 0, 1, 1});
+        totalFruit2(new int[]{0, 1, 6, 6, 4, 4, 6});
     }
+
+
+    private static int TYPE_BASKET_1 = -1;
+    private static int TYPE_BASKET_2 = -1;
+
+    public static int totalFruit2(int[] trees) {
+        Map<Integer, Integer> lastPosMap = new HashMap<>();
+        int MAX_FRUITS = Integer.MIN_VALUE;
+        TYPE_BASKET_1 = -1;
+        TYPE_BASKET_2 = -1;
+        int total_fruits = 0;
+        int counter = 0;
+
+        while (counter < trees.length) {
+            if (fruitTypeAlreadyPresentInBasket(trees[counter])) {
+                lastPosMap.put(trees[counter], counter);
+                total_fruits++;
+            } else {
+                counter = Math.min(lastPosMap.get(TYPE_BASKET_1),
+                        lastPosMap.get(TYPE_BASKET_2)) + 1;
+                total_fruits = 1;
+                TYPE_BASKET_1 = trees[counter];
+                TYPE_BASKET_2 = -1;
+            }
+            MAX_FRUITS = Math.max(MAX_FRUITS, total_fruits);
+            counter++;
+        }
+        LogUtil.logIt(LogUtil.getArrayAsString(trees) + " ------- > " + MAX_FRUITS);
+        return MAX_FRUITS;
+    }
+
+    private static boolean fruitTypeAlreadyPresentInBasket(Integer fruit) {
+        if (TYPE_BASKET_1 == -1 || TYPE_BASKET_1 == fruit) {
+            TYPE_BASKET_1 = fruit;
+            return true;
+        }
+        if (TYPE_BASKET_2 == -1 || TYPE_BASKET_2 == fruit) {
+            TYPE_BASKET_2 = fruit;
+            return true;
+        }
+        return false;
+    }
+
+
+    /**
+     * My Own Solution fastest amongst all
+     * <p>
+     * Runtime: 8 ms, faster than 73.74% of Java online submissions for Fruit Into Baskets.
+     * Memory Usage: 48.2 MB, less than 73.58% of Java online submissions for Fruit Into Baskets.
+     */
+    public static int totalFruit(int[] trees) {
+        // We didn't have any fruits to start with hence both types of fruits are set to -1
+        int TYPE_1_FRUIT = -1;
+        int TYPE_2_FRUIT = -1;
+        int MAX_FRUITS = Integer.MIN_VALUE;
+        int previousFruit = -1;
+        int lastChangedPosition = -1;
+        int currentFruits = 0;
+        for (int i = 0; i < trees.length; i++) {
+            // If the tree contains fruit which we have already encountered
+            // then lets simply increase our count of fruits.
+            if (TYPE_1_FRUIT == trees[i] || TYPE_2_FRUIT == trees[i]) {
+                currentFruits += 1;
+            } else {
+                // If Both types of fruits are already set and we found a third type of tree
+                if (TYPE_1_FRUIT != -1 && TYPE_2_FRUIT != -1) {
+                    TYPE_1_FRUIT = previousFruit;
+                    TYPE_2_FRUIT = trees[i];
+                    currentFruits = i - lastChangedPosition + 1;
+                } else {
+                    if (TYPE_1_FRUIT == -1)
+                        TYPE_1_FRUIT = trees[i];
+                    else
+                        TYPE_2_FRUIT = trees[i];
+                    currentFruits += 1;
+                }
+            }
+            MAX_FRUITS = Math.max(MAX_FRUITS, currentFruits);
+            if (previousFruit != trees[i]) {
+                lastChangedPosition = i;
+            }
+            previousFruit = trees[i];
+        }
+        System.out.println(MAX_FRUITS);
+        return MAX_FRUITS;
+    }
+
 
     /**
      * https://www.youtube.com/watch?v=za2YuucS0tw
@@ -79,7 +165,7 @@ public class FruitsIntoBasket_904 {
      * @param tree
      * @return
      */
-    public static int simpleApproachOfFindMaxFruits(int[] tree) {
+    public static int simpleApproachOftotalFruit(int[] tree) {
         if (tree == null || tree.length == 0) {
             return 0;
         }
@@ -103,13 +189,13 @@ public class FruitsIntoBasket_904 {
         return MAX_FRUITS;
     }
 
-    public static void findMaxFruits(int[] tree) {
-//        logIt("Maximum Number of Fruits that can be plucked from " + LogUtil.getArrayAsString(tree) + " ==> " + totalFruit(tree));
-        logIt("Maximum Number of Fruits that can be plucked using Simple Approach from "
-                + LogUtil.getArrayAsString(tree) + " ==> " + simpleApproachOfFindMaxFruits(tree), true);
-    }
+//    public static void totalFruit(int[] tree) {
+////        logIt("Maximum Number of Fruits that can be plucked from " + LogUtil.getArrayAsString(tree) + " ==> " + totalFruit(tree));
+//        logIt("Maximum Number of Fruits that can be plucked using Simple Approach from "
+//                + LogUtil.getArrayAsString(tree) + " ==> " + simpleApproachOftotalFruit(tree), true);
+//    }
 
-    public static int totalFruit(int[] tree) {
+    public static int totalFruits(int[] tree) {
         fruitFrequencyMap = new HashMap<>();
         fruitA = -1;
         fruitB = -1;

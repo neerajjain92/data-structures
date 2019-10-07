@@ -2,9 +2,7 @@ package com.geeksforgeeks.dynamicProgramming;
 
 import com.util.LogUtil;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * A message containing letters from A-Z is being encoded to numbers using the following mapping:
@@ -39,6 +37,7 @@ public class TotalWaysToDecodeAString {
         getNumberOfWaysDigitCanBeDecoded("123");
         getNumberOfWaysDigitCanBeDecoded("226");
         getNumberOfWaysDigitCanBeDecoded("1234");
+        getNumberOfWaysDigitCanBeDecoded("01");
     }
 
     public static void getNumberOfWaysDigitCanBeDecoded(String digit) {

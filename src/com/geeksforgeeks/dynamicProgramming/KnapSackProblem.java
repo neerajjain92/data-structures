@@ -19,6 +19,7 @@ public class KnapSackProblem {
 
         int[][] calculations = new int[weights.length][knapSackCapacity + 1];
         Map<Integer, Integer> sortedWeights = getSortedWeightsAndValues(weights, values);
+        // Sorting weights as we need maximum value with sumOfAllWeights <= knapSackCapacity
         Arrays.sort(weights);
 
         for (int i = 0; i < weights.length; i++) { // All Weights
