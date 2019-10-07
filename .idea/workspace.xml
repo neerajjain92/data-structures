@@ -2,79 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff8d5980-b94c-4f4e-bb3f-8c00520baf95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/google/RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/AddTwoNumbersInList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/LinkedNodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/ListCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/MergeTwoSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/PalindromeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/PartitionList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/ReOrderList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/RemoveDuplicatesFromSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/RemoveNthNodeFromListEnd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/ReverseListInPlace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/linked_list/RotateList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/array/GetSubSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/array/PrintAllPermutations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/BackspaceStringCompare_844.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/ClimbStairs_70.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/FindTheDifference_389.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/HouseRobber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/MostCommonWord_819.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/PlusOne_66.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/RemoveElement_27.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/RobotReturnToOrigin_657.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/SingleNumber_136.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/easy/SortedLinkedListToBalancedBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/BattleshipInABoard_419.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/BinarySearchTreeToGreaterSumTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/BinaryTreeRightSideView_199.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/BoatsToSavePeople.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/CoinChange_322.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/CombinationSum_II_40.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/ContainerWithMostWater_11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FindPeakElement_162.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FlipGames_II.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FloodFill_733.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/GroupAnagrams_49.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/HouseRobberCircular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/KClosestPointToOrigin_973.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/KeysAndRooms_841.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/KthLargestElementInArray_215.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/LetterCombinationPhoneNumber_17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/LetterTilePossibilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/MaxIncreaseToKeepCitySkyline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/MaximumBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/MaximumProductSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/MeetingRoom2_253.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/MinimumNumbersOfArrowsToBurstBallons_452.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/MinimumPathSum_64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/NextClosestTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/PathSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/Permutations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/SubSet_Permutations_CombinationSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/Subsets_78.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/TaskScheduler_621.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/TopKFreqElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/UniquePath_62.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/WallsAndGates_286.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/WordSearch_79.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/RearrangeCharactersInStringSuchThatNoTwoAdjacentCharactersAreSame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazon/RearrangeCharactersInStringSuchThatNoTwoAdjacentCharactersAreSame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/KnapSackProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/KnapSackProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/TotalWaysToDecodeAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/DisjointSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/DisjointSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/graph/ReGraphUtilPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/string/PrintAllSubsequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/FruitsIntoBasket_904.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/FruitsIntoBasket_904.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/PartitionLabels_763.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/PartitionLabels_763.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -260,6 +188,7 @@
       <workItem from="1570272741943" duration="4549000" />
       <workItem from="1570340513814" duration="5008000" />
       <workItem from="1570389071390" duration="491000" />
+      <workItem from="1570425479123" duration="91000" />
     </task>
     <servers />
   </component>
