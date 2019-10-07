@@ -4,6 +4,7 @@ import com.util.LogUtil;
 
 import java.util.*;
 
+import static com.geeksforgeeks.graph.GraphUtil.moveVertex;
 import static com.util.LogUtil.logIt;
 import static com.util.LogUtil.newLine;
 
@@ -196,6 +197,83 @@ public class ReGraphUtilPractice {
 
     }
 
+    private static void checkIfDirectedGraphHasCycleUsingDFS(Graph graph) {
+        Set<Integer> notVisited = new HashSet<>();
+        Set<Integer> inProcess = new HashSet<>();
+        Set<Integer> processed = new HashSet<>();
+
+        // Initially all Nodes are not-visited.
+        for (int i = 0; i < graph.V; i++) {
+            notVisited.add(i);
+        }
+
+        // Let's do DFS on all NonVisited nodes
+
+        while (!notVisited.isEmpty()) {
+            Integer currentVertex = notVisited.iterator().next();
+            if (findCycleWithDFS(currentVertex, notVisited, inProcess, processed, graph)) {
+                System.out.println("Cycle do exist.....");
+                return;
+            }
+        }
+        System.out.println("Cycle do not exist.....");
+
+    }
+
+    private static boolean findCycleWithDFS(int currentVertex,
+                                            Set<Integer> notVisited,
+                                            Set<Integer> inProcess,
+                                            Set<Integer> processed,
+                                            Graph graph) {
+        moveVertex(currentVertex, notVisited, inProcess);
+
+        for (int adjacentVertex : graph.adjacentListArray[currentVertex]) {
+            if (processed.contains(adjacentVertex))
+                continue;
+            if (inProcess.contains(adjacentVertex))
+                return true;
+            if (findCycleWithDFS(adjacentVertex, notVisited, inProcess, processed, graph))
+                return true;
+        }
+        moveVertex(currentVertex, inProcess, processed);
+        return false;
+    }
+
+    private static boolean cycleInUnDirectedGraphUsingBFS(Graph graph) {
+        /**
+         * -1 -->    Waiting-To-Be-Processed
+         * 0 -->    Being Processed
+         * 1 -->    Already Processed
+         */
+        int[] statusFlag = new int[graph.V];
+        // Initially all vertex are waiting to be processed
+        Arrays.fill(statusFlag, -1);
+
+        // Since BFS so we need to use Queue.
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(0);
+        // Mark this node as being processed
+        statusFlag[0] = 0;
+        Integer poppedVertex = null;
+
+        while (!queue.isEmpty()) {
+            poppedVertex = queue.poll();
+            statusFlag[poppedVertex] = 1; // mark this node as visited
+
+            for (int adjacentVertex : graph.adjacentListArray[poppedVertex]) {
+                if (statusFlag[adjacentVertex] == -1) { // If waiting to be processed then let's process it.
+                    queue.add(adjacentVertex);
+                    statusFlag[adjacentVertex] = 0;
+                } else if (statusFlag[adjacentVertex] == 0) {
+                    System.out.println("Found Cycle");
+                    return true;
+                }
+            }
+        }
+        System.out.println("No Cycle is present..........");
+        return false;
+    }
+
     public static void main(String[] args) {
         Graph graph = new Graph(5);
 
@@ -255,5 +333,115 @@ public class ReGraphUtilPractice {
         addEdge(graph, 0, 3, true);
         addEdge(graph, 3, 4, true);
         findMotherVertex(graph);
+
+        newLine();
+        logIt("Detect Cycle in Directed Graph");
+        graph = new Graph(6);
+        addEdge(graph, 0, 1, true);
+        addEdge(graph, 1, 2, true);
+        addEdge(graph, 0, 2, true);
+        addEdge(graph, 3, 1, true);
+        addEdge(graph, 3, 4, true);
+        addEdge(graph, 4, 5, true);
+        addEdge(graph, 5, 4, true);
+
+        checkIfDirectedGraphHasCycleUsingDFS(graph);
+
+        newLine();
+        logIt("Detect Cycle in Undirected Graph using BFS");
+        /**
+         *      A------B-------C
+         *  *          |       |
+         *  *          E-------D
+         */
+        graph = new Graph(5);
+        addEdge(graph, 0, 1, false);
+        addEdge(graph, 1, 2, false);
+        addEdge(graph, 2, 3, false);
+        addEdge(graph, 3, 4, false);
+        addEdge(graph, 4, 1, false);
+
+        cycleInUnDirectedGraphUsingBFS(graph);
+
+        logIt("Union Set Data Structure, Union by Rank and Path Compression....");
+        ReDisjointSet reDisjointSet = new ReDisjointSet();
+
+        for (int i = 0; i < 7; i++)
+            reDisjointSet.makeSet(i + 1);
+
+        reDisjointSet.union(1, 2);
+        reDisjointSet.union(2, 3);
+        reDisjointSet.union(4, 5);
+        reDisjointSet.union(6, 7);
+        reDisjointSet.union(5, 6);
+        reDisjointSet.union(3, 7);
+
+        System.out.println(reDisjointSet.findSet(1));
+        System.out.println(reDisjointSet.findSet(2));
+        System.out.println(reDisjointSet.findSet(3));
+        System.out.println(reDisjointSet.findSet(4));
+        System.out.println(reDisjointSet.findSet(5));
+        System.out.println(reDisjointSet.findSet(6));
+        System.out.println(reDisjointSet.findSet(7));
+
+
+    }
+}
+
+class ReDisjointSet {
+    Map<Integer, UnionNode> map = new HashMap<>();
+
+    class UnionNode {
+        int value;
+        int rank;
+        UnionNode parent;
+    }
+
+    public void makeSet(int data) {
+        UnionNode node = new UnionNode();
+        node.value = data;
+        node.rank = 0;
+        node.parent = node;
+        map.put(data, node);
+    }
+
+    public boolean union(int data1, int data2) {
+        // First find in which set both these nodes belong to.
+        UnionNode node1 = map.get(data1);
+        UnionNode node2 = map.get(data2);
+
+        // Check who their parents are
+        UnionNode parent1 = findSet(node1);
+        UnionNode parent2 = findSet(node2);
+
+        // both nodes belong to the same clan
+        if (parent1 == parent2) {
+            return false;
+        }
+
+        //else whoever's rank is higher becomes parent of other
+        if (parent1.rank >= parent2.rank) {
+            parent2.parent = parent1;
+
+            // Increment the rank only when both parent have same ranks
+            // else the rank of greater wins
+            parent1.rank = (parent2.rank == parent1.rank) ? parent1.rank + 1 : parent1.rank;
+        } else {
+            parent1.parent = parent2;
+        }
+        return true;
+    }
+
+    public int findSet(int value) {
+        return findSet(map.get(value)).value;
+    }
+
+    private UnionNode findSet(UnionNode node1) {
+        UnionNode parent = node1.parent;
+        if (node1 == parent) {
+            return node1;
+        }
+        node1.parent = findSet(parent);
+        return node1.parent;
     }
 }

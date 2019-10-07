@@ -29,9 +29,9 @@ import java.util.Map;
 public class PartitionLabels_763 {
 
     public static void main(String[] args) {
-        System.out.println(partitionLabels("ababcbacadefegdehijhklij"));
+        System.out.println(partitionLabel("ababcbacadefegdehijhklij"));
         System.out.println(simpleApproachForPartitionLabels("ababcbacadefegdehijhklij"));
-        System.out.println(partitionLabels("eaaaabaaec"));
+        System.out.println(partitionLabel("eaaaabaaec"));
         System.out.println(simpleApproachForPartitionLabels("eaaaabaaec"));
     }
 
@@ -82,6 +82,32 @@ public class PartitionLabels_763 {
                 }
             }
         }
+        return result;
+    }
+
+    public static List<Integer> partitionLabel(String s) {
+        List<Integer> result = new ArrayList<>();
+        Map<Character, Integer> characterEndingPositionMap = new HashMap<>();
+
+        int counter = 0;
+        for (char c : s.toCharArray()) {
+            characterEndingPositionMap.put(c, counter++);
+        }
+
+        counter = 0;
+        int size = 1;
+        int endOfThisPartition = characterEndingPositionMap.get(s.charAt(0));
+        while (counter < s.length()) {
+            int endPositionOfThisCharacter = characterEndingPositionMap.get(s.charAt(counter));
+            endOfThisPartition = Math.max(endPositionOfThisCharacter, endOfThisPartition);
+            if (counter == endOfThisPartition) {
+                result.add(size);
+                size = 0;
+            }
+            counter++;
+            size++;
+        }
+//        System.out.println(characterEndingPositionMap);
         return result;
     }
 

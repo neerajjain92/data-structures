@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Stack;
 
 public class LinkedListUtil {
-    Node head;
+    public Node head;
 
-    class Node {
+    public class Node {
         int data;
         Node next;
         int size;
