@@ -2,21 +2,21 @@
 This is the collection of algorithms, data structures and Interview Questions with solutions. This repository contains my solutions for classic algorithmic problems and implementation of Data Structures in Java. I've created this repository to learn about algorithms. I am adding solutions continuously.
 
 ### GEEKS FOR GEEKS (Topic Wise)
-- :computer: [Array](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/array)
-- :rowboat: [Dynamic Programming](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/dynamicProgramming)
-- :chart_with_upwards_trend: [Graph](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/graph)
-- :ship: [Heap](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/heap)
-- :rocket: [Linked List](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/linkedlist)
-- :airplane: [Stack](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/stack)
-- :tophat: [String](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/string)
-- :8ball: [Tree](https://github.com/neerajjain92/data-structures/tree/master/src/com/geeksforgeeks/tree)
+- :computer: [Array](src/com/geeksforgeeks/array)
+- :rowboat: [Dynamic Programming](src/com/geeksforgeeks/dynamicProgramming)
+- :chart_with_upwards_trend: [Graph](src/com/geeksforgeeks/graph)
+- :ship: [Heap](src/com/geeksforgeeks/heap)
+- :rocket: [Linked List](src/com/geeksforgeeks/linkedlist)
+- :airplane: [Stack](src/com/geeksforgeeks/stack)
+- :tophat: [String](src/com/geeksforgeeks/string)
+- :8ball: [Tree](src/com/geeksforgeeks/tree)
 
 ### Interview Bit Problems 
-- :computer: [Array](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/array)
-- :heavy_plus_sign: :heavy_multiplication_x: [Math](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/math)
-- :arrows_counterclockwise: [Binary Search](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/binary_search)
-- :tophat: [String](https://github.com/neerajjain92/data-structures/tree/master/src/com/interviewbit/string_parsing)
+- :computer: [Array](src/com/interviewbit/array)
+- :heavy_plus_sign: :heavy_multiplication_x: [Math](src/com/interviewbit/math)
+- :arrows_counterclockwise: [Binary Search](src/com/interviewbit/binary_search)
+- :tophat: [String](src/com/interviewbit/string_parsing)
 
 ### COMPANY PREP
-- :fire: [AMAZON INTERVIEW QUESTIONS](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/amazon)
-- :octocat: [Near Buy Interview Questions](https://github.com/neerajjain92/data-structures/tree/master/src/com/company/nearbuy)
+- :fire: [AMAZON INTERVIEW QUESTIONS](src/com/company/amazon)
+- :octocat: [Near Buy Interview Questions](src/com/company/nearbuy)
