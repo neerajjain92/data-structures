@@ -20,3 +20,9 @@ This is the collection of algorithms, data structures and Interview Questions wi
 ### COMPANY PREP
 - :fire: [AMAZON INTERVIEW QUESTIONS](src/com/company/amazon)
 - :octocat: [Near Buy Interview Questions](src/com/company/nearbuy)
+
+### Leet-Code Problems
+
+- :rocket: [Easy](src/com/leetcode/problems/easy)
+- :rocket: [Medium](src/com/leetcode/problems/medium)
+- :rocket: [Hard](src/com/leetcode/problems/hard)
