@@ -1,0 +1,75 @@
+public class AmountInWords {
+
+	public static void main(String[] args) {
+		String checkAmount = "49022.00";
+		String amountInWords = getAmountInWords(checkAmount);
+		System.out.println("amountInWords"+amountInWords);
+	}
+	public static String getAmountInWords(String checkAmount) {
+		String amountInWords = "";
+		String totalAmount = checkAmount;
+		String[] splitAmount = totalAmount.split("\\.");
+		String textToBeAttached = "";
+		int amount = 0;
+		boolean isNeg = false;
+		if(splitAmount!=null){
+			amount = Integer.parseInt(splitAmount[0]);
+			if (amount < 0){
+				isNeg = true;
+				amount *= -1; 
+			}
+		}
+		if(splitAmount[1].equals("0") || splitAmount[1].equals("00")){
+			textToBeAttached = " DOLLARS ";
+			
+		} else {
+			textToBeAttached = " AND "+splitAmount[1]+"/100"+" DOLLARS";
+			
+		}
+		amountInWords = spellout(amount);
+		amountInWords = amountInWords+" "+textToBeAttached;
+		if (isNeg){
+			amountInWords = "- " + amountInWords;
+		}
+		return amountInWords;
+	}
+	 public static String spellout(int x)  {
+			 String[] ones = { "ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", 
+					 "SEVEN", "EIGHT", "NINE" };
+			 String[] teens = { "TEN", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN", "FIFTEEN",
+					 "SIXTEEN", "SEVENTEEN","EIGHTEEN", "NINETEEN" };
+			 String[] tens = {"", "TEN", "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", 
+					 "SEVENTY","EIGHTY", "NINETY" };
+			 String hundred = " HUNDRED";
+			 String[] thousands = { " THOUSAND", " MILLION", " BILLION", " TRILLION" };
+		 	  if (x < 10){
+		 		  return ones[x];
+		 	  }else if (x < 20){
+				  return teens[x-10];
+			  }else if (x < 100) {
+				  if (x % 10 == 0)
+				  return tens[x / 10];
+				  else
+				  return tens[x / 10] + " " + ones[x % 10];
+			  }else if (x < 1000) {
+				  if (x % 100 == 0)
+				  return ones[x / 100] + hundred;
+				  else
+				  return ones[x / 100] + hundred + " " +
+				  spellout(x % 100);
+			  }else if (x < 1000000) {
+				  if (x % 1000 == 0)
+				  return spellout(x / 1000) + thousands[0];
+				  else
+				  return spellout(x / 1000) + thousands[0] + " " +
+				  spellout(x % 1000);
+			  }else if (x < 1000000000) {
+				  if (x % 1000000 == 0)
+				  return spellout(x / 1000000) + thousands[1];
+				  else
+				  return spellout(x / 1000000) + thousands[1] + " " +
+				  spellout(x % 1000000);
+			  }
+			  return "";
+		}
+}
