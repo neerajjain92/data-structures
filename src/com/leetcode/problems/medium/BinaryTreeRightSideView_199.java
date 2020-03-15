@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class BinaryTreeRightSideView_199 {
 
-    static class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -39,15 +39,15 @@ public class BinaryTreeRightSideView_199 {
 
         while (!queue.isEmpty()) {
             int size = queue.size();
-            for(int i=0;i<size;i++) {
+            for (int i = 0; i < size; i++) {
                 TreeNode polled = queue.poll();
-                if(i== size -1) {
+                if (i == size - 1) {
                     result.add(polled.val);
                 }
-                if(polled.left != null) {
+                if (polled.left != null) {
                     queue.add(polled.left);
                 }
-                if(polled.right != null) {
+                if (polled.right != null) {
                     queue.add(polled.right);
                 }
             }
@@ -56,6 +56,7 @@ public class BinaryTreeRightSideView_199 {
     }
 
     static boolean levelTraversed = false;
+
     public static List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         int height = getHeight(root);
@@ -71,7 +72,7 @@ public class BinaryTreeRightSideView_199 {
 
     private static void traverseLevel(TreeNode root, int currentLevel, int levelToTraverse,
                                       Map<Integer, Integer> data) {
-        if(levelTraversed)
+        if (levelTraversed)
             return;
         if (root == null || levelToTraverse < 0)
             return;

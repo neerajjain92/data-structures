@@ -2,18 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FindTheDuplicateNumber_287.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FlattenNestedListIterator_341.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/GameOfLife_289.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/KthSmallestElementInSortedMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/OddEvenList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/RepeatedDNASequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/RotateImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/SpiralMatrixPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/datastructures/tries/TrieImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hackerearth/goldmansachs/CountTheBacteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/hackerearth/goldmansachs/NonRepeatingDigitInProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/hard/MinimumWindowSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/BuyAndSellStockWithTransactionFee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/ConstructBinaryTreefromPreorderandInorderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/IncreasingTripletSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/InsertDeleteGetRandom_o_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/IsValidSudoku_36.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/MyCalendar_1_729.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/PerfectSquares_279.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_First.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_II.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/ZigZagLevelOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/LargestValueFromLabels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/ReorganizeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/TaskScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/array/Rotate2DMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/array/Rotate2DMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/StockBuyAndSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/StockBuyAndSell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MinimumWindowSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/BuySellStockWithKTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/BuySellStockWithKTransactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/array/ConvertNumberToWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/array/ConvertNumberToWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MatrixSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/BinaryTreeRightSideView_199.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/BinaryTreeRightSideView_199.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +36,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -38,9 +65,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RuYiav3lIC9HmAct4FMZaJ81rO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,21 +87,48 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.GameOfLife_289">
-    <configuration name="GameOfLife_289" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.GameOfLife_289" />
+  <component name="RunManager" selected="Application.LargestValueFromLabels">
+    <configuration name="LargestValueFromLabels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.LargestValueFromLabels" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReorganizeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.ReorganizeString" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.TaskScheduler" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskScheduler_621" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.TaskScheduler_621" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -80,51 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KthSmallestElementInSortedMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.KthSmallestElementInSortedMatrix" />
+    <configuration name="VerifyingAnAlienDictionary (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.VerifyingAnAlienDictionary" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.problems.medium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeKSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.heap.MergeKSortedArrays" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.heap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OddEvenList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.OddEvenList" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.problems.medium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepeatedDNASequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.RepeatedDNASequence" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.problems.medium.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,13 +155,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GameOfLife_289" />
-        <item itemvalue="Application.OddEvenList" />
-        <item itemvalue="Application.KthSmallestElementInSortedMatrix" />
-        <item itemvalue="Application.MergeKSortedArrays" />
-        <item itemvalue="Application.RepeatedDNASequence" />
+        <item itemvalue="Application.LargestValueFromLabels" />
+        <item itemvalue="Application.TaskScheduler" />
+        <item itemvalue="Application.TaskScheduler_621" />
+        <item itemvalue="Application.ReorganizeString" />
+        <item itemvalue="Application.VerifyingAnAlienDictionary (1)" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -154,7 +187,21 @@
       <updated>1570518575121</updated>
       <workItem from="1570518576534" duration="8927000" />
       <workItem from="1570727830242" duration="1015000" />
-      <workItem from="1570816307805" duration="1545000" />
+      <workItem from="1570816307805" duration="19495000" />
+      <workItem from="1570941863691" duration="4657000" />
+      <workItem from="1571078034900" duration="1218000" />
+      <workItem from="1571160774115" duration="2498000" />
+      <workItem from="1571239122220" duration="4880000" />
+      <workItem from="1571288735233" duration="1000" />
+      <workItem from="1571476176372" duration="4193000" />
+      <workItem from="1571560486684" duration="5862000" />
+      <workItem from="1574325735543" duration="1435000" />
+      <workItem from="1574441414482" duration="1000" />
+      <workItem from="1574490759132" duration="4363000" />
+      <workItem from="1583772156692" duration="4349000" />
+      <workItem from="1583862269812" duration="5522000" />
+      <workItem from="1583940237182" duration="1697000" />
+      <workItem from="1584170479350" duration="5643000" />
     </task>
     <servers />
   </component>
@@ -173,6 +220,72 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="503" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583864186704">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="503" y="335" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1583864186704" />
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1584188054351">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1584188054351" />
+    <state x="537" y="317" key="#xdebugger.evaluate" timestamp="1583778371380">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="537" y="317" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1583778371380" />
+    <state width="1638" height="392" key="GridCell.Tab.0.bottom" timestamp="1584189915862">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="392" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584189915862" />
+    <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
+    <state width="1638" height="560" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583864804827" />
+    <state width="1638" height="392" key="GridCell.Tab.0.center" timestamp="1584189915860">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="392" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584189915860" />
+    <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
+    <state width="1638" height="560" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583864804825" />
+    <state width="1638" height="392" key="GridCell.Tab.0.left" timestamp="1584189915860">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="392" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584189915860" />
+    <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
+    <state width="1638" height="560" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583864804825" />
+    <state width="1638" height="392" key="GridCell.Tab.0.right" timestamp="1584189915861">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="392" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584189915861" />
+    <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
+    <state width="1638" height="560" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583864804826" />
+    <state width="1638" height="421" key="GridCell.Tab.1.bottom" timestamp="1584189699710">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="421" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584189699710" />
+    <state width="2518" height="359" key="GridCell.Tab.1.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
+    <state width="1638" height="421" key="GridCell.Tab.1.center" timestamp="1584189699708">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="421" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584189699708" />
+    <state width="2518" height="359" key="GridCell.Tab.1.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
+    <state width="1638" height="421" key="GridCell.Tab.1.left" timestamp="1584189699708">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="421" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584189699708" />
+    <state width="2518" height="359" key="GridCell.Tab.1.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
+    <state width="1638" height="421" key="GridCell.Tab.1.right" timestamp="1584189699709">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="421" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584189699709" />
+    <state width="2518" height="359" key="GridCell.Tab.1.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584187924395">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1584187924395" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1584186599269">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1584186599269" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -217,6 +330,145 @@
           <line>30</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/array/ConvertNumberToWords.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/IsValidSudoku_36.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/google/RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/google/RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/MeetingRoom2_253.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/ConstructBinaryTreefromPreorderandInorderTraversal.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hackerearth/goldmansachs/NonRepeatingDigitInProduct.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hackerearth/goldmansachs/NonRepeatingDigitInProduct.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hackerearth/goldmansachs/CountTheBacteria.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hackerearth/goldmansachs/CountTheBacteria.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/PerfectSquares_279.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/PerfectSquares_279.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_II.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_II.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_II.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_First.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="start == 19 &amp;&amp; end == 25" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/MyCalendar_1_729.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/MyCalendar_1_729.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/MyCalendar_1_729.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/sliding_window/MinimumWindowSubstring.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/StockBuyAndSell.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/StockBuyAndSell.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/BuySellStockWithKTransactions.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/BuyAndSellStockWithTransactionFee.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/ReorganizeString.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/TaskScheduler.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LargestValueFromLabels.java</url>
+          <line>42</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/KthSmallestElementInSortedMatrix.java</url>
           <line>34</line>
@@ -227,5 +479,16 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="order.get(word1.charAt(i))" language="JAVA" />
+        <watch expression="order.get(word2.charAt(i))" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/data_structures$BinaryTreeRightSideView_199.ic" NAME="BinaryTreeRightSideView_199 Coverage Results" MODIFIED="1570956440011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.leetcode.problems.medium.*</FILTER>
+    </SUITE>
   </component>
 </project>

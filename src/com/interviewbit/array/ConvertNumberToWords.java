@@ -26,7 +26,7 @@ public class ConvertNumberToWords {
     // such as 74256 ==> Seventy Four Thousand Two hundred Fifty Six.
     // here placeValue index are
     //  7   4   2   5   6
-    // (5) (4) (3) (2) (1)
+    // (5) (4) (3) (2) (1) <-- Tens Place such as, Seventy  and Fifty
     static List<Integer> placeValueIndexForTensPlace = Arrays.asList(9, 7, 5, 2);
     static String WHITESPACE = " ";
 

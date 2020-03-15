@@ -23,12 +23,59 @@ import java.util.stream.Collectors;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
+@SuppressWarnings("DuplicatedCode")
 public class MinimumWindowSubstring {
 
     public static void main(String[] args) {
         solveMinimumWindowSubStringUsingSlidingWindow("AZJSKFZTS", "SZ");
         solveMinimumWindowSubStringUsingSlidingWindow("geeksforgeeks", "ork");
         solveMinimumWindowSubStringUsingSlidingWindow("this is a test string", "tist");
+        solveMinimumWindowSubStringUsingSlidingWindow("ADOBECODEBANC", "ABC");
+
+        System.out.println("-%%%%%%%%%%%%%%%%%%%%% OPTIMAL SOLUITON %%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+        System.out.println(minWindowOptimal("AZJSKFZTS", "SZ"));
+        System.out.println(minWindowOptimal("geeksforgeeks", "ork"));
+        System.out.println(minWindowOptimal("this is a test string", "tist"));
+        System.out.println(minWindowOptimal("ADOBECODEBANC", "ABC"));
+    }
+
+    public static String minWindowOptimal(String haystack, String needle) {
+        // We can use Map but char [] is much more faster
+        int[] toBeFoundNeedleCharFreq = new int[128]; // Total 128 Characters, which will keep count of all needle characters freq
+        int minLength = Integer.MAX_VALUE;
+        int minStart = 0;
+        for (int i : needle.toCharArray()) {
+            toBeFoundNeedleCharFreq[i]++;
+        }
+        int end = 0;
+        int start = 0;
+        int counter = needle.length(); // Length of characters to be search.
+
+        while (end < haystack.length()) {
+            if (toBeFoundNeedleCharFreq[haystack.charAt(end)] > 0) {
+                counter--;
+            }
+            toBeFoundNeedleCharFreq[haystack.charAt(end)]--;
+            end++;
+            // Now if we have reached to a point when the needle is found in haystack
+            // So let's minimize it, counter tells us that we reached to the end of our search
+            while (counter == 0) { // i.e until counter is 0 we can shrink the window to find another minimum window
+
+                if (minLength > (end - start)) {
+                    minLength = end - start;
+                    minStart = start;
+                }
+
+                // Now since we have to shrink the window, so we need to increment the freq of characters which were
+                // visited but due to shrinking of window becomes unvisited from start pointer;
+                toBeFoundNeedleCharFreq[haystack.charAt(start)]++;
+                if (toBeFoundNeedleCharFreq[haystack.charAt(start)] > 0) {
+                    counter++;
+                }
+                start++;
+            }
+        }
+        return minLength == Integer.MAX_VALUE ? "" : haystack.substring(minStart, minStart + minLength);
     }
 
     public static void solveMinimumWindowSubStringUsingSlidingWindow(String haystack, String needle) {
@@ -44,7 +91,7 @@ public class MinimumWindowSubstring {
             if (needleFoundInHaystack(needleFrequency, window, needle)) {
                 if (minimumWindow.length() > (rightPointer - leftPointer + 1)) {
                     minimumWindow = haystack.substring(leftPointer, rightPointer + 1);
-                    System.out.println(minimumWindow);
+//                    System.out.println(minimumWindow);
                 }
                 leftPointer++;
             } else {

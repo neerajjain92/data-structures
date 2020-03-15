@@ -4,9 +4,28 @@ import com.geeksforgeeks.array.Rotate2DMatrix;
 
 public class BuySellStockWithKTransactions {
 
+//    public static void main(String[] args) {
+//        getMaximumProfit(new int[]{2, 5, 7, 1, 4, 3, 1, 3}, 3);
+//    }
+
+
     public static void main(String[] args) {
-        getMaximumProfit(new int[]{2, 5, 7, 1, 4, 3, 1, 3}, 3);
+//        int prices[]={1, 3, 2, 8, 4, 9};
+        int prices[] = new int[]{1, 3, 7, 5, 10, 3};
+        int fee = 3;
+        System.out.println(maxSell(prices, fee));
     }
+
+    public static int maxSell(int[] A, int fee) {
+        int buy = -1 * A[0];
+        int sell = 0;
+        for (int i = 1; i < A.length; i++) {
+            buy = Math.max(buy, sell - A[i]);
+            sell = Math.max(sell, buy + A[i] - fee);
+        }
+        return sell;
+    }
+
 
     public static int getMaximumProfit(int[] dailyProfits, int totalNoOfTransactions) {
         int[][] MAX_PROFIT = new int[totalNoOfTransactions + 1][dailyProfits.length];
