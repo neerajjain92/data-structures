@@ -20,43 +20,36 @@ public class ReorganizeString {
     }
 
     public static String reorganizeString(String S) {
-        Map<Character, Integer> freqCount = new HashMap<>();
+        Map<Character, Integer> charFreq = new HashMap<>();
         for (char c : S.toCharArray()) {
-            freqCount.put(c, freqCount.getOrDefault(c, 0) + 1);
+            charFreq.put(c, charFreq.getOrDefault(c, 0) + 1);
         }
-
-        // Now we need a Max Priority queue which maintains characters based
-        // on their frequency, so that we can arrange the characters based
-        // on most frequent first followed by second most frequent and so on.
-        PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) ->
-                freqCount.get(b) - freqCount.get(a));
-
-        maxHeap.addAll(freqCount.keySet());
-
-        StringBuilder stringBuilder = new StringBuilder();
+        PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> charFreq.get(b) - charFreq.get(a));
+        maxHeap.addAll(charFreq.keySet());
+        StringBuilder result = new StringBuilder();
         while (maxHeap.size() > 1) {
-            char mostFrequent = maxHeap.remove();
-            char nextMostFrequent = maxHeap.remove();
+            char first = maxHeap.poll();
+            char second = maxHeap.poll();
+            result.append(first).append(second);
 
-            stringBuilder.append(mostFrequent).append(nextMostFrequent);
-
-            freqCount.put(mostFrequent, freqCount.get(mostFrequent) - 1);
-            freqCount.put(nextMostFrequent, freqCount.get(nextMostFrequent) - 1);
-
-            if (freqCount.get(mostFrequent) > 0) {
-                maxHeap.add(mostFrequent);
+            if (charFreq.get(first) > 1) {
+                charFreq.put(first, charFreq.get(first) - 1);
+                maxHeap.add(first);
             }
-            if (freqCount.get(nextMostFrequent) > 0) {
-                maxHeap.add(nextMostFrequent);
+            if (charFreq.get(second) > 1) {
+                charFreq.put(second, charFreq.get(second) - 1);
+                maxHeap.add(second);
+            }
+
+        }
+
+        if (!maxHeap.isEmpty()) {
+            if (charFreq.get(maxHeap.peek()) > 1) {
+                return "";
+            } else {
+                result.append(maxHeap.poll());
             }
         }
-        if (freqCount.get(maxHeap.peek()) != null &&
-                freqCount.get(maxHeap.peek()) > 1) {
-            return "";
-        }
-        while (!maxHeap.isEmpty()) {
-            stringBuilder.append(maxHeap.remove());
-        }
-        return stringBuilder.toString();
+        return result.toString();
     }
 }
