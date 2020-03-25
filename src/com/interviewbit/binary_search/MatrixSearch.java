@@ -46,19 +46,35 @@ public class MatrixSearch {
         a.add(row2);
         a.add(row3);
 
-        System.out.println(searchMatrix(a, 1));
-        System.out.println(searchMatrix(a, 3));
-        System.out.println(searchMatrix(a, 5));
-        System.out.println(searchMatrix(a, 7));
-        System.out.println(searchMatrix(a, 10));
-        System.out.println(searchMatrix(a, 11));
-        System.out.println(searchMatrix(a, 16));
-        System.out.println(searchMatrix(a, 20));
-        System.out.println(searchMatrix(a, 23));
-        System.out.println(searchMatrix(a, 30));
-        System.out.println(searchMatrix(a, 34));
-        System.out.println(searchMatrix(a, 50));
-        System.out.println(searchMatrix(a, 51));
+//        System.out.println(searchMatrix(a, 1));
+//        System.out.println(searchMatrix(a, 3));
+//        System.out.println(searchMatrix(a, 5));
+//        System.out.println(searchMatrix(a, 7));
+//        System.out.println(searchMatrix(a, 10));
+//        System.out.println(searchMatrix(a, 11));
+//        System.out.println(searchMatrix(a, 16));
+//        System.out.println(searchMatrix(a, 20));
+//        System.out.println(searchMatrix(a, 23));
+//        System.out.println(searchMatrix(a, 30));
+//        System.out.println(searchMatrix(a, 34));
+//        System.out.println(searchMatrix(a, 50));
+//        System.out.println(searchMatrix(a, 51));
+
+
+        ArrayList<ArrayList<Integer>> b = new ArrayList<>();
+        ArrayList<Integer> rowB1 = new ArrayList<>(Arrays.asList(1,   4,  7, 11, 15));
+        ArrayList<Integer> rowB2 = new ArrayList<>(Arrays.asList(2,   5,  8, 12, 19));
+        ArrayList<Integer> rowB3 = new ArrayList<>(Arrays.asList(3,   6,  9, 16, 22));
+        ArrayList<Integer> rowB4 = new ArrayList<>(Arrays.asList(10, 13, 14, 17, 24));
+        ArrayList<Integer> rowB5 = new ArrayList<>(Arrays.asList(18, 21, 23, 26, 30));
+
+        b.add(rowB1);
+        b.add(rowB2);
+        b.add(rowB3);
+        b.add(rowB4);
+        b.add(rowB5);
+
+        System.out.println(searchMatrix(b, 5));
     }
 
     public static int searchMatrix(ArrayList<ArrayList<Integer>> a, int b) {
