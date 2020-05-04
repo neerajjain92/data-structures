@@ -10,9 +10,11 @@ public class LongestCommonSubsequence {
     public static void main(String[] args) {
         getLongestCommonSubsequence("abcdaf".toCharArray(), "acbcf".toCharArray());
 
-        System.out.println("LCS of aab and azb is " + getLongestCommonSubsequenceRecursively("aab", "azb") + " and common sub-sequence is " + LCS.reverse());
+        System.out.println("LCS of aab and azb is " +
+                getLongestCommonSubsequenceRecursively("aab", "azb") + " and common sub-sequence is " + LCS.reverse());
         LCS = new StringBuffer();
-        System.out.println("LCS of abcdaf and acbcf is " + getLongestCommonSubsequenceRecursively("abcdaf", "acbcf") + " and common sub-sequence is " + LCS.reverse());
+        System.out.println("LCS of abcdaf and acbcf is " +
+                getLongestCommonSubsequenceRecursively("abcdaf", "acbcf") + " and common sub-sequence is " + LCS.reverse());
     }
 
     /**

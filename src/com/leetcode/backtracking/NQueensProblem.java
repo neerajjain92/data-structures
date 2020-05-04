@@ -15,7 +15,12 @@ import java.util.List;
 public class NQueensProblem {
 
     public static void main(String[] args) {
-        solveNQueensProblem(4);
+//        solveNQueensProblem(4);
+        System.out.println(solveNQueens(4));
+        System.out.println(solveNQueens(5));
+        System.out.println(solveNQueens(6));
+        System.out.println(solveNQueens(7));
+        System.out.println(solveNQueens(8));
     }
 
     public static void solveNQueensProblem(int boardSize) {
@@ -101,6 +106,58 @@ public class NQueensProblem {
               Queen 2 is in row 1, Queen 3 is in row 2. 2 - 1 = 1.
             */
             if (absoluteColumnDistance == 0 || absoluteColumnDistance == rowWeAreValidatingOn - ithQueenRow) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    public static List<List<String>> solveNQueens(int n) {
+        List<List<String>> placements = new ArrayList<>();
+        solveNQueens(0, new ArrayList<>(), placements, n);
+        return placements;
+    }
+
+    public static void solveNQueens(int queenToBePlaced, List<String> currentPlacement, List<List<String>> placements, int totalQueen) {
+        if (queenToBePlaced == totalQueen) {
+            placements.add(new ArrayList<>(currentPlacement));
+            return;
+        }
+
+        for (int col = 0; col < totalQueen; col++) {
+            if (canPlace(queenToBePlaced, col, currentPlacement, totalQueen)) {
+                StringBuilder str = new StringBuilder();
+                for (int i = 0; i < totalQueen; i++) {
+                    str.append(".");
+                }
+                str.setCharAt(col, 'Q');
+                currentPlacement.add(str.toString());
+                solveNQueens(queenToBePlaced + 1, currentPlacement, placements, totalQueen);
+                currentPlacement.remove(currentPlacement.size() - 1);
+            }
+        }
+
+    }
+
+    private static boolean canPlace(int row, int col, List<String> placements, int totalQueen) {
+        // Check Current Columns
+        for (int i = 0; i < row; i++) {
+            if (placements.get(i).charAt(col) == 'Q') {
+                return false;
+            }
+        }
+
+        // Check Left Diagonal
+        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
+            if (placements.get(i).charAt(j) == 'Q') {
+                return false;
+            }
+        }
+
+        // Check Right Diagonal
+        for (int i = row - 1, j = col + 1; i >= 0 && j < totalQueen; i--, j++) {
+            if (placements.get(i).charAt(j) == 'Q') {
                 return false;
             }
         }

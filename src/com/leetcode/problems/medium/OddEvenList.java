@@ -38,9 +38,30 @@ public class OddEvenList {
 
         printList(sample);
 
-        sample = oddEvenList(sample);
+        sample = oddEvenListOptimizedSandwich(sample);
 
         printList(sample);
+    }
+
+    public static ListNode oddEvenListOptimizedSandwich(ListNode head) {
+        // We will link odd nodes together
+        // and the even nodes as well
+        // at last just attach oddlastPointer to even head
+
+        if (head != null) {
+            ListNode odd = head;
+            ListNode even = head.next;
+            ListNode evenHead = even;
+
+            while (even != null && even.next != null) {
+                odd.next = odd.next.next;
+                even.next = even.next.next;
+                odd = odd.next;
+                even = even.next;
+            }
+            odd.next = evenHead;
+        }
+        return head;
     }
 
     public static ListNode oddEvenList(ListNode head) {

@@ -1,5 +1,8 @@
 package com.leetcode.problems.medium;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author neeraj on 15/10/19
  * Copyright (c) 2019, data-structures.
@@ -58,7 +61,6 @@ public class Search2DMatrix_II {
     }
 
     public static boolean searchMatrix(int[][] matrix, int target) {
-
         if (matrix.length == 0 || matrix[0].length == 0)
             return false;
         // Find Rows to be rejected
@@ -86,6 +88,23 @@ public class Search2DMatrix_II {
 
     private static boolean binarySearch(int[] matrix, int low, int high, int target) {
         if (low <= high) {
+
+            // Why mid = low + (high - low)/2
+            /**
+             * Mid is somewhere between low and high, so lets assume
+             * mid = low + x 			// cool… this is convincing so far yet :P
+             * // Hey!! I am substituting your fav mid formula down here :P
+             * ( high + low ) / 2 = low + x
+             *
+             * low + x = ( high + low ) / 2
+             * x = ( high + low ) / 2 - low
+             * x = ( high + low - 2 * low ) / 2
+             * x = ( high - low ) / 2
+             *
+             * // yeah... I got the value of “x"... jinga lala hooooo...
+             */
+            Map<Integer, Integer> map = new HashMap<>();
+            map.hashCode();
             int mid = low + (high - low) / 2;
 
             if (matrix[mid] == target) {

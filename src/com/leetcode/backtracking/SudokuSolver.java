@@ -52,10 +52,10 @@ public class SudokuSolver {
 
 
         logIt("Solving Sudoku", true);
-        printMultiDimensionArray(board_2);
-        if (solveSudoku(0, 0, board_2)) {
+        printMultiDimensionArray(board_1);
+        if (solveSudoku(0, 0, board_1)) {
             logIt("Sudoku Solved successfully", true);
-            printMultiDimensionArray(board_2);
+            printMultiDimensionArray(board_1);
 
             logIt("Problem solved in " + TRY_COUNTER + "tries", true);
         } else {
@@ -98,9 +98,9 @@ public class SudokuSolver {
             if (isValidPlacement(row, col, value, board)) {
                 board[row][col] = value;
 
-                // Let's log out the entry
-                logIt(">>>>>>>>>>>>>>>>> Trying Placing " + value + " at [" + row + "," + col + "] with try_count at " + (++TRY_COUNTER) +
-                        " <<<<<<<<<<<<<<<<<<<", false);
+//                // Let's log out the entry
+//                logIt(">>>>>>>>>>>>>>>>> Trying Placing " + value + " at [" + row + "," + col + "] with try_count at " + (++TRY_COUNTER) +
+//                        " <<<<<<<<<<<<<<<<<<<", false);
 
                 if (SHOULD_ADD_SLEEP_AND_INTERMEDIATE_LOGS) {
 

@@ -63,30 +63,53 @@ public class MinimumPathSum_64 {
         });
     }
 
-    private static int minPathSumUsingDP(int[][] grid) {
-        int[][] minPathSum = new int[grid.length][grid[0].length];
+    /**
+     * This is a DP solution
+     * Since we can move in 2 directions, RIGHT and BOTTOM
+     * So we will keep track of which will be cheaper/less costly
+     */
+    public static int minPathSumUsingDP(int[][] grid) {
+        int[][] pathSum = new int[grid.length][grid[0].length];
 
-        // Since we can only move in either right or down
-        // Let's pre-fill the 1st row and 1st column, as there is no other way apart from moving right and down
-        // to cover up the 1st row and column
-        minPathSum[0][0] = grid[0][0];
+        // So for Grid with
 
-        for(int j=1;j<minPathSum[0].length;j++) {
-            minPathSum[0][j] = minPathSum[0][j-1] + grid[0][j];
+        /**
+         * [
+         *   [1,3,1],
+         *   [1,5,1],
+         *   [4,2,1]
+         * ]
+         *
+         * Path Sum for 1st Row and Col look like
+         * [
+         *  [1, 4, 5],
+         *  [2, X, X],
+         *  [6, X, X]
+         * ]
+         *
+         * X will be calculated during this problem solving.
+         */
+
+        pathSum[0][0] = grid[0][0];
+
+        // For 1st Row there is just one way to reach that is start from top left and
+        // Move right 1 step.
+        for (int col = 1; col < grid[0].length; col++) {
+            pathSum[0][col] = pathSum[0][col - 1] + grid[0][col];
         }
 
-
-        for(int i=1;i<minPathSum.length;i++) {
-            minPathSum[i][0] = minPathSum[i-1][0] + grid[i][0];
+        // For 1st Col there is just one way to reach that is start from top left and
+        // Move down 1 step.
+        for (int row = 1; row < grid.length; row++) {
+            pathSum[row][0] = pathSum[row - 1][0] + grid[row][0];
         }
 
-        for (int i = 1; i < minPathSum.length; i++) {
-            for (int j = 1; j < minPathSum[i].length; j++) {
-                minPathSum[i][j] = grid[i][j] + Math.min(minPathSum[i - 1][j], minPathSum[i][j - 1]);
+        for (int i = 1; i < grid.length; i++) {
+            for (int j = 1; j < grid[i].length; j++) {
+                pathSum[i][j] = Math.min(pathSum[i - 1][j], pathSum[i][j - 1]) + grid[i][j];
             }
         }
-        System.out.println(minPathSum[grid.length - 1][grid[0].length - 1]);
-        return minPathSum[grid.length - 1][grid[0].length - 1];
+        return pathSum[pathSum.length - 1][pathSum[0].length - 1];
     }
 
     static int minimumDistance = Integer.MAX_VALUE;

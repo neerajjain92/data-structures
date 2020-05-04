@@ -1530,13 +1530,13 @@ public class BinaryTreeUtil {
     /**
      * A complete binary tree is a binary tree in which every level, except possibly the last, is completely
      * filled, and all nodes are as far left as possible.
-     * 1
-     * /   \
-     * 2     3
+     *   1
+     *  / \
+     * 2   3
      * <p>
-     * 1
-     * /    \
-     * 2       3
+     *    1
+     *   / \
+     *  2   3
      * /
      * 4
      * <p>

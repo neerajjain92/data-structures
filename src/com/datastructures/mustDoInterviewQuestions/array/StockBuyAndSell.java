@@ -19,6 +19,7 @@ public class StockBuyAndSell {
 //        getMaxProfitWithTransactionFees(new int[]{1, 3, 2, 8, 4, 9}, 2);
 
         getMaxProfit(new int[]{1, 3, 7, 5, 10, 3});
+        getMaxProfitWithTransactionFees(new int[]{1, 3, 7, 5, 10, 3}, 3);
     }
 
     public static void getMaxProfitWithTransactionFees(int[] prices, int transactionFees) {

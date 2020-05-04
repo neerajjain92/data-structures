@@ -10,7 +10,9 @@ public class LargestSumContiguousSubArray {
     public static void main(String[] args) {
         int [] sample = new int[]{-2,-3,4,-1,-2,1,5,-3};
 
-        System.out.println(getMaxSumWithDP(sample));
+//        System.out.println(getMaxSumWithDP(sample));
+        System.out.println(getMaxSum(sample));
+
     }
 
     public static int getMaxSum(int [] sample){

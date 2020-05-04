@@ -40,6 +40,15 @@ public class LogUtil {
         logIt("End of Array", true);
     }
 
+    public static void printCharArray(char[] arr) {
+        logIt("Start of Char Array", true);
+        for (int i = 0; i < arr.length; i++) {
+            logInSingleLine(arr[i]);
+        }
+        newLine();
+        logIt("End of Char Array", true);
+    }
+
     public static void printArray(int[] arr) {
         logIt("Start of Array", true);
         for (int i = 0; i < arr.length; i++) {

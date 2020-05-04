@@ -1,8 +1,6 @@
 package com.leetcode.problems.medium;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author neeraj on 12/10/19
