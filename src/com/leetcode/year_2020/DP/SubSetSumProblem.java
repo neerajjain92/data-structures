@@ -20,15 +20,17 @@ public class SubSetSumProblem {
     static Boolean t[][]; // Memorization Matrix;
     static boolean dp[][]; // Bottom Up Cache.
 
-    public static void isSubSetSum(int[] set, int sum) {
+    public static boolean isSubSetSum(int[] set, int sum) {
         t = new Boolean[set.length + 1][sum + 1];
-        System.out.println("Recursive with Memorization " + isSubSetSum(set, set.length - 1, sum));
-        dp = new boolean[set.length + 1][sum + 1];
-        System.out.println("Bottom Up Approach  " + isSubSetSumBottomUp(set, set.length - 1, sum));
+        boolean result = isSubSetSum(set, set.length - 1, sum);
+//        System.out.println("Recursive with Memorization  for Sum " + sum + " is " + result);
+//        dp = new boolean[set.length + 1][sum + 1];
+//        System.out.println("Bottom Up Approach  " + isSubSetSumBottomUp(set, set.length - 1, sum));
+        return result;
     }
 
 
-    private static boolean isSubSetSum(int set[], int n, int sum) {
+    public static boolean isSubSetSum(int set[], int n, int sum) {
         // Base Condition
         if (sum == 0) return true; // we have reached to a level where
         // we have selected some elements which sums upto "SUM"
