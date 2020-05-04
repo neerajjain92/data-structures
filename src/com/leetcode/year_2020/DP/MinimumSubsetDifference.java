@@ -14,6 +14,7 @@ package com.leetcode.year_2020.DP;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
+@SuppressWarnings("DuplicatedCode")
 public class MinimumSubsetDifference {
 
     public static void main(String[] args) {
@@ -72,12 +73,68 @@ public class MinimumSubsetDifference {
 
         int MIN_DIFFERENCE = Integer.MAX_VALUE;
         // Now we have to try subset sum for 1 to SUM/2;
+
+        // Now instead of trying for all the sum 1 by 1, if i calculate the subSet for SUM(SET)...
+        // i.e if i calculate the isSubSetPresent(set, sum of array)
+        // then if we were using BottomUp approach our matrix already stored all values
+        /**
+         * So For [1, 2, 7] and SUM 10 == SUM(ARR).
+         *
+         * If i calculate SubSet sum using Bottom Up Approach, we will get something like this at the end:
+         *
+         *          ==================== (SUM) ===================================>
+         *        0       1        2      3       4        5        6       7      8        9     10        ||
+         * 0     true	false	false	false	false	false	false	false	false	false	false       ||
+         * 1     true	true	false	false	false	false	false	false	false	false	false      (SET)
+         * 2     true	true	true	true	false	false	false	false	false	false	false       ||
+         * 7     true	true	true	true	false	false	false	true	true	true	true        \/
+         *
+         * Now if you look at the last row, what does it represent, it represent that if
+         * all items are there in set can i make the sum ... 1,2,3,4 .... ? and so on.
+         *
+         * So we have to just calculate isSubSetSum once and we are done.
+         *
+         *
+         */
+        boolean dp[][] = getSubSetSUMCache(set, SUM);
+
         for (int S1 = 1; S1 <= SUM / 2; S1++) {
-            if (SubSetSumProblem.isSubSetSum(set, S1)) { // If an only if a subset is present for the following sum
+            if (dp[dp.length - 1][S1]) { // If an only if a subset is present for the following sum
                 // we can include it for Min difference calculation
-                MIN_DIFFERENCE = Math.min(MIN_DIFFERENCE, (SUM - (2 * S1)));
+                MIN_DIFFERENCE = Math.min(MIN_DIFFERENCE, SUM - (2 * S1));
             }
         }
         return MIN_DIFFERENCE;
+    }
+
+    public static boolean[][] getSubSetSUMCache(int[] set, int sum) {
+        boolean dp[][] = new boolean[set.length + 1][sum + 1];
+
+        // Initialize
+        // So in Bottom up we have to do the initialization of the matrix.
+        // As per Recursive. if(n < 0 || sum < 0) return false;
+
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[i].length; j++) {
+                if (i == 0) {
+                    dp[i][j] = false;
+                }
+                if (j == 0) {
+                    dp[i][j] = true;
+                }
+            }
+        }
+
+        // Now fill the rest of matrix.
+        for (int i = 1; i < dp.length; i++) {
+            for (int j = 1; j < dp[i].length; j++) {
+                if (set[i - 1] <= j) { // Item is <= sum
+                    dp[i][j] = dp[i - 1][j - set[i - 1]] || dp[i - 1][j];
+                } else { // Item is > sum, so definitely not choosing it.
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+        return dp;
     }
 }

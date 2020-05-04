@@ -54,8 +54,8 @@ public class SubSetSumProblem {
         // So in Bottom up we have to do the initialization of the matrix.
         // As per Recursive. if(n < 0 || sum < 0) return false;
 
-        for (int i = 0; i < t.length; i++) {
-            for (int j = 0; j < t[i].length; j++) {
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[i].length; j++) {
                 if (i == 0) {
                     dp[i][j] = false;
                 }
@@ -66,7 +66,7 @@ public class SubSetSumProblem {
         }
 
         // Now fill the rest of matrix.
-        for (int i = 1; i < t.length; i++) {
+        for (int i = 1; i < dp.length; i++) {
             for (int j = 1; j < dp[i].length; j++) {
                 if (set[i - 1] <= j) { // Item is <= sum
                     dp[i][j] = dp[i - 1][j - set[i - 1]] || dp[i - 1][j];

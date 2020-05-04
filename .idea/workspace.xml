@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumSubsetDifference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/SubSetSumProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/SubSetSumProblem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumSubsetDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumSubsetDifference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,8 +138,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MinimumSubsetDifference" />
-        <item itemvalue="Application.CountOfSubsetSumWithAGivenSum" />
         <item itemvalue="Application.SubSetSumProblem" />
+        <item itemvalue="Application.CountOfSubsetSumWithAGivenSum" />
         <item itemvalue="Application.PartitionToKEqualSumSubset" />
         <item itemvalue="Application.PartitionEqualSubsetSum" />
       </list>
@@ -215,7 +215,7 @@
       <workItem from="1588358879437" duration="2578000" />
       <workItem from="1588422555777" duration="6291000" />
       <workItem from="1588450490824" duration="25112000" />
-      <workItem from="1588592922909" duration="12798000" />
+      <workItem from="1588592922909" duration="13920000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588613541252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added MinimumSubsetDifference problem with explanation in comments.">
+      <created>1588626694039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588626694039</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions." />
     <MESSAGE value="Added PartitionToKEqualSumSubset problem, Recursive, Memorization and Bottom Up solutions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PartitionToKEqualSumSubset problem, Recursive, Memorization and Bottom Up solutions." />
+    <MESSAGE value="Added MinimumSubsetDifference problem with explanation in comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MinimumSubsetDifference problem with explanation in comments." />
   </component>
   <component name="WindowStateProjectService">
     <state x="503" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583864186704">
@@ -274,36 +282,36 @@
     </state>
     <state x="735" y="449" width="945" height="579" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1588606954377" />
     <state x="958" y="442" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1588513304334" />
-    <state x="295" y="97" key="CommitChangelistDialog2" timestamp="1588613540982">
+    <state x="96" y="112" key="CommitChangelistDialog2" timestamp="1588626693735">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="295" y="97" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1588613540982" />
+    <state x="96" y="112" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1588626693735" />
     <state width="555" height="466" key="DebuggerActiveHint" timestamp="1587218991247">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="555" height="466" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1587218991247" />
-    <state width="1638" height="375" key="GridCell.Tab.0.bottom" timestamp="1588626629714">
+    <state width="1638" height="375" key="GridCell.Tab.0.bottom" timestamp="1588627511266">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588626629714" />
+    <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588627511266" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203587" />
-    <state width="1638" height="375" key="GridCell.Tab.0.center" timestamp="1588626629711">
+    <state width="1638" height="375" key="GridCell.Tab.0.center" timestamp="1588627511265">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588626629711" />
+    <state width="1638" height="375" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588627511265" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="375" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203585" />
-    <state width="1638" height="375" key="GridCell.Tab.0.left" timestamp="1588626629711">
+    <state width="1638" height="375" key="GridCell.Tab.0.left" timestamp="1588627511265">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588626629711" />
+    <state width="1638" height="375" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588627511265" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="375" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203584" />
-    <state width="1638" height="375" key="GridCell.Tab.0.right" timestamp="1588626629712">
+    <state width="1638" height="375" key="GridCell.Tab.0.right" timestamp="1588627511266">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588626629712" />
+    <state width="1638" height="375" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588627511266" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="375" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203586" />
     <state width="1638" height="375" key="GridCell.Tab.1.bottom" timestamp="1588619955755">
@@ -340,10 +348,10 @@
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1588606125820" />
     <state x="341" y="183" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1588517566818" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1588613542722">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1588626695417">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1588613542722" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1588626695417" />
     <state x="601" y="179" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587500349838">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
