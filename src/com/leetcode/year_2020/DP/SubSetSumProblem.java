@@ -7,6 +7,7 @@ package com.leetcode.year_2020.DP;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
+@SuppressWarnings("DuplicatedCode")
 public class SubSetSumProblem {
 
     public static void main(String[] args) {
@@ -46,7 +47,7 @@ public class SubSetSumProblem {
         }
     }
 
-    private static boolean isSubSetSumBottomUp(int sedp[], int n, int sum) {
+    private static boolean isSubSetSumBottomUp(int set[], int n, int sum) {
 
         // So in Bottom up we have to do the initialization of the matrix.
         // As per Recursive. if(n < 0 || sum < 0) return false;
@@ -65,8 +66,8 @@ public class SubSetSumProblem {
         // Now fill the rest of matrix.
         for (int i = 1; i < t.length; i++) {
             for (int j = 1; j < dp[i].length; j++) {
-                if (sedp[i - 1] <= j) { // Item is <= sum
-                    dp[i][j] = dp[i - 1][j - sedp[i - 1]] || dp[i - 1][j];
+                if (set[i - 1] <= j) { // Item is <= sum
+                    dp[i][j] = dp[i - 1][j - set[i - 1]] || dp[i - 1][j];
                 } else { // Item is > sum, so definitely not choosing it.
                     dp[i][j] = dp[i - 1][j];
                 }
