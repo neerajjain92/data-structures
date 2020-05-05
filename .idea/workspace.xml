@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/CountOfSubsetSumWithAGivenSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/PartitionEqualSubsetSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/PartitionToKEqualSumSubset.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/SubSetSumProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/ZeroOneKnapSackRecursively.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/TargetSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,20 +72,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
-  <component name="RunManager" selected="Application.CountTheNumberOfSubsetWithGivenDifference">
-    <configuration name="CountOfSubsetSumWithAGivenSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.knapsack_category.CountOfSubsetSumWithAGivenSum" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.knapsack_category.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TargetSum">
     <configuration name="CountTheNumberOfSubsetWithGivenDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.knapsack_category.CountTheNumberOfSubsetWithGivenDifference" />
       <module name="data-structures" />
@@ -132,13 +125,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TargetSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.knapsack_category.TargetSum" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.DP.knapsack_category.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TargetSum" />
         <item itemvalue="Application.CountTheNumberOfSubsetWithGivenDifference" />
         <item itemvalue="Application.FirstUniqueCharacterInAString" />
         <item itemvalue="Application.MinimumSubsetDifference" />
         <item itemvalue="Application.SubSetSumProblem" />
-        <item itemvalue="Application.CountOfSubsetSumWithAGivenSum" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +221,7 @@
       <workItem from="1588592922909" duration="13920000" />
       <workItem from="1588655096893" duration="57000" />
       <workItem from="1588675307664" duration="237000" />
-      <workItem from="1588702126496" duration="4385000" />
+      <workItem from="1588702126496" duration="5681000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -245,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588707874573</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added TargetSum problem solution with comments.">
+      <created>1588711146563</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588711146563</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +281,8 @@
     <MESSAGE value="Added PartitionToKEqualSumSubset problem, Recursive, Memorization and Bottom Up solutions." />
     <MESSAGE value="Added MinimumSubsetDifference problem with explanation in comments." />
     <MESSAGE value="Added CountTheNumberOfSubsetWithGivenDifference problem solution with comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CountTheNumberOfSubsetWithGivenDifference problem solution with comments." />
+    <MESSAGE value="Added TargetSum problem solution with comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added TargetSum problem solution with comments." />
   </component>
   <component name="WindowStateProjectService">
     <state x="503" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583864186704">
@@ -290,60 +304,64 @@
     </state>
     <state x="735" y="449" width="945" height="579" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1588606954377" />
     <state x="958" y="442" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1588513304334" />
-    <state x="96" y="112" key="CommitChangelistDialog2" timestamp="1588707874307">
+    <state x="96" y="112" key="CommitChangelistDialog2" timestamp="1588711146411">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="96" y="112" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1588707874307" />
+    <state x="96" y="112" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1588711146411" />
     <state width="555" height="466" key="DebuggerActiveHint" timestamp="1587218991247">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="555" height="466" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1587218991247" />
-    <state width="1638" height="375" key="GridCell.Tab.0.bottom" timestamp="1588708118932">
+    <state x="73" y="109" key="DiffContextDialog" timestamp="1588711138933">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588708118932" />
+    <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1588711138933" />
+    <state width="1638" height="375" key="GridCell.Tab.0.bottom" timestamp="1588710809738">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588710809738" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588707514509" />
-    <state width="1638" height="375" key="GridCell.Tab.0.center" timestamp="1588708118931">
+    <state width="1638" height="375" key="GridCell.Tab.0.center" timestamp="1588710809736">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588708118931" />
+    <state width="1638" height="375" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588710809736" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="375" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588707514508" />
-    <state width="1638" height="375" key="GridCell.Tab.0.left" timestamp="1588708118931">
+    <state width="1638" height="375" key="GridCell.Tab.0.left" timestamp="1588710809735">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588708118931" />
+    <state width="1638" height="375" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588710809735" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="375" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588707514507" />
-    <state width="1638" height="375" key="GridCell.Tab.0.right" timestamp="1588708118932">
+    <state width="1638" height="375" key="GridCell.Tab.0.right" timestamp="1588710809737">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588708118932" />
+    <state width="1638" height="375" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588710809737" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="375" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588707514508" />
-    <state width="1638" height="375" key="GridCell.Tab.1.bottom" timestamp="1588619955755">
+    <state width="1638" height="375" key="GridCell.Tab.1.bottom" timestamp="1588710810236">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588619955755" />
+    <state width="1638" height="375" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588710810236" />
     <state width="2518" height="359" key="GridCell.Tab.1.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
     <state width="1638" height="375" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203591" />
-    <state width="1638" height="375" key="GridCell.Tab.1.center" timestamp="1588619955754">
+    <state width="1638" height="375" key="GridCell.Tab.1.center" timestamp="1588710810235">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588619955754" />
+    <state width="1638" height="375" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588710810235" />
     <state width="2518" height="359" key="GridCell.Tab.1.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
     <state width="1638" height="375" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203590" />
-    <state width="1638" height="375" key="GridCell.Tab.1.left" timestamp="1588619955753">
+    <state width="1638" height="375" key="GridCell.Tab.1.left" timestamp="1588710810228">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588619955753" />
+    <state width="1638" height="375" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588710810228" />
     <state width="2518" height="359" key="GridCell.Tab.1.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
     <state width="1638" height="375" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203589" />
-    <state width="1638" height="375" key="GridCell.Tab.1.right" timestamp="1588619955755">
+    <state width="1638" height="375" key="GridCell.Tab.1.right" timestamp="1588710810236">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="375" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588619955755" />
+    <state width="1638" height="375" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588710810236" />
     <state width="2518" height="359" key="GridCell.Tab.1.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
     <state width="1638" height="375" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588617203591" />
     <state x="551" y="261" key="RollbackChangesDialog" timestamp="1588508671452">
@@ -356,10 +374,10 @@
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1588606125820" />
     <state x="341" y="183" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1588517566818" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1588707880265">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1588711148118">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1588707880265" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1588711148118" />
     <state x="601" y="179" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587500349838">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -922,6 +940,21 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/CountOfSubsetSumWithAGivenSum.java</url>
           <line>76</line>
           <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/CountTheNumberOfSubsetWithGivenDifference.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/CountTheNumberOfSubsetWithGivenDifference.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/CountTheNumberOfSubsetWithGivenDifference.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="357" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
