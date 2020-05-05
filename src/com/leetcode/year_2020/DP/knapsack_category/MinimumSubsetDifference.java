@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.DP;
+package com.leetcode.year_2020.DP.knapsack_category;
 
 /**
  * Also known as
