@@ -10,6 +10,8 @@ public class CountTheNumberOfSubsetWithGivenDifference {
 
     public static void main(String[] args) {
         System.out.println(getCountOfNumberOfSubSetWithGivenDifference(new int[]{1, 1, 2, 3}, 1));
+        System.out.println(getCountOfNumberOfSubSetWithGivenDifference(new int[]{1, 1, 1, 1, 1}, 3));
+        System.out.println(getCountOfNumberOfSubSetWithGivenDifference(new int[]{1}, 2));
     }
 
     public static int getCountOfNumberOfSubSetWithGivenDifference(int[] set, int difference) {
