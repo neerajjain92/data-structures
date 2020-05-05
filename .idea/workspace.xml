@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week1/FirstUniqueCharacterInAString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/SubSetSumProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/DP/SubSetSumProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumSubsetDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumSubsetDifference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
-  <component name="RunManager" selected="Application.MinimumSubsetDifference">
+  <component name="RunManager" selected="Application.FirstUniqueCharacterInAString">
     <configuration name="CountOfSubsetSumWithAGivenSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.CountOfSubsetSumWithAGivenSum" />
       <module name="data-structures" />
@@ -83,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumSubsetDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.MinimumSubsetDifference" />
+    <configuration name="FirstUniqueCharacterInAString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week1.FirstUniqueCharacterInAString" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.MayChallenge.week1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartitionEqualSubsetSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.PartitionEqualSubsetSum" />
+    <configuration name="MinimumSubsetDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.MinimumSubsetDifference" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -137,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FirstUniqueCharacterInAString" />
         <item itemvalue="Application.MinimumSubsetDifference" />
         <item itemvalue="Application.SubSetSumProblem" />
         <item itemvalue="Application.CountOfSubsetSumWithAGivenSum" />
         <item itemvalue="Application.PartitionToKEqualSumSubset" />
-        <item itemvalue="Application.PartitionEqualSubsetSum" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +214,8 @@
       <workItem from="1588422555777" duration="6291000" />
       <workItem from="1588450490824" duration="25112000" />
       <workItem from="1588592922909" duration="13920000" />
+      <workItem from="1588655096893" duration="57000" />
+      <workItem from="1588675307664" duration="115000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
