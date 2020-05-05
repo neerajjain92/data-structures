@@ -14,6 +14,9 @@ I have curated these list from famouse blogs, youtube etc. For Brushing up the b
 - :tophat: [String](src/com/geeksforgeeks/string)
 - :8ball: [Tree](src/com/geeksforgeeks/tree)
 
+### Dynamic Programming BootCamp
+- :moneybag: [KnapSack Category Problems]
+
 ### Interview Bit Problems 
 - :computer: [Array](src/com/interviewbit/array)
 - :heavy_plus_sign: :heavy_multiplication_x: [Math](src/com/interviewbit/math)

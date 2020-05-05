@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +69,11 @@
   </component>
   <component name="RunManager" selected="Application.CountTheNumberOfSubsetWithGivenDifference">
     <configuration name="CountOfSubsetSumWithAGivenSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.CountOfSubsetSumWithAGivenSum" />
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.knapsack_category.CountOfSubsetSumWithAGivenSum" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.DP.knapsack_category.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,11 +82,11 @@
       </method>
     </configuration>
     <configuration name="CountTheNumberOfSubsetWithGivenDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.CountTheNumberOfSubsetWithGivenDifference" />
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.knapsack_category.CountTheNumberOfSubsetWithGivenDifference" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.DP.knapsack_category.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +108,11 @@
       </method>
     </configuration>
     <configuration name="MinimumSubsetDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.MinimumSubsetDifference" />
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.knapsack_category.MinimumSubsetDifference" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.DP.knapsack_category.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +121,11 @@
       </method>
     </configuration>
     <configuration name="SubSetSumProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.SubSetSumProblem" />
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.knapsack_category.SubSetSumProblem" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.DP.knapsack_category.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -215,7 +216,7 @@
       <workItem from="1588592922909" duration="13920000" />
       <workItem from="1588655096893" duration="57000" />
       <workItem from="1588675307664" duration="237000" />
-      <workItem from="1588702126496" duration="3854000" />
+      <workItem from="1588702126496" duration="4274000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -381,10 +382,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="545" y="314" key="refactoring.ChangeSignatureDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1587911511639" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1588706029484">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1588708812923">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1588706029484" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1588708812923" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588517221428" />
   </component>
   <component name="XDebuggerManager">
@@ -849,12 +850,12 @@
           <option name="timeStamp" value="328" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/ZeroOneKnapSackRecursively.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/ZeroOneKnapSackRecursively.java</url>
           <line>58</line>
           <option name="timeStamp" value="329" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/ZeroOneKnapSackRecursively.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/ZeroOneKnapSackRecursively.java</url>
           <line>79</line>
           <option name="timeStamp" value="330" />
         </line-breakpoint>
@@ -864,32 +865,32 @@
           <option name="timeStamp" value="332" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/ZeroOneKnapSackRecursively.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/ZeroOneKnapSackRecursively.java</url>
           <line>52</line>
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/ZeroOneKnapSackRecursively.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/ZeroOneKnapSackRecursively.java</url>
           <line>130</line>
           <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/SubSetSumProblem.java</url>
           <line>15</line>
           <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/SubSetSumProblem.java</url>
           <line>56</line>
           <option name="timeStamp" value="342" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/SubSetSumProblem.java</url>
           <line>68</line>
           <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/SubSetSumProblem.java</url>
           <line>37</line>
           <option name="timeStamp" value="344" />
         </line-breakpoint>
@@ -899,27 +900,27 @@
           <option name="timeStamp" value="346" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/PartitionEqualSubsetSum.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/PartitionEqualSubsetSum.java</url>
           <line>81</line>
           <option name="timeStamp" value="349" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/PartitionToKEqualSumSubset.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/PartitionToKEqualSumSubset.java</url>
           <line>19</line>
           <option name="timeStamp" value="350" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/PartitionToKEqualSumSubset.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/PartitionToKEqualSumSubset.java</url>
           <line>24</line>
           <option name="timeStamp" value="351" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/SubSetSumProblem.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/SubSetSumProblem.java</url>
           <line>34</line>
           <option name="timeStamp" value="352" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/CountOfSubsetSumWithAGivenSum.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/knapsack_category/CountOfSubsetSumWithAGivenSum.java</url>
           <line>76</line>
           <option name="timeStamp" value="354" />
         </line-breakpoint>
