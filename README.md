@@ -15,8 +15,8 @@ I have curated these list from famouse blogs, youtube etc. For Brushing up the b
 - :8ball: [Tree](src/com/geeksforgeeks/tree)
 
 ### Dynamic Programming BootCamp
-- :moneybag: [0/1 KnapSack category problems](src/com/leetcode/year_2020/DP/zero_one_knapsack)
-- :moneybag: [Unbounded Knapsack problems](src/com/leetcode/year_2020/DP/unbounded_knapsack)
+- :moneybag: [0/1 KnapSack category problems (8 Related Problems)](src/com/leetcode/year_2020/DP/zero_one_knapsack)
+- :moneybag: [Unbounded Knapsack problems (3 Related Problems)](src/com/leetcode/year_2020/DP/unbounded_knapsack)
 
 ### Interview Bit Problems 
 - :computer: [Array](src/com/interviewbit/array)
