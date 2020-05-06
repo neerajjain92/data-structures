@@ -83,6 +83,6 @@ public class LengthOfLongestCommonSubsequence {
                 }
             }
         }
-        return dp[dp.length - 1][dp[0].length - 1];
+        return dp[s1.length][s2.length];
     }
 }

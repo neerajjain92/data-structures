@@ -40,7 +40,7 @@ public class RodCuttingProblem {
             Arrays.fill(row, -1);
         }
 //        return cutRodAndFindMaximumProfitRecursively(price, cutLength, price.length - 1, lengthOfRod);
-        return cutRodAndFindMaximumProfitBottomUp(price, cutLength, lengthOfRod);
+        return cutRodAndFindMaximumProfitTopDown(price, cutLength, lengthOfRod);
     }
 
     public static int cutRodAndFindMaximumProfitRecursively(int[] price, int[] cutLength, int n, int lengthOfRod) {
@@ -58,7 +58,7 @@ public class RodCuttingProblem {
         }
     }
 
-    public static int cutRodAndFindMaximumProfitBottomUp(int[] price, int[] cutLength, int lengthOfRod) {
+    public static int cutRodAndFindMaximumProfitTopDown(int[] price, int[] cutLength, int lengthOfRod) {
         /**
          * This matrix's cell will represent, max profit
          * at with the givenCut till that cell and lengthOfRod represented by columns
@@ -89,6 +89,6 @@ public class RodCuttingProblem {
                 }
             }
         }
-        return dp[dp.length - 1][dp[0].length - 1];
+        return dp[price.length][lengthOfRod];
     }
 }

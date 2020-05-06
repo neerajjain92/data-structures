@@ -79,6 +79,6 @@ public class CoinChange_NumberOfWays {
                 }
             }
         }
-        return dp[dp.length - 1][dp[0].length - 1];
+        return dp[coins.length][amount];
     }
 }

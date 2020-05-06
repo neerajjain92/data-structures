@@ -53,20 +53,20 @@ public class CountTheNumberOfSubsetWithGivenDifference {
         for (int i : set) {
             TOTAL_SUM += i;
         }
-        return countOfSubSetSum(set, (difference + TOTAL_SUM) / 2);
+        return countOfSubSetSumTopDown(set, (difference + TOTAL_SUM) / 2);
     }
 
-    private static int countOfSubSetSum(int[] set, int total_sum) {
-        int t[][] = new int[set.length + 1][total_sum + 1];
+    private static int countOfSubSetSumTopDown(int[] set, int total_sum) {
+        int dp[][] = new int[set.length + 1][total_sum + 1];
 
         // Initialize the matrix
-        for (int i = 0; i < t.length; i++) {
-            for (int j = 0; j < t[i].length; j++) {
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[i].length; j++) {
                 if (i == 0) { // No item in the cart, hence we can't make subset
-                    t[i][j] = 0;
+                    dp[i][j] = 0;
                 }
                 if (j == 0) { // When we have to make sum 0, we can always take {} empty set.
-                    t[i][j] = 1;
+                    dp[i][j] = 1;
                 }
             }
         }
@@ -74,17 +74,17 @@ public class CountTheNumberOfSubsetWithGivenDifference {
         // Now to populate rest of matrix.
         // i represent item in the set
         // j represent the totalSum.
-        for (int i = 1; i < t.length; i++) {
-            for (int j = 1; j < t[i].length; j++) {
+        for (int i = 1; i < dp.length; i++) {
+            for (int j = 1; j < dp[i].length; j++) {
 
                 if (set[i - 1] <= j) { // When item is less than sumToAchieve, so it can contribute.
-                    t[i][j] = t[i - 1][j - set[i - 1]] + // Choose to contribute
-                            t[i - 1][j]; // Not Choose to contribute.
+                    dp[i][j] = dp[i - 1][j - set[i - 1]] + // Choose to contribute
+                            dp[i - 1][j]; // Not Choose to contribute.
                 } else { // when item > the sum to achieve
-                    t[i][j] = t[i - 1][j]; // This will never contribute to make the subsetSum
+                    dp[i][j] = dp[i - 1][j]; // This will never contribute to make the subsetSum
                 }
             }
         }
-        return t[t.length - 1][t[0].length - 1];
+        return dp[set.length][total_sum];
     }
 }

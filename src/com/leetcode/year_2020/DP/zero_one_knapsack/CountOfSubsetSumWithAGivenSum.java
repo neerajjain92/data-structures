@@ -24,9 +24,7 @@ public class CountOfSubsetSumWithAGivenSum {
             Arrays.fill(row, -1);
         }
 //        return countOfSubSetSumWithGivenSum(set, set.length - 1, sum);
-
-        t = new int[set.length + 1][sum + 1];
-        return countOfSubSetSumWithGivenSumBottomUp(set, set.length - 1, sum);
+        return countOfSubSetSumWithGivenSumTopDown(set, sum);
     }
 
     private static int countOfSubSetSumWithGivenSum(int[] set, int n, int sum) {
@@ -53,37 +51,38 @@ public class CountOfSubsetSumWithAGivenSum {
         }
     }
 
-    private static int countOfSubSetSumWithGivenSumBottomUp(int[] set, int n, int sum) {
+    private static int countOfSubSetSumWithGivenSumTopDown(int[] set, int sum) {
         // First see the recursive solution we have to initialize the matrix based on the base condition
         // I --> represent items in the set(Rows)
         // J --> represents the sum.(Columns)
+        int[][] dp = new int[set.length + 1][sum + 1];
 
         /**
          * Only difference between  subsetSum problem and this is in subSet sum we just have to return [true(sumExist)|false(SumDoesNotExist)]
          * here we have to return total number of subset.
          */
-        for (int i = 0; i < t.length; i++) {
-            for (int j = 0; j < t[0].length; j++) {
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
                 if (i == 0) { // When we have no item, we can't make any subset
-                    t[i][j] = 0;
+                    dp[i][j] = 0;
                 }
                 if (j == 0) { // When we have to make 0 sum, that's always possible by taking just empty subset {}
-                    t[i][j] = 1;
+                    dp[i][j] = 1;
                 }
             }
         }
 
         // Now choice to populate remaining matrix;
-        for (int i = 1; i < t.length; i++) {
-            for (int j = 1; j < t[i].length; j++) {
+        for (int i = 1; i < dp.length; i++) {
+            for (int j = 1; j < dp[i].length; j++) {
                 if (set[i - 1] <= j) { // Item is less than current sum.
-                    t[i][j] = t[i - 1][j - set[i - 1]] + t[i - 1][j];
+                    dp[i][j] = dp[i - 1][j - set[i - 1]] + dp[i - 1][j];
                 } else { // Current Item is greater than the current sum to achieve, hence not including it.
-                    t[i][j] = t[i - 1][j];
+                    dp[i][j] = dp[i - 1][j];
                 }
             }
         }
-        return t[t.length - 1][t[0].length - 1];
+        return dp[set.length][sum];
     }
 
 }
