@@ -11,6 +11,7 @@ public class LengthOfLongestCommonSubsequence {
 
     public static void main(String[] args) {
         System.out.println(findLengthOfLCS("abcdgh", "abedfhg"));
+        System.out.println(findLengthOfLCS("oxcpqrsvwf","shmtulqrypy"));
     }
 
     static int t[][];
@@ -25,35 +26,35 @@ public class LengthOfLongestCommonSubsequence {
         for (int[] row : t) {
             Arrays.fill(row, -1);
         }
-//        return findLengthOfLCS(s1.toCharArray(), s2.toCharArray(), s1.length(), s2.length());
-        return findLCSTopDown(s1.toCharArray(), s2.toCharArray());
+        return findLengthOfLCS(s1.toCharArray(), s2.toCharArray(), s1.length(), s2.length());
+//        return findLCSTopDown(s1.toCharArray(), s2.toCharArray());
     }
 
     /**
      * @param s1 : String1 represented in it's char Array representation
      * @param s2 : String2 represented in it's char Array representation
-     * @param n  : Length of S1
-     * @param m  : Length of S2
+     * @param m  : Length of S1
+     * @param n  : Length of S2
      * @return Longest Common Subsequence in both String.
      */
-    private static int findLengthOfLCS(char[] s1, char[] s2, int n, int m) {
+    private static int findLengthOfLCS(char[] s1, char[] s2, int m, int n) {
         // Base Condition (Think of the Smallest possible valid input.)
-        if (n == 0 || m == 0) return 0; // When either of 2 string is empty there can be nothing in common.
+        if (m == 0 || n == 0) return 0; // When either of 2 string is empty there can be nothing in common.
 
-        if (t[n][m] > -1) return t[m][n]; // Return from cache.
+        if (t[m][n] > -1) return t[m][n]; // Return from cache.
         /**
          * Choice Diagram
          */
-        if (s1[n - 1] == s2[m - 1]) { // When character is same in both the String
+        if (s1[m - 1] == s2[n - 1]) { // When character is same in both the String
             // We are making the input Smaller in the Recursive call
             /**
              * We checked last character in both string,
              * now let's check last-1th to make the input Smaller.
              */
-            return t[n][m] = 1 + findLengthOfLCS(s1, s2, n - 1, m - 1);
+            return t[m][n] = 1 + findLengthOfLCS(s1, s2, m - 1, n - 1);
         } else { // if the character is not same, then we can skip either from any string
-            return t[n][m] = Math.max(findLengthOfLCS(s1, s2, n, m - 1),
-                    findLengthOfLCS(s1, s2, n - 1, m));
+            return t[m][n] = Math.max(findLengthOfLCS(s1, s2, m, n - 1),
+                    findLengthOfLCS(s1, s2, m - 1, n));
         }
     }
 
