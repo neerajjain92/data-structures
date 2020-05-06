@@ -76,7 +76,7 @@ public class MinimumSubsetDifference {
 
         // Now instead of trying for all the sum 1 by 1, if i calculate the subSet for SUM(SET)...
         // i.e if i calculate the isSubSetPresent(set, sum of array)
-        // then if we were using BottomUp approach our matrix already stored all values
+        // then if we were using TopDown approach our matrix already stored all values
         /**
          * So For [1, 2, 7] and SUM 10 == SUM(ARR).
          *

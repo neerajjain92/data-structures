@@ -34,9 +34,9 @@ public class PartitionEqualSubsetSum {
         t = new Boolean[nums.length + 1][sumToAchieve + 1];
 //        return canPartitionRecursively(nums, nums.length - 1, sumToAchieve);
 
-        // For Bottom Up Approach.
+        // For Top Down Approach.
         dp = new boolean[nums.length + 1][sumToAchieve + 1];
-        return canPartitionBottomUp(nums, nums.length - 1, sumToAchieve);
+        return canPartitionTopDown(nums, nums.length - 1, sumToAchieve);
     }
 
     public static boolean canPartitionRecursively(int[] nums, int n, int sumToAchieve) {
@@ -59,7 +59,7 @@ public class PartitionEqualSubsetSum {
         }
     }
 
-    public static boolean canPartitionBottomUp(int[] nums, int n, int sumToAchieve) {
+    public static boolean canPartitionTopDown(int[] nums, int n, int sumToAchieve) {
         // So in Bottom up we have to do the initialization of the matrix.
         // As per Recursive. if(n < 0 || sum < 0) return false;
         // Also if our Sum == 0 if we have to make the sum = 0;

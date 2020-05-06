@@ -26,7 +26,7 @@ public class LengthOfLongestCommonSubsequence {
             Arrays.fill(row, -1);
         }
 //        return findLengthOfLCS(s1.toCharArray(), s2.toCharArray(), s1.length(), s2.length());
-        return findLCSBottomUp(s1.toCharArray(), s2.toCharArray());
+        return findLCSTopDown(s1.toCharArray(), s2.toCharArray());
     }
 
     /**
@@ -57,7 +57,7 @@ public class LengthOfLongestCommonSubsequence {
         }
     }
 
-    private static int findLCSBottomUp(char[] s1, char[] s2) {
+    private static int findLCSTopDown(char[] s1, char[] s2) {
         // We need a 2d matrix to store the LCS at any given length of S1 and S2
         int[][] dp = new int[s1.length + 1][s2.length + 1];
 

@@ -32,7 +32,7 @@ public class CoinChange_NumberOfWays {
         }
         return findNoOfWaysWeCanMakeTheAmount
                 (coins, coins.length - 1, amount);
-        // return noOfWaysBottomUp(coins, amount);
+        // return noOfWaysTopDown(coins, amount);
     }
 
     public static int findNoOfWaysWeCanMakeTheAmount(int[] coins, int n, int amount) {
@@ -52,7 +52,7 @@ public class CoinChange_NumberOfWays {
         }
     }
 
-    public static int noOfWaysBottomUp(int[] coins, int amount) {
+    public static int noOfWaysTopDown(int[] coins, int amount) {
         int dp[][] = new int[coins.length + 1][amount + 1]; // Bottom up matrix to hold
 
         // Initialize the matrix.
