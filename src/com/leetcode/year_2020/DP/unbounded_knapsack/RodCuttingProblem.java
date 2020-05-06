@@ -39,21 +39,56 @@ public class RodCuttingProblem {
         for (int[] row : t) {
             Arrays.fill(row, -1);
         }
-        return cutRodAndFindMaximumProfitRecursively(price, cutLength, price.length - 1, lengthOfRod);
+//        return cutRodAndFindMaximumProfitRecursively(price, cutLength, price.length - 1, lengthOfRod);
+        return cutRodAndFindMaximumProfitBottomUp(price, cutLength, lengthOfRod);
     }
 
-    public static int cutRodAndFindMaximumProfitRecursively(int[] price, int[] length, int n, int lengthOfRod) {
+    public static int cutRodAndFindMaximumProfitRecursively(int[] price, int[] cutLength, int n, int lengthOfRod) {
         if (n < 0 || lengthOfRod <= 0)
             return 0; // We can't make any profit, if there is no rod to cut. (i.e lengthOfRod = 0).
 
         if (t[n][lengthOfRod] > -1) return t[n][lengthOfRod];
 
-        if (length[n] <= lengthOfRod) {
-            // Making a cut of length n, if you notice carefully we are not reducing n, since we can make the same cut again.
-            return t[n][lengthOfRod] = Math.max((price[n] + cutRodAndFindMaximumProfitRecursively(price, length, n, lengthOfRod - length[n])),
-                    cutRodAndFindMaximumProfitRecursively(price, length, n - 1, lengthOfRod)); // Not Making a cut at all
+        if (cutLength[n] <= lengthOfRod) {
+            // Making a cut of cutLength n, if you notice carefully we are not reducing n, since we can make the same cut again.
+            return t[n][lengthOfRod] = Math.max((price[n] + cutRodAndFindMaximumProfitRecursively(price, cutLength, n, lengthOfRod - cutLength[n])),
+                    cutRodAndFindMaximumProfitRecursively(price, cutLength, n - 1, lengthOfRod)); // Not Making a cut at all
         } else {
-            return t[n][lengthOfRod] = cutRodAndFindMaximumProfitRecursively(price, length, n - 1, lengthOfRod); // Not Making a cut at all
+            return t[n][lengthOfRod] = cutRodAndFindMaximumProfitRecursively(price, cutLength, n - 1, lengthOfRod); // Not Making a cut at all
         }
+    }
+
+    public static int cutRodAndFindMaximumProfitBottomUp(int[] price, int[] cutLength, int lengthOfRod) {
+        /**
+         * This matrix's cell will represent, max profit
+         * at with the givenCut till that cell and lengthOfRod represented by columns
+         */
+        int[][] dp = new int[cutLength.length + 1][lengthOfRod + 1];
+
+        // Initialization of Matrix
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                if (i == 0) {  // First Row represent, we don't have any cuts to make
+                    dp[i][j] = 0;
+                }
+                if (j == 0) {  // RodLength is 0, we can't make any profit.
+                    dp[i][j] = 0;
+                }
+            }
+        }
+
+        // Populating rest of the matrix
+        for (int i = 1; i < dp.length; i++) { // Represents cuts
+            for (int j = 1; j < dp[i].length; j++) { // Represents lengthOfRod
+
+                if (cutLength[i - 1] <= j) { // Cut left is <= RodLength
+                    dp[i][j] = Math.max(price[i - 1] + dp[i][j - cutLength[i - 1]],
+                            dp[i - 1][j]);
+                } else {  // Cut left is greater than the rod's length itself.
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+        return dp[dp.length - 1][dp[0].length - 1];
     }
 }
