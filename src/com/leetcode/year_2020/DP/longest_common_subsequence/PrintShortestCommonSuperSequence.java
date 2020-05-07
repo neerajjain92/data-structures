@@ -70,7 +70,7 @@ public class PrintShortestCommonSuperSequence {
         char[] str2 = Y.toCharArray();
         StringBuilder result = new StringBuilder();
 
-        while (m != 0 && n != 0) {
+        while (m > 0 && n > 0) {
             if (str1[m - 1] == str2[n - 1]) {
                 result.append(str1[m - 1]).append(" ");
                 m--;
