@@ -11,11 +11,11 @@ public class LengthOfLongestCommonSubsequence {
 
     public static void main(String[] args) {
         System.out.println(findLengthOfLCS("abcdgh", "abedfhg"));
-        System.out.println(findLengthOfLCS("oxcpqrsvwf","shmtulqrypy"));
+        System.out.println(findLengthOfLCS("oxcpqrsvwf", "shmtulqrypy"));
+        System.out.println(findLengthOfLCS("GeeksForQuiz", "GeeksNj"));
     }
 
     static int t[][];
-
     public static int findLengthOfLCS(String s1, String s2) {
         if (s1.length() > s2.length()) { // Always keeping S1 small, this way
             // In bottom up approach we have to solve the problem to the less number of rows.
@@ -26,8 +26,8 @@ public class LengthOfLongestCommonSubsequence {
         for (int[] row : t) {
             Arrays.fill(row, -1);
         }
-        return findLengthOfLCS(s1.toCharArray(), s2.toCharArray(), s1.length(), s2.length());
-//        return findLCSTopDown(s1.toCharArray(), s2.toCharArray());
+//        return findLengthOfLCS(s1.toCharArray(), s2.toCharArray(), s1.length(), s2.length());
+        return findLCSTopDown(s1.toCharArray(), s2.toCharArray());
     }
 
     /**
@@ -84,6 +84,29 @@ public class LengthOfLongestCommonSubsequence {
                 }
             }
         }
+
+        // Now let's also try to Print the Sequence.
+        printLCS(s1, s2, dp);
         return dp[s1.length][s2.length];
+    }
+
+    private static void printLCS(char[] s1, char[] s2, int[][] dp) {
+        int m = dp.length - 1;
+        int n = dp[0].length - 1;
+        StringBuilder result = new StringBuilder();
+        while (m != 0 && n != 0) {
+            if (s1[m - 1] == s2[n - 1]) {
+                result.append(s1[m - 1]);
+                m = m - 1;
+                n = n - 1;  // Move to Left Diagonal
+            } else {
+                if (dp[m - 1][n] > dp[m][n - 1]) {
+                    m = m - 1;
+                } else {
+                    n = n - 1;
+                }
+            }
+        }
+        System.out.println("LCS of " + new String(s1) + " and " + new String(s2) + " is " + result.reverse().toString());
     }
 }
