@@ -37,6 +37,27 @@ public class MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother {
          * So Algorithm is
          *  Min Deletions = Length(X) - Length of LCS .  [This is because whatever is left after LCS in X is not useful for Y]
          *  Min Additions = Length(Y) - Length of LCS .  [This is because apart from LCS X can't provide any additional information]
+         *
+         *  Visual Representation
+         *
+         *  -----> [What we want to achieve]
+         *  =====> [Represents current transformation]
+         *
+         *     X ---------------------> Y
+         *      \\    First Convert    /\
+         *       \\    X to LCS       //
+         *        \\    then LCS     //
+         *         \\    to Y       //
+         *          \\==========> LCS
+         *
+         * With Example : Converting HEAP to EA (LCS) 2 deletions, then finally converting EA(LCS) to Y using 1 addition (PEA)
+         *     HEAP ------------------>PEA
+         *      \\    First Convert    /\
+         *       \\    HEAP to LCS EA //
+         *        \\    then LCS EA  //
+         *         \\    to PEA     //
+         *          \\==========> EA
+         *
          */
         int lcsLength = LengthOfLongestCommonSubsequence.findLengthOfLCS(X, Y);
         LogUtil.logIt("Min Deletions " + (X.length() - lcsLength));
