@@ -1,7 +1,5 @@
 package com.leetcode.year_2020.DP.longest_common_subsequence;
 
-import com.leetcode.year_2020.DP.longest_common_subsequence.LengthOfLongestCommonSubsequence;
-
 /**
  * @author neeraj on 07/05/20
  * Copyright (c) 2019, data-structures.
@@ -31,7 +29,7 @@ public class ShortestCommonSuperSequence {
          *
          * So what can we do to find the length of Shortest Common SuperSequence
          *
-         *  length of ShortestCommonSuperSequence = Length(S1) + Length(S2) - LengthOfLCS
+         *  length of ShortestCommonSuperSequence = Length(S1) + Length(S2) - LengthOfLCS(S1, S2)
          *
          */
         return str1.length() + str2.length() - LengthOfLongestCommonSubsequence.findLengthOfLCS(str1, str2);
