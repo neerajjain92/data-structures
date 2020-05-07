@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.DP;
+package com.leetcode.year_2020.DP.longest_common_subsequence;
 
 /**
  * @author neeraj on 07/05/20
@@ -10,6 +10,7 @@ public class PrintLongestCommonSubSequence {
     public static void main(String[] args) {
         printLCS("abcdgh", "abedfhg");
         printLCS("oxcpqrsvwf", "shmtulqrypy");
+        printLCS("GeeksForQuiz", "GeeksNj");
     }
 
     public static void printLCS(String s1, String s2) {
