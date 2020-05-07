@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.DP;
+package com.leetcode.year_2020.DP.longest_common_subsequence;
 
 import com.leetcode.year_2020.DP.longest_common_subsequence.LengthOfLongestCommonSubsequence;
 
