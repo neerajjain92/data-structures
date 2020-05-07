@@ -16,6 +16,7 @@ public class LengthOfLongestCommonSubsequence {
     }
 
     static int t[][];
+
     public static int findLengthOfLCS(String s1, String s2) {
         if (s1.length() > s2.length()) { // Always keeping S1 small, this way
             // In bottom up approach we have to solve the problem to the less number of rows.
