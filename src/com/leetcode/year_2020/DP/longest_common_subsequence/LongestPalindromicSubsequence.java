@@ -10,12 +10,13 @@ import java.util.Arrays;
 public class LongestPalindromicSubsequence {
 
     public static void main(String[] args) {
-        System.out.println(longestPalindromeSubseq("bbbab"));
+        System.out.println(longestPalindromeSubseqUsingLCS("bbbab"));
+        System.out.println(longestPalindromeSubseqUsingLCS("g"));
     }
 
     static int[][] cache; // Memorization Matrix.
 
-    public static int longestPalindromeSubseq(String s) {
+    public static int longestPalindromeSubseqUsingLCS(String s) {
         /**
          * Let's try to figure out which parent problem it relates to .
          *
@@ -51,7 +52,7 @@ public class LongestPalindromicSubsequence {
         for (int[] row : cache) {
             Arrays.fill(row, -1);
         }
-        return longestPalindromeSubseq(s.toCharArray(), new StringBuilder(s).reverse().toString().toCharArray(), s.length(), s.length());
+        return longestPalindromeSubseqUsingLCS(s.toCharArray(), new StringBuilder(s).reverse().toString().toCharArray(), s.length(), s.length());
     }
 
     /**
@@ -61,16 +62,16 @@ public class LongestPalindromicSubsequence {
      * @param n : length of Y
      * @return Length of Longest Palindromic Subseq
      */
-    private static int longestPalindromeSubseq(char[] X, char[] Y, int m, int n) {
+    private static int longestPalindromeSubseqUsingLCS(char[] X, char[] Y, int m, int n) {
         if (m == 0 || n == 0) return 0; // Empty String can never be palindrome
         // Return from cache
         if (cache[m][n] > -1) return cache[m][n];
 
         if (X[m - 1] == Y[n - 1]) {
-            return cache[m][n] = 1 + longestPalindromeSubseq(X, Y, m - 1, n - 1);
+            return cache[m][n] = 1 + longestPalindromeSubseqUsingLCS(X, Y, m - 1, n - 1);
         } else {
-            return cache[m][n] = Math.max(longestPalindromeSubseq(X, Y, m - 1, n),
-                    longestPalindromeSubseq(X, Y, m, n - 1));
+            return cache[m][n] = Math.max(longestPalindromeSubseqUsingLCS(X, Y, m - 1, n),
+                    longestPalindromeSubseqUsingLCS(X, Y, m, n - 1));
         }
     }
 }

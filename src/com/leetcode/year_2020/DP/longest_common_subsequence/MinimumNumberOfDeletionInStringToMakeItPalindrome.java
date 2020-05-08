@@ -1,6 +1,6 @@
 package com.leetcode.year_2020.DP.longest_common_subsequence;
 
-import static com.leetcode.year_2020.DP.longest_common_subsequence.LongestPalindromicSubsequence.longestPalindromeSubseq;
+import static com.leetcode.year_2020.DP.longest_common_subsequence.LongestPalindromicSubsequence.longestPalindromeSubseqUsingLCS;
 
 /**
  * @author neeraj on 08/05/20
@@ -39,7 +39,7 @@ public class MinimumNumberOfDeletionInStringToMakeItPalindrome {
          * So our solution will be
          * MIN_DELETIONS = str.length - LCS(str1, reverse(str2));
          */
-        int MIN_DELETIONS = str.length() - longestPalindromeSubseq(str);
+        int MIN_DELETIONS = str.length() - longestPalindromeSubseqUsingLCS(str);
         return MIN_DELETIONS;
     }
 
