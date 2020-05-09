@@ -13,8 +13,8 @@ public class MatrixChainMultiplication {
 
     public static void main(String[] args) {
         System.out.println(findMinimumMultiplicationOperation(new int[]{1, 2, 3, 4}));
-        System.out.println(findMinimumMultiplicationOperation(new int[]{40, 20, 30, 10, 30}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{10, 20, 30}));
+        System.out.println(findMinimumMultiplicationOperation(new int[]{40, 20, 30, 10, 30}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{10, 20, 30, 40, 30}));
     }
 
@@ -22,9 +22,11 @@ public class MatrixChainMultiplication {
     static int brackets[][]; // TO put the optimal Brackets.
 
     public static void printBrackets(int[][] brackets, int i, int j) {
+        // If we have just 1 matrix, let's just print that.
         if (i == j) {
             System.out.print("A" + i);
         } else {
+            // We have multiple matrix in place, let's enclose them in brackets.
             System.out.print("(");
             printBrackets(brackets, i, brackets[i][j]);
             printBrackets(brackets, brackets[i][j] + 1, j);
