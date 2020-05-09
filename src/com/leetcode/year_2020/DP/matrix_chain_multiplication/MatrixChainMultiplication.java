@@ -1,5 +1,7 @@
 package com.leetcode.year_2020.DP.matrix_chain_multiplication;
 
+import com.util.LogUtil;
+
 import java.util.Arrays;
 
 /**
@@ -10,12 +12,25 @@ import java.util.Arrays;
 public class MatrixChainMultiplication {
 
     public static void main(String[] args) {
+        System.out.println(findMinimumMultiplicationOperation(new int[]{1, 2, 3, 4}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{40, 20, 30, 10, 30}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{10, 20, 30}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{10, 20, 30, 40, 30}));
     }
 
     static int t[][]; // Memorization
+    static int brackets[][]; // TO put the optimal Brackets.
+
+    public static void printBrackets(int[][] brackets, int i, int j) {
+        if (i == j) {
+            System.out.print("A" + i);
+        } else {
+            System.out.print("(");
+            printBrackets(brackets, i, brackets[i][j]);
+            printBrackets(brackets, brackets[i][j] + 1, j);
+            System.out.print(")");
+        }
+    }
 
     public static int findMinimumMultiplicationOperation(int[] dimensions) {
         /**
@@ -43,15 +58,22 @@ public class MatrixChainMultiplication {
          *  Now k will run from i to j-1, why till j-1, since we k act as a cut to our matrix,
          *  and we put cut in  matrix to multiply, Now if i keep k==j... we can do solve(arr, i, k), but not solve(arr, k+1, j).
          */
-        t = new int[dimensions.length + 1][dimensions.length + 1];
+        t = new int[dimensions.length][dimensions.length];
+        brackets = new int[t.length][t[0].length];
         for (int[] row : t) {
             Arrays.fill(row, -1);
         }
-        return solve(dimensions, 1, dimensions.length - 1);
+        int minOperation = solveMatrixChain(dimensions, 1, dimensions.length - 1);
+        printBrackets(brackets, 1, brackets.length - 1);
+        LogUtil.newLine();
+        return minOperation;
     }
 
-    private static int solve(int[] dimensions, int i, int j) {
-        if (i >= j) return 0; // This case represent when we have matrix of length 1, if that's the case
+    private static int solveMatrixChain(int[] dimensions, int i, int j) {
+        if (i >= j) {
+            t[i][j] = 0;
+            return 0; // This case represent when we have matrix of length 1, if that's the case
+        }
         // we can never multiply since we need at least 2 to do multiplication.
 
         if (t[i][j] > -1) return t[i][j];
@@ -59,12 +81,17 @@ public class MatrixChainMultiplication {
         // K will run from i till j(exclusive), and try each section to multiply from i to k, and k+1 to j-1
         Integer MIN_OPERATIONS = Integer.MAX_VALUE;
         for (int k = i; k < j; k++) {
-            int operationsInLeft = solve(dimensions, i, k);
-            int operationsInRight = solve(dimensions, k + 1, j);
+            int operationsInLeft = solveMatrixChain(dimensions, i, k);
+            int operationsInRight = solveMatrixChain(dimensions, k + 1, j);
             int operationsAtThisPoint = dimensions[i - 1] * dimensions[k] * dimensions[j];
 
             int operationsIfWeChooseThisK = operationsInLeft + operationsAtThisPoint + operationsInRight;
-            MIN_OPERATIONS = Math.min(MIN_OPERATIONS, operationsIfWeChooseThisK);
+            if (operationsAtThisPoint < MIN_OPERATIONS) {
+                MIN_OPERATIONS = operationsIfWeChooseThisK;
+
+                // Update the brackets wherever we have put optimal cuts.
+                brackets[i][j] = k;
+            }
         }
         return t[i][j] = MIN_OPERATIONS;
     }
