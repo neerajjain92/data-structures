@@ -61,7 +61,8 @@ public class PalindromicPartitioningMinimumCuts {
          *  2) for(cut=i to cut < j).... why cut is kept at j-1 you may ask.... simple when you cut you want 2
          *                              partition of it. If we cut at last there will only be a left partition.
          */
-        return solve(input, 0, input.length() - 1);
+        int minCuts = solve(input, 0, input.length() - 1);
+        return minCuts;
     }
 
     private static int solve(String input, int i, int j) {
@@ -77,7 +78,9 @@ public class PalindromicPartitioningMinimumCuts {
             // Now since we have made this cut so that is to be accounted for, that's why the input is divided into
             // (i, k) and (k+1,j).
             int result = totalCutsBeforeThisCut + 1 + totalCutsAfterThisCut;
-            MIN_CUTS = Math.min(result, MIN_CUTS);
+            if (MIN_CUTS > result) {
+                MIN_CUTS = result;
+            }
         }
         return MIN_CUTS;
     }
