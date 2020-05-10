@@ -1,5 +1,8 @@
 package com.leetcode.year_2020.DP.matrix_chain_multiplication;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * https://www.geeksforgeeks.org/boolean-parenthesization-problem-dp-37/
  * <p>
@@ -17,11 +20,18 @@ package com.leetcode.year_2020.DP.matrix_chain_multiplication;
  */
 public class BooleanParenthesization {
 
+    private static final String EMPTY_STRING = "";
+
     public static void main(String[] args) {
         System.out.println(countNumberOfWaysExpressionCanBeEvaluatedAsTrue("T^F&T"));
         System.out.println(countNumberOfWaysExpressionCanBeEvaluatedAsTrue("T^F|F"));
         System.out.println(countNumberOfWaysExpressionCanBeEvaluatedAsTrue("T|T&F^T"));
+        System.out.println(countNumberOfWaysExpressionCanBeEvaluatedAsTrue("T|F^T"));
     }
+
+    // Why map since in this question there are 3 variables which are changing
+    //  and visualizing 3d matrix is kindaa not very intuitive.
+    static Map<String, Integer> memorization;
 
     public static int countNumberOfWaysExpressionCanBeEvaluatedAsTrue(String input) {
         /**
@@ -73,15 +83,23 @@ public class BooleanParenthesization {
          *          and do k+=2 every iteration.
          *
          */
+        memorization = new HashMap<>();
         return solve(input.toCharArray(), 0, input.length() - 1, true);
     }
 
     private static int solve(char[] input, int i, int j, Boolean isTrue) {
-        if (i > j) return 0; // Empty String there are no ways.
+        String key = EMPTY_STRING + i + j + isTrue;
+        if (memorization.containsKey(key)) return memorization.get(key);
+        if (i > j) {
+            memorization.put(key, 0);
+            return 0; // Empty String there are no ways.
+        }
         if (i == j) {
             if (isTrue) {
+                memorization.put(key, input[i] == 'T' ? 1 : 0);
                 return input[i] == 'T' ? 1 : 0;
             } else {
+                memorization.put(key, input[i] == 'F' ? 1 : 0);
                 return input[i] == 'F' ? 1 : 0;
             }
         }
@@ -121,6 +139,7 @@ public class BooleanParenthesization {
                 }
             }
         }
+        memorization.put(key, answer);
         return answer;
     }
 
