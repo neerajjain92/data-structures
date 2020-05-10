@@ -68,6 +68,9 @@ public class MatrixChainMultiplication {
         int minOperation = solveMatrixChain(dimensions, 1, dimensions.length - 1);
         printBrackets(brackets, 1, brackets.length - 1);
         LogUtil.newLine();
+        LogUtil.logIt("Top Down  :: " + minOperation);
+        minOperation = solveMatrixChainMultiplicationBottomUp(dimensions);
+        LogUtil.logIt("Bottom UP :: " + minOperation);
         return minOperation;
     }
 
@@ -96,5 +99,91 @@ public class MatrixChainMultiplication {
             }
         }
         return t[i][j] = MIN_OPERATIONS;
+    }
+
+    private static int solveMatrixChainMultiplicationBottomUp(int[] dimensions) {
+        /**
+         * We have matrix dimensions, Now lets assume dimensions we
+         * [2,3,6,4,5]
+         * We have len(dimension) -1 matrices.
+         * Matrix ==> (m*n) where m = rows, and n = columns in matrix.
+         * A      ==> 2*3
+         * B      ==> 3*6
+         * C      ==> 6*4
+         * D      ==> 4*5
+         *
+         * What base condition do we have to calculate minOperation/cost
+         * we already know if there is just 1 matrix then the cost will always be 0.
+         *
+         * So cost[i][i] = 0;
+         *
+         * Now let's try to multiply 2 matrix at a time
+         *     A*B    |    B*C    |    C*D
+         *    2*3*6   |   3*6*4   |   6*4*5
+         *
+         * Now let's try to multiply 3 matrix.
+         * A*B*C ===> how can we multiply them
+         *        1) A * (BC)
+         *        2) (AB) * C.   and cost will be min(alternative_1, alternative_2)
+         * If you see from step above we have already calculated:
+         * BC and AB   ---> so we need minCost(AB, BC) + cost of multiplying current A.
+         *             ---> Cost(AB) = 2*3*6 = 36 + (2 * 6 * 4)=48 ==> 84...
+         *                                               ||===============> This is the cost of Multiplying C into AB
+         *
+         * Now the tricky part is how do you get 2 * 6 * 4 ===> So 2 is m of ith Matrix.
+         *                                                         6 is k where we are standing
+         *                                                         4 is n of jth matrix
+         * which will be
+         *      dimensions[i][0] * dimensions[k][1] * dimensions[j][1]
+         *
+         *      0 --> rows
+         *      1 --> cols in dimensions.
+         */
+        int cost[][] = new int[dimensions.length - 1][dimensions.length - 1];
+        int N = dimensions.length;
+        // For Level 0 (i.e Single Matrix)
+        for (int i = 0; i < dimensions.length - 1; i++) {
+            cost[i][i] = 0;
+        }
+
+        // Now for Level 2 to N-1
+        // i.e. multiplying AB , BC CD  ==> level 1
+        //                  ABC BCD     ==> level 2
+        // We will move diagonally.
+        /**
+         *    A  B  C  D
+         * A  0
+         * B     0
+         * C        0
+         * D           0
+         *
+         * Now we will multiply 2 matrices at a time
+         * AB BC CD and if you notice carefully, that's exactly sitting in diagonal.
+         */
+        int j = 0;
+        int min; // temp variable
+        for (int level = 1; level < dimensions.length; level++) {
+
+            // Represent starting point of matrix multiplication in this level.
+            for (int i = 0; i < N - 1 - level; i++) {
+
+                // j is the end point in this level of multiplication
+                // represent extreme right as per Recursive
+                j = i + level;
+
+                // At i, j initial cost is maximum and we have to reduce it by
+                // dividing solve(i,k) + solve(k+1, j) + arr[i] + arr[k] + arr[j];
+                cost[i][j] = Integer.MAX_VALUE;
+                // K represents cut.
+                for (int k = i; k < j; k++) {
+                    min = cost[i][k] + cost[k + 1][j] + (dimensions[i] * dimensions[k + 1] * dimensions[j + 1]);
+
+                    if (cost[i][j] > min) {
+                        cost[i][j] = min;
+                    }
+                }
+            }
+        }
+        return cost[0][cost[0].length - 1];
     }
 }
