@@ -89,7 +89,7 @@ public class BooleanParenthesization {
 
     private static int solve(char[] input, int i, int j, Boolean isTrue) {
         String key = EMPTY_STRING + i + j + isTrue;
-        if (memorization.containsKey(key)) return memorization.get(key);
+//        if (memorization.containsKey(key)) return memorization.get(key);
         if (i > j) {
             memorization.put(key, 0);
             return 0; // Empty String there are no ways.
@@ -106,10 +106,14 @@ public class BooleanParenthesization {
 
         int answer = 0;
         for (int k = i + 1; k < j; k += 2) {
-            int trueWaysInLeft = solve(input, i, k - 1, true);
-            int falseWaysInLeft = solve(input, i, k - 1, false);
-            int trueWaysInRight = solve(input, k + 1, j, true);
-            int falseWaysInRight = solve(input, k + 1, j, false);
+            String partialLeftKeyTrue = EMPTY_STRING + i + (k - 1) + "true";
+            String partialLeftKeyFalse = EMPTY_STRING + i + (k - 1) + "false";
+            String partialRightKeyTrue = EMPTY_STRING + (k + 1) + j + "true";
+            String partialRightKeyFalse = EMPTY_STRING + (k + 1) + j + "false";
+            int trueWaysInLeft = memorization.containsKey(partialLeftKeyTrue) ? memorization.get(partialLeftKeyTrue) : solve(input, i, k - 1, true);
+            int falseWaysInLeft = memorization.containsKey(partialLeftKeyFalse) ? memorization.get(partialLeftKeyFalse) : solve(input, i, k - 1, false);
+            int trueWaysInRight = memorization.containsKey(partialRightKeyTrue) ? memorization.get(partialRightKeyTrue) : solve(input, k + 1, j, true);
+            int falseWaysInRight = memorization.containsKey(partialRightKeyFalse) ? memorization.get(partialRightKeyFalse) : solve(input, k + 1, j, false);
 
             // Now
             char operatorAtK = input[k];
@@ -142,6 +146,4 @@ public class BooleanParenthesization {
         memorization.put(key, answer);
         return answer;
     }
-
-
 }
