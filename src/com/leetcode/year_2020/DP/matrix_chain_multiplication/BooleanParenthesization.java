@@ -87,7 +87,7 @@ public class BooleanParenthesization {
         }
 
         int answer = 0;
-        for (int k = i + 1; k < j; k++) {
+        for (int k = i + 1; k < j; k += 2) {
             int trueWaysInLeft = solve(input, i, k - 1, true);
             int falseWaysInLeft = solve(input, i, k - 1, false);
             int trueWaysInRight = solve(input, k + 1, j, true);
