@@ -29,14 +29,17 @@ public class FloodFill {
     }
 
     private static void floodTheImage(int[][] image, int row, int col, int existingColor, int newColor) {
-        if(row < 0 || row >= image.length || col < 0 || col >= image[0].length || image[row][col] != existingColor) return;
+        if (row < 0 || row >= image.length || col < 0 || col >= image[0].length || image[row][col] != existingColor)
+            return;
 
         image[row][col] = newColor;
 
-        floodTheImage(image, row+1, col,existingColor, newColor);
-        floodTheImage(image, row-1, col,existingColor, newColor);
-        floodTheImage(image, row, col+1,existingColor, newColor);
-        floodTheImage(image, row, col-1,existingColor, newColor);
+        // We'll visit in all 4 directions.
+        // Down, Top, Right, left.
+        floodTheImage(image, row + 1, col, existingColor, newColor);
+        floodTheImage(image, row - 1, col, existingColor, newColor);
+        floodTheImage(image, row, col + 1, existingColor, newColor);
+        floodTheImage(image, row, col - 1, existingColor, newColor);
     }
 
 
