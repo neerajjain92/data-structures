@@ -34,6 +34,7 @@ public class ParsingABooleanExpression {
         Stack<Character> stack = new Stack<>();
 
         for (char c : expression.toCharArray()) {
+            if(c == ',') continue;
             if (c != ')') {
                 stack.push(c);
             } else { // If it's a closing bracket
