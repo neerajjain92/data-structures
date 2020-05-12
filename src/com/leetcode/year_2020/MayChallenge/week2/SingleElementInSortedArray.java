@@ -14,37 +14,58 @@ public class SingleElementInSortedArray {
     }
 
     public static int singleNonDuplicate(int[] nums) {
-        if (nums.length == 1) return nums[0];
-        return search(nums, 0, nums.length - 1);
-    }
+        /**
+         * Need some intuition.
+         *
+         * Assume we only have pairs, When we start placing all pairs.
+         * (P11, P12) | (P21, P22) and so on.....
+         *
+         *  0      1      2     3      4      5   ====> Indexes(0 based index).
+         * P11    P12    P21   P22    P31    P32
+         * Even   Odd   Even   Odd    Even   Odd
+         *
+         * So second item of a pair always comes on odd position. Now let's try to insert some single item
+         * and notice the behavior.
+         *
+         * Single Item on Left Side :
+         *
+         *  0      1      2     3      4      5      6  ====> Indexes(0 based index).
+         * P11    P12    P21   P31    P32    P41   P42  >>>>> Single item on left side of mid.
+         * Even   Odd   Even   Odd    Even   Odd   Even
+         *
+         * Notice how second item of pair disrupts due to introduction of P21 single item. we were assuming
+         * second item of the pair will always comes on odd but P31 (first item of pair) came on Odd position
+         * and this is contradictory to our original statement.
+         *
+         *
+         *  0      1      2     3      4      5      6  ====> Indexes(0 based index).
+         * P11    P12    P21   P22    P31    P41   P42  >>>>>> Single item on right side of mid.
+         * Even   Odd   Even   Odd    Even   Odd   Even
+         *
+         * and ViceVersa
+         */
+        int low = 0;
+        int high = nums.length - 1;
 
-    public static int search(int[] nums, int low, int high) {
-        if (low <= high) {
+        while (low < high) {
             int mid = low + (high - low) / 2;
 
-            if (mid == 0) { // check if 1st item
-                // then we have to just compare with the next item
-                if (nums[mid] != nums[mid + 1]) return nums[mid];
-            } else if (mid == nums.length - 1) { // check if last item
-                // then we have to just compare with the previous item
-                if (nums[mid - 1] != nums[mid]) return nums[mid];
-            } else {// Item in middle
-                // we have to compare with both previous and next.
-                if (nums[mid] != nums[mid - 1] &&
-                        nums[mid] != nums[mid + 1]) {
-                    return nums[mid];
+            if (mid % 2 == 0) { // So this means, this is the first item of pair
+                if (nums[mid] == nums[mid + 1]) {
+                    low = low + 2; // perfect our assumption is correct so single item is on right side.
+                    // why +2 since we are on 1st item of pair.
+                } else {  // Our trust broke, item on mid(even) is not the first item of pair.
+                    high = mid;
                 }
-
-                // If item is not in middle, then we have to test in both the side
-                // as we can't eliminate either side because question didn't have us any
-                // other information.
-                int leftResult = search(nums, low, mid - 1);
-                if (leftResult != -1) { // If found in left
-                    return leftResult;
+            } else { // As per our assumption, odd position only contains 2nd item of pair.
+                if (nums[mid] == nums[mid - 1]) {
+                    low = mid + 1; // perfect our assumption is correct so single item is on right side.
+                    // why +1 since we are on 2nd item of pair.
+                } else { // Our trust broke, item on mid(odd) is not the second item of pair.
+                    high = mid;
                 }
-                return search(nums, mid + 1, high);
             }
         }
-        return -1;
+        return nums[low];
     }
 }
