@@ -23,10 +23,6 @@ public class BinaryTreeMaximumPathSum {
 
     public static int fetchMaxPathSum(TreeNode root) {
         if (root == null) return 0;
-        if (root.left == null && root.right == null) {
-            MAX_SUM = Math.max(MAX_SUM, root.val);
-            return root.val;
-        }
 
         // Hypothesis
         // We have to check maxPathSum at each node
