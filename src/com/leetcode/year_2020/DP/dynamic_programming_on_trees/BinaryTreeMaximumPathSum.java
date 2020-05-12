@@ -72,6 +72,12 @@ public class BinaryTreeMaximumPathSum {
          */
 
         int temp = root.val; // Assume initially the root of subtree has max Sum
+
+        // It's not necessary that the below 2 statement change the original answer
+        // that can happen when both left and right child is negative.
+        /**
+         * a) in above figure.
+         */
         temp = Math.max(temp, root.val + maxSumInLeft); // Either node + left
         temp = Math.max(temp, root.val + maxSumInRight);// Either node + right
 
