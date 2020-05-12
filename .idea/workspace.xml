@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/WildCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/SingleElementInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/SingleElementInSortedArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.SingleElementInSortedArray">
+  <component name="RunManager" selected="Application.WildCards">
     <configuration name="EggDropping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.matrix_chain_multiplication.EggDropping" />
       <module name="data-structures" />
@@ -120,8 +120,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week2.WordProblem" />
+    <configuration name="WildCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week2.WildCards" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WildCards" />
         <item itemvalue="Application.SingleElementInSortedArray" />
         <item itemvalue="Application.EggDropping" />
         <item itemvalue="Application.ScrambleStrings" />
         <item itemvalue="Application.MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother" />
-        <item itemvalue="Application.WordProblem" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +225,8 @@
       <workItem from="1588955217734" duration="4841000" />
       <workItem from="1589028406131" duration="27253000" />
       <workItem from="1589205278702" duration="9701000" />
-      <workItem from="1589271190618" duration="1876000" />
+      <workItem from="1589271190618" duration="2514000" />
+      <workItem from="1589286761876" duration="1346000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -387,11 +388,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="105" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589218449075" />
-    <state x="735" y="449" width="945" height="579" key="#xdebugger.evaluate" timestamp="1589231285955">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="958" y="442" width="945" height="579" key="#xdebugger.evaluate" timestamp="1589287956098">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="735" y="449" width="945" height="579" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1589231285955" />
-    <state x="958" y="442" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1588513304334" />
+    <state x="958" y="442" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1589287956098" />
     <state x="96" y="112" key="CommitChangelistDialog2" timestamp="1589063004364">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -404,54 +405,54 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="356" key="GridCell.Tab.0.bottom" timestamp="1589271913133">
+    <state width="1638" height="356" key="GridCell.Tab.0.bottom" timestamp="1589288080008">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626268" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
-    <state width="1638" height="356" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589271913133" />
-    <state width="1638" height="356" key="GridCell.Tab.0.center" timestamp="1589271913133">
+    <state width="1638" height="356" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589288080008" />
+    <state width="1638" height="356" key="GridCell.Tab.0.center" timestamp="1589288080007">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626267" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
-    <state width="1638" height="356" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589271913133" />
-    <state width="1638" height="356" key="GridCell.Tab.0.left" timestamp="1589271913132">
+    <state width="1638" height="356" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589288080007" />
+    <state width="1638" height="356" key="GridCell.Tab.0.left" timestamp="1589288080007">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626267" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
-    <state width="1638" height="356" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589271913132" />
-    <state width="1638" height="356" key="GridCell.Tab.0.right" timestamp="1589271913133">
+    <state width="1638" height="356" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589288080007" />
+    <state width="1638" height="356" key="GridCell.Tab.0.right" timestamp="1589288080008">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626268" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
-    <state width="1638" height="356" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589271913133" />
-    <state width="1638" height="375" key="GridCell.Tab.1.bottom" timestamp="1589261626270">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="356" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589288080008" />
+    <state width="1638" height="356" key="GridCell.Tab.1.bottom" timestamp="1589287987052">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626270" />
     <state width="2518" height="359" key="GridCell.Tab.1.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
-    <state width="1638" height="375" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588890110347" />
-    <state width="1638" height="375" key="GridCell.Tab.1.center" timestamp="1589261626269">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="356" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589287987052" />
+    <state width="1638" height="356" key="GridCell.Tab.1.center" timestamp="1589287987051">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626269" />
     <state width="2518" height="359" key="GridCell.Tab.1.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
-    <state width="1638" height="375" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588890110346" />
-    <state width="1638" height="375" key="GridCell.Tab.1.left" timestamp="1589261626269">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="356" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589287987051" />
+    <state width="1638" height="356" key="GridCell.Tab.1.left" timestamp="1589287987051">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626269" />
     <state width="2518" height="359" key="GridCell.Tab.1.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
-    <state width="1638" height="375" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588890110345" />
-    <state width="1638" height="375" key="GridCell.Tab.1.right" timestamp="1589261626270">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="356" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589287987051" />
+    <state width="1638" height="356" key="GridCell.Tab.1.right" timestamp="1589287987052">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="375" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589261626270" />
     <state width="2518" height="359" key="GridCell.Tab.1.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
-    <state width="1638" height="375" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588890110346" />
+    <state width="1638" height="356" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589287987052" />
     <state x="551" y="261" key="RollbackChangesDialog" timestamp="1588508671452">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -1135,6 +1136,16 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>34</line>
           <option name="timeStamp" value="399" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/WildCards.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="400" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/WildCards.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="401" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
