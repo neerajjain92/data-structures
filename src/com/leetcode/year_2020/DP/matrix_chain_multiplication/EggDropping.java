@@ -10,9 +10,11 @@ import java.util.Arrays;
 public class EggDropping {
 
     public static void main(String[] args) {
+        System.out.println(findMinAttemptsInWhichWeCanFigureOutOnWhichFloorTheEggWillBreak(1, 3));
         System.out.println(findMinAttemptsInWhichWeCanFigureOutOnWhichFloorTheEggWillBreak(1, 2));
         System.out.println(findMinAttemptsInWhichWeCanFigureOutOnWhichFloorTheEggWillBreak(2, 6));
         System.out.println(findMinAttemptsInWhichWeCanFigureOutOnWhichFloorTheEggWillBreak(3, 26));
+        System.out.println(findMinAttemptsInWhichWeCanFigureOutOnWhichFloorTheEggWillBreak(8, 1000));
     }
 
     static int[][] memorization;
@@ -23,10 +25,10 @@ public class EggDropping {
         for (int[] row : memorization) {
             Arrays.fill(row, -1);
         }
-        return solve(eggs, floors);
+        return dropEgg(eggs, floors);
     }
 
-    private static int solve(int eggs, int floors) {
+    private static int dropEgg(int eggs, int floors) {
         if (floors == 0 || floors == 1) return floors;
         if (eggs == 1) return floors;
 
@@ -40,11 +42,25 @@ public class EggDropping {
             // if egg breaks at k'th floor
             // At this k we tried so 1 attempt is consumed.
             // Now at this either a egg can break or can't break and since we want worst case so we choose Max or either 2
-            int worstCase = 1 + Math.max(
-                    memorization[eggs - 1][k - 1] > -1 ? memorization[eggs - 1][k - 1] :
-                            solve(eggs - 1, k - 1),
-                    memorization[eggs][floors - k] > -1 ? memorization[eggs][floors - k] :
-                            solve(eggs, floors - k));
+
+            int floorBelowK = 0;
+            if (memorization[eggs - 1][k - 1] > -1) {
+                floorBelowK = memorization[eggs - 1][k - 1];
+            } else {
+                floorBelowK = dropEgg(eggs - 1, k - 1);
+                memorization[eggs - 1][k - 1] = floorBelowK;
+            }
+
+            int floorAboveK = 0;
+            if (memorization[eggs][floors - k] > -1) {
+                floorAboveK = memorization[eggs][floors - k];
+            } else {
+                floorAboveK = dropEgg(eggs, floors - k);
+                memorization[eggs][floors - k] = floorAboveK;
+            }
+
+            // why +1 because we are attempting at k.
+            int worstCase = 1 + Math.max(floorBelowK, floorAboveK);
             MIN_ATTEMPTS = Math.min(MIN_ATTEMPTS, worstCase);
         }
         return memorization[eggs][floors] = MIN_ATTEMPTS;

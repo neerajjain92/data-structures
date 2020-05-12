@@ -18,7 +18,7 @@ I have curated these list from famouse blogs, youtube etc. For Brushing up the b
 - :moneybag: [0/1 KnapSack category problems (8 Variation Problems)](src/com/leetcode/year_2020/DP/zero_one_knapsack)
 - :moneybag: [Unbounded Knapsack problems (3 Variation Problems)](src/com/leetcode/year_2020/DP/unbounded_knapsack)
 - :twisted_rightwards_arrows: [Longest Common Subsequence (11 Variation Problems)](src/com/leetcode/year_2020/DP/longest_common_subsequence)
-- :heavy_multiplication_x: [Matrix Chain Multiplication](src/com/leetcode/year_2020/DP/matrix_chain_multiplication)
+- :heavy_multiplication_x: [Matrix Chain Multiplication (7 Variation Problems)](src/com/leetcode/year_2020/DP/matrix_chain_multiplication)
 
 ### Interview Bit Problems 
 - :computer: [Array](src/com/interviewbit/array)
