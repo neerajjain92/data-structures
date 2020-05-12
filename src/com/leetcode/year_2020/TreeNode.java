@@ -8,11 +8,11 @@ package com.leetcode.year_2020;
 public class TreeNode {
 
     int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode next;
+    public TreeNode left;
+    public TreeNode right;
+    public TreeNode next;
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
     }
 
