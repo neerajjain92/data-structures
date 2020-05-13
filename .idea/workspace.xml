@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.MaximumAreaOfHistogram">
+  <component name="RunManager" selected="Application.MaximumAreaRectangleInBinaryMatrix">
     <configuration name="MaximumAreaOfHistogram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.MaximumAreaOfHistogram" />
       <module name="data-structures" />
@@ -67,8 +67,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NearestGreaterElementToTheRight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.NearestGreaterElementToTheRight" />
+    <configuration name="MaximumAreaRectangleInBinaryMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.MaximumAreaRectangleInBinaryMatrix" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaximumAreaRectangleInBinaryMatrix" />
         <item itemvalue="Application.MaximumAreaOfHistogram" />
         <item itemvalue="Application.StockSpanProblem" />
         <item itemvalue="Application.NearestSmallestElementInTheLeft" />
         <item itemvalue="Application.NearestSmallestElementInTheRight" />
-        <item itemvalue="Application.NearestGreaterElementToTheRight" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +216,7 @@
       <workItem from="1589309059934" duration="3546000" />
       <workItem from="1589347567481" duration="1000" />
       <workItem from="1589361547485" duration="12939000" />
-      <workItem from="1589394951267" duration="3639000" />
+      <workItem from="1589394951267" duration="5215000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -395,28 +395,28 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="374" key="GridCell.Tab.0.bottom" timestamp="1589399884809">
+    <state width="1638" height="374" key="GridCell.Tab.0.bottom" timestamp="1589403174783">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589399884809" />
+    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589403174783" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
-    <state width="1638" height="374" key="GridCell.Tab.0.center" timestamp="1589399884807">
+    <state width="1638" height="374" key="GridCell.Tab.0.center" timestamp="1589403174782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589399884807" />
+    <state width="1638" height="374" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589403174782" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
-    <state width="1638" height="374" key="GridCell.Tab.0.left" timestamp="1589399884806">
+    <state width="1638" height="374" key="GridCell.Tab.0.left" timestamp="1589403174781">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589399884806" />
+    <state width="1638" height="374" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589403174781" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
-    <state width="1638" height="374" key="GridCell.Tab.0.right" timestamp="1589399884808">
+    <state width="1638" height="374" key="GridCell.Tab.0.right" timestamp="1589403174782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589399884808" />
+    <state width="1638" height="374" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589403174782" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
     <state width="1638" height="374" key="GridCell.Tab.1.bottom" timestamp="1589399653932">
