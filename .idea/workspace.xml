@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/NearestSmallestElementInTheLeft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/NearestSmallestElementInTheRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/StockSpanProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.NearestSmallestElementInTheLeft">
+  <component name="RunManager" selected="Application.StockSpanProblem">
     <configuration name="NearestGreaterElementToTheLeft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.NearestGreaterElementToTheLeft" />
       <module name="data-structures" />
@@ -107,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveKDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week2.RemoveKDigits" />
+    <configuration name="StockSpanProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.StockSpanProblem" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.MayChallenge.week2.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StockSpanProblem" />
         <item itemvalue="Application.NearestSmallestElementInTheLeft" />
         <item itemvalue="Application.NearestSmallestElementInTheRight" />
         <item itemvalue="Application.NearestGreaterElementToTheRight" />
         <item itemvalue="Application.NearestGreaterElementToTheLeft" />
-        <item itemvalue="Application.RemoveKDigits" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +215,7 @@
       <workItem from="1589286761876" duration="3411000" />
       <workItem from="1589309059934" duration="3546000" />
       <workItem from="1589347567481" duration="1000" />
-      <workItem from="1589361547485" duration="10256000" />
+      <workItem from="1589361547485" duration="12317000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -395,30 +394,30 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="374" key="GridCell.Tab.0.bottom" timestamp="1589376708197">
+    <state width="1638" height="374" key="GridCell.Tab.0.bottom" timestamp="1589379453586">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589376708197" />
+    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589379453586" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
-    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826050" />
-    <state width="1638" height="374" key="GridCell.Tab.0.center" timestamp="1589376708195">
+    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589379283063" />
+    <state width="1638" height="374" key="GridCell.Tab.0.center" timestamp="1589379453585">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589376708195" />
+    <state width="1638" height="374" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589379453585" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
-    <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826048" />
-    <state width="1638" height="374" key="GridCell.Tab.0.left" timestamp="1589376708194">
+    <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589379283062" />
+    <state width="1638" height="374" key="GridCell.Tab.0.left" timestamp="1589379453584">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589376708194" />
+    <state width="1638" height="374" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589379453584" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
-    <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826047" />
-    <state width="1638" height="374" key="GridCell.Tab.0.right" timestamp="1589376708196">
+    <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589379283062" />
+    <state width="1638" height="374" key="GridCell.Tab.0.right" timestamp="1589379453585">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589376708196" />
+    <state width="1638" height="374" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589379453585" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
-    <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826049" />
+    <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589379283063" />
     <state width="1638" height="374" key="GridCell.Tab.1.bottom" timestamp="1589371692363">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
