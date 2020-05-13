@@ -15,6 +15,9 @@ public class MaximumAreaOfHistogram {
         System.out.println(findMaxArea(new int[]{}));
         System.out.println(findMaxArea(new int[]{3, 6, 5, 7, 4, 8, 1, 0}));
         System.out.println(findMaxArea(new int[]{2, 1, 2}));
+        System.out.println(findMaxArea(new int[]{6, 2, 5, 4, 5, 1, 6}));
+        System.out.println(findMaxArea(new int[]{1, 1}));
+        System.out.println(findMaxArea(new int[]{2, 2, 2, 2}));
     }
 
     public static int findMaxArea(int[] height) {
@@ -22,54 +25,87 @@ public class MaximumAreaOfHistogram {
          * Input: [2,1,5,6,2,3]
          * Output: 10
          *
-         * Now the area can grow in both directions left and right, assume we start at index[1] where value is also 1.
+         * Now the area can grow/expand in both directions left and right, assume we start at index[1] where value is also 1.
          * So the area can be    1<- 1 ------>5 (Total 6) Area of Rectangle = height * width.
          *
          * So we have to essentially look out in both the directions and maintain the area.
-         * Let's start with going in right direction first.
-         * At any i how far in right we can only..... only till we find nearest smallest element in the right isn't it ?
-         * Yes. so we have to first solve Nearest Smallest Element in the Right problem while maintaining Area in O(N) space.
+         * How far i can go in right.....upto Nearest Smallest Element in Right
+         * How far i can go in left .....upto Nearest Smallest Element in left
          */
         Stack<Integer> stack = new Stack<>();
-        int[] area = new int[height.length]; // this will store the area.
-        int MAX_AREA = Integer.MIN_VALUE;
+        int[] right = new int[height.length]; // Store Nearest Smaller Element in Right (NSR)
+        int[] left = new int[height.length]; // Store Nearest Smaller Element in the Left(NSL).
 
-        // Since we have to find next smallest element in right for each element so we start with right most element.
+        // Note we are storing index in NSR, as it helps to calculate the SPAN.
+
+        // Populate NSR
         for (int i = height.length - 1; i >= 0; i--) {
             if (stack.isEmpty()) {
-                area[i] = (height.length - i) * height[i];
+                right[i] = height.length; // Since no element in the array seems to be smallest so we will take imaginary height after the array.
             } else {
                 while (!stack.isEmpty() && height[stack.peek()] >= height[i]) {
                     stack.pop();
                 }
-
                 if (stack.isEmpty()) {
-                    area[i] = (height.length - i) * height[i];
+                    right[i] = height.length;  // Since no element in the array seems to be smallest so we will take imaginary height after the array.
                 } else {
-                    area[i] = (stack.peek() - i) * height[i];
+                    right[i] = stack.peek();
                 }
             }
-            MAX_AREA = Math.max(MAX_AREA, area[i]);
-            stack.push(i); // Pushing index instead of value which will help us calculate distance between 2 items.
+            stack.push(i);
         }
-        // Now since we have all the right area. lets see which all elements now can contribute or expand their area
-        // in the left side, which means finding Next Smallest item in the left side.
+
         stack = new Stack<>();
+        // Populate NSL
         for (int i = 0; i < height.length; i++) {
-            if (!stack.isEmpty()) {
-                // If Stack is empty then this item will not grow at all in left.
-                // and it has already contributed it's area in the right side.
+            if (stack.isEmpty()) {
+                left[i] = -1;
+            } else {
                 while (!stack.isEmpty() && height[stack.peek()] >= height[i]) {
                     stack.pop();
                 }
-                if (!stack.isEmpty()) {
-                    area[i] += (i - (stack.peek() + 1)) * height[i];
+                if (stack.isEmpty()) {
+                    left[i] = -1;
                 } else {
-                    area[i] += (i - 0) * height[i];
+                    left[i] = stack.peek();
                 }
-                MAX_AREA = Math.max(MAX_AREA, area[i]);
             }
             stack.push(i);
+        }
+
+        /**
+         * Now we have both left and right nearest smallest element stored in left and right array.
+         *  *       /---------(-1 is also Imaginary Index)
+         *  Index -1 0  1  2  3  4  5  6  7 ===> (7 is imaginary Index)
+         *  Height   6  2  5  4  5  1  6
+         *  NSR      1  5  3  5  5  7  7   ===> Storing Index
+         *  NSL     -1 -1  1  1  3  -1 5   ===> Storing Index
+         *  ------------------------------------
+         *
+         *  -------------------------------------
+         *
+         *
+         *  Now assume we are standing at height 4... how far we can go in left... only upto height 5 if we
+         *  go beyond that we can't expand our area.... similarly we can expand upto height 5 in right as well
+         *  So what is the actual area covered.
+         *
+         *              5 4 5
+         *              -----  (this much width i.e. width of 3 and height is 4 so area 12)
+         *
+         *   How to get the width... that will come (NSR - NSL - 1) : Why -1 since you can't include NSR in the area,
+         *                                                          as that is smallest than the height and can't contribute to the Area.
+         *   For 4 the NSR is  = 5
+         *   For 4 the NSL is  = 1
+         *
+         *   So how many buildings in between ( 5 - 1 - 1) = 3. So Area 3 * 4 = 12.
+         *
+         */
+        int MAX_AREA = Integer.MIN_VALUE;
+        for (int i = 0; i < right.length; i++) {
+            int widthAtI = (right[i] - left[i]) - 1;
+            MAX_AREA = Math.max(
+                    (widthAtI * height[i]), MAX_AREA
+            );
         }
         return MAX_AREA == Integer.MIN_VALUE ? 0 : MAX_AREA;
     }
