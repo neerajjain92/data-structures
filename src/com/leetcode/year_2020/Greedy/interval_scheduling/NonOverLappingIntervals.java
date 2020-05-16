@@ -26,6 +26,10 @@ public class NonOverLappingIntervals {
         System.out.println(eraseOverlapIntervals(new int[][]{
                 {1, 100}, {11, 22}, {1, 11}, {2, 12}
         }));
+
+        System.out.println(eraseOverlapIntervals(new int[][]{
+                {10, 16}, {2, 8}, {1, 6}, {7, 12}
+        }));
     }
 
     public static int eraseOverlapIntervals(int[][] intervals) {

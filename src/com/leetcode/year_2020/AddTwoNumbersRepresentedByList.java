@@ -11,12 +11,12 @@ public class AddTwoNumbersRepresentedByList {
 
     public static void main(String[] args) {
         ListNode head1 = new ListNode(2);
-        head1.next = new ListNode(1);
-        head1.next.next = new ListNode(2);
+        head1.next = new ListNode(4);
+        head1.next.next = new ListNode(3);
 
-        ListNode head2 = new ListNode(2);
-        head2.next = new ListNode(9);
-        head2.next.next = new ListNode(5);
+        ListNode head2 = new ListNode(5);
+        head2.next = new ListNode(6);
+        head2.next.next = new ListNode(4);
 
 
         ListNode result = addTwoNumbers(head1, head2);
@@ -57,6 +57,7 @@ public class AddTwoNumbersRepresentedByList {
             if (dummyHead.next == null) {
                 dummyHead.next = new ListNode(sum % 10);
             } else {
+                // Append to front.
                 ListNode next = dummyHead.next;
                 dummyHead.next = new ListNode(sum % 10);
                 dummyHead.next.next = next;
