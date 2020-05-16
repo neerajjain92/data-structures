@@ -12,6 +12,7 @@ public class CoinChange_MinCoins {
     public static void main(String[] args) {
         System.out.println(coinChange(new int[]{1, 2, 3}, 5));
         System.out.println(coinChange(new int[]{1, 2, 5}, 11));
+        System.out.println(coinChange(new int[]{1,5,6,9}, 11));
         System.out.println(coinChange(new int[]{2}, 3));
         System.out.println(coinChange(new int[]{470, 18, 66, 301, 403, 112, 360}, 8235));
     }
