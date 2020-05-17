@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/MinimumWindowSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/SubstringWithConcatenationOfAllWords.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,6 +54,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.SubstringWithConcatenationOfAllWords">
     <configuration name="FindAllAnagramsInAString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -218,7 +226,7 @@
       <workItem from="1589394951267" duration="8662000" />
       <workItem from="1589465978419" duration="4245000" />
       <workItem from="1589563692562" duration="11158000" />
-      <workItem from="1589709429460" duration="14467000" />
+      <workItem from="1589709429460" duration="14735000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -1231,26 +1239,6 @@
           <line>38</line>
           <option name="timeStamp" value="425" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/MinimumWindowSubstring.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="426" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/LongestSubstringWithoutRepeatingCharacters.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="427" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/LongestSubstringWithoutRepeatingCharacters.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="429" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/SubstringWithConcatenationOfAllWords.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="431" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>30</line>
@@ -1258,14 +1246,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="405" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/SubstringWithConcatenationOfAllWords.java</url>
-          <line>73</line>
-          <properties class="com.leetcode.year_2020.MayChallenge.week3.SubstringWithConcatenationOfAllWords" method="isConcatenationValid">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="432" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
