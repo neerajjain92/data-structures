@@ -7,6 +7,9 @@ import java.util.Map;
 
 /**
  * https://leetcode.com/problems/find-all-anagrams-in-a-string/
+ * <p>
+ * Good Discussion :
+ * https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.
  *
  * @author neeraj on 17/05/20
  * Copyright (c) 2019, data-structures.
