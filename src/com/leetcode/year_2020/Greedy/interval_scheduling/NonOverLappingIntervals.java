@@ -5,6 +5,9 @@ import java.util.Comparator;
 
 /**
  * https://leetcode.com/problems/non-overlapping-intervals/
+ * <p>
+ * Given a collection of intervals, find the minimum number of intervals you need to remove
+ * to make the rest of the intervals non-overlapping.
  *
  * @author neeraj on 16/05/20
  * Copyright (c) 2019, data-structures.
@@ -43,8 +46,8 @@ public class NonOverLappingIntervals {
          *
          * We have to just remove 1 interval which is {1,3}. to make it non-overlapping.
          *
-         * 1. We have to sort the intervals based on their Finish Time... reason intervals with
-         *    earliest endTime gives us more space to accommodate extra intervals, v/s if we choose the interval
+         * 1. We have to sort the intervals based on their Finish Time in Ascending Order....
+         *    Reason: Intervals with earliest endTime gives us more space to accommodate extra intervals, v/s if we choose the interval
          *    with End Time as largest we will have no space to accommodate more intervals.
          * 2. Here also we will take baseInterval and do the comparision with other intervals. Now in this variation we have to reject
          *    the overlapping interval.
