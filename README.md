@@ -22,7 +22,10 @@ I have curated these list from famouse blogs, youtube etc. For Brushing up the b
 - :evergreen_tree: [Dynamic Programming on Trees](src/com/leetcode/year_2020/DP/dynamic_programming_on_trees)
 
 ### Sliding Window BootCamp
-- :ship: [Problems](src/com/leetcode/year_2020/sliding_window)
+- :door: [Problems](src/com/leetcode/year_2020/sliding_window)
+
+### Prefix Sum Technique
+- :heavy_plus_sign: [Prefix Sum](src/com/leetcode/year_2020/prefix_sum_technique)
 
 
 ### Interview Bit Problems 
