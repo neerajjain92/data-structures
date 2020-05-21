@@ -10,19 +10,9 @@ import java.util.Stack;
 public class LargestRectangleInHistogram {
 
     public static void main(String[] args) {
-
-        char [] chars = new char[10];
-
-        System.out.println(chars[0] == Character.MIN_VALUE);
-
-        String str = "abcdef";
-        for(char c: str.toCharArray()) {
-            System.out.println(c - 'a');
-        }
-
-//        System.out.println(largestRectangleArea(new int[]{2, 1, 5, 6, 2, 3}));
-//        System.out.println(largestRectangleArea(new int[]{1, 2, 3, 4, 5, 3, 3, 2}));
-//        System.out.println(largestRectangleArea(new int[]{2,1,2}));
+        System.out.println(largestRectangleArea(new int[]{2, 1, 5, 6, 2, 3}));
+        System.out.println(largestRectangleArea(new int[]{1, 2, 3, 4, 5, 3, 3, 2}));
+        System.out.println(largestRectangleArea(new int[]{2,1,2}));
     }
 
     public static int largestRectangleArea(int[] heights) {
