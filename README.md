@@ -27,6 +27,9 @@ I have curated these list from famouse blogs, youtube etc. For Brushing up the b
 ### Prefix Sum Technique
 - :heavy_plus_sign: [Prefix Sum](src/com/leetcode/year_2020/prefix_sum_technique)
 
+### Greedy Technique
+- :trollface: [Greedy Problem](src/com/leetcode/year_2020/Greedy)
+
 
 ### Interview Bit Problems 
 - :computer: [Array](src/com/interviewbit/array)

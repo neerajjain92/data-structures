@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/CountSquareSubmatriceswithAllOnes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/difference_array/ArrayManipulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/NonDecreasingArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/LargestRectangleInHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MaximalSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MaximalSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountSquareSubmatriceswithAllOnes">
+  <component name="RunManager" selected="Application.NonDecreasingArray">
     <configuration name="ArrayManipulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.difference_array.ArrayManipulation" />
       <module name="data-structures" />
@@ -78,19 +76,6 @@
     </configuration>
     <configuration name="CountSquareSubmatriceswithAllOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week3.CountSquareSubmatriceswithAllOnes" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.MayChallenge.week3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KthSmallestElementInABST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week3.KthSmallestElementInABST" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -128,13 +113,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NonDecreasingArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.NonDecreasingArray" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NonDecreasingArray" />
         <item itemvalue="Application.CountSquareSubmatriceswithAllOnes" />
         <item itemvalue="Application.MaximumAreaOfHistogram" />
         <item itemvalue="Application.LargestRectangleInHistogram" />
         <item itemvalue="Application.ArrayManipulation" />
-        <item itemvalue="Application.KthSmallestElementInABST" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +237,7 @@
       <workItem from="1589998255590" duration="847000" />
       <workItem from="1590002244564" duration="1104000" />
       <workItem from="1590055803166" duration="3727000" />
+      <workItem from="1590085540536" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -382,6 +381,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590086811148">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590086811148" />
     <state x="503" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583864186704">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -417,31 +420,31 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="374" key="GridCell.Tab.0.bottom" timestamp="1590061214457">
+    <state width="1638" height="374" key="GridCell.Tab.0.bottom" timestamp="1590087191423">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590061214457" />
+    <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590087191423" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
     <state width="1638" height="458" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590061145496" />
-    <state width="1638" height="374" key="GridCell.Tab.0.center" timestamp="1590061214455">
+    <state width="1638" height="374" key="GridCell.Tab.0.center" timestamp="1590087191422">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590061214455" />
+    <state width="1638" height="374" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590087191422" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
     <state width="1638" height="458" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1590061145495" />
-    <state width="1638" height="374" key="GridCell.Tab.0.left" timestamp="1590061214455">
+    <state width="1638" height="374" key="GridCell.Tab.0.left" timestamp="1590087191421">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590061214455" />
+    <state width="1638" height="374" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590087191421" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
     <state width="1638" height="458" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1590061145494" />
-    <state width="1638" height="374" key="GridCell.Tab.0.right" timestamp="1590061214456">
+    <state width="1638" height="374" key="GridCell.Tab.0.right" timestamp="1590087191422">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="374" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590061214456" />
+    <state width="1638" height="374" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590087191422" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
     <state width="1638" height="458" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1590061145496" />
@@ -509,10 +512,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="545" y="314" key="refactoring.ChangeSignatureDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1587911511639" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1590055813082">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1590088357625">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1590055813082" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1590088357625" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1589318752076" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1589903319724" />
   </component>
