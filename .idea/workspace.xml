@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week4/ConstructBinarySearchTreefromPreorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/TaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/TaskScheduler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,33 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TaskScheduler">
+  <component name="RunManager" selected="Application.ConstructBinarySearchTreefromPreorderTraversal">
+    <configuration name="BrokenCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.BrokenCalculator" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructBinarySearchTreefromPreorderTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week4.ConstructBinarySearchTreefromPreorderTraversal" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.MayChallenge.week4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IntervalListIntersections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week4.IntervalListIntersections" />
       <module name="data-structures" />
@@ -73,25 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeetingRoom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MeetingRoom" />
+    <configuration name="LemonadeChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.LemonadeChange" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortCharactersByFrequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week4.SortCharactersByFrequency" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.MayChallenge.week4.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,26 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TowerOfHanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.TowerOfHanoi" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.datastructures.recursion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConstructBinarySearchTreefromPreorderTraversal" />
+        <item itemvalue="Application.LemonadeChange" />
+        <item itemvalue="Application.BrokenCalculator" />
         <item itemvalue="Application.TaskScheduler" />
         <item itemvalue="Application.IntervalListIntersections" />
-        <item itemvalue="Application.SortCharactersByFrequency" />
-        <item itemvalue="Application.MeetingRoom" />
-        <item itemvalue="Application.TowerOfHanoi" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +242,8 @@
       <workItem from="1590141868572" duration="759000" />
       <workItem from="1590169979823" duration="1154000" />
       <workItem from="1590236926554" duration="3586000" />
-      <workItem from="1590250323277" duration="3332000" />
+      <workItem from="1590250323277" duration="8155000" />
+      <workItem from="1590332672807" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -423,59 +426,59 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="331" key="GridCell.Tab.0.bottom" timestamp="1590255245245">
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom" timestamp="1590270729256">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590255245245" />
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590270729256" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
-    <state width="1291" height="331" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590250725347" />
-    <state width="1638" height="331" key="GridCell.Tab.0.center" timestamp="1590255245243">
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590269754018" />
+    <state width="1638" height="331" key="GridCell.Tab.0.center" timestamp="1590270729254">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590255245243" />
+    <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590270729254" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
-    <state width="1291" height="331" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1590250725346" />
-    <state width="1638" height="331" key="GridCell.Tab.0.left" timestamp="1590255245242">
+    <state width="1638" height="331" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1590269754017" />
+    <state width="1638" height="331" key="GridCell.Tab.0.left" timestamp="1590270729253">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590255245242" />
+    <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590270729253" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
-    <state width="1291" height="331" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1590250725346" />
-    <state width="1638" height="331" key="GridCell.Tab.0.right" timestamp="1590255245244">
+    <state width="1638" height="331" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1590269754016" />
+    <state width="1638" height="331" key="GridCell.Tab.0.right" timestamp="1590270729255">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590255245244" />
+    <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590270729255" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
-    <state width="1291" height="331" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1590250725347" />
-    <state width="1638" height="458" key="GridCell.Tab.1.bottom" timestamp="1590255230344">
+    <state width="1638" height="331" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1590269754018" />
+    <state width="1638" height="458" key="GridCell.Tab.1.bottom" timestamp="1590269719494">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="458" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590255230344" />
+    <state width="1638" height="458" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590269719494" />
     <state width="2518" height="359" key="GridCell.Tab.1.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
     <state width="1638" height="374" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826326" />
     <state width="1638" height="458" key="GridCell.Tab.1.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590061145498" />
-    <state width="1638" height="458" key="GridCell.Tab.1.center" timestamp="1590255230342">
+    <state width="1638" height="458" key="GridCell.Tab.1.center" timestamp="1590269719493">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="458" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590255230342" />
+    <state width="1638" height="458" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590269719493" />
     <state width="2518" height="359" key="GridCell.Tab.1.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
     <state width="1638" height="374" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826321" />
     <state width="1638" height="458" key="GridCell.Tab.1.center/0.23.1680.969@0.23.1680.969" timestamp="1590061145497" />
-    <state width="1638" height="458" key="GridCell.Tab.1.left" timestamp="1590255230341">
+    <state width="1638" height="458" key="GridCell.Tab.1.left" timestamp="1590269719493">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="458" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590255230341" />
+    <state width="1638" height="458" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590269719493" />
     <state width="2518" height="359" key="GridCell.Tab.1.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
     <state width="1638" height="374" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826318" />
     <state width="1638" height="458" key="GridCell.Tab.1.left/0.23.1680.969@0.23.1680.969" timestamp="1590061145497" />
-    <state width="1638" height="458" key="GridCell.Tab.1.right" timestamp="1590255230343">
+    <state width="1638" height="458" key="GridCell.Tab.1.right" timestamp="1590269719494">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="458" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590255230343" />
+    <state width="1638" height="458" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590269719494" />
     <state width="2518" height="359" key="GridCell.Tab.1.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
     <state width="1638" height="374" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826323" />
     <state width="1638" height="458" key="GridCell.Tab.1.right/0.23.1680.969@0.23.1680.969" timestamp="1590061145497" />
@@ -1322,6 +1325,14 @@
           <line>44</line>
           <option name="timeStamp" value="450" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java</url>
+          <line>42</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="453" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>30</line>
@@ -1337,6 +1348,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="445" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java</url>
+          <line>18</line>
+          <properties class="com.leetcode.year_2020.Greedy.BrokenCalculator" method="brokenCalc">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="452" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
