@@ -16,6 +16,10 @@ public class LargestSubArrayWithEqualNumberOfZerosAndOnes {
 
     public static void main(String[] args) {
         System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{
+                0, 1, 1, 0, 1, 1, 1, 0
+        }));
+
+        System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{
                 1, 0, 1, 1, 1, 0, 0
         }));
 
@@ -26,6 +30,14 @@ public class LargestSubArrayWithEqualNumberOfZerosAndOnes {
         System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{
                 0, 0, 1, 1, 0
         }));
+
+
+
+        System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{0, 1}));
+        System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{0, 1, 0}));
+        System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{0, 0, 0, 0, 1, 1}));
+        System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{0, 0, 1, 0, 0, 0, 1, 1}));
+        System.out.println(findLargestSubArrayWithEqualNumberOfZerosAndOnes(new int[]{0, 1, 1, 0, 1, 1, 1, 0}));
     }
 
     public static int findLargestSubArrayWithEqualNumberOfZerosAndOnes(int[] nums) {
@@ -37,6 +49,8 @@ public class LargestSubArrayWithEqualNumberOfZerosAndOnes {
         int prefixSum = 0;
         Map<Integer, Integer> prefixSumFirstOccurrence = new HashMap<>();
         int LargestSubArray = 0;
+
+        prefixSumFirstOccurrence.put(0, -1);
 
         for (int i = 0; i < nums.length; i++) {
             prefixSum += nums[i] == 0 ? -1 : 1;
