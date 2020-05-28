@@ -1,4 +1,6 @@
-package com.leetcode.year_2020.graph;
+package com.leetcode.year_2020.graph.disjoint_set_union_find;
+
+import com.util.LogUtil;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +33,63 @@ public class NumberofOperationstoMakeNetworkConnected {
         System.out.println(makeConnected(11, new int[][]{
                 {1, 4}, {0, 3}, {1, 3}, {3, 7}, {2, 7}, {0, 1}, {2, 4}, {3, 6}, {5, 6}, {6, 7}, {4, 7}, {0, 7}, {5, 7}
         }));
+
+        LogUtil.newLine();
+
+        System.out.println(makeConnectedWithJustFindOperation(4, new int[][]{
+                {0, 1}, {0, 2}, {1, 2}
+        }));
+
+        System.out.println(makeConnectedWithJustFindOperation(6, new int[][]{
+                {0, 1}, {0, 2}, {0, 3}, {1, 2}, {1, 3}
+        }));
+
+        System.out.println(makeConnectedWithJustFindOperation(6, new int[][]{
+                {0, 1}, {0, 2}, {0, 3}, {1, 2}
+        }));
+
+        System.out.println(makeConnectedWithJustFindOperation(5, new int[][]{
+                {0, 1}, {0, 2}, {3, 4}, {2, 3}
+        }));
+        System.out.println(makeConnectedWithJustFindOperation(11, new int[][]{
+                {1, 4}, {0, 3}, {1, 3}, {3, 7}, {2, 7}, {0, 1}, {2, 4}, {3, 6}, {5, 6}, {6, 7}, {4, 7}, {0, 7}, {5, 7}
+        }));
+    }
+
+    public static int makeConnectedWithJustFindOperation(int totalComputers, int[][] connections) {
+        /**
+         * This is again a Disjoint Set technique, but we just need a find operation to figure out
+         * connected computer groups.
+         */
+        int[] leader = new int[totalComputers];
+        for (int i = 0; i < totalComputers; i++) leader[i] = i; // Initially every vertex/computer's leader is itself.
+
+        int EXTRA_WIRES = 0;
+
+        for (int[] connection : connections) {
+            // Each connection is telling us that they can be grouped
+            int leaderOfA = findLeader(leader, connection[0]);
+            int leaderOfB = findLeader(leader, connection[1]);
+
+            if (leaderOfA == leaderOfB) EXTRA_WIRES++; // They both already belong to same group.
+            else leader[leaderOfA] = leaderOfB;
+        }
+
+        // Now let's count number of connected components/computers
+        int connectedComponents = 0;
+        for (int i = 0; i < totalComputers; i++) {
+            // Connected Components is represented by the leader only.
+            // So all those nodes who are leaders will be the total number of connected components.
+            if (leader[i] == i) connectedComponents++;
+        }
+        return (EXTRA_WIRES >= connectedComponents - 1) ? connectedComponents - 1 : -1;
+    }
+
+    public static int findLeader(int[] leader, int computer) {
+        if (leader[computer] == computer) return computer;
+
+        leader[computer] = findLeader(leader, leader[computer]);
+        return leader[computer];
     }
 
     public static int makeConnected(int totalComputers, int[][] connections) {
