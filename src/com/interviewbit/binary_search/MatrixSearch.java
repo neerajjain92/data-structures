@@ -1,7 +1,6 @@
 package com.interviewbit.binary_search;
 
 import com.util.LogUtil;
-import sun.rmi.runtime.Log;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

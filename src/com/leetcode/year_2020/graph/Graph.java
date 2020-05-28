@@ -1,9 +1,8 @@
 package com.leetcode.year_2020.graph;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import com.util.LogUtil;
+
+import java.util.*;
 
 
 /**
@@ -55,10 +54,53 @@ public class Graph {
         }
     }
 
+    public void bfs(Graph graph, int source) {
+        LogUtil.logIt("Breadth First Search of Graph is ", true);
+        Set<Integer> seen = new HashSet<>();
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(source);
+        seen.add(source);
+
+        while (!queue.isEmpty()) {
+            int vertexWeAreCurrentlyOn = queue.poll();
+            System.out.print(vertexWeAreCurrentlyOn + " ---> ");
+            List<GraphVertex> adjacentVertexes = graph.adjacencyListArr[vertexWeAreCurrentlyOn];
+
+            for (GraphVertex vertex : adjacentVertexes) {
+                if (!seen.contains(vertex.value)) {
+                    queue.add(vertex.value);
+                    seen.add(vertex.value);
+                }
+            }
+        }
+        LogUtil.newLine();
+    }
+
+    public void dfsUsingStack(Graph graph, int source) {
+        LogUtil.logIt("Depth First Search of Graph is ", true);
+        Set<Integer> seen = new HashSet<>();
+        Stack<Integer> stack = new Stack<>();
+        stack.push(source);
+        seen.add(source);
+
+        while (!stack.isEmpty()) {
+            int poppedVertex = stack.pop();
+            System.out.print(poppedVertex + " --> ");
+            List<GraphVertex> adjacentVertexes = graph.adjacencyListArr[poppedVertex];
+            for (GraphVertex vertex : adjacentVertexes) {
+                if (!seen.contains(vertex.value)) {
+                    stack.push(vertex.value);
+                    seen.add(vertex.value);
+                }
+            }
+        }
+    }
+
     public void dfs(Graph graph, int source) {
+        LogUtil.logIt("Depth First Search of Graph is ", true);
         Set<Integer> seen = new HashSet<>();
         doDFS(graph.adjacencyListArr, source, seen);
-        System.out.println();
+        LogUtil.newLine();
     }
 
     private void doDFS(List<GraphVertex>[] verticesEdges, int source, Set<Integer> seen) {

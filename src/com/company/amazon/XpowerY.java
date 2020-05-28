@@ -1,7 +1,5 @@
 package com.company.amazon;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import java.util.*;
 
 public class XpowerY {

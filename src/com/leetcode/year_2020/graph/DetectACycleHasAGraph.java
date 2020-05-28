@@ -24,7 +24,6 @@ public class DetectACycleHasAGraph {
         graph.addEdge(12, 11, true);
 
 
-//        graph.dfs(graph, 1);
         System.out.println(graph.ifGraphHasCycle(graph));
 
         graph = new Graph(3);

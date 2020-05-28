@@ -1,7 +1,6 @@
 package com.leetcode.problems.easy;
 
 import com.util.LogUtil;
-import sun.rmi.runtime.Log;
 
 /**
  * @author neeraj on 19/09/19
