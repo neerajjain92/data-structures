@@ -42,7 +42,7 @@ public class Graph {
      * Gray -> Visiting (currently on the path being traversed)
      * Black -> Visited (do not traverse again)
      **/
-    static class GraphVertex {
+    public static class GraphVertex {
         enum Color {WHITE, GRAY, BLACK}
 
         Color color;
@@ -114,6 +114,7 @@ public class Graph {
             }
         }
     }
+
 
     public boolean ifGraphHasCycle(Graph graph) {
         for (int i = 1; i < graph.totalVertices; i++) {
