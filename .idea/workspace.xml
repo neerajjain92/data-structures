@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/NumberOfIslands_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/RedundantConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week4/KClosestPointsToOrigin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MostStonesRemovedwithSameRoworColumn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/Graph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +65,13 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RedundantConnection">
-    <configuration name="CourseSchedule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.CourseSchedule" />
+  <component name="RunManager" selected="Application.AccountsMerge">
+    <configuration name="AccountsMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.AccountsMerge" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FriendCircles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.FriendCircles" />
+    <configuration name="KClosestPointsToOrigin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MayChallenge.week4.KClosestPointsToOrigin" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.MayChallenge.week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,8 +105,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfIslands_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.NumberOfIslands_2" />
+    <configuration name="MostStonesRemovedwithSameRoworColumn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.MostStonesRemovedwithSameRoworColumn" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -133,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AccountsMerge" />
+        <item itemvalue="Application.KClosestPointsToOrigin" />
+        <item itemvalue="Application.MostStonesRemovedwithSameRoworColumn" />
         <item itemvalue="Application.RedundantConnection" />
         <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
-        <item itemvalue="Application.CourseSchedule" />
-        <item itemvalue="Application.NumberOfIslands_2" />
-        <item itemvalue="Application.FriendCircles" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +254,7 @@
       <workItem from="1590685893340" duration="3499000" />
       <workItem from="1590700012150" duration="1660000" />
       <workItem from="1590738919514" duration="1807000" />
-      <workItem from="1590769250068" duration="2651000" />
+      <workItem from="1590769250068" duration="14955000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -420,11 +420,12 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="105" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589218449075" />
-    <state x="735" y="471" width="945" height="579" key="#xdebugger.evaluate" timestamp="1590353368614">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="735" y="457" width="945" height="579" key="#xdebugger.evaluate" timestamp="1590784548516">
+      <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="735" y="471" width="945" height="579" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1590353368614" />
     <state x="958" y="442" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1589287956098" />
+    <state x="735" y="457" key="#xdebugger.evaluate/0.23.1680.969@0.23.1680.969" timestamp="1590784548516" />
     <state x="96" y="112" key="CommitChangelistDialog2" timestamp="1589063004364">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -437,62 +438,62 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="406" key="GridCell.Tab.0.bottom" timestamp="1590772946217">
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom" timestamp="1590835839614">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590730463367" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
-    <state width="1638" height="406" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590772946217" />
-    <state width="1638" height="406" key="GridCell.Tab.0.center" timestamp="1590772946216">
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590835839614" />
+    <state width="1638" height="293" key="GridCell.Tab.0.center" timestamp="1590835839614">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590730463366" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
-    <state width="1638" height="406" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1590772946216" />
-    <state width="1638" height="406" key="GridCell.Tab.0.left" timestamp="1590772946216">
+    <state width="1638" height="293" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1590835839614" />
+    <state width="1638" height="293" key="GridCell.Tab.0.left" timestamp="1590835839613">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590730463366" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
-    <state width="1638" height="406" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1590772946216" />
-    <state width="1638" height="406" key="GridCell.Tab.0.right" timestamp="1590772946217">
+    <state width="1638" height="293" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1590835839613" />
+    <state width="1638" height="293" key="GridCell.Tab.0.right" timestamp="1590835839614">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590730463367" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
-    <state width="1638" height="406" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1590772946217" />
-    <state width="1638" height="406" key="GridCell.Tab.1.bottom" timestamp="1590772946662">
+    <state width="1638" height="293" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1590835839614" />
+    <state width="1638" height="406" key="GridCell.Tab.1.bottom" timestamp="1590835753061">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="458" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590615275739" />
     <state width="2518" height="359" key="GridCell.Tab.1.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
     <state width="1638" height="374" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826326" />
-    <state width="1638" height="406" key="GridCell.Tab.1.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590772946662" />
-    <state width="1638" height="406" key="GridCell.Tab.1.center" timestamp="1590772946661">
+    <state width="1638" height="406" key="GridCell.Tab.1.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590835753061" />
+    <state width="1638" height="406" key="GridCell.Tab.1.center" timestamp="1590835753060">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="458" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590615275738" />
     <state width="2518" height="359" key="GridCell.Tab.1.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
     <state width="1638" height="374" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826321" />
-    <state width="1638" height="406" key="GridCell.Tab.1.center/0.23.1680.969@0.23.1680.969" timestamp="1590772946661" />
-    <state width="1638" height="406" key="GridCell.Tab.1.left" timestamp="1590772946661">
+    <state width="1638" height="406" key="GridCell.Tab.1.center/0.23.1680.969@0.23.1680.969" timestamp="1590835753060" />
+    <state width="1638" height="406" key="GridCell.Tab.1.left" timestamp="1590835753059">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="458" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590615275738" />
     <state width="2518" height="359" key="GridCell.Tab.1.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665662" />
     <state width="1638" height="374" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826318" />
-    <state width="1638" height="406" key="GridCell.Tab.1.left/0.23.1680.969@0.23.1680.969" timestamp="1590772946661" />
-    <state width="1638" height="406" key="GridCell.Tab.1.right" timestamp="1590772946661">
+    <state width="1638" height="406" key="GridCell.Tab.1.left/0.23.1680.969@0.23.1680.969" timestamp="1590835753059" />
+    <state width="1638" height="406" key="GridCell.Tab.1.right" timestamp="1590835753060">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1638" height="458" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590615275739" />
     <state width="2518" height="359" key="GridCell.Tab.1.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665663" />
     <state width="1638" height="374" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826323" />
-    <state width="1638" height="406" key="GridCell.Tab.1.right/0.23.1680.969@0.23.1680.969" timestamp="1590772946661" />
+    <state width="1638" height="406" key="GridCell.Tab.1.right/0.23.1680.969@0.23.1680.969" timestamp="1590835753060" />
     <state x="551" y="261" key="RollbackChangesDialog" timestamp="1588508671452">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -520,22 +521,23 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="232" y="268" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1680.1050@0.0.1680.1050" timestamp="1589057867254" />
-    <state x="496" y="282" width="942" height="490" key="find.popup" timestamp="1590432797993">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="496" y="283" width="942" height="490" key="find.popup" timestamp="1590783940503">
+      <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="496" y="282" width="942" height="490" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1590432797993" />
     <state x="496" y="299" width="724" height="578" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588506815637" />
+    <state x="496" y="283" width="942" height="490" key="find.popup/0.23.1680.969@0.23.1680.969" timestamp="1590783940503" />
     <state x="545" y="298" key="refactoring.ChangeSignatureDialog" timestamp="1590771435244">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="545" y="314" key="refactoring.ChangeSignatureDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1587911511639" />
     <state x="545" y="298" key="refactoring.ChangeSignatureDialog/0.23.1680.969@0.23.1680.969" timestamp="1590771435244" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1590772518894">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1590838209456">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1590701540117" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1589318752076" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1590772518894" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1590838209456" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1439,6 +1441,21 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/RedundantConnection.java</url>
           <line>62</line>
           <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MostStonesRemovedwithSameRoworColumn.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="491" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
