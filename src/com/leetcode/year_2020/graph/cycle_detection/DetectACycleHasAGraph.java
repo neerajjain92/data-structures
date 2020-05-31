@@ -1,4 +1,6 @@
-package com.leetcode.year_2020.graph;
+package com.leetcode.year_2020.graph.cycle_detection;
+
+import com.leetcode.year_2020.graph.Graph;
 
 /**
  * @author neeraj on 26/05/20

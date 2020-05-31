@@ -12,8 +12,8 @@ import java.util.*;
  */
 public class Graph {
 
-    int totalVertices;
-    List<GraphVertex>[] adjacencyListArr;
+    public int totalVertices;
+    public List<GraphVertex>[] adjacencyListArr;
 
     public Graph(int totalVertices) {
         this.totalVertices = totalVertices;
@@ -43,10 +43,10 @@ public class Graph {
      * Black -> Visited (do not traverse again)
      **/
     public static class GraphVertex {
-        enum Color {WHITE, GRAY, BLACK}
+        public enum Color {WHITE, GRAY, BLACK}
 
-        Color color;
-        int value;
+        public Color color;
+        public int value;
 
         public GraphVertex(int value, Color color) {
             this.color = color;
@@ -115,6 +115,14 @@ public class Graph {
         }
     }
 
+    public boolean ifGraphHasCycle(Graph graph, int source) {
+        if(graph.adjacencyListArr[source].size() == 0) return false;
+        GraphVertex graphVertex = graph.adjacencyListArr[source].get(0);
+        if (hasCycleFromVertex(graphVertex, graph.adjacencyListArr)) {
+            return true;
+        }
+        return false;
+    }
 
     public boolean ifGraphHasCycle(Graph graph) {
         for (int i = 1; i < graph.totalVertices; i++) {
