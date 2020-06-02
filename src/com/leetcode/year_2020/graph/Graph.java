@@ -15,9 +15,13 @@ public class Graph {
     public int totalVertices;
     public List<GraphVertex>[] adjacencyListArr;
 
+    // Now this will be used in Topological Sort.
+    int[] indegree;  // This will represent number of directed edges pointing to the vertex at ith position.
+
     public Graph(int totalVertices) {
         this.totalVertices = totalVertices;
         adjacencyListArr = new LinkedList[totalVertices];
+        indegree = new int[totalVertices];
 
         // Initialize all those adjacent list to empty.
         for (int i = 0; i < adjacencyListArr.length; i++) {
@@ -30,6 +34,10 @@ public class Graph {
         GraphVertex sourceGraphVertex = new GraphVertex(source, GraphVertex.Color.WHITE);
 
         this.adjacencyListArr[source].add(destinationGraphVertex);
+
+        if (isDirected) {
+            indegree[destination] += 1; // Since source is pointing to destination, so destination's indegree increased by 1.
+        }
 
         if (!isDirected) { // For Undirected graph.... edge goes both way
             // A----B || B----A
@@ -116,7 +124,7 @@ public class Graph {
     }
 
     public boolean ifGraphHasCycle(Graph graph, int source) {
-        if(graph.adjacencyListArr[source].size() == 0) return false;
+        if (graph.adjacencyListArr[source].size() == 0) return false;
         GraphVertex graphVertex = graph.adjacencyListArr[source].get(0);
         if (hasCycleFromVertex(graphVertex, graph.adjacencyListArr)) {
             return true;
@@ -161,5 +169,49 @@ public class Graph {
         // so let's put this into set of black or visited nodes
         vertex.color = GraphVertex.Color.BLACK;
         return false;
+    }
+
+    private void printTopologicalSort(Graph graph) {
+        /**
+         * We'll do the DFS from any random node
+         * and once we reached the end of depth in that path we will add the node and
+         * finally reverse the output and we will get out topological sort.
+         */
+        boolean[] visited = new boolean[graph.totalVertices];
+        Stack<Integer> topologicalSortInReverseOrder = new Stack<>(); // This will hold our Topological Sort in reverse order due to LIFO
+        for (int i = 0; i < graph.totalVertices; i++) {
+            if (!visited[i]) {
+                doDFSForTopologicalSort(graph.adjacencyListArr, i, visited, topologicalSortInReverseOrder);
+            }
+        }
+        while (!topologicalSortInReverseOrder.isEmpty()) {
+            System.out.print(topologicalSortInReverseOrder.pop() + " ---> ");
+        }
+    }
+
+    private void doDFSForTopologicalSort(List<GraphVertex>[] adjacencyListArr,
+                                         int source, boolean[] visited,
+                                         Stack<Integer> topologicalSortInReverseOrder) {
+        visited[source] = true;
+
+        for (GraphVertex adjacent : adjacencyListArr[source]) {
+            if (!visited[adjacent.value]) {
+                doDFSForTopologicalSort(adjacencyListArr, adjacent.value, visited, topologicalSortInReverseOrder);
+            }
+        }
+
+
+        // Now we have explored all other neighbours and nothing's left to explore
+        topologicalSortInReverseOrder.add(source);
+    }
+
+    public static void main(String[] args) {
+        Graph graph = new Graph(4);
+        graph.addEdge(0, 1, true);
+        graph.addEdge(0, 3, true);
+        graph.addEdge(1, 2, true);
+        graph.addEdge(2, 3, true);
+
+        graph.printTopologicalSort(graph);
     }
 }
