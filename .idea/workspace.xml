@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/nearest_path/RottingOranges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/nearest_path/ShortestPathinBinaryMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/DetectCycleInUndirectedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/june_challenge/week1/DeleteNodeInLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/june_challenge/week1/InvertBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/neeraj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/neeraj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/CourseScheduleII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/Graph.java" afterDir="false" />
     </list>
@@ -69,7 +64,20 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DeleteNodeInLinkedList">
+  <component name="RunManager" selected="Application.CourseScheduleII">
+    <configuration name="CourseScheduleII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.topologicalSort.CourseScheduleII" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.topologicalSort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeleteNodeInLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.june_challenge.week1.DeleteNodeInLinkedList" />
       <module name="data-structures" />
@@ -109,19 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RottingOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.bfs.nearest_path.RottingOranges" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.bfs.nearest_path.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShortestPathinBinaryMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.bfs.nearest_path.ShortestPathinBinaryMatrix" />
       <module name="data-structures" />
@@ -137,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CourseScheduleII" />
+        <item itemvalue="Application.Graph" />
         <item itemvalue="Application.DeleteNodeInLinkedList" />
         <item itemvalue="Application.InvertBinaryTree" />
-        <item itemvalue="Application.Graph" />
         <item itemvalue="Application.ShortestPathinBinaryMatrix" />
-        <item itemvalue="Application.RottingOranges" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +256,7 @@
       <workItem from="1590769250068" duration="39884000" />
       <workItem from="1591000073497" duration="1554000" />
       <workItem from="1591008933737" duration="6107000" />
-      <workItem from="1591105040180" duration="786000" />
+      <workItem from="1591105040180" duration="4367000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -445,31 +440,31 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="330" key="GridCell.Tab.0.bottom" timestamp="1591105895778">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state width="1638" height="330" key="GridCell.Tab.0.bottom" timestamp="1591113491117">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591105882008" />
+    <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591113491117" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
     <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1591105895778" />
-    <state width="1638" height="330" key="GridCell.Tab.0.center" timestamp="1591105895776">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state width="1638" height="330" key="GridCell.Tab.0.center" timestamp="1591113491115">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591105882007" />
+    <state width="1638" height="330" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591113491115" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
     <state width="1638" height="330" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1591105895776" />
-    <state width="1638" height="330" key="GridCell.Tab.0.left" timestamp="1591105895775">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state width="1638" height="330" key="GridCell.Tab.0.left" timestamp="1591113491115">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591105882006" />
+    <state width="1638" height="330" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591113491115" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
     <state width="1638" height="330" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1591105895775" />
-    <state width="1638" height="330" key="GridCell.Tab.0.right" timestamp="1591105895777">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state width="1638" height="330" key="GridCell.Tab.0.right" timestamp="1591113491116">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591105882008" />
+    <state width="1638" height="330" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591113491116" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
     <state width="1638" height="330" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1591105895777" />
@@ -528,10 +523,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="232" y="268" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1680.1050@0.0.1680.1050" timestamp="1589057867254" />
-    <state x="496" y="283" width="942" height="490" key="find.popup" timestamp="1590783940503">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state x="496" y="282" width="942" height="490" key="find.popup" timestamp="1591113276647">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="496" y="282" width="942" height="490" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1590432797993" />
+    <state x="496" y="282" width="942" height="490" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591113276647" />
     <state x="496" y="299" width="724" height="578" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588506815637" />
     <state x="496" y="283" width="942" height="490" key="find.popup/0.23.1680.969@0.23.1680.969" timestamp="1590783940503" />
     <state x="545" y="298" key="refactoring.ChangeSignatureDialog" timestamp="1590771435244">
@@ -539,10 +534,10 @@
     </state>
     <state x="545" y="314" key="refactoring.ChangeSignatureDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1587911511639" />
     <state x="545" y="298" key="refactoring.ChangeSignatureDialog/0.23.1680.969@0.23.1680.969" timestamp="1590771435244" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1591037982761">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1591107229250">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591037982761" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591107229250" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1589318752076" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1590961739132" />
   </component>

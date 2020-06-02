@@ -16,7 +16,7 @@ public class Graph {
     public List<GraphVertex>[] adjacencyListArr;
 
     // Now this will be used in Topological Sort.
-    int[] indegree;  // This will represent number of directed edges pointing to the vertex at ith position.
+    public int[] indegree;  // This will represent number of directed edges pointing to the vertex at ith position.
 
     public Graph(int totalVertices) {
         this.totalVertices = totalVertices;
@@ -171,7 +171,7 @@ public class Graph {
         return false;
     }
 
-    private void printTopologicalSort(Graph graph) {
+    private void printTopologicalSortViaDFS(Graph graph) {
         /**
          * We'll do the DFS from any random node
          * and once we reached the end of depth in that path we will add the node and
@@ -205,6 +205,36 @@ public class Graph {
         topologicalSortInReverseOrder.add(source);
     }
 
+    private void printTopologicalSortUsingIndegree(Graph graph) {
+        Queue<Integer> queue = new LinkedList<>();
+        // We will only put those items in the queue whose indegree is 0 means
+        // they don't rely on anyone to be finished.
+        int[] indegree = graph.indegree;
+        for (int i = 0; i < indegree.length; i++) {
+            if (indegree[i] == 0) {
+                queue.offer(i);
+            }
+        }
+
+        List<Integer> topologicalSort = new ArrayList<>();
+
+        /**
+         * Now we will pop item from the queue until it's empty and put them into our topological sort.
+         * Also since this popped task is completed we can reduce the indegree of task which were dependent on it.
+         */
+        while (!queue.isEmpty()) {
+            int task = queue.poll();
+            topologicalSort.add(task);
+            for (GraphVertex adjacentTask : graph.adjacencyListArr[task]) {
+                indegree[adjacentTask.value] -= 1;
+                if (indegree[adjacentTask.value] == 0) {
+                    queue.add(adjacentTask.value);
+                }
+            }
+        }
+        System.out.println(topologicalSort);
+    }
+
     public static void main(String[] args) {
         Graph graph = new Graph(4);
         graph.addEdge(0, 1, true);
@@ -212,6 +242,22 @@ public class Graph {
         graph.addEdge(1, 2, true);
         graph.addEdge(2, 3, true);
 
-        graph.printTopologicalSort(graph);
+        graph.printTopologicalSortViaDFS(graph);
+
+        /**
+         * For Graph mentioned here  shorturl.at/qvNR2  the Topological Sort is
+         */
+        LogUtil.logIt("Topological Sort using Indegree");
+        graph = new Graph(7);
+        graph.addEdge(0, 1, true);
+        graph.addEdge(0, 2, true);
+        graph.addEdge(1, 2, true);
+        graph.addEdge(1, 5, true);
+        graph.addEdge(2, 3, true);
+        graph.addEdge(5, 3, true);
+        graph.addEdge(5, 4, true);
+        graph.addEdge(6, 1, true);
+        graph.addEdge(6, 5, true);
+        graph.printTopologicalSortUsingIndegree(graph);
     }
 }
