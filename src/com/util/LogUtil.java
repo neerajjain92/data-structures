@@ -67,6 +67,15 @@ public class LogUtil {
         logIt("End of Array", true);
     }
 
+    public static void printArray(double[] arr) {
+        logIt("Start of Array", true);
+        for (int i = 0; i < arr.length; i++) {
+            logInSingleLine(String.valueOf(arr[i]));
+        }
+        newLine();
+        logIt("End of Array", true);
+    }
+
     public static void printMultiDimensionArray(char[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
