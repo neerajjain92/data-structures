@@ -17,9 +17,14 @@ public class TreeNode {
     }
 
     public static void inorder(TreeNode root) {
-        if(root == null) return;;
+        if (root == null) return;
         inorder(root.left);
         System.out.print(root.val + "\t");
         inorder(root.right);
+    }
+
+    @Override
+    public String toString() {
+        return "" + val;
     }
 }

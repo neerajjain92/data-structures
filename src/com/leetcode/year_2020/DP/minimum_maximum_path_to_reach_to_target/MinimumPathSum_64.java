@@ -1,4 +1,4 @@
-package com.leetcode.problems.medium;
+package com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target;
 
 /**
  * @author neeraj on 15/09/19
