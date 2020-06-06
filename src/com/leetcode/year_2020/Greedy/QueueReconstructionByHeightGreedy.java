@@ -27,6 +27,35 @@ public class QueueReconstructionByHeightGreedy {
          * since we know exactly where to put so that placement matches k's policy.
          *
          * In case of same height it's obvious to place lower k first......
+         *
+         * Take an example:
+         * [5,1| 5,2 | 5,0]  (h=height, k=no of equal height or greater height than k]
+         *
+         * How will you re-arrange
+         * [5,0 | 5,1 | 5,2] ... So what is the observation here if all heights are same we just have to arrange them
+         *                         in increasing order of their k value.
+         *
+         * Another example
+         * [4,1 | 5,1 | 5,0]
+         *
+         * How we will arrange
+         * [5,0 | 4,1 | 5,1] .......So what did we do here first sort the people based on their height and if same height
+         *                          incremental k value.
+         *
+         * After sorting [5,0 | 5,1 | 4,1] ....Is 4 on the correct placement, No because it's k value = 1 but actual k value = 2 at this position
+         *
+         * So we have to place [4,1] at the 1st index. and why it won't affect 5's placement because a taller person can only see
+         * a person of same height or greater height.
+         *
+         * Representation.
+         *
+         * ||                   ||
+         * ||       ||          ||
+         * ||       ||          ||
+         * ||       ||          ||
+         * ||       ||          ||
+         * 5,0      4,1         5,1
+         * -------------------------
          */
         // Sort in Decrementing height and incrementing K value.
         Arrays.sort(people, (a, b) -> {

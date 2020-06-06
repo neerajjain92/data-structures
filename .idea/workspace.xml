@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/minimum_maximum_path_to_reach_to_target/TwoKeysKeyboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java" afterDir="false" />
     </list>
@@ -264,7 +263,7 @@
       <workItem from="1591343663419" duration="1665000" />
       <workItem from="1591346173456" duration="7434000" />
       <workItem from="1591365264899" duration="37000" />
-      <workItem from="1591371437445" duration="4731000" />
+      <workItem from="1591371437445" duration="5524000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -449,34 +448,34 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="330" key="GridCell.Tab.0.bottom" timestamp="1591389054321">
+    <state width="1638" height="330" key="GridCell.Tab.0.bottom" timestamp="1591447104548">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054321" />
+    <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591447104548" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
     <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1591105895778" />
     <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1591354614424" />
-    <state width="1638" height="330" key="GridCell.Tab.0.center" timestamp="1591389054318">
+    <state width="1638" height="330" key="GridCell.Tab.0.center" timestamp="1591447104547">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054318" />
+    <state width="1638" height="330" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591447104547" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
     <state width="1638" height="330" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1591105895776" />
     <state width="1638" height="330" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1591354614422" />
-    <state width="1638" height="330" key="GridCell.Tab.0.left" timestamp="1591389054317">
+    <state width="1638" height="330" key="GridCell.Tab.0.left" timestamp="1591447104545">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054317" />
+    <state width="1638" height="330" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591447104545" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
     <state width="1638" height="330" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1591105895775" />
     <state width="1638" height="330" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1591354614421" />
-    <state width="1638" height="330" key="GridCell.Tab.0.right" timestamp="1591389054320">
+    <state width="1638" height="330" key="GridCell.Tab.0.right" timestamp="1591447104548">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054320" />
+    <state width="1638" height="330" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591447104548" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
     <state width="1638" height="330" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1591105895777" />
@@ -1370,7 +1369,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java</url>
-          <line>44</line>
+          <line>73</line>
           <option name="timeStamp" value="456" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
