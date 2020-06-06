@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution.">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/minimum_maximum_path_to_reach_to_target/MinimumCostForTickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/june_challenge/week1/RandomPickwithWeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/minimum_maximum_path_to_reach_to_target/TwoKeysKeyboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,20 +65,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MinimumCostForTickets">
-    <configuration name="MinCostClimbingStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.MinCostClimbingStairs" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.QueueReconstructionByHeightGreedy">
     <configuration name="MinimumCostForTickets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.MinimumCostForTickets" />
       <module name="data-structures" />
@@ -92,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumFallingPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.MinimumFallingPathSum" />
+    <configuration name="QueueReconstructionByHeightGreedy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.QueueReconstructionByHeightGreedy" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,13 +118,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TwoKeysKeyboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.TwoKeysKeyboard" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueueReconstructionByHeightGreedy" />
+        <item itemvalue="Application.TwoKeysKeyboard" />
         <item itemvalue="Application.MinimumCostForTickets" />
         <item itemvalue="Application.RandomPickwithWeight" />
         <item itemvalue="Application.RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation" />
-        <item itemvalue="Application.MinimumFallingPathSum" />
-        <item itemvalue="Application.MinCostClimbingStairs" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +264,7 @@
       <workItem from="1591343663419" duration="1665000" />
       <workItem from="1591346173456" duration="7434000" />
       <workItem from="1591365264899" duration="37000" />
-      <workItem from="1591371437445" duration="2405000" />
+      <workItem from="1591371437445" duration="4731000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -449,34 +449,34 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="330" key="GridCell.Tab.0.bottom" timestamp="1591387673302">
+    <state width="1638" height="330" key="GridCell.Tab.0.bottom" timestamp="1591389054321">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591387673302" />
+    <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054321" />
     <state width="2518" height="359" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
     <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1591105895778" />
     <state width="1638" height="330" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1591354614424" />
-    <state width="1638" height="330" key="GridCell.Tab.0.center" timestamp="1591387673302">
+    <state width="1638" height="330" key="GridCell.Tab.0.center" timestamp="1591389054318">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591387673302" />
+    <state width="1638" height="330" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054318" />
     <state width="2518" height="359" key="GridCell.Tab.0.center/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665660" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
     <state width="1638" height="330" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1591105895776" />
     <state width="1638" height="330" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1591354614422" />
-    <state width="1638" height="330" key="GridCell.Tab.0.left" timestamp="1591387673301">
+    <state width="1638" height="330" key="GridCell.Tab.0.left" timestamp="1591389054317">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591387673301" />
+    <state width="1638" height="330" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054317" />
     <state width="2518" height="359" key="GridCell.Tab.0.left/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665659" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
     <state width="1638" height="330" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1591105895775" />
     <state width="1638" height="330" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1591354614421" />
-    <state width="1638" height="330" key="GridCell.Tab.0.right" timestamp="1591387673302">
+    <state width="1638" height="330" key="GridCell.Tab.0.right" timestamp="1591389054320">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="330" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591387673302" />
+    <state width="1638" height="330" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591389054320" />
     <state width="2518" height="359" key="GridCell.Tab.0.right/0.0.2560.1440/2560.184.1680.1050@0.0.2560.1440" timestamp="1583987665661" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
     <state width="1638" height="330" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1591105895777" />
@@ -547,10 +547,10 @@
     </state>
     <state x="545" y="314" key="refactoring.ChangeSignatureDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1587911511639" />
     <state x="545" y="298" key="refactoring.ChangeSignatureDialog/0.23.1680.969@0.23.1680.969" timestamp="1590771435244" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1591359517241">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1591445158653">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591359517241" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591445158653" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1589318752076" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.966@0.23.1680.966" timestamp="1591183877580" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1590961739132" />
@@ -1370,12 +1370,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java</url>
-          <line>26</line>
+          <line>44</line>
           <option name="timeStamp" value="456" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java</url>
-          <line>22</line>
+          <line>21</line>
           <option name="timeStamp" value="458" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1688,6 +1688,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/minimum_maximum_path_to_reach_to_target/TwoKeysKeyboard.java</url>
+          <line>19</line>
+          <properties class="com.leetcode.year_2020.DP.minimum_maximum_path_to_reach_to_target.TwoKeysKeyboard" method="minSteps">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="551" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
