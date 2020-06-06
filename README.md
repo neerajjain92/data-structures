@@ -30,6 +30,8 @@ I have curated these list from famouse blogs, youtube etc. For Brushing up the b
 ### Greedy Technique
 - :trollface: [Greedy Problem](src/com/leetcode/year_2020/Greedy)
 
+### Backtracking 
+- :twisted_rightwards_arrows: [Backtracking](src/com/leetcode/year_2020/backtracking)
 
 ### Interview Bit Problems 
 - :computer: [Array](src/com/interviewbit/array)
