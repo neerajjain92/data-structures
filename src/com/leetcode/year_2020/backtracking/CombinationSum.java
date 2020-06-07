@@ -1,10 +1,14 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
+ * https://leetcode.com/problems/combination-sum/
+ *
+ *  Find all unique combinations in candidates where the candidate numbers sums to target.
+ *
  * @author neeraj on 10/04/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.

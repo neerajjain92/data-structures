@@ -15,6 +15,7 @@ public class CoinChange_NumberOfWays {
     public static void main(String[] args) {
         System.out.println(change(5, new int[]{1, 2, 5}));
         System.out.println(change(3, new int[]{2}));
+        System.out.println(change(4, new int[]{1, 2, 3}));
     }
 
 

@@ -1,4 +1,4 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +22,7 @@ public class PalindromicPartitioning {
 
     private static void palindromicSubset(String s, int pointer, ArrayList<String> subset, List<List<String>> result) {
         if (pointer == s.length()) {
+            System.out.println(subset);
             result.add(new ArrayList<>(subset));
             return;
         }

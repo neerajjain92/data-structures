@@ -1,9 +1,11 @@
-package com.leetcode.problems.medium;
+package com.leetcode.year_2020.backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * https://leetcode.com/problems/permutations/
+ *
  * @author neeraj on 06/10/19
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
