@@ -28,10 +28,12 @@ public class DetectACycleHasAGraph {
 
         System.out.println(graph.ifGraphHasCycle(graph));
 
-        graph = new Graph(3);
-        graph.addEdge(1, 0, true);
-        graph.addEdge(0, 2, true);
-        graph.addEdge(2, 1, true);
+        graph = new Graph(6);
+        graph.addEdge(1, 2, true);
+        graph.addEdge(2, 3, true);
+        graph.addEdge(3, 4, true);
+        graph.addEdge(4, 5, true);
+        graph.addEdge(2, 5, true);
         System.out.println(graph.ifGraphHasCycle(graph));
     }
 

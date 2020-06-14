@@ -95,7 +95,7 @@ public class TestingStrongConnectivity {
          * If we are able to reach all nodes from 0 and then if all nodes are able to reach 0 then we can say graph is strongly connected.
          * How,let me show you.
          *
-         *   All Nodes which can reach 0---------------- 0 --------------All Nodes which 0 can reach.
+         *   All Nodes which can reach "0"---------------- 0 --------------All Nodes which 0 can reach.
          *                            (0 is A C T I N G - A S - B R I D G E)
          *
          * So if we have to check a path between let's say 3 to 4..

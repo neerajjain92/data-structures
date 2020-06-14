@@ -100,7 +100,7 @@ public class TargetSum {
 
         // Initialize the matrix
         // Now the difference here is
-        // Since 0 can come in the input
+        // Since 0 can come in the input [0,0,0,0,1]
         // Now when you have item with value > 0
         // How can you make sum = 0, by just choosing {EMPTY_SET}
         // But in test case we also have 0 in the item
