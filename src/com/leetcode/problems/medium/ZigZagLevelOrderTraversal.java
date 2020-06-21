@@ -43,7 +43,50 @@ public class ZigZagLevelOrderTraversal {
         zigZagRoot.left.left = new TreeNode(4);
         zigZagRoot.right.right = new TreeNode(5);
 
-        System.out.println(zigzagLevelOrder(zigZagRoot));
+        System.out.println(zigzagLevelOrderNew(zigZagRoot));
+    }
+
+    public static List<List<Integer>> zigzagLevelOrderNew(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+
+        // For Empty Tree
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) return result;
+
+        Boolean switchLevel = true;
+        queue.offer(root);
+        queue.offer(null);
+
+        TreeNode temp;
+        ArrayList<Integer> levelNodes = new ArrayList<>();
+        while (!queue.isEmpty()) {
+            temp = queue.poll();
+            if (temp == null) {
+                if (!queue.isEmpty()) {
+                    result.add(levelNodes);
+                    levelNodes = new ArrayList<>();
+                    switchLevel = !switchLevel;
+                    queue.add(null);
+                } else {
+                    result.add(levelNodes);
+                }
+                continue;
+            }
+
+            if (switchLevel) {
+                levelNodes.add(temp.val);
+            } else {
+                levelNodes.add(0, temp.val);
+            }
+
+            if (temp.left != null) {
+                queue.add(temp.left);
+            }
+            if (temp.right != null) {
+                queue.add(temp.right);
+            }
+        }
+        return result;
     }
 
     public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {

@@ -27,6 +27,7 @@ public class ValidateBinarySearchTree {
     }
 
     /**
+     * https://www.youtube.com/watch?v=Z_-h_mpDmeg
      * @param root Root of the Tree also the node which we are currently on.
      * @param max  Maximum allowed value in the left side of tree for the current root, if it surpasses that it's not a valid BST
      * @param min  Minimum allowed value in the right side of tree for the current root, if it surpasses that it's not a valid BST

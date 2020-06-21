@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.two_pointer;
+package com.leetcode.year_2020.two_pass_algo;
 
 /**
  * @author neeraj on 14/06/20

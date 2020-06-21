@@ -10,7 +10,7 @@ import java.util.*;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-public class AllNodesDistanceKinBinaryTree {
+public class AllNodesDistance_K_inBinaryTree {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(3);
@@ -26,6 +26,15 @@ public class AllNodesDistanceKinBinaryTree {
         root.right.right = new TreeNode(8);
 
         LogUtil.logIt("Nodes at kth distance " + distanceK(root, root.left, 2), true);
+
+        root = new TreeNode(0);
+        root.right = new TreeNode(1);
+        root.right.right = new TreeNode(2);
+        root.right.right.right = new TreeNode(3);
+        root.right.right.right.right = new TreeNode(4);
+
+        LogUtil.logIt("Nodes at kth distance " + distanceK(root, root, 2), true);
+
     }
 
     static class Pair {
@@ -38,7 +47,63 @@ public class AllNodesDistanceKinBinaryTree {
         }
     }
 
-    public static List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
+    public static List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
+        Map<TreeNode, TreeNode> nodesParent = new HashMap<>();
+        // Let's do inorder and populate the parent.
+        Stack<TreeNode> stack = new Stack<>();
+
+        while(root != null || !stack.isEmpty() ) {
+            while(root != null) {
+                stack.push(root);
+                if(root.left != null) {
+                    nodesParent.put(root.left, root);
+                }
+                root = root.left;
+            }
+            root = stack.pop();
+            if(root.right != null) {
+                nodesParent.put(root.right, root);
+            }
+            root = root.right;
+        }
+
+        // Now from a TreeNode we can move to left, right and also to the parent node from nodesParent parent.  So we can
+        // do a BFS now.
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(target);
+        queue.add(null);
+        Set<TreeNode> visited = new HashSet<>();
+        List<Integer> nodesAtKDistance = new ArrayList<>();
+        while(!queue.isEmpty() && k >= 0) {
+            root = queue.poll();
+            if(root == null) {
+                k--;
+                if(!queue.isEmpty()) {
+                    queue.add(null); // To differentiate the level
+                }
+                continue;
+            }
+            visited.add(root);
+            if(k == 0) {
+                nodesAtKDistance.add(root.val);
+            }
+
+            if(root.left != null && !visited.contains(root.left))
+                queue.add(root.left);
+            if(root.right!= null && !visited.contains(root.right))
+                queue.add(root.right);
+            if(nodesParent.containsKey(root)) {
+                if(!visited.contains(nodesParent.get(root))) {
+                    queue.add(nodesParent.get(root));
+                }
+            }
+        }
+        return nodesAtKDistance;
+
+    }
+
+    public static List<Integer> distanceKAdjacentList(TreeNode root, TreeNode target, int K) {
         /**
          * We can think of this problem in terms of graph since all trees are DAG.
          * So now we need a adjacency list which we can prepare by doing inorder traversal from

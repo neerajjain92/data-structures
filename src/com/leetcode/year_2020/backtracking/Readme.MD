@@ -1,5 +1,27 @@
 This structure might apply to many other backtracking questions, but here I am just going to demonstrate Subsets, Permutations, and Combination Sum.
 
+When to Choose i=0 vs i=index
+
+In case of Subset problem subset always grow forwards
+it never comes back unlike permutation
+
+So Rule of Thumb Subset always take i=index and for permutation i=0;
+```
+[1,2,3]
+[1]
+[1 2]
+[2 3]
+[1,2.3] ---> These are all subset 
+```
+
+whereas
+
+```
+[1,2,3]
+[2,1,3]
+[3,1,2] ---> These are all permutations
+```
+
 Subsets : https://leetcode.com/problems/subsets/
 ```
 public List<List<Integer>> subsets(int[] nums) {

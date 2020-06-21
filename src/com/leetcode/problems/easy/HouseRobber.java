@@ -1,6 +1,9 @@
 package com.leetcode.problems.easy;
 
+import com.leetcode.year_2020.DP.MaximumSumSuchThatNoTwoElementsAreAdjacent;
+
 /**
+ * https://leetcode.com/problems/house-robber/
  * @author neeraj on 05/09/19
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -13,6 +16,9 @@ public class HouseRobber {
     }
 
     public static int rob(int[] nums) {
+        /**
+         * This problem is exactly similar to {@link MaximumSumSuchThatNoTwoElementsAreAdjacent}
+         */
         if(nums.length == 0) {
             return 0;
         }

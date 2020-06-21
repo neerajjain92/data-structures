@@ -1,6 +1,11 @@
 package com.leetcode.year_2020.DP.longest_common_subsequence;
 
+import com.util.LogUtil;
+
 /**
+ * Same problem
+ * https://leetcode.com/problems/longest-duplicate-substring/
+ *
  * @author neeraj on 08/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -11,6 +16,8 @@ public class LongestRepeatingSubsequence {
         System.out.println(findLengthOfLongestRepeatingSubsequence("AABEBCDD"));
         System.out.println(findLengthOfLongestRepeatingSubsequence("AABABCD"));
         System.out.println(findLengthOfLongestRepeatingSubsequence("axxxy"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("BANANA"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("moplvidmaagmsiyyrkchbyhivlqwqsjcgtumqscmxrxrvwsnjjvygrelcbjgbpounhuyealllginkitfaiviraqcycjmskrozcdqylbuejrgfnquercvghppljmojfvylcxakyjxnampmakyjbqgwbyokaybcuklkaqzawageypfqhhasetugatdaxpvtevrigynxbqodiyioapgxqkndujeranxgebnpgsukybyowbxhgpkwjfdywfkpufcxzzqiuglkakibbkobonunnzwbjktykebfcbobxdflnyzngheatpcvnhdwkkhnlwnjdnrmjaevqopvinnzgacjkbhvsdsvuuwwhwesgtdzuctshytyfugdqswvxisyxcxoihfgzxnidnfadphwumtgdfmhjkaryjxvfquucltmuoosamjwqqzeleaiplwcbbxjxxvgsnonoivbnmiwbnijkzgoenohqncjqnckxbhpvreasdyvffrolobxzrmrbvwkpdbfvbwwyibydhndmpvqyfmqjwosclwxhgxmwjiksjvsnwupraojuatksjfqkvvfroqxsraskbdbgtppjrnzpfzabmcczlwynwomebvrihxugvjmtrkzdwuafozjcfqacenabmmxzcueyqwvbtslhjeiopgbrbvfbnpmvlnyexopoahgmwplwxnxqzhucdieyvbgtkfmdeocamzenecqlbhqmdfrvpsqyxvkkyfrbyolzvcpcbkdprttijkzcrgciidavsmrczbollxbkytqjwbiupvsorvkorfriajdtsowenhpmdtvamkoqacwwlkqfdzorjtepwlemunyrghwlvjgaxbzawmikfhtaniwviqiaeinbsqidetfsdbgsydkxgwoqyztaqmyeefaihmgrbxzyheoegawthcsyyrpyvnhysynoaikwtvmwathsomddhltxpeuxettpbeftmmyrqclnzwljlpxazrzzdosemwmthcvgwtxtinffopqxbufjwsvhqamxpydcnpekqhsovvqugqhbgweaiheeicmkdtxltkalexbeftuxvwnxmqqjeyourvbdfikqnzdipmmmiltjapovlhkpunxljeutwhenrxyfeufmzipqvergdkwptkilwzdxlydxbjoxjzxwcfmznfqgoaemrrxuwpfkftwejubxkgjlizljoynvidqwxnvhngqakmmehtvykbjwrrrjvwnrteeoxmtygiiygynedvfzwkvmffghuduspyyrnftyvsvjstfohwwyxhmlfmwguxxzgwdzwlnnltpjvnzswhmbzgdwzhvbgkiddhirgljbflgvyksxgnsvztcywpvutqryzdeerlildbzmtsgnebvsjetdnfgikrbsktbrdamfccvcptfaaklmcaqmglneebpdxkvcwwpndrjqnpqgbgihsfeotgggkdbvcdwfjanvafvxsvvhzyncwlmqqsmledzfnxxfyvcmhtjreykqlrfiqlsqzraqgtmocijejneeezqxbtomkwugapwesrinfiaxwxradnuvbyssqkznwwpsbgatlsxfhpcidfgzrc"));
     }
 
     public static int findLengthOfLongestRepeatingSubsequence(String str) {
@@ -71,6 +78,30 @@ public class LongestRepeatingSubsequence {
                 }
             }
         }
+
+        String longestRepeatingSubsequence = findLRSFromMatrix(dp, X, Y);
+        LogUtil.logIt("Longest Repeating Subsequence is " + longestRepeatingSubsequence);
         return dp[X.length][Y.length];
+    }
+
+    private static String findLRSFromMatrix(int[][] dp, char[] x, char[] y) {
+        // Start from Bottom Right corner.
+        int i = dp.length - 1;
+        int j = dp[0].length - 1;
+        StringBuilder builder = new StringBuilder();
+        while (i > 0 && j > 0) {
+            if (x[i - 1] == y[j - 1] && i != j) {
+                builder.append(x[i - 1]);
+                i--;
+                j--;
+            } else {
+                if (dp[i - 1][j] > dp[i][j - 1]) {
+                    i--;
+                } else {
+                    j--;
+                }
+            }
+        }
+        return builder.reverse().toString();
     }
 }

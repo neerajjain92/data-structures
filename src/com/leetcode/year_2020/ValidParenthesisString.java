@@ -50,6 +50,11 @@ public class ValidParenthesisString {
 
         //Step 2: Considering all asterisk '*' as ')'
         while (!open.isEmpty() && !asterisk.isEmpty()) {
+            // Why are we comparing the index of asterisk
+            // Since there can be a scenario that * came before (
+            // like this input [* (]
+            // Here it's not a valid parenthesis string
+            // hence you need to check for index("(") < index("*")
             if (open.peek() > asterisk.peek()) return false;
             open.pop();
             asterisk.pop();

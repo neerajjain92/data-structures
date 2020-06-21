@@ -1,4 +1,4 @@
-package com.leetcode.problems.medium;
+package com.leetcode.year_2020.two_pass_algo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,8 +50,7 @@ public class PartitionLabels_763 {
             lastIndexOfThisPartition = Math.max(lastIndexOfThisPartition, characterLastPositionMap.get(s.charAt(counter)));
             if (lastIndexOfThisPartition == counter) {
                 result.add(lastIndexOfThisPartition - firstPosition + 1);
-                lastIndexOfThisPartition++;
-                firstPosition = lastIndexOfThisPartition;
+                firstPosition = lastIndexOfThisPartition + 1;
             }
             counter++;
         }
@@ -110,6 +109,4 @@ public class PartitionLabels_763 {
 //        System.out.println(characterEndingPositionMap);
         return result;
     }
-
-
 }

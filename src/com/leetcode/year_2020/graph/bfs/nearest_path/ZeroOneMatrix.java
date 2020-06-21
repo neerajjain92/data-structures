@@ -75,7 +75,7 @@ public class ZeroOneMatrix {
 
     public static int[][] updateMatrix(int[][] matrix) {
         int[][] distance = new int[matrix.length][matrix[0].length];
-        // Since we need to find the nearest distance and it's unweighted graph we can use DFS
+        // Since we need to find the nearest distance and it's unweighted graph we can use BFS
         // We will do BFS from all 0's and try to reach the 1 and update the distance.
         // Also note we will only perform BFS on neighbours if they haven't been touched yet.
 
