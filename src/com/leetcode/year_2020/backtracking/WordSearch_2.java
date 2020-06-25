@@ -1,0 +1,120 @@
+package com.leetcode.year_2020.backtracking;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+/**
+ * https://leetcode.com/problems/word-search-ii/
+ *
+ * @author neeraj on 22/06/20
+ * Copyright (c) 2019, data-structures.
+ * All rights reserved.
+ */
+public class WordSearch_2 {
+
+    static TrieNode root;
+
+    public static void main(String[] args) {
+        System.out.println(findWords(new char[][]{
+                {'o', 'a', 'a', 'n'},
+                {'e', 't', 'a', 'e'},
+                {'i', 'h', 'k', 'r'},
+                {'i', 'f', 'l', 'v'}
+        }, new String[]{"oath", "pea", "eat", "rain"}));
+    }
+
+    static class TrieNode {
+        char data;
+        TrieNode[] adjacents;
+        boolean endsWord;
+
+        public TrieNode(char item) {
+            this.data = item;
+            this.adjacents = new TrieNode[26];
+            this.endsWord = false;
+        }
+
+        public boolean insert(String data) {
+            TrieNode temp = root;
+            for (char c : data.toCharArray()) {
+                char nextCharacter = c;
+                int accessIndex = nextCharacter - 'a';
+                if (temp.adjacents[accessIndex] == null) {
+                    temp.adjacents[accessIndex] = new TrieNode(c);
+                }
+                temp = temp.adjacents[accessIndex];
+            }
+            temp.endsWord = true;
+            return true;
+        }
+
+        public boolean search(String prefix) {
+            TrieNode temp = root;
+            for (char c : prefix.toCharArray()) {
+                char nextCharacter = c;
+                int accessIndex = nextCharacter - 'a';
+                if (temp.adjacents[accessIndex] == null) {
+                    return false;
+                }
+                temp = temp.adjacents[accessIndex];
+            }
+            return temp.endsWord == true;
+        }
+
+        public boolean startsWith(String prefix) {
+            TrieNode temp = root;
+            for (char c : prefix.toCharArray()) {
+                char nextCharacter = c;
+                int accessIndex = nextCharacter - 'a';
+                if (temp.adjacents[accessIndex] == null) {
+                    return false;
+                }
+                temp = temp.adjacents[accessIndex];
+            }
+            return true;
+        }
+    }
+
+    static Set<String> res = new HashSet<String>();
+
+    public static List<String> findWords(char[][] board, String[] words) {
+        root = new TrieNode('#');
+        for (String word : words) {
+            root.insert(word);
+        }
+
+        // Now we have a trie so let's just simply do the DFS and reject the ones
+        // whose prefix(starting with) are not present in the dictionary.
+        boolean[][] visited = new boolean[board.length][board[0].length];
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words.length; j++) {
+                findWords(i, j, board, visited, "");
+            }
+        }
+        return new ArrayList<>(res);
+    }
+
+    private static void findWords(int i, int j, char[][] board, boolean[][] visited, String current) {
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || visited[i][j]) return;
+
+        current += board[i][j];
+
+        // we can reject if there is no such prefix in the dictionary.
+        if (!root.startsWith(current)) return;
+
+        if (root.search(current)) {
+            res.add(current);
+        }
+
+
+        visited[i][j] = true;
+        // Go in all 4 directions
+        findWords(i - 1, j, board, visited, current);
+        findWords(i, j + 1, board, visited, current);
+        findWords(i + 1, j, board, visited, current);
+        findWords(i, j - 1, board, visited, current);
+        visited[i][j] = false;
+    }
+}

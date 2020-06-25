@@ -6,9 +6,10 @@ public class MergeSort
 {
   public static void main( String[] args )
   {
-    int[] sample = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
+//    int[] sample = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
 //    int[] sample = {2, 4, 1, 3, 5};
 //    int[] sample = {1, 20, 6, 4, 5};
+    int []sample = new int[]{5,4,3,2,1};
     System.out.println( "Inversion Count is " + mergeSort( sample, 0, 4 ) );
     System.out.println( "After sorting is " );
     ArrayRotation.printArray( sample );

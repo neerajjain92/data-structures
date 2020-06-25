@@ -13,6 +13,7 @@ public class LengthOfLongestCommonSubsequence {
         System.out.println(findLengthOfLCS("abcdgh", "abedfhg"));
         System.out.println(findLengthOfLCS("oxcpqrsvwf", "shmtulqrypy"));
         System.out.println(findLengthOfLCS("GeeksForQuiz", "GeeksNj"));
+        System.out.println(findLengthOfLCS("aabcc", "aadbbcbcac"));
     }
 
     static int t[][];
