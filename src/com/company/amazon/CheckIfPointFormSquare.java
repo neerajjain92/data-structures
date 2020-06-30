@@ -32,6 +32,12 @@ public class CheckIfPointFormSquare {
         p4 = new Point(1, -1);
         System.out.println(isSquare(p1, p2, p3, p4));
 
+        p1 = new Point(1, 0);
+        p2 = new Point(0, -1);
+        p3 = new Point(-1, 0);
+        p4 = new Point(0, 1);
+        System.out.println(isSquare(p1, p2, p3, p4));
+
 
     }
 

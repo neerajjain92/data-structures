@@ -11,6 +11,7 @@ public class SortStackUsingRecursion {
         stack.add(18);
         stack.add(14);
         stack.add(-3);
+
         System.out.println(stack);
         sortStack(stack);
         System.out.println(stack);

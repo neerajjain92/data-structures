@@ -10,7 +10,10 @@ public class BinaryTreeUtilUser {
         BinaryTreeUtil util = new BinaryTreeUtil();
         BinaryTreeUtil.Node tree = util.getSampleData();
 
-        util.printAllPathFromRootToLeaf(tree, new int[5],-1);
+//        util.printAllPathFromRootToLeaf(tree, new int[5],-1);
+        util.printVerticalOrder(tree);
+
+
         util.printBottomView(tree);
             System.exit(0);
 

@@ -15,10 +15,86 @@ public class RotateImage {
                 {4, 5, 6},
                 {7, 8, 9}
         };
+//        Rotate2DMatrix.print2DArray(matrix);
+//        rotateImage(matrix);
+//        Rotate2DMatrix.print2DArray(matrix);
+
+
+        matrix = new int[][]{
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+                {13, 14, 15, 16}
+        };
         Rotate2DMatrix.print2DArray(matrix);
-        rotate(matrix);
+        rotateImage(matrix);
         Rotate2DMatrix.print2DArray(matrix);
 
+        matrix = new int[][]{
+                {1, 2, 3, 4, 5},
+                {6, 7, 8, 9, 10},
+                {11, 12, 13, 14, 15},
+                {16, 17, 18, 19, 20},
+                {21, 22, 23, 24, 25}
+        };
+        Rotate2DMatrix.print2DArray(matrix);
+        rotateImage(matrix);
+        Rotate2DMatrix.print2DArray(matrix);
+    }
+
+    static class Pair {
+        int i;
+        int j;
+
+        public Pair(int i, int j) {
+            this.i = i;
+            this.j = j;
+        }
+    }
+
+    public static void rotateImage(int[][] matrix) {
+        Pair tl = new Pair(0, 0); // Top-Left
+        Pair tr = new Pair(0, matrix[0].length - 1); // Top-Right
+        Pair br = new Pair(matrix.length - 1, matrix[0].length - 1); // Bottom-Right
+        Pair bl = new Pair(matrix.length - 1, 0);// Bottom -left
+        int counter = 0;
+        while (tl.i < br.i && bl.j < tr.j) {
+            swapCorners(matrix, tl, tr, br, bl);
+            // Increment.
+            tl.j += 1;
+            tr.i += 1;
+            br.j -= 1;
+            bl.i -= 1;
+
+            // Reset if they reached the limit.
+            if (tl.j == tr.j) {
+                tl.i += 1;
+                tl.j = counter + 1;
+
+                tr.i = counter + 1;
+                tr.j -= 1;
+
+                br.i -= 1;
+                br.j = matrix[0].length - 1 - counter - 1;
+
+                bl.i = matrix.length - 1 - counter - 1;
+                bl.j += 1;
+
+                counter++;
+            }
+        }
+    }
+
+    private static void swapCorners(int[][] matrix, Pair tl, Pair tr, Pair br, Pair bl) {
+        int tl_dash = matrix[tl.i][tl.j],
+                tr_dash = matrix[tr.i][tr.j],
+                br_dash = matrix[br.i][br.j],
+                bl_dash = matrix[bl.i][bl.j];
+
+        matrix[tr.i][tr.j] = tl_dash; // Moving Top-Left to TopRight
+        matrix[br.i][br.j] = tr_dash; // Moving Top-Right to Bottom-Right
+        matrix[bl.i][bl.j] = br_dash; // Moving Bottom-Right to Bottom-Left
+        matrix[tl.i][tl.j] = bl_dash; // Moving Bottom-Left to Top-Left
     }
 
     /**

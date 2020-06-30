@@ -12,8 +12,23 @@ public class PerfectSquares {
     static int T[];
 
     public static void main(String[] args) {
-        System.out.println(numSquares(2));
+        System.out.println(numSquares1(12));
 
+    }
+
+    public static int numSquares1(int n) {
+        int [] minSquares = new int[n+1];
+        for(int i=0;i<=n;i++) {
+            minSquares[i] = i;
+        }
+
+        for(int i=2;i<=n;i++) {
+            for(int j=1;j<=i & Math.pow(j, 2)<=i;j++) {
+                int perfectSquare = (int) Math.pow(j, 2);
+                minSquares[i] = Math.min(minSquares[i],1+minSquares[i-perfectSquare]);
+            }
+        }
+        return minSquares[n];
     }
 
     /**

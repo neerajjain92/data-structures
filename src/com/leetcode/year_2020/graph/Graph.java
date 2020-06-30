@@ -17,11 +17,13 @@ public class Graph {
 
     // Now this will be used in Topological Sort.
     public int[] indegree;  // This will represent number of directed edges pointing to the vertex at ith position.
+    public int[] outdegree;
 
     public Graph(int totalVertices) {
         this.totalVertices = totalVertices;
         adjacencyListArr = new LinkedList[totalVertices];
         indegree = new int[totalVertices];
+        outdegree = new int[totalVertices];
 
         // Initialize all those adjacent list to empty.
         for (int i = 0; i < adjacencyListArr.length; i++) {
@@ -37,6 +39,7 @@ public class Graph {
 
         if (isDirected) {
             indegree[destination] += 1; // Since source is pointing to destination, so destination's indegree increased by 1.
+            outdegree[source] += 1;
         }
 
         if (!isDirected) { // For Undirected graph.... edge goes both way

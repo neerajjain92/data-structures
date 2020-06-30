@@ -1319,13 +1319,13 @@ public class BinaryTreeUtil {
             //Recursively convert Tree to DLL
             Node left = convertTreeToDoublyLinkedList(root.left);
 
-            // Find Inorder Successor
+            // Find Inorder Predecessor
             for (; left.right != null; left = left.right) ;
 
-            // Make Root the Next of Inorder Successor
+            // Make Root the Next of Inorder Predecessor
             left.right = root;
 
-            // Make Inorder successor the previous of root
+            // Make Inorder Predecessor the previous of root
             root.left = left;
 
         }

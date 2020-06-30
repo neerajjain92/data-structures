@@ -1,9 +1,9 @@
 package com.geeksforgeeks.graph;
 
-import java.util.*;
-
 import com.datastructures.array.ArrayUtil;
 import com.geeksforgeeks.heap.MinHeap;
+
+import java.util.*;
 
 public class GraphUtil {
 
@@ -914,10 +914,9 @@ public class GraphUtil {
     public static void findMinimumSpanningTree(GraphUsingDisjointSetDataStructures<Integer> krushkalGraph) {
         List<Edge<Integer>> allEdges = krushkalGraph.getAllEdges();
         List<Edge<Integer>> result = new ArrayList<>();
-        EdgeComparator edgeComparator = new EdgeComparator();
 
         // Sort Edges based on increasing weight
-        Collections.sort(allEdges, edgeComparator);
+        Collections.sort(allEdges, Comparator.comparingInt(Edge::getWeight));
 
 
         DisjointSet disjointSet = new DisjointSet();

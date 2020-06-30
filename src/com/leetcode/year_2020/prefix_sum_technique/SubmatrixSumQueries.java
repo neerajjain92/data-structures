@@ -1,5 +1,7 @@
 package com.leetcode.year_2020.prefix_sum_technique;
 
+import com.util.LogUtil;
+
 /**
  * @author neeraj on 25/06/20
  * Copyright (c) 2019, data-structures.
@@ -22,27 +24,65 @@ public class SubmatrixSumQueries {
     }
 
     public static int answerQuery(int tli, int tlj, int rbi, int rbj, int[][] aux) {
-        int startOfRow = tli, endOfRow = rbi, endCol = rbj, startCol = tli;
+        // Now since we have all prefix sum of cols and then on top rows as well.
 
-        int rangeSum = 0;
-        for (int i = startOfRow; i <= endOfRow; i++) {
-            rangeSum += aux[i][endCol] - ((startCol - 1 < 0) ? 0 : aux[i][startCol - 1]);
+        /**
+         * So let's Remove Unnecessary row  sum from previous rows
+         * nd also remove Unnecessary col sum from previous cols.
+         *
+         * aux[rbi][rbj] - aux[tli-1][rbj](Extra Row Sum) - aux[tlj-1][rbi](extra colsum)
+         * + aux[tli-1][tli-1] (Why this addition).
+         *
+         * Since this column is getting hit twice once in rows sum and another in cols sum
+         * hence we have to discount him once.
+         */
+        int res = aux[rbi][rbj];
+
+        if (tli > 0) {
+            res -= aux[tli - 1][rbj];
         }
-        return rangeSum;
+        if (tlj > 0) {
+            res -= aux[tlj - 1][rbi];
+        }
+        if (tli > 0 && tlj > 0) {
+            res += aux[tli - 1][tlj - 1];
+        }
+        return res;
     }
 
     public static int[][] preProcess(int mat[][]) {
+        /**
+         * So this problem is a little twist of prefix sum
+         * since we have a 2d matrix so we prefix sum of both rows and cols
+         */
         int[][] prefixSumMatrix = new int[mat.length][mat[0].length];
 
         int count = 0;
+        // PrePopulate 1st Row
         for (int[] row : mat) {
-            int[] prefixSumRow = new int[row.length];
-            prefixSumRow[0] = row[0];
-            for (int i = 1; i < row.length; i++) {
-                prefixSumRow[i] = row[i] + prefixSumRow[i - 1];
+            for (int i : row) {
+                prefixSumMatrix[0][count++] = i;
             }
-            prefixSumMatrix[count++] = prefixSumRow;
+            break;
         }
+        // Run through all cols
+        for (int i = 1; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                prefixSumMatrix[i][j] = mat[i][j] + prefixSumMatrix[i - 1][j];
+            }
+        }
+        LogUtil.logIt("Col Prefix Sum.....");
+        LogUtil.printMultiDimensionArray(prefixSumMatrix);
+
+        // Now Row Prefix Sum
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 1; j < mat[i].length; j++) {
+                prefixSumMatrix[i][j] = prefixSumMatrix[i][j - 1] + prefixSumMatrix[i][j];
+            }
+        }
+
+        LogUtil.logIt("Col Prefix Sum.....");
+        LogUtil.printMultiDimensionArray(prefixSumMatrix);
         return prefixSumMatrix;
     }
 }

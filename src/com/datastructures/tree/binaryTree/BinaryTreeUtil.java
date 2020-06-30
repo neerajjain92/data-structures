@@ -627,24 +627,26 @@ public class BinaryTreeUtil {
         findAndSetMinAndMaxHorizontalDistance(root.left, distance, horizontalDistance - 1);
         findAndSetMinAndMaxHorizontalDistance(root.right, distance, horizontalDistance + 1);
     }
-
-    public static void printVerticalLines(Node root, int lineNo, int horizontalDistance) {
+    
+    public static void printVerticalLines(Node root, int lineNo, int horizontalDistance, boolean isCurrentHorizontalDistancePrinted) {
         if (root == null)
             return;
-        if (lineNo == horizontalDistance) {
+        if (lineNo == horizontalDistance && !isCurrentHorizontalDistancePrinted) {
+            isCurrentHorizontalDistancePrinted = true;
             System.out.print(root.data + " ");
         }
 
-        printVerticalLines(root.left, lineNo, horizontalDistance - 1);
-        printVerticalLines(root.right, lineNo, horizontalDistance + 1);
+        printVerticalLines(root.left, lineNo, horizontalDistance - 1, isCurrentHorizontalDistancePrinted);
+        printVerticalLines(root.right, lineNo, horizontalDistance + 1, isCurrentHorizontalDistancePrinted);
     }
 
     public static void printVerticalOrder(Node root) {
         HorizontalDistance distance = new HorizontalDistance();
         findAndSetMinAndMaxHorizontalDistance(root, distance, 0);
-
+        boolean isCurrentHorizontalDistancePrinted = false;
         for (int i = distance.min; i <= distance.max; i++) {
-            printVerticalLines(root, i, 0);
+            isCurrentHorizontalDistancePrinted = false;
+            printVerticalLines(root, i, 0, isCurrentHorizontalDistancePrinted);
             System.out.println();
         }
     }

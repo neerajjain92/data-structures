@@ -7,7 +7,7 @@ import com.leetcode.year_2020.graph.Graph;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-public class DetectACycleHasAGraph {
+public class DetectADirectedGraphHasACycle {
 
     public static void main(String[] args) {
         Graph graph = new Graph(13);
