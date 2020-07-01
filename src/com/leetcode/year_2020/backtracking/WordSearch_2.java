@@ -1,9 +1,6 @@
 package com.leetcode.year_2020.backtracking;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/word-search-ii/
@@ -23,6 +20,12 @@ public class WordSearch_2 {
                 {'i', 'h', 'k', 'r'},
                 {'i', 'f', 'l', 'v'}
         }, new String[]{"oath", "pea", "eat", "rain"}));
+
+        System.out.println(findWords(new char[][]{
+                {'a', 'b'}
+        }, new String[]{"ba"}));
+
+
     }
 
     static class TrieNode {
@@ -80,6 +83,8 @@ public class WordSearch_2 {
     static Set<String> res = new HashSet<String>();
 
     public static List<String> findWords(char[][] board, String[] words) {
+        res = new HashSet<String>();
+        if(words.length == 0) return Collections.EMPTY_LIST;
         root = new TrieNode('#');
         for (String word : words) {
             root.insert(word);
@@ -88,8 +93,8 @@ public class WordSearch_2 {
         // Now we have a trie so let's just simply do the DFS and reject the ones
         // whose prefix(starting with) are not present in the dictionary.
         boolean[][] visited = new boolean[board.length][board[0].length];
-        for (int i = 0; i < words.length; i++) {
-            for (int j = 0; j < words.length; j++) {
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
                 findWords(i, j, board, visited, "");
             }
         }

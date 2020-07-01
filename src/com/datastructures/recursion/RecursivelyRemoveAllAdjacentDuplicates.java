@@ -8,12 +8,12 @@ package com.datastructures.recursion;
 public class RecursivelyRemoveAllAdjacentDuplicates {
 
     public static void main(String[] args) {
-//        System.out.println(removeAdjacentDuplicates("AZXXZY"));
-//        System.out.println(removeAdjacentDuplicates("geeksforgeeg"));
+        System.out.println(removeAdjacentDuplicates("AZXXZY"));
+        System.out.println(removeAdjacentDuplicates("geeksforgeeg"));
 
         System.out.println(removeAdjacentDuplicates("caaabbbaacdddd"));
 
-//        System.out.println(removeAdjacentDuplicates("acaaabbbacdddd"));
+        System.out.println(removeAdjacentDuplicates("acaaabbbacdddd"));
     }
 
     public static String removeAdjacentDuplicates(String s) {
