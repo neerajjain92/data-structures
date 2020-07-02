@@ -37,7 +37,7 @@ public class LongestRepeatingSubsequenceNonOverlapping {
         int LCS = Integer.MIN_VALUE;
         int endPoint = 0;
         for (int i = 1; i < LCSRepeating.length; i++) {
-            for (int j = i + 1; j < LCSRepeating[i].length; j++) {
+            for (int j = 1; j < LCSRepeating[i].length; j++) {
                 if (str.charAt(i - 1) == str.charAt(j - 1) && (j - i) > LCSRepeating[i - 1][j - 1]) {
                     LCSRepeating[i][j] = 1 + LCSRepeating[i - 1][j - 1];
                 } else {

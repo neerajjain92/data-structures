@@ -38,7 +38,7 @@ public class MatrixChainMultiplication {
         /**
          * Assume we have dimensions as [40, 20, 30, 10, 30]  with length as n
          * So we have n-1 matrix .
-         * A = 40*30;
+         * A = 40*20;
          * B = 20*30;
          * C = 30*10;
          * D = 10*30
@@ -91,7 +91,7 @@ public class MatrixChainMultiplication {
             int operationsAtThisPoint = dimensions[i - 1] * dimensions[k] * dimensions[j];
 
             int operationsIfWeChooseThisK = operationsInLeft + operationsAtThisPoint + operationsInRight;
-            if (operationsAtThisPoint < MIN_OPERATIONS) {
+            if (operationsIfWeChooseThisK < MIN_OPERATIONS) {
                 MIN_OPERATIONS = operationsIfWeChooseThisK;
 
                 // Update the brackets wherever we have put optimal cuts.
