@@ -48,11 +48,11 @@ public class EditDistance {
          *
          *                       |
          *            SUBSTITUTE |  INSERT
-         *          (i-1)(j-1)   |   (i-1)
+         *          (i-1)(j-1)   |   (j-1)
          *        -------------------------------
          *                      |
          *            DELETE    |  i.e when the curr_character is different
-         *          (j-1)       |  we do Min (Substitute, Insert, Delete) Operation.....
+         *          (i-1)       |  we do Min (Substitute, Insert, Delete) Operation.....
          *                          and then we do that operation which is why + 1.
          *
          */

@@ -13,6 +13,7 @@ public class MatrixChainMultiplication {
 
     public static void main(String[] args) {
         System.out.println(findMinimumMultiplicationOperation(new int[]{1, 2, 3, 4}));
+        System.out.println(findMinimumMultiplicationOperation(new int[]{2, 3, 4, 5, 6}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{10, 20, 30}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{40, 20, 30, 10, 30}));
         System.out.println(findMinimumMultiplicationOperation(new int[]{10, 20, 30, 40, 30}));
@@ -28,8 +29,8 @@ public class MatrixChainMultiplication {
         } else {
             // We have multiple matrix in place, let's enclose them in brackets.
             System.out.print("(");
-            printBrackets(brackets, i, brackets[i][j]);
-            printBrackets(brackets, brackets[i][j] + 1, j);
+            printBrackets(brackets, i, brackets[i][j]); // Call for i to k
+            printBrackets(brackets, brackets[i][j] + 1, j); // Call for K to j
             System.out.print(")");
         }
     }
@@ -103,6 +104,11 @@ public class MatrixChainMultiplication {
 
     private static int solveMatrixChainMultiplicationBottomUp(int[] dimensions) {
         /**
+         *
+         * Better Understanding :
+         *
+         * https://www.youtube.com/watch?v=JMql7zF87aE&vl=en-US
+         *
          * We have matrix dimensions, Now lets assume dimensions we
          * [2,3,6,4,5]
          * We have len(dimension) -1 matrices.

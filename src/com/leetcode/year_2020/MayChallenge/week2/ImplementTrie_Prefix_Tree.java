@@ -10,7 +10,7 @@ public class ImplementTrie_Prefix_Tree {
     public static void main(String[] args) {
         Trie trie = new Trie();
         // Input keys (use only 'a' through 'z' and lower case)
-        String keys[] = {"the", "a", "there", "answer", "any", "by", "bye", "their"};
+        String keys[] = {"cat",  "cats"};
 
         for (String key : keys) {
             trie.insert(key);
@@ -20,7 +20,7 @@ public class ImplementTrie_Prefix_Tree {
             System.out.println("Key : " + key + " ==> exist in TrieNode ? " + trie.search(key));
         }
 
-        String prefixes[] = {"th", "a", "thre", "ans", "an", "b", "by", "thei"};
+        String prefixes[] = {"th", "a", "thre", "ans", "an", "b", "by", "thei", "cat", "cats"};
         for (String prefix : prefixes) {
             System.out.println("Prefix : " + prefix + " ==> startsWith in TrieNode ? " + trie.startsWith(prefix));
         }

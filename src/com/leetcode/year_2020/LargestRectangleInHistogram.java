@@ -7,7 +7,7 @@ import java.util.Stack;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-public class LargestRectangleInHistogram {
+public class  LargestRectangleInHistogram {
 
     public static void main(String[] args) {
         System.out.println(largestRectangleArea(new int[]{2, 1, 5, 6, 2, 3}));
