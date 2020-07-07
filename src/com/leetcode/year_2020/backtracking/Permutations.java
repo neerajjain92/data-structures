@@ -14,6 +14,8 @@ public class Permutations {
 
     public static void main(String[] args) {
         System.out.println(permute(new int[]{1, 2, 3}));
+        System.out.println(permute(new int[]{3, 2, 5}));
+        System.out.println(permute(new int[]{1, 2, 4}));
     }
 
     public static List<List<Integer>> permute(int[] nums) {

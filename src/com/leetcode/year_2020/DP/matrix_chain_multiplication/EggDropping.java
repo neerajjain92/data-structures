@@ -3,9 +3,13 @@ package com.leetcode.year_2020.DP.matrix_chain_multiplication;
 import java.util.Arrays;
 
 /**
+ * https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/
+ *
  * @author neeraj on 12/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
+ * <p>
+ * Find Minimum Number of Attempts using Best Strategy to find ThreshHold floor in the worst case.
  */
 public class EggDropping {
 

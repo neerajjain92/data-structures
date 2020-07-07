@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/combination-sum-iv/
+ * <p>
+ * Same problem....
+ * https://www.geeksforgeeks.org/count-number-ways-reach-given-score-game/
+ * <p>
+ * https://www.geeksforgeeks.org/count-number-of-ways-to-cover-a-distance/
  *
  * @author neeraj on 07/06/20
  * Copyright (c) 2019, data-structures.
@@ -12,8 +17,17 @@ import java.util.Arrays;
 public class CombinationSum_NumberOfWays {
 
     public static void main(String[] args) {
-//        System.out.println(combinationSum4(new int[]{2, 3, 7}, 12));
+        System.out.println(combinationSum4(new int[]{2, 3, 7}, 12));
         System.out.println(combinationSum4(new int[]{1, 2, 3}, 4));
+
+        // https://www.geeksforgeeks.org/count-number-ways-reach-given-score-game/
+        System.out.println(combinationSum4(new int[]{3, 5, 10}, 20));
+        System.out.println(combinationSum4(new int[]{3, 5, 10}, 13));
+
+        //https://www.geeksforgeeks.org/count-number-of-ways-to-cover-a-distance/
+        System.out.println(combinationSum4(new int[]{1, 2, 3}, 3));
+        System.out.println(combinationSum4(new int[]{1, 2, 3}, 4));
+
     }
 
     static int[][] T; // Memorization

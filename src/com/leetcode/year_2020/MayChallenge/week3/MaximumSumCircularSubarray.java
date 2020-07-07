@@ -1,6 +1,8 @@
 package com.leetcode.year_2020.MayChallenge.week3;
 
 /**
+ * https://leetcode.com/problems/maximum-sum-circular-subarray/
+ *
  * @author neeraj on 15/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -8,7 +10,7 @@ package com.leetcode.year_2020.MayChallenge.week3;
 public class MaximumSumCircularSubarray {
 
     public static void main(String[] args) {
-        System.out.println(maxSubarraySumCircular(new int[]{1,-2,3,-2}));
+        System.out.println(maxSubarraySumCircular(new int[]{1, -2, 3, -2}));
         System.out.println(maxSubarraySumCircular(new int[]{5, -3, 5}));
 
     }
@@ -29,23 +31,24 @@ public class MaximumSumCircularSubarray {
         int MIN_ENDING_HERE = 0;
         int total = 0;
 
-        for(int i: A) {
+        for (int i : A) {
             MAX_ENDING_HERE += i;
             // System.out.println("MAX_ENDING_HERE" + MAX_ENDING_HERE);
 
             MAX_TILL_NOW = Math.max(MAX_TILL_NOW, MAX_ENDING_HERE);
-            if(MAX_ENDING_HERE < 0) MAX_ENDING_HERE = 0;
+            if (MAX_ENDING_HERE < 0) MAX_ENDING_HERE = 0;
 
             MIN_ENDING_HERE += i;
 
             // System.out.println("MIN_ENDING_HERE" + MIN_ENDING_HERE);
 
             MIN_TILL_NOW = Math.min(MIN_TILL_NOW, MIN_ENDING_HERE);
-            if(MIN_ENDING_HERE > 0) MIN_ENDING_HERE = 0;
+            if (MIN_ENDING_HERE > 0) MIN_ENDING_HERE = 0;
 
             total += i;
         }
 
-        return MAX_TILL_NOW < 0 ? MAX_TILL_NOW : Math.max(MAX_TILL_NOW, total - MIN_TILL_NOW);
+        return MAX_TILL_NOW < 0 ? MAX_TILL_NOW : // This above condition is only for when all numbers are negative
+                Math.max(MAX_TILL_NOW, total - MIN_TILL_NOW);
     }
 }
