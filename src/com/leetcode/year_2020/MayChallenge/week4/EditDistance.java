@@ -44,7 +44,13 @@ public class EditDistance {
          *                                          ---> What we are saying is we will substitute 'S' after we get minDistance("HORS", "RO")
          *
          * In the DP table they look like this
-         *
+         * HERE ROW REPRESENTS  =====> "HORSE" and COLUMN REPRESENT ====> "ROS"
+         *    R O S
+         * H
+         * O
+         * R
+         * S
+         * E
          *
          *                       |
          *            SUBSTITUTE |  INSERT
