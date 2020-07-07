@@ -3,6 +3,7 @@ package com.leetcode.year_2020.DP.interview_prep;
 import com.util.LogUtil;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -19,7 +20,13 @@ public class BoxStacking {
     public static void main(String[] args) {
         Box A = new Box(2, 1, 4);
         Box B = new Box(3, 2, 5);
-        findMaxHeightWhichCanBeAchieved(A, B);
+        findMaxHeightWhichCanBeAchieved(Arrays.asList(A, B));
+
+
+        findMaxHeightWhichCanBeAchieved(Arrays.asList(new Box(4, 6, 7),
+                new Box(1, 2, 3),
+                new Box(4, 5, 6),
+                new Box(10, 12, 32)));
     }
 
     static class Box {
@@ -34,18 +41,16 @@ public class BoxStacking {
         }
     }
 
-    public static int findMaxHeightWhichCanBeAchieved(Box A, Box B) {
+    public static int findMaxHeightWhichCanBeAchieved(List<Box> boxDimensions) {
         /**
          * We first need to create all different permutation of box dimension,
          * why since, we can rotate the box in any direction to put them on top
          * of each other but as a general rule we will try not to make length smaller than the width of box.
          */
-        List<List<Integer>> allRotationsOfBoxA = createAllPermutations(new int[]{A.length, A.width, A.height});
-        List<List<Integer>> allRotationsOfBoxB = createAllPermutations(new int[]{B.length, B.width, B.height});
-
         List<List<Integer>> combinedPermutations = new ArrayList<>();
-        combinedPermutations.addAll(allRotationsOfBoxA);
-        combinedPermutations.addAll(allRotationsOfBoxB);
+        for (Box box : boxDimensions) {
+            combinedPermutations.addAll(createAllPermutations(new int[]{box.length, box.width, box.height}));
+        }
 
         /**
          * Now lets sort them based on their base-Area (length*width) in descending order

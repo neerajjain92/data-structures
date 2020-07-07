@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="k">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/BoxStacking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CombinationSum_NumberOfWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CombinationSum_NumberOfWays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/MaximumSumCircularSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/MaximumSumCircularSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/BoxStacking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/BoxStacking.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +310,7 @@
       <workItem from="1594063138785" duration="294000" />
       <workItem from="1594068870562" duration="1238000" />
       <workItem from="1594108343950" duration="6489000" />
-      <workItem from="1594140654365" duration="3287000" />
+      <workItem from="1594140654365" duration="3484000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -498,30 +494,30 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="391" key="GridCell.Tab.0.bottom" timestamp="1594151187808">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1638" height="391" key="GridCell.Tab.0.bottom" timestamp="1594151407179">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594150714666" />
+    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594151407179" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
     <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1594151187808" />
     <state width="1638" height="328" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1592568895669" />
     <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1594121826866" />
     <state width="1638" height="341" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1593568867618" />
     <state width="1638" height="325" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1593605670102" />
-    <state width="1638" height="391" key="GridCell.Tab.0.center" timestamp="1594151187806">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1638" height="391" key="GridCell.Tab.0.center" timestamp="1594151407177">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594150714665" />
+    <state width="1638" height="391" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594151407177" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
     <state width="1638" height="391" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1594151187806" />
     <state width="1638" height="328" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1592568895668" />
     <state width="1638" height="391" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1594121826865" />
     <state width="1638" height="341" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1593568867617" />
     <state width="1638" height="325" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1593605670101" />
-    <state width="1638" height="391" key="GridCell.Tab.0.left" timestamp="1594151187806">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1638" height="391" key="GridCell.Tab.0.left" timestamp="1594151407177">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594150714664" />
+    <state width="1638" height="391" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594151407177" />
     <state width="1638" height="391" key="GridCell.Tab.0.left/0.0.1680.1050@0.23.1680.969" timestamp="1594035453154" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
     <state width="1638" height="391" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1594151187806" />
@@ -529,10 +525,10 @@
     <state width="1638" height="391" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1594121826864" />
     <state width="1638" height="341" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1593568867617" />
     <state width="1638" height="325" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1593605670100" />
-    <state width="1638" height="391" key="GridCell.Tab.0.right" timestamp="1594151187807">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1638" height="391" key="GridCell.Tab.0.right" timestamp="1594151407178">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594150714665" />
+    <state width="1638" height="391" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594151407178" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
     <state width="1638" height="391" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1594151187807" />
     <state width="1638" height="328" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1592568895669" />
