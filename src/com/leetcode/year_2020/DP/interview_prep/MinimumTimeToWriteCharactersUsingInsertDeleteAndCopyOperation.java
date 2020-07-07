@@ -2,6 +2,8 @@ package com.leetcode.year_2020.DP.interview_prep;
 
 import com.util.LogUtil;
 
+import java.util.Arrays;
+
 /**
  * https://www.geeksforgeeks.org/minimum-time-write-characters-using-insert-delete-copy-operation/
  *
@@ -21,7 +23,11 @@ public class MinimumTimeToWriteCharactersUsingInsertDeleteAndCopyOperation {
         getMinOperation(4, 100, 2, 10);
     }
 
+    static int dp[];
+
     public static int getMinOperation(int N, int insertCost, int removalCost, int copyAndPasteCost) {
+        dp = new int[1000]; // Memorization
+        Arrays.fill(dp, -1);
         /**
          * we know that first operation will always be insert since you can't perform removal or CopyPaste without any character
          * present in the input
@@ -38,6 +44,9 @@ public class MinimumTimeToWriteCharactersUsingInsertDeleteAndCopyOperation {
             return 0; // We don't have to do anything.
         }
         int cost = Integer.MAX_VALUE;
+
+        // Return from cache
+        if (dp[currentPointer] != -1) return dp[currentPointer];
 
         if (currentPointer < N) { // Then we have just 2 choices, either insert or do a copyAndPaste
             // Try to insert
@@ -64,6 +73,6 @@ public class MinimumTimeToWriteCharactersUsingInsertDeleteAndCopyOperation {
                     (removalCost + getMinOperation(N, currentPointer - 1, insertCost, removalCost, copyAndPasteCost)));
         }
 
-        return cost;
+        return dp[currentPointer] = cost;
     }
 }
