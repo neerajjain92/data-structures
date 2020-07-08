@@ -23,6 +23,10 @@ public class NQueensProblem {
         System.out.println(solveNQueens(8));
     }
 
+    /**
+     * PRO TIP:
+     * Best thing about diagonal is they are equidistant from columns as well as rows.
+     */
     public static void solveNQueensProblem(int boardSize) {
         List<List<Integer>> results = new ArrayList<>();
         List<Integer> columnPlacements = new ArrayList<>();
@@ -70,10 +74,11 @@ public class NQueensProblem {
         }
     }
 
-    /*
-      Check if a column placement that we just put in the columnPlacements
-      list is actually valid to recurse on
-    */
+
+    /**
+     * Check if a column placement that we just put in the columnPlacements
+     * list is actually valid to recurse on.
+     */
     private static boolean isValidPlacement(List<Integer> columnPlacements) {
         /*
           rowWeAreValidatingOn is the row that we just placed a queen on
@@ -105,7 +110,7 @@ public class NQueensProblem {
               Absolute Row Distance Between Queen 2 & 3 == 1
               Queen 2 is in row 1, Queen 3 is in row 2. 2 - 1 = 1.
             */
-            if (absoluteColumnDistance == 0 || absoluteColumnDistance == rowWeAreValidatingOn - ithQueenRow) {
+            if (absoluteColumnDistance == 0 || absoluteColumnDistance == (rowWeAreValidatingOn - ithQueenRow)) {
                 return false;
             }
         }
