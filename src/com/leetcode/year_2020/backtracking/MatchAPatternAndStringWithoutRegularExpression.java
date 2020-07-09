@@ -16,6 +16,7 @@ public class MatchAPatternAndStringWithoutRegularExpression {
         matchPattern("GRAPHGRAPHGRAPH", "AAA");
         matchPattern("NJGMNJ", "GfG");
         matchPattern("GeeksforGeeks", "GG");
+        matchPattern("EatSleep", "XY");
 
     }
 

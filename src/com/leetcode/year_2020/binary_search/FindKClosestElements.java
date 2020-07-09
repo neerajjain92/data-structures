@@ -14,7 +14,6 @@ public class FindKClosestElements {
         System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 4, 3));
         System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 2, 3));
         System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 2, -1));
-        System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 2, 9));
 
 
         // Duplicates

@@ -15,9 +15,9 @@ public class RotateImage {
                 {4, 5, 6},
                 {7, 8, 9}
         };
-//        Rotate2DMatrix.print2DArray(matrix);
-//        rotateImage(matrix);
-//        Rotate2DMatrix.print2DArray(matrix);
+        Rotate2DMatrix.print2DArray(matrix);
+        rotateImage(matrix);
+        Rotate2DMatrix.print2DArray(matrix);
 
 
         matrix = new int[][]{

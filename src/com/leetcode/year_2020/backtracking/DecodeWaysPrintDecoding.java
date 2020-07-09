@@ -15,6 +15,7 @@ public class DecodeWaysPrintDecoding {
     public static void main(String[] args) {
         System.out.println(numDecodings("123"));
         System.out.println(numDecodings("01"));
+        System.out.println(numDecodings("223"));
     }
 
     /**

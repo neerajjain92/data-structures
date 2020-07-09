@@ -62,7 +62,7 @@ public class MinimumSubsetDifference {
          *  If i choose S1 = 1 so S2 = 10 -1 = 9
          *              S1 = 3 so S2 = 10 - 3 = 7.... and so on...
          *
-         *  Now the max i can choose for S1 is SUM(SET)/2; because i intentionally assume s1 to be smaller than s2.
+         *  Now the max i can choose for S1 is SUM(SET)/2; because we intentionally assume s1 to be smaller than s2.
          *
          * Now we have the ground knowledge, so let's solve it.
          */

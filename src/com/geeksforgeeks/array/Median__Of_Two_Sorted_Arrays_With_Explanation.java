@@ -26,7 +26,7 @@ public class Median__Of_Two_Sorted_Arrays_With_Explanation {
 
     public static void main(String[] args) {
         findMedian(new int[]{1, 3, 5, 11, 17}, new int[]{9, 10, 11, 13, 14});
-        findMedian(new int[]{1,3,5,7,9}, new int[]{2,4,6,8,10});
+        findMedian(new int[]{1, 3, 5, 7, 9}, new int[]{2, 4, 6, 8, 10});
     }
 
     public static void findMedian(int[] arrA, int[] arrB) {
@@ -42,13 +42,13 @@ public class Median__Of_Two_Sorted_Arrays_With_Explanation {
         if ((endA - startA == 1) && (endB - startB == 1)) {
             /**
              * A[] = a1, a2
-             * B[] = a2, b2
+             * B[] = b1, b2
              *
-             * Sorted(A,B) = Math.min(a1,a2), ?, ?, Math.max(a2,b2}
+             * Sorted(A,B) = Math.min(a1,b1), ?, ?, Math.max(a2,b2}
              *
              * Let's replace "?"
              *
-             * Sorted(A,B) = Math.min(a1,a2), Math.max(a1,a2), Math.min(a2,b2), Math.max(a2,b2)
+             * Sorted(A,B) = Math.min(a1,b1), {Math.max(a1,b1), Math.min(a2,b2),} Math.max(a2,b2)
              */
             return (Math.max(arrA[startA], arrB[startB]) + Math.min(arrA[endA], arrB[endB])) / 2.0d;
         }

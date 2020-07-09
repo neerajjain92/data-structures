@@ -8,6 +8,7 @@ package com.leetcode.year_2020.DP.zero_one_knapsack;
 public class PartitionToKEqualSumSubset {
 
     public static void main(String[] args) {
+        System.out.println(canPartitionKSubsets(new int[]{4, 3, 2, 3, 5, 2, 1}, 4));
         System.out.println(canPartitionKSubsets(new int[]{4, 3, 2, 3, 5, 2, 1}, 5));
     }
 

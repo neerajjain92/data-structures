@@ -1,6 +1,7 @@
 package com.leetcode.year_2020.DP.zero_one_knapsack;
 
 /**
+ * https://leetcode.com/problems/partition-equal-subset-sum/
  * @author neeraj on 04/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
