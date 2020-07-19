@@ -8,7 +8,8 @@ package com.leetcode.year_2020.graph;
 public class MinimumSwapsRequiredToSortArray {
 
     public static void main(String[] args) {
-        System.out.println(findMinSwaps(new int[]{4, 3, 2, 1}));
+//        System.out.println(findMinSwaps(new int[]{4, 3, 2, 1}));
+        System.out.println(findMinSwaps(new int[]{1, 4, 3, 2}));
         System.out.println(findMinSwaps(new int[]{1, 5, 4, 3, 2}));
         System.out.println(findMinSwaps(new int[]{1, 2, 3, 4, 5}));
         System.out.println(findMinSwaps(new int[]{3, 5, 2, 1, 4}));

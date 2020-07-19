@@ -26,6 +26,7 @@ public class Merge2SortedList {
         ArrayList<Integer> a = new ArrayList<>(Arrays.asList(1, 3, 5, 7, 9));
         ArrayList<Integer> b = new ArrayList<>(Arrays.asList(2, 4, 6, 9, 10));
         merge(a, b);
+        a.listIterator();
         System.out.println(a);
     }
 

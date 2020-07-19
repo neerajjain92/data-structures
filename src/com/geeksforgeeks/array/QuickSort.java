@@ -4,8 +4,9 @@ public class QuickSort {
 
     public static void main(String[] args) {
 //        int arr[] = {10, 80, 30, 90, 40, 50, 70};
-        int arr[] = {5, 3, 2, 4, 1};
-        quickSort(arr, 0, 4);
+//        int arr[] = {5, 3, 2, 4, 1};
+        int arr[] = {3, 4, 5, 8, 9, 7};
+        quickSort(arr, 0, 5);
         ArrayRotation.printArray(arr);
     }
 

@@ -2,6 +2,7 @@ package com.leetcode.year_2020;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 /**
  * @author neeraj on 28/04/20
@@ -14,54 +15,61 @@ public class KLargestElementsInAnImmutableMaxHeap {
 
     public static void main(String[] args) {
         System.out.println(kLargestInImmutableHeap(new int[]{17, 7, 16, 2, 3, 15, 14},
-                2));
+                4));
     }
 
     public static List<Integer> kLargestInImmutableHeap(int[] immHeap, int k) {
         immutableHeap = immHeap;
         List<Integer> elements = new ArrayList<>();
-        /**
-         * Since heap is immutable we have to walk down the heap to
-         * find out kLargest elements.
-         * We will have to use some builder methods.
-         */
-        int index = 0;
-        int rightChild = 0;
-        int leftChild = 0;
-        while (k-- > 0) {
-            elements.add(immutableHeap[index]);
-            if (hasLeftChild(index)) {
-                leftChild = getLeftChild(index);
-                if (hasRightChild(index)) {
-                    rightChild = getRightChild(index);
-                }
-                index = leftChild < rightChild ? getRightChildIndex(index) : getLeftChildIndex(index);
+        PriorityQueue<Pair> maxHeap = new PriorityQueue<>((a, b) -> b.value.compareTo(a.value));
+        maxHeap.add(new Pair(0, immHeap[0]));
+
+        for (int i = 0; i < k; i++) {
+            Pair polled = maxHeap.poll();
+            elements.add(polled.value);
+
+            if (hasLeftChild(polled.index)) {
+                maxHeap.add(new Pair(getLeftChildIndex(polled.index), getLeftChild(polled.index)));
+            }
+
+            if (hasRightChild(polled.index)) {
+                maxHeap.add(new Pair(getRightChildIndex(polled.index), getRightChild(polled.index)));
             }
         }
         return elements;
     }
 
-    public static int getLeftChildIndex(int index) {
+    static class Pair {
+        int index;
+        Integer value;
+
+        public Pair(int index, int value) {
+            this.index = index;
+            this.value = value;
+        }
+    }
+
+    private static int getLeftChildIndex(int index) {
         return index * 2 + 1;
     }
 
-    public static int getRightChildIndex(int index) {
+    private static int getRightChildIndex(int index) {
         return index * 2 + 2;
     }
 
-    public static boolean hasLeftChild(int index) {
+    private static boolean hasLeftChild(int index) {
         return getLeftChildIndex(index) < immutableHeap.length;
     }
 
-    public static boolean hasRightChild(int index) {
+    private static boolean hasRightChild(int index) {
         return getRightChildIndex(index) < immutableHeap.length;
     }
 
-    public static int getLeftChild(int index) {
+    private static int getLeftChild(int index) {
         return immutableHeap[getLeftChildIndex(index)];
     }
 
-    public static int getRightChild(int index) {
+    private static int getRightChild(int index) {
         return immutableHeap[getRightChildIndex(index)];
     }
 }

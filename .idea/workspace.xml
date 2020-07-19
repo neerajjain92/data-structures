@@ -2,16 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="k">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MaximumWidthOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/CombinationInAStringOfDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/GenerateAllBinaryStringWithoutConsecutiveOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintSumsOfAllSubsetsOfAGivenSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/InsertDeleteGetRandomWithDuplicateValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/tree/RecoverBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumDifficultyOfJobSchedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/BinaryTreeMaximumPathSumBetweenAnyTwoLeaf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/BinaryTreePostOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/BinaryTreePreorderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/kadanes/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_increasing_subsequence/CountNumberOfTeams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_increasing_subsequence/NumberOfLongestIncreasingSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/CountAllSubSequenceHavingProductLessThanK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/IntegerToRomans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/RomanToIntegers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LongestPossibleRouteInMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MedianOfTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/july_challenge/week1/AddBinary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/july_challenge/week1/AngleBetweenHandsOfClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FruitsIntoBasket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualtoLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/LongestSubStringWithAtMostTwoDistinctCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/MaximumSumSubArrayOfSizeK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/NumberofSubstringsContainingAllThreeCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SmallestSubArrayWithGivenSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/array/Median__Of_Two_Sorted_Arrays_With_Explanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/array/Median__Of_Two_Sorted_Arrays_With_Explanation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/RotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/RotateImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/google/RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/google/RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/array/LargestSumContiguousSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/array/LargestSumContiguousSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/array/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/array/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumInLongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumInLongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfTwoSortedArrayOfDifferentSizes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfTwoSortedArrayOfDifferentSizes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/RomanToNumeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/string_parsing/RomanToNumeral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/two_pointers/Merge2SortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/two_pointers/Merge2SortedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/AllMneMonicsOfPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/AllMneMonicsOfPhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_First.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/Search2DMatrix_First.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/Search2DMatrix_II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/Search2DMatrix_II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/MaximizeTheSegmentsOfLength_P_Q_R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/MaximizeTheSegmentsOfLength_P_Q_R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/RodCuttingProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/RodCuttingProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/MinimumSubsetDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/MinimumSubsetDifference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/PartitionEqualSubsetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/PartitionEqualSubsetSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/PartitionToKEqualSumSubset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/PartitionToKEqualSumSubset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/DecodeWaysPrintDecoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/DecodeWaysPrintDecoding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/FindKClosestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueensThatCanAttacktheKing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueensThatCanAttacktheKing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/KLargestElementsInAnImmutableMaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/KLargestElementsInAnImmutableMaxHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/SingleElementInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/SingleElementInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/SearchInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/SearchInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/SearchInRotatedSortedArrayII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/SearchInRotatedSortedArrayII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PrintSubsetOfAlphabets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintSubsetOfAlphabets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Subsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/WordSearch_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/WordSearch_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/AllocateMinimumNumberOfPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/AllocateMinimumNumberOfPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/MinimumSwapsRequiredToSortArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/MinimumSwapsRequiredToSortArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/june_challenge/week1/RandomPickwithWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/june_challenge/week1/RandomPickwithWeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubmatrixSumQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubmatrixSumQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/LongestSubStringWithMUniqueCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/LongestSubStringWithMUniqueCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/MaximumOfAllSubArraysOfSizeK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/MaximumOfAllSubArraysOfSizeK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/RainWaterTrapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/RainWaterTrapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/StockSpanProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/StockSpanProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +131,33 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaximumWidthOfBinaryTree">
+  <component name="RunManager" selected="Application.CountAllSubSequenceHavingProductLessThanK">
+    <configuration name="ArrayPermutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.ArrayPermutations" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountAllSubSequenceHavingProductLessThanK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.DP.zero_one_knapsack.CountAllSubSequenceHavingProductLessThanK" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.DP.zero_one_knapsack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GenerateBalancedParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.backtracking.GenerateBalancedParenthesis" />
       <module name="data-structures" />
@@ -86,12 +171,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumWidthOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.MaximumWidthOfBinaryTree" />
+    <configuration name="Permutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.Permutations" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,38 +184,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Median__Of_Two_Sorted_Arrays_With_Explanation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.array.Median__Of_Two_Sorted_Arrays_With_Explanation" />
+    <configuration name="Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.Subsets" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RotateImage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.RotateImage" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.problems.medium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockSpanProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.StockSpanProblem" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.stack.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,10 +199,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaximumWidthOfBinaryTree" />
-        <item itemvalue="Application.Median__Of_Two_Sorted_Arrays_With_Explanation" />
-        <item itemvalue="Application.StockSpanProblem" />
-        <item itemvalue="Application.RotateImage" />
+        <item itemvalue="Application.CountAllSubSequenceHavingProductLessThanK" />
+        <item itemvalue="Application.Subsets" />
+        <item itemvalue="Application.ArrayPermutations" />
+        <item itemvalue="Application.Permutations" />
         <item itemvalue="Application.GenerateBalancedParenthesis" />
       </list>
     </recent_temporary>
@@ -319,7 +378,18 @@
       <workItem from="1594068870562" duration="1238000" />
       <workItem from="1594108343950" duration="6489000" />
       <workItem from="1594140654365" duration="18661000" />
-      <workItem from="1594232213220" duration="12772000" />
+      <workItem from="1594232213220" duration="13367000" />
+      <workItem from="1594372681088" duration="951000" />
+      <workItem from="1594394766538" duration="29666000" />
+      <workItem from="1594628397029" duration="973000" />
+      <workItem from="1594644817757" duration="7258000" />
+      <workItem from="1594715304322" duration="1879000" />
+      <workItem from="1594729953288" duration="69000" />
+      <workItem from="1594730079482" duration="7476000" />
+      <workItem from="1594790156919" duration="23000" />
+      <workItem from="1594811746108" duration="3439000" />
+      <workItem from="1594915589889" duration="8678000" />
+      <workItem from="1594976020975" duration="32891000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -467,26 +537,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591124079088" />
-    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1594310284608">
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1595055552270">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1594310284608" />
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1595055552270" />
     <state x="653" y="266" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1588359957426" />
     <state x="653" y="251" key="#com.intellij.ide.util.MemberChooser/0.23.1680.966@0.23.1680.966" timestamp="1593484037516" />
     <state x="653" y="252" key="#com.intellij.ide.util.MemberChooser/0.23.1680.969@0.23.1680.969" timestamp="1593398140266" />
-    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591346039449">
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594394700379">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591346039449" />
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1594394700379" />
     <state x="528" y="277" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1588450384577" />
     <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592691865082">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1592691865082" />
-    <state x="735" y="80" width="945" height="579" key="#xdebugger.evaluate" timestamp="1594272036097">
+    <state x="622" y="416" width="945" height="579" key="#xdebugger.evaluate" timestamp="1595158463862">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="735" y="80" width="945" height="579" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1594272036097" />
+    <state x="622" y="416" width="945" height="579" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1595158463862" />
     <state x="958" y="442" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1589287956098" />
     <state x="735" y="250" key="#xdebugger.evaluate/0.23.1680.966@0.23.1680.966" timestamp="1593513968906" />
     <state x="1206" y="251" key="#xdebugger.evaluate/0.23.1680.969@0.23.1680.969" timestamp="1593399372404" />
@@ -503,90 +573,98 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="73" y="109" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589063000260" />
-    <state width="1638" height="391" key="GridCell.Tab.0.bottom" timestamp="1594317836697">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="391" key="GridCell.Tab.0.bottom" timestamp="1595168616262">
+      <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594317836697" />
+    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1595168597071" />
     <state width="1638" height="374" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025856" />
-    <state width="1638" height="385" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1594236265553" />
-    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1594282844311" />
+    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1595168616262" />
+    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1594751960703" />
+    <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1594652131561" />
     <state width="1638" height="385" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1594313712809" />
     <state width="1638" height="328" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1592568895669" />
     <state width="1638" height="391" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1594121826866" />
     <state width="1638" height="341" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1593568867618" />
     <state width="1638" height="325" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1593605670102" />
-    <state width="1638" height="391" key="GridCell.Tab.0.center" timestamp="1594317836694">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="391" key="GridCell.Tab.0.center" timestamp="1595168616260">
+      <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594317836694" />
+    <state width="1638" height="391" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1595168597070" />
     <state width="1638" height="374" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025854" />
-    <state width="1638" height="385" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1594236265536" />
-    <state width="1638" height="391" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1594282844310" />
+    <state width="1638" height="391" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1595168616260" />
+    <state width="1638" height="391" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1594751960701" />
+    <state width="1638" height="391" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1594652131559" />
     <state width="1638" height="385" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1594313712807" />
     <state width="1638" height="328" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1592568895668" />
     <state width="1638" height="391" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1594121826865" />
     <state width="1638" height="341" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1593568867617" />
     <state width="1638" height="325" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1593605670101" />
-    <state width="1638" height="391" key="GridCell.Tab.0.left" timestamp="1594317836694">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="391" key="GridCell.Tab.0.left" timestamp="1595168616259">
+      <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594317836694" />
+    <state width="1638" height="391" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1595168597070" />
     <state width="1638" height="391" key="GridCell.Tab.0.left/0.0.1680.1050@0.23.1680.969" timestamp="1594035453154" />
     <state width="1638" height="374" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025853" />
-    <state width="1638" height="385" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1594236265535" />
-    <state width="1638" height="391" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1594282844309" />
+    <state width="1638" height="391" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1595168616259" />
+    <state width="1638" height="391" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1594751960701" />
+    <state width="1638" height="391" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1594652131558" />
     <state width="1638" height="385" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1594313712807" />
     <state width="1638" height="328" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1592568895668" />
     <state width="1638" height="391" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1594121826864" />
     <state width="1638" height="341" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1593568867617" />
     <state width="1638" height="325" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1593605670100" />
-    <state width="1638" height="391" key="GridCell.Tab.0.right" timestamp="1594317836695">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="391" key="GridCell.Tab.0.right" timestamp="1595168616261">
+      <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="391" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594317836695" />
+    <state width="1638" height="391" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1595168597071" />
     <state width="1638" height="374" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589396025855" />
-    <state width="1638" height="385" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1594236265542" />
-    <state width="1638" height="391" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1594282844311" />
+    <state width="1638" height="391" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1595168616261" />
+    <state width="1638" height="391" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1594751960702" />
+    <state width="1638" height="391" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1594652131560" />
     <state width="1638" height="385" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1594313712809" />
     <state width="1638" height="328" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1592568895669" />
     <state width="1638" height="391" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1594121826865" />
     <state width="1638" height="341" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1593568867618" />
     <state width="1638" height="325" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1593605670101" />
-    <state width="1638" height="385" key="GridCell.Tab.1.bottom" timestamp="1594315028048">
+    <state width="1638" height="385" key="GridCell.Tab.1.bottom" timestamp="1595168559082">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="385" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594315028048" />
+    <state width="1638" height="385" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1595168559082" />
     <state width="1638" height="374" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826326" />
+    <state width="1638" height="385" key="GridCell.Tab.1.bottom/0.23.1680.961@0.23.1680.961" timestamp="1594730808355" />
     <state width="1638" height="385" key="GridCell.Tab.1.bottom/0.23.1680.963@0.23.1680.963" timestamp="1594236267181" />
     <state width="1638" height="385" key="GridCell.Tab.1.bottom/0.23.1680.966@0.23.1680.966" timestamp="1594313712813" />
     <state width="1638" height="345" key="GridCell.Tab.1.bottom/0.23.1680.967@0.23.1680.967" timestamp="1592384118119" />
     <state width="1638" height="385" key="GridCell.Tab.1.bottom/0.23.1680.969@0.23.1680.969" timestamp="1594034813056" />
     <state width="1638" height="341" key="GridCell.Tab.1.bottom/0.23.1680.972@0.23.1680.972" timestamp="1593568867619" />
-    <state width="1638" height="385" key="GridCell.Tab.1.center" timestamp="1594315028047">
+    <state width="1638" height="385" key="GridCell.Tab.1.center" timestamp="1595168559081">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="385" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594315028047" />
+    <state width="1638" height="385" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1595168559081" />
     <state width="1638" height="374" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826321" />
+    <state width="1638" height="385" key="GridCell.Tab.1.center/0.23.1680.961@0.23.1680.961" timestamp="1594730808354" />
     <state width="1638" height="385" key="GridCell.Tab.1.center/0.23.1680.963@0.23.1680.963" timestamp="1594236267179" />
     <state width="1638" height="385" key="GridCell.Tab.1.center/0.23.1680.966@0.23.1680.966" timestamp="1594313712811" />
     <state width="1638" height="345" key="GridCell.Tab.1.center/0.23.1680.967@0.23.1680.967" timestamp="1592384118119" />
     <state width="1638" height="385" key="GridCell.Tab.1.center/0.23.1680.969@0.23.1680.969" timestamp="1594034813055" />
     <state width="1638" height="341" key="GridCell.Tab.1.center/0.23.1680.972@0.23.1680.972" timestamp="1593568867619" />
-    <state width="1638" height="385" key="GridCell.Tab.1.left" timestamp="1594315028046">
+    <state width="1638" height="385" key="GridCell.Tab.1.left" timestamp="1595168559081">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="385" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594315028046" />
+    <state width="1638" height="385" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1595168559081" />
     <state width="1638" height="374" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826318" />
+    <state width="1638" height="385" key="GridCell.Tab.1.left/0.23.1680.961@0.23.1680.961" timestamp="1594730808354" />
     <state width="1638" height="385" key="GridCell.Tab.1.left/0.23.1680.963@0.23.1680.963" timestamp="1594236267178" />
     <state width="1638" height="385" key="GridCell.Tab.1.left/0.23.1680.966@0.23.1680.966" timestamp="1594313712811" />
     <state width="1638" height="345" key="GridCell.Tab.1.left/0.23.1680.967@0.23.1680.967" timestamp="1592384118118" />
     <state width="1638" height="385" key="GridCell.Tab.1.left/0.23.1680.969@0.23.1680.969" timestamp="1594034813054" />
     <state width="1638" height="341" key="GridCell.Tab.1.left/0.23.1680.972@0.23.1680.972" timestamp="1593568867618" />
-    <state width="1638" height="385" key="GridCell.Tab.1.right" timestamp="1594315028048">
+    <state width="1638" height="385" key="GridCell.Tab.1.right" timestamp="1595168559082">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="385" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594315028048" />
+    <state width="1638" height="385" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1595168559082" />
     <state width="1638" height="374" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589364826323" />
+    <state width="1638" height="385" key="GridCell.Tab.1.right/0.23.1680.961@0.23.1680.961" timestamp="1594730808355" />
     <state width="1638" height="385" key="GridCell.Tab.1.right/0.23.1680.963@0.23.1680.963" timestamp="1594236267180" />
     <state width="1638" height="385" key="GridCell.Tab.1.right/0.23.1680.966@0.23.1680.966" timestamp="1594313712812" />
     <state width="1638" height="345" key="GridCell.Tab.1.right/0.23.1680.967@0.23.1680.967" timestamp="1592384118119" />
@@ -597,10 +675,10 @@
     </state>
     <state x="551" y="243" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586885260019" />
     <state x="551" y="261" key="RollbackChangesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1588508671452" />
-    <state x="341" y="164" key="SettingsEditor" timestamp="1593704792053">
+    <state x="341" y="164" key="SettingsEditor" timestamp="1594751356335">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1593704792053" />
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1594751356335" />
     <state x="341" y="183" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1589273419447" />
     <state x="341" y="155" key="SettingsEditor/0.23.1680.969@0.23.1680.969" timestamp="1593332771248" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1588969491254">
@@ -619,14 +697,15 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="232" y="268" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1680.1050@0.0.1680.1050" timestamp="1589057867254" />
-    <state x="100" y="100" width="1480" height="850" key="dock-window-1" timestamp="1594203023333">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="100" y="100" width="1480" height="850" key="dock-window-1" timestamp="1594548427092">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-1/0.0.1680.1050@0.0.1680.1050" timestamp="1594203023333" />
-    <state x="496" y="282" width="942" height="582" key="find.popup" timestamp="1594275334355">
+    <state x="100" y="100" width="1480" height="850" key="dock-window-1/0.23.1680.965@0.23.1680.965" timestamp="1594548427092" />
+    <state x="496" y="282" width="942" height="582" key="find.popup" timestamp="1595137048358">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="496" y="282" width="942" height="582" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1594275334355" />
+    <state x="496" y="282" width="942" height="582" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1595137048358" />
     <state x="496" y="299" width="724" height="578" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588506815637" />
     <state x="496" y="283" width="942" height="548" key="find.popup/0.23.1680.969@0.23.1680.969" timestamp="1593404291822" />
     <state x="545" y="298" key="refactoring.ChangeSignatureDialog" timestamp="1593395191881">
@@ -640,12 +719,13 @@
     </state>
     <state x="505" y="248" key="run.anything.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591736078083" />
     <state x="505" y="253" key="run.anything.popup/0.23.1680.972@0.23.1680.972" timestamp="1593547714647" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1594315205025">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1595168202801">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1594315205025" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1595168202801" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1589318752076" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.963@0.23.1680.963" timestamp="1594267004823" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.961@0.23.1680.961" timestamp="1595167026312" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.963@0.23.1680.963" timestamp="1594747541203" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.966@0.23.1680.966" timestamp="1593533763442" />
     <state x="505" y="233" width="670" height="675" key="search.everywhere.popup/0.23.1680.967@0.23.1680.967" timestamp="1592405192132" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1594068913038" />
@@ -776,7 +856,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Subsets.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="194" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -915,7 +995,7 @@
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/SearchInRotatedSortedArray.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/SearchInRotatedSortedArray.java</url>
           <line>19</line>
           <option name="timeStamp" value="234" />
         </line-breakpoint>
@@ -1053,11 +1133,6 @@
           <option name="timeStamp" value="304" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/KLargestElementsInAnImmutableMaxHeap.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="305" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/FindMedianfromDataStream.java</url>
           <line>80</line>
           <option name="timeStamp" value="310" />
@@ -1169,12 +1244,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/PartitionToKEqualSumSubset.java</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="350" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/PartitionToKEqualSumSubset.java</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="351" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1204,7 +1279,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/RodCuttingProblem.java</url>
-          <line>46</line>
+          <line>52</line>
           <option name="timeStamp" value="358" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1339,16 +1414,6 @@
           <option name="timeStamp" value="411" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="415" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="416" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week2/ImplementTrie_Prefix_Tree.java</url>
           <line>70</line>
           <option name="timeStamp" value="417" />
@@ -1432,11 +1497,6 @@
           <option name="timeStamp" value="441" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueensThatCanAttacktheKing.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="446" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/TaskScheduler.java</url>
           <line>34</line>
           <option name="timeStamp" value="447" />
@@ -1453,7 +1513,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java</url>
-          <line>42</line>
+          <line>43</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -1722,13 +1782,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/june_challenge/week1/RandomPickwithWeight.java</url>
-          <line>135</line>
+          <line>142</line>
           <option name="timeStamp" value="544" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/june_challenge/week1/RandomPickwithWeight.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="547" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/minimum_maximum_path_to_reach_to_target/MinimumCostForTickets.java</url>
@@ -1802,18 +1857,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/AllocateMinimumNumberOfPages.java</url>
-          <line>77</line>
+          <line>65</line>
           <option name="timeStamp" value="571" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/AllocateMinimumNumberOfPages.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="572" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/AllocateMinimumNumberOfPages.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="574" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/InsertDeleteGetRandom_o_1.java</url>
@@ -2047,7 +2092,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/MinimumSwapsRequiredToSortArray.java</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="651" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2117,7 +2162,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/LongestSubStringWithMUniqueCharacters.java</url>
-          <line>24</line>
+          <line>58</line>
           <option name="timeStamp" value="674" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2131,24 +2176,9 @@
           <option name="timeStamp" value="681" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="684" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/RemoveBracketsFromAnAlgebricStringContainingPlusAndMinus.java</url>
           <line>21</line>
           <option name="timeStamp" value="685" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/MinimumSubsetDifference.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="686" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/MinimumSubsetDifference.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="687" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/SortQueueIntoAnotherQueueUsingStack.java</url>
@@ -2164,11 +2194,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/queue/FirstNegativeIntegerEveryWindowSizeK.java</url>
           <line>14</line>
           <option name="timeStamp" value="695" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/MaximumOfAllSubArraysOfSizeK.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="703" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/PaintFencingAlgorithm.java</url>
@@ -2192,7 +2217,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java</url>
-          <line>28</line>
+          <line>55</line>
           <option name="timeStamp" value="709" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2229,6 +2254,226 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MaximumWidthOfBinaryTree.java</url>
           <line>60</line>
           <option name="timeStamp" value="735" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="736" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="737" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/MinimumSwapsRequiredToSortArray.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="740" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="741" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="745" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="747" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LongestPossibleRouteInMatrix.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="749" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/MinimumSubsetDifference.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="752" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/MedianOfTwoSortedArrayOfDifferentSizes.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="756" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MedianOfTwoSortedArrays.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="758" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MedianOfTwoSortedArrays.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="759" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/tree/FlattenBinaryTreeToLinkedList.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="760" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/tree/FlattenBinaryTreeToLinkedList.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="761" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/BinaryTreePreorderTraversal.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="762" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SubstringWithConcatenationOfAllWords.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="763" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SubstringWithConcatenationOfAllWords.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="764" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/MaximumOfAllSubArraysOfSizeK.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="767" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FruitsIntoBasket.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="768" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SmallestSubArrayWithGivenSum.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="769" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/LongestSubStringWithAtMostTwoDistinctCharacters.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="770" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="771" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="772" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="773" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumDifficultyOfJobSchedule.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="774" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MinimumDifficultyOfJobSchedule.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="775" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/google/RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="776" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="779" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/string_parsing/RomanToNumeral.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="780" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_increasing_subsequence/CountNumberOfTeams.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="783" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="784" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/QuickSort.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="786" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/array/QuickSort.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="787" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binary_search/FindMinimumElementInRotatedArray.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="789" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/SearchInRotatedSortedArrayII.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="790" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/SearchInRotatedSortedArrayII.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="791" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubmatrixSumQueries.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="793" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/dynamicProgramming/MaximumSumRectangle.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="794" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="795" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
+          <line>969</line>
+          <option name="timeStamp" value="796" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
+          <line>973</line>
+          <option name="timeStamp" value="798" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
+          <line>976</line>
+          <option name="timeStamp" value="799" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
+          <line>980</line>
+          <option name="timeStamp" value="800" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java</url>
+          <line>956</line>
+          <option name="timeStamp" value="801" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/CountAllSubSequenceHavingProductLessThanK.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="802" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
@@ -2293,6 +2538,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="668" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/KLargestElementsInAnImmutableMaxHeap.java</url>
+          <line>20</line>
+          <properties class="com.leetcode.year_2020.KLargestElementsInAnImmutableMaxHeap" method="kLargestInImmutableHeap">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="785" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

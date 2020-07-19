@@ -7,6 +7,7 @@ import java.util.Map;
 
 /**
  * Maximum Sum Rectangle In A 2D Matrix - Kadane's Algorithm Applications
+ * https://www.youtube.com/watch?v=-FgseNO-6Gk
  * <p>
  * https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-2d-matrix-dp-27/
  *
@@ -39,22 +40,24 @@ public class MaximumSumRectangle {
         int MAXIMUM_RECT_TOP = 0;
         int MAXIMUM_RECT_BOTTOM = 0;
 
-        int[] maximum_row_sum;
+        int[] maximum_running_sum_for_col_between_L_and_R;
 
         // Let's move Left and Right Pointer
-        for (int L = 0; L < input.length; L++) {
-            // Whenever L is being increased reset the maximum_row_sum, as Right pointer will help to fill it.
-            maximum_row_sum = new int[input.length];
+        // Left pointer will only move from 0 to end of column of 1st row
+        // and for each left pointer, right pointer will move forward with it.
+        for (int L = 0; L < input[0].length; L++) {
+            // Whenever L is being increased reset the maximum_running_sum_for_col_between_L_and_R, as Right pointer will help to fill it.
+            maximum_running_sum_for_col_between_L_and_R = new int[input.length];
 
-            for (int R = L; R < input.length; R++) { // We will always start Right pointer from Left Pointer as that is the top left corner of a rectangle.
+            for (int R = L; R < input[0].length; R++) { // We will always start Right pointer from Left Pointer as that is the top left corner of a rectangle.
 
-                // Let's populate maximum_row_sum
-                for (int row = 0; row < maximum_row_sum.length; row++) {
-                    maximum_row_sum[row] += input[row][R];
+                // Let's populate maximum_running_sum_for_col_between_L_and_R
+                for (int row = 0; row < maximum_running_sum_for_col_between_L_and_R.length; row++) {
+                    maximum_running_sum_for_col_between_L_and_R[row] += input[row][R];
                 }
 
                 // Let's find out maximum_sum_sub_contiguous_subarray.
-                Map<String, Integer> kadanesOutput = maximumSumSubContiguousSubarray(maximum_row_sum);
+                Map<String, Integer> kadanesOutput = maximumSumSubContiguousSubarray(maximum_running_sum_for_col_between_L_and_R);
 
                 if (kadanesOutput.get("maxSum") > MAXIMUM_RECTANGLE_SUM) {
                     MAXIMUM_RECTANGLE_SUM = kadanesOutput.get("maxSum");
@@ -82,27 +85,25 @@ public class MaximumSumRectangle {
 
     @SuppressWarnings("Duplicates")
     private static Map<String, Integer> maximumSumSubContiguousSubarray(int[] maximum_row_sum) {
-        int MAX_ENDING_HERE = maximum_row_sum[0];
-        int MAX_TILL_NOW = maximum_row_sum[0];
+        int maxTillNow = Integer.MIN_VALUE;
+        int maxEndingHere = 0;
+        int tempStart = 0, end = 0, start = 0;
 
-        int start = 0;
-        int end = 0;
-        int temp = 0;
+        for (int i = 0; i < maximum_row_sum.length; i++) {
+            maxEndingHere += maximum_row_sum[i];
 
-        for (int i = 1; i < maximum_row_sum.length; i++) {
-            if (maximum_row_sum[i] > MAX_ENDING_HERE + maximum_row_sum[i]) {
-                temp = i;
-            }
-            MAX_ENDING_HERE = Math.max(maximum_row_sum[i], MAX_ENDING_HERE + maximum_row_sum[i]);
-
-            if (MAX_TILL_NOW < MAX_ENDING_HERE) {
+            if (maxTillNow < maxEndingHere) {
+                maxTillNow = maxEndingHere;
                 end = i;
-                start = temp;
+                start = tempStart;
             }
-            MAX_TILL_NOW = Math.max(MAX_TILL_NOW, MAX_ENDING_HERE);
+            if (maxEndingHere < 0) {
+                maxEndingHere = 0;
+                tempStart = i + 1;
+            }
         }
         Map<String, Integer> kadanesResult = new HashMap<>();
-        kadanesResult.put("maxSum", MAX_TILL_NOW);
+        kadanesResult.put("maxSum", maxTillNow);
         kadanesResult.put("start", start);
         kadanesResult.put("end", end);
         return kadanesResult;

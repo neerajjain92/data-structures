@@ -17,8 +17,10 @@ public class MedianOfTwoSortedArrayOfDifferentSizes {
         findMedian(new int[]{23, 26, 31, 35}, new int[]{3, 5, 7, 9, 11, 16});
         findMedian(new int[]{1, 2, 3, 4, 5}, new int[]{10, 20, 30, 40, 50});
         findMedian(new int[]{1, 4, 5}, new int[]{2, 3});
+        findMedian(new int[]{1, 2}, new int[]{3, 4});
         findMedian(new int[]{}, new int[]{20});
         findMedian(new int[]{-50, -41, -40, -19, 5, 21, 28}, new int[]{-50, -21, -10});
+        findMedian(new int[]{1}, new int[]{1});
     }
 
     public static void findMedian(int[] arr1, int[] arr2) {
@@ -46,7 +48,7 @@ public class MedianOfTwoSortedArrayOfDifferentSizes {
         double median = 0;
 
         while (start <= end) {
-            partitionX = (start + end) / 2;
+            partitionX = start + ((end - start) / 2); // This is partition on nums1.;
             partitionY = (N1 + N2 + 1) / 2 - partitionX;
 
             maxLeftX = partitionX == 0 ? Integer.MIN_VALUE : X[partitionX - 1];

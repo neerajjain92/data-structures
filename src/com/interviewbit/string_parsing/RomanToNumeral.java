@@ -61,6 +61,7 @@ public class RomanToNumeral {
         System.out.println(romanToInt("MMMCCL"));
         System.out.println(romanToInt("MMMCCLXIV"));
         System.out.println(romanToInt("MMMCCXLIV"));
+        System.out.println(romanToInt("IX"));
     }
 
     public static int romanToInt(String A) {

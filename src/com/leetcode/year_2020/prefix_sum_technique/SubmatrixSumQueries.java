@@ -3,6 +3,8 @@ package com.leetcode.year_2020.prefix_sum_technique;
 import com.util.LogUtil;
 
 /**
+ * https://leetcode.com/problems/range-sum-query-2d-immutable/
+ *
  * @author neeraj on 25/06/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -18,34 +20,57 @@ public class SubmatrixSumQueries {
         int M = mat.length, N = mat[0].length;
         int aux[][] = preProcess(mat);
 
-        System.out.println(answerQuery(0, 0, 1, 1, aux));
-        System.out.println(answerQuery(2, 2, 3, 4, aux));
-        System.out.println(answerQuery(1, 2, 3, 3, aux));
+//        System.out.println(answerQuery(0, 0, 1, 1, aux));
+//        System.out.println(answerQuery(2, 2, 3, 4, aux));
+//        System.out.println(answerQuery(1, 2, 3, 3, aux));
+
+        mat = new int[][]{
+                {3, 0, 1, 4, 2},
+                {5, 6, 3, 2, 1},
+                {1, 2, 0, 1, 5},
+                {4, 1, 0, 1, 7},
+                {1, 0, 3, 0, 5}
+        };
+
+        aux = preProcess(mat);
+        System.out.println(answerQuery(2, 1, 4, 3, aux));
+        System.out.println(answerQuery(1, 1, 2, 2, aux));
+        System.out.println(answerQuery(1, 2, 2, 4, aux));
+
+
     }
 
-    public static int answerQuery(int tli, int tlj, int rbi, int rbj, int[][] aux) {
+    public static int answerQuery(int row1, int col1,
+                                  int row2, int col2, int[][] preprocess) {
         // Now since we have all prefix sum of cols and then on top rows as well.
 
         /**
+         * This is kind of Range Sum problem, where prefix sum plays a major role.
          * So let's Remove Unnecessary row  sum from previous rows
          * nd also remove Unnecessary col sum from previous cols.
          *
-         * aux[rbi][rbj] - aux[tli-1][rbj](Extra Row Sum) - aux[tlj-1][rbi](extra colsum)
-         * + aux[tli-1][tli-1] (Why this addition).
+         * preprocess[row2][col2] -
+         *      (
+         *      preprocess[row1-1][col2](Extra Row Sum)
+         *          - SUBTRACT
+         *      preprocess[col1-1][row2](extra colsum)
+         *      )
+         *      + ADD
+         *      preprocess[row1-1][row1-1] (Why this addition).
          *
          * Since this column is getting hit twice once in rows sum and another in cols sum
          * hence we have to discount him once.
          */
-        int res = aux[rbi][rbj];
+        int res = preprocess[row2][col2];
 
-        if (tli > 0) {
-            res -= aux[tli - 1][rbj];
+        if (row1 > 0) {
+            res -= preprocess[row1 - 1][col2];
         }
-        if (tlj > 0) {
-            res -= aux[tlj - 1][rbi];
+        if (col1 > 0) {
+            res -= preprocess[row2][col1 - 1];
         }
-        if (tli > 0 && tlj > 0) {
-            res += aux[tli - 1][tlj - 1];
+        if (row1 > 0 && col1 > 0) {
+            res += preprocess[row1 - 1][col1 - 1];
         }
         return res;
     }

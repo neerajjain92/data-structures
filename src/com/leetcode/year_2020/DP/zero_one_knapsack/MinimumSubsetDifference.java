@@ -19,9 +19,10 @@ public class MinimumSubsetDifference {
 
     public static void main(String[] args) {
         System.out.println(minimumSubsetDifference(new int[]{1, 2, 7}));
-        System.out.println(minimumSubsetDifference(new int[]{1, 6, 11, 5}));
-        System.out.println(minimumSubsetDifference(new int[]{1, 5, 11, 5}));
-        System.out.println(minimumSubsetDifference(new int[]{1, 5, 3}));
+//        System.out.println(minimumSubsetDifference(new int[]{1, 6, 11, 5}));
+//        System.out.println(minimumSubsetDifference(new int[]{1, 5, 11, 5}));
+//        System.out.println(minimumSubsetDifference(new int[]{1, 5, 3}));
+//        System.out.println(minimumSubsetDifference(new int[]{4, 100, 1, 23, 20}));
     }
 
     public static int minimumSubsetDifference(int[] set) {
@@ -98,12 +99,20 @@ public class MinimumSubsetDifference {
          */
         boolean dp[][] = getSubSetSUMCache(set, SUM);
 
+        int sumOfOneSet_S1 = 0;
         for (int S1 = 1; S1 <= SUM / 2; S1++) {
             if (dp[dp.length - 1][S1]) { // If an only if a subset is present for the following sum
                 // we can include it for Min difference calculation
+                if (MIN_DIFFERENCE > SUM - (2 * S1)) {
+                    sumOfOneSet_S1 = S1;
+                }
                 MIN_DIFFERENCE = Math.min(MIN_DIFFERENCE, SUM - (2 * S1));
+
             }
         }
+
+        // Go through all the rows.
+        System.out.println("Sum of 1 set is " + sumOfOneSet_S1 + " and another set is " + (SUM - sumOfOneSet_S1));
         return MIN_DIFFERENCE;
     }
 

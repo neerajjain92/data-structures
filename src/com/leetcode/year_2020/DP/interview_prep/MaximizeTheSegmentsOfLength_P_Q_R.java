@@ -15,6 +15,7 @@ public class MaximizeTheSegmentsOfLength_P_Q_R {
         getMaxCut(11, 2, 3, 5);
         getMaxCut(7, 2, 3, 5);
         getMaxCut(7, 2, 5, 5);
+        getMaxCut(4, 1, 2, 4);
     }
 
     static int dp[]; // Memorization
@@ -36,8 +37,15 @@ public class MaximizeTheSegmentsOfLength_P_Q_R {
         int minSegmentLength = Math.min(p, Math.min(q, r));
         if (length < minSegmentLength) return 0; // You can't make a cut of segment length 0.
 
-        if (length == p || length == q || length == r) {
-            return 1; // If our length is just the segment length we can make a maximum of 1 cut.
+        if (length % p == 0) {
+            return length / p;
+        }
+        if (length % q == 0) {
+            return length / q;
+        }
+
+        if (length % r == 0) {
+            return length / r;
         }
 
         if (dp[length] != -1) return dp[length];

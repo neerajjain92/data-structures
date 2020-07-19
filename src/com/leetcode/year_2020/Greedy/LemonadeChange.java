@@ -13,6 +13,7 @@ import java.util.Stack;
 public class LemonadeChange {
 
     public static void main(String[] args) {
+        Integer.reverse(5);
         System.out.println(lemonadeChangeGreedy(new int[]{5, 5, 5, 10, 20}));
         System.out.println(lemonadeChangeGreedy(new int[]{5, 5, 5, 20, 10}));
         System.out.println(lemonadeChangeGreedy(new int[]{5, 5, 5, 5, 20, 10}));

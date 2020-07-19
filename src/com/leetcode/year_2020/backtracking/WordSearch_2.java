@@ -84,7 +84,7 @@ public class WordSearch_2 {
 
     public static List<String> findWords(char[][] board, String[] words) {
         res = new HashSet<String>();
-        if(words.length == 0) return Collections.EMPTY_LIST;
+        if (words.length == 0) return Collections.EMPTY_LIST;
         root = new TrieNode('#');
         for (String word : words) {
             root.insert(word);
@@ -116,10 +116,10 @@ public class WordSearch_2 {
 
         visited[i][j] = true;
         // Go in all 4 directions
-        findWords(i - 1, j, board, visited, current);
-        findWords(i, j + 1, board, visited, current);
-        findWords(i + 1, j, board, visited, current);
-        findWords(i, j - 1, board, visited, current);
+        findWords(i - 1, j, board, visited, current); // Top
+        findWords(i, j + 1, board, visited, current); // Right
+        findWords(i + 1, j, board, visited, current); // Bottom
+        findWords(i, j - 1, board, visited, current); // Left
         visited[i][j] = false;
     }
 }

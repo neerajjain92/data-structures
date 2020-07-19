@@ -1,6 +1,8 @@
 package com.leetcode.year_2020.MayChallenge.week2;
 
 /**
+ * Find the element that appears once in sorted array
+ * https://practice.geeksforgeeks.org/problems/find-the-element-that-appears-once-in-sorted-array/0
  * @author neeraj on 12/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -52,7 +54,7 @@ public class SingleElementInSortedArray {
 
             if (mid % 2 == 0) { // So this means, this is the first item of pair
                 if (nums[mid] == nums[mid + 1]) {
-                    low = low + 2; // perfect our assumption is correct so single item is on right side.
+                    low = mid + 2; // perfect our assumption is correct so single item is on right side.
                     // why +2 since we are on 1st item of pair.
                 } else {  // Our trust broke, item on mid(even) is not the first item of pair.
                     high = mid;

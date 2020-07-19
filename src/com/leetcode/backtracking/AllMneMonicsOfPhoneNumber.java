@@ -67,11 +67,15 @@ public class AllMneMonicsOfPhoneNumber {
         int currentMnemonicPointer = 0;
 
         solveMnemonicsHelper(digit, currentMnemonicInProcess, allMnemonics, currentMnemonicPointer);
-        LogUtil.logIt("All Mnemonics which can be generated using a digit "+ digit);
+        LogUtil.logIt("All Mnemonics which can be generated using a digit " + digit);
         LogUtil.printList(allMnemonics);
         return allMnemonics;
     }
 
+    /**
+     * Since maximum letters in any digit is just 4 and in worst case we can get input as 799
+     * where each digit has 4 letters so we have to do 4 recursive calls at each of those letter so O(4^N) calls.
+     */
     private static void solveMnemonicsHelper(String digit, char[] currentMnemonicInProcess, List<String> allMnemonics, int currentMnemonicPointer) {
 
         // Base Case

@@ -1,4 +1,4 @@
-package com.leetcode.problems.medium;
+package com.leetcode.year_2020.binary_search;
 
 import com.geeksforgeeks.array.Rotate2DMatrix;
 import com.util.LogUtil;

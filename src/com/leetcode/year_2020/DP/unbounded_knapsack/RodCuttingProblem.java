@@ -15,6 +15,12 @@ public class RodCuttingProblem {
                 new int[]{1, 5, 8, 9, 10, 17, 17, 20},
                 8
         ));
+
+        System.out.println(cutRodAndFindMaximumProfit(
+                new int[]{2, 3, 5},
+                new int[]{2, 3, 5},
+                11
+        ));
     }
 
     static int t[][]; // Memorization and BottomUp Cache.

@@ -1,4 +1,4 @@
-package com.leetcode.problems.medium;
+package com.leetcode.year_2020.binary_search;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -48,6 +48,8 @@ public class BrokenCalculator {
             Y = Y % 2 == 0 ? Y / 2 : Y + 1;
             operation++;
         }
-        return operation + X - Y;
+        // We are doing X - Y since, we have decremented Y to a level less than X
+        // so we should subtract those many 1's from X.
+        return operation + (X - Y);
     }
 }

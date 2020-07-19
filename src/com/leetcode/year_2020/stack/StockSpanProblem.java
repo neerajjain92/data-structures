@@ -17,6 +17,7 @@ public class StockSpanProblem {
         printStockSpan(new int[]{100, 80, 60, 70, 60, 75, 85});
         printStockSpan(new int[]{1, 2, 3, 4, 5});
         printStockSpan(new int[]{31, 41, 48, 59, 79});
+
     }
 
     /**
@@ -44,7 +45,7 @@ public class StockSpanProblem {
                 if (!stack.isEmpty()) {
                     System.out.println(stockPrices[i] + "=========>" + (i - stack.peek()));
                 } else {
-                    System.out.println(stockPrices[i] + "=========>" + ((i + 1) - 0));
+                    System.out.println(stockPrices[i] + "=========>" + ((i + 1)));
                 }
                 stack.push(i);
             }

@@ -18,31 +18,37 @@ public class RemoveInvalidParentheses {
         Set<String> visited = new HashSet<>();
 
         /**
-         * We will do the BFS to find minimum invalid parentheses to remove
+         * We have to remove minimum parentheses to make the string valid, so we will try
+         * removing only brackets 1 by 1. Also since minimum parentheses is to be removed,
+         * BFS guarantees shortest path.
          */
         Queue<String> queue = new LinkedList<>();
         queue.add(s);
-        Boolean foundAValidString = false;
-        String current = "";
+        boolean foundAValidString = false;
 
         while (!queue.isEmpty()) {
-            current = queue.poll();
+            String polled = queue.poll();
 
-            if (isValid(current)) {
-                result.add(current);
+            if (isValid(polled)) {// Checking if we have a balanced parentheses.
+                result.add(polled);
                 foundAValidString = true;
             }
+
+            // This check ensures that once we have found any valid parentheses pattern
+            // we don't do any further BFS using items pending in the queue, since it will yield
+            // String of smaller strings.
+            // Whereas we will not break here since items of the same length might still be present and if some of them
+            // are valid we need to add them.
             if (foundAValidString) continue;
 
-            // Not a valid String, so we have to delete some invalid bracket
-            for (int i = 0; i < current.length(); i++) {
-                // we can only remove opening or closing bracket not alphabets
-                if (current.charAt(i) != '(' && current.charAt(i) != ')') continue;
-
-                String temp = current.substring(0, i) + current.substring(i + 1);
+            // Now this means we did not find a valid string
+            // and we have to try to remove 1 bracket.
+            for (int i = 0; i < polled.length(); i++) {
+                if (polled.charAt(i) != '(' && polled.charAt(i) != ')') continue;
+                String temp = polled.substring(0, i) + polled.substring(i + 1);
                 if (!visited.contains(temp)) {
-                    visited.add(temp);
                     queue.add(temp);
+                    visited.add(temp);
                 }
             }
         }

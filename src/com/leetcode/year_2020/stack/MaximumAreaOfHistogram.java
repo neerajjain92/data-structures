@@ -1,5 +1,7 @@
 package com.leetcode.year_2020.stack;
 
+import com.util.LogUtil;
+
 import java.util.Stack;
 
 /**
@@ -18,7 +20,18 @@ public class MaximumAreaOfHistogram {
         System.out.println(findMaxArea(new int[]{6, 2, 5, 4, 5, 1, 6}));
         System.out.println(findMaxArea(new int[]{1, 1}));
         System.out.println(findMaxArea(new int[]{2, 2, 2, 2}));
+
+        LogUtil.logIt("Hello .......Checking O(N) solution...");
+        System.out.println(findMaxArea_O_N(new int[]{2, 1, 5, 6, 2, 3}));
+        System.out.println(findMaxArea_O_N(new int[]{1}));
+        System.out.println(findMaxArea_O_N(new int[]{}));
+        System.out.println(findMaxArea_O_N(new int[]{3, 6, 5, 7, 4, 8, 1, 0}));
+        System.out.println(findMaxArea_O_N(new int[]{2, 1, 2}));
+        System.out.println(findMaxArea_O_N(new int[]{6, 2, 5, 4, 5, 1, 6}));
+        System.out.println(findMaxArea_O_N(new int[]{1, 1}));
+        System.out.println(findMaxArea_O_N(new int[]{2, 2, 2, 2}));
     }
+
 
     public static int findMaxArea(int[] height) {
         /**
@@ -103,10 +116,51 @@ public class MaximumAreaOfHistogram {
         int MAX_AREA = Integer.MIN_VALUE;
         for (int i = 0; i < right.length; i++) {
             int widthAtI = (right[i] - left[i]) - 1;
-            MAX_AREA = Math.max(
-                    (widthAtI * height[i]), MAX_AREA
-            );
+            MAX_AREA = Math.max((widthAtI * height[i]), MAX_AREA);
         }
         return MAX_AREA == Integer.MIN_VALUE ? 0 : MAX_AREA;
+    }
+
+    public static int findMaxArea_O_N(int[] height) {
+        if (height.length == 0) return 0;
+        /**
+         * We need to find nearest smallest element to the left
+         * and nearest smallest element to the right, then width for any i will be just
+         * width = (NEAREST_SMALLEST_RIGHT[i] - Nearest_SMALLEST_LEFT[i] - 1);
+         *
+         * Now let's calculate NSR and NSL efficiently without doing o(n^2) work and memorizing the previous work.
+         */
+        int[] NEAREST_SMALLEST_RIGHT = new int[height.length];
+        int[] NEAREST_SMALLEST_LEFT = new int[height.length];
+
+        NEAREST_SMALLEST_LEFT[0] = -1; // Since we know you have no smaller element for the first element
+        NEAREST_SMALLEST_RIGHT[NEAREST_SMALLEST_RIGHT.length - 1] = height.length; // similarly for last element nothing on the right side.
+
+        // First find smallest in left
+        for (int i = 1; i < height.length; i++) {
+            int j = i - 1;
+            while (j >= 0 && height[j] >= height[i]) {
+                // This is memorization , what we are saying here is that if for height[j] we already know,
+                // what is the smallest element to the left of this guys, then we should directly jump on that instead of
+                // decrementing it by 1 every-time.
+                j = NEAREST_SMALLEST_LEFT[j];
+            }
+            NEAREST_SMALLEST_LEFT[i] = j;
+        }
+
+        // Now find smallest in right
+        for (int i = height.length - 2; i >= 0; i--) {
+            int j = i + 1;
+            while (j < height.length && height[j] >= height[i]) {
+                j = NEAREST_SMALLEST_RIGHT[j];
+            }
+            NEAREST_SMALLEST_RIGHT[i] = j;
+        }
+
+        int maxWidth = Integer.MIN_VALUE;
+        for (int i = 0; i < height.length; i++) {
+            maxWidth = Math.max(maxWidth, height[i] * (NEAREST_SMALLEST_RIGHT[i] - NEAREST_SMALLEST_LEFT[i] - 1));
+        }
+        return maxWidth;
     }
 }

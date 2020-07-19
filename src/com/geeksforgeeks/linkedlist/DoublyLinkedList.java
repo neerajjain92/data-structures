@@ -79,6 +79,25 @@ public class DoublyLinkedList {
         printList(head);
     }
 
+    public Node reverseDLLRecursively(Node head) {
+        if (head == null) return head; // Single node can't be reversed
+
+        if (head.next == null) {
+            head.prev = null;
+            return head;
+        }
+
+        Node reversedHead = reverseDLLRecursively(head.next);
+
+        // Creating the forward link to myself.... from the next node.
+        head.next.next = head;
+        // Current's previous will point to the next node.
+        head.prev = head.next;
+
+        head.next = null;
+        return reversedHead;
+    }
+
     public static void main(String[] args) {
         DoublyLinkedList util = new DoublyLinkedList();
 
@@ -93,13 +112,17 @@ public class DoublyLinkedList {
         util = new DoublyLinkedList();
         util.append(1);
         util.append(2);
-//        util.append(3);
-//        util.append(4);
-//        util.append(5);
+        util.append(3);
+        util.append(4);
+        util.append(5);
 
         util.printList(util.head);
 
         System.out.println("===========Reverse Doubly Linked List=================");
-        util.reverseDoublyLinkedList(util.head);
+//        util.reverseDoublyLinkedList(util.head);
+
+
+        util.head = util.reverseDLLRecursively(util.head);
+        util.printList(util.head);
     }
 }

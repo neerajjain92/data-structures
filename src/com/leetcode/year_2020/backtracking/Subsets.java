@@ -17,6 +17,7 @@ public class Subsets {
     public static void main(String[] args) {
         System.out.println(powerset(new int[]{1, 2, 3}));
         System.out.println(powerset(new int[]{1, 2, 2}));
+        System.out.println(powerset(new int[]{1, 2, 3, 4}));
     }
 
     public static List<List<Integer>> powerset(int[] inputSet) {

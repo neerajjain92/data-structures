@@ -23,6 +23,20 @@ public class TreeNode {
         inorder(root.right);
     }
 
+    public static void preorder(TreeNode root) {
+        if (root == null) return;
+        System.out.print(root.val + "\t");
+        preorder(root.left);
+        preorder(root.right);
+    }
+
+    public static void postOrder(TreeNode root) {
+        if (root == null) return;
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.print(root.val + "\t");
+    }
+
     @Override
     public String toString() {
         return "" + val;

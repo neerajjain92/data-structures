@@ -9,6 +9,10 @@ import java.util.Map;
 import java.util.Random;
 
 /**
+ * https://leetcode.com/problems/random-pick-with-weight/
+ * <p>
+ * Probability Proportion
+ *
  * @author neeraj on 05/06/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -26,7 +30,10 @@ public class RandomPickwithWeight {
 
         int[] w = new int[]{2, 5, 3, 4};
 //        Solution solution = new Solution(w);
+
         SolutionUsingBinarySearchAndPrefixSum solution = new SolutionUsingBinarySearchAndPrefixSum(w);
+
+
         Map<Integer, Integer> weightAndItsFrequency = new HashMap<>();
         for (int i = 0; i < 10000; i++) {
             int index = solution.pickIndex();

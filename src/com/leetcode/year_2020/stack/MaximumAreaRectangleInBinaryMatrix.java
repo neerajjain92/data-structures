@@ -30,7 +30,7 @@ public class MaximumAreaRectangleInBinaryMatrix {
     }
 
     public static int maximalRectangle(char[][] matrix) {
-        if(matrix.length == 0 || matrix[0].length == 0) return 0;
+        if (matrix.length == 0 || matrix[0].length == 0) return 0;
         /**
          * If you notice carefully, we can break down this problem into {@link MaximumAreaOfHistogram},
          * how we will convert the 2D array into 1D array. and check the histogram for that.
@@ -42,13 +42,13 @@ public class MaximumAreaRectangleInBinaryMatrix {
          *   ["1","0","0","1","0"]
          * ]
          *
-         * So let's start from top-most row. 1*4 matrix into 1d
+         * So let's start from top-most row. 1*5 matrix into 1d
          * if we put it into 1D histogram then height will become --> 1 0 1 0 0  callHistogramOnIt();
          *
          * Now let's try to include 2nd Row(2*4 matrix into 1d) in this and see how much height we can achieve
          * [2, 0, 2, 1, 1]
          *
-         * For Row 3  [3, 1, 3, 2, 2] (3*4 matrix into 1d)
+         * For Row 3  [3, 1, 3, 2, 2] (3*5 matrix into 1d)
          *
          * Now 4th Row is interesting... we can't do [4,1,3,3,2]
          * Reason : ===> Column 2 building will be in air, since at 4th row height is 0.... similar case for 3rd column.

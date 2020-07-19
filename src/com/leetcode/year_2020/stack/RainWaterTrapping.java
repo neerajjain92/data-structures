@@ -1,5 +1,9 @@
 package com.leetcode.year_2020.stack;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * https://leetcode.com/problems/trapping-rain-water/
  *
@@ -56,6 +60,16 @@ public class RainWaterTrapping {
                 right--;
             }
         }
+        List<String> letterLogs = new ArrayList<>();
+        Collections.sort(letterLogs, (a, b) -> {
+            int val = a.substring(a.indexOf(" ") + 1).compareTo(b.substring(b.indexOf(" ") + 1));
+            if (val == 0) {
+                return a.compareTo(b);
+            } else {
+                return val;
+            }
+        });
+
         return totalWaterCollected;
     }
 }

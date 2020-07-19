@@ -54,13 +54,13 @@ public class RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPop
 
     public static void main(String[] args) {
         List<StateAndPopulation> stateAndPopulations = Arrays.asList(
-                new StateAndPopulation("RAJASTHAN", 50),
-                new StateAndPopulation("MP", 40),
-                new StateAndPopulation("UP", 30),
-                new StateAndPopulation("UK", 20),
-                new StateAndPopulation("DEL", 10),
-                new StateAndPopulation("MAHARASHTRA", 5),
-                new StateAndPopulation("Telangana", 3)
+                new StateAndPopulation("RAJASTHAN", 1),
+                new StateAndPopulation("MP", 1),
+                new StateAndPopulation("UP", 3)
+//                new StateAndPopulation("UK", 20),
+//                new StateAndPopulation("DEL", 10),
+//                new StateAndPopulation("MAHARASHTRA", 5),
+//                new StateAndPopulation("Telangana", 3)
         );
         RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation obj =
                 new RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation();

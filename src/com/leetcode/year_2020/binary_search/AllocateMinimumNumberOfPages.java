@@ -1,7 +1,5 @@
 package com.leetcode.year_2020.binary_search;
 
-import java.util.PriorityQueue;
-
 /**
  * https://www.geeksforgeeks.org/allocate-minimum-number-pages/
  * https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
@@ -14,28 +12,12 @@ import java.util.PriorityQueue;
 public class AllocateMinimumNumberOfPages {
 
     public static void main(String[] args) {
-        int x = 3;
-
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> {
-            if (Math.abs(b - x) == Math.abs(a - x)) {
-                return b - a;
-            } else {
-                return Math.abs(b - x) - Math.abs(a - x);
-            }
-        });
-        for (int i : new int[]{1, 2, 3, 4, 5}) {
-            maxHeap.add(i);
-            if (maxHeap.size() > 4) {
-                maxHeap.poll();
-            }
-        }
-
-        System.out.println(maxHeap);
-
-//        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{10, 20, 30, 40}, 2));
-//        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{12, 34, 67, 90}, 2));
-//        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{7, 2, 5, 10, 8}, 2));
-//        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{1, 4, 4}, 3));
+        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{10, 20, 30, 40}, 2));
+        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{12, 34, 67, 90}, 2));
+        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{7, 2, 5, 10, 8}, 2));
+        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{1, 4, 4}, 3));
+        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{6, 5, 4, 3, 2, 1}, 2));
+        System.out.println(findMinimumNumberOfMaximumPagesStudentCanRead(new int[]{5, 7, 4, 2, 8, 1, 6}, 3));
     }
 
     public static int findMinimumNumberOfMaximumPagesStudentCanRead(int[] pages, int students) {
@@ -67,11 +49,17 @@ public class AllocateMinimumNumberOfPages {
          * that every student can read the book
          */
 
-        int low = 0, high;
+        int low, high;
+
+        // Since the restriction is that 1 user has to read at least 1 book, so we can start
+        // low from the highest possible value
         int totalPages = 0;
+        int maxPageBook = Integer.MIN_VALUE;
         for (int page : pages) {
             totalPages += page;
+            maxPageBook = Math.max(page, maxPageBook);
         }
+        low = maxPageBook;
         high = totalPages;
         int MinimumOfMaximumPagesAStudentCanRead = Integer.MAX_VALUE;
 
@@ -109,18 +97,16 @@ public class AllocateMinimumNumberOfPages {
     }
 
     private static boolean isThisMaximumPageAStudentCanRead(int maximumPagesAStudentCanRead, int[] pages, int students) {
-        int totalPagesStudentHaveRead = 0;
-        int studentRequired = 1;
+
+        int runningSumOfPages = 0;
         for (int pageInBook : pages) {
             if (pageInBook > maximumPagesAStudentCanRead) return false;
-            totalPagesStudentHaveRead += pageInBook;
-            if (totalPagesStudentHaveRead > maximumPagesAStudentCanRead) {
-                studentRequired++; // 1 student's limit is exhausted.
-                totalPagesStudentHaveRead = pageInBook; // Resetting it to the current book pages.
+            runningSumOfPages += pageInBook;
+            if (runningSumOfPages > maximumPagesAStudentCanRead) {
+                students--;
+                runningSumOfPages = pageInBook; // Reset it to current book's page
             }
-
-            if (studentRequired > students) return false;
         }
-        return true;
+        return students > 0;
     }
 }

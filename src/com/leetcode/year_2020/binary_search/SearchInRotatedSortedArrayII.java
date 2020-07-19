@@ -1,4 +1,4 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.binary_search;
 
 /**
  * @author neeraj on 29/04/20
@@ -10,6 +10,7 @@ public class SearchInRotatedSortedArrayII {
     public static void main(String[] args) {
         System.out.println(search(new int[]{3, 1}, 1));
         System.out.println(search(new int[]{3, 1, 2}, 3));
+        System.out.println(search(new int[]{1, 3, 1, 1, 1}, 3)); // Failure if you use simply SearchInRotatedSorted technique
         System.out.println(search(new int[]{1, 3, 1, 1, 1}, 1));
         System.out.println(search(new int[]{2, 5, 6, 0, 0, 1, 2}, 0));
         System.out.println(search(new int[]{2, 5, 6, 0, 0, 1, 2}, 3));
@@ -28,16 +29,16 @@ public class SearchInRotatedSortedArrayII {
 
             // Left Side Sorted
             if (nums[low] < nums[mid]) {
-                if (target < nums[low] || target > nums[mid]) { // Check if value lies in left side or right
-                    return search(nums, mid + 1, high, target);
-                } else {
+                if (nums[low] <= target && target < nums[mid]) {
                     return search(nums, low, mid - 1, target);
+                } else {
+                    return search(nums, mid + 1, high, target);
                 }
             } else if (nums[low] > nums[mid]) { // Right Side is Sorted
-                if (target < nums[mid] || target > nums[high]) { // Check if value lies in left side or right
-                    return search(nums, low, mid - 1, target);
-                } else {
+                if (nums[mid] < target && target <= nums[high]) {
                     return search(nums, mid + 1, high, target);
+                } else {
+                    return search(nums, low, mid - 1, target);
                 }
             } else {
                 // nums[low] == nums[mid] ... Duplicate entry

@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.backtracking;
+package com.datastructures.recursion;
 
 import java.util.HashSet;
 import java.util.Set;

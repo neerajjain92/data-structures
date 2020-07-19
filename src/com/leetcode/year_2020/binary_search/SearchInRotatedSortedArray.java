@@ -1,4 +1,4 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.binary_search;
 
 /**
  * @author neeraj on 19/04/20
