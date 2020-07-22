@@ -13,7 +13,6 @@ public class TestIfABinaryTreeIsHeightBalanced {
         System.out.println(isBalanced(buildTreeFromPreOrderAndInorder(
                 new int[]{1, 2, 3, 4, 2, 3, 4},
                 new int[]{4, 3, 2, 1, 2, 3, 4})));
-
         System.out.println(isBalanced(buildTreeFromPreOrderAndInorder(
                 new int[]{3, 9, 20, 15, 7},
                 new int[]{9, 3, 15, 20, 7})));
@@ -39,12 +38,12 @@ public class TestIfABinaryTreeIsHeightBalanced {
         if (root == null) return new HeightAndBalanced(-1, true);
 
         HeightAndBalanced left = isBalancedUtil(root.left);
-        if(!left.isBalanced) {
+        if (!left.isBalanced) {
             return left;
         }
 
         HeightAndBalanced right = isBalancedUtil(root.right);
-        if(!right.isBalanced) {
+        if (!right.isBalanced) {
             return right;
         }
 

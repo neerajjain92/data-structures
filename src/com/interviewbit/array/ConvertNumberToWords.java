@@ -67,8 +67,9 @@ public class ConvertNumberToWords {
     }
 
     public static void main(String[] args) {
-        convert(1);
-        convert(12);
+//        convert(1);
+//        convert(12);
+        convert(12456);
         convert(123);
         convert(1234);
         convert(12345);

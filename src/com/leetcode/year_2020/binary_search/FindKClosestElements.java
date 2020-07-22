@@ -11,9 +11,9 @@ import java.util.List;
 public class FindKClosestElements {
 
     public static void main(String[] args) {
-        System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 4, 3));
-        System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 2, 3));
-        System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 2, -1));
+//        System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 4, 3));
+//        System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 2, 3));
+//        System.out.println(findClosestElementsUsingBinarySearch(new int[]{1,2,3,4,5}, 2, -1));
 
 
         // Duplicates

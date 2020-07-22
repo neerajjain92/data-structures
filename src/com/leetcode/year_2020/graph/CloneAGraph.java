@@ -39,13 +39,11 @@ public class CloneAGraph {
         Node node2 = new Node(2);
         Node node3 = new Node(3);
         Node node4 = new Node(4);
-        Node node5 = new Node(5);
 
-        node1.neighbors.addAll(Arrays.asList(node2, node3));
-        node2.neighbors.addAll(Arrays.asList(node1, node3, node4));
-        node3.neighbors.addAll(Arrays.asList(node1, node2, node5));
-        node4.neighbors.addAll(Arrays.asList(node2, node5));
-        node5.neighbors.addAll(Arrays.asList(node3, node4));
+        node1.neighbors.addAll(Arrays.asList(node2, node4));
+        node2.neighbors.addAll(Arrays.asList(node1, node3));
+        node3.neighbors.addAll(Arrays.asList(node2, node4));
+        node4.neighbors.addAll(Arrays.asList(node1, node3));
 
         cloneGraph(node1);
     }
@@ -79,13 +77,12 @@ public class CloneAGraph {
         }
 
         for (Node neighbourVertex : sourceVertex.neighbors) {
+            originalNodeToClonedNodeMap.putIfAbsent(neighbourVertex, new Node(neighbourVertex.val));
+
+            // Now add the edge in the Cloned version.
+            originalNodeToClonedNodeMap.get(sourceVertex).
+                    neighbors.add(originalNodeToClonedNodeMap.get(neighbourVertex));
             if (!visited.contains(neighbourVertex)) {
-                originalNodeToClonedNodeMap.putIfAbsent(neighbourVertex, new Node(neighbourVertex.val));
-
-                // Now add the edge in the Cloned version.
-                originalNodeToClonedNodeMap.get(sourceVertex).
-                        neighbors.add(originalNodeToClonedNodeMap.get(neighbourVertex));
-
                 doDFSAndCloneGraph(neighbourVertex, originalNodeToClonedNodeMap, visited);
             }
         }

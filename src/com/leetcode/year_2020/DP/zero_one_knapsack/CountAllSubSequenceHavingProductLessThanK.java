@@ -10,6 +10,7 @@ public class CountAllSubSequenceHavingProductLessThanK {
     public static void main(String[] args) {
         System.out.println(countOfAllSubsequence(new int[]{1, 2, 3, 4}, 10));
         System.out.println(countOfAllSubsequence(new int[]{4, 8, 7, 2}, 50));
+        System.out.println(countOfAllSubsequence(new int[]{10, 5, 2, 6}, 100));
     }
 
     public static int countOfAllSubsequence(int[] arr, int k) {

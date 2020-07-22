@@ -61,6 +61,7 @@ public class PopulatingNextRightPointersInEachNode_2 {
             if (root.left != null || root.right != null) {
                 return root.left != null ? root.left : root.right;
             }
+            root = root.next;
         }
         return null;
     }

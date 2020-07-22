@@ -19,10 +19,10 @@ public class MinimumSubsetDifference {
 
     public static void main(String[] args) {
         System.out.println(minimumSubsetDifference(new int[]{1, 2, 7}));
-//        System.out.println(minimumSubsetDifference(new int[]{1, 6, 11, 5}));
-//        System.out.println(minimumSubsetDifference(new int[]{1, 5, 11, 5}));
-//        System.out.println(minimumSubsetDifference(new int[]{1, 5, 3}));
-//        System.out.println(minimumSubsetDifference(new int[]{4, 100, 1, 23, 20}));
+        System.out.println(minimumSubsetDifference(new int[]{1, 6, 11, 5}));
+        System.out.println(minimumSubsetDifference(new int[]{1, 5, 11, 5}));
+        System.out.println(minimumSubsetDifference(new int[]{1, 5, 3}));
+        System.out.println(minimumSubsetDifference(new int[]{4, 100, 1, 23, 20}));
     }
 
     public static int minimumSubsetDifference(int[] set) {

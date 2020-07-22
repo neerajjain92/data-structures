@@ -36,10 +36,10 @@ public class KnightProbabilityInChessboard {
         if (r < 0 || c < 0 || r > N - 1 || c > N - 1) return 0;
         if (K == 0) return 1;
 
-        double probabilityForEachRound = 1/8d;// For Every Kth move we get 1/8 probabilityForEachRound.
+        double probabilityForEachRound = 1 / 8d;// For Every Kth move we get 1/8 probabilityForEachRound.
         double rate = 0;
         for (int[] direction : directions) {
-            rate += 1 / 8d * find(N, K - 1, r + direction[0], c + direction[1]);
+            rate += probabilityForEachRound * find(N, K - 1, r + direction[0], c + direction[1]);
         }
         return rate;
     }
