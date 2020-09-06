@@ -38,6 +38,7 @@ public class PatternMatching {
         System.out.println(findAndReplacePattern(new String[]{"aa", "bb"}, "cc"));
         System.out.println(findAndReplacePattern(new String[]{"aac", "bbc", "bcb", "yzy"}, "ghg"));
         System.out.println(findAndReplacePattern(new String[]{"aa", "bb"}, "zy"));
+        System.out.println(findAndReplacePattern(new String[]{"abb", "abc", "xyz", "xyy"}, "foo"));
     }
 
     public static List<String> findAndReplacePattern(String[] words, String pattern) {

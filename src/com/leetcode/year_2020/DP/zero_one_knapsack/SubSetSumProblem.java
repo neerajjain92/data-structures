@@ -23,7 +23,7 @@ public class SubSetSumProblem {
     public static boolean isSubSetSum(int[] set, int sum) {
         t = new Boolean[set.length + 1][sum + 1];
         boolean result = isSubSetSum(set, set.length - 1, sum);
-//        System.out.println("Recursive with Memorization  for Sum " + sum + " is " + result);
+        System.out.println("Recursive with Memorization  for Sum " + sum + " is " + result);
 //        dp = new boolean[set.length + 1][sum + 1];
 //        System.out.println("Bottom Up Approach  " + isSubSetSumBottomUp(set, set.length - 1, sum));
         return result;

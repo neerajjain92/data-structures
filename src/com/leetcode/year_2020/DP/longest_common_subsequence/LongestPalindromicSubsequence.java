@@ -11,6 +11,7 @@ public class LongestPalindromicSubsequence {
 
     public static void main(String[] args) {
         System.out.println(longestPalindromeSubseqUsingLCS("bbbab"));
+        System.out.println(longestPalindromeSubseqUsingLCS("abccccdd"));
         System.out.println(longestPalindromeSubseqUsingLCS("g"));
         System.out.println(longestPalindromeSubseqUsingLCS("abcd"));
         System.out.println(longestPalindromeSubseqUsingLCS("aab"));

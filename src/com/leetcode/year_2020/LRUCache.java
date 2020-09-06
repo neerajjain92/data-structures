@@ -13,8 +13,8 @@ public class LRUCache {
 
     private Map<Integer, DoublyLinkedListNode> cache;
     private Integer capacity;
-    DoublyLinkedListNode dummyHead = new DoublyLinkedListNode();
-    DoublyLinkedListNode dummyTail = new DoublyLinkedListNode();
+    DoublyLinkedListNode dummyHead;
+    DoublyLinkedListNode dummyTail;
 
     static class DoublyLinkedListNode {
         public DoublyLinkedListNode prev;

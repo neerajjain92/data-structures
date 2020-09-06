@@ -27,29 +27,32 @@ public class ReorganizeString {
         PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> charFreq.get(b) - charFreq.get(a));
         maxHeap.addAll(charFreq.keySet());
         StringBuilder result = new StringBuilder();
-        while (maxHeap.size() > 1) {
-            char first = maxHeap.poll();
-            char second = maxHeap.poll();
-            result.append(first).append(second);
 
-            if (charFreq.get(first) > 1) {
-                charFreq.put(first, charFreq.get(first) - 1);
-                maxHeap.add(first);
-            }
-            if (charFreq.get(second) > 1) {
-                charFreq.put(second, charFreq.get(second) - 1);
-                maxHeap.add(second);
-            }
-
-        }
-
-        if (!maxHeap.isEmpty()) {
-            if (charFreq.get(maxHeap.peek()) > 1) {
-                return "";
+        while (!maxHeap.isEmpty()) {
+            char item = maxHeap.poll();
+            if (result.length() > 0 && result.charAt(result.length() - 1) == item) {
+                if (maxHeap.isEmpty()) {
+                    return "";
+                } else {
+                    char nextItem = maxHeap.poll();
+                    result.append(nextItem);
+                    addItemToHeapAndMapIfNecessary(maxHeap, charFreq, nextItem);
+                    maxHeap.add(item);
+                }
             } else {
-                result.append(maxHeap.poll());
+                result.append(item);
+                addItemToHeapAndMapIfNecessary(maxHeap, charFreq, item);
             }
         }
         return result.toString();
+    }
+
+    private static void addItemToHeapAndMapIfNecessary(PriorityQueue<Character> maxHeap,
+                                                       Map<Character, Integer> charFreq,
+                                                       char item) {
+        if (charFreq.get(item) > 1) {
+            charFreq.put(item, charFreq.get(item) - 1);
+            maxHeap.add(item);
+        }
     }
 }

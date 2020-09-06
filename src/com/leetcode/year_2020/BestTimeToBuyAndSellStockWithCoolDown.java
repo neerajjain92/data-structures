@@ -10,7 +10,7 @@ package com.leetcode.year_2020;
 public class BestTimeToBuyAndSellStockWithCoolDown {
 
     public static void main(String[] args) {
-        System.out.println(maxProfit(new int[]{1,2,3,0,2}));
+        System.out.println(maxProfit(new int[]{1, 2, 3, 0, 2}));
     }
 
     /**
@@ -27,17 +27,27 @@ public class BestTimeToBuyAndSellStockWithCoolDown {
         // T[i][k][0] ==> i: day, k: transactions, 0 ==> At the end of day we have 0 shares left(we sold)
         // T[i][k][1] ==> i: day, k: transactions, 1 ==> At the end of day we have 1 shares left(we purchased)
 
+        /**
+         * But with "cooldown", we cannot buy on the i-th day if a stock is sold on the (i-1)-th day.
+         * Therefore, in the second equation above, instead of T[i-1][k][0], we should actually use T[i-2][k][0]
+         * if we intend to buy on the i-th day. Everything else remains the same and the new recurrence relations are
+         *
+         * T[i][k][0] = max(T[i-1][k][0], T[i-1][k][1] + prices[i])
+         * T[i][k][1] = max(T[i-1][k][1], T[i-2][k][0] - prices[i])
+         */
+
         int Ti_k0 = 0;
         int Ti_k1 = Integer.MIN_VALUE;
-        int previousProfit = 0; // This is the profit before cooldown date.
+        int T_i_minus_2_k_0 = 0; // This is the profit before cooldown date.
         // i.e the profit remained after selling the stock before cooldown date.
+
 
         for (int price : prices) {
             // Rest on Previous day or Sold today.
-            int Ti_k0_old = Ti_k0;
+            int profitADayBefore = Ti_k0;
             Ti_k0 = Math.max(Ti_k0, Ti_k1 + price);
-            Ti_k1 = Math.max(Ti_k1, previousProfit - price);
-            previousProfit = Ti_k0_old;
+            Ti_k1 = Math.max(Ti_k1, T_i_minus_2_k_0 - price);
+            T_i_minus_2_k_0 = profitADayBefore;
         }
         return Ti_k0;
     }

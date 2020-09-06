@@ -25,7 +25,7 @@ public class CourseScheduleII {
                 {1, 0}, {2, 0}, {3, 1}, {3, 2}
         }));
         LogUtil.printArray(findOrder(2, new int[][]{
-                {1, 0}, {0,1}
+                {1, 0}, {0, 1}
         }));
     }
 

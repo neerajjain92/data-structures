@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * https://www.geeksforgeeks.org/match-a-pattern-and-string-without-using-regular-expressions/
+ *
  * @author neeraj on 08/07/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -12,11 +13,14 @@ import java.util.Map;
 public class MatchAPatternAndStringWithoutRegularExpression {
 
     public static void main(String[] args) {
-        matchPattern("GRAPHTREEGRAPH", "ABA");
-        matchPattern("GRAPHGRAPHGRAPH", "AAA");
-        matchPattern("NJGMNJ", "GfG");
-        matchPattern("GeeksforGeeks", "GG");
-        matchPattern("EatSleep", "XY");
+//        matchPattern("GRAPHTREEGRAPH", "ABA");
+//        matchPattern("GRAPHGRAPHGRAPH", "AAA");
+//        matchPattern("NJGMNJ", "GfG");
+//        matchPattern("GeeksforGeeks", "GG");
+//        matchPattern("EatSleep", "XY");
+//        matchPattern("gogopowerrangergogopowerranger", "xxyxxy");
+        matchPattern("AABCC", "xyx");
+        matchPattern("AABCA", "xyx");
 
     }
 
@@ -54,6 +58,7 @@ public class MatchAPatternAndStringWithoutRegularExpression {
             if (!isRepeat) { // Only remove from map if this was a duplicate pattern.
                 matches.remove(patternAtThisStage);
             }
+
         }
 
     }

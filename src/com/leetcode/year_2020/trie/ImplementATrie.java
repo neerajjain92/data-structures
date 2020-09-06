@@ -1,4 +1,7 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.trie;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author neeraj on 27/04/20
@@ -29,6 +32,25 @@ public class ImplementATrie {
             System.out.println("Prefix : " + prefix + " ==> startsWith in TrieNode ? " + trie.startsWith(prefix));
         }
 
+        keys = new String[]{"at", "ate", "bad", "bed", "beat", "beard", "cap", "capital", "caption", "capatian", "captain america"};
+        for (String key : keys) {
+            trie.insert(key);
+        }
+        System.out.println(trie.getAllWordsMatchingThePrefix("cap"));
+
+        trie = new ImplementATrie();
+        keys = new String[]{"this", "is", "a", "big", "string"};
+        for (String key : keys) {
+            trie.insert(key);
+        }
+        System.out.println(trie.search("yo"));
+        System.out.println(trie.search("this"));
+        System.out.println(trie.search("is"));
+        System.out.println(trie.search("a"));
+        System.out.println(trie.search("bigger"));
+        System.out.println(trie.search("string"));
+        System.out.println(trie.search("kappa"));
+
     }
 
     public ImplementATrie() {
@@ -42,7 +64,11 @@ public class ImplementATrie {
         TrieNode curr = root;
         for (int level = 0; level < word.length(); level++) {
             char nextCharacter = word.charAt(level);
+
             int accessIndex = nextCharacter - 'a';
+            if (Character.isWhitespace(nextCharacter)) {
+                accessIndex = 26;
+            }
 
             if (curr.adjacents[accessIndex] == null) {
                 curr.adjacents[accessIndex] = new TrieNode(nextCharacter);
@@ -70,6 +96,36 @@ public class ImplementATrie {
         }
     }
 
+    public List<String> getAllWordsMatchingThePrefix(final String prefix) {
+        TrieNode curr = root;
+        List<String> allMatchingPrefix = new ArrayList<>();
+        if (startsWith(prefix)) {
+            for (char c : prefix.toCharArray()) {
+                int nextAccessIndex = c - 'a'; // to bring it under 0-25 index.
+                curr = curr.adjacents[nextAccessIndex];
+            }
+
+            // Now we have reached to a point where prefix ends.... now from this point we have to basically
+            // colled and return all words...
+            collectAllWords(curr, prefix, allMatchingPrefix);
+
+        } // Else if no such prefix we will not send anyting.
+        return allMatchingPrefix;
+    }
+
+    private void collectAllWords(TrieNode curr, String word, List<String> allMatchingPrefix) {
+        if (curr == null) return;
+        if (curr.endsWord) {
+            allMatchingPrefix.add(word);
+        }
+
+        for (int i = 0; i < curr.adjacents.length; i++) {
+            if (curr.adjacents[i] != null) {
+                collectAllWords(curr.adjacents[i], word + curr.adjacents[i].character, allMatchingPrefix);
+            }
+        }
+    }
+
     /**
      * Returns if there is any word in the trie that starts with the given prefix.
      */
@@ -91,7 +147,7 @@ public class ImplementATrie {
 
         public TrieNode(char character) {
             this.character = character;
-            this.adjacents = new TrieNode[26];
+            this.adjacents = new TrieNode[27]; // This last index will be used to store TrieNode representing space.
             this.endsWord = false;
         }
     }

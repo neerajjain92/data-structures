@@ -10,7 +10,7 @@ import java.util.*;
 public class WordBreak {
 
     public static void main(String[] args) {
-        List<String> dictionary = Arrays.asList("leet", "code");
+        List<String> dictionary =  Arrays.asList("leet", "code");
         System.out.println(canBreakWordUsingBFS("leetcode", dictionary));
 
         dictionary = Arrays.asList("apple", "pen");

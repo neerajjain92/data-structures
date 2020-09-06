@@ -25,7 +25,18 @@ public class WordSearch_2 {
                 {'a', 'b'}
         }, new String[]{"ba"}));
 
+        System.out.println(findWords(new char[][]{
+                {'t', 'h', 'i', 's', 'i', 's', 'a'},
+                {'s', 'i', 'm', 'p', 'l', 'e', 'x'},
+                {'b', 'x', 'x', 'x', 'x', 'e', 'b'},
+                {'x', 'o', 'g', 'g', 'l', 'x', 'o'},
+                {'x', 'x', 'x', 'd', 't', 'r', 'a'},
+                {'r', 'e', 'p', 'e', 'a', 'd', 'x'},
+                {'x', 'x', 'x', 'x', 'x', 'x', 'x'},
+                {'n', 'o', 't', 'r', 'e', 'r', 'e'},
+                {'x', 'd', 'e', 't', 'a', 'e', 'p'},
 
+        }, new String[]{"this", "is", "not", "a", "simple", "boggle", "board", "test", "repeated", "notrerepeated"}));
     }
 
     static class TrieNode {

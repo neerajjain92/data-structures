@@ -1,4 +1,4 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.backtracking;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,31 +28,25 @@ public class MaximumLengthOfConcatenatedStringWithUniqueCharacters {
 
     public static int maxLength(List<String> arr) {
         MAX_LENGTH = 0;
-        String temp = null;
-        for (int i = 0; i < arr.size(); i++) {
-            temp = arr.get(i);
-            // Check if this contains any duplicate.
-            if (!containDuplicateCharacters(temp)) {
-                findMaxLength(temp, i + 1, arr);
-            }
-        }
+        backtrack("", 0, arr);
         return MAX_LENGTH;
     }
 
-    private static void findMaxLength(String temp, int index, List<String> arr) {
-        MAX_LENGTH = temp.length() > MAX_LENGTH ? temp.length() : MAX_LENGTH;
-        if (index == arr.size()) return;
+    private static void backtrack(String temp, int index, List<String> arr) {
+        MAX_LENGTH = Math.max(temp.length(), MAX_LENGTH);
+        if (index == arr.size()) {
+            return;
+        }
 
         for (int i = index; i < arr.size(); i++) {
             if (!containDuplicateCharacters(temp + arr.get(i))) {
-                findMaxLength(temp + arr.get(i), i + 1, arr);
+                backtrack(temp + arr.get(i), i + 1, arr);
             }
         }
     }
 
     private static boolean containDuplicateCharacters(String temp) {
         int count[] = new int[26];
-
         for (char c : temp.toCharArray()) {
             if (count[c - 'a'] == 1) {
                 return true;

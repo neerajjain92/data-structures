@@ -3,9 +3,7 @@ package com.leetcode.year_2020.sliding_window;
 import com.util.LogUtil;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * https://leetcode.com/problems/fruit-into-baskets/
@@ -21,12 +19,14 @@ public class FruitsIntoBasket {
         System.out.println(totalFruit(new int[]{0, 1, 2, 2}));
         System.out.println(totalFruit(new int[]{1, 2, 3, 2, 2}));
         System.out.println(totalFruit(new int[]{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4}));
+        System.out.println(totalFruit(new int[]{5, 9, 0, 9, 6, 9, 6, 9, 9, 9}));
 
         LogUtil.logIt("With Sliding Window O(N) approach...");
         System.out.println(lengthOfLongestSubstringTwoDistinct(new int[]{1, 2, 1}));
         System.out.println(lengthOfLongestSubstringTwoDistinct(new int[]{0, 1, 2, 2}));
         System.out.println(lengthOfLongestSubstringTwoDistinct(new int[]{1, 2, 3, 2, 2}));
         System.out.println(lengthOfLongestSubstringTwoDistinct(new int[]{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4}));
+        System.out.println(lengthOfLongestSubstringTwoDistinct(new int[]{5, 9, 0, 9, 6, 9, 6, 9, 9, 9}));
     }
 
     /**
@@ -63,29 +63,30 @@ public class FruitsIntoBasket {
     public static int totalFruit(int[] trees) {
         /**
          * This problem is exactly similar to {@link LongestSubStringWithMUniqueCharacters}
-         * In this case we just have M always 2
+         * In this case we just have M always 2, but it will throw TLE since we are putting these items
+         * again and again in the set and then calculating it, it would be better if we could just use HashMap
+         * to for the same.
          */
         int start = 0, end = 0;
         int maxTotalFruit = 0;
-        while (end < trees.length) {
-            int unique = unique(trees, start, end);
-            if (unique <= 2) {
-                if (unique == 2) {
-                    maxTotalFruit = Math.max(maxTotalFruit, end - start + 1);
-                }
-                end++;
+        Map<Integer, Integer> bucket = new HashMap<>();
+        while (end < trees.length && start <= end) {
+            bucket.put(trees[end], bucket.getOrDefault(trees[end], 0) + 1);
+            if (bucket.size() <= 2) {
+                maxTotalFruit = Math.max(maxTotalFruit, end - start + 1);
             } else {
+                // we found more fruits than our bucket can accommodate.
+                // so let's throw some fruit from our bucket.
+                Integer count = bucket.get(trees[start]);
+                if (count > 1) {
+                    bucket.put(trees[start], count - 1);
+                } else {
+                    bucket.remove(trees[start]);
+                }
                 start++;
             }
+            end++;
         }
         return maxTotalFruit;
-    }
-
-    private static int unique(int[] trees, int start, int end) {
-        Set<Integer> set = new HashSet<>();
-        for (int i = start; i <= end; i++) {
-            set.add(trees[i]);
-        }
-        return set.size();
     }
 }

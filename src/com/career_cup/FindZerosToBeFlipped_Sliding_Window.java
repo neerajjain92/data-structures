@@ -17,6 +17,24 @@ public class FindZerosToBeFlipped_Sliding_Window {
 
     public static void main(String[] args) {
         findZerosToBeFlippedToGetMaximumConsecutiveOnes(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2);
+        longestOnes(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2);
+
+        findZerosToBeFlippedToGetMaximumConsecutiveOnes(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3);
+        longestOnes(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3);
+    }
+
+    public static int longestOnes(int[] arr, int k) {
+        int beg = 0, end = 0, noOfZeros = 0;
+        int answer = Integer.MIN_VALUE;
+        for (end = 0; end < arr.length; end++) {
+            if (arr[end] == 0) noOfZeros++;
+            while (noOfZeros > k) {
+                if (arr[beg] == 0) noOfZeros--;
+                beg++;
+            }
+            answer = Math.max(answer, end - beg);
+        }
+        return answer;
     }
 
     public static void findZerosToBeFlippedToGetMaximumConsecutiveOnes(int[] arr, int maxZerosToBeFlipped) {

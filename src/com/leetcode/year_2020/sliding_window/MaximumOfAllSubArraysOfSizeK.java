@@ -124,7 +124,7 @@ public class MaximumOfAllSubArraysOfSizeK {
         int rightMin[] = new int[arr.length];
 
         // Calculating LeftMax
-        for (int i = 0; i < arr.length; ) {
+        for (int i = 0; i < arr.length; i += K) {
             for (int j = i; j < i + K && j < arr.length; j++) {
                 if (j == i || leftMax[j - 1] < arr[j]) {
                     leftMax[j] = arr[j];
@@ -139,7 +139,6 @@ public class MaximumOfAllSubArraysOfSizeK {
                     leftMin[j] = leftMin[j - 1];
                 }
             }
-            i += K;
         }
 
 //        logIt("Array is ");
@@ -152,7 +151,7 @@ public class MaximumOfAllSubArraysOfSizeK {
 //        LogUtil.printArray(leftMin);
 
         // Calculating RightMax
-        for (int i = 0; i < arr.length; ) {
+        for (int i = 0; i < arr.length; i += K) {
             for (int j = i + K - 1; j >= i && j < arr.length; j--) {
                 if (j == i + K - 1 || rightMax[j + 1] < arr[j]) {
                     rightMax[j] = arr[j];
@@ -166,7 +165,6 @@ public class MaximumOfAllSubArraysOfSizeK {
                     rightMin[j] = rightMin[j + 1];
                 }
             }
-            i += K;
         }
 //        logIt("Right Max of each sub-window.");
 //        LogUtil.printArray(rightMax);

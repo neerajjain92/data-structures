@@ -57,6 +57,11 @@ public class UniqueBinarySearchTrees {
         G[0] = 1;
         G[1] = 1; // Base Clause.
 
+        /**
+         * Why are we going from 2------n, we could have just calculated directly for nth node,
+         * for a very simple fact that.....there are repeated computation we can store and re-use them
+         * So we know G[0] and G[1] is always 1.
+         */
         for (int i = 2; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 G[i] += G[j - 1] * G[i - j];

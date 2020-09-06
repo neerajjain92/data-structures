@@ -1,5 +1,7 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.tree;
 
+
+import com.leetcode.year_2020.TreeNode;
 
 /**
  * You are given a binary tree in which each node contains an integer value.

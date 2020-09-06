@@ -351,49 +351,51 @@ public class LinkedListUtil {
     }
 
     public void reverseAlternativeKNode(Node head, int k) {
+        k = 3;
         LogUtil.logIt("Reversing Alternative " + k + " nodes.....", true);
         printList();
-        int count = 0;
-        Node thisHead;
-        Node prevHead = null;
+
+        Node thisListHead = null;
+        Node previousListHead = null;
+        Node previous = null;
         Node curr = head;
-        Node prev;
-        Node nextOfCurrent;
-        Boolean shouldReverse = true;
+        int count = 0;
+        Boolean reverse = true;
 
         while (curr != null) {
-            thisHead = curr;
-            prev = null;
-            count = 0;
+            if (reverse) {
+                thisListHead = curr;
+                previous = null;
+                count = 0;
 
-            if (shouldReverse) {
-                shouldReverse = false;
-                while (curr != null && count++ < k) {
-                    nextOfCurrent = curr.next;
-                    curr.next = prev;
-                    prev = curr;
-                    curr = nextOfCurrent;
+                // Reverse the group
+                while (count++ < k && curr != null) {
+                    Node nextOfCurr = curr.next;
+                    curr.next = previous;
+                    previous = curr;
+                    curr = nextOfCurr;
                 }
 
-                if (prevHead == null) {
-                    head = prev;
+
+                // Now tie up the list
+                if (previousListHead == null) {
+                    head = previous;
                 } else {
-                    prevHead.next = prev;
+                    previousListHead.next = previous;
                 }
-
-                prevHead = thisHead;
+                previousListHead = thisListHead;
             } else {
-                shouldReverse = true;
-                if (prevHead != null) {
-                    prevHead.next = curr;
-                }
-                while (curr != null && count++ < k) {
-                    prev = curr;
+                previousListHead.next = curr;
+                count = 0;
+                while (count++ < k && curr != null) {
+                    previous = curr;
                     curr = curr.next;
                 }
-                prevHead = prev;
+                previousListHead = previous;
             }
+            reverse = !reverse;
         }
+
         LogUtil.logIt("After Reversing Alternative " + k + " nodes.....", true);
         this.head = head;
         printList();
