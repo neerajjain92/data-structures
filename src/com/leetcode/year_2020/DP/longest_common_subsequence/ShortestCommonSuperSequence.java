@@ -10,6 +10,7 @@ public class ShortestCommonSuperSequence {
     public static void main(String[] args) {
         System.out.println("ShortestCommonSuperSequence Length is " + findLengthOfShortestCommonSuperSequence("GEEKE", "EKE"));
         System.out.println("ShortestCommonSuperSequence Length is " + findLengthOfShortestCommonSuperSequence("AGGTAB", "GXTXAYB"));
+        System.out.println("ShortestCommonSuperSequence Length is " + findLengthOfShortestCommonSuperSequence("ABCDAF", "ACBCF"));
     }
 
     public static int findLengthOfShortestCommonSuperSequence(String str1, String str2) {

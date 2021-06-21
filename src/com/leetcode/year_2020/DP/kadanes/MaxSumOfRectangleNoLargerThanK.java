@@ -34,6 +34,11 @@ public class MaxSumOfRectangleNoLargerThanK {
                 {-3, -4, 4, 5},
                 {5, 1, 5, -4}};
         maxSumSubmatrix(inputs, 10);
+
+        inputs = new int[][]{{5, -4, -3, 4},
+                {-3, -4, 4, 5},
+                {5, 1, 5, -4}};
+        maxSumSubmatrix(inputs, 8);
     }
 
     enum Keywords {
@@ -62,7 +67,7 @@ public class MaxSumOfRectangleNoLargerThanK {
                 }
 
                 // Now find the maximum sum within this rectangle
-                kadaneOutput = kadanes(runningSumOfRectangle);
+                kadaneOutput = kadanes(runningSumOfRectangle, k);
 
                 if (MAXIMUM_SUM_RECTANGLE < kadaneOutput.get(Keywords.MAXIMUM_SUM) && kadaneOutput.get(Keywords.MAXIMUM_SUM) <= k) {
                     MAXIMUM_SUM_RECTANGLE = kadaneOutput.get(Keywords.MAXIMUM_SUM);
@@ -84,14 +89,14 @@ public class MaxSumOfRectangleNoLargerThanK {
         return MAXIMUM_SUM_RECTANGLE;
     }
 
-    private static Map<Keywords, Integer> kadanes(int[] runningSumOfRectangle) {
+    private static Map<Keywords, Integer> kadanes(int[] runningSumOfRectangle, int maxAllowedSum) {
         int start = 0, end = 0, tempStart = 0;
         int MAX_TILL_NOW = Integer.MIN_VALUE, MAX_ENDING_HERE = 0;
         Map<Keywords, Integer> kadaneOutput = new HashMap<>();
         for (int i = 0; i < runningSumOfRectangle.length; i++) {
             MAX_ENDING_HERE += runningSumOfRectangle[i];
 
-            if (MAX_TILL_NOW < MAX_ENDING_HERE) {
+            if (MAX_TILL_NOW < MAX_ENDING_HERE && MAX_ENDING_HERE <= maxAllowedSum) {
                 MAX_TILL_NOW = MAX_ENDING_HERE;
                 end = i;
                 start = tempStart;

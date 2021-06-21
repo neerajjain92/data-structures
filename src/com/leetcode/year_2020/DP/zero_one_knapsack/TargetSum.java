@@ -12,6 +12,23 @@ public class TargetSum {
     public static void main(String[] args) {
         System.out.println(findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3));
         System.out.println(findTargetSumWays(new int[]{1, 1, 2, 3}, 1));
+        /**
+         * For these corner cases, where input elements contains 0, we have to take important care for such items.
+         *
+         * Let's assume you have to make Sum [0], how many ways are there if all numbers are > 0, just one Empty Set{}
+         * but if input contains 0 as well, then we have 2 choices
+         *
+         *   Sum [0] | provided input [0] ===> {} or {0} and input has [0]
+         *
+         *  Now let's assume input has one more [0, 0]
+         *  then the choices are
+         *  Sum[0] | provided input [0, 0] ====> {}, {0}, {0,0}, {0(the last 0)}
+         *
+         *  Now you see a pattern here, as soon as we increase 0, the number of ways increments by (2), hence when we
+         *  fill in the first column where we have to make the sum[0], there based on input entry
+         *  if(nums[i] == 0) then dp[i][j] = 2 * dp[i-1][j]
+         *
+         */
         System.out.println(findTargetSumWays(new int[]{0,0,0,0,0,0,0,0,1}, 1));
     }
 

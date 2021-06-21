@@ -6,7 +6,7 @@ import com.util.LogUtil;
 /**
  * @author neeraj on 13/07/20
  * Copyright (c) 2019, data-structures.
- * All rights reserved.
+ * All rights reSubarray Sum Equals Kserved.
  */
 public class BinaryTreeMaximumPathSumBetweenAnyTwoLeaf {
 
@@ -48,7 +48,7 @@ public class BinaryTreeMaximumPathSumBetweenAnyTwoLeaf {
         int temp = root.val + Math.max(maxSumInLeft, maxSumInRight);
 
         // You can take the answer only when you have both left and right child
-        if (maxSumInLeft != 0 && maxSumInRight != 0) {
+        if (maxSumInLeft == 0 && maxSumInRight == 0) {
             MAX_SUM = Math.max(MAX_SUM, root.val + maxSumInLeft + maxSumInRight);
         }
         return temp;

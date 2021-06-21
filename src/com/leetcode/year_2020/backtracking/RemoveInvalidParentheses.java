@@ -3,6 +3,8 @@ package com.leetcode.year_2020.backtracking;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/remove-invalid-parentheses/
+ *
  * @author neeraj on 08/07/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -11,7 +13,9 @@ public class RemoveInvalidParentheses {
 
     public static void main(String[] args) {
         System.out.println(removeInvalidParentheses("()())()"));
+        System.out.println(removeInvalidParentheses(")("));
     }
+
 
     public static List<String> removeInvalidParentheses(String s) {
         List<String> result = new ArrayList<>();

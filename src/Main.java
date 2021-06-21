@@ -11,8 +11,182 @@ public class Main {
         System.out.println("Hello from printHello");
     }
 
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        System.out.println("Hello World!");
+    public static void printPattern() {
+        /**
+         * # # # # #
+         * # #   # #
+         * #   #   #
+         * # #   # #
+         * # # # # #
+         */
+        for (int i = 0; i < 5; i++) { // Rows
+            for (int j = 0; j < 5; j++) {
+                switch (i) {
+                    case 1:
+                    case 3:
+                        if (j == 2) System.out.print(" ");
+                        else System.out.print("*");
+                        break;
+                    case 2:
+                        if (j == 1 || j == 3) System.out.print(" ");
+                        else System.out.print("*");
+                        break;
+                    default:
+                        System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void decimalToBinary1(int number) {
+        int remainder, temp = number;
+        int bin = 1;
+        while (number > 0) {
+            remainder = number % 2;
+            bin = bin * 10 + remainder;
+            number /= 2;
+        }
+
+        System.out.println("Binary before reversal in version 1 is " + bin);
+        int reverse = 0;
+        while (bin > 1) {
+            reverse = reverse * 10 + bin % 10;
+            bin /= 10;
+        }
+        System.out.println("Binary of " + temp + " in version 1 is " + reverse);
+    }
+
+    public static void decimalToBinary(int number) {
+        int remainder, multiple = 1, binary = 0, temp = number, power = 0;
+        while (number != 0) {
+            remainder = number % 2;
+            binary = (int) (binary + remainder * Math.pow(10, power));
+            power++;
+            number = number / 2;
+        }
+        System.out.println("Binary of " + temp + " is " + binary);
+    }
+
+    public static void print() {
+        /**
+         *         1 2 3 4 5 6 7 6 5 4 3 2 1
+         *         1 2 3 4 5 6	 6 5 4 3 2 1
+         *         1 2 3 4 5	   5 4 3 2 1
+         *         1 2 3 4			 4 3 2 1
+         *         1 2 3			   3 2 1
+         *         1 2					 2 1
+         *         1					   1
+         */
+
+        //2*i 0
+        //2*1 2
+        //2*2 4
+        //2*3 6
+        //2*4 8
+        int leftLimit = 7;
+        int rightLimit = 7;
+        for (int i = 0; i < 7; i++) {
+
+            for (int j = 1; j <= leftLimit; j++) {
+                System.out.print(j + " ");
+            }
+            for (int k = 0; k < 2 * i; k++) {
+                System.out.print(" ");
+            }
+            if (i > 1) {
+                for (int k = 0; k < i - 1; k++) {
+                    System.out.print("  ");
+                }
+            }
+            for (int l = rightLimit; l > 0; l--) {
+                if (i == 0 && l == rightLimit) continue;
+                System.out.print(l + " ");
+            }
+            leftLimit--;
+            rightLimit--;
+            System.out.println();
+        }
+    }
+
+    public static void printStar() {
+        /**
+         * * * * * * * * * * * * * *
+         * * * * * * *   * * * * * *
+         * * * * * *       * * * * *
+         * * * * *           * * * *
+         * * * *               * * *
+         * * *                   * *
+         * *                       *
+         */
+        int leftLimit = 7;
+        int rightLimit = 7;
+        for (int i = 0; i < 7; i++) {
+
+            // Left Portion
+            for (int j = 1; j <= leftLimit; j++) {
+                System.out.print("* ");
+            }
+            // Middle Space
+            for (int k = 0; k < 2 * i - 1; k++) {
+                System.out.print(" ");
+            }
+            // Right Portion
+            for (int l = rightLimit; l > 0; l--) {
+                if (i == 0 && l == rightLimit) continue;
+                if (i == 0 && l == rightLimit - 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" *");
+                }
+            }
+            leftLimit--;
+            rightLimit--;
+            System.out.println();
+        }
+        /**
+         * *************
+         * ****** ******
+         * *****   *****
+         * ****     ****
+         * ***       ***
+         * **         **
+         * *           *
+         */
+    }
+
+    public static void printBakshi() {
+        int n = 5;
+        int t = n - 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= t; j++) {
+                System.out.print("*");
+            }
+            t = n - 1;
+            t = t + 1 - i;
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException,
+            InvocationTargetException, IllegalAccessException {
+
+        print();
+        printStar();
+        printBakshi();
+
+//        printPattern();
+//        decimalToBinary(216);
+//        decimalToBinary1(216);
+
+//        decimalToBinary(7);
+//        decimalToBinary1(7);
+//        decimalToBinary(8);
+//        decimalToBinary1(8);
+//        decimalToBinary(15);
+//        decimalToBinary1(15);
+//        decimalToBinary(13);
+//        decimalToBinary1(13);
 
 //        Class<?> MainClass = Class.forName("Main");
 //

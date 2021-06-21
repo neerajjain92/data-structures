@@ -14,9 +14,10 @@ import java.util.Arrays;
 public class SortAnArray {
 
     public static void main(String[] args) {
-        LogUtil.printArray(sort(new int[]{5, 4, 3, 2, 1}));
-        LogUtil.printArray(sort(new int[]{2, 3, 7, 6, 4, 5}));
-        LogUtil.printArray(sort(new int[]{100, 40, 30, 55, 55, 70, 30}));
+//        LogUtil.printArray(sort(new int[]{5, 4, 3, 2, 1}));
+//        LogUtil.printArray(sort(new int[]{2, 3, 7, 6, 4, 5}));
+//        LogUtil.printArray(sort(new int[]{100, 40, 30, 55, 55, 70, 30}));
+        sort();
     }
 
     public static int[] sort(int[] arr) {
@@ -32,6 +33,22 @@ public class SortAnArray {
         return placeLastItemAtItsSortedPosition(sortedArr, lastItem);
     }
 
+    public static void sort() {
+        int[] arr = new int[]{1, 4, 3, 5, 2};
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length -1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        for (int i : arr) {
+            System.out.print(i + ",");
+        }
+    }
+
     private static int[] placeLastItemAtItsSortedPosition(int[] sortedArr, int itemToBePlaced) {
         int[] arrayAfterPlacement = new int[sortedArr.length + 1];
         // base condition
@@ -39,7 +56,8 @@ public class SortAnArray {
             return new int[]{itemToBePlaced};
         }
         int lastItemInSortedArray = sortedArr[sortedArr.length - 1];
-        if (lastItemInSortedArray < itemToBePlaced) { // if the array is already sorted and lastElement < itemToBePlaced, them simply push.
+        if (lastItemInSortedArray < itemToBePlaced) { // if the array is already sorted and lastElement <
+            // itemToBePlaced, them simply push.
             int i = 0;
             for (; i < sortedArr.length; i++) {
                 arrayAfterPlacement[i] = sortedArr[i];
@@ -50,7 +68,8 @@ public class SortAnArray {
 
 
         // Hypothesis
-        int[] partialPlacement = placeLastItemAtItsSortedPosition(Arrays.copyOfRange(sortedArr, 0, sortedArr.length - 1),
+        int[] partialPlacement = placeLastItemAtItsSortedPosition(Arrays.copyOfRange(sortedArr, 0,
+                sortedArr.length - 1),
                 itemToBePlaced);
 
         // Induction

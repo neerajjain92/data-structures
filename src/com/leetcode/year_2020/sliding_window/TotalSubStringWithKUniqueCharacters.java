@@ -7,7 +7,6 @@ import com.util.LogUtil;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-@SuppressWarnings("DuplicateExpressions")
 public class TotalSubStringWithKUniqueCharacters {
 
     public static void main(String[] args) {

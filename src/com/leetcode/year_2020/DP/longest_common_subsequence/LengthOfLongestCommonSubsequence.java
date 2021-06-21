@@ -1,5 +1,7 @@
 package com.leetcode.year_2020.DP.longest_common_subsequence;
 
+import com.util.LogUtil;
+
 import java.util.Arrays;
 
 /**
@@ -89,6 +91,7 @@ public class LengthOfLongestCommonSubsequence {
 
         // Now let's also try to Print the Sequence.
         printLCS(s1, s2, dp);
+        LogUtil.printMultiDimensionArray(dp);
         return dp[s1.length][s2.length];
     }
 
@@ -109,6 +112,6 @@ public class LengthOfLongestCommonSubsequence {
                 }
             }
         }
-        System.out.println("LCS of " + new String(s1) + " and " + new String(s2) + " is " + result.reverse().toString());
+        System.out.println("LCS of " + new String(s1) + " and " + new String(s2) + " is " + result.reverse());
     }
 }

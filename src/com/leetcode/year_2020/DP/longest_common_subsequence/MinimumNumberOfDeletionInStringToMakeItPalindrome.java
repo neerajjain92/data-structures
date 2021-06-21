@@ -36,6 +36,7 @@ public class MinimumNumberOfDeletionInStringToMakeItPalindrome {
          * Now based on {@link LongestPalindromicSubsequence} we know it can be solved using
          * LCS(Longest Common Sequence) approach. By taking reverseOf(Input1) as input2.
          *
+         * Length of Longest Palindromic Subsequence (inversely proportional to ) 1 / (# of Deletion)
          * So our solution will be
          * MIN_DELETIONS = str.length - LCS(str1, reverse(str2));
          */

@@ -13,15 +13,16 @@ import com.util.LogUtil;
 public class LongestRepeatingSubsequence {
 
     public static void main(String[] args) {
-//        System.out.println(findLengthOfLongestRepeatingSubsequence("AABEBCDD"));
-//        System.out.println(findLengthOfLongestRepeatingSubsequence("AABABCD"));
-//        System.out.println(findLengthOfLongestRepeatingSubsequence("axxxy"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("AABEBCDD"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("AABABCD"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("axxxy"));
         System.out.println(findLengthOfLongestRepeatingSubsequence("BANANA"));
 //        System.out.println(findLengthOfLongestRepeatingSubsequence("moplvidmaagmsiyyrkchbyhivlqwqsjcgtumqscmxrxrvwsnjjvygrelcbjgbpounhuyealllginkitfaiviraqcycjmskrozcdqylbuejrgfnquercvghppljmojfvylcxakyjxnampmakyjbqgwbyokaybcuklkaqzawageypfqhhasetugatdaxpvtevrigynxbqodiyioapgxqkndujeranxgebnpgsukybyowbxhgpkwjfdywfkpufcxzzqiuglkakibbkobonunnzwbjktykebfcbobxdflnyzngheatpcvnhdwkkhnlwnjdnrmjaevqopvinnzgacjkbhvsdsvuuwwhwesgtdzuctshytyfugdqswvxisyxcxoihfgzxnidnfadphwumtgdfmhjkaryjxvfquucltmuoosamjwqqzeleaiplwcbbxjxxvgsnonoivbnmiwbnijkzgoenohqncjqnckxbhpvreasdyvffrolobxzrmrbvwkpdbfvbwwyibydhndmpvqyfmqjwosclwxhgxmwjiksjvsnwupraojuatksjfqkvvfroqxsraskbdbgtppjrnzpfzabmcczlwynwomebvrihxugvjmtrkzdwuafozjcfqacenabmmxzcueyqwvbtslhjeiopgbrbvfbnpmvlnyexopoahgmwplwxnxqzhucdieyvbgtkfmdeocamzenecqlbhqmdfrvpsqyxvkkyfrbyolzvcpcbkdprttijkzcrgciidavsmrczbollxbkytqjwbiupvsorvkorfriajdtsowenhpmdtvamkoqacwwlkqfdzorjtepwlemunyrghwlvjgaxbzawmikfhtaniwviqiaeinbsqidetfsdbgsydkxgwoqyztaqmyeefaihmgrbxzyheoegawthcsyyrpyvnhysynoaikwtvmwathsomddhltxpeuxettpbeftmmyrqclnzwljlpxazrzzdosemwmthcvgwtxtinffopqxbufjwsvhqamxpydcnpekqhsovvqugqhbgweaiheeicmkdtxltkalexbeftuxvwnxmqqjeyourvbdfikqnzdipmmmiltjapovlhkpunxljeutwhenrxyfeufmzipqvergdkwptkilwzdxlydxbjoxjzxwcfmznfqgoaemrrxuwpfkftwejubxkgjlizljoynvidqwxnvhngqakmmehtvykbjwrrrjvwnrteeoxmtygiiygynedvfzwkvmffghuduspyyrnftyvsvjstfohwwyxhmlfmwguxxzgwdzwlnnltpjvnzswhmbzgdwzhvbgkiddhirgljbflgvyksxgnsvztcywpvutqryzdeerlildbzmtsgnebvsjetdnfgikrbsktbrdamfccvcptfaaklmcaqmglneebpdxkvcwwpndrjqnpqgbgihsfeotgggkdbvcdwfjanvafvxsvvhzyncwlmqqsmledzfnxxfyvcmhtjreykqlrfiqlsqzraqgtmocijejneeezqxbtomkwugapwesrinfiaxwxradnuvbyssqkznwwpsbgatlsxfhpcidfgzrc"));
-//        System.out.println(findLengthOfLongestRepeatingSubsequence("GEEKSFORGEEKS"));
-//        System.out.println(findLengthOfLongestRepeatingSubsequence("aab"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("GEEKSFORGEEKS"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("aab"));
         System.out.println(findLengthOfLongestRepeatingSubsequence("aaa"));
-//        System.out.println(findLengthOfLongestRepeatingSubsequence("aabaabaaba"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("aabaabaaba"));
+        System.out.println(findLengthOfLongestRepeatingSubsequence("AABCABB"));
     }
 
     public static int findLengthOfLongestRepeatingSubsequence(String str) {

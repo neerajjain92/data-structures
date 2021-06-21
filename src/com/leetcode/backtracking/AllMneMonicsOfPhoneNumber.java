@@ -34,6 +34,26 @@ import java.util.List;
  * <p>
  * Input: "23"
  * Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+ * <p>
+ * <p>
+ * TimeComplexity:
+ * <p>
+ * We know that no matter what's the input the mapping is always 4 characters at max : 7 ---> PQRS
+ * So the branching factor is (4) and maxDepth which we can go into a tree is n:
+ * *  let's assume we want mnemonics for "123", at stage 1 we have 3 choices
+ * *
+ * *                   _ _ _  -------------------> Stage 1
+ * *
+ * *                  _|_ _   -------------------> Stage 2 (1 filled 2 choices left)
+ * *
+ * *                  _ _| _   -------------------> Stage 2 (2 filled 1 choices left)
+ * *
+ * *                  _ _ _|   -------------------> Stage 2 (Completely filled)
+ * *
+ * * Now if you notice for input of size (n) we can go n calls deep, so the maxDepth is (n)
+ * *
+ * * Hence our time complexity is (Branching Factor)^n ===> 4^n
+ * *
  *
  * @author neeraj on 2019-05-18
  * Copyright (c) 2019, data-structures.

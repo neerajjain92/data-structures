@@ -1,6 +1,5 @@
 package com.interviewbit.array;
 
-import com.geeksforgeeks.array.QuickSort;
 import com.util.LogUtil;
 
 import java.util.Arrays;
@@ -31,7 +30,7 @@ public class WaveArray {
                 uptrend = false;
             } else {
                 if (arr[i] < arr[i + 1]) {
-                    QuickSort.swap(arr, i, i + 1);
+                    swap(arr, i, i + 1);
                 }
                 uptrend = true;
             }

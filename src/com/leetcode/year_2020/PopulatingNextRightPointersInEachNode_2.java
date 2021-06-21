@@ -1,6 +1,6 @@
 package com.leetcode.year_2020;
 
-import static com.leetcode.year_2020.ConstructBinaryTreeUsingPreOrderAndInorderTraversal.buildTreeFromPreOrderAndInorder;
+import static com.leetcode.year_2020.tree.ConstructBinaryTreeUsingPreOrderAndInorderTraversal.buildTreeFromPreOrderAndInorder;
 
 /**
  * @author neeraj on 26/04/20
@@ -40,9 +40,9 @@ public class PopulatingNextRightPointersInEachNode_2 {
          *                     / \
          *                    2   3
          *                   / \  /\
-         *                   4 5  6 7
-         *                  /       / \
-         *                 10       8  9
+         *                  4  5 6  7
+         *                 /       / \
+         *               10       8   9
          * In this scenario when we have to connect 10 to 8.
          * 4 -next-> 5 -next-> 6 -next-> 7 (Connection has to be made)
          * If we start iterating left subtree first, when you reach to 4

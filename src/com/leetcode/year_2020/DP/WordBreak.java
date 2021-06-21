@@ -10,7 +10,7 @@ import java.util.*;
 public class WordBreak {
 
     public static void main(String[] args) {
-        List<String> dictionary =  Arrays.asList("leet", "code");
+        List<String> dictionary = Arrays.asList("leet", "code");
         System.out.println(canBreakWordUsingBFS("leetcode", dictionary));
 
         dictionary = Arrays.asList("apple", "pen");
@@ -23,7 +23,7 @@ public class WordBreak {
         System.out.println(canBreakWordUsingBFS("catsanddog", dictionary));
 
         dictionary = Arrays.asList("apple", "pen", "applepen", "pine", "pineapple");
-        System.out.println(canBreakWordUsingBFS("pineapplepenapple", dictionary));
+        System.out.println(wordBreak("pineapplepenapple", dictionary));
     }
 
     public static boolean canBreakWordUsingBFS(String s, List<String> wordDictionary) {
@@ -35,7 +35,7 @@ public class WordBreak {
          */
         int max_len = -1;
         for (String word : wordDictionary)
-            max_len = Math.max (max_len, word.length ());
+            max_len = Math.max(max_len, word.length());
         Queue<Integer> queue = new LinkedList<>();
         queue.add(0); // Starting from the 0th index of the input string.
         Set<Integer> visited = new HashSet<>();
@@ -66,8 +66,8 @@ public class WordBreak {
         System.out.println("Result is " + result);
 
         result = solve(s, 0, new HashSet<>(wordDict));
-//        sentences = new ArrayList<>();
-//        printAll(s, 0, "", sentences, new HashSet<>(wordDict));
+        sentences = new ArrayList<>();
+        printAll(s, 0, "", sentences, new HashSet<>(wordDict));
         return result;
     }
 
@@ -124,6 +124,32 @@ public class WordBreak {
                 printAll(s, i + 1, nextWord, all, wordDict);
             }
         }
+    }
+
+
+    public static boolean solveWordBreakUsingPrefix(String s, Set<String> wordDict) {
+        boolean[] possible = new boolean[s.length() + 1];
+        possible[0] = true; // we can definitely decompose blank string.
+
+        /**
+         * Now the basic idea is in order to decompose a string we must be able to
+         * decompose some prefix of our String and the remaining suffix must be present in word dictionary.
+         * For Example : dictionary==> ["h", "e", "llo"] and String is "hello", then we are able to successfully decompose
+         * "he" prefix(using "h" and "e" from dict) and the remaining "llo" suffix already available in dict.
+         *
+         * Now since we have to check the prefix decomposition for every index i, hence we can store the calculations
+         * and memorize it using 1d array. possible[] in which possible[i] is set to true only if we can decompose [1....i]
+         *
+         */
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = 0; j < i; j++) {
+                if (possible[j] && wordDict.contains(s.substring(j, i))) {
+                    possible[i] = true;
+                    break;
+                }
+            }
+        }
+        return possible[possible.length - 1];
     }
 }
 

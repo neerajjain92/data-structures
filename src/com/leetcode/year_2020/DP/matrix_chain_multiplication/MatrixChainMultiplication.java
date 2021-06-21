@@ -59,7 +59,7 @@ public class MatrixChainMultiplication {
          *  if we start i == 0, we won't be having m in m*n
          *
          *  Now k will run from i to j-1, why till j-1, since we k act as a cut to our matrix,
-         *  and we put cut in  matrix to multiply, Now if i keep k==j... we can do solve(arr, i, k), but not solve(arr, k+1, j).
+         *  and we put cut in  matrix to multiply, Now if we keep k==j... we can do solve(arr, i, k), but not solve(arr, k+1, j).
          */
         t = new int[dimensions.length][dimensions.length];
         brackets = new int[t.length][t[0].length];
@@ -67,6 +67,7 @@ public class MatrixChainMultiplication {
             Arrays.fill(row, -1);
         }
         int minOperation = solveMatrixChain(dimensions, 1, dimensions.length - 1);
+        LogUtil.printMultiDimensionArray(brackets);
         printBrackets(brackets, 1, brackets.length - 1);
         LogUtil.newLine();
         LogUtil.logIt("Top Down  :: " + minOperation);
@@ -89,8 +90,12 @@ public class MatrixChainMultiplication {
         for (int k = i; k < j; k++) {
             int operationsInLeft = solveMatrixChain(dimensions, i, k);
             int operationsInRight = solveMatrixChain(dimensions, k + 1, j);
+
+            // Assume Matrix, A1, A2, A3, A4, if i put bracket like this
+            // (A1 A2) (A3, A4)  ====> Now we also need the cost of final multiplying left and right part
             int operationsAtThisPoint = dimensions[i - 1] * dimensions[k] * dimensions[j];
 
+            // Thia is the summation of Cost(A1 * A2) + Cost (A3 * A4) + Cost (Cost(A1*A2) * Cost(A3*A4))
             int operationsIfWeChooseThisK = operationsInLeft + operationsAtThisPoint + operationsInRight;
             if (operationsIfWeChooseThisK < MIN_OPERATIONS) {
                 MIN_OPERATIONS = operationsIfWeChooseThisK;

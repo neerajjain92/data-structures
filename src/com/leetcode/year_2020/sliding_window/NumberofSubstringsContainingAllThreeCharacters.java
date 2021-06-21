@@ -8,24 +8,25 @@ package com.leetcode.year_2020.sliding_window;
 public class NumberofSubstringsContainingAllThreeCharacters {
 
     public static void main(String[] args) {
-        System.out.println(getTotalSubstringCount("abcabc", 3));
+        System.out.println(getTotalSubstringCount("abcabc"));
     }
 
-    public static int getTotalSubstringCount(String str, int k) {
-        int[] count = new int[26]; // Since 26 Alphabets
+    public static int getTotalSubstringCount(String str) {
+        int[] count = new int[3];
 
         int totalSubstring = 0;
-        int result = 0;
         int end = 0, start = 0;
         while (end < str.length()) {
             count[str.charAt(end) - 'a']++;
             end++;
             while (start < str.length() && count[0] > 0 && count[1] > 0 && count[2] > 0) {
-                result++;
                 count[str.charAt(start) - 'a']--;
                 start++;
             }
-            totalSubstring += result;
+            // Why totalSubstring+=start ?
+            // Since everything before start was already meeting the criteria of having all three characters
+            // which is why everything before start contributes to it.
+            totalSubstring += start;
         }
         return totalSubstring;
     }

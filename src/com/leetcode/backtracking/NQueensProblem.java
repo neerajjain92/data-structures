@@ -91,10 +91,19 @@ public class NQueensProblem {
 
             int absoluteColumnDistance = Math.abs(columnPlacements.get(ithQueenRow) - columnPlacements.get(rowWeAreValidatingOn));
 
+/**
+ *   When 2 items are diagonal ?
+ * When AbsoluteColumnDifference ==== Absolute Row Distance
+ *
+ * i.e (Math.abs(columnPlacements.get(ithQueenRow) - columnPlacements.get(rowWeAreValidatingOn))) === Math.abs(Row_We_are_validating_on - ithQueenRow)
+ *
+ */
+
              /*
               1.) If the absolute difference in columns is 0 then we placed in a column being
               attacked by the i'th queen.
                 absoluteColumnDistance == 0
+
               2.) If the absolute difference in columns equals the distance in rows from the
               i'th queen we placed then the queen we just placed is attacked diagonally.
                 absoluteColumnDistance == rowWeAreValidatingOn - i

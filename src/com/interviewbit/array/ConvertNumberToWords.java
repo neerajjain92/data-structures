@@ -69,6 +69,10 @@ public class ConvertNumberToWords {
     public static void main(String[] args) {
 //        convert(1);
 //        convert(12);
+        int a = 10; int b = 20;
+        if(a == 10 || b == 20) {
+            System.out.println("Hello.........");
+        }
         convert(12456);
         convert(123);
         convert(1234);

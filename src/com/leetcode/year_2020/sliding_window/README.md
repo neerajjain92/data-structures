@@ -1,7 +1,8 @@
-Among all leetcode questions, I find that there are at least 5 substring search problem which could be solved by the sliding window algorithm.
-so I sum up the algorithm template here. wish it will help you!
+Among all leetcode questions, I find that there are at least 5 substring search problem which could be solved by the
+sliding window algorithm. so I sum up the algorithm template here. wish it will help you!
 
 the template:
+
 ```
 public class Solution {
     public List<Integer> slidingWindowTemplateByHarryChaoyangHe(String s, String t) {
@@ -56,13 +57,21 @@ public class Solution {
 ```
 
 Firstly, here is my sliding solution this question. I will sum up the template below this code.
+
 2) the similar questions are:
 
-https://leetcode.com/problems/minimum-window-substring/
-https://leetcode.com/problems/longest-substring-without-repeating-characters/
-https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
-https://leetcode.com/problems/find-all-anagrams-in-a-string/
+
+[Local: Minimum Window Substring](MinimumWindowSubstring.java)
+
+
+[Local: Longest Substring Without Repeating Characters](LongestSubstringWithoutRepeatingCharacters.java)
+
+[Local: Find All Anagrams in a String](FindAllAnagramsInAString.java)
+
+[Local: Substring with Concatenation of all Words](SubstringWithConcatenationOfAllWords.java)
+
+[Local: Longest Substring with at most 2 distinct characters](LongestSubStringWithAtMostTwoDistinctCharacters.java)
+
 
 3) I will give my solution for these questions use the above template one by one
 
@@ -115,13 +124,16 @@ public class Solution {
 
 you may find that I only change a little code above to solve the question "Find All Anagrams in a String":
 change
+
 ```
                 if(end-begin < len){
                     len = end - begin;
                     head = begin;
                 }
 ```
+
 to
+
 ```
                 if(end-begin == t.length()){
                     result.add(begin);

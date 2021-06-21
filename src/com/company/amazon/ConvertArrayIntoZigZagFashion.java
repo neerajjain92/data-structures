@@ -1,8 +1,6 @@
 package com.company.amazon;
 
-import com.geeksforgeeks.array.ArrayRotation;
-
-import static com.geeksforgeeks.array.ArrayRotation.*;
+import static com.geeksforgeeks.array.ArrayRotation.printArray;
 
 /**
  * Example:

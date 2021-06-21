@@ -40,10 +40,11 @@ public class MinimumWeightPathToTriangle {
         for (int row[] : input) {
             triangle.add(Arrays.stream(row).boxed().collect(Collectors.toList()));
         }
-        return minimumTotal(triangle);
+        return minimumTotalOtherWay(triangle);
     }
 
     static int[][] T; // memorization
+
     /**
      * Here we are doing bottom-up approach..
      * we are starting from 1st row and going all the way to the last.
@@ -86,5 +87,22 @@ public class MinimumWeightPathToTriangle {
 
         return T[row][col] = valueAtCurrentRow + minimumFromDiagonallyBelowRow;
 
+    }
+
+    public static int minimumTotalOtherWay(List<List<Integer>> triangle) {
+        int[] dp = new int[triangle.size()];
+
+        int counter = 0; // Initializing the dp with last row.
+        for (int item : triangle.get(triangle.size() - 1)) {
+            dp[counter++] = item;
+        }
+
+        for (int i = triangle.size() - 2; i >= 0; i--) {
+            List<Integer> row = triangle.get(i);
+            for (int j = 0; j < row.size(); j++) {
+                dp[j] = Math.min(dp[j], dp[j + 1]) + row.get(j);
+            }
+        }
+        return dp[0];
     }
 }

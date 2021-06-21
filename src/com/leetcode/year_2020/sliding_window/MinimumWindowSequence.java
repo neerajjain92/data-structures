@@ -2,6 +2,7 @@ package com.leetcode.year_2020.sliding_window;
 
 /**
  * https://www.lintcode.com/en/old/problem/minimum-window-subsequence/
+ * https://www.youtube.com/watch?v=W2DvQcDPD9A
  * <p>
  * Given strings S and T, find the minimum (contiguous) substring W of S, so that T is a subsequence of W.
  * <p>
@@ -15,7 +16,7 @@ package com.leetcode.year_2020.sliding_window;
 public class MinimumWindowSequence {
 
     public static void main(String[] args) {
-        System.out.println(minWindow("XAYMBAZBDCE", "ABE"));
+//        System.out.println(minWindow("XAYMBAZBDCE", "ABE"));
         System.out.println(minWindow("abcdebddesdkashdjkasdbde", "bde"));
     }
 

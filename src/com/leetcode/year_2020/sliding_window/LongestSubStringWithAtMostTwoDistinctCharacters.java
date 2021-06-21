@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+ *
  * @author neeraj on 15/07/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -11,6 +13,7 @@ import java.util.Map;
 public class LongestSubStringWithAtMostTwoDistinctCharacters {
 
     public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstringTwoDistinct("eceba"));
         System.out.println(lengthOfLongestSubstringTwoDistinct("KATAPPA"));
     }
 
@@ -37,6 +40,8 @@ public class LongestSubStringWithAtMostTwoDistinctCharacters {
                 if (charFreq.get(charAtStart) == 0) counter--;
                 start++;
             }
+
+            // Why calculating longest everytime, since a single character can also be longest
             longestSubStringLength = Math.max(longestSubStringLength, end - start);
         }
         return longestSubStringLength;

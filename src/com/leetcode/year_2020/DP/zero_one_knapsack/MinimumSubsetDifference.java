@@ -16,7 +16,6 @@ package com.leetcode.year_2020.DP.zero_one_knapsack;
  */
 @SuppressWarnings("DuplicatedCode")
 public class MinimumSubsetDifference {
-
     public static void main(String[] args) {
         System.out.println(minimumSubsetDifference(new int[]{1, 2, 7}));
         System.out.println(minimumSubsetDifference(new int[]{1, 6, 11, 5}));

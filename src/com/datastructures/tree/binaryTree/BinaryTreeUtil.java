@@ -200,25 +200,34 @@ public class BinaryTreeUtil {
 
     public void morrisTraversal(Node root) {
         Node curr = root;
-        Node prev = null;
+        Node leftOfCurr;
+        Node prevNodeInInorder = null;
 
         while (curr != null) {
             if (curr.left == null) {
                 System.out.println(curr.data);
+                if (prevNodeInInorder != null) {
+                    System.out.println("PrevNode in Inorder is " + prevNodeInInorder);
+                }
+                prevNodeInInorder = curr;
                 curr = curr.right;
             } else {
                 //Inorder predecessor of current.
-                prev = curr.left;
+                leftOfCurr = curr.left;
 
-                while (prev.right != null && prev.right != curr) {
-                    prev = prev.right;
+                while (leftOfCurr.right != null && leftOfCurr.right != curr) {
+                    leftOfCurr = leftOfCurr.right;
                 }
 
-                if (prev.right == null) {
-                    prev.right = curr;
+                if (leftOfCurr.right == null) {
+                    leftOfCurr.right = curr;
                     curr = curr.left;
                 } else { //fix the right child of predecessor
-                    prev.right = null;
+                    leftOfCurr.right = null;
+                    if (prevNodeInInorder != null) {
+                        System.out.println("PrevNode in Inorder is " + prevNodeInInorder);
+                    }
+                    prevNodeInInorder = curr;
                     System.out.println(curr.data);
                     curr = curr.right;
                 }
@@ -627,7 +636,7 @@ public class BinaryTreeUtil {
         findAndSetMinAndMaxHorizontalDistance(root.left, distance, horizontalDistance - 1);
         findAndSetMinAndMaxHorizontalDistance(root.right, distance, horizontalDistance + 1);
     }
-    
+
     public static void printVerticalLines(Node root, int lineNo, int horizontalDistance, boolean isCurrentHorizontalDistancePrinted) {
         if (root == null)
             return;

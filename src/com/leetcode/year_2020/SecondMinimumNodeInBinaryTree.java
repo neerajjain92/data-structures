@@ -1,6 +1,6 @@
 package com.leetcode.year_2020;
 
-import static com.leetcode.year_2020.ConstructBinaryTreeUsingPreOrderAndInorderTraversal.buildTreeFromPreOrderAndInorder;
+import static com.leetcode.year_2020.tree.ConstructBinaryTreeUsingPreOrderAndInorderTraversal.buildTreeFromPreOrderAndInorder;
 
 /**
  * @author neeraj on 25/04/20

@@ -41,7 +41,7 @@ public class BinaryTreeUtilUser {
 
         //util.iterativeInorder(tree);
 
-//        util.morrisTraversal(tree);
+        util.morrisTraversal(tree);
 //
 //        System.out.println("Size of tree is "+ util.getTreeSize(tree));
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/palindrome-partitioning-ii/
- *
+ * <p>
  * Palindrome Partitioning using Recursion
  * Given a string, a partitioning of the string is a palindrome partitioning
  * if every substring of the partition is a palindrome.
@@ -25,9 +25,11 @@ public class PalindromicPartitioningMinimumCuts {
         System.out.println(findMinCuts("ababbbabbababa")); // a|babbbab|b|ababa 3 cuts.
         System.out.println(findMinCuts("NITIN")); // 0 partition since it's already palindrome
         System.out.println(findMinCuts("NITIK")); // N|ITI|k   2 cuts
+        System.out.println(findMinCuts("BANANA")); // B|ANANA 1 cuts
     }
 
     static int[][] t; // Memorization(Top-Down Approach)
+    static int[][] isPalindrome; // Memorization(Top-Down Approach to store Palindrome result between i to j of input)
 
     public static int findMinCuts(String input) {
         /**
@@ -69,7 +71,11 @@ public class PalindromicPartitioningMinimumCuts {
          *                              partition of it. If we cut at last there will only be a left partition.
          */
         t = new int[input.length() + 1][input.length() + 1];
+        isPalindrome = new int[input.length() + 1][input.length() + 1];
         for (int[] row : t) {
+            Arrays.fill(row, -1);
+        }
+        for (int[] row : isPalindrome) {
             Arrays.fill(row, -1);
         }
         int minCuts = solve(input, 0, input.length() - 1);
@@ -78,12 +84,12 @@ public class PalindromicPartitioningMinimumCuts {
 
     private static int solve(String input, int i, int j) {
         if (t[i][j] > -1) return t[i][j];
-        if (isPalindrome(input, i, j)) {
+        if (isPalindrome[i][j] != -1 || isPalindrome(input, i, j)) {
             t[i][j] = 0;
+            isPalindrome[i][j] = 0;
             return 0; // if the string is already a palindrome there is no need
         }
         // to partition it.
-
 
 
         // K is our cut point
@@ -94,8 +100,8 @@ public class PalindromicPartitioningMinimumCuts {
              ** Taking Memorizatin to another level, by checking partial parts also in cache.
              *.  i.e checking if cache has result of [i][k] and [k+1][j]; if yes then use it and no need to further solve it.
              **/
-            int totalCutsBeforeThisCut = t[i][k] > -1 ? t[i][k] : solve(input, i, k) ;
-            int totalCutsAfterThisCut = t[k+1][j] > -1 ? t[k+1][j] : solve(input, k+1, j);
+            int totalCutsBeforeThisCut = t[i][k] > -1 ? t[i][k] : solve(input, i, k);
+            int totalCutsAfterThisCut = t[k + 1][j] > -1 ? t[k + 1][j] : solve(input, k + 1, j);
 
             // Now since we have made this cut so that is to be accounted for, that's why the input is divided into
             // (i, k) and (k+1,j).
@@ -108,8 +114,8 @@ public class PalindromicPartitioningMinimumCuts {
     }
 
     private static boolean isPalindrome(String input, int i, int j) {
-        if(i==j) return true;
-        if(i>j) return false;
+        if (i == j) return true;
+        if (i > j) return false;
         String substring = input.substring(i, j + 1);
         String reversed = new StringBuilder(substring).reverse().toString();
         return reversed.equals(substring);

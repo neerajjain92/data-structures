@@ -19,8 +19,9 @@ public class MatchAPatternAndStringWithoutRegularExpression {
 //        matchPattern("GeeksforGeeks", "GG");
 //        matchPattern("EatSleep", "XY");
 //        matchPattern("gogopowerrangergogopowerranger", "xxyxxy");
-        matchPattern("AABCC", "xyx");
-        matchPattern("AABCA", "xyx");
+//        matchPattern("AABCC", "xyx");
+//        matchPattern("AABCA", "xyx");
+        matchPattern("XYXX", "ABA");
 
     }
 
@@ -32,7 +33,7 @@ public class MatchAPatternAndStringWithoutRegularExpression {
 
     private static void backtrack(String input, int pointer, int patternCounter, String pattern, Map<Character, String> matches) {
         if (pointer == input.length() && patternCounter == pattern.length()) {
-            System.out.println(matches);
+            System.out.println(matches + " for Input " + input);
             return;
         }
 
@@ -56,6 +57,12 @@ public class MatchAPatternAndStringWithoutRegularExpression {
             }
             backtrack(input, i + 1, patternCounter + 1, pattern, matches);
             if (!isRepeat) { // Only remove from map if this was a duplicate pattern.
+                /**
+                 * New Detailed Analysis
+                 * ONLY delete if this recursion was made from original patternPointer element,
+                 * not some repeated similar pattern.
+                 * DO DRY RUN with XYXX, Pattern: ABA, you will understand it.
+                 */
                 matches.remove(patternAtThisStage);
             }
 

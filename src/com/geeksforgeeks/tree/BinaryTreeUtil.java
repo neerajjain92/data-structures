@@ -827,15 +827,10 @@ public class BinaryTreeUtil {
     private static void setNodesAtParticularHorizontalDistance(Node root, Map<Integer, List<Integer>> nodesAtParticularHorizontalDistance, int horizontalDistance, Boolean isDiagonalTraversal) {
         if (root == null)
             return;
-        if (nodesAtParticularHorizontalDistance.containsKey(horizontalDistance)) {
-            List<Integer> nodesAtThisHorizontalDistance = nodesAtParticularHorizontalDistance.get(horizontalDistance);
-            nodesAtThisHorizontalDistance.add(root.data);
-            nodesAtParticularHorizontalDistance.put(horizontalDistance, nodesAtThisHorizontalDistance);
-        } else {
-            List<Integer> nodesAtThisHorizontalDistance = new ArrayList<>();
-            nodesAtThisHorizontalDistance.add(root.data);
-            nodesAtParticularHorizontalDistance.put(horizontalDistance, nodesAtThisHorizontalDistance);
-        }
+        List<Integer> nodesAtThisHorizontalDistance =
+                nodesAtParticularHorizontalDistance.getOrDefault(horizontalDistance, new ArrayList<>());
+        nodesAtThisHorizontalDistance.add(root.data);
+        nodesAtParticularHorizontalDistance.put(horizontalDistance, nodesAtThisHorizontalDistance);
         setNodesAtParticularHorizontalDistance(root.left, nodesAtParticularHorizontalDistance, isDiagonalTraversal ? horizontalDistance + 1 : horizontalDistance - 1, isDiagonalTraversal);
         setNodesAtParticularHorizontalDistance(root.right, nodesAtParticularHorizontalDistance, isDiagonalTraversal ? horizontalDistance : horizontalDistance + 1, isDiagonalTraversal);
     }
@@ -1530,13 +1525,13 @@ public class BinaryTreeUtil {
     /**
      * A complete binary tree is a binary tree in which every level, except possibly the last, is completely
      * filled, and all nodes are as far left as possible.
-     *   1
-     *  / \
+     * 1
+     * / \
      * 2   3
      * <p>
-     *    1
-     *   / \
-     *  2   3
+     * 1
+     * / \
+     * 2   3
      * /
      * 4
      * <p>

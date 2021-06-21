@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/
+ * <p>
+ * 1239. Maximum Length of a Concatenated String with Unique Characters
+ *
  * @author neeraj on 22/03/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -34,10 +38,6 @@ public class MaximumLengthOfConcatenatedStringWithUniqueCharacters {
 
     private static void backtrack(String temp, int index, List<String> arr) {
         MAX_LENGTH = Math.max(temp.length(), MAX_LENGTH);
-        if (index == arr.size()) {
-            return;
-        }
-
         for (int i = index; i < arr.size(); i++) {
             if (!containDuplicateCharacters(temp + arr.get(i))) {
                 backtrack(temp + arr.get(i), i + 1, arr);

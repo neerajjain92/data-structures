@@ -89,7 +89,7 @@ public class BooleanParenthesization {
 
     private static int solve(char[] input, int i, int j, Boolean isTrue) {
         String key = EMPTY_STRING + i + j + isTrue;
-//        if (memorization.containsKey(key)) return memorization.get(key);
+        if (memorization.containsKey(key)) return memorization.get(key);
         if (i > j) {
             memorization.put(key, 0);
             return 0; // Empty String there are no ways.

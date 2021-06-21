@@ -115,11 +115,10 @@ public class SudokuSolver {
                 if (solveSudoku(row, col + 1, board)) {
                     return true;
                 }
+                board[row][col] = EMPTY_CELL;
             }
         }
         // This choice didn't work, so let's backtrack
-
-        board[row][col] = EMPTY_CELL;
         return false;
     }
 

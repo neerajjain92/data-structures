@@ -35,18 +35,37 @@ public class BinaryTreeUtil {
 
     /**
      * * Sample Tree
-     * *            1
-     * *          /   \
-     * *        2     3
-     * *      /  \
-     * *     4   5
+     * *             1
+     * *          /    \
+     * *        2       3
+     * *      /  \     /  \
+     * *     4   5    14  15
+     * *        /  \      / \
+     * *       8   10    19 20
+     * *             \
+     * *            12
      */
     public Node getSampleTree() {
         Node root = new Node(1);
+
+        // 2 sub tree
         root.left = new Node(2);
-        root.right = new Node(3);
         root.left.left = new Node(4);
+
+        // 5 sub tree
         root.left.right = new Node(5);
+        root.left.right.left = new Node(8);
+        root.left.right.right = new Node(10);
+        root.left.right.right.right = new Node(12);
+
+
+        // 3 node subtree
+        root.right = new Node(3);
+        root.right.left = new Node(14);
+        root.right.right = new Node(15);
+        root.right.right.left = new Node(19);
+        root.right.right.left.right = new Node(20);
+
         return root;
     }
 
@@ -146,13 +165,18 @@ public class BinaryTreeUtil {
         // Now let's pop item fromm stack until stack is empty
         while (!stack.isEmpty()) {
             poppedItem = stack.pop();
-
+            System.out.println(poppedItem.data);
             // Checking if the poppedItem has any right subtree, if yes then we have to
             // explore that as well, since In-order Traversal is all about Left, Parent and then Right.
             if (poppedItem.right != null) {
-                stack.push(poppedItem.right);
+                poppedItem = poppedItem.right;
+
+                while (poppedItem != null) {
+                    stack.push(poppedItem);
+                    poppedItem = poppedItem.left;
+                }
             }
-            indentOutput(poppedItem.data, indentCounter++);
+//            indentOutput(poppedItem.data, indentCounter++);
         }
     }
 
@@ -410,7 +434,7 @@ public class BinaryTreeUtil {
      * <p>
      * 1) Do preOrder traversal in O(N) time using stack, in P->R->L fashion, since we are using Stack (LIFO)
      * so we have to actually store left node before right node, so when we pop the node we get right first and left next which is exactly what we need.
-     * 2) Simultaneously story then in another stack so which will due to it's LIFO nature help us to avoid reversing the traversal and give us post-order.
+     * 2) Simultaneously store then in another stack so which will due to it's LIFO nature help us to avoid reversing the traversal and give us post-order.
      *
      * @param root
      */

@@ -1,5 +1,7 @@
 package com.leetcode.tree;
 
+import com.leetcode.problems.medium.TreeNode;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
@@ -170,6 +172,25 @@ public class BinarySearchTreeUtil {
         return root;
     }
 
+    static int preIndex = 0;
+
+    public static TreeNode bstFromPreorder(int[] preorder) {
+        // In a BST we know for every root Node all the nodes in the left
+        // should have max value of the root
+        //  and similarly all the nodes in the right should be greater than the rootNode
+        return bstFromPreOrder(preorder, Integer.MAX_VALUE);
+    }
+
+    private static TreeNode bstFromPreOrder(int[] preorder, int upperBound) {
+        // why not checking lowerBound for right nodes
+        // because the given sequence is guaranteed to be valid, we don't need to validate if it s a binary search tree or not. We just need to test again parent value to decide a node should be left or right child.
+        if (preIndex == preorder.length || preorder[preIndex] > upperBound) return null;
+        TreeNode root = new TreeNode(preorder[preIndex++]);
+        root.left = bstFromPreOrder(preorder, root.val); // all in left should be less than root
+        root.right = bstFromPreOrder(preorder, upperBound);
+        return root;
+    }
+
     public void constructBSTFromPreOrderIteratively(int[] preOrder) {
         // Stack will be used for construction
         Node root = new Node(preOrder[0]);
@@ -308,6 +329,9 @@ public class BinarySearchTreeUtil {
         logIt("Inorder Traversal of newly constructed BST");
         bst.inorder(bst.root);
         newLine();
+
+        // This is using the upperBound technique
+        bstFromPreorder(preOrderTraversal);
 
         logIt("Construct BST from PreOrder TRaversal Iteratively", true);
         bst.constructBSTFromPreOrderIteratively(preOrderTraversal);

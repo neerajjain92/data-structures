@@ -12,6 +12,7 @@ public class NQueen {
 
     public static void main(String[] args) {
         solveNQueens(4);
+        solveNQueens(5);
     }
     public static List<List<String>> solveNQueens(int totalQueenToBePlaced) {
         List<List<String>> result = new ArrayList<>();

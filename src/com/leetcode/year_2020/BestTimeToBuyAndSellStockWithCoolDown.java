@@ -38,8 +38,8 @@ public class BestTimeToBuyAndSellStockWithCoolDown {
 
         int Ti_k0 = 0;
         int Ti_k1 = Integer.MIN_VALUE;
-        int T_i_minus_2_k_0 = 0; // This is the profit before cooldown date.
-        // i.e the profit remained after selling the stock before cooldown date.
+        int T_i_minus_2_k_0 = 0; // This is the profit before cool-down date.
+        // i.e the profit remained after selling the stock before cool-down date.
 
 
         for (int price : prices) {

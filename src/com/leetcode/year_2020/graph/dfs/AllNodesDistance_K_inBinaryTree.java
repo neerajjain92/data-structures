@@ -52,16 +52,16 @@ public class AllNodesDistance_K_inBinaryTree {
         // Let's do inorder and populate the parent.
         Stack<TreeNode> stack = new Stack<>();
 
-        while(root != null || !stack.isEmpty() ) {
-            while(root != null) {
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
                 stack.push(root);
-                if(root.left != null) {
+                if (root.left != null) {
                     nodesParent.put(root.left, root);
                 }
                 root = root.left;
             }
             root = stack.pop();
-            if(root.right != null) {
+            if (root.right != null) {
                 nodesParent.put(root.right, root);
             }
             root = root.right;
@@ -75,26 +75,27 @@ public class AllNodesDistance_K_inBinaryTree {
         queue.add(null);
         Set<TreeNode> visited = new HashSet<>();
         List<Integer> nodesAtKDistance = new ArrayList<>();
-        while(!queue.isEmpty() && k >= 0) {
+        while (!queue.isEmpty() && k >= 0) {
             root = queue.poll();
-            if(root == null) {
-                k--;
-                if(!queue.isEmpty()) {
+            if (root == null) {
+                k--; // DECREASING DISTANCE ONLY WHEN LEVEL CHANGES
+                // Since for same level all distance(left and right child) remain same from a node
+                if (!queue.isEmpty()) {
                     queue.add(null); // To differentiate the level
                 }
                 continue;
             }
             visited.add(root);
-            if(k == 0) {
+            if (k == 0) {
                 nodesAtKDistance.add(root.val);
             }
 
-            if(root.left != null && !visited.contains(root.left))
+            if (root.left != null && !visited.contains(root.left))
                 queue.add(root.left);
-            if(root.right!= null && !visited.contains(root.right))
+            if (root.right != null && !visited.contains(root.right))
                 queue.add(root.right);
-            if(nodesParent.containsKey(root)) {
-                if(!visited.contains(nodesParent.get(root))) {
+            if (nodesParent.containsKey(root)) {
+                if (!visited.contains(nodesParent.get(root))) {
                     queue.add(nodesParent.get(root));
                 }
             }

@@ -24,7 +24,8 @@ import com.util.LogUtil;
 public class DutchNationalFlag {
 
     public static void main(String[] args) {
-        int[] input = new int[]{0, 1, 2, 0, 2, 1, 1};
+//        int[] input = new int[]{0, 1, 2, 0, 2, 1, 1};
+        int[] input = new int[]{0, 2, 1, 2, 0};
 
         solveDutchNationalFlag(input, 1);
     }

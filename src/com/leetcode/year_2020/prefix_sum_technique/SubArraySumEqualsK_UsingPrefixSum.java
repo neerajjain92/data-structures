@@ -15,6 +15,11 @@ public class SubArraySumEqualsK_UsingPrefixSum {
     public static void main(String[] args) {
         System.out.println(subarraySum(new int[]{3, 4, 7, 2, -3, 1, 4, 2}, 7));
         System.out.println(subarraySum(new int[]{1, 1, 1}, 2));
+        System.out.println(subarraySum(new int[]{3, 4, 7, -2, 2, 1, 4, 2}, 7));
+        System.out.println(subarraySum(new int[]{7, -7, 7, -7, 7}, 7));
+        System.out.println(subarraySum(new int[]{4, 2, -3, 1, 6}, 0));
+        System.out.println(subarraySum(new int[]{4, 2, 0, 1, 6}, 0));
+        System.out.println(subarraySum(new int[]{-3, 2, 3, 1, 6}, 0));
     }
 
     public static int subarraySum(int[] nums, int targetValueK) {
@@ -56,6 +61,10 @@ public class SubArraySumEqualsK_UsingPrefixSum {
          * Please refer CLCI : Paths with sum problem solution for visualization or this diagram
          * https://leetcode.com/problems/subarray-sum-equals-k/discuss/190674/Python-O(n)-Based-on-%22running_sum%22-concept-of-%22Cracking-the-coding-interview%22-book
          *
+         * Explanation to why map.get(sum-k) is done than count++
+         * https://leetcode.com/problems/subarray-sum-equals-k/discuss/535507/Explanation-to-why-map.get(sum-k)-is-done-than-count%2B%2B
+         *
+         * https://leetcode.com/problems/subarray-sum-equals-k/discuss/653721/Explanation%3A-WHY-count-%2B-map.get(sum-k)-by-visualization
          */
         int prefix_sum_y = 0;
         Map<Integer, Integer> prefix_sum_xFrequencyMap = new HashMap<>();

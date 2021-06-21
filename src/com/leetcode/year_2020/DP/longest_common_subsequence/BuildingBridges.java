@@ -49,7 +49,7 @@ public class BuildingBridges {
          * Now if you see if we build 10---> 1 bridge we loose max bridge which can be built(3, 4) and (5,6)
          * So we know we have to find the longest common subsequence,
          * but wait Neeraj, there is nothing common
-         * it is trust me bachha....... can you create a mapping from south-to-north and compare just them.
+         * it is trust me ....... can you create a mapping from south-to-north and compare just them.
          *
          * North ----> 3        5       10
          * South ---> 1(10)     4(3)     6(5)

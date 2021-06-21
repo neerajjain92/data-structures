@@ -11,6 +11,7 @@ public class PrintShortestCommonSuperSequence {
 
     public static void main(String[] args) {
         printShortestCommonSuperSequence("acbcf", "abcdaf");
+        printShortestCommonSuperSequence("ac", "");
     }
 
     public static void printShortestCommonSuperSequence(String X, String Y) {
@@ -22,6 +23,8 @@ public class PrintShortestCommonSuperSequence {
          * Now we will use the same LCS matrix to print the ShortestCommonSuperSequence
          */
         int[][] lcs = getLCSMatrix(X, Y);
+
+        LogUtil.printMultiDimensionArray(lcs);
 
         /**
          * For X = "a c b c f" and Y = "a b c d a f"
@@ -84,6 +87,19 @@ public class PrintShortestCommonSuperSequence {
                     n--;
                 }
             }
+        }
+
+        /**
+         * These 2 loops are necessary in case when 1 of the string finishes before the other
+         */
+        while (m > 0) {
+            result.append(str1[m-1]).append(" ");
+            m--;
+        }
+
+        while (n > 0) {
+            result.append(str2[n-1]).append(" ");
+            n--;
         }
         String SCS = result.reverse().toString();
         // We will divide the length by 2 since we are adding whitespace.

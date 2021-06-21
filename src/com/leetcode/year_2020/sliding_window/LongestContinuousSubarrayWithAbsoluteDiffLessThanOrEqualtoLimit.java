@@ -4,6 +4,11 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
+ * https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
+ * <p>
+ * "Absolute difference between any two elements is less than or equal to limit" is basically =>
+ * "Absolute difference between min and max elements of subarray"
+ *
  * @author neeraj on 14/07/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -28,7 +33,7 @@ public class LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualtoLimit {
          */
         Deque<Integer> maxDeque = new ArrayDeque<>();
         Deque<Integer> minDeque = new ArrayDeque<>();
-        int low = 0;
+        int left = 0;
         int result = Integer.MIN_VALUE;
 
         for (int right = 0; right < nums.length; right++) {
@@ -48,16 +53,17 @@ public class LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualtoLimit {
 
             minDeque.addLast(nums[right]); // Adding smaller item in minQueue.
 
-            // Check the difference
-            if (maxDeque.peek() - minDeque.peek() > limit) {
+            // Shrink the window [left......right], Now either we will remove the large item or the smaller item
+            // since they are the one breaking the equation
+            if (maxDeque.peekFirst() - minDeque.peekFirst() > limit) {
                 // Now either remove smaller item or large item
-                // on whichever item my low is pointing
-                if (maxDeque.peek() == nums[low]) maxDeque.pollFirst();
-                if (minDeque.peek() == nums[low]) minDeque.pollFirst();
+                // on whichever item my left is pointing
+                if (maxDeque.peekFirst() == nums[left]) maxDeque.pollFirst();
+                if (minDeque.peekFirst() == nums[left]) minDeque.pollFirst();
 
-                low++; // Shrinking the window
+                left++; // Shrinking the window
             }
-            result = Math.max(result, right - low + 1);
+            result = Math.max(result, right - left + 1);
         }
         return result;
     }

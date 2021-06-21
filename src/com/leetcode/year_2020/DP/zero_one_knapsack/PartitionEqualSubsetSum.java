@@ -33,11 +33,11 @@ public class PartitionEqualSubsetSum {
         if (sumToAchieve % 2 != 0) return false;
         sumToAchieve /= 2; // Divide into half since problem asks to partition equal subset sum
         t = new Boolean[nums.length + 1][sumToAchieve + 1];
-//        return canPartitionRecursively(nums, nums.length - 1, sumToAchieve);
+        return canPartitionRecursively(nums, nums.length - 1, sumToAchieve);
 
         // For Top Down Approach.
-        dp = new boolean[nums.length + 1][sumToAchieve + 1];
-        return canPartitionTopDown(nums, nums.length - 1, sumToAchieve);
+//        dp = new boolean[nums.length + 1][sumToAchieve + 1];
+//        return canPartitionTopDown(nums, nums.length - 1, sumToAchieve);
     }
 
     public static boolean canPartitionRecursively(int[] nums, int n, int sumToAchieve) {
