@@ -58,6 +58,9 @@ public class QueueUtil {
         util.deque();
         util.deque();
         util.deque();
+        util.deque();
+        util.deque();
+        util.deque();
         util.enque(100);
         util.enque(23200);
         util.deque();

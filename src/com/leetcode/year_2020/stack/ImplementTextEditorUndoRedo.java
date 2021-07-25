@@ -1,4 +1,4 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.stack;
 
 import java.util.Stack;
 
@@ -13,6 +13,7 @@ public class ImplementTextEditorUndoRedo {
         performOperation(new String[][]{
                 {"INSERT", "A"},
                 {"DELETE"},
+                {"UNDO"},
                 {"UNDO"}
         });
     }

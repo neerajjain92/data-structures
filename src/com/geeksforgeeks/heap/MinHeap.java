@@ -171,8 +171,6 @@ public class MinHeap<T> {
         allNodes.remove(node);
         allNodes.remove(lastNode);
         if ((size - 1) != 0) {
-            allNodes.remove(node);
-            allNodes.remove(lastNode);
             allNodes.add(0, lastNode);
 
             size--;

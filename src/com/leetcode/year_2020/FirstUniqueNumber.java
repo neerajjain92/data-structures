@@ -13,7 +13,7 @@ import java.util.Map;
 public class FirstUniqueNumber {
 
     /**
-     * We will solve this problem similar to LRU cache, using Doubly Linked List and HashMap to point to the nodes in
+     * We will solve this problem similar to LRU cache {@link LRUCache}, using Doubly Linked List and HashMap to point to the nodes in
      * that Doubly Linked List. Now the interesting part is uniqueness, so whenever user adds a number which is already
      * present in the doubly-LinkedList just remove that node, or make it orphan
      * <p>
@@ -48,7 +48,7 @@ public class FirstUniqueNumber {
         public void add(int value) {
             if (itemToNodeMapping.containsKey(value)) { // if already exist just discard the item from the list.
                 DoublyLinkedListNode existingNode = itemToNodeMapping.get(value);
-                if(existingNode.next == null && existingNode.prev == null) return;
+                if (existingNode.next == null && existingNode.prev == null) return;
                 existingNode.next.prev = existingNode.prev;
                 existingNode.prev.next = existingNode.next;
 
@@ -71,7 +71,7 @@ public class FirstUniqueNumber {
     }
 
     public static void main(String[] args) {
-        FirstUnique firstUnique = new FirstUnique(new int[]{7,7,7,7});
+        FirstUnique firstUnique = new FirstUnique(new int[]{7, 7, 7, 7});
         System.out.println(firstUnique.showFirstUnique());
         firstUnique.add(7);
         firstUnique.add(3);

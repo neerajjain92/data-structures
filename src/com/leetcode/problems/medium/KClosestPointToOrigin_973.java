@@ -2,7 +2,11 @@ package com.leetcode.problems.medium;
 
 import com.geeksforgeeks.array.Rotate2DMatrix;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.PriorityQueue;
 
 /**
  * @author neeraj on 02/09/19
@@ -27,12 +31,7 @@ public class KClosestPointToOrigin_973 {
 
     public static int[][] kClosestUsingHeap(int[][] points, int K) {
         // Maintain a Max Heap
-        PriorityQueue<int[]> priorityQueue = new PriorityQueue<>(new Comparator<int[]>() {
-            @Override
-            public int compare(int[] left, int[] right) {
-                return getDistance(right) - getDistance(left);
-            }
-        });
+        PriorityQueue<int[]> priorityQueue = new PriorityQueue<>((left, right) -> getDistance(right) - getDistance(left));
 
         for (int i = 0; i < points.length; i++) {
             priorityQueue.add(points[i]);

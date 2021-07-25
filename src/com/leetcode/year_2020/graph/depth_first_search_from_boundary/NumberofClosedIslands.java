@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.graph.island_variants;
+package com.leetcode.year_2020.graph.depth_first_search_from_boundary;
 
 /**
  * @author neeraj on 31/05/20
@@ -40,7 +40,7 @@ public class NumberofClosedIslands {
          * We do boundaryLevel dfs for the same
          *
          * Step 1) We will check all the boundaries first
-         *          if we found any 1, we will flip it to '1' and it's related island to '1'
+         *          if we found any 0, we will flip it to '1' and it's related island to '1' (since 0 is land and 1 is water in question)
          * Step 2) Now this problem is just count no of island problem with 0 being considered as island.
          */
 

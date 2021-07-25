@@ -42,7 +42,7 @@ public class RainWaterTrapping {
 //            |  |            |    |
 //            |  |    ___     |    |
 //          __|  |____|  |____|    |__
-//           0 3    0   1   0    4
+//           0  3  0   1   0    4
         int leftMax = Integer.MIN_VALUE;
         int rightMax = Integer.MIN_VALUE;
         int left = 0;
@@ -60,16 +60,6 @@ public class RainWaterTrapping {
                 right--;
             }
         }
-        List<String> letterLogs = new ArrayList<>();
-        Collections.sort(letterLogs, (a, b) -> {
-            int val = a.substring(a.indexOf(" ") + 1).compareTo(b.substring(b.indexOf(" ") + 1));
-            if (val == 0) {
-                return a.compareTo(b);
-            } else {
-                return val;
-            }
-        });
-
         return totalWaterCollected;
     }
 }

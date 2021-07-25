@@ -8,7 +8,8 @@ import java.util.List;
  * https://leetcode.com/problems/number-of-islands-ii/#/description
  * https://tenderleo.gitbooks.io/leetcode-solutions-/GoogleMedium/305.html
  * <p>
- * Given m = 3, n = 3, positions = [[0,0], [0,1], [1,2], [2,1]]. Initially, the 2d grid grid is filled with water. (Assume 0 represents water and 1 represents land).
+ * Given m = 3, n = 3, positions = [[0,0], [0,1], [1,2], [2,1]]. Initially, the 2d grid grid is filled with water.
+ * (Assume 0 represents water and 1 represents land).
  * 0 0 0
  * 0 0 0
  * 0 0 0

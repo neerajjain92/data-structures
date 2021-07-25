@@ -8,7 +8,6 @@ import java.util.Map;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-@SuppressWarnings("DuplicatedCode")
 public class LRUCache {
 
     private Map<Integer, DoublyLinkedListNode> cache;

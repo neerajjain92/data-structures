@@ -27,7 +27,7 @@ public class NonDecreasingArray {
          * This is a greedy problem, and we have 2 choices whenever we get nums[i] < nums[i-1]
          *
          * 1. To make nums[i-1] = nums[i].  This we can apply only when nums[i-2] < nums[i].
-         * 2. To make nums[i] = nums[i-1].  This we can apply only when nums[i-2] > nums[i].
+         * 2. To make nums[i] = nums[i-1].  This we can apply only when nums[i-2] > nums[i]
          *
          * For Case 1:
          *                   7
@@ -36,12 +36,14 @@ public class NonDecreasingArray {
          *                /     3
          *               /
          *              1
-         * For Case 2:                9
-         *                     7     /
-         *                    / \   /
-         *                   /   \ /
-         *                  /    3              ======> Here if i make 7 =3 the sequence is still invalid, since 4 is still > 3.
-         *                 4                    ======> Hence i have to make 3 = 7 so the sequence will become [4,7,7,9]
+         * For Case 2:                         9
+         *                     7             /
+         *                    / \           /
+         *                   /   \        /
+         *                  /     \     /           ======> Here if i make 7 =3 the sequence is still invalid, since 4 is still > 3.
+         *                 4       \   /            ======> Hence i have to make 3 = 7 so the sequence will become [4,7,7,9]
+         *                          \/
+         *                          3
          *
          *
          * Now we have to check only upto n-2th element why because we have already validated all elements before that

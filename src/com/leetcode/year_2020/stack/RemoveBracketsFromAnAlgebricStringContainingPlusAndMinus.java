@@ -5,8 +5,6 @@ import com.util.LogUtil;
 import java.util.Stack;
 
 /**
- * https://www.geeksforgeeks.org/remove-brackets-algebraic-string-containing-operators/
- *
  * @author neeraj on 04/07/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -35,30 +33,22 @@ public class RemoveBracketsFromAnAlgebricStringContainingPlusAndMinus {
         for (char c : str.toCharArray()) {
 
             if (c == '-') {
-                if (stack.peek() == 1) {
-                    result.append('+');
-                } else {
-                    result.append(c);
-                }
+                result.append(stack.peek() == 1 ? '+' : '-');
             } else if (c == '+') {
-                if (stack.peek() == 1) {
-                    result.append('-');
-                } else {
-                    result.append(c);
-                }
+                result.append(stack.peek() == 1 ? '-' : '+');
             } else if (c == '(') {
                 if (index > 0 && str.charAt(index - 1) == '-') {
                     stack.push(stack.peek() == 1 ? 0 : 1);
                 } else {
-                    stack.push(stack.peek());
+                    stack.push(stack.peek()); // Pushing the same operator again, to get this reflected in the inner bracket.
                 }
             } else if (c == ')') {
-                stack.pop();
+                stack.pop(); // Remove the last toggle operator added for this particular bracket
             } else {
                 result.append(c);
             }
             index++;
         }
-        LogUtil.logIt("Expression : "+ str + " is now "+ result);
+        LogUtil.logIt("Expression : " + str + " is now " + result);
     }
 }

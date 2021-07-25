@@ -26,9 +26,9 @@ public class ReverseFirstKElementsInQueue {
      * 3) Now just dequeue and enqueue total - k elements back
      * <p>
      * Original Queue
-     * ----------
-     * 5 4 3 2 1
-     * ----------
+     * ----------------------
+     * (Rear)5 4 3 2 1 (Front)
+     * -----------------------
      * <p>
      * Let's k = 3
      * Push k elements to stack

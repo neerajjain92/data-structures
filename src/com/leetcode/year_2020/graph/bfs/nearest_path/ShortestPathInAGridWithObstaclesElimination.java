@@ -3,6 +3,7 @@ package com.leetcode.year_2020.graph.bfs.nearest_path;
 
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Queue;
 import java.util.Set;
 
@@ -40,6 +41,19 @@ public class ShortestPathInAGridWithObstaclesElimination {
             this.j = j;
             this.steps = steps;
             this.obstacleEliminated = obstacleEliminated;
+        }
+
+        @Override
+        public boolean equals(final Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            final Pair pair = (Pair) o;
+            return i == pair.i && j == pair.j;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(steps, i, j, obstacleEliminated);
         }
     }
 

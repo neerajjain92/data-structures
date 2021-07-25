@@ -30,7 +30,8 @@ public class AccountsMerge {
         for (String[] account : accounts) {
             accountsList.add(Arrays.asList(account));
         }
-        System.out.println(accountsMergeUsingDFS(accountsList));
+//        System.out.println(accountsMergeUsingDFS(accountsList));
+        System.out.println(accountsMerge(accountsList));
     }
 
     public static List<List<String>> accountsMerge(List<List<String>> accounts) {

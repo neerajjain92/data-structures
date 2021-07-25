@@ -44,12 +44,21 @@ public class MinimumNumberOfReversalsToMakeExpressionBalanced {
          *
          * When you have combination of both....like some m --> "}" some n ---> "{"
          * So we need total of ceil[m/2] + ceil[n/2]
+         *
+         * Logic of ceil, suppose we have 3 opening and 1 closing
+         * like this "] [ [ [", if you notice carefully after we balance opening internally
+         * "] [ ] ["...... We have 1 perfect balanced pair we will remove this
+         * "]   [" ..... and now since both are in opposite direction we have to flip both
+         * "[]".....
+         *
+         * Hence in open===3 case, we need total 2 reversal, 1 for making perfect pair and other left
+         * to be combined with the closing case. but if i do 3/2 == 1.5 hence inorder to make it 2 we need ceil.
          */
         Stack<Character> stack = new Stack<>();
         int opening = 0, closing = 0;
-        for(char c: str.toCharArray()) {
-            if(c == '}') {
-                if(opening > 0) {
+        for (char c : str.toCharArray()) {
+            if (c == '}') {
+                if (opening > 0) {
                     stack.pop();
                     opening--;
                 } else {
@@ -61,6 +70,6 @@ public class MinimumNumberOfReversalsToMakeExpressionBalanced {
                 opening++;
             }
         }
-        return (int) (Math.ceil(opening/2d) + Math.ceil(closing/2d));
+        return (int) (Math.ceil(opening / 2d) + Math.ceil(closing / 2d));
     }
 }

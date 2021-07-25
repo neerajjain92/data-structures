@@ -1,7 +1,12 @@
 package com.company.google;
 
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Google Technical Interview Question
@@ -29,9 +34,6 @@ public class RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPop
             populationProbability[i] = initialValue + stateAndPopulation.get(i).population / Double.valueOf(totalPopulation);
             initialValue = populationProbability[i];
         }
-//        for (double val : populationProbability) {
-//            System.out.print(df.format(val) + ",");
-//        }
         for (int i = 0; i < stateAndPopulation.size(); i++) {
             System.out.println(stateAndPopulation.get(i).name + " -> " +
                     (Double.parseDouble(df.format(stateAndPopulation.get(i).population / Double.valueOf(totalPopulation))) * 100) + " %");
@@ -41,14 +43,27 @@ public class RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPop
 
     public StateAndPopulation random() {
         double random = Math.random();
-        double previousValue = 0.0d;
-        for (int i = 0; i < populationProbability.length; i++) {
-            if (random >= previousValue && random <= populationProbability[i]) {
-                return stateAndPopulations.get(i);
+        int indexOfRange = doBinarySearchAndFindRightRangeForThisRandom(populationProbability, random);
+        return stateAndPopulations.get(indexOfRange);
+    }
+
+    public static int doBinarySearchAndFindRightRangeForThisRandom(final double[] populationProbability, final double random) {
+        int start = 0;
+        int end = populationProbability.length - 1;
+        int index = 0;
+
+        // Smallest index which can cover me.
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+
+            if (populationProbability[mid] > random) {
+                index = mid;
+                end = mid - 1;
+            } else {
+                start = mid + 1;
             }
-            previousValue = populationProbability[i];
         }
-        return null;
+        return index;
     }
 
 
@@ -56,11 +71,11 @@ public class RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPop
         List<StateAndPopulation> stateAndPopulations = Arrays.asList(
                 new StateAndPopulation("RAJASTHAN", 1),
                 new StateAndPopulation("MP", 1),
-                new StateAndPopulation("UP", 3)
-//                new StateAndPopulation("UK", 20),
-//                new StateAndPopulation("DEL", 10),
-//                new StateAndPopulation("MAHARASHTRA", 5),
-//                new StateAndPopulation("Telangana", 3)
+                new StateAndPopulation("UP", 3),
+                new StateAndPopulation("UK", 20),
+                new StateAndPopulation("DEL", 10),
+                new StateAndPopulation("MAHARASHTRA", 5),
+                new StateAndPopulation("Telangana", 3)
         );
         RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation obj =
                 new RandomStateNameGeneratorBasedOnProportionateToProbabilityOfTotalPopulation();

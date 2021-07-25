@@ -46,7 +46,7 @@ public class LetterCasePermutation {
         }
     }
 
-    private static boolean isAlphabet(char itemAtFirst) {
+    private static boolean  isAlphabet(char itemAtFirst) {
         return (itemAtFirst >= 65 && itemAtFirst <= 90)
                 || (itemAtFirst >= 97 && itemAtFirst <= 122);
     }

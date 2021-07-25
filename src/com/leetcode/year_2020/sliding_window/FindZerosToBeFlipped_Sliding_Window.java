@@ -1,6 +1,7 @@
-package com.career_cup;
+package com.leetcode.year_2020.sliding_window;
 
 /**
+ * https://leetcode.com/problems/max-consecutive-ones-iii/
  * You are given with an array of 1s and 0s. And you are given with an integer m, which signifies number of flips allowed.
  * <p>
  * find the position of zeros which when flipped will produce maximum continuous series of 1s.
@@ -17,10 +18,10 @@ public class FindZerosToBeFlipped_Sliding_Window {
 
     public static void main(String[] args) {
         findZerosToBeFlippedToGetMaximumConsecutiveOnes(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2);
-        longestOnes(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2);
+        System.out.println(longestOnes(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2));
 
         findZerosToBeFlippedToGetMaximumConsecutiveOnes(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3);
-        longestOnes(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3);
+        System.out.println(longestOnes(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3));
     }
 
     public static int longestOnes(int[] arr, int k) {

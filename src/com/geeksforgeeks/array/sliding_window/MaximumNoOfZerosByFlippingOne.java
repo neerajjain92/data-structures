@@ -28,6 +28,62 @@ public class MaximumNoOfZerosByFlippingOne {
         getMaximumZeros(new Integer[]{0, 1, 0, 0, 1, 1, 0});
         getMaximumZeros(new Integer[]{0, 0, 0, 1, 0, 1});
         getMaximumZeros(new Integer[]{1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1});
+
+        getMaxConsecutiveZerosByOneFlip(new int[]{0, 1, 0, 0, 1, 1, 0});
+        getMaxConsecutiveZerosByOneFlip(new int[]{0, 0, 0, 1, 0, 1});
+        getMaxConsecutiveZerosByOneFlip(new int[]{1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1});
+
+        solveViaKadanes(new int[]{0, 1, 0, 0, 1, 1, 0});
+        solveViaKadanes(new int[]{0, 0, 0, 1, 0, 1});
+        solveViaKadanes(new int[]{1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1});
+    }
+
+    public static int solveViaKadanes(int[] arr) {
+        /**
+         * We'll keep a tab on no of zeros while traversing
+         * 1. consider 0 as -1 and 1 as 1, calculate max sum
+         * 2. NoOfZeros + MaxTillNow == MaxNumberOfZeros
+         */
+        int MEH = 0;
+        int MTN = Integer.MIN_VALUE;
+        int NO_OF_ZEROS = 0;
+        for (int i : arr) {
+            if (i == 0) {
+                NO_OF_ZEROS++;
+                i = -1;
+            }
+            MEH += i;
+            MTN = Math.max(MTN, MEH);
+            if (MEH < 0) MEH = 0;
+        }
+        System.out.println("Maximum Zeros By Flipping via Kadanes :: " + (NO_OF_ZEROS + MTN));
+        return NO_OF_ZEROS - MTN;
+    }
+
+    public static int getMaxConsecutiveZerosByOneFlip(final int[] arr) {
+        int low = 0, high = 0, flip = 1;
+        int maxZeros = Integer.MIN_VALUE;
+        while (high < arr.length) {
+            if (arr[high] == 1) {
+                flip--;
+                while (high + 1 < arr.length && arr[high + 1] == 1) {
+                    high++;
+                }
+            }
+            while (flip < 0) {
+                if (arr[low] == 1) {
+                    flip++;
+                    while (low + 1 < arr.length && arr[low + 1] == 1) {
+                        low++;
+                    }
+                }
+                low++;
+            }
+            maxZeros = Math.max(maxZeros, high - low + 1);
+            high++;
+        }
+        System.out.println("Maximum continuous Zeros By Flipping via Sliding Window :: " + maxZeros);
+        return maxZeros;
     }
 
     public static void findMaximumNumOfZerosPossibleByFlippingOne(Integer[] arr) {

@@ -7,7 +7,7 @@ import static com.util.LogUtil.getArrayAsString;
 /**
  * Given an array A having positive and negative integers and a number k, find the minimum length sub array of A with sum = k.
  * <p>
- * arr[] = {2,3,1,1,-1,6,4,3,8}
+ * arr[] = {2,3,1,1,-1,6,4,3,8} k = 7
  * <p>
  * Output is : 2
  * and subarray is [4,3]

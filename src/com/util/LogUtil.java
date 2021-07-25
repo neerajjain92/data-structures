@@ -26,7 +26,7 @@ public class LogUtil {
     }
 
     public static void logIt(String str, Boolean shouldAddSeparator) {
-        System.out.println((shouldAddSeparator == true ? "============== " : "") + str + (shouldAddSeparator == true ? " ==============" : ""));
+        System.out.println((shouldAddSeparator ? "============== " : "") + str + (shouldAddSeparator ? " ==============" : ""));
     }
 
     public static void printMultiDimensionArray(int[][] arr) {

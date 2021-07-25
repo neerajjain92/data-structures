@@ -18,7 +18,7 @@ public class Rotate2DMatrix {
                 {4, 5, 6},
                 {7, 8, 9}
         };
-//        rotateMatrixBy180(matrix);
+        rotateMatrixBy180(matrix);
 //
 //        print2DArray(matrix);
 //        inplaceRotate180Degree(matrix);

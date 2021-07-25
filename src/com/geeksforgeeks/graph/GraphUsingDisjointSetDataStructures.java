@@ -1,6 +1,10 @@
 package com.geeksforgeeks.graph;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class GraphUsingDisjointSetDataStructures<T> {
 
@@ -19,21 +23,10 @@ public class GraphUsingDisjointSetDataStructures<T> {
     }
 
     public void addEdge(long l1, long l2, int weight) {
-        Vertex vertex1 = null;
-        Vertex vertex2 = null;
-
-        if (allVertex.containsKey(l1)) {
-            vertex1 = allVertex.get(l1);
-        } else {
-            vertex1 = new Vertex(l1);
-            allVertex.put(l1, vertex1);
-        }
-        if (allVertex.containsKey(l2)) {
-            vertex2 = allVertex.get(l2);
-        } else {
-            vertex2 = new Vertex(l2);
-            allVertex.put(l2, vertex2);
-        }
+        allVertex.putIfAbsent(l1, new Vertex<>(l1));
+        allVertex.putIfAbsent(l2, new Vertex<>(l2));
+        Vertex vertex1 = allVertex.get(l1);
+        Vertex vertex2 = allVertex.get(l2);
 
         Edge edge = new Edge(vertex1, vertex2, isDirected, weight);
 

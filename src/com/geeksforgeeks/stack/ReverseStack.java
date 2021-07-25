@@ -29,12 +29,9 @@ public class ReverseStack {
         if (stack.isEmpty()) {
             stack.push(item);
         } else {
-            Integer popped = null;
-            if (!stack.isEmpty()) {
-                popped = stack.pop();
-                insertAtBottom(stack, item);
-                stack.push(popped);
-            }
+            Integer popped = stack.pop();
+            insertAtBottom(stack, item);
+            stack.push(popped);
         }
     }
 

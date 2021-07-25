@@ -18,6 +18,7 @@ public class DetectADirectedGraphHasACycle {
         graph.addEdge(5, 6, true);
         graph.addEdge(6, 3, true);
 
+
         graph.addEdge(11, 10, true);
         graph.addEdge(10, 9, true);
         graph.addEdge(9, 12, true);

@@ -20,27 +20,27 @@ public class TestingStrongConnectivity {
 //                {2, 4},
 //                {4, 2},
 //        }, 5);
-//
-//        /**
-//         *       1
-//         *      /\
-//         *     //
-//         *    //
-//         *   0
-//         *   \\
-//         *    \\
-//         *     \/
-//         *      2
-//         */
-//        check(new Integer[][]{
-//                {0, 1},
-//                {0, 2}
-//        }, 3);
-//
-//        check(new Integer[][]{
-//                {0, 1},
-//                {2, 0}
-//        }, 3);
+
+        /**
+         *       1
+         *      /\
+         *     //
+         *    //
+         *   0
+         *   \\
+         *    \\
+         *     \/
+         *      2
+         */
+        check(new Integer[][]{
+                {0, 1},
+                {0, 2}
+        }, 3);
+
+        check(new Integer[][]{
+                {0, 1},
+                {2, 0}
+        }, 3);
 //
 //        check(new Integer[][]{
 //                {0, 1},
@@ -64,7 +64,6 @@ public class TestingStrongConnectivity {
         }
         LogUtil.logIt("Is Graph Strongly Connected......" + isGraphStronglyConnected(directedEdges, totalVertex));
         printStronglyConnectedComponents(directedEdges, totalVertex);
-
     }
 
     public static boolean isGraphStronglyConnected(List<List<Integer>> directedEdges, int totalVertex) {

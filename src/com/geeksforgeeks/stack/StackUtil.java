@@ -5,15 +5,15 @@ import java.util.Queue;
 
 public class StackUtil {
 
-    final static int MAX = 100;
+    final static int MAX = 3;
     int top;
     int[] arr = new int[MAX];
     boolean isLogEnabled;
 
     // Helper class to Implement Queue using Stack
     class QueueImpl {
-        StackUtil stack1;
-        StackUtil stack2;
+        StackUtil pushStack;
+        StackUtil popStack;
     }
 
     //Helper Class to Implement Stack using Queue
@@ -48,12 +48,16 @@ public class StackUtil {
         return top < 0;
     }
 
+    public boolean isFull() {
+        return top == MAX - 1;
+    }
+
     public int peek() {
         return arr[top];
     }
 
     public boolean push(int x) {
-        if (top >= MAX) {
+        if (top + 1 >= MAX) {
             System.out.println("Stack Overflow");
             return false;
         }
@@ -64,7 +68,7 @@ public class StackUtil {
     }
 
     public int pop() {
-        if (top < 0) {
+        if (top == -1) {
             System.out.println("Stack Underflow");
             return 0;
         }
@@ -83,115 +87,51 @@ public class StackUtil {
 
     public void implementQueueUsingStack() {
         QueueImpl queue = new QueueImpl();
-        queue.stack1 = new StackUtil(false);
-        queue.stack2 = new StackUtil(false);
+        queue.pushStack = new StackUtil(true);
+        queue.popStack = new StackUtil(true);
 
-        enQueueCostly(queue, 1);
-        enQueueCostly(queue, 2);
-        enQueueCostly(queue, 3);
-        enQueueCostly(queue, 4);
-        enQueueCostly(queue, 5);
+        enqueue(queue, 1);
+        enqueue(queue, 2);
+        enqueue(queue, 3);
+        enqueue(queue, 4);
+        enqueue(queue, 5);
 
-        deQueueCheaper(queue);
-        deQueueCheaper(queue);
-        deQueueCheaper(queue);
-
-        letsDo("Implement Queue Using Stack version 2");
-        queue.stack1 = new StackUtil(false);
-        queue.stack2 = new StackUtil(false);
-        enQueueCheaper(queue, 1);
-        enQueueCheaper(queue, 2);
-        enQueueCheaper(queue, 3);
-        enQueueCheaper(queue, 4);
-        enQueueCheaper(queue, 5);
-
-        deQueueCostly(queue);
-        deQueueCostly(queue);
-        deQueueCostly(queue);
-
-
+        dequeue(queue);
+        dequeue(queue);
+        dequeue(queue);
     }
 
     /**
-     * 1) While stack 1 is not empty, push everything from Stack 1 to Stack 2
-     * <p>
-     * 2) Push X into Stack 1
-     * <p>
-     * 3) Push back everything from Stack 1 to Stack 2
-     *
-     * @param queue
-     * @param x
+     * Always pop from pop Stack, if popStack isEmpty() then push all content from pushStack to popStack
+     * and then return(pop) from popstack
      */
-    public void enQueueCostly(QueueImpl queue, int x) {
-        while (!queue.stack1.isEmpty()) {
-            queue.stack2.push(queue.stack1.pop());
+    private void dequeue(final QueueImpl queue) {
+        StackUtil popStack = queue.popStack;
+        StackUtil pushStack = queue.pushStack;
+
+        if (!popStack.isEmpty()) {
+            System.out.println("Dequeue-ing...." + popStack.pop());
+            return;
         }
 
-        Queue<Integer> queue1 = new LinkedList<>();
-        queue1.poll();
-
-        queue.stack1.push(x);
-        if (isLogEnabled) {
-            System.out.println("Enqueuing (costly) " + x + " into the stack");
+        while (!pushStack.isEmpty()) {
+            popStack.push(pushStack.pop());
         }
-        while (!queue.stack2.isEmpty()) {
-            queue.stack1.push(queue.stack2.pop());
+        if (popStack.isEmpty()) {
+            System.out.println("Dequeue-ing...." + popStack.pop());
+        } else {
+            System.out.println("Nothing to deque");
         }
     }
 
     /**
-     * if stack 1 is empty throw error
-     * else pop from stack 1
-     *
-     * @param queue
-     * @return
+     * Always push in PushStack
      */
-    public int deQueueCheaper(QueueImpl queue) {
-        if (queue.stack1.isEmpty()) {
-            System.out.println("Queue Underflow Error");
-            return -1;
-        }
-        if (isLogEnabled) {
-            System.out.println("De-queuing (cheaply) " + queue.stack1.peek() + " from the stack");
-        }
-        return queue.stack1.pop();
+    private void enqueue(final QueueImpl queue, final int item) {
+        StackUtil pushStack = queue.pushStack;
+        pushStack.push(item);
     }
 
-    /**
-     * This is the second method of implementing Queue using stack
-     * where enqueue operation is cheaper
-     * <p>
-     * Always Push on Stack S1
-     *
-     * @param queue
-     * @param x
-     */
-    public void enQueueCheaper(QueueImpl queue, int x) {
-        if (isLogEnabled) {
-            System.out.println("Enqueuing (Cheaply) " + x + " into the stack 1");
-        }
-        queue.stack1.push(x);
-    }
-
-    public int deQueueCostly(QueueImpl queue) {
-        StackUtil stack1 = queue.stack1;
-        StackUtil stack2 = queue.stack2;
-
-        if (stack1.isEmpty() && stack2.isEmpty()) {
-            System.out.println("Stack Underflow Error");
-            return -1;
-        }
-
-        if (stack2.isEmpty()) {
-            while (!stack1.isEmpty()) {
-                stack2.push(stack1.pop());
-            }
-        }
-        if (isLogEnabled) {
-            System.out.println("Dequeuing (Costly) " + stack2.peek() + " from Stack 2");
-        }
-        return stack2.pop();
-    }
 
     private void implementStackUsingQueue() {
         StackImpl<Integer> stack = new StackImpl<>();
@@ -287,6 +227,8 @@ public class StackUtil {
         stack.push(5);
 
         stack.printStack(stack.arr);
+        stack.pop();
+        stack.pop();
         stack.pop();
         stack.pop();
         stack.printStack(stack.arr);

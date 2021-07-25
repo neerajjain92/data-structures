@@ -8,9 +8,13 @@ public class SpecialMinStackO_1_SpaceComplexity {
     private static Integer MIN_ELEMENT;
 
     public static void main(String[] args) {
-        push(20);
-        push(10);
-        push(30);
+//        push(20);
+//        push(10);
+//        push(30);
+
+        push(-2);
+        push(0);
+        push(-3);
 
         System.out.println("Minimum Element in the Stack is " + MIN_ELEMENT);
         System.out.println("After Removing " + pop());
@@ -24,7 +28,6 @@ public class SpecialMinStackO_1_SpaceComplexity {
         if (stack.isEmpty()) {
             stack.push(x);
             MIN_ELEMENT = x;
-            System.out.println("Number Inserted: " + x);
         } else {
             if (x < MIN_ELEMENT) { // We found a new MIN_ELEMENT
                 stack.push(2 * x - MIN_ELEMENT);
@@ -32,8 +35,8 @@ public class SpecialMinStackO_1_SpaceComplexity {
             } else {
                 stack.push(x);
             }
-            System.out.println("Number Inserted: " + x);
         }
+        System.out.println("Number Inserted: " + x);
     }
 
     public static Integer pop() {

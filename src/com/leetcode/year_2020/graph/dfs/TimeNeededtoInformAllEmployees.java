@@ -36,8 +36,21 @@ public class TimeNeededtoInformAllEmployees {
             managerReportees.get(manager[i]).add(i); // Associating the child.
         }
 
-        // Now we can do the DFS
+//         Now we can do the DFS
         return doDFSAndFetchMaxInformTime(managerReportees, headID, informTime);
+//        fastDfs(managerReportees, headID, informTime, informTime[headID]);
+//        return MaxInformTime == Integer.MIN_VALUE ? 0 : MaxInformTime;
+    }
+
+    static int MaxInformTime = Integer.MIN_VALUE;
+
+    private static void fastDfs(Map<Integer, List<Integer>> managerReportees, int manager, int[] informTime, int currInformTime) {
+        if(!managerReportees.containsKey(manager)) return;
+        MaxInformTime = Math.max(MaxInformTime, currInformTime);
+
+        for (Integer reportee : managerReportees.get(manager)) {
+            fastDfs(managerReportees, reportee, informTime, currInformTime + informTime[reportee]);
+        }
     }
 
     private static int doDFSAndFetchMaxInformTime(Map<Integer, List<Integer>> managerReportees, int source, int[] informTime) {

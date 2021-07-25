@@ -1,9 +1,12 @@
 package com.leetcode.problems.medium;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author neeraj on 12/10/19
@@ -20,7 +23,7 @@ public class IsValidSudoku_36 {
     static Map<String, Boolean> validBoxCheck = new HashMap<>();
 
     public static void main(String[] args) {
-        System.out.println(isValidSudoku(new char[][]{
+        System.out.println(isValidSudokuSimpleApproach(new char[][]{
                 {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
                 {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
                 {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
@@ -31,7 +34,7 @@ public class IsValidSudoku_36 {
                 {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
         }));
-        System.out.println(isValidSudoku(new char[][]{
+        System.out.println(isValidSudokuSimpleApproach(new char[][]{
                 {'.', '.', '.', '.', '5', '.', '.', '1', '.'},
                 {'.', '4', '.', '3', '.', '.', '.', '.', '.'},
                 {'.', '.', '.', '.', '.', '3', '.', '.', '1'},
@@ -42,7 +45,7 @@ public class IsValidSudoku_36 {
                 {'.', '2', '.', '9', '.', '.', '.', '.', '.'},
                 {'.', '.', '4', '.', '.', '.', '.', '.', '.'}
         }));
-        System.out.println(isValidSudoku(new char[][]{
+        System.out.println(isValidSudokuSimpleApproach(new char[][]{
                 {'7', '.', '.', '.', '4', '.', '.', '.', '.'},
                 {'.', '.', '.', '8', '6', '5', '.', '.', '.'},
                 {'.', '1', '.', '2', '.', '.', '.', '.', '.'},
@@ -54,6 +57,49 @@ public class IsValidSudoku_36 {
                 {'.', '.', '.', '.', '.', '.', '.', '.', '.'}
         }));
 
+        System.out.println(isValidSudokuSimpleApproach(new char[][]{
+                {'.', '.', '4', '.', '.', '.', '6', '3', '.'},
+                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+                {'5', '.', '.', '.', '.', '.', '.', '9', '.'},
+                {'.', '.', '.', '5', '6', '.', '.', '.', '.'},
+                {'4', '.', '3', '.', '.', '.', '.', '.', '1'},
+                {'.', '.', '.', '7', '.', '.', '.', '.', '.'},
+                {'.', '.', '.', '5', '.', '.', '.', '.', '.'},
+                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+                {'.', '.', '.', '.', '.', '.', '.', '.', '.'}
+        }));
+
+    }
+
+    public static boolean isValidSudokuSimpleApproach(char[][] board) {
+        // We will generate 3 keys for any non-empty cell
+        /**
+         * Rows: "row(VALUE)"
+         * Cols: "(VALUE)col"
+         * Box: "row(VALUE)col"
+         *
+         * and we will maintain a set to keep track of this and whenever we found an existing value in set
+         * i.e we found a duplicate either in row, col or same box and sudoku is no longer valid
+         */
+        final Set<String> seen = new HashSet<>();
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                final char value = board[i][j];
+                if (value == '.') continue;
+                final String rowKey = i + "(" + value + ")";
+                final String colKey = "(" + value + ")" + j; // Why value before in colKey just to differentiate from row entry.
+                // We know a box is of 3*3 in classic sudoku.
+                // so we will actually have only 9 boxes and we can calculate the box number by
+                // row/3 and col/3
+                final String boxKey = i / 3 + "(" + value + ")" + j / 3;
+                if (seen.contains(rowKey) || seen.contains(colKey) || seen.contains(boxKey)) {
+                    return false;
+                } else {
+                    seen.addAll(Arrays.asList(rowKey, colKey, boxKey));
+                }
+            }
+        }
+        return true;
     }
 
 

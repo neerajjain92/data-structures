@@ -1036,7 +1036,7 @@ public class GraphUtil {
         // Map that will store Vertex and It's parent means from which vertex we reached to this vertex
         Map<Vertex<Integer>, Vertex<Integer>> pathMap = new HashMap<>();
 
-        // Let's put all the vertices into the map
+        // Let's put all the vertices into the min Heap
         for (Vertex<Integer> vertex : dijkstraGraph.getAllVertex()) {
             minHeap.addNodeToHeap(Integer.MAX_VALUE, vertex);
         }

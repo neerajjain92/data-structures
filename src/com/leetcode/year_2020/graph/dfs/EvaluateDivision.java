@@ -2,7 +2,13 @@ package com.leetcode.year_2020.graph.dfs;
 
 import com.util.LogUtil;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author neeraj on 02/06/20
@@ -26,10 +32,16 @@ public class EvaluateDivision {
 //        double[] result = calcEquation(equations, new double[]{2.0, 3.0}, queries);
 //        LogUtil.printArray(result);
 
+//        LogUtil.printArray(solve(
+//                new String[][]{{"x1", "x2"}, {"x2", "x3"}, {"x3", "x4"}, {"x4", "x5"}},
+//                new double[]{3.0, 4.0, 5.0, 6.0},
+//                new String[][]{{"x1", "x5"}, {"x5", "x2"}, {"x2", "x4"}, {"x2", "x2"}, {"x2", "x9"}, {"x9", "x9"}}
+//        ));
+
         LogUtil.printArray(solve(
-                new String[][]{{"x1", "x2"}, {"x2", "x3"}, {"x3", "x4"}, {"x4", "x5"}},
-                new double[]{3.0, 4.0, 5.0, 6.0},
-                new String[][]{{"x1", "x5"}, {"x5", "x2"}, {"x2", "x4"}, {"x2", "x2"}, {"x2", "x9"}, {"x9", "x9"}}
+                new String[][]{{"a", "b"}, {"b", "c"}, {"bc", "cd"}},
+                new double[]{1.5, 2.5, 5.0},
+                new String[][]{{"a", "c"}, {"c", "b"}, {"bc", "cd"}, {"cd", "bc"}}
         ));
     }
 
@@ -124,7 +136,7 @@ public class EvaluateDivision {
         for (String adjacent : adjacentNeighbours.keySet()) {
             if (!visited.contains(adjacent)) {
                 double result = doDFSAndCalculateCost(adjacent, destination, cost * adjacentNeighbours.get(adjacent), visited, graph);
-                if(result != -1) {
+                if (result != -1) {
                     return result;
                 }
             }

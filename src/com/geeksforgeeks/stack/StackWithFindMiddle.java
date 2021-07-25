@@ -59,7 +59,7 @@ public class StackWithFindMiddle {
         }
 
         if (size > 1 && size % 2 != 0) {
-            middle = middle.prev;
+            middle = middle.prev; // Since new node is added in the front of DLL, hence the middle is moving backwards
         }
     }
 

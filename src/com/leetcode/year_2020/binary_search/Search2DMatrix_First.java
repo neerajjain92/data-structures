@@ -5,6 +5,7 @@ import com.util.LogUtil;
 
 /**
  * https://leetcode.com/problems/search-a-2d-matrix/
+ *
  * @author neeraj on 16/10/19
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -17,6 +18,29 @@ public class Search2DMatrix_First {
                 {10, 11, 16, 20},
                 {23, 30, 34, 50}
         }, 3);
+
+        System.out.println(searchMatrixSimple(new int[][]{
+                {1, 3, 5, 7},
+                {10, 11, 16, 20},
+                {23, 30, 34, 50}
+        }, 3));
+    }
+
+    public static boolean searchMatrixSimple(int[][] matrix, int target) {
+        /**
+         * {@link Search2DMatrix_II} way of solving problem.
+         ** Simply we can start from bottom left corner
+         ** and perform simple operation
+         **/
+        int row = matrix.length - 1;
+        int col = 0;
+
+        while (col < matrix[0].length && row >= 0) {
+            if (matrix[row][col] == target) return true;
+            if (matrix[row][col] > target) row--;
+            else col++;
+        }
+        return false;
     }
 
     /**
@@ -28,6 +52,14 @@ public class Search2DMatrix_First {
      * <p>
      * Row = index / totalColumns
      * Col = index % totalColumns.
+     * <p>
+     * Reason why:
+     * <p>
+     * ROWS(why /):
+     * The row in which an item sits in is depend on the number of "items per row", because the less item we can put in a row
+     * it will increase the number of rows in the total array.
+     * <p>
+     * COLS(why Mod): For wrap around in array, we always use Mod, remember when we have to move pointers in array%size, move it back in the array.
      * <p>
      * We are iterating 2D matrix as 1D Matrix only, So assume matrix elements are like this :
      * <p>

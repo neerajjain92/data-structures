@@ -1,4 +1,4 @@
-package com.leetcode.year_2020;
+package com.leetcode.year_2020.stack;
 
 import java.util.Stack;
 

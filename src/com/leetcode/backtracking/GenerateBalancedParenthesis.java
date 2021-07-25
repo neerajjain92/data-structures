@@ -28,6 +28,7 @@ public class GenerateBalancedParenthesis {
 
     public static void main(String[] args) {
         generateParenthesis(3);
+        generateParenthesis(4);
     }
 
     public static void generateParenthesis(int numPairs) {

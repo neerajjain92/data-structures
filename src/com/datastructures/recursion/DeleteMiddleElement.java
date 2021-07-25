@@ -20,18 +20,24 @@ public class DeleteMiddleElement {
         stack.push(5);
         stack.push(6);
 
-        deleteMiddleElement(stack, stack.size()/2+1);
+        deleteMiddleElement(stack, stack.size() / 2 + 1);
 
+        printStack(stack);
+
+        stack.clear();
+        stack.push(1);
+        deleteMiddleElement(stack, (stack.size() / 2) + 1);
         printStack(stack);
     }
 
     private static void deleteMiddleElement(Stack<Integer> stack, int k) {
-        if(k==0 || stack.isEmpty()) return;
-        if(k==1) stack.pop();
+        if (k == 0 || stack.isEmpty()) return;
+        if (k == 1) stack.pop();
 
-        int popped = stack.pop();
-        deleteMiddleElement(stack, k-1);
-
-        stack.push(popped);
+        if (!stack.isEmpty()) {
+            int popped = stack.pop();
+            deleteMiddleElement(stack, k - 1);
+            stack.push(popped);
+        }
     }
 }

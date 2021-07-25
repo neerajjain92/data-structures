@@ -3,8 +3,7 @@ package com.leetcode.year_2020.DP.kadanes;
 import com.geeksforgeeks.dynamicProgramming.MaximumSumRectangle;
 import com.util.LogUtil;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.TreeSet;
 
 /**
  * https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
@@ -22,18 +21,18 @@ public class MaxSumOfRectangleNoLargerThanK {
                 {3, 8, 10, 1, 3},
                 {-4, -1, 1, 7, -6}
         };
-        maxSumSubmatrix(inputs, 2);
+//        maxSumSubmatrix(inputs, 2);
 
         inputs = new int[][]{
                 {1, 0, 1},
                 {0, -2, 3}
         };
-        maxSumSubmatrix(inputs, 2);
+//        maxSumSubmatrix(inputs, 2);
 
         inputs = new int[][]{{5, -4, -3, 4},
                 {-3, -4, 4, 5},
                 {5, 1, 5, -4}};
-        maxSumSubmatrix(inputs, 10);
+//        maxSumSubmatrix(inputs, 10);
 
         inputs = new int[][]{{5, -4, -3, 4},
                 {-3, -4, 4, 5},
@@ -41,20 +40,28 @@ public class MaxSumOfRectangleNoLargerThanK {
         maxSumSubmatrix(inputs, 8);
     }
 
-    enum Keywords {
-        MAXIMUM_SUM, START, END
-    }
-
     public static int maxSumSubmatrix(int[][] matrix, int k) {
         /**
          * This problem is similar to {@link MaximumSumRectangle}, with a twist of max sum not greater than k.
          * okay so i need to iterate through all the columns, by keeping a left and right limit and use kadane's
          * to find the sum of a sub-matrix or a rectangle.
+         *
+         * But the catch HERE <<<<<<<<<<<<<<<<<<<<< KADANE's WONT WORK FOR SUM < K problem and it won't give right solution
+         * Exlanation https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/discuss/83599/Accepted-C++-codes-with-explanation-and-references/87932
+         *
+         *  Kadane's algorithm provides us with the maximum subarray sums for subarrays that end at every index in the original array.
+         *  Suppose we have the list {−3,4,−1,2,1,−5,4} . The maximum sums ending at each index would be: {−3,4,3,5,6,1,5} .
+         *  Suppose we're looking for sums less than 3. The best option we have adds up to 1. That subarray would be {4,−1,2,1,−5} .
+         *  However, there exists a subarray whose sum is 2: {2,1,−5,4} . This is a more ideal solution, but the algorithm won't identify it.
+         *  The reason why is that the algorithm is tuned to favor elements that maximize the final sum.
+         *  If we are looking for a maximal sum that is bounded, we can't take the same greedy approach.
+         *  When there is a bound, we sometimes have to select numbers that may seem like bad choices at first,
+         *  but actually work out in the end.
+         *
+         * So to solve this we have to use TreeSet which help us find the rectangle with maxSum <= k with O(logN) time
          */
         int[] runningSumOfRectangle;
-        Map<Keywords, Integer> kadaneOutput = new HashMap<>();
         int MAXIMUM_SUM_RECTANGLE = Integer.MIN_VALUE;
-        int rectangleTop = 0, rectangleBottom = 0, rectangleLeft = 0, rectangleRight = 0;
         for (int L = 0; L < matrix[0].length; L++) {
             runningSumOfRectangle = new int[matrix.length]; // This sum goes from top row to the bottom row,
             // and within left and right bound.
@@ -66,49 +73,23 @@ public class MaxSumOfRectangleNoLargerThanK {
                     runningSumOfRectangle[row] += matrix[row][R];
                 }
 
-                // Now find the maximum sum within this rectangle
-                kadaneOutput = kadanes(runningSumOfRectangle, k);
+                // Let's use Tree Set to find the rectangle sum <= K
+                TreeSet<Integer> treeSet = new TreeSet<>();
+                treeSet.add(0); // For base case.
+                int currSum = 0;
+                for (int sum : runningSumOfRectangle) {
+                    currSum += sum;
 
-                if (MAXIMUM_SUM_RECTANGLE < kadaneOutput.get(Keywords.MAXIMUM_SUM) && kadaneOutput.get(Keywords.MAXIMUM_SUM) <= k) {
-                    MAXIMUM_SUM_RECTANGLE = kadaneOutput.get(Keywords.MAXIMUM_SUM);
-                    rectangleLeft = L;
-                    rectangleRight = R;
-                    rectangleTop = kadaneOutput.get(Keywords.START);
-                    rectangleBottom = kadaneOutput.get(Keywords.END);
+                    Integer num = treeSet.ceiling(currSum - k);
+                    if (num != null) {
+                        MAXIMUM_SUM_RECTANGLE = Math.max(MAXIMUM_SUM_RECTANGLE, currSum - num);
+                    }
+                    treeSet.add(currSum);
                 }
             }
         }
-
-        LogUtil.logIt("Maximum Rectangle SUM is " + MAXIMUM_SUM_RECTANGLE);
-        for (int i = rectangleTop; i <= rectangleBottom; i++) {
-            for (int j = rectangleLeft; j <= rectangleRight; j++) {
-                System.out.print(matrix[i][j] + "\t");
-            }
-            System.out.println();
-        }
+        LogUtil.printMultiDimensionArray(matrix);
+        LogUtil.logIt("Sum is "+ MAXIMUM_SUM_RECTANGLE);
         return MAXIMUM_SUM_RECTANGLE;
-    }
-
-    private static Map<Keywords, Integer> kadanes(int[] runningSumOfRectangle, int maxAllowedSum) {
-        int start = 0, end = 0, tempStart = 0;
-        int MAX_TILL_NOW = Integer.MIN_VALUE, MAX_ENDING_HERE = 0;
-        Map<Keywords, Integer> kadaneOutput = new HashMap<>();
-        for (int i = 0; i < runningSumOfRectangle.length; i++) {
-            MAX_ENDING_HERE += runningSumOfRectangle[i];
-
-            if (MAX_TILL_NOW < MAX_ENDING_HERE && MAX_ENDING_HERE <= maxAllowedSum) {
-                MAX_TILL_NOW = MAX_ENDING_HERE;
-                end = i;
-                start = tempStart;
-            }
-            if (MAX_ENDING_HERE < 0) {
-                MAX_ENDING_HERE = 0;
-                tempStart = i + 1;
-            }
-        }
-        kadaneOutput.put(Keywords.MAXIMUM_SUM, MAX_TILL_NOW);
-        kadaneOutput.put(Keywords.START, start);
-        kadaneOutput.put(Keywords.END, end);
-        return kadaneOutput;
     }
 }
