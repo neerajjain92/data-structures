@@ -1,5 +1,7 @@
 package com.leetcode.year_2020.DP.interview_prep;
 
+import com.leetcode.year_2020.DP.HouseRobber;
+
 /**
  * @author neeraj on 07/07/20
  * Copyright (c) 2019, data-structures.
@@ -17,7 +19,7 @@ public class MaximumSubsequenceSumSuchThatNoThreeAreConsecutive {
 
     public static int getMaximumSubsequenceSum(int[] arr) {
         /**
-         * This problem is mainly an extension to {@link com.leetcode.problems.easy.HouseRobber}
+         * This problem is mainly an extension to {@link HouseRobber}
          * problem, here 3 consecutive numbers shouldn't contribute to maxSum.
          *
          * So the problem drills down to when we are at i+2.

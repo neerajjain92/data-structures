@@ -14,6 +14,8 @@ public class CountOfSubsetSumWithAGivenSum {
         System.out.println(countOfSubSetSumWithGivenSum(new int[]{1, 2, 3, 3}, 6));
         System.out.println(countOfSubSetSumWithGivenSum(new int[]{1, 1, 1, 1}, 2));
         System.out.println(countOfSubSetSumWithGivenSum(new int[]{1, 1, 1, 1}, 1));
+        System.out.println(countOfSubSetSumWithGivenSum(new int[]{1, 1, 1}, 2));
+        System.out.println(countOfSubSetSumWithGivenSum(new int[]{1, 2, 3}, 3));
     }
 
     static int t[][]; // Memorization and also for DP

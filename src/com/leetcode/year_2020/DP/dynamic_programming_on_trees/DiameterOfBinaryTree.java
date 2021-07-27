@@ -3,7 +3,7 @@ package com.leetcode.year_2020.DP.dynamic_programming_on_trees;
 import com.leetcode.year_2020.TreeNode;
 
 /**
- * https://leetcode.com/problems/diameter-of-binary-tree/submissions/
+ * https://leetcode.com/problems/diameter-of-binary-tree/
  * @author neeraj on 13/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.

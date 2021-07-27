@@ -1,6 +1,4 @@
-package com.leetcode.problems.easy;
-
-import com.leetcode.year_2020.DP.MaximumSumSuchThatNoTwoElementsAreAdjacent;
+package com.leetcode.year_2020.DP;
 
 /**
  * https://leetcode.com/problems/house-robber/
