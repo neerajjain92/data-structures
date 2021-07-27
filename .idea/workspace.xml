@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/facebook/FractionToRecurringDecimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/HouseRobber_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/FacebookScheduleTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/array/ValidNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/category_unknown/GroupedShiftedStrings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/easy/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/HouseRobber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/HouseRobberCircular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/HouseRobberCircular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MaximumSumSuchThatNoTwoElementsAreAdjacent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/MaximumSumSuchThatNoTwoElementsAreAdjacent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/DiameterOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/DiameterOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/MaximumSubsequenceSumSuchThatNoThreeAreConsecutive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/interview_prep/MaximumSubsequenceSumSuchThatNoThreeAreConsecutive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/CountOfSubsetSumWithAGivenSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/CountOfSubsetSumWithAGivenSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +86,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AlienDictionary">
+  <component name="RunManager" selected="Application.GroupedShiftedStrings">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -134,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeetingRoom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MeetingRoom" />
+    <configuration name="GroupedShiftedStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.category_unknown.GroupedShiftedStrings" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.category_unknown.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GroupedShiftedStrings" />
         <item itemvalue="Application.AlienDictionary" />
         <item itemvalue="Application.SerializeAndDeserializeBinaryTree" />
         <item itemvalue="Application.FacebookScheduleTask" />
         <item itemvalue="Application.MeetingRoom2" />
-        <item itemvalue="Application.MeetingRoom" />
       </list>
     </recent_temporary>
   </component>
@@ -587,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627243977293</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Implemented Alien Dictionary">
+      <created>1627411570693</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1627411570695</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +631,8 @@
     <MESSAGE value="AdditiveNumber problem solved via backtracking" />
     <MESSAGE value="Updated TimeComplexity of Backtracking general solutions" />
     <MESSAGE value="Refactoring, and adding new problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring, and adding new problems" />
+    <MESSAGE value="Implemented Alien Dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Alien Dictionary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
