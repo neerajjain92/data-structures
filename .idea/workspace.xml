@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/category_unknown/GroupedShiftedStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/TaxBracketFacebookProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/TaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/TaskScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/category_unknown/GroupedShiftedStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/category_unknown/GroupedShiftedStrings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +89,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GroupedShiftedStrings">
+  <component name="RunManager" selected="Application.PalindromePermutation_2">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -94,32 +97,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlienDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.topologicalSort.AlienDictionary" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.topologicalSort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FacebookScheduleTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.FacebookScheduleTask" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeetingRoom2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MeetingRoom2" />
+    <configuration name="PalindromePermutation_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.PalindromePermutation_2" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +127,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerializeAndDeserializeBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.SerializeAndDeserializeBinaryTree" />
+    <configuration name="PrintAllPalindromicPartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PrintAllPalindromicPartition" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.*" />
+          <option name="PATTERN" value="com.datastructures.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.TaskScheduler" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaxBracketFacebookProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.binary_search.TaxBracketFacebookProblem" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.binary_search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PalindromePermutation_2" />
+        <item itemvalue="Application.PrintAllPalindromicPartition" />
+        <item itemvalue="Application.TaxBracketFacebookProblem" />
+        <item itemvalue="Application.TaskScheduler" />
         <item itemvalue="Application.GroupedShiftedStrings" />
-        <item itemvalue="Application.AlienDictionary" />
-        <item itemvalue="Application.SerializeAndDeserializeBinaryTree" />
-        <item itemvalue="Application.FacebookScheduleTask" />
-        <item itemvalue="Application.MeetingRoom2" />
       </list>
     </recent_temporary>
   </component>
@@ -584,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627411570695</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implemented GroupedShiftedStrings">
+      <created>1627413797724</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1627413797724</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +642,8 @@
     <MESSAGE value="Updated TimeComplexity of Backtracking general solutions" />
     <MESSAGE value="Refactoring, and adding new problems" />
     <MESSAGE value="Implemented Alien Dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Alien Dictionary" />
+    <MESSAGE value="Implemented GroupedShiftedStrings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented GroupedShiftedStrings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1381,18 +1392,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/TaskScheduler.java</url>
-          <line>34</line>
+          <line>101</line>
           <option name="timeStamp" value="447" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week4/IntervalListIntersections.java</url>
           <line>51</line>
           <option name="timeStamp" value="449" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/TaskScheduler.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="450" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java</url>
@@ -2960,6 +2966,31 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java</url>
           <line>68</line>
           <option name="timeStamp" value="1039" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/category_unknown/GroupedShiftedStrings.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="1041" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/category_unknown/GroupedShiftedStrings.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="1042" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="1044" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1045" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1046" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
