@@ -12,6 +12,8 @@ import java.util.Map;
  * <p>
  * This is Extensible method, if you have to add any greater digits that the system currently
  * support just add it's word and the entry if it's associated to tens(prefix)
+ * <p>
+ * https://leetcode.com/problems/integer-to-english-words/
  *
  * @author neeraj on 2019-07-30
  * Copyright (c) 2019, data-structures.
@@ -31,6 +33,7 @@ public class ConvertNumberToWords {
     static String WHITESPACE = " ";
 
     static {
+        digitToWordMap.put(0, "");
         digitToWordMap.put(1, "One");
         digitToWordMap.put(2, "Two");
         digitToWordMap.put(3, "Three");
@@ -67,12 +70,14 @@ public class ConvertNumberToWords {
     }
 
     public static void main(String[] args) {
-//        convert(1);
-//        convert(12);
-        int a = 10; int b = 20;
-        if(a == 10 || b == 20) {
-            System.out.println("Hello.........");
-        }
+        convert(50868);
+        convert(1000);
+        convert(1001);
+        convert(100100);
+        convert(1);
+        convert(12);
+        convert(20);
+        convert(1000);
         convert(12456);
         convert(123);
         convert(1234);
@@ -83,6 +88,8 @@ public class ConvertNumberToWords {
         convert(112345);
         convert(4112345);
         convert(948765432);
+        convert(50868);
+
     }
 
     public static void convert(int input) {
@@ -93,12 +100,12 @@ public class ConvertNumberToWords {
     private static String convertNumberIntoWords(int input) {
         String number = String.valueOf(input);
         int placeValueIndex = number.length();
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < number.length(); i++) {
-
+            int valAtI = number.charAt(i) - '0';
             if (placeValueIndexForTensPlace.contains(placeValueIndex)) {
-                Integer valAtI = Integer.parseInt(number.substring(i, i + 1));
+                valAtI = Integer.parseInt(number.substring(i, i + 1));
                 if (valAtI > 1) {
                     result.append(digitToWordMap.get(valAtI * 10));
                     result.append(WHITESPACE);
@@ -107,21 +114,29 @@ public class ConvertNumberToWords {
                     // We have to take next digit also into consideration
                     // Like for 12456 == This translates to Twelve Thousand Four Hundred Fifty Six.
                     // when we are at 1(
-                    result.append(digitToWordMap.get(Integer.parseInt(number.substring(i, i + 2))));
-                    if (placeValueWordMap.get(placeValueIndex - 1) != null) {
+                    int combined = Integer.parseInt(number.substring(i, i + 2));
+                    if (combined > 0) {
+                        result.append(digitToWordMap.get(combined));
+                        if (placeValueWordMap.get(placeValueIndex - 1) != null) {
+                            result.append(WHITESPACE);
+                            result.append(placeValueWordMap.get(placeValueIndex - 1));
+                        }
                         result.append(WHITESPACE);
-                        result.append(placeValueWordMap.get(placeValueIndex - 1));
                     }
-                    result.append(WHITESPACE);
                     i = i + 1;
                     // Since We have covered 2 indexes,so lets reduce placeValueIndex by 2
                     placeValueIndex = placeValueIndex - 2;
                 }
             } else {
-                result.append(digitToWordMap.get(Integer.parseInt("" + number.charAt(i))))
-                        .append(WHITESPACE)
-                        .append(placeValueWordMap.get(placeValueIndex) == null ? WHITESPACE : placeValueWordMap.get(placeValueIndex))
-                        .append(WHITESPACE);
+                result.append(digitToWordMap.get(Integer.parseInt("" + number.charAt(i))));
+                if (result.charAt(result.length() - 1) != ' ') {
+                    result.append(WHITESPACE);
+                }
+                final String[] split = result.toString().split(" ");
+                if (!placeValueWordMap.values().contains(split[split.length - 1])) {
+                    result.append(placeValueWordMap.get(placeValueIndex) == null ? WHITESPACE : placeValueWordMap.get(placeValueIndex))
+                            .append(WHITESPACE);
+                }
                 placeValueIndex--;
             }
         }

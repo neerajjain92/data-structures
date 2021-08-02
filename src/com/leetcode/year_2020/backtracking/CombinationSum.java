@@ -18,7 +18,9 @@ public class CombinationSum {
     public static void main(String[] args) {
         System.out.println(combinationSum(new int[]{2, 3, 6, 7}, 7));
         System.out.println(combinationSum(new int[]{2, 3, 5}, 8));
+        System.out.println(combinationSum(new int[]{1, 2, 3}, 3));
 
+        System.out.println(combinationSumUnique(new int[]{1, 2, 3}, 3));
         System.out.println(combinationSumUnique(new int[]{10, 1, 2, 7, 6, 1, 5}, 8));
     }
 

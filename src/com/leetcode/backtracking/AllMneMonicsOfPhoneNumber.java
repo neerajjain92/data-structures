@@ -78,6 +78,7 @@ public class AllMneMonicsOfPhoneNumber {
     public static void main(String[] args) {
         solveMnemonics("23");
         solveMnemonics("789");
+        solveMnemonics("3226677");
     }
 
     public static List<String> solveMnemonics(String digit) {

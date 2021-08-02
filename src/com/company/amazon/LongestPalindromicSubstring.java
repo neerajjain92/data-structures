@@ -7,6 +7,11 @@ public class LongestPalindromicSubstring {
         System.out.println(longestPalindrome(input));
         input = "forgeeksskeegfor";
         System.out.println(longestPalindrome(input));
+        input = "ccc";
+        System.out.println(longestPalindrome(input));
+
+        input = "abb";
+        System.out.println(longestPalindrome(input));
     }
 
     static int startOfLongestPalindrome = 0;

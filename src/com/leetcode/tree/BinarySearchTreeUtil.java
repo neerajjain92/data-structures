@@ -3,10 +3,14 @@ package com.leetcode.tree;
 import com.leetcode.problems.medium.TreeNode;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Stack;
 
-import static com.util.LogUtil.*;
+import static com.util.LogUtil.logIt;
+import static com.util.LogUtil.newLine;
+import static com.util.LogUtil.printList;
 
 /**
  * @author neeraj on 2019-06-22
@@ -224,6 +228,40 @@ public class BinarySearchTreeUtil {
         newLine();
     }
 
+    public Node findInorderSuccessorInBSTUsingParentMap(Node root, Node nodeInQuestion) {
+        final Map<Node, Node> parentMap = new HashMap<>();
+        doInorderAndPrepareMap(root, null, parentMap);
+        Node inorderSuccessor = null;
+
+        if (nodeInQuestion.right != null) {
+            inorderSuccessor = nodeInQuestion.right;
+            while (inorderSuccessor.left != null) {
+                inorderSuccessor = inorderSuccessor.left;
+            }
+        } else {
+            Node curr = nodeInQuestion;
+            while (true) {
+                Node parent = parentMap.get(curr);
+                if (parent == null || parent.data > nodeInQuestion.data) {
+                    if (parent != null) {
+                        inorderSuccessor = parent;
+                    }
+                    break;
+                }
+                curr = parent;
+            }
+        }
+        return inorderSuccessor;
+    }
+
+    private void doInorderAndPrepareMap(Node root, Node parent, final Map<Node, Node> parentMap) {
+        if (root == null) return;
+        parentMap.put(root, parent);
+        doInorderAndPrepareMap(root.left, root, parentMap);
+        doInorderAndPrepareMap(root.right, root, parentMap);
+    }
+
+
     public void findInorderSuccessorInBST(Node root, int data) {
         Node inorderSuccessorOfWhom = searchData(root, data);
         int successor;
@@ -360,5 +398,14 @@ public class BinarySearchTreeUtil {
 
         newLine();
         bst.findInorderPredecessor(root, Arrays.asList(50, 16, 90, 14, 40, 78, 100, 10, 15, 35, 45, 75, 82, 5, 32, 36, 81, 85, 37, 79, 87));
+
+
+        bst.root = bst.insertDataIntoBST(null, Arrays.asList(2, 1));
+        Node inorderSuccessor = bst.findInorderSuccessorInBSTUsingParentMap(bst.root, bst.root.left);
+        System.out.println(inorderSuccessor != null ? inorderSuccessor.data : "NOT FOUND");
+
+        bst.root = bst.insertDataIntoBST(null, Arrays.asList(2, 1, 3));
+        inorderSuccessor = bst.findInorderSuccessorInBSTUsingParentMap(bst.root, bst.root);
+        System.out.println(inorderSuccessor != null ? inorderSuccessor.data : "NOT FOUND");
     }
 }

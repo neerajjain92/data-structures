@@ -11,14 +11,16 @@ import java.util.List;
 public class PalindromePermutation_2 {
 
     public static void main(String[] args) {
-        System.out.println(generatePalindromes("aabb"));
-        System.out.println(generatePalindromes(""));
-//        System.out.println(generatePalindromes("aabbhijkkjih")); // Will timeout with legacy approach of generating all permutations
+//        System.out.println(generatePalindromes("aabb"));
+//        System.out.println(generatePalindromes(""));
+////        System.out.println(generatePalindromes("aabbhijkkjih")); // Will timeout with legacy approach of generating all permutations
+//
+//        System.out.println(generatePalindromesOptimized("aabb"));
+//        System.out.println(generatePalindromesOptimized(""));
+//        System.out.println(generatePalindromesOptimized("aabbhijkkjih"));
+//        System.out.println(generatePalindromesOptimized("aabbccc"));
 
-        System.out.println(generatePalindromesOptimized("aabb"));
-        System.out.println(generatePalindromesOptimized(""));
-        System.out.println(generatePalindromesOptimized("aabbhijkkjih"));
-        System.out.println(generatePalindromesOptimized("aabbccc"));
+        System.out.println(canBePermutedToPalindrome("daccccdd"));
     }
 
 

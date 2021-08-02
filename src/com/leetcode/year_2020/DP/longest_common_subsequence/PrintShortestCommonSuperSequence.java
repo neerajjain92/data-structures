@@ -10,8 +10,9 @@ import com.util.LogUtil;
 public class PrintShortestCommonSuperSequence {
 
     public static void main(String[] args) {
-        printShortestCommonSuperSequence("acbcf", "abcdaf");
-        printShortestCommonSuperSequence("ac", "");
+//        printShortestCommonSuperSequence("acbcf", "abcdaf");
+//        printShortestCommonSuperSequence("ac", "");
+        printShortestCommonSuperSequence("GEEK", "EKE");
     }
 
     public static void printShortestCommonSuperSequence(String X, String Y) {

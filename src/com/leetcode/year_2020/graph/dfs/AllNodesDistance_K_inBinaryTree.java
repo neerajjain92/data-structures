@@ -3,7 +3,15 @@ package com.leetcode.year_2020.graph.dfs;
 import com.leetcode.year_2020.TreeNode;
 import com.util.LogUtil;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+import java.util.Stack;
 
 /**
  * @author neeraj on 04/06/20
@@ -25,7 +33,7 @@ public class AllNodesDistance_K_inBinaryTree {
         root.right.left = new TreeNode(0);
         root.right.right = new TreeNode(8);
 
-        LogUtil.logIt("Nodes at kth distance " + distanceK(root, root.left, 2), true);
+//        LogUtil.logIt("Nodes at kth distance " + distanceK(root, root.left, 2), true);
 
         root = new TreeNode(0);
         root.right = new TreeNode(1);
@@ -33,8 +41,20 @@ public class AllNodesDistance_K_inBinaryTree {
         root.right.right.right = new TreeNode(3);
         root.right.right.right.right = new TreeNode(4);
 
-        LogUtil.logIt("Nodes at kth distance " + distanceK(root, root, 2), true);
+//        LogUtil.logIt("Nodes at kth distance " + distanceK(root, root, 2), true);
 
+        root = new TreeNode(3);
+
+        root.left = new TreeNode(5);
+        root.left.left = new TreeNode(6);
+        root.left.right = new TreeNode(2);
+        root.left.right.left = new TreeNode(7);
+        root.left.right.right = new TreeNode(4);
+
+        root.right = new TreeNode(1);
+        root.right.left = new TreeNode(0);
+        root.right.right = new TreeNode(8);
+        LogUtil.logIt("Nodes at kth distance " + distanceK(root, root.left, 2), true);
     }
 
     static class Pair {
@@ -71,34 +91,30 @@ public class AllNodesDistance_K_inBinaryTree {
         // do a BFS now.
 
         Queue<TreeNode> queue = new LinkedList<>();
+        int queueSize;
         queue.add(target);
-        queue.add(null);
         Set<TreeNode> visited = new HashSet<>();
         List<Integer> nodesAtKDistance = new ArrayList<>();
-        while (!queue.isEmpty() && k >= 0) {
-            root = queue.poll();
-            if (root == null) {
-                k--; // DECREASING DISTANCE ONLY WHEN LEVEL CHANGES
-                // Since for same level all distance(left and right child) remain same from a node
-                if (!queue.isEmpty()) {
-                    queue.add(null); // To differentiate the level
-                }
+        while (!queue.isEmpty()) {
+            if (k == 0) {
+                nodesAtKDistance.add(queue.remove().val);
                 continue;
             }
-            visited.add(root);
-            if (k == 0) {
-                nodesAtKDistance.add(root.val);
-            }
-
-            if (root.left != null && !visited.contains(root.left))
-                queue.add(root.left);
-            if (root.right != null && !visited.contains(root.right))
-                queue.add(root.right);
-            if (nodesParent.containsKey(root)) {
-                if (!visited.contains(nodesParent.get(root))) {
-                    queue.add(nodesParent.get(root));
+            queueSize = queue.size();
+            for (int i = 0; i < queueSize; i++) {
+                root = queue.remove();
+                visited.add(root);
+                if (root.left != null && !visited.contains(root.left))
+                    queue.add(root.left);
+                if (root.right != null && !visited.contains(root.right))
+                    queue.add(root.right);
+                if (nodesParent.containsKey(root)) {
+                    if (!visited.contains(nodesParent.get(root))) {
+                        queue.add(nodesParent.get(root));
+                    }
                 }
             }
+            k--;
         }
         return nodesAtKDistance;
 

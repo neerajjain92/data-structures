@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-public class ZeroOneKnapSackRecursively {
+public class  ZeroOneKnapSackRecursively {
 
     public static void main(String[] args) {
         System.out.println(getMaxProfit(

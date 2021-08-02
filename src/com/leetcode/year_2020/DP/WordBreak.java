@@ -1,6 +1,14 @@
 package com.leetcode.year_2020.DP;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
 
 /**
  * @author neeraj on 02/07/20
@@ -32,6 +40,30 @@ public class WordBreak {
          * and then backtrack.
          * Now how can we apply BFS, so we can assume the index of the input String to be the starting vertex
          * and we have to reach the end.
+         *
+         * Watch demo of how solution will span out https://leetcode.com/problems/word-break/solution/
+         *
+         * Word "CATSANDDOG"  Dictionary: ["cats","dog","sand","and","cat"]
+         *
+         *                  C A T S A N D D O G
+         *                0 1 2 3 4 5 6 7 8 9 10
+         *
+         * Now our BFS start by pushing 0 in the queue, and exploring all it's neighbour vertex at max of 4 since the biggest
+         * word in dictionary is sand
+         *
+         *                  C A T S A N D D O G
+         *                0 1 2 3 4 5 6 7 8 9 10
+         *                /   Queue \
+         *               / Remove 0  \
+         *              /             \
+         *            C A T        C A T S (these both got added and we killed the loop and in next iteration)
+         *            /  Queue(4, 5)    \
+         *           /    Remove 4       \
+         *          /    //      Remove 5 \
+         *        S A N D               A N D
+         *        /     Queue(8)            \
+         *       /     //       \\           \
+         *      D O G                       D O G (and we reached destination)
          */
         int max_len = -1;
         for (String word : wordDictionary)
@@ -42,6 +74,8 @@ public class WordBreak {
         visited.add(0);
         while (!queue.isEmpty()) {
             int currentIndex = queue.poll();
+            // we should only be exploring neighbours till the max length of word, if
+            // we will take substring beyond that it will never match and all our efforts is wasted.
             for (int i = currentIndex + 1; i <= s.length() && i - currentIndex <= max_len; i++) {
                 if (visited.contains(i)) continue;
                 if (wordDictionary.contains(s.substring(currentIndex, i))) {
