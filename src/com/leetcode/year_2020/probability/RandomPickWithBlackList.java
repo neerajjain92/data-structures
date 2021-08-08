@@ -22,7 +22,13 @@ import java.util.Random;
 public class RandomPickWithBlackList {
 
     public static void main(String[] args) {
-        Solution solution = new Solution(6, new int[]{0, 2, 3});
+
+        Solution solution = new Solution(4, new int[]{0, 2, 3});
+        System.out.println(solution.pick());
+        System.out.println(solution.pick());
+        System.out.println(solution.pick());
+
+        solution = new Solution(6, new int[]{0, 2, 3});
         System.out.println(solution.pick());
         System.out.println(solution.pick());
         System.out.println(solution.pick());

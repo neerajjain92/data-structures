@@ -17,6 +17,7 @@ public class LongestSubStringWithMUniqueCharacters {
     public static void main(String[] args) {
         longestSubStringWithMUniqueCharacters("KATAPPA", 2);
         longestSubStringWithMUniqueCharacters("KATAPPA", 3);
+        longestSubStringWithMUniqueCharacters("WORLD", 4);
 
         longestSubStringWithMUniqueCharactersSlidingWindow("KATAPPA", 2);
         longestSubStringWithMUniqueCharactersSlidingWindow("KATAPPA", 3);

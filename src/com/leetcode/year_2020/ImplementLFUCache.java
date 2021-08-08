@@ -1,5 +1,7 @@
 package com.leetcode.year_2020;
 
+import com.util.LogUtil;
+
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
@@ -33,6 +35,19 @@ public class ImplementLFUCache {
         System.out.println(lfuCache.get(3));
         System.out.println(lfuCache.get(2));
         System.out.println(lfuCache.get(1));
+
+        LogUtil.logIt("Another example.....");
+        lfuCache = new LFUCache(2);
+        lfuCache.put(1, 1);
+        lfuCache.put(2, 2);
+        System.out.println(lfuCache.get(1));
+        lfuCache.put(3, 3);
+        System.out.println(lfuCache.get(2));
+        System.out.println(lfuCache.get(3));
+        lfuCache.put(4, 4);
+        System.out.println(lfuCache.get(1));
+        System.out.println(lfuCache.get(3));
+        System.out.println(lfuCache.get(4));
     }
 
     /**

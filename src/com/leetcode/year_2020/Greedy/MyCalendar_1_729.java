@@ -1,4 +1,4 @@
-package com.leetcode.problems.medium;
+package com.leetcode.year_2020.Greedy;
 
 import com.util.LogUtil;
 

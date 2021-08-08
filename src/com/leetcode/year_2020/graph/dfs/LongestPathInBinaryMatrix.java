@@ -1,10 +1,21 @@
 package com.leetcode.year_2020.graph.dfs;
 
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
+ * <p>
+ * We will print the longest path as well.
+ */
 public class LongestPathInBinaryMatrix {
 
     public static void main(String[] args) {
-        System.out.println(longestIncreasingPath(new int[][]
-                {{9, 9, 4}, {6, 6, 8}, {2, 1, 1}}
+        System.out.println(longestIncreasingPath(new int[][]{
+                        {9, 9, 4},
+                        {6, 6, 8},
+                        {2, 1, 1}
+                }
         ));
 
         System.out.println(longestIncreasingPath(new int[][]{
@@ -58,29 +69,40 @@ public class LongestPathInBinaryMatrix {
         int n = matrix[0].length;
         int[][] cache = new int[m][n];
         LONGEST_PATH = 0;
+        List<Integer> LONGEST_PATH_VAL = new ArrayList<>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                int len = doDFS(matrix, i, j, m, n, cache);
+                List<Integer> path = new ArrayList<>();
+                int len = doDFS(matrix, i, j, m, n, cache, path);
                 LONGEST_PATH = Math.max(LONGEST_PATH, len);
+                LONGEST_PATH_VAL = maxPath;
             }
         }
+        System.out.println(LONGEST_PATH_VAL);
         return LONGEST_PATH;
     }
 
+    static List<Integer> maxPath = new ArrayList<>();
     // Right, Bottom, Left, Top
     static int[][] allDirections = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
-    private static int doDFS(final int[][] matrix, final int i, final int j, int m, int n, int[][] cache) {
-        if (cache[i][j] != 0) return cache[i][j];
+    private static int doDFS(final int[][] matrix, final int i, final int j, int m, int n, int[][] cache,
+                             final List<Integer> path) {
+//        if (cache[i][j] != 0) return cache[i][j];
         int max = 1; // Why 1 we know single cell is 1 length long
+        path.add(matrix[i][j]);
         for (int[] dir : allDirections) {
             final int nextRow = i + dir[0];
             final int nextCol = j + dir[1];
             if (nextRow < 0 || nextCol < 0 || nextRow >= m || nextCol >= n || matrix[i][j] >= matrix[nextRow][nextCol])
                 continue;
-            int res = 1 + doDFS(matrix, nextRow, nextCol, m, n, cache); // Since current is being added so the path increases by 1.
+            int res = 1 + doDFS(matrix, nextRow, nextCol, m, n, cache, path); // Since current is being added so the path increases by 1.
             max = Math.max(max, res);
         }
+        if (path.size() > maxPath.size()) {
+            maxPath = new ArrayList<>(path);
+        }
+        path.remove(path.size() - 1);
         return cache[i][j] = max;
     }
 }
