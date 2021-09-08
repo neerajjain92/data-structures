@@ -1,4 +1,4 @@
-package com.geeksforgeeks.dynamicProgramming;
+package com.leetcode.year_2020.DP.kadanes;
 
 import com.util.LogUtil;
 

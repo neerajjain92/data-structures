@@ -107,7 +107,7 @@ public class AllMneMonicsOfPhoneNumber {
             // Here we don't have any constraints, so we just choose-explore-un-choose
             // Let's check each number in the input digit
 
-            // So if the digit is suppose "23"
+            // So if the digit is "23"
             // We see that MAPPINGS has entry "ABC" for digit "2"
             // So we will explore "ABC" from 0th Index to it's full length i.e 3;
             // Why this : MAPPINGS[digit.charAt(currentMnemonicPointer) - '0']

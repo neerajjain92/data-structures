@@ -1,6 +1,5 @@
 package com.leetcode.year_2020.DP.kadanes;
 
-import com.geeksforgeeks.dynamicProgramming.MaximumSumRectangle;
 import com.util.LogUtil;
 
 import java.util.TreeSet;
@@ -21,18 +20,18 @@ public class MaxSumOfRectangleNoLargerThanK {
                 {3, 8, 10, 1, 3},
                 {-4, -1, 1, 7, -6}
         };
-//        maxSumSubmatrix(inputs, 2);
+        maxSumSubmatrix(inputs, 2);
 
         inputs = new int[][]{
                 {1, 0, 1},
                 {0, -2, 3}
         };
-//        maxSumSubmatrix(inputs, 2);
+        maxSumSubmatrix(inputs, 2);
 
         inputs = new int[][]{{5, -4, -3, 4},
                 {-3, -4, 4, 5},
                 {5, 1, 5, -4}};
-//        maxSumSubmatrix(inputs, 10);
+        maxSumSubmatrix(inputs, 10);
 
         inputs = new int[][]{{5, -4, -3, 4},
                 {-3, -4, 4, 5},
@@ -73,23 +72,35 @@ public class MaxSumOfRectangleNoLargerThanK {
                     runningSumOfRectangle[row] += matrix[row][R];
                 }
 
+                // Now we have the sum of rectangle, in the runningSumOfRectangle.
+                // we need to find the sub-array with max sum less than <=k
+                //    i--------------------------------------------------------------j
+                //   prefixSum/CumulativeSum[i]                           prefixSum/CumulativeSum[j]
+                //
+                // we need to find out some (prefixSum[j] - prefixSum[i] <= k)
+                // or we can say.............. (prefixSum[j] - k <= prefixSum[i])
+                //
+                // so for every (prefixSum[j] - k) we need to find a ceiling. since prefixSum[i] as per statement is greater than (prefixSum[j] - k)
+                // and the fastest way to find a ceiling is TreeSet
+                //
+
                 // Let's use Tree Set to find the rectangle sum <= K
                 TreeSet<Integer> treeSet = new TreeSet<>();
                 treeSet.add(0); // For base case.
-                int currSum = 0;
+                int prefixSum = 0;
                 for (int sum : runningSumOfRectangle) {
-                    currSum += sum;
+                    prefixSum += sum;
 
-                    Integer num = treeSet.ceiling(currSum - k);
-                    if (num != null) {
-                        MAXIMUM_SUM_RECTANGLE = Math.max(MAXIMUM_SUM_RECTANGLE, currSum - num);
+                    Integer ceiling = treeSet.ceiling(prefixSum - k);
+                    if (ceiling != null) {
+                        MAXIMUM_SUM_RECTANGLE = Math.max(MAXIMUM_SUM_RECTANGLE, prefixSum - ceiling);
                     }
-                    treeSet.add(currSum);
+                    treeSet.add(prefixSum);
                 }
             }
         }
         LogUtil.printMultiDimensionArray(matrix);
-        LogUtil.logIt("Sum is "+ MAXIMUM_SUM_RECTANGLE);
+        LogUtil.logIt("Sum is " + MAXIMUM_SUM_RECTANGLE);
         return MAXIMUM_SUM_RECTANGLE;
     }
 }

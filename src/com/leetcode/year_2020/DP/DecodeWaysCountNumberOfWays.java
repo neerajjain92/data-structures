@@ -14,6 +14,7 @@ public class DecodeWaysCountNumberOfWays {
     public static void main(String[] args) {
         System.out.println(numDecodings("123"));
         System.out.println(numDecodings("01"));
+        System.out.println(numDecodings(""));
     }
 
     static int T[]; // memorization;
@@ -32,7 +33,25 @@ public class DecodeWaysCountNumberOfWays {
          */
         T = new int[s.length() + 1];
         Arrays.fill(T, -1);
-        return findNumberOfDecodeWays(s, 0);
+//        return findNumberOfDecodeWays(s, 0);
+        return numDecodings(0, s);
+    }
+
+    public static int numDecodings(int pointer, String s) {
+        int len = s.length();
+        if (pointer == len) {
+            return 1; // Just 1 way of encoding it
+        }
+        if (T[pointer] > -1) return T[pointer];
+        final char charAtPointer = s.charAt(pointer);
+        if (charAtPointer == '0') return 0; // A substring starting with '0' is not allowed/valid
+
+        int result = numDecodings(pointer + 1, s); // 1 length substring
+
+        if (pointer < len - 1 && (charAtPointer == '1' || (s.charAt(pointer) == '2' && s.charAt(pointer + 1) < '7'))) {
+            result += numDecodings(pointer + 2, s);
+        }
+        return T[pointer] = result;
     }
 
     private static int findNumberOfDecodeWays(String s, int decodePointer) {
