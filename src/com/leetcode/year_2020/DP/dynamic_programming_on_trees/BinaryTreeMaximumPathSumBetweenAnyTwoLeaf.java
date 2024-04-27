@@ -36,10 +36,6 @@ public class BinaryTreeMaximumPathSumBetweenAnyTwoLeaf {
     public static int fetchMaxPathSumBetweenLeaf(TreeNode root) {
         if (root == null) return 0;
 
-        if (root.left == null && root.right == null) {
-            return root.val;
-        }
-
         // Hypothesis
         // We have to check maxPathSum at each node
         int maxSumInLeft = fetchMaxPathSumBetweenLeaf(root.left);
@@ -47,10 +43,12 @@ public class BinaryTreeMaximumPathSumBetweenAnyTwoLeaf {
 
         int temp = root.val + Math.max(maxSumInLeft, maxSumInRight);
 
-        // You can take the answer only when you have both left and right child
-        if (maxSumInLeft == 0 && maxSumInRight == 0) {
-            MAX_SUM = Math.max(MAX_SUM, root.val + maxSumInLeft + maxSumInRight);
-        }
+        // if leaf node then we can take it's own value as well
+//        if (root.left == null && root.right == null) {
+//            temp = Math.max(temp, root.val);
+//        }
+
+        MAX_SUM = Math.max(MAX_SUM, root.val + maxSumInLeft + maxSumInRight);
         return temp;
     }
 }

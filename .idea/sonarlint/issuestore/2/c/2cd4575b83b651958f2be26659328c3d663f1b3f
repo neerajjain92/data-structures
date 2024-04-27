@@ -1,0 +1,24 @@
+
+s
+java:S1066²"/Merge this if statement with the enclosing one.(áä®·8ÔÁ¬ùñ1J$90737b28-4cea-4ef2-b1a5-a04085b807de
+z
+java:S2589s"7Remove this expression which always evaluates to "true"(—þ‰¡8¤Â¬ùñ1J$6add5948-2345-4e98-ab9e-5174b5e11f1e
+x
+java:S2209"5Change this instance-reference to a static reference.( „¼þ8§Â¬ùñ1J$7aebd303-f2bd-435d-80d8-8569dc3da7bd
+~	java:S125"<This block of commented-out lines of code should be removed.(Â­û×8ƒµ®ùñ1J$89010854-cae1-407f-9622-fa6146cdd825
+x
+java:S2209"5Change this instance-reference to a static reference.( „¼þ8§Â¬ùñ1J$79c0f11d-a297-41c3-9e04-64b77545a978
+~	java:S125"<This block of commented-out lines of code should be removed.(á¾ëý8§Â¬ùñ1J$f13aef2f-bd5b-4707-8072-9465e5222217
+x
+java:S2209'"5Change this instance-reference to a static reference.( „¼þ8¨Â¬ùñ1J$8562d10e-bcce-41a5-9e2c-163f1a25ab76
+~	java:S125)"<This block of commented-out lines of code should be removed.(á¾ëý8¹á­ùñ1J$9b1f496a-eb3b-44db-8663-a7bfccf5004e
+x
+java:S2209,"5Change this instance-reference to a static reference.( „¼þ8¨Â¬ùñ1J$e4a7f8b0-7494-4370-a83f-d438d3350deb
+•
+java:S37760"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(åÌÝâ8¨Â¬ùñ1J$78e75fde-9d33-4305-b2ab-812be7bc313e
+s	java:S106‹"+Replace this use of System.out by a logger.(ëÙÆ£úÿÿÿÿ8ªÂ¬ùñ1J$d109be53-83d7-4c62-ae88-7a7347324c68
+s	java:S106Ž"+Replace this use of System.out by a logger.(Ì¼úÈøÿÿÿÿ8ªÂ¬ùñ1J$a10299d7-0138-4e42-8765-de1ad343e726
+n	java:S106‘"+Replace this use of System.out by a logger.(Ÿ¸ŒÓ8«Â¬ùñ1J$f995aec3-42fd-4793-a09c-427163d1e6c8
+s	java:S106š"+Replace this use of System.out by a logger.(ëÙÆ£úÿÿÿÿ8«Â¬ùñ1J$6a46635b-5df1-4196-b0b9-bd0b4df8731c
+s	java:S106"+Replace this use of System.out by a logger.(Ì¼úÈøÿÿÿÿ8«Â¬ùñ1J$682e5d2c-808e-4b7b-8d4f-7f070fbebfba
+n	java:S106 "+Replace this use of System.out by a logger.(Ÿ¸ŒÓ8«Â¬ùñ1J$009beb0f-facc-48ac-aabd-e9a983d8417b

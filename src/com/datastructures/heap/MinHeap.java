@@ -121,6 +121,7 @@ public class MinHeap {
     public static void main(String[] args) {
         MinHeap minHeap = new MinHeap();
         minHeap.add(10);
+
         minHeap.add(15);
         minHeap.add(20);
         minHeap.add(17);

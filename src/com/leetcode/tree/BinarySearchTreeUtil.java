@@ -2,15 +2,9 @@ package com.leetcode.tree;
 
 import com.leetcode.problems.medium.TreeNode;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
-import static com.util.LogUtil.logIt;
-import static com.util.LogUtil.newLine;
-import static com.util.LogUtil.printList;
+import static com.util.LogUtil.*;
 
 /**
  * @author neeraj on 2019-06-22
@@ -176,6 +170,7 @@ public class BinarySearchTreeUtil {
         return root;
     }
 
+
     static int preIndex = 0;
 
     public static TreeNode bstFromPreorder(int[] preorder) {
@@ -212,13 +207,12 @@ public class BinarySearchTreeUtil {
             }
 
             // We found some elements which are smaller than the preOrder[i], hence making preOrder[i] as the right child
+            Node newNode = new Node(preOrder[i]);
             if (temp != null) {
-                Node newNode = new Node(preOrder[i]);
                 temp.right = newNode;
                 stack.push(newNode);
                 temp = null;
             } else { // We did not find any element in the stack which is smaller than the preOrder[i], hence make this newNode as the left chid of the topNode.
-                Node newNode = new Node(preOrder[i]);
                 stack.peek().left = newNode;
                 stack.push(newNode);
             }
@@ -293,14 +287,63 @@ public class BinarySearchTreeUtil {
         }
     }
 
-    public Node constructBSTFromLevelOrderTraversal(int[] inorderTraversal) {
+    public Node constructBSTFromLevelOrderTraversal(int[] levelOrderTraversal) {
         logIt("Constructing BST From Level Order Traversal ", true);
         Node root = null;
 
-        for (int i : inorderTraversal) {
+        for (int i : levelOrderTraversal) {
             root = insertIntoBST(root, i);
         }
         inorder(root);
+        return root;
+    }
+
+    private class NodeWithLowerAndUpperBoundPair {
+        private Node parent;
+        private int lowerBound;
+        private int upperBound;
+
+        public NodeWithLowerAndUpperBoundPair(Node parent) {
+            this.parent = parent;
+            this.lowerBound = Integer.MIN_VALUE;
+            this.upperBound = Integer.MAX_VALUE;
+        }
+
+        public NodeWithLowerAndUpperBoundPair(Node parent, int lowerBound, int upperBound) {
+            this.parent = parent;
+            this.lowerBound = lowerBound;
+            this.upperBound = upperBound;
+        }
+    }
+
+    public Node constructBSTFromLevelOrderTraversal_Big_O_N(int[] levelOrderTraversal) {
+        Queue<NodeWithLowerAndUpperBoundPair> queue = new LinkedList<>();
+        queue.add(new NodeWithLowerAndUpperBoundPair(null)); // Initially no parent for the node
+        Node root = null;
+        for (int i = 0; i < levelOrderTraversal.length;) {
+            NodeWithLowerAndUpperBoundPair polledPair = queue.poll();
+            Node newNode = new Node(levelOrderTraversal[i]);
+
+            if (polledPair.lowerBound < newNode.data && polledPair.upperBound > newNode.data) {
+                if (polledPair.parent == null) {
+                    root = newNode;
+                } else {
+                    if (polledPair.parent.data < newNode.data) {
+                        polledPair.parent.right = newNode;
+                    } else {
+                        polledPair.parent.left = newNode;
+                    }
+                }
+                // Insert Left and Right items in the queue
+                NodeWithLowerAndUpperBoundPair leftPair = new NodeWithLowerAndUpperBoundPair(newNode, polledPair.lowerBound, newNode.data);
+                NodeWithLowerAndUpperBoundPair rightPair = new NodeWithLowerAndUpperBoundPair(newNode, newNode.data, polledPair.upperBound);
+                queue.add(leftPair);
+                queue.add(rightPair);
+
+                // Increment i;
+                i++;
+            }
+        }
         return root;
     }
 
@@ -316,14 +359,14 @@ public class BinarySearchTreeUtil {
 
         if (nodeForWhichPredecessorIsToBeFound != null) {
             // If Node left subtree is not null then predecessor is the rightmost child in left.
+            Node predecessor;
             if (nodeForWhichPredecessorIsToBeFound.left != null) {
-                Node predecessor = nodeForWhichPredecessorIsToBeFound.left;
+                predecessor = nodeForWhichPredecessorIsToBeFound.left;
                 while (predecessor.right != null) {
                     predecessor = predecessor.right;
                 }
-                return predecessor;
             } else { // Node's left is null, So we must track from Root to this node and check for the node which is just smaller than this node.
-                Node predecessor = root;
+                predecessor = root;
                 while (root.data != data) {
                     if (root.data < data) {
                         predecessor = root;
@@ -334,8 +377,8 @@ public class BinarySearchTreeUtil {
                         root = root.right;
                     }
                 }
-                return predecessor;
             }
+            return predecessor;
         } else {
             return new Node(-1);
         }
@@ -395,6 +438,13 @@ public class BinarySearchTreeUtil {
         bst.constructBSTFromLevelOrderTraversal(new int[]{20, 8, 22, 4, 12, 10, 14});
 
         Node root = bst.constructBSTFromLevelOrderTraversal(new int[]{50, 16, 90, 14, 40, 78, 100, 10, 15, 35, 45, 75, 82, 5, 32, 36, 81, 85, 37, 79, 87});
+
+        // constructBSTFromLevelOrderTraversal_Big_O_N
+        // Here For every entry we don't perform insert into BST tree operation, that's expensive
+        // Let's try to find O(N) runtime via loop
+        logIt("\n Testing constructBSTFromLevelOrderTraversal_Big_O_N", true);
+        Node newRootWithO_N_time = bst.constructBSTFromLevelOrderTraversal_Big_O_N(new int[]{20, 8, 22, 4, 12, 10, 14});
+        bst.inorder(newRootWithO_N_time);
 
         newLine();
         bst.findInorderPredecessor(root, Arrays.asList(50, 16, 90, 14, 40, 78, 100, 10, 15, 35, 45, 75, 82, 5, 32, 36, 81, 85, 37, 79, 87));

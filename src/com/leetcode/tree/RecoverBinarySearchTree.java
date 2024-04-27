@@ -17,7 +17,14 @@ public class RecoverBinarySearchTree {
         root.left = new TreeNode(3);
         root.left.right = new TreeNode(2);
 
-//        root.inorder(root);
+        LogUtil.logIt("\n Before Recovering BST");
+        root.inorder(root);
+        LogUtil.newLine();
+//        recoverTreeDuringInorder(root);
+        LogUtil.logIt("\n After Recovering BST");
+        root.inorder(root);
+        LogUtil.newLine();
+
 //
 //        recoverTree(root);
 //
@@ -28,8 +35,11 @@ public class RecoverBinarySearchTree {
         root.left = new TreeNode(1);
         root.right = new TreeNode(4);
         root.right.left = new TreeNode(2);
+        LogUtil.logIt("Before Recovering BST");
         root.inorder(root);
-        recoverTree(root);
+        LogUtil.newLine();
+//        recoverTree(root);
+        recoverTreeDuringInorder(root);
         LogUtil.logIt("\n After Recovering BST");
         root.inorder(root);
     }
@@ -108,48 +118,74 @@ public class RecoverBinarySearchTree {
             first.val = secondVal;
         }
     }
-//
-//    static TreeNode firstElement = null; // The Element which is not in the correct order
-//    static TreeNode secondElement = null; // This is the pair for firstElement since these 2 are swapped incorrectly
-//    static TreeNode previousElement = null;
-//
-//    public static void recoverTree(TreeNode root) {
-//        firstElement = null;
-//        secondElement = null;
-//        previousElement = new TreeNode(Integer.MIN_VALUE); // This is set to minimum so that first node doesn't looks like out of order, since you cannot compare just 1 node we have to start with the second node only
-//
-//        // Do Inorder traversal and set these items.
-//        inorder(root);
-//
-//        int temp = firstElement.val;
-//        firstElement.val = secondElement.val;
-//        secondElement.val = temp;
-//    }
-//
-//    public static void inorder(TreeNode root) {
-//        if (root == null) return;
-//
-//        inorder(root.left);
-//
-//        // Here we will do our business
-//        // i.e to find out first and second elements which were not in correct order
-//
-//        if (firstElement == null && previousElement.val > root.val) {
-//            firstElement = previousElement;
-//        }
-//
-//        // Immediately after setting the first element we will assign root as the
-//        // second element since root is also not in the correct order
-//        if (firstElement != null && previousElement.val > root.val) {
-//            secondElement = root;
-//        }
-//
-//
-//        // Now Since we are moving forward root will become the previous Element
-//        previousElement = root;
-//
-//
-//        inorder(root.right);
-//
-//    }
+
+    private static TreeNode firstConflictingNode = null;
+    private static TreeNode secondConflictingNode = null;
+    private static TreeNode nodeAdjacentToFirstConflictingNode = null;
+    private static TreeNode lastSeen = null;
+
+    /**
+     * 27th April 2024, Latest which should be used and solved
+     * Inspiration https://www.youtube.com/watch?v=ZWGW7FminDM&t=547s
+     * @param root
+     */
+    public static void recoverTreeDuringInorder(TreeNode root) {
+        firstConflictingNode = null;
+        secondConflictingNode = null;
+        nodeAdjacentToFirstConflictingNode = null;
+        lastSeen = null;
+        inorder(root);
+        if (firstConflictingNode != null) {
+            System.out.println("First " + firstConflictingNode.val);
+        }
+        if (secondConflictingNode != null) {
+            System.out.println("Second " + secondConflictingNode.val);
+        }
+        if (nodeAdjacentToFirstConflictingNode != null) {
+            System.out.println("NodeAdjacent " + nodeAdjacentToFirstConflictingNode.val);
+        }
+        if (secondConflictingNode == null) {
+            swap(firstConflictingNode, nodeAdjacentToFirstConflictingNode);
+        } else {
+            swap(firstConflictingNode, secondConflictingNode);
+        }
+
+        if (firstConflictingNode != null) {
+            System.out.println("First " + firstConflictingNode.val);
+        }
+        if (secondConflictingNode != null) {
+            System.out.println("Second " + secondConflictingNode.val);
+        }
+        if (nodeAdjacentToFirstConflictingNode != null) {
+            System.out.println("NodeAdjacent " + nodeAdjacentToFirstConflictingNode.val);
+        }
+
+    }
+
+    private static void swap(TreeNode first, TreeNode second) {
+        int temp = first.val;
+        first.val = second.val;
+        second.val = temp;
+    }
+
+    private static void inorder(TreeNode root) {
+        if (root == null) return;
+
+        inorder(root.left);
+
+        // Visit The Node
+        if (lastSeen != null) {
+            if (root.val < lastSeen.val) {
+                if (firstConflictingNode == null) {
+                    firstConflictingNode = lastSeen;
+                    nodeAdjacentToFirstConflictingNode = root;
+                } else {
+                    secondConflictingNode = root;
+                }
+            }
+        }
+        lastSeen = root;
+        inorder(root.right);
+    }
+
 }

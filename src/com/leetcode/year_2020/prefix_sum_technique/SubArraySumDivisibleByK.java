@@ -1,5 +1,8 @@
 package com.leetcode.year_2020.prefix_sum_technique;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * https://leetcode.com/problems/subarray-sums-divisible-by-k/
  *
@@ -11,6 +14,55 @@ public class SubArraySumDivisibleByK {
 
     public static void main(String[] args) {
         System.out.println(subarraysDivByK(new int[]{4, 5, 0, -2, -3, 1}, 5));
+        System.out.println(subarraysDivByKNewOptimized(new int[]{4, 5, 0, -2, -3, 1}, 5));
+    }
+
+    /**
+     * Simpler explanation in @2024
+     * https://www.youtube.com/watch?v=QM0klnvTQzk
+     */
+    private static int subarraysDivByKNewOptimized(int[] nums, int k) {
+        Map<Integer, Integer> remainderFrequencyMap = new HashMap<>();
+        /**
+         * Nums:  2  3   5   4   5   3   4
+         * K = 7
+         *
+         * The solution is based on this  intuition that
+         * if there exist a Sum which is divisible by K and leaves a remainder X (Lets call it S1=((K*n)+X))
+         * Similarly there exist another sum which also when divisible by K leaves remainder X (S2=((k*m)+X)
+         *
+         * where n and m might be any multiple,
+         *
+         * ------------------S1|
+         * --------------------|-------------------------------------------------s2--------------------
+         * ====================>-------(s2-s1) will be divisible by K------------<=====================
+         *
+         * How ?
+         *
+         * S1=K*n+x
+         * S2=K*m+x =====> S2-S1 = (Km+x-kn-x) ==> K*(m-n), Hence while calculating a running sum, if we encounter the remainder again,
+         * we definitely know that there is a new sub-array in between who is divisible by K
+         */
+        remainderFrequencyMap.put(0, 1);  // O is a sub-array which is divisible by k
+        int runningSum = 0;
+        int remainder = 0;
+        int total = 0;
+        for (int n : nums) {
+            runningSum += n;
+            remainder = runningSum % k;
+            remainder = remainder < 0 ? remainder + k : remainder; // We don't want a negative remainder, so it can easily be converted to positive by adding the mod
+            // How ? Imagine a remainder = (-x) Negative
+            // So  Sum = k*n-x !, Now add k and  -k into this  equation
+            // K*n-x+k-k
+            // k*(n-1)+(k-x) // Since we were doing Mod by k, so k will be greater than x
+            // and hence you converted your negative remainder to a positive one by just adding the one whose divisibility aspect is being checked
+
+            if (remainderFrequencyMap.containsKey(remainder)) {
+                total += remainderFrequencyMap.get(remainder);
+            }
+            remainderFrequencyMap.put(remainder, remainderFrequencyMap.getOrDefault(remainder, 0) + 1);
+        }
+        return total;
     }
 
     public static int subarraysDivByK(int[] A, int K) {

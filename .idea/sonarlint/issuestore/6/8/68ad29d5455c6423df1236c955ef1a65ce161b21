@@ -1,0 +1,5 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾€ıˆÿÿÿÿÿJ$2dc41818-ee1a-4deb-8986-42f9ce7104c4
+”
+java:S3008"SRename this field "DIAMETER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔôÜúÿÿÿÿJ$39305e5e-f635-448a-9ada-0f61cd20efc2
+k	java:S106"+Replace this use of System.out by a logger.(ßŸØõşÿÿÿÿJ$0b1beb23-e302-46af-a8d6-d165bd573ff5

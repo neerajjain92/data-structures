@@ -6,29 +6,29 @@ package com.datastructures.recursion;
  * @author neeraj on 10/07/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
+ * <p>
+ * Exactly similar to {@link PermutationWithSpaces}
  */
 public class CombinationInAStringOfDigits {
 
     public static void main(String[] args) {
-        combination("1234");
+        printCombination("123", "");
+        printCombination("1234", "");
+        printCombination("ABCD", "");
     }
 
-    static int invoked = 0;
-    public static void combination(String digit) {
-        permute(digit, 0, "");
-        System.out.println("Invoked upto "+ invoked);
-    }
-
-    private static void permute(String digit, int pointer, String curr) {
-        invoked++;
-        if (pointer == digit.length()) {
-            System.out.println(curr);
+    private static void printCombination(String input, String output) {
+        if (input.equals("")) {
+            System.out.println(output);
             return;
         }
 
-        for (int i = pointer; i < digit.length(); i++) {
-            String substring = digit.substring(pointer, i + 1);
-            permute(digit, i + 1, curr + " " + substring);
+        // Initially we can't add any whitespace
+        printCombination(input.substring(1), output + input.charAt(0));
+        if (!output.isEmpty()) {
+            // Only when some alphabet is present in the output, then use Space,
+            // because space is not allowed in the extreme left or right
+            printCombination(input.substring(1), output + " " + input.charAt(0));
         }
     }
 }

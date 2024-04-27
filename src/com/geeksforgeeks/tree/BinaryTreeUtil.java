@@ -110,6 +110,42 @@ public class BinaryTreeUtil {
         sizeUtil.iterativeDiagonalOrderTraversal(sizeUtil.root);
         newLine();
 
+        // Trying with new tree
+        /**
+         *      10
+         *    /    \
+         *   5      20
+         *  / \    /  \
+         * 3   8  15  90
+         *    /  / \    \
+         *   1  6   7   100
+         *    \
+         *     0
+         */
+        Node aboveTree = new Node(10);
+
+        aboveTree.left = new Node(5);
+        aboveTree.right = new Node(20);
+
+        aboveTree.left.left = new Node(3);
+        aboveTree.left.right = new Node(8);
+
+        aboveTree.right.left = new Node(15);
+        aboveTree.right.right = new Node(90);
+
+        aboveTree.left.left.left = new Node(1);
+        aboveTree.left.left.left.right = new Node(0);
+
+        aboveTree.right.left.left = new Node(6);
+        aboveTree.right.left.right = new Node(7);
+
+        aboveTree.right.right.right = new Node(100);
+
+        letsDo("Iterative Diagonal Order Traversal with new tree");
+        sizeUtil.iterativeDiagonalOrderTraversal(aboveTree);
+        newLine();
+
+
         letsDo("Check if leaf traversal of two Binary Trees is same ? start ");
         BinaryTreeUtil util1 = new BinaryTreeUtil();
         BinaryTreeUtil util2 = new BinaryTreeUtil();

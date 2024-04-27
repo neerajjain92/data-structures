@@ -12,44 +12,33 @@ public class AllPossibleBinaryNumbersOfLength_N_WithEqualSumInBothHalves {
         combination(5, "", "", 0);
     }
 
-    public static void combination(int n, String left, String right, int differenceBetweenLeftAndRightSum) {
-        // Base Case
-
+    private static void combination(int n, String left, String right, int differenceBetweenLeftSumAndRightSum) {
         if (n == 0) {
-            if (differenceBetweenLeftAndRightSum == 0) {
-                System.out.println(left + right + " ");
+            if (differenceBetweenLeftSumAndRightSum == 0) {
+                System.out.println(left + right);
             }
             return;
         }
 
-        // When N is odd, so we have to put 1 extra  0 or 1 in between
+        // What about when N is odd, then add first 1 then 0 to the middle one by one
         if (n == 1) {
-            if (differenceBetweenLeftAndRightSum == 0) {
-                System.out.println(left + "0" + right + " ");
-                System.out.println(left + "1" + right + " ");
-            }
+            combination(0, left + "0", right, differenceBetweenLeftSumAndRightSum);
+            combination(0, left + "1", right, differenceBetweenLeftSumAndRightSum);
             return;
         }
 
 
-        // We can only add new numbers if we have at-least 2 limit left.
-        if (2 * Math.abs(differenceBetweenLeftAndRightSum) <= n) {
-            // No Binary numbers can start with 0
-            if (left != "") {
-                // Just do opposite of what we did for making left heavy
-                // Appending "0" to both left and right and since difference will remain same.
-                combination(n - 2, left + "0", right + "0", differenceBetweenLeftAndRightSum);
+        // 4 cases
+        // Add "0" to both end (to balance out equation), no difference generated
+        combination(n - 2, left + "0", right + "0", differenceBetweenLeftSumAndRightSum);
 
-                // Append "0" to left and "1" to right, since right is  now heavy so decrement the difference
-                combination(n - 2, left + "0", right + "1", differenceBetweenLeftAndRightSum - 1);
-            }
+        // Make left heavy first, (So adding 1 to the left)
+        combination(n - 2, left + "1", right + "0", differenceBetweenLeftSumAndRightSum + 1);
 
-            // Here left can be empty or might not be
-            // Append "1" to left and 0 to right, since left is heavy so increment the difference
-            combination(n - 2, left + "1", right + "0", differenceBetweenLeftAndRightSum + 1);
+        // Make right heavy
+        combination(n - 2, left + "0", right + "1", differenceBetweenLeftSumAndRightSum - 1);
 
-            // Appending "1" to both left and right and since difference will remain same.
-            combination(n - 2, left + "1", right + "1", differenceBetweenLeftAndRightSum);
-        }
+        // Add "1" to both end, no difference generated
+        combination(n - 2, left + "1", right + "1", differenceBetweenLeftSumAndRightSum);
     }
 }

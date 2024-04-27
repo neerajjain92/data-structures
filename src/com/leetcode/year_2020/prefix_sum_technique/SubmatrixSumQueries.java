@@ -20,9 +20,9 @@ public class SubmatrixSumQueries {
         int M = mat.length, N = mat[0].length;
         int aux[][] = preProcess(mat);
 
-//        System.out.println(answerQuery(0, 0, 1, 1, aux));
-//        System.out.println(answerQuery(2, 2, 3, 4, aux));
-//        System.out.println(answerQuery(1, 2, 3, 3, aux));
+        System.out.println(answerQuery(0, 0, 1, 1, aux));
+        System.out.println(answerQuery(2, 2, 3, 4, aux));
+        System.out.println(answerQuery(1, 2, 3, 3, aux));
 
         mat = new int[][]{
                 {3, 0, 1, 4, 2},
@@ -106,7 +106,7 @@ public class SubmatrixSumQueries {
             }
         }
 
-        LogUtil.logIt("Col Prefix Sum.....");
+        LogUtil.logIt("Row Prefix Sum.....");
         LogUtil.printMultiDimensionArray(prefixSumMatrix);
         return prefixSumMatrix;
     }

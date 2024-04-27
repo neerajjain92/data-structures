@@ -19,7 +19,7 @@ public class PrintSubsetOfAlphabets {
 
     public static void subset(String input, String output, Set<String> allSubsets) {
         if (input.length() == 0) {
-            if (allSubsets.add(output)) {
+            if (allSubsets.add(output)) { // To avoid duplicate.
                 System.out.println(output);
             }
             return;

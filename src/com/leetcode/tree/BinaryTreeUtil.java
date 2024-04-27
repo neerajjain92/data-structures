@@ -555,6 +555,12 @@ public class BinaryTreeUtil {
         }
     }
 
+    /**
+     * Approach is wrong, since In Vertical Order traversal, the entries should in top-down (first) and then (left-right)
+     * but with this inorder traversal, we will end up visiting the left tree first and then the right subtree which will break the
+     * Vertical order traversal, so the right approach is doing it iteratively with Level Order traversal and then applying Map concept to hold the values of that level
+     * @param root
+     */
     public void printBinaryTreeInVerticalOrder(Node root) {
 
         logIt("Binary Tree in Vertical order traversal", true);

@@ -29,6 +29,9 @@ public class ContiguousArray {
         System.out.println(findMaxLengthOptimized(new int[]{0, 1, 1, 0, 1, 1, 1, 0}));
     }
 
+    /**
+     * https://leetcode.com/problems/contiguous-array/solutions/1743431/a-highly-detailed-explanation-ever-exists-java-c
+     */
     public static int findMaxLengthOptimized(int[] nums) {
         /**
          * This problem can be solved using Prefix Sum technique

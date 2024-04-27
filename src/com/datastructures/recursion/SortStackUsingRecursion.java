@@ -50,8 +50,6 @@ public class SortStackUsingRecursion {
 
         // Hypothesis
         int item = stack.pop();
-        sort(stack);
-
         insertAtCorrectPosition(stack, popped);
         stack.push(item);
     }

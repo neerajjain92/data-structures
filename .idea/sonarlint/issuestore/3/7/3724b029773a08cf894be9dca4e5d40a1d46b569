@@ -1,0 +1,13 @@
+
+e
+java:S1104
+"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ
+f
+java:S1104"PMake left a static final constant or non-public and provide accessors if needed.(ŠËÌç
+l
+java:S1104"QMake right a static final constant or non-public and provide accessors if needed.(ë™Ùµøÿÿÿÿ
+k
+java:S1104"PMake next a static final constant or non-public and provide accessors if needed.(œù´Ğüÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(šöÀû
+@	java:S106"+Replace this use of System.out by a logger.(šöÀû
+@	java:S106%"+Replace this use of System.out by a logger.(šöÀû

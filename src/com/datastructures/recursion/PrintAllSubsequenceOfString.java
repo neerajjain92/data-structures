@@ -1,7 +1,5 @@
 package com.datastructures.recursion;
 
-import com.util.LogUtil;
-
 /**
  * https://www.geeksforgeeks.org/print-subsequences-string/
  * <p>
@@ -17,28 +15,21 @@ import com.util.LogUtil;
  */
 public class PrintAllSubsequenceOfString {
     public static void main(String[] args) {
-        printAllSubsequence("abcd", "");
-        printAllSubsequence("123", "");
-//        printAllSubString("nitin");
+        printAllSubsequenceNew("abc", "");
+        printAllSubsequenceNew("123", "");
+        printAllSubsequenceNew("Geeks", "");
     }
 
-    public static void printAllSubsequence(String prefix, String suffix) {
-        if (prefix.length() < 0) {
+    private static void printAllSubsequenceNew(String input, String output) {
+        if (input.length() == 0) {
+            if (!output.isEmpty()) {
+                System.out.println(output);
+            }
             return;
         }
-
-        System.out.println(suffix);
-        for (int i = 0; i < prefix.length(); i++) {
-            printAllSubsequence(prefix.substring(i + 1), suffix + prefix.charAt(i));
-        }
-    }
-
-    public static void printAllSubString(String str) {
-        LogUtil.logIt("All SubStrings ", true);
-        for (int i = 1; i <= str.length(); i++) {
-            for (int j = 0; j <= str.length() - i; j++) {
-                System.out.println(str.substring(j, j + i));
-            }
-        }
+        // Not Choose
+        printAllSubsequenceNew(input.substring(1), output);
+        // Choose
+        printAllSubsequenceNew(input.substring(1), output + input.charAt(0));
     }
 }

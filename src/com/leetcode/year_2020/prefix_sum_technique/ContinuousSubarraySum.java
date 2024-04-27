@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * https://leetcode.com/problems/continuous-subarray-sum/
+ * SubArraySumMultipleOfK
  * <p>
  * SubArraySumMultipleOfK
  *
@@ -17,6 +18,7 @@ public class ContinuousSubarraySum {
     public static void main(String[] args) {
         System.out.println(checkSubarraySum(new int[]{23, 2, 4, 6, 7}, 6));
         System.out.println(checkSubarraySum(new int[]{23, 2, 6, 4, 7}, 6));
+        System.out.println(checkSubarraySum(new int[]{23, 2, 6, 4, 7}, 13));
     }
 
     public static boolean checkSubarraySum(int[] nums, int k) {
@@ -71,5 +73,6 @@ public class ContinuousSubarraySum {
             }
         }
         return false;
+
     }
 }
