@@ -1,5 +1,0 @@
-
-f	java:S106"+Replace this use of System.out by a logger.(ô¹ç¢J$996d4343-2f3b-4242-be6e-0ce122001f41
-|	java:S125"<This block of commented-out lines of code should be removed.(ãâ¦üÿÿÿÿJ$e8c04ef1-dea7-4dde-9f11-daeaa4b36820
-“
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(«ñÈ‘ýÿÿÿÿJ$e9ca8d8a-dfca-4f81-9c7c-bc8105fabb0b

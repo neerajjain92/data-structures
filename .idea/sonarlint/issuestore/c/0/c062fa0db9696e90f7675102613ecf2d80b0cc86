@@ -1,15 +1,0 @@
-
-Ÿ
-java:S1192"WDefine a constant instead of duplicating this literal "Nodes at kth distance " 3 times.(Œàóıÿÿÿÿ8­·æÏò1J$b8f5a0ef-53dd-414e-814a-37e0f9fff0d2
-s
-java:S1066"/Merge this if statement with the enclosing one.(­õ„8§ñüÏò1J$a80b4199-108e-4f57-bb52-9c3677a1d25a
-	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Êı·J$9787a654-34f5-45e8-8e03-bed0a2af4c84
-ˆ	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÀğÓƒJ$7aca6de0-3f30-4f9f-82b1-6f8851c9c0fd
-“
-java:S1149w"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ŠÈİà8®øñÏò1J$2a9c923f-e5d8-4fc9-b1d2-2fd68c071a61
-w	java:S125&"<This block of commented-out lines of code should be removed.(ïìíéJ$9feed485-e3a2-4e5a-ba25-723be1208880
-“
-java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ÇüàËşÿÿÿÿJ$b694c618-5d7b-4350-bf4d-fb59abbec679
-r	java:S106Q"+Replace this use of System.out by a logger.(¯€ƒÊøÿÿÿÿ8èåÏò1J$ef8f3a9f-a375-40f8-bdee-967d85a831f4
-•
-java:S3776t"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Ê¿«8·øñÏò1J$7c01b3c6-ec09-40e7-b2e7-ecb44fd195a3

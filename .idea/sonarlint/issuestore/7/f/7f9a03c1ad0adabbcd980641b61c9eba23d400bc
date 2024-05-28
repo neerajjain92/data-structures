@@ -1,12 +1,0 @@
-
-j
-java:S1121C".Extract the assignment out of this expression.(Ëƒ°ÖJ$3a3cab8f-e2a7-4650-983e-1d2c304ae068
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«ğ“…şÿÿÿÿJ$2fa3c240-1a73-43f0-9899-005dc9c179ed
-
-java:S3008"NRename this field "MOD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì§åÅúÿÿÿÿJ$1b3e17b7-0b29-49e1-bad1-b0bf370a0e40
-f	java:S106	"+Replace this use of System.out by a logger.(öÒ©äJ$42cf2b9f-a6b7-4a51-ae16-7809bda0e178
-k	java:S106
-"+Replace this use of System.out by a logger.(¶€¤ıÿÿÿÿJ$59c2dac4-d7ca-443e-a68b-b51cc490eacb
-k	java:S106"+Replace this use of System.out by a logger.(à›ˆ±ûÿÿÿÿJ$ec6c4b54-d714-47c6-a39c-56cc851d2712
-f	java:S106"+Replace this use of System.out by a logger.(ëğçÒJ$6feb97a2-5b41-49c3-87bd-08edf6a0f425
-k	java:S106"+Replace this use of System.out by a logger.(•ÓÔşúÿÿÿÿJ$d0e0c4bf-ddca-45f0-a730-d7995e13ed75

@@ -1,16 +1,0 @@
-
-‹
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(€ãºKJ$a00d0bc5-5ef0-479c-ac61-6047c47c9430
-Œ
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(§œÁ—J$fa2ed483-3d4c-4081-b898-93fcbfd3abb5
-k	java:S106"+Replace this use of System.out by a logger.(ŒÀ®µÿÿÿÿÿJ$1017d5f9-f440-4e42-bea4-1a2c497fe3ed
-k	java:S106"+Replace this use of System.out by a logger.(ÓŞî²ÿÿÿÿÿJ$f47613f7-ea1f-4a27-95c6-ab4d1674e04a
-k	java:S106"+Replace this use of System.out by a logger.(÷»ƒËøÿÿÿÿJ$ea485ac8-c9a5-4651-8ee6-c921db4356c1
-k	java:S106"+Replace this use of System.out by a logger.(¶ºğ¯ıÿÿÿÿJ$50d5100f-f8e6-4879-84f2-f8fb58034549
-r	java:S106"+Replace this use of System.out by a logger.(©¿úçøÿÿÿÿ8§êµ¦ô1J$d1c39df2-f21a-4b92-915c-d0fd3a1a2b03
-m	java:S106"+Replace this use of System.out by a logger.(ï«áò8‡„·¦ô1J$145cf6d2-36a5-49b4-94b9-abff2a9b8779
-m	java:S106"+Replace this use of System.out by a logger.(Å´÷8ÁÑ¦ô1J$d33f94a6-c59e-4e33-ba53-b9a974400e4b
-l	java:S106"+Replace this use of System.out by a logger.(¬äÈ68éÁÙ¦ô1J$3c40d7b6-3592-4a24-bb8e-48b3b3434c9f
-“
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(éœÌúÿÿÿÿJ$82e5f0da-270f-4709-9a6a-8697ab37aa4f
-]	java:S131"""Add a default case to this switch.(•ÏJ$98fcea80-c44e-4a6b-89d0-1129a8623177

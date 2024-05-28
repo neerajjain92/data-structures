@@ -1,13 +1,0 @@
-
-š
-java:S2293^"YReplace the type specification in this constructor call with the diamond operator ("<>").(Íþœ‚ûÿÿÿÿJ$6822b3a9-2641-4b93-bcb9-36505a0d78b0
-š
-java:S2293a"YReplace the type specification in this constructor call with the diamond operator ("<>").(“Ð©ÖùÿÿÿÿJ$f72cc436-41d8-4a38-84db-d7490626e20d
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õ²¬ƒÿÿÿÿÿJ$c6d6b735-e53a-416f-8778-b949a60120ca
-z
-java:S1596b">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(œÖýïJ$2e32c1e1-2a30-4f0c-af05-ca65ff2ad401
-f	java:S106"+Replace this use of System.out by a logger.(î†ëêJ$232d0de7-e583-447c-89c6-a5bc2e7924a4
-f	java:S106"+Replace this use of System.out by a logger.(î†ëêJ$3cf6afe3-1e48-4118-b420-a002cbeddc88
-f	java:S106"+Replace this use of System.out by a logger.(î†ëêJ$8ada5335-cfa1-497f-834c-d3c54e359c3f
-h
-java:S1125M"'Remove the unnecessary boolean literal.(Î™ÉºýÿÿÿÿJ$eb9e024f-19df-4c81-b053-44fb8520fbc5

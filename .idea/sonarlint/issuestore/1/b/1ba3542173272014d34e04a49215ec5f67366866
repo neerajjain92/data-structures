@@ -1,9 +1,0 @@
-
-_
-java:S2583E"DChange this condition so that it does not always evaluate to "false"(¬‹ªÍÿÿÿÿÿ
-?	java:S106F"+Replace this use of System.out by a logger.(£À 
-E	java:S106a"+Replace this use of System.out by a logger.(ùäîÃøÿÿÿÿ
-?	java:S106c"+Replace this use of System.out by a logger.(×·Y
-E	java:S106e"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
-R	java:S125Œ"<This block of commented-out lines of code should be removed.(şóÕÜ
-R	java:S125¨"<This block of commented-out lines of code should be removed.(í£ÔÍ

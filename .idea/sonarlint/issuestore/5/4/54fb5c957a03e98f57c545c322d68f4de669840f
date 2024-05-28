@@ -1,14 +1,0 @@
-
-–	java:S116"VRename this field "MIN_ELEMENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óËèüÿÿÿÿJ$7b385ad9-b71b-41a6-9af8-779dd8b15b5b
-‘
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¡ƒ„‚şÿÿÿÿJ$819af2a8-40cf-4d6b-b961-b367f2a43ae7
-f	java:S106*"+Replace this use of System.out by a logger.(•ËŸªJ$b2b1c42b-7682-4510-88db-9bd6a05e98f2
-k	java:S106S"+Replace this use of System.out by a logger.(×ü²§üÿÿÿÿJ$cc9f6d9e-6337-43a9-ae74-295abbb85a4e
-k	java:S106U"+Replace this use of System.out by a logger.(·àß¦øÿÿÿÿJ$15a4bc36-8436-4675-9674-d8c3eb57748d
-k	java:S106W"+Replace this use of System.out by a logger.(·àß¦øÿÿÿÿJ$7c2ed94a-f35f-43a1-9cad-1431992f5fd8
-k	java:S106Z"+Replace this use of System.out by a logger.(×ü²§üÿÿÿÿJ$c2e667ba-0fb2-4608-8888-9644e8f9180c
-k	java:S106["+Replace this use of System.out by a logger.(·àß¦øÿÿÿÿJ$66718969-59f2-4f3e-a885-01e4408f2ae6
-k	java:S106]"+Replace this use of System.out by a logger.(×ü²§üÿÿÿÿJ$403d40cb-9f1f-4fa0-a262-edba100a6526
-k	java:S106^"+Replace this use of System.out by a logger.(·àß¦øÿÿÿÿJ$7e4933bd-c164-4dfb-b238-ab1bc053f036
-k	java:S106`"+Replace this use of System.out by a logger.(·àß¦øÿÿÿÿJ$5721fe8a-adf5-44ee-9ab9-0a27b7978af9
-w	java:S125b"<This block of commented-out lines of code should be removed.(ÉíÛ±J$7c0b2a5b-8152-4a2f-8de2-2784568ad5c8

@@ -1,7 +1,0 @@
-
-•	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ğİ¿J$fd88d506-7611-4309-83e1-b0aa42c3938b
-f	java:S106"+Replace this use of System.out by a logger.(ıéÑœJ$b4ec6d69-5278-49ea-9a0d-1dd00564c75e
-f	java:S106"+Replace this use of System.out by a logger.(ÇÁ÷ÚJ$35de503b-804a-464b-bad5-de7821df44e5
-e	java:S106"+Replace this use of System.out by a logger.(›ò›?J$cf1b7793-44bb-4098-b9aa-c45aaf226811
-
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ğİ¿J$d8e34d70-9130-433a-b0c6-6bd30f7ee561

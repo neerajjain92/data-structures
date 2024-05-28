@@ -1,10 +1,0 @@
-
-L	java:S106"+Replace this use of System.out by a logger.(õô¶Ğûÿÿÿÿ8¸î³Íû1
-G	java:S106"+Replace this use of System.out by a logger.(Ğ–ºµ8»î³Íû1
-L	java:S106."+Replace this use of System.out by a logger.(õô¶Ğûÿÿÿÿ8½î³Íû1
-G	java:S1065"+Replace this use of System.out by a logger.(Ğ–ºµ8Àî³Íû1
-X	java:S125C"<This block of commented-out lines of code should be removed.(úº ¡8Æî³Íû1
->
-java:S1116d"Remove this empty statement.(Åñ­õşÿÿÿÿ8Òî³Íû1
-o
-java:S3776f"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(İ¨Ô8Óî³Íû1

@@ -1,15 +1,0 @@
-
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êƒì‚ûÿÿÿÿ8ó’¿—ø1J$c7152132-f161-492e-9a4c-3dd2ef84d2a4
-r	java:S106"+Replace this use of System.out by a logger.(Ñ¼®šüÿÿÿÿ8©“¿—ø1J$8c3fdd98-cb9e-42c1-9028-2fa8624052a4
-r	java:S106"+Replace this use of System.out by a logger.(Ñ¼®šüÿÿÿÿ8©“¿—ø1J$cb943606-e162-4be2-9dd4-0fa2a98788f7
-r	java:S106"+Replace this use of System.out by a logger.(Ñ¼®šüÿÿÿÿ8©“¿—ø1J$02cc6f2e-1aa5-4444-b2a6-0648df58a743
-r	java:S106"+Replace this use of System.out by a logger.(Ñ¼®šüÿÿÿÿ8©“¿—ø1J$9c78c46f-bb81-499f-a9b3-647febd43134
-r	java:S106"+Replace this use of System.out by a logger.(Ñ¼®šüÿÿÿÿ8ª“¿—ø1J$df8c9346-ec2d-4495-82e4-025ae37b4a6c
-r	java:S106"+Replace this use of System.out by a logger.(Ñ¼®šüÿÿÿÿ8ª“¿—ø1J$3df4c52c-3d9f-4db5-8786-aa56d0b9cc80
-•	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…¦Â˜şÿÿÿÿ8°“¿—ø1J$f65b0457-98a4-4a10-83cc-b0050aa8ab16
-|
-java:S2864B"4Iterate over the "entrySet" instead of the "keySet".(‹º¹”üÿÿÿÿ8±“¿—ø1J$90160b6b-d7ee-4047-a65f-f0bcd90eb046
-†
-java:S1155O">Use isEmpty() to check whether the collection is empty or not.(Ù÷ÜÇıÿÿÿÿ8²“¿—ø1J$0b0547a2-02a0-477c-97b9-8937a45a28b5
-q
-java:S1481P")Remove this unused "item" local variable.(ééˆøÿÿÿÿ8³“¿—ø1J$205bc5af-8ab9-406b-a829-215649750288

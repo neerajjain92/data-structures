@@ -1,9 +1,0 @@
-
-Œ
-java:S1149!"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÏÐÇüJ$e9e8a053-d646-4a72-8500-6d58b341cf21
-Œ
-java:S1149""PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¹÷Ã€J$c0bc219a-691b-4d06-90cd-71f4132739e2
-…
-java:S1854-"DRemove this useless assignment to local variable "dummyHeadPointer".(ƒšÊ×úÿÿÿÿJ$eb862f94-f700-4bf1-92d2-0cf37abe87e7
-v
-java:S1481-"5Remove this unused "dummyHeadPointer" local variable.(ƒšÊ×úÿÿÿÿJ$c5ffe0ab-28fe-418a-b177-c61a0a521073

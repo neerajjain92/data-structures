@@ -1,8 +1,0 @@
-
-]
-java:S1192"GDefine a constant instead of duplicating this literal "----> " 3 times.(™¹¥ð
-k
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(™¹¥ð
-@	java:S106"+Replace this use of System.out by a logger.(™¹¥ð
-E	java:S106!"+Replace this use of System.out by a logger.(ÇëÏ²úÿÿÿÿ

@@ -1,6 +1,0 @@
-
-k	java:S106-"+Replace this use of System.out by a logger.(Õ´ê³øÿÿÿÿJ$a30fcfe5-447f-42ba-b46d-0dded5daa7e4
-k	java:S1064"+Replace this use of System.out by a logger.(ïë±æûÿÿÿÿJ$60609b53-adc6-4344-b054-387f06939c73
-Ž	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¼¾ÁýÿÿÿÿJ$a4fe28f2-acd1-45f5-8046-237bf9f0a0c9
-‰	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Å»ÞJ$a7f4ae00-0513-4bce-9c8b-2b35a8780db0
-w	java:S125Q"<This block of commented-out lines of code should be removed.(µïá˜J$975ff3a5-29b8-4175-bcf2-1894997a8e6a
