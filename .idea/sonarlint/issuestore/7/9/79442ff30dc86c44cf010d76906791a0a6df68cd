@@ -1,0 +1,17 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(°Û›ğ
+Q
+java:S1854:";Remove this useless assignment to local variable "inorder".(•åÒé
+W
+java:S18549"<Remove this useless assignment to local variable "preorder".(Ü©÷½ÿÿÿÿÿ
+@	java:S106,"+Replace this use of System.out by a logger.(¥Å´
+E	java:S106-"+Replace this use of System.out by a logger.(™óñ½ÿÿÿÿÿ
+E
+java:S11979"*Move the array designators [] to the type.(Ü©÷½ÿÿÿÿÿ
+@
+java:S1197:"*Move the array designators [] to the type.(•åÒé
+Q	java:S125;"<This block of commented-out lines of code should be removed.(•ó¸
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ

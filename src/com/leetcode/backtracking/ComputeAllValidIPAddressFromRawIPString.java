@@ -25,6 +25,7 @@ public class ComputeAllValidIPAddressFromRawIPString {
 
     public static void main(String[] args) {
         restoreIpAddress("25525511135");
+        restoreIpAddress("000000000000");
     }
 
 

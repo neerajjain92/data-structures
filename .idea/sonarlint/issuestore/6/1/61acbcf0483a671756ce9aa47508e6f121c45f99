@@ -1,0 +1,11 @@
+
+«
+java:S1192H"cDefine a constant instead of duplicating this literal "Maximum SUM BST in Binary tree is " 4 times.(Â³™Áøÿÿÿÿ8®£õ¨ò1J$7a88f9dc-03c1-4a61-828b-b57ac80d49a3
+š
+java:S3008!"RRename this field "MAX_SUM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÑı…üÿÿÿÿ8À£õ¨ò1J$92d62819-6f2c-4c5d-873a-22f942df016f
+†
+java:S1854%">Remove this useless assignment to local variable "maxSumPair".(îÊÊşÿÿÿÿ8Å£õ¨ò1J$ad8908ef-7158-45a0-8fee-e78821ce3d05
+w
+java:S1481%"/Remove this unused "maxSumPair" local variable.(îÊÊşÿÿÿÿ8Æ£õ¨ò1J$37b20335-7092-4149-a48c-b165bf79b1b4
+~	java:S125["<This block of commented-out lines of code should be removed.(è«âÂ8È£õ¨ò1J$51811765-f344-4a3d-b1c4-bbf8d437a080
+r	java:S106l"+Replace this use of System.out by a logger.(Èğ¨ëıÿÿÿÿ8É£õ¨ò1J$aab79d74-6b4f-45a6-9c22-abb228fcb9c3

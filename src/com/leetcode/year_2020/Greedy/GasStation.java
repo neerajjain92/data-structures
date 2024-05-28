@@ -14,9 +14,30 @@ public class GasStation {
                 new int[]{1, 2, 3, 4, 5},
                 new int[]{3, 4, 5, 1, 2}));
 
+        System.out.println(canCompleteCircuitON2(
+                new int[]{1, 2, 3, 4, 5},
+                new int[]{3, 4, 5, 1, 2}));
+
         System.out.println(canCompleteCircuit(
                 new int[]{2, 3, 4},
                 new int[]{3, 4, 3}));
+    }
+
+    public static int canCompleteCircuitON2(int[] gas, int[] cost) {
+
+        for (int i=0;i<gas.length;i++) {
+            int gasRemaining = gas[i];
+            int nextStation = i; // Set to i initially
+            while(gasRemaining > 0) {
+                gasRemaining -= cost[nextStation];
+                if (gasRemaining >= 0) {
+                    nextStation = (nextStation + 1) % gas.length;
+                    gasRemaining += gas[nextStation];
+                    if (nextStation == i) return i;
+                }
+            }
+        }
+        return -1;
     }
 
     public static int canCompleteCircuit(int[] gas, int[] cost) {

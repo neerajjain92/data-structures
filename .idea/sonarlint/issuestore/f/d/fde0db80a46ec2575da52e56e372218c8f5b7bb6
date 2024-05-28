@@ -1,0 +1,25 @@
+
+k	java:S117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©«¾Ãşÿÿÿÿ
+l	java:S117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÜÑ²úÿÿÿÿ
+l	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛØâÍûÿÿÿÿ
+k
+java:S11490"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+?	java:S106"+Replace this use of System.out by a logger.(å™$
+E	java:S106"+Replace this use of System.out by a logger.(¿ó¨üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(¢ø¢Á
+E	java:S106"+Replace this use of System.out by a logger.(‘ä´îúÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(£×›şÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ÙŒ¥úøÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(çëÇ½øÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(‹Ö£Éøÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Íûú¡üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(õøÕñ
+E	java:S106"+Replace this use of System.out by a logger.(áßÿ³üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ıÔ·À
+@	java:S106"+Replace this use of System.out by a logger.(Õİ¹“
+@	java:S106"+Replace this use of System.out by a logger.(ĞÓ¶—
+E	java:S106"+Replace this use of System.out by a logger.(â¢„·ùÿÿÿÿ
+@	java:S106 "+Replace this use of System.out by a logger.( ¢Ö
+m
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ï¬™üÿÿÿÿ
+c	java:S100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®¯ŒÑ

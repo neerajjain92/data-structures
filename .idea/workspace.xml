@@ -5,32 +5,127 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Solving August leetcode 2021 challenge">
-      <change afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/KthSymbolInGrammar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/tree/LongestZigZagPathInBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/avltree/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/avltree/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/avltree/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/avltree/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/HandOfStraights.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LargestNumberWithKSwaps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/NDigitNumberWithIncreasingDigit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/NumberOfDistinctIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/ShortestPathInDirectedAcyclicGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/DeleteEveryAlternativeNodeInCircularList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/FlattenMultiLevelLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/LargestBSTBinaryTreeNew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/MaximumSumBSTInBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bca228ca15756675d10a7ba6dcb0d7e066c9e55" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bca228ca15756675d10a7ba6dcb0d7e066c9e55" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cd4575b83b651958f2be26659328c3d663f1b3f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cd4575b83b651958f2be26659328c3d663f1b3f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/3724b029773a08cf894be9dca4e5d40a1d46b569" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/3724b029773a08cf894be9dca4e5d40a1d46b569" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dd065ec14e460d67c9b20f1a9f4101f28a37d9a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dd065ec14e460d67c9b20f1a9f4101f28a37d9a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5bad06b056383567e8d2911b6f5f0afde6f76ae9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5bad06b056383567e8d2911b6f5f0afde6f76ae9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a51629d0e9c1e55ade102b61e3ee7013905ffb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a51629d0e9c1e55ade102b61e3ee7013905ffb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9ffbc3978b2553558f50ed0b96776f6c3a6a5fc4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9ffbc3978b2553558f50ed0b96776f6c3a6a5fc4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/heap/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/heap/MinHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/AllPossibleBinaryNumbersOfLength_N_WithEqualSumInBothHalves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/AllPossibleBinaryNumbersOfLength_N_WithEqualSumInBothHalves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/CombinationInAStringOfDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/CombinationInAStringOfDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/GenerateAllBinaryStringWithoutConsecutiveOnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/GenerateAllBinaryStringWithoutConsecutiveOnes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintSubsetOfAlphabets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintSubsetOfAlphabets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/SortStackUsingRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/SortStackUsingRecursion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/tree/BinaryTreeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateBalancedParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/GenerateBalancedParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/tree/BinarySearchTreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/tree/BinarySearchTreeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/tree/BinaryTreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/tree/BinaryTreeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/StackWithFindMiddle$DLL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/StackWithFindMiddle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/graph/NumberOfIsland.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/graph/NumberOfIsland.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/mustDoInterviewQuestions/string/PermutationOfString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$HorizontalDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$HorizontalDistance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$TopViewNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$TopViewNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/DoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/DoublyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/LinkedListUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/LinkedListUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/backtracking/GenerateAllPossible_PowerSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/problems/medium/FloodFill_733.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/problems/medium/FloodFill_733.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/tree/RecoverBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/tree/RecoverBinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/BrokenCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/BrokenCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/GasStation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/GasStation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LemonadeChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LemonadeChange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString$Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/PatchingArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3$MyCalendarThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3$MyCalendarThree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/ImplementLFUCache$LFUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/ImplementLFUCache$LFUCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/LRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/LRUCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/MinStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AdditiveNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AdditiveNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/ArrayPermutations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/ArrayPermutations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CombinationSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CombinationSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CustomSortString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CustomSortString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromePermutation_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromePermutation_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromicPartitioning.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromicPartitioning.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/Permutations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/Permutations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite$COLOR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite$COLOR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates$Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates$Color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$ActionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$ActionType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/ValidParenthesisString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/ValidParenthesisString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/tree/EqualTreePartition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/tree/EqualTreePartition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/StackWithFindMiddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/StackWithFindMiddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/string/PermutationOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PermutationOfString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/tree/binaryTree/BinaryTreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/tree/binaryTree/BinaryTreeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateAllPossible_PowerSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/GenerateAllPossible_PowerSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FloodFill_733.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FloodFill_733.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leetcode/tree/RecoverBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/tree/RecoverBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/BinaryTreeMaximumPathSumBetweenAnyTwoLeaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/BinaryTreeMaximumPathSumBetweenAnyTwoLeaf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/ContiguousArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/ContiguousArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/ContinuousSubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/ContinuousSubarraySum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubArraySumDivisibleByK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubArraySumDivisibleByK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubmatrixSumQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubmatrixSumQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/PatchingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/PatchingArrayHard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/ImplementLFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/ImplementLFUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CustomSortString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CustomSortString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/AllNodesDistance_K_inBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/TextEditorUndoRedo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/TextEditorUndoRedo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/ValidParenthesisString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/ValidParenthesisString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/EqualTreePartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/EqualTreePartition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +155,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -67,6 +167,17 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9c2241fe-0e87-4377-acd2-7b9a35ee9f8f" />
+        <option name="url" value="https://github.com/neerajjain92/data-structures.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/azul-11.0.17/Contents/Home/lib/src.zip!/java.base/java/lang/Math.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
@@ -94,7 +205,8 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/neerajjain/Projects/Github/data-structures&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -105,7 +217,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RecoverBinarySearchTree">
+  <component name="RunManager" selected="Application.AlienDictionary">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -117,12 +229,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTreeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.tree.BinarySearchTreeUtil" />
+    <configuration name="AlienDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.topologicalSort.AlienDictionary" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.tree.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.topologicalSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +242,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestZigZagPathInBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.tree.LongestZigZagPathInBinaryTree" />
+    <configuration name="DetectADirectedGraphHasACycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.cycle_detection.DetectADirectedGraphHasACycle" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.tree.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.cycle_detection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +255,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecoverBinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.tree.RecoverBinarySearchTree" />
+    <configuration name="FindEventualSafeStates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.cycle_detection.FindEventualSafeStates" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.tree.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.cycle_detection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +268,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubArraySumDivisibleByK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.prefix_sum_technique.SubArraySumDivisibleByK" />
+    <configuration name="IsGraphBipartite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.IsGraphBipartite" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.prefix_sum_technique.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,12 +281,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubmatrixSumQueries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.prefix_sum_technique.SubmatrixSumQueries" />
+    <configuration name="NumberOfDistinctIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.dfs.NumberOfDistinctIsland" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.prefix_sum_technique.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.dfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RecoverBinarySearchTree" />
-        <item itemvalue="Application.LongestZigZagPathInBinaryTree" />
-        <item itemvalue="Application.BinarySearchTreeUtil" />
-        <item itemvalue="Application.SubmatrixSumQueries" />
-        <item itemvalue="Application.SubArraySumDivisibleByK" />
+        <item itemvalue="Application.AlienDictionary" />
+        <item itemvalue="Application.FindEventualSafeStates" />
+        <item itemvalue="Application.DetectADirectedGraphHasACycle" />
+        <item itemvalue="Application.IsGraphBipartite" />
+        <item itemvalue="Application.NumberOfDistinctIsland" />
       </list>
     </recent_temporary>
   </component>
@@ -782,22 +894,22 @@
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MinStack.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinStack.java</url>
           <line>22</line>
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MinStack.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinStack.java</url>
           <line>37</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MinStack.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinStack.java</url>
           <line>52</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MinStack.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinStack.java</url>
           <line>63</line>
           <option name="timeStamp" value="191" />
         </line-breakpoint>
@@ -808,22 +920,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java</url>
-          <line>46</line>
+          <line>47</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java</url>
-          <line>57</line>
+          <line>58</line>
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java</url>
-          <line>23</line>
+          <line>26</line>
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -873,7 +985,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/ValidParenthesisString.java</url>
-          <line>51</line>
+          <line>56</line>
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -998,12 +1110,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>68</line>
+          <line>131</line>
           <option name="timeStamp" value="258" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>50</line>
+          <line>113</line>
           <option name="timeStamp" value="259" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1435,7 +1547,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java</url>
-          <line>43</line>
+          <line>66</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -1443,7 +1555,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.java</url>
-          <line>85</line>
+          <line>100</line>
           <option name="timeStamp" value="455" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1480,11 +1592,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/Graph.java</url>
           <line>96</line>
           <option name="timeStamp" value="468" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="469" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/NumberofOperationstoMakeNetworkConnected.java</url>
@@ -1578,12 +1685,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.java</url>
-          <line>38</line>
+          <line>87</line>
           <option name="timeStamp" value="514" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.java</url>
-          <line>46</line>
+          <line>95</line>
           <option name="timeStamp" value="515" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1704,7 +1811,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java</url>
-          <line>28</line>
+          <line>31</line>
           <option name="timeStamp" value="557" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1838,16 +1945,6 @@
           <option name="timeStamp" value="597" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="598" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="599" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/SubSet_Permutations_CombinationSum.java</url>
           <line>53</line>
           <option name="timeStamp" value="601" />
@@ -1944,7 +2041,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java</url>
-          <line>44</line>
+          <line>98</line>
           <option name="timeStamp" value="641" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2068,11 +2165,6 @@
           <option name="timeStamp" value="688" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="693" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/queue/FirstNegativeIntegerEveryWindowSizeK.java</url>
           <line>14</line>
           <option name="timeStamp" value="695" />
@@ -2096,11 +2188,6 @@
           <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/ReverseString.java</url>
           <line>17</line>
           <option name="timeStamp" value="708" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="709" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/GenerateBalancedParenthesis.java</url>
@@ -2136,11 +2223,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java</url>
           <line>27</line>
           <option name="timeStamp" value="741" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="747" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LongestPossibleRouteInMatrix.java</url>
@@ -2346,11 +2428,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/FindKClosestElements.java</url>
           <line>44</line>
           <option name="timeStamp" value="810" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="811" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/nearest_path/ShortestPathInAGridWithObstaclesElimination.java</url>
@@ -2627,23 +2704,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java</url>
-          <line>39</line>
+          <line>40</line>
           <option name="timeStamp" value="908" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java</url>
-          <line>55</line>
+          <line>56</line>
           <option name="timeStamp" value="909" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="913" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="914" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/tree/RecoverBinarySearchTree.java</url>
@@ -2672,7 +2739,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java</url>
-          <line>46</line>
+          <line>100</line>
           <option name="timeStamp" value="926" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2682,12 +2749,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.java</url>
-          <line>17</line>
+          <line>21</line>
           <option name="timeStamp" value="928" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.java</url>
-          <line>26</line>
+          <line>30</line>
           <option name="timeStamp" value="929" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2719,11 +2786,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MedianOfTwoSortedArrays.java</url>
           <line>53</line>
           <option name="timeStamp" value="935" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java</url>
-          <line>432</line>
-          <option name="timeStamp" value="936" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/recursion/SortAnArray.java</url>
@@ -2971,16 +3033,6 @@
           <option name="timeStamp" value="1034" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="1036" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="1039" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/category_unknown/GroupedShiftedStrings.java</url>
           <line>96</line>
           <option name="timeStamp" value="1041" />
@@ -2992,17 +3044,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
-          <line>53</line>
+          <line>99</line>
           <option name="timeStamp" value="1044" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
-          <line>64</line>
+          <line>110</line>
           <option name="timeStamp" value="1045" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
-          <line>18</line>
+          <line>23</line>
           <option name="timeStamp" value="1046" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3219,8 +3271,8 @@
           <option name="timeStamp" value="1140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/PatchingArray.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/PatchingArrayHard.java</url>
+          <line>37</line>
           <option name="timeStamp" value="1141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3290,8 +3342,289 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/tree/RecoverBinarySearchTree.java</url>
-          <line>136</line>
+          <line>137</line>
           <option name="timeStamp" value="1168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/tree/MaximumSumBSTInBinaryTree.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="1174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/tree/MaximumSumBSTInBinaryTree.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/tree/AllNodesDistance_K_inBinaryTree.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="1179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/tree/EqualTreePartition.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PermutationOfString.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="1188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LargestNumberWithKSwaps.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/NDigitNumberWithIncreasingDigit.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MaximumLengthOfConcatenatedStringWithUniqueCharacters.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java</url>
+          <line>40</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_2.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_2.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="1210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/HandOfStraights.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/HandOfStraights.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/HandOfStraights.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java</url>
+          <line>34</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/QueueReconstructionByHeightGreedy.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="1223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java</url>
+          <line>687</line>
+          <option name="timeStamp" value="1227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java</url>
+          <line>706</line>
+          <option name="timeStamp" value="1228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java</url>
+          <line>692</line>
+          <option name="timeStamp" value="1229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/FlattenMultiLevelLinkedList.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/ListNode.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/ListNode.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/DeleteEveryAlternativeNodeInCircularList.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="1233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="1236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="1237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="1238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="1239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="1240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="1241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/FloodFill_733.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/problems/medium/FloodFill_733.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/depth_first_search_from_boundary/SurroundedRegions.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/NumberOfDistinctIsland.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/NumberOfDistinctIsland.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="1248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="1250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="1251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/CourseScheduleII.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="1254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
@@ -3311,7 +3644,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java</url>
-          <line>19</line>
+          <line>20</line>
           <properties class="com.leetcode.year_2020.Greedy.BrokenCalculator" method="brokenCalc">
             <option name="EMULATED" value="true" />
           </properties>
@@ -3377,6 +3710,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/data_structures$LongestHappyString.ic" NAME="LongestHappyString Coverage Results" MODIFIED="1715679983114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.leetcode.year_2020.Greedy.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/data_structures$SerializeAndDeserializeBinaryTree.ic" NAME="SerializeAndDeserializeBinaryTree Coverage Results" MODIFIED="1587931336720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.leetcode.year_2020.*</FILTER>
     </SUITE>

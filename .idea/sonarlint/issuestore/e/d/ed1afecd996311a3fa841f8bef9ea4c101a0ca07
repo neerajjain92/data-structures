@@ -1,0 +1,18 @@
+
+Œ
+java:S3824d"IReplace this "Map.containsKey()" with a call to "Map.computeIfPresent()".(Ž¥µÕ8»©÷áù1J$7e25c713-7fb1-4471-b249-d480ffbde583
+r	java:S106"+Replace this use of System.out by a logger.(ÔóÙªýÿÿÿÿ8À©÷áù1J$b5fcc83f-11fd-4569-9e99-2fef1d2ebeb9
+r	java:S106"+Replace this use of System.out by a logger.(ÂÂ©‚úÿÿÿÿ8À©÷áù1J$cb5187c9-c477-42d4-92b8-dbe6e11c1e95
+r	java:S106 "+Replace this use of System.out by a logger.(¾¡Äüÿÿÿÿ8À©÷áù1J$9edd4d54-49ff-45cf-8996-0c263bde1779
+r	java:S106""+Replace this use of System.out by a logger.(Ï±£úüÿÿÿÿ8À©÷áù1J$ff5d7440-c2c5-4858-93cc-287dacddd7c3
+r	java:S106#"+Replace this use of System.out by a logger.(¾¡Äüÿÿÿÿ8Á©÷áù1J$10812fb2-ffe3-4674-a2a5-00578705342e
+r	java:S106$"+Replace this use of System.out by a logger.(ÂÂ©‚úÿÿÿÿ8Á©÷áù1J$aa52dbd1-3b9e-470f-9545-14363401e1e9
+r	java:S106%"+Replace this use of System.out by a logger.(ÔóÙªýÿÿÿÿ8Á©÷áù1J$1e6047f8-b712-4b0b-88ca-23e702443be9
+r	java:S106+"+Replace this use of System.out by a logger.(ÔóÙªýÿÿÿÿ8Á©÷áù1J$60564664-fb39-4874-a614-3550aebb85a5
+r	java:S106-"+Replace this use of System.out by a logger.(ÂÂ©‚úÿÿÿÿ8Á©÷áù1J$945821ad-b0f9-4597-815c-1d6a2a942d1a
+r	java:S106."+Replace this use of System.out by a logger.(¾¡Äüÿÿÿÿ8Â©÷áù1J$e2c11851-b5a3-4f98-b987-01f070d99aaa
+r	java:S1060"+Replace this use of System.out by a logger.(ÔóÙªýÿÿÿÿ8Â©÷áù1J$8ca016ac-2ba8-4f41-82eb-00c34ca51e02
+r	java:S1061"+Replace this use of System.out by a logger.(¾¡Äüÿÿÿÿ8Â©÷áù1J$59b2d098-3877-4276-8faf-2cfdf016f2d6
+r	java:S1062"+Replace this use of System.out by a logger.(Ï±£úüÿÿÿÿ8Â©÷áù1J$bd45afa8-9278-48c2-b75f-52fc7d471e1f
+†
+java:S1155X">Use isEmpty() to check whether the collection is empty or not.(Ôæúœüÿÿÿÿ8É©÷áù1J$827628c1-30b6-4102-a2b7-198c4107659c

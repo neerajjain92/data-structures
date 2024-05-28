@@ -1,0 +1,10 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êƒì‚ûÿÿÿÿJ$4a04dc19-11ca-46d7-bb61-ff5c56fc2c79
+f	java:S106"+Replace this use of System.out by a logger.(×»òJ$9c4927e1-a086-4590-bd18-504839ed8480
+k	java:S106"+Replace this use of System.out by a logger.(†ÃÁ¯úÿÿÿÿJ$11c82e50-d200-429b-b8ab-61e1aaf08084
+k	java:S106"+Replace this use of System.out by a logger.(¡¸İµüÿÿÿÿJ$c30c132b-e68a-4304-b93f-b579a70b8929
+f	java:S106"+Replace this use of System.out by a logger.(øÍ®ÍJ$de28f5fa-0f95-4b27-b1af-ea62d76e4420
+“
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(”˜Œ·şÿÿÿÿJ$3c418686-3725-4415-bc52-56289605fbab
+c
+java:S1659"'Declare "lastValue" on a separate line.(—”¼J$46c9cb9c-d362-4457-86e2-39db19540169

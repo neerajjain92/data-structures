@@ -80,7 +80,7 @@ public class DoublyLinkedList {
     }
 
     public Node reverseDLLRecursively(Node head) {
-        if (head == null) return head; // Single node can't be reversed
+        if (head == null) return null; // Single node can't be reversed
 
         if (head.next == null) {
             head.prev = null;
@@ -119,7 +119,7 @@ public class DoublyLinkedList {
         util.printList(util.head);
 
         System.out.println("===========Reverse Doubly Linked List=================");
-//        util.reverseDoublyLinkedList(util.head);
+        util.reverseDoublyLinkedList(util.head);
 
 
         util.head = util.reverseDLLRecursively(util.head);

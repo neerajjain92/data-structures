@@ -1,89 +1,89 @@
 
-	java:S117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àêÒJ$23e0788d-c419-416b-9367-2f68a4ae5b13
-	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼“šÑJ$3709f3c3-23c8-4a93-883b-2169f69956d3
-’	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ğ«úøÿÿÿÿJ$3703279a-d734-4c73-9a9e-c69599a53e6c
-	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ»¿ÙJ$5970d0fb-97d1-4fc1-a3ff-8432145e298c
-	java:S117Ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú±€ğJ$a4c21538-eda8-43fa-a5aa-ad7fcd87c13a
-’	java:S117é"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÒ¬¯ûÿÿÿÿJ$1a412292-7369-4cfb-80fc-f0585c3441c4
-’	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¨ÙÜúÿÿÿÿJ$080947c9-5432-4861-87bb-893277265474
+	java:S117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àêÒJ$ae947eb7-fb10-40f5-adcf-303743bb7e31
+	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼“šÑJ$8c267db2-4108-43ac-86d5-3f5bc28ac4f7
+’	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ğ«úøÿÿÿÿJ$e862efcc-c85d-4ca3-9792-4c300121e693
+	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ»¿ÙJ$3657db26-565a-4aaa-9f5f-61a0320abae5
+	java:S117Ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú±€ğJ$33d5ea0a-4f7d-4a5d-aaa7-46b9f56b2181
+’	java:S117é"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÒ¬¯ûÿÿÿÿJ$36ec9d37-c8d2-4305-93cf-31ff7ccfb7ec
+’	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¨ÙÜúÿÿÿÿJ$0df08ace-a23c-4690-8ba9-1c449ac8af43
 e
-java:S5411Ä"(Use a primitive boolean expression here.(£”œÂJ$55991bb8-6786-40a2-8e7c-8c8ebd1f9965
+java:S5411Ä"(Use a primitive boolean expression here.(£”œÂJ$f2666aee-6be5-485b-aea9-57669c96b06b
 
-java:S3008‚"RRename this field "MAX_SUM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÂ¬ÍJ$c24a4865-a2f0-4823-a5c3-d3d6f465be6f
+java:S3008‚"RRename this field "MAX_SUM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÂ¬ÍJ$09db54f0-d4db-4302-af60-bcfb452ebd3a
 
-java:S1149œ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ã¦ÒJ$b13e99fb-ce6f-4f7f-a898-7a50871ecfc5
+java:S1149œ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ã¦ÒJ$b7391c8b-bc9e-4e6a-8148-f348c6e762d4
 
-java:S1149Ï"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ã¦ÒJ$70d9fcd0-0901-4be5-ad2a-888c98c03599
+java:S1149Ï"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ã¦ÒJ$f72688db-0d93-49ee-9701-45a4ddada70f
 
-java:S1149ó"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¯¹Ş—J$8be4d56f-b701-48d1-aba1-d0f2439f1a17
+java:S1149ó"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¯¹Ş—J$d45769c5-239b-48a6-b40c-87592c2c1770
 ’
-java:S1149„"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¦ÖŒ‚ûÿÿÿÿJ$3e62cd0d-34e3-40c5-8684-96c06cbe8d95
+java:S1149„"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¦ÖŒ‚ûÿÿÿÿJ$e2bc5582-ed06-4be1-94a6-c8725e42cef8
 
-java:S1149¼"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(àêÒJ$824b7ca8-1e48-4adb-b8cf-e0035274001a
+java:S1149¼"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(àêÒJ$14f7b1db-9ee7-4bbc-8656-fb39058241a6
 
-java:S1149½"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¼“šÑJ$3639fde0-7389-4461-bcd6-af421fa543d7
+java:S1149½"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¼“šÑJ$e850c61d-99df-4464-b250-82c7fd11a1d2
 
-java:S1149î"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ã¦ÒJ$fba6f059-d68c-4497-b3ed-63fa8dde0016
+java:S1149î"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ã¦ÒJ$7dcb463e-cd75-4a65-b3ca-536086a31ea3
 
-java:S1149ƒ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ßî¶ÛJ$019b3fe5-b22c-4bac-ad13-e064062493d2
+java:S1149ƒ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ßî¶ÛJ$33400917-78d0-4b0f-8e52-d6d30c60ad0c
 Œ
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¡Ç÷J$f5ce7bff-11de-464c-80c3-41f02efc1280
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¡Ç÷J$2b724305-9f49-4aab-a667-92c872a156d8
 t
-java:S11171"8Rename "root" which hides the field declared at line 15.(ÁÅˆJ$5ea587b4-1b55-470c-904e-a936151ac7c0
-	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê±£ÇüÿÿÿÿJ$49cb3497-7233-4e6a-8560-b9a95fcdaa6d
+java:S11171"8Rename "root" which hides the field declared at line 15.(ÁÅˆJ$3e51ea1f-5a00-4741-b171-9f46c3827fc4
+	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê±£ÇüÿÿÿÿJ$cdd76913-8063-45d4-9138-dfe862a8fe15
 t
-java:S1117I"8Rename "root" which hides the field declared at line 15.(ÁÅˆJ$b35fd209-41fd-4356-9ca4-cb5f27e69cd9
-‰	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â„óùJ$c48797fb-d00f-4f6d-b4d0-2fbb7a580751
+java:S1117I"8Rename "root" which hides the field declared at line 15.(ÁÅˆJ$4a642585-d65d-45db-85e6-37a524b01c1c
+‰	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â„óùJ$76d2f28b-0fab-4612-a205-0bac24fd2d42
 t
-java:S1117S"8Rename "root" which hides the field declared at line 15.(üş­³J$78305e07-143f-4c4c-b856-48a22f7c0c02
+java:S1117S"8Rename "root" which hides the field declared at line 15.(üş­³J$4d76e1d2-dfc3-4bd2-890f-a167a22a5820
 t
-java:S1117]"8Rename "root" which hides the field declared at line 15.(œÏ¦—J$67849876-e204-4b5a-a50c-a8ac94af1beb
-	java:S100h"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÉ•ªùÿÿÿÿJ$7556cd75-609c-4d16-926d-92012fef31be
+java:S1117]"8Rename "root" which hides the field declared at line 15.(œÏ¦—J$06721fd0-6931-4577-afee-3544e89055f5
+	java:S100h"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÉ•ªùÿÿÿÿJ$0a1fbad7-6ef7-4a78-86e4-d7a3af44f08f
 t
-java:S1117i"8Rename "root" which hides the field declared at line 15.(ôóšJ$1fa041bb-4551-4234-a30a-6531baa9f934
-g	java:S106"+Replace this use of System.out by a logger.(•¾°ñJ$827111bd-1a92-4af4-9f8d-c92175a8e839
-g	java:S106—"+Replace this use of System.out by a logger.(•¾°ñJ$290c091a-7ece-4a93-9376-fce599c2bfc8
+java:S1117i"8Rename "root" which hides the field declared at line 15.(ôóšJ$281f1dc1-b9e0-47c1-9596-369307e41213
+g	java:S106"+Replace this use of System.out by a logger.(•¾°ñJ$4e9764eb-e4ea-4cac-9c52-70a3d19ffea4
+g	java:S106—"+Replace this use of System.out by a logger.(•¾°ñJ$f43d20e1-85f2-4739-a722-887cd9f9cd3b
 t
-java:S1481¤"2Remove this unused "indentCounter" local variable.(–Í¢şÿÿÿÿJ$16c02d6a-afb5-4c4e-918f-667eba43b720
-l	java:S106¨"+Replace this use of System.out by a logger.(Š„äÅÿÿÿÿÿJ$b8c40bf9-e958-45bc-b044-005661b9ed0c
-w	java:S125³"<This block of commented-out lines of code should be removed.(¯è²%J$1b0b8f7f-f542-4940-89be-12bed6065752
+java:S1481¤"2Remove this unused "indentCounter" local variable.(–Í¢şÿÿÿÿJ$b3d4ee78-e094-41b7-8907-1c921cfa6145
+l	java:S106¨"+Replace this use of System.out by a logger.(Š„äÅÿÿÿÿÿJ$9fec6630-c16f-4728-9c7a-3be2f785ff07
+w	java:S125³"<This block of commented-out lines of code should be removed.(¯è²%J$b278306f-2449-4921-a470-c51155b9d8bf
 u
-java:S1117Ã"8Rename "prev" which hides the field declared at line 17.(ÉÁ¼ÙJ$e1e14fee-d35b-46bb-837b-ca811a7f0b8f
-g	java:S106Ü"+Replace this use of System.out by a logger.(×•œ²J$8b702e9f-53ba-4f64-b7a6-1d7036d4cfd6
-l	java:S106Ş"+Replace this use of System.out by a logger.(éí÷„ùÿÿÿÿJ$6f1bf87e-ca5c-4b56-91ab-11f1612f182d
+java:S1117Ã"8Rename "prev" which hides the field declared at line 17.(ÉÁ¼ÙJ$269f83f9-3c65-4be0-9904-d84cf174f604
+g	java:S106Ü"+Replace this use of System.out by a logger.(×•œ²J$2e1a736c-2205-46ac-951d-1b6f8706c6ac
+l	java:S106Ş"+Replace this use of System.out by a logger.(éí÷„ùÿÿÿÿJ$8adbbca9-af3c-4ab8-a074-4f20d8b0409f
 s
-java:S2696è"6Make the enclosing method "static" or remove this set.(‰ÎÇÚJ$f8a76f40-e45e-43e0-bcbc-1b364ad4fa06
+java:S2696è"6Make the enclosing method "static" or remove this set.(‰ÎÇÚJ$7a19e625-3d6b-4016-a2d2-cc5f6a1205b1
 s
-java:S2696ü"6Make the enclosing method "static" or remove this set.(‰ÎÇÚJ$2ed52d70-5099-4244-89d2-e0a9ca8965c5
-l	java:S106"+Replace this use of System.out by a logger.(§ÈÚöÿÿÿÿÿJ$005dcc01-6a59-4eaa-bc14-18ad6a37e6f8
-l	java:S106‹"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$1819c724-8d8a-419f-b0f8-e146532fd31e
-l	java:S106’"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$2faab775-8907-4a3f-8545-2d4a489dc266
-g	java:S106š"+Replace this use of System.out by a logger.(¸œúËJ$e8122967-01d6-453c-a7c0-751b19e713c0
-l	java:S106Â"+Replace this use of System.out by a logger.(õ•”òúÿÿÿÿJ$069c1d6a-13d7-4e1d-94dc-166736ebc9a4
-l	java:S106Ä"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$ce984c6e-ac14-40e1-8d50-6343946ab67c
-l	java:S106è"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$3a6b695a-e208-41de-b0d8-b4f293668ef8
-g	java:S106ì"+Replace this use of System.out by a logger.(«˜á÷J$89ff4d01-9287-4c7c-abf1-67ca90136332
-g	java:S106Š"+Replace this use of System.out by a logger.(á­¡J$354eb333-fcc1-4514-a245-02a88048427b
-}	java:S125"<This block of commented-out lines of code should be removed.(©¾¼ïøÿÿÿÿJ$445647f7-8104-48fd-a0fc-0c2bee5e4fcc
-g	java:S106š"+Replace this use of System.out by a logger.(á­¡J$768978c5-ce85-424e-9ca5-8bab60e450f7
-}	java:S125Ÿ"<This block of commented-out lines of code should be removed.(©¾¼ïøÿÿÿÿJ$55f3cf6e-320e-49e8-941d-e5dc4487b76a
-l	java:S106Ñ"+Replace this use of System.out by a logger.(áÖ²¢üÿÿÿÿJ$61acae7e-6e0f-4903-b111-b2600f9a70e2
-l	java:S106Ó"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$6b207e06-5187-4d11-b6f1-bd9eebea2bff
-g	java:S106Ú"+Replace this use of System.out by a logger.(µÆ ŸJ$98e45de8-fd2f-44ad-8517-3980efda10c9
-l	java:S106ô"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$1498831d-4229-424e-be6c-136df47b529e
-g	java:S106ø"+Replace this use of System.out by a logger.(­³µËJ$0031629f-4d39-4c97-a888-1b4de78f0ccb
-l	java:S106ÿ"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$8cca1ad5-1feb-4642-87b0-71714cec514a
-g	java:S106º"+Replace this use of System.out by a logger.(–§øÂJ$32289697-0f80-4acb-85d2-714546e7ce62
-l	java:S106ô"+Replace this use of System.out by a logger.(á’şãùÿÿÿÿJ$b883c28c-158d-490d-8567-ed3997911806
-g	java:S106‡"+Replace this use of System.out by a logger.(œ¸™°J$4d83a1ae-893c-4c11-8168-4d7db5d34406
-g	java:S106"+Replace this use of System.out by a logger.(¸œúËJ$6b0f6793-58e0-422a-841b-bd3dc501f7ed
-g	java:S106¨"+Replace this use of System.out by a logger.(¸œúËJ$953e0cee-faf3-4b79-8eec-e027bec34aeb
-g	java:S106«"+Replace this use of System.out by a logger.(¸œúËJ$d312d850-7b77-47f9-a689-06d3533ad9b5
+java:S2696ü"6Make the enclosing method "static" or remove this set.(‰ÎÇÚJ$df66ab2e-0640-4a46-94f5-9413331d450f
+l	java:S106"+Replace this use of System.out by a logger.(§ÈÚöÿÿÿÿÿJ$8bc067db-0c57-4160-8c6a-d5e38e4071ee
+l	java:S106‹"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$5a8646b9-06ce-44ab-ad9a-e90f016feadc
+l	java:S106’"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$85616058-2db9-4c4c-a807-6fad268fbb90
+g	java:S106š"+Replace this use of System.out by a logger.(¸œúËJ$e8bcc861-6211-4378-953d-69fa71adda48
+l	java:S106Â"+Replace this use of System.out by a logger.(õ•”òúÿÿÿÿJ$c3200bf9-0383-489a-bf56-ceffe4a6f1b9
+l	java:S106Ä"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$f8f57e7e-872a-411c-8ed4-1f8520bb9d26
+l	java:S106è"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$9d4e0732-09b9-4666-8085-72cc50dd4297
+g	java:S106ì"+Replace this use of System.out by a logger.(«˜á÷J$2f403125-ff7c-492a-a8f6-263882cf1f94
+g	java:S106Š"+Replace this use of System.out by a logger.(á­¡J$19f0de6f-c754-4d38-b987-b3ce1f33c3d5
+}	java:S125"<This block of commented-out lines of code should be removed.(©¾¼ïøÿÿÿÿJ$fe7d7b37-9b99-48f3-9d0e-18f1352105aa
+g	java:S106š"+Replace this use of System.out by a logger.(á­¡J$1e10b005-6000-4817-88da-fe5b340f2ff5
+}	java:S125Ÿ"<This block of commented-out lines of code should be removed.(©¾¼ïøÿÿÿÿJ$3de19452-d96a-4414-b144-2144349c8ff0
+l	java:S106Ñ"+Replace this use of System.out by a logger.(áÖ²¢üÿÿÿÿJ$a4829879-feab-4e86-95be-9dffbb3a1e34
+l	java:S106Ó"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$6f9002e4-a40c-4d18-bea5-5b02e95aa086
+g	java:S106Ú"+Replace this use of System.out by a logger.(µÆ ŸJ$da0f1f96-6c55-4d5d-a704-e7a32fee837b
+l	java:S106ô"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$64e0253a-e61b-4b1b-8dbb-e97bd43d622a
+g	java:S106ø"+Replace this use of System.out by a logger.(­³µËJ$a7d00770-7ea7-452e-a7ab-579eddc5e346
+l	java:S106ÿ"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$da2ae717-612d-4050-8e43-91aa1b8ff7ef
+g	java:S106º"+Replace this use of System.out by a logger.(–§øÂJ$42232cc5-67f9-479f-b618-1897f016e4f3
+l	java:S106ô"+Replace this use of System.out by a logger.(á’şãùÿÿÿÿJ$be84015b-f93b-4dba-94a9-62e31c0caf31
+g	java:S106‡"+Replace this use of System.out by a logger.(œ¸™°J$c985f8fc-6457-4e94-ad95-0a2bd4e3cb7a
+g	java:S106"+Replace this use of System.out by a logger.(¸œúËJ$a5b42654-89be-4704-a1cd-8e861f85a2ca
+g	java:S106¨"+Replace this use of System.out by a logger.(¸œúËJ$6786a942-3b9c-4e48-9560-cd8090530326
+g	java:S106«"+Replace this use of System.out by a logger.(¸œúËJ$8271e723-ff12-468a-ab6d-041dd7abb5db
 
-java:S3776³"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ö¸ÆäJ$31d92ab1-cce6-4c33-bc09-a5f483c3e350
-g	java:S106Å"+Replace this use of System.out by a logger.(³ˆŞ³J$39da0248-abb1-4383-927b-2c0e4908b238
-	java:S100ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¡ù—ùÿÿÿÿJ$cb0e4759-fda9-4329-b788-227eafc2c14c
+java:S3776³"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ö¸ÆäJ$2df59073-891e-416b-b75d-e08ae11ea207
+g	java:S106Å"+Replace this use of System.out by a logger.(³ˆŞ³J$0d3ee460-24b4-40d2-8d5e-e95d4350cd91
+	java:S100ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¡ù—ùÿÿÿÿJ$810ab85d-76a0-48a1-af31-4316d45e39bd
 x
-java:S2696†"6Make the enclosing method "static" or remove this set.(ÈÃªóùÿÿÿÿJ$8fed0761-f18d-411d-8c0d-3fb7d7d360cc
+java:S2696†"6Make the enclosing method "static" or remove this set.(ÈÃªóùÿÿÿÿJ$619789a4-a1ae-48b9-984b-64d6430916ed
 x
-java:S2696œ"6Make the enclosing method "static" or remove this set.( õÂ–üÿÿÿÿJ$9d4eafdf-4c85-4e1a-9c6a-aa434aff4a8f
+java:S2696œ"6Make the enclosing method "static" or remove this set.( õÂ–üÿÿÿÿJ$6b046fcb-1847-4438-806d-8c6f9ab046da

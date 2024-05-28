@@ -2,6 +2,9 @@ package com.company.amazon;
 
 import static com.company.amazon.BinaryTree.*;
 
+/**
+ * https://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/
+ */
 public class ExtractLeavesFromBinaryTreeToDoublyLinkedList {
 
     private static Node head;

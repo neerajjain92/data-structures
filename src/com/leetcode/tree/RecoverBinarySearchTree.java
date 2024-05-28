@@ -127,6 +127,7 @@ public class RecoverBinarySearchTree {
     /**
      * 27th April 2024, Latest which should be used and solved
      * Inspiration https://www.youtube.com/watch?v=ZWGW7FminDM&t=547s
+     *
      * @param root
      */
     public static void recoverTreeDuringInorder(TreeNode root) {
@@ -135,31 +136,11 @@ public class RecoverBinarySearchTree {
         nodeAdjacentToFirstConflictingNode = null;
         lastSeen = null;
         inorder(root);
-        if (firstConflictingNode != null) {
-            System.out.println("First " + firstConflictingNode.val);
-        }
-        if (secondConflictingNode != null) {
-            System.out.println("Second " + secondConflictingNode.val);
-        }
-        if (nodeAdjacentToFirstConflictingNode != null) {
-            System.out.println("NodeAdjacent " + nodeAdjacentToFirstConflictingNode.val);
-        }
         if (secondConflictingNode == null) {
             swap(firstConflictingNode, nodeAdjacentToFirstConflictingNode);
         } else {
             swap(firstConflictingNode, secondConflictingNode);
         }
-
-        if (firstConflictingNode != null) {
-            System.out.println("First " + firstConflictingNode.val);
-        }
-        if (secondConflictingNode != null) {
-            System.out.println("Second " + secondConflictingNode.val);
-        }
-        if (nodeAdjacentToFirstConflictingNode != null) {
-            System.out.println("NodeAdjacent " + nodeAdjacentToFirstConflictingNode.val);
-        }
-
     }
 
     private static void swap(TreeNode first, TreeNode second) {

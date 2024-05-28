@@ -6,6 +6,7 @@ import java.util.TreeMap;
 
 /**
  * https://leetcode.com/problems/my-calendar-iii/
+ * https://www.youtube.com/watch?v=mnpZgPe4d7w&t=445s
  */
 public class MyCalendar_3 {
 

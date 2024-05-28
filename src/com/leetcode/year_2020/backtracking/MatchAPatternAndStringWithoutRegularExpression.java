@@ -13,14 +13,14 @@ import java.util.Map;
 public class MatchAPatternAndStringWithoutRegularExpression {
 
     public static void main(String[] args) {
-//        matchPattern("GRAPHTREEGRAPH", "ABA");
-//        matchPattern("GRAPHGRAPHGRAPH", "AAA");
-//        matchPattern("NJGMNJ", "GfG");
-//        matchPattern("GeeksforGeeks", "GG");
-//        matchPattern("EatSleep", "XY");
-//        matchPattern("gogopowerrangergogopowerranger", "xxyxxy");
-//        matchPattern("AABCC", "xyx");
-//        matchPattern("AABCA", "xyx");
+        matchPattern("GRAPHTREEGRAPH", "ABA");
+        matchPattern("GRAPHGRAPHGRAPH", "AAA");
+        matchPattern("NJGMNJ", "GfG");
+        matchPattern("GeeksforGeeks", "GG");
+        matchPattern("EatSleep", "XY");
+        matchPattern("gogopowerrangergogopowerranger", "xxyxxy");
+        matchPattern("AABCC", "xyx");
+        matchPattern("AABCA", "xyx");
         matchPattern("XYXX", "ABA");
 
     }

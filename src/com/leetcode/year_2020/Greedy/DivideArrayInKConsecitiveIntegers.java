@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/
+ *
+ * Solve with the {@link com.leetcode.year_2020.Greedy.interval_scheduling.HandOfStraights}
+ * my own solution :)
+ *
  */
 public class DivideArrayInKConsecitiveIntegers {
 

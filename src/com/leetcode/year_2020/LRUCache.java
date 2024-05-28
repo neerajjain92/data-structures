@@ -47,6 +47,69 @@ public class LRUCache {
 
     }
 
+    public int getV1(int key) {
+        if (!cache.containsKey(key)) {
+            return -1;
+        }
+        DoublyLinkedListNode node = cache.get(key);
+        moveInFront(node);
+        return node.val;
+    }
+
+    public void putV1(int key, int val) {
+        if (cache.size() <= capacity || cache.containsKey(key)) {
+            if (cache.containsKey(key)) {
+                cache.get(key).val = val;
+                getV1(key); // So this will move the node to front
+            } else {
+                insertAtFront(key, val);
+                if (cache.size() > capacity) {
+                    evictLastNode();
+                }
+            }
+        } else {
+            // We are sure to evict the key
+            evictLastNode();
+            insertAtFront(key, val);
+        }
+    }
+
+    private void insertAtFront(int key, int value) {
+        DoublyLinkedListNode nextOfHead = dummyHead.next;
+        DoublyLinkedListNode newNode = new DoublyLinkedListNode(key, value);
+        newNode.next = nextOfHead;
+        dummyHead.next = newNode;
+        nextOfHead.prev = newNode;
+        newNode.prev = dummyHead;
+        cache.put(key, newNode);
+    }
+
+    private void evictLastNode() {
+        DoublyLinkedListNode prevOfLast = dummyTail.prev;
+        if (prevOfLast != dummyHead) {
+            // There is a node to be removed
+            dummyTail.prev = prevOfLast.prev;
+            prevOfLast.prev.next = dummyTail;
+            prevOfLast.next = null;
+            prevOfLast.prev = null;
+            cache.remove(prevOfLast.key);
+        }
+    }
+
+    private void moveInFront(DoublyLinkedListNode node) {
+        DoublyLinkedListNode nextOfNode = node.next;
+        nextOfNode.prev = node.prev;
+        node.prev.next = nextOfNode;
+
+        //
+        DoublyLinkedListNode nextOfHead = dummyHead.next;
+        dummyHead.next = node;
+        node.prev = dummyHead;
+        node.next = nextOfHead;
+        nextOfHead.prev = node;
+    }
+
+
     public int get(int key) {
         if (cache.containsKey(key)) {
             DoublyLinkedListNode existingEntry = cache.get(key);
@@ -114,15 +177,15 @@ public class LRUCache {
 
     public static void main(String[] args) {
         LRUCache cache = new LRUCache(2);
-        cache.put(1, 1);
-        cache.put(2, 2);
-        System.out.println(cache.get(1));       // returns 1
-        cache.put(3, 3);    // evicts key 2
-        System.out.println(cache.get(2));       // returns -1 (not found)
-        cache.put(4, 4);    // evicts key 1
-        System.out.println(cache.get(1));       // returns -1 (not found)
-        System.out.println(cache.get(3));       // returns 3
-        System.out.println(cache.get(4));       // returns 4
+        cache.putV1(1, 1);
+        cache.putV1(2, 2);
+        System.out.println(cache.getV1(1));       // returns 1
+        cache.putV1(3, 3);    // evicts key 2
+        System.out.println(cache.getV1(2));       // returns -1 (not found)
+        cache.putV1(4, 4);    // evicts key 1
+        System.out.println(cache.getV1(1));       // returns -1 (not found)
+        System.out.println(cache.getV1(3));       // returns 3
+        System.out.println(cache.getV1(4));       // returns 4
 
         System.out.println("=========================");
         cache = new LRUCache(1);

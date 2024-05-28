@@ -6,6 +6,7 @@ import java.util.Stack;
  * 678. Valid Parenthesis String
  * https://leetcode.com/problems/valid-parenthesis-string/
  *
+ * Credit https://www.youtube.com/watch?v=KuE_Cn3xhxI
  * @author neeraj on 16/04/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -13,10 +14,14 @@ import java.util.Stack;
 public class ValidParenthesisString {
 
     public static void main(String[] args) {
-        System.out.println(checkValidString("()"));
-        System.out.println(checkValidString("(*)"));
-        System.out.println(checkValidString("(*))"));
-        System.out.println(checkValidString("(())((())()()(*)(*()(())())())()()((()())((()))(*"));
+        System.out.println(checkValidString("()")); // true
+        System.out.println(checkValidString("(*)")); // true
+        System.out.println(checkValidString("(*))")); // true
+        System.out.println(checkValidString("(())((())()()(*)(*()(())())())()()((()())((()))(*")); // false
+        System.out.println(checkValidString("(((((()*)(*)*))())())(()())())))((**)))))(()())()")); // false
+        System.out.println(checkValidString("****(((")); // False
+        System.out.println(checkValidString("****((()))")); // True
+        System.out.println(checkValidString("((((()(()()()*()(((((*)()*(**(())))))(())()())(((())())())))))))(((((())*)))()))(()((*()*(*)))(*)()")); // True
     }
 
     public static boolean checkValidString(String s) {

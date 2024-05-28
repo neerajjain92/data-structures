@@ -1,0 +1,10 @@
+
+f
+java:S1192("KDefine a constant instead of duplicating this literal "=========>" 3 times.(“«Î¬ÿÿÿÿÿ
+k
+java:S1149$"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+E	java:S106("+Replace this use of System.out by a logger.(“«Î¬ÿÿÿÿÿ
+@	java:S106."+Replace this use of System.out by a logger.(µâ½Ô
+E	java:S1060"+Replace this use of System.out by a logger.(Äõ¥áüÿÿÿÿ
+<
+java:S11100"!Remove these useless parentheses.(Äõ¥áüÿÿÿÿ

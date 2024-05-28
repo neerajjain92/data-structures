@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * https://leetcode.com/problems/custom-sort-string/
+ * https://www.youtube.com/watch?v=eAU3snVZs5Q
  */
 public class CustomSortString {
 
@@ -16,6 +17,54 @@ public class CustomSortString {
         System.out.println(customSortStringOptimized("cba", "abcd"));
         System.out.println(customSortStringOptimized("cbafg", "abcd"));
         System.out.println(customSortStringOptimized("kqep", "pekeq"));
+
+
+        System.out.println(customSortStringViaFrequency("cba", "abcd"));
+        System.out.println(customSortStringViaFrequency("cbafg", "abcd"));
+        System.out.println(customSortStringViaFrequency("kqep", "pekeq"));
+    }
+
+    /**
+     * https://www.youtube.com/watch?v=eAU3snVZs5Q
+     * @param order
+     * @param s
+     * @return
+     */
+    private static String customSortStringViaFrequency(String order, String s) {
+        int[] frequency_S = new int[26]; // Store the frequency of S characters
+
+        // Also remember that all the characters in order are unique
+        for (char c : s.toCharArray()) {
+            frequency_S[c - 'a'] += 1;
+        }
+
+        // Now we have frequency
+        StringBuilder stringBuilder = new StringBuilder();
+
+        // First paste from the order and then remaining from S
+        for (char c : order.toCharArray()) {
+            if (frequency_S[c - 'a'] > 0) {
+                append(stringBuilder, c, frequency_S[c - 'a']);
+                frequency_S[c - 'a'] = 0; // Reset the frequency
+            }
+        }
+
+        // Now paste the remaining ones from S
+        for (char c : s.toCharArray()) {
+            if (frequency_S[c - 'a'] > 0) {
+                // If the frequency is still left, lets use it
+                append(stringBuilder, c, 1);
+                frequency_S[c - 'a'] -= 1;
+            }
+        }
+
+        return stringBuilder.toString();
+    }
+
+    private static void append(StringBuilder stringBuilder, char charToAppend, int occurrence) {
+        for (int i = 0; i < occurrence; i++) {
+            stringBuilder.append(charToAppend);
+        }
     }
 
     public static String customSortStringOptimized(String order, String S) {

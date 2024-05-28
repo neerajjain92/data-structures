@@ -2,8 +2,7 @@ package com.leetcode.linkedlist;
 
 import com.util.LogUtil;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Stream;
 
 /**
@@ -130,6 +129,54 @@ public class LinkedListUtil {
         System.out.println("null ]");
     }
 
+    public void swapNodesWithoutSwappingDataV2Improvement(int x, int y) {
+        Node prevX = null, prevY = null, currX = null, currY = null;
+        Node workingPointer = head;
+
+        // Do for X
+        while (workingPointer != null) {
+            if (workingPointer.data == x) {
+                currX = workingPointer;
+                break;
+            }
+            prevX = workingPointer;
+            workingPointer = workingPointer.next;
+        }
+
+        // Do for Y
+        while (workingPointer != null) {
+            if (workingPointer.data == y) {
+                currY = workingPointer;
+                break;
+            }
+            prevY = workingPointer;
+            workingPointer = workingPointer.next;
+        }
+
+        // If any of it is missing
+        if (currX == null || currY == null) return;
+
+        // Check if any of X or Y are already a head node
+        if (prevX == null) {
+            head = currY;
+        } else {
+            prevX.next = currY;
+        }
+
+        if (prevY == null) {
+            head = currX;
+        } else {
+            prevY.next = currX;
+        }
+
+        // Do the shuffling
+        Node nextOfX = currX.next;
+        currX.next = currY.next;
+        currY.next = nextOfX;
+
+        printList();
+    }
+
     public void swapNodesWithoutSwappingData(int first, int second) {
         Node tempA = head;
         Node tempB = head;
@@ -238,6 +285,20 @@ public class LinkedListUtil {
         return reverseListRecursively(nextOfCurrent, current);
     }
 
+    public int getSizeOfListV2(Node head) {
+        Node temp = head;
+        int size = 0;
+        while (temp != null) {
+            size++;
+            temp = temp.next;
+        }
+        return size;
+    }
+
+    /**
+     * @Deprecated use {@link #getSizeOfListV2(Node)}
+     */
+    @Deprecated
     public int getSizeOfList(Node head) {
         Node temp = head;
 
@@ -305,6 +366,57 @@ public class LinkedListUtil {
             temp = temp.next;
         }
         LogUtil.logIt("After removing duplicates", true);
+        printList();
+    }
+
+    private void removeAllDuplicateEntriesFromUnsortedList() {
+        LogUtil.logIt("Unsorted List with duplicate entries is ", true);
+        printList();
+        Node dummyHead = new Node(-1);
+        Map<Integer, Integer> freq = new HashMap<>();
+        Node temp = head;
+        while (temp != null) {
+            freq.put(temp.data, freq.getOrDefault(temp.data, 0) + 1);
+            temp = temp.next;
+        }
+
+        // Remove all whose freq > 1
+        temp = head;
+        Node dummyPointer = dummyHead;
+        while (temp != null) {
+            if (freq.get(temp.data) > 1) {
+                dummyPointer.next = temp.next;
+            } else {
+                dummyPointer.next = temp;
+                dummyPointer = temp;
+            }
+            temp = temp.next;
+        }
+        head = dummyHead.next;
+
+        LogUtil.logIt("Unsorted List after removing duplicate entries ", true);
+        printList();
+    }
+
+    private void removeReplicaEntriesFromUnsortedList() {
+        LogUtil.logIt("Unsorted Replica List is ", true);
+        printList();
+        Set<Integer> visited = new HashSet<>();
+        Node prev = head;
+        Node temp = head.next;
+        visited.add(head.data);
+
+        while (temp != null) {
+            if (visited.contains(temp.data)) {
+                prev.next = temp.next;
+            } else {
+                visited.add(temp.data);
+                prev = temp;
+            }
+            temp = temp.next;
+        }
+
+        LogUtil.logIt("After removing replica entries from Unsorted list", true);
         printList();
     }
 
@@ -417,12 +529,11 @@ public class LinkedListUtil {
             if (MAX_TILL_NOW > temp.data) {
                 nextOfTemp = temp.next;
                 prev.next = nextOfTemp;
-                temp = temp.next;
             } else {
                 MAX_TILL_NOW = temp.data;
                 prev = temp;
-                temp = temp.next;
             }
+            temp = temp.next;
         }
 
         this.head = reverseListRecursively(headOfReversedList, null);
@@ -549,17 +660,41 @@ public class LinkedListUtil {
         }
     }
 
-    public void flattenList(LinkedListUtil head) {
+    public void flattenListViaMinHeap(LinkedListUtil linkedListUtil) {
+        Node head = linkedListUtil.head;
+        LinkedListUtil result = new LinkedListUtil();
+        PriorityQueue<Node> minHeap = new PriorityQueue<>(Comparator.comparingInt(a -> a.data));
+        // Traverse the list and add to minHeap
+        Node temp = head;
+        while (temp != null) {
+            minHeap.add(temp);
+            temp = temp.next;
+        }
+
+        // Now while (minHeap is empty poll and add to result)
+        while (!minHeap.isEmpty()) {
+            Node minNode = minHeap.poll();
+            result.append(minNode.data);
+            if (minNode.down != null) {
+                minHeap.add(minNode.down);
+            }
+        }
+        // Flatten List in sorted order
+        LogUtil.logIt("Flatened Sorted list....", true);
+        result.printList();
+    }
+
+    public void flattenList(LinkedListUtil linkedListUtil) {
         LogUtil.logIt("Flattening the List", true);
-        LinkedListUtil sortedList = head;
-        Node next = head.head.next;
+        LinkedListUtil sortedListUtil = linkedListUtil;
+        Node next = linkedListUtil.head.next;
         while (next != null) {
-            sortedList = sortedMerge(sortedList, next);
+            sortedListUtil = sortedMerge(sortedListUtil, next);
             next = next.next;
         }
 
         // Since we have sorted list, but appended down, let's fix it
-        Node temp = sortedList.head;
+        Node temp = sortedListUtil.head;
         LinkedListUtil resultList = new LinkedListUtil();
         while (temp != null) {
             resultList.append(temp.data);
@@ -705,6 +840,14 @@ public class LinkedListUtil {
         LogUtil.logIt("Swapping 12 and 20", true);
         list.swapNodesWithoutSwappingData(12, 20);
 
+        // Let's reset with the new method is introduced in May2024
+        LogUtil.logIt("Swapping 12 and 20 with new improved v2", true);
+        list.swapNodesWithoutSwappingDataV2Improvement(20, 12);
+
+        LogUtil.logIt("Swapping 10 and 15 with new improved v2", true);
+        list.swapNodesWithoutSwappingDataV2Improvement(10, 15);
+
+
         list = new LinkedListUtil();
         list.appendAll(1, 2, 3);
 
@@ -751,12 +894,16 @@ public class LinkedListUtil {
 
         LogUtil.logIt("Size of the list is " + list.getSizeOfList(list.head), true);
 
+        LogUtil.logIt("Size of the list V2 is " + list.getSizeOfListV2(list.head), true);
+
 
         list = new LinkedListUtil();
         list.appendAll(3, 6, 9, 15, 30);
+        list.printList();
+        LogUtil.logIt("Size of the list V2 is " + list.getSizeOfListV2(list.head), true);
 
         LinkedListUtil list2 = new LinkedListUtil();
-        list.appendAll(10, 15, 30);
+        list2.appendAll(10, 15, 30);
 
         LogUtil.logIt("Intersection of 2 list is " + list.getIntersectionOfList(list.head, list2.head), true);
 
@@ -765,6 +912,31 @@ public class LinkedListUtil {
         list.appendAll(11, 11, 11, 21, 43, 43, 60);
 
         list.removeDuplicatesFromSortedList();
+
+        list = new LinkedListUtil();
+        list.appendAll(1, 2, 3, 2);
+        list.removeReplicaEntriesFromUnsortedList();
+
+        list = new LinkedListUtil();
+        list.appendAll(1, 2, 3, 2);
+        list.removeAllDuplicateEntriesFromUnsortedList();
+
+
+        list = new LinkedListUtil();
+        list.appendAll(2, 1, 1, 2);
+        list.removeReplicaEntriesFromUnsortedList();
+
+        list = new LinkedListUtil();
+        list.appendAll(2, 1, 1, 2);
+        list.removeAllDuplicateEntriesFromUnsortedList();
+
+        list = new LinkedListUtil();
+        list.appendAll(3, 2, 2, 1, 3, 2, 4);
+        list.removeReplicaEntriesFromUnsortedList();
+
+        list = new LinkedListUtil();
+        list.appendAll(3, 2, 2, 1, 3, 2, 4);
+        list.removeAllDuplicateEntriesFromUnsortedList();
 
         list = new LinkedListUtil();
         list.appendAll(11, 11, 11, 13, 13, 20);
@@ -777,7 +949,7 @@ public class LinkedListUtil {
 
         list = new LinkedListUtil();
         list.appendAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
-        list.reverseAlternativeKNode(list.head, 9);
+        list.reverseAlternativeKNode(list.head, 3);
 
 
         list = new LinkedListUtil();
@@ -833,7 +1005,8 @@ public class LinkedListUtil {
         firstList.appendAllNodes(secondList, thirdList, fourthList);
 
         // Now we have a setup ready so we can do flattening of the list
-        firstList.flattenList(firstList);
+        firstList.flattenListViaMinHeap(firstList);
+//        firstList.flattenList(firstList);
 
         firstList = new LinkedListUtil();
         firstList.appendAll(1, 9, 9, 9);

@@ -40,6 +40,14 @@ public class NumberOfIsland {
             }
         }
         System.out.println("Total Number of Island " + totalIsland);
+
+
+        System.out.println(numIslands(new char[][]{
+                {'1', '1', '0', '0', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '1', '0', '0'},
+                {'0', '0', '0', '1', '1'}
+        }));
     }
 
     public static Boolean isSafeToTraverse(int[][] fieldMap, int row, int col, Set<String> visited) {
@@ -54,5 +62,31 @@ public class NumberOfIsland {
             if (isSafeToTraverse(fieldMap, row + rowNumber[i], col + colNumber[i], visited))
                 markConnectedComponentAsVisited(fieldMap, row + rowNumber[i], col + colNumber[i], visited);
         }
+    }
+
+    public static int numIslands(char[][] grid) {
+        int totalIsland = 0;
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == '1') {
+                    System.out.println(i + ":" + j);
+                    travel(grid, i, j);
+                    totalIsland++;
+                }
+            }
+        }
+        return totalIsland;
+    }
+
+    private static void travel(char[][] grid, int row, int col) {
+
+        if (row < 0 || row >= grid.length || col < 0 || col >= grid[row].length || grid[row][col] == '0') return;
+        grid[row][col] = '0';
+
+        travel(grid, row - 1, col);
+        travel(grid, row, col + 1);
+        travel(grid, row + 1, col);
+        travel(grid, row, col - 1);
     }
 }

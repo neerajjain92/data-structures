@@ -36,6 +36,77 @@ public class DetectADirectedGraphHasACycle {
         graph.addEdge(4, 5, true);
         graph.addEdge(2, 5, true);
         System.out.println(graph.ifGraphHasCycle(graph));
+
+        /**
+         * Diagram:
+         * 0 -> 1 -> 2
+         * ^         |
+         * |_________|
+         */
+        System.out.println(hasCycle(new int[][]{{1}, {2}, {0}})); // Expected output: true
+
+        /**
+         * Diagram:
+         * 0 -> 1 -> 2
+         */
+        System.out.println(hasCycle(new int[][]{{1}, {2}, {}})); // Expected output: false
+
+        /**
+         * Diagram:
+         * 0 -> 1 -> 2 -> 0
+         *      |         |
+         *      |_________|
+         * 2 -> 3 -> 3
+         */
+        System.out.println(hasCycle(new int[][]{{1, 2}, {2}, {0, 3}, {3}})); // Expected output: true
+
+        /**
+         * Diagram:
+         * 0 -> 0
+         * 1 -> 2 -> 3
+         */
+        System.out.println(hasCycle(new int[][]{{0}, {2}, {3}, {}})); // Expected output: true
+
+        /**
+         * Diagram:
+         * 0 -> 1 -> 2 -> 0
+         * ^         |
+         * |_________|
+         * 3 -> 4 -> 5 -> 3
+         *      ^         |
+         *      |_________|
+         */
+        System.out.println(hasCycle(new int[][]{{1}, {2}, {0}, {4}, {5}, {3}})); // Expected output: true
+    }
+
+    public static boolean hasCycle(int[][] graph) {
+        boolean[] visited = new boolean[graph.length];
+        boolean[] pathVisited = new boolean[graph.length];
+
+        for (int i = 0; i < graph.length; i++) {
+            if (!visited[i]) {
+                if (hasCycle(graph, i, visited, pathVisited)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private static boolean hasCycle(int[][] graph, int source, boolean[] visited, boolean[] pathVisited) {
+        visited[source] = true;
+        pathVisited[source] = true;
+
+        for (int adjacent : graph[source]) {
+            if (pathVisited[adjacent]) {
+                return true; // found cycle
+            }
+            if (!visited[adjacent] && hasCycle(graph, adjacent, visited, pathVisited)) {
+                return true;
+            }
+        }
+        pathVisited[source] = false; // Explored the path, lets reset
+        return false;
     }
 
 }

@@ -39,12 +39,27 @@ public class TextEditorUndoRedo {
                 {"REDO"},
                 {"REDO"}
         });
+
+        performEditorActions(new String[][]{
+                {"INSERT", "A"},
+                {"INSERT", "B"},
+                {"INSERT", "C"},
+                {"INSERT", "D"},
+                {"DELETE"},
+                {"DELETE"},
+                {"UNDO"},
+                {"UNDO"},
+                {"REDO"},
+                {"REDO"},
+                {"UNDO"},
+                {"UNDO"},
+        });
     }
 
     public static String performEditorActions(String[][] actions) {
         /**
-         * The main gist is for insert or delete operation we push opposite action in UNDO stack
-         * so that it become convenient while performing undo operations
+         * The main gist is for inser`t or delete operation we push opposite action in UNDO stack
+         * so that it become convenient while performing undo operations`
          *
          * Also for undo operations, we will store the opposite of undo operation in REDO stack.
          */
@@ -81,9 +96,9 @@ public class TextEditorUndoRedo {
                     if (!redoStack.isEmpty()) {
                         final Action redoAction = redoStack.pop();
                         if (redoAction.type == ActionType.INSERT) {
-                            insertCharacter(redoAction.item, redoStack, stringBuilder);
+                            insertCharacter(redoAction.item, undoStack, stringBuilder);
                         } else {
-                            deleteCharacter(redoStack, stringBuilder);
+                            deleteCharacter(undoStack, stringBuilder);
                         }
                     }
                     break;

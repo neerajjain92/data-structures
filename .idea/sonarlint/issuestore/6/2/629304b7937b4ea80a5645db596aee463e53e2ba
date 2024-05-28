@@ -1,0 +1,30 @@
+
+
+java:S1192"MDefine a constant instead of duplicating this literal "aabbhijkkjih" 3 times.(¤……x8ªÊÀõ1J$749729a8-71b5-46b6-ae88-acc599a9f3e8
+”	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ö­´8ÿ¡×¿õ1J$f486934b-5ff1-40eb-b2cb-8b6372bf0f1a
+_
+java:S1643j"Use a StringBuilder instead.(şä™§8‚¢×¿õ1J$2368b222-3396-4548-974c-025e8b6ffc32
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ë›’8„¢×¿õ1J$33794d23-1eb6-4b2c-bcc1-288eb8ce0ce5
+
+java:S1596d">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(ûõ¨¢8…¢×¿õ1J$6909aa88-d860-4242-974e-122bb2cbb3ca
+m	java:S106"+Replace this use of System.out by a logger.(·’íÑ8Ê¢×¿õ1J$4746f5f3-1ade-4a73-8e4a-72f29b47de24
+m	java:S106"+Replace this use of System.out by a logger.(¶˜€°8Ë¢×¿õ1J$bfddf61a-15be-4f69-bd45-a1b06f14b751
+r	java:S106"+Replace this use of System.out by a logger.(Ê«‚÷üÿÿÿÿ8Ì¢×¿õ1J$b513360b-5f6e-4176-8767-23201d1af976
+r	java:S106"+Replace this use of System.out by a logger.(ˆîâÿÿÿÿÿ8ó™İ¿õ1J$e55e2e9f-8d37-4311-a921-2eede4d57479
+l	java:S106"+Replace this use of System.out by a logger.(¤……x8²Äî¿õ1J$1d25aea4-44b9-45c4-89ea-57a937b84a06
+r	java:S106"+Replace this use of System.out by a logger.(Í°‚§ùÿÿÿÿ8€üÀõ1J$3989773e-093e-4e23-9096-d373ba682ed2
+m	java:S106"+Replace this use of System.out by a logger.(„ÚŸ¸8ı¬ŸÀõ1J$e39d22cc-49a3-43e8-92ad-a74e151048c5
+r	java:S106"+Replace this use of System.out by a logger.(Õ’Êûÿÿÿÿ8ı¬ŸÀõ1J$cb284b6b-9346-41cc-adc2-df0eaa72893b
+r	java:S106"+Replace this use of System.out by a logger.(áêÌÃøÿÿÿÿ8ı¬ŸÀõ1J$67ad5309-15a9-4d05-9323-9ed6f2f9ea65
+m	java:S106"+Replace this use of System.out by a logger.(ÉøÆ¤8ÕöŸÀõ1J$7149fa15-d5ac-40d2-8a92-1289f2d9a5d0
+r	java:S106"+Replace this use of System.out by a logger.(ÖÕüÿÿÿÿ8±¡ Àõ1J$a369491d-11ea-45f7-aaea-79208c8a4a53
+r	java:S106"+Replace this use of System.out by a logger.(ºæ³ûÿÿÿÿ8à«ÊÀõ1J$36d0f23b-40dd-4a14-88fe-249e959383b5
+m	java:S106"+Replace this use of System.out by a logger.(‘Ÿƒ8á«ÊÀõ1J$5564426f-68e6-428f-b1e2-5deb4cfd77c9
+m	java:S106"+Replace this use of System.out by a logger.(Èçˆß8á«ÊÀõ1J$fb656402-5031-403b-aa9c-4886999ce23b
+r	java:S106"+Replace this use of System.out by a logger.(°œ¯‡üÿÿÿÿ8á«ÊÀõ1J$96fcedb7-58e1-426c-82f8-5af8ee03d0d7
+
+java:S22348"VParameters to swap have the same names but not the same order as the method arguments.(¬˜Ø¾üÿÿÿÿ8Òûà¿õ1J$9019294b-0950-416a-aa0e-3b635698d4a4
+n
+java:S1197™"*Move the array designators [] to the type.(çÍ©ø8×¢×¿õ1J$f5286d3d-6bf7-4614-a078-512245559c57
+j
+java:S1659©"!Declare "end" on a separate line.(ôâ¼·şÿÿÿÿ8Ú¢×¿õ1J$2492d4f4-3c20-4cf9-9817-0007978fca18

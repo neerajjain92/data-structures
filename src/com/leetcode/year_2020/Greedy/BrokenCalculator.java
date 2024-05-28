@@ -10,6 +10,7 @@ public class BrokenCalculator {
 
     public static void main(String[] args) {
         System.out.println(brokenCalc(2, 3));
+        System.out.println(brokenCalc(2, 9));
         System.out.println(brokenCalc(5, 8));
         System.out.println(brokenCalc(5, 6));
         System.out.println(brokenCalc(3, 10));

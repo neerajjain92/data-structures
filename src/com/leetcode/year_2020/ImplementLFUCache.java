@@ -88,9 +88,7 @@ public class ImplementLFUCache {
             if (accessCount == minFreq && frequencyAndItsRespectiveNodes.get(minFreq).size() == 0) {
                 minFreq++; // Since we don't have any more items which are at minFreq.
             }
-            if (!frequencyAndItsRespectiveNodes.containsKey(accessCount + 1)) {
-                frequencyAndItsRespectiveNodes.put(accessCount + 1, new LinkedHashSet<>());
-            }
+            frequencyAndItsRespectiveNodes.computeIfAbsent(accessCount + 1, k -> new LinkedHashSet<>());
             frequencyAndItsRespectiveNodes.get(accessCount + 1).add(key);
             return vals.get(key);
         }

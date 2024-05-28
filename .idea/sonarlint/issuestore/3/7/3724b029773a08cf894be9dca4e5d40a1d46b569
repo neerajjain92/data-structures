@@ -1,13 +1,13 @@
 
-e
+‹
 java:S1104
-"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ
-f
-java:S1104"PMake left a static final constant or non-public and provide accessors if needed.(ŠËÌç
-l
-java:S1104"QMake right a static final constant or non-public and provide accessors if needed.(ë™Ùµøÿÿÿÿ
-k
-java:S1104"PMake next a static final constant or non-public and provide accessors if needed.(œù´Ðüÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(šöÀû
-@	java:S106"+Replace this use of System.out by a logger.(šöÀû
-@	java:S106%"+Replace this use of System.out by a logger.(šöÀû
+"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏJ$0e695aaf-147e-486b-a9b1-c1fa3d2027de
+Œ
+java:S1104"PMake left a static final constant or non-public and provide accessors if needed.(ŠËÌçJ$f21e91a0-37aa-4705-a5fd-d19b041923c7
+’
+java:S1104"QMake right a static final constant or non-public and provide accessors if needed.(ë™ÙµøÿÿÿÿJ$f8851bfc-330f-4bca-9e39-80820017bbfb
+‘
+java:S1104"PMake next a static final constant or non-public and provide accessors if needed.(œù´ÐüÿÿÿÿJ$55a54968-369d-4e63-b1d7-23afe91a7bc0
+f	java:S106"+Replace this use of System.out by a logger.(šöÀûJ$a803cd9f-3176-47b0-9cb0-d18b45f4d2e7
+f	java:S106"+Replace this use of System.out by a logger.(šöÀûJ$631c4c02-2ad5-46f7-9120-095f74cc49d2
+f	java:S106%"+Replace this use of System.out by a logger.(šöÀûJ$8ab33d37-bb2f-48e5-b97b-491625abca71

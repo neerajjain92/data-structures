@@ -1,0 +1,14 @@
+
+	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«¨ªóÿÿÿÿÿJ$e113a0d5-1481-456f-aa8a-978d96b5e921
+
+java:S3008"RRename this field "ARRIVAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ÙŒÃJ$daf2faba-8d2a-426c-914d-258f6ef22715
+
+java:S3008"TRename this field "DEPARTURE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸şä¡J$254cf571-654e-4964-9a96-f60651d02b14
+ 
+java:S11493"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(˜İâœÿÿÿÿÿJ$2df11b7b-e009-428b-bee6-7ba3c229ac36
+|	java:S125""<This block of commented-out lines of code should be removed.(Ê¬ıÉøÿÿÿÿJ$c314a792-4dc0-466f-801f-22ee2d5c0991
+|	java:S125'"<This block of commented-out lines of code should be removed.(±º»©ûÿÿÿÿJ$e46ba3d2-7ece-4417-9a2f-67de0e94e1a2
+|	java:S125="<This block of commented-out lines of code should be removed.(Úü¸¨ıÿÿÿÿJ$a0a6ac24-eba6-4552-9204-3c6edd365900
+k	java:S106Z"+Replace this use of System.out by a logger.(ºøòÜüÿÿÿÿJ$aee5053b-c2b7-4276-865b-c0a32385733d
+k	java:S106["+Replace this use of System.out by a logger.(øœà¼ûÿÿÿÿJ$1eaeff14-c85b-47c6-92d4-220de19a1075

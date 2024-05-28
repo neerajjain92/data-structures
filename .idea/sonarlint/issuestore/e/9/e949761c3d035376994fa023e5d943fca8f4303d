@@ -1,0 +1,26 @@
+
+“
+java:S1104"PMake prev a static final constant or non-public and provide accessors if needed.(¤§Ö8å†ßßù1J$fe4c4fc7-4d9b-4444-b0bf-86f768cae3e6
+“
+java:S1104"PMake next a static final constant or non-public and provide accessors if needed.(’•ä¨8å†ßßù1J$ffde2fbc-bcac-418d-8ff4-9b76cb8591a0
+’
+java:S1104"OMake key a static final constant or non-public and provide accessors if needed.(‰õÙ…8æ†ßßù1J$55d05bf7-6ebd-49fd-a47a-45dcd58baaea
+’
+java:S1104"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ8æ†ßßù1J$c09792cc-89fa-4c23-98fd-29e5424245d6
+n	java:S106¶"+Replace this use of System.out by a logger.(”öÌ¨8ø†ßßù1J$3d1032b6-6030-4714-841e-4fe228a74deb
+s	java:S106¸"+Replace this use of System.out by a logger.(´ÙËºÿÿÿÿÿ8ø†ßßù1J$5cb736d2-135b-4e4d-9686-e1f8d69637ee
+n	java:S106º"+Replace this use of System.out by a logger.(ãâ±ˆ8ø†ßßù1J$e0ebf2ac-6c97-4c97-a9a5-383f1b8f14df
+s	java:S106»"+Replace this use of System.out by a logger.(Ï×Âÿÿÿÿÿ8ø†ßßù1J$9f78ecb3-6dbf-4358-b01b-5bfd1d037882
+s	java:S106¼"+Replace this use of System.out by a logger.(àö›Öÿÿÿÿÿ8ø†ßßù1J$a854db98-56c5-45b4-9a09-a1dd670b7224
+n	java:S106¾"+Replace this use of System.out by a logger.(Ğ—Íè8ø†ßßù1J$3ff7d991-bb91-46ee-9bc6-6820ecab9e69
+s	java:S106Á"+Replace this use of System.out by a logger.(Åüñÿÿÿÿÿ8ù†ßßù1J$4e2c36e5-28cc-47db-bea5-f17d5c1d2ad3
+s	java:S106Ã"+Replace this use of System.out by a logger.(Åüñÿÿÿÿÿ8ù†ßßù1J$753c2bd9-b901-4086-b0d9-c35d29f4efa7
+n	java:S106Ä"+Replace this use of System.out by a logger.(ŒÛÜƒ8ù†ßßù1J$882dd20e-5dfa-4dd3-925f-0b3344631a42
+s	java:S106Æ"+Replace this use of System.out by a logger.(Åá—•şÿÿÿÿ8ù†ßßù1J$d578106a-09cf-4baf-a083-3fec23bdd33c
+s	java:S106Ì"+Replace this use of System.out by a logger.(Åüñÿÿÿÿÿ8ù†ßßù1J$06d0dda7-6560-48cb-a6bd-fa9d04e0c09b
+s	java:S106Ï"+Replace this use of System.out by a logger.(Åüñÿÿÿÿÿ8ù†ßßù1J$2f0d1e6c-972b-4c0d-821d-4292e35cc8b7
+s	java:S106Ñ"+Replace this use of System.out by a logger.(ÃµÀ¤şÿÿÿÿ8ú†ßßù1J$197dc845-dbf5-4f33-b1eb-10aac3d8d417
+s	java:S106Õ"+Replace this use of System.out by a logger.(Åüñÿÿÿÿÿ8ú†ßßù1J$50fecc13-aa55-4f5e-9983-aab36fcc5e53
+s	java:S106×"+Replace this use of System.out by a logger.(âıÉ½øÿÿÿÿ8ú†ßßù1J$bc8f0c6e-6f1e-4f72-9d07-77120cf234d3
+s	java:S106Ú"+Replace this use of System.out by a logger.(âıÉ½øÿÿÿÿ8ú†ßßù1J$a39bb612-bcf5-46f5-8838-c5372f394138
+s	java:S106Û"+Replace this use of System.out by a logger.(Åüñÿÿÿÿÿ8ú†ßßù1J$059b21c7-f9ec-4a61-a9f9-4794ed1f38d1

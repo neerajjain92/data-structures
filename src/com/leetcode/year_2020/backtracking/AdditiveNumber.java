@@ -24,6 +24,7 @@ public class AdditiveNumber {
 //        isAdditiveNumber("15051101152");
 //        isAdditiveNumber("15141161152");
         isAdditiveNumber("101");
+        isAdditiveNumber("1001");
     }
 
     /**

@@ -9,11 +9,69 @@ import java.util.*;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-public class RemoveInvalidParentheses {
+public class
+RemoveInvalidParentheses {
 
     public static void main(String[] args) {
         System.out.println(removeInvalidParentheses("()())()"));
+        System.out.println(removeInvalidParenthesesViaDFS("()())()"));
         System.out.println(removeInvalidParentheses(")("));
+        System.out.println(removeInvalidParenthesesViaDFS(")("));
+    }
+
+    private static List<String> removeInvalidParenthesesViaDFS(String s) {
+        int[] maxLength = new int[]{Integer.MIN_VALUE};
+        List<String> result = new ArrayList<>();
+        removeDFS(s, 0, 0, 0, maxLength, result, new StringBuilder(), new HashSet<>());
+        return result;
+    }
+
+    private static void removeDFS(String s, int start, int leftCount, int rightCount, int[] maxLength,
+                                  List<String> result, StringBuilder current, Set<String> visited) {
+        if (start == s.length()) {
+            if (leftCount == rightCount && !visited.contains(current.toString())) {
+                visited.add(current.toString());
+                if (current.length() > maxLength[0]) {
+                    maxLength[0] = current.length();
+                    result.clear(); // Clear any previous smaller strings
+                    result.add(current.toString());
+                } else if (current.length() == maxLength[0]) {
+                    result.add(current.toString());
+                }
+            }
+            return;
+        }
+
+        char c = s.charAt(start);
+
+        if (c == '(') {
+            // Greedly just take it and do a DFS
+            current.append("("); // Choose
+            removeDFS(s, start + 1, leftCount + 1, rightCount, maxLength, result,
+                    current, visited); // Explore
+            current.deleteCharAt(current.length() - 1); // UnChoose
+
+            // Try the same skipping it, No boundation on Opening bracket
+            removeDFS(s, start + 1, leftCount, rightCount, maxLength, result,
+                    current, visited);
+        } else if (c == ')') {
+            // For closing we can choose to skip this, without any rules
+            removeDFS(s, start + 1, leftCount, rightCount, maxLength, result, current, visited);
+
+            // But for choosing it we need to make sure we have enough left bracket
+            // for which this closing is coming
+            if (leftCount > rightCount) {
+                current.append(")");
+                removeDFS(s, start + 1, leftCount, rightCount + 1, maxLength, result,
+                        current, visited);
+                current.deleteCharAt(current.length() - 1); // UnChoose
+            }
+        } else {
+            // Alphabet
+            current.append(c);
+            removeDFS(s, start + 1, leftCount, rightCount, maxLength, result, current, visited);
+            current.deleteCharAt(current.length() - 1);
+        }
     }
 
 

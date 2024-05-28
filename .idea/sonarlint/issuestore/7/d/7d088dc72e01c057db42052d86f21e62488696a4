@@ -1,0 +1,18 @@
+
+‰
+java:S1192"FDefine a constant instead of duplicating this literal "cbafg" 3 times.(©Ü«â8«Ÿµõ1J$6af2aad8-09ac-4342-848c-652cfed074ee
+Ž
+java:S1192"FDefine a constant instead of duplicating this literal "pekeq" 3 times.(¿õŽ™ýÿÿÿÿ8Ù¿Ÿµõ1J$0ce3e683-21c7-4e68-bf5f-68cbdb09dcd4
+“	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÃÎÜ8Ë›œµõ1J$b85a94d4-f058-4ea7-9338-24026b8aa2bd
+“	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛéÒ8Ì›œµõ1J$d89cc6a5-9b16-4e00-ae55-db281e84b333
+r	java:S106"+Replace this use of System.out by a logger.(û¨ÿÿÿÿÿ8ƒœœµõ1J$b0595612-8545-4cce-a1a6-868dc442aee2
+m	java:S106"+Replace this use of System.out by a logger.(©Ü«â8„œœµõ1J$23ed1af9-2ec5-42a2-9a72-c6137fef707c
+r	java:S106"+Replace this use of System.out by a logger.(¿õŽ™ýÿÿÿÿ8„œœµõ1J$67f13953-2801-47d7-882b-57cc5174827e
+m	java:S106"+Replace this use of System.out by a logger.(š·›8„œœµõ1J$f323daf0-6988-4482-b950-a99557e4975b
+m	java:S106"+Replace this use of System.out by a logger.(ÿß¦8„œœµõ1J$4b3deff8-bdc7-40da-b66e-0d9736787750
+r	java:S106"+Replace this use of System.out by a logger.(¾ÊžÀÿÿÿÿÿ8„œœµõ1J$a188b1a1-7fc2-43b1-8cf5-b73e1e875331
+m	java:S106"+Replace this use of System.out by a logger.(©„÷É8·êžµõ1J$4b1825d2-15d1-4559-ab00-64b5a40d2939
+r	java:S106"+Replace this use of System.out by a logger.(Áúé‹ûÿÿÿÿ8·êžµõ1J$74c6dff6-ee1d-49be-a3c0-8bdf79c0a925
+m	java:S106"+Replace this use of System.out by a logger.(Ö¨·â8¸êžµõ1J$46e365ca-403d-44d8-af88-c91e7f672c5f
+†
+java:S1155g">Use isEmpty() to check whether the collection is empty or not.(‰Ö¦þûÿÿÿÿ8ˆœœµõ1J$d11c43de-29e4-4569-9fde-b7c85e8e89de

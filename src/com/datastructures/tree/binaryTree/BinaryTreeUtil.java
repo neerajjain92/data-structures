@@ -342,12 +342,11 @@ public class BinaryTreeUtil {
 
         if (head == null) {
             head = root;
-            prev = root;
         } else {
             prev.right = root;
             root.left = prev;
-            prev = root;
         }
+        prev = root;
         inplaceBinaryTreeToCircularDLL(root.right);
     }
 

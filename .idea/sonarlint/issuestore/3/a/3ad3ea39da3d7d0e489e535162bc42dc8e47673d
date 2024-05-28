@@ -1,0 +1,16 @@
+
+
+java:S1192"GDefine a constant instead of duplicating this literal "DELETE" 4 times.(è›æÉıÿÿÿÿ8ØÌØ¥ô1J$abb694b9-6239-44a7-a04c-b49ab860d960
+‰
+java:S1192"HDefine a constant instead of duplicating this literal "INSERT" 14 times.(éÒÕëûÿÿÿÿJ$cf3b130d-6249-4673-a254-b745e148e1f6
+‘
+java:S1149B"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÏÆÑ­şÿÿÿÿJ$d6440cc8-b174-435f-8ae4-95a6e8c0b95d
+‘
+java:S1149C"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÒíÁÉıÿÿÿÿJ$e1e11e27-9c0e-469f-8b61-63d11ed7365a
+‘
+java:S1149p"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(…ù ÃıÿÿÿÿJ$52911636-d28c-4df9-aedc-d72554ece39e
+‘
+java:S1149z"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Ïï‡½ıÿÿÿÿJ$6818d5a5-b913-496c-8273-777776bd7c7d
+
+java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¬éëôJ$14fdd119-f617-4546-a6b7-ca19e7ccd5a5
+k	java:S106l"+Replace this use of System.out by a logger.(ˆ—»øÿÿÿÿJ$0b8ebc7f-0bd7-4100-8520-122e5011314d

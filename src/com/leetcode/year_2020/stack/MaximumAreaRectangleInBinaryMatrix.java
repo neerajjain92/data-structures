@@ -61,7 +61,7 @@ public class MaximumAreaRectangleInBinaryMatrix {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (matrix[i][j] == '0') {
-                    onlyOnes[j] = 0;
+                    onlyOnes[j] = 0; // Important, a building can't fly, hence if  the entry is  0, anything above this row will not be considered for this column and bottom
                 } else {
                     onlyOnes[j] += 1;
                 }

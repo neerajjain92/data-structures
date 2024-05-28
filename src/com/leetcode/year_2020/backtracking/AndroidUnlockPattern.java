@@ -37,7 +37,9 @@ package com.leetcode.year_2020.backtracking;
 public class AndroidUnlockPattern {
 
     public static void main(String[] args) {
-        System.out.println(numberOfPatterns(3, 3));
+        System.out.println(numberOfPatterns(1, 1));
+        System.out.println(numberOfPatterns(2, 2));
+        System.out.println(numberOfPatterns(5, 7));
     }
 
     public static int numberOfPatterns(int m, int n) {

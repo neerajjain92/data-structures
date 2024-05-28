@@ -1,0 +1,11 @@
+
+Œ	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Þ³‰ãJ$72fff832-7fd8-44ec-8a4f-39bdc59e9f86
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹÷×›ùÿÿÿÿJ$442c1294-28be-48e2-96cf-e636ffb5a515
+f	java:S106"+Replace this use of System.out by a logger.(äáé«J$e66d2107-7ba2-4126-ad5a-6a2f4c959e8d
+k	java:S106"+Replace this use of System.out by a logger.(±Ò†îøÿÿÿÿJ$1fb4aed0-b983-444c-81ea-69f94a63827f
+k	java:S106"+Replace this use of System.out by a logger.(±Ò†îøÿÿÿÿJ$f44e1284-c534-4c08-8704-4dee9a924890
+Ž	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì„§¾ùÿÿÿÿJ$f27226e5-4e4d-4245-9f3e-9031093e400a
+f	java:S106I"+Replace this use of System.out by a logger.(ûù»­J$a9ba5546-80a4-4da9-9fa2-f0a1c99561d2
+k	java:S106K"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿJ$ab35f830-dc33-4406-a14a-58caf0e862f0
+“
+java:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ç«ÿÏþÿÿÿÿJ$3e74af95-5610-4351-92e0-32af2e02d9d4

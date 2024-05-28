@@ -1030,6 +1030,25 @@ public class LinkedListUtil {
         }
     }
 
+    public void delete_N_Nodes_After_M_NodesNew(Node head, int N, int M) {
+        Node temp = head;
+        int counter = 0;
+        Node prev  = null;
+        while (temp != null) {
+            counter = 0;
+            while (counter++ < M && temp != null) {
+                prev = temp;
+                temp = temp.next;
+            }
+            counter = 0;
+            while (counter++ < N && temp != null) {
+                temp = temp.next;
+            }
+            // Join prev with temp
+            prev.next = temp;
+        }
+    }
+
 
     public static void main(String[] args) {
         LinkedListUtil util = new LinkedListUtil();
@@ -1344,6 +1363,10 @@ public class LinkedListUtil {
         reverseUtil.reverseListWith2Pointers(reverseUtil.head);
 
 
+        /**
+         * https://leetcode.ca/all/1474.html
+         * 1474. Delete N Nodes After M Nodes of a Linked List
+         */
         System.out.println("==================Delete N nodes after M nodes of a linked list=====================");
         LinkedListUtil deleteNodesUtil = new LinkedListUtil();
         deleteNodesUtil.append(1);
@@ -1354,9 +1377,14 @@ public class LinkedListUtil {
         deleteNodesUtil.append(6);
         deleteNodesUtil.append(7);
         deleteNodesUtil.append(8);
+        deleteNodesUtil.append(9);
+        deleteNodesUtil.append(10);
+        deleteNodesUtil.append(11);
+        deleteNodesUtil.append(12);
+        deleteNodesUtil.append(13);
 
         printList(deleteNodesUtil.head);
-        deleteNodesUtil.delete_N_Nodes_After_M_Nodes(deleteNodesUtil.head, 2, 2);
+        deleteNodesUtil.delete_N_Nodes_After_M_NodesNew(deleteNodesUtil.head, 3, 2);
         printList(deleteNodesUtil.head);
 
     }

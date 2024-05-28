@@ -1,24 +1,24 @@
 
-j
-java:S1192!"ODefine a constant instead of duplicating this literal "Start of Array" 3 times.(„âÆúÿÿÿÿ
-h
-java:S1192("MDefine a constant instead of duplicating this literal "End of Array" 3 times.(İ¾ğêûÿÿÿÿ
-C
-java:S5411"(Use a primitive boolean expression here.(®Ÿ¼üûÿÿÿÿ
-C
-java:S5411"(Use a primitive boolean expression here.(®Ÿ¼üûÿÿÿÿ
-z
-java:S1149]"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ
-z
-java:S1149g"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ
-P
+
+java:S1192!"ODefine a constant instead of duplicating this literal "Start of Array" 3 times.(„âÆúÿÿÿÿJ$538aad3a-9ab4-4800-aafe-b8e43ba49c03
+
+java:S1192("MDefine a constant instead of duplicating this literal "End of Array" 3 times.(İ¾ğêûÿÿÿÿJ$f7f095ea-e7d6-49a4-bb78-107f5ac0f838
+i
+java:S5411"(Use a primitive boolean expression here.(®Ÿ¼üûÿÿÿÿJ$15021dba-0698-4160-a8f8-e99a7b73f83e
+i
+java:S5411"(Use a primitive boolean expression here.(®Ÿ¼üûÿÿÿÿJ$79e2e30f-1ffa-4685-8deb-1d0789956dbe
+ 
+java:S1149]"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿJ$ede8105b-327d-4411-8392-c478b9c8c48c
+ 
+java:S1149g"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿJ$b35c5c54-adcc-4ea3-b6c4-01c61719a358
+v
 java:S1118
-":Add a private constructor to hide the implicit public one.(µ¤õ£
-?	java:S106"+Replace this use of System.out by a logger.(Ê•¶\
-@	java:S106"+Replace this use of System.out by a logger.(—®ù‚
-?	java:S106"+Replace this use of System.out by a logger.(‚š‰1
-E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(®Ÿ¼üûÿÿÿÿ
-@	java:S1067"+Replace this use of System.out by a logger.(Ì†¦ˆ
-@	java:S106R"+Replace this use of System.out by a logger.(Ì†¦ˆ
-E	java:S106Y"+Replace this use of System.out by a logger.(ã¿¢Ôùÿÿÿÿ
+":Add a private constructor to hide the implicit public one.(µ¤õ£J$82848517-b2ff-475f-8af1-650d761c9cb0
+e	java:S106"+Replace this use of System.out by a logger.(Ê•¶\J$951eb453-5cc3-448e-9639-11d6fbfc1da0
+f	java:S106"+Replace this use of System.out by a logger.(—®ù‚J$353e4e76-9a22-408b-9611-56cb73b93179
+e	java:S106"+Replace this use of System.out by a logger.(‚š‰1J$e20c03a8-bf74-4a34-b696-7250fca47781
+k	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$64ac63b7-0cdd-46ad-86ae-f90bdecc1006
+k	java:S106"+Replace this use of System.out by a logger.(®Ÿ¼üûÿÿÿÿJ$ff24f593-5376-4aa9-bd9f-8f9e8cecef29
+f	java:S1067"+Replace this use of System.out by a logger.(Ì†¦ˆJ$68e75f0b-0a9a-48cd-88ab-5fbc17408a24
+f	java:S106R"+Replace this use of System.out by a logger.(Ì†¦ˆJ$52d0d345-6871-452a-88ca-675a879e253c
+k	java:S106Y"+Replace this use of System.out by a logger.(ã¿¢ÔùÿÿÿÿJ$fa3b2796-1f2d-477e-924e-41dc15d6d8b4

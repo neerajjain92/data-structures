@@ -17,7 +17,8 @@ import java.util.List;
 public class GenerateAllSubsetsofSizeK {
 
     public static void main(String[] args) {
-        System.out.println(subsetsSizeK(10, 5));
+//        System.out.println(subsetsSizeK(10, 5));
+        System.out.println(subsetsSizeK(3, 3));
     }
 
     public static List<List<Integer>> subsetsSizeK(int n, int k) {

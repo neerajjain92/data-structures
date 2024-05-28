@@ -8,11 +8,19 @@ import java.util.Set;
 public class EqualTreePartition {
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(10);
+        TreeNode root = new TreeNode(5);
         root.left = new TreeNode(10);
         root.right = new TreeNode(-10);
         root.right.left = new TreeNode(-2);
         root.right.right = new TreeNode(-3);
+
+        System.out.println(checkEqualTree(root));
+
+        root = new TreeNode(5);
+        root.left = new TreeNode(10);
+        root.right = new TreeNode(10);
+        root.right.left = new TreeNode(2);
+        root.right.right = new TreeNode(3);
 
         System.out.println(checkEqualTree(root));
 

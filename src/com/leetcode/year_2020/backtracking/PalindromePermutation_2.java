@@ -1,9 +1,6 @@
 package com.leetcode.year_2020.backtracking;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://www.lintcode.com/problem/917
@@ -11,19 +8,68 @@ import java.util.List;
 public class PalindromePermutation_2 {
 
     public static void main(String[] args) {
-//        System.out.println(generatePalindromes("aabb"));
-//        System.out.println(generatePalindromes(""));
-////        System.out.println(generatePalindromes("aabbhijkkjih")); // Will timeout with legacy approach of generating all permutations
-//
-//        System.out.println(generatePalindromesOptimized("aabb"));
-//        System.out.println(generatePalindromesOptimized(""));
-//        System.out.println(generatePalindromesOptimized("aabbhijkkjih"));
-//        System.out.println(generatePalindromesOptimized("aabbccc"));
+        System.out.println(generatePalindromes("aab"));
+        System.out.println(generatePalindromes("aabb"));
+        System.out.println(generatePalindromes("baab"));
+        System.out.println(generatePalindromes(""));
+        System.out.println(generatePalindromes("aabbhijkkjih")); // Will timeout with legacy approach of generating all permutations
+
+        System.out.println(generatePalindromePermutationViaSwapping("aab"));
+        System.out.println(generatePalindromePermutationViaSwapping("aabb"));
+        System.out.println(generatePalindromePermutationViaSwapping("baab"));
+        System.out.println(generatePalindromePermutationViaSwapping(""));
+        System.out.println(generatePalindromePermutationViaSwapping("aabbhijkkjih"));
+
+        System.out.println(generatePalindromesOptimized("aabb"));
+        System.out.println(generatePalindromesOptimized(""));
+        System.out.println(generatePalindromesOptimized("aabbhijkkjih"));
+        System.out.println(generatePalindromesOptimized("aabbccc"));
 
         System.out.println(canBePermutedToPalindrome("daccccdd"));
     }
 
+    /**
+     * May 2024
+     * <p>
+     * Read from Aditya Verma GOD of DP, in it's backtracking series on how to calculate permutation
+     */
+    private static List<String> generatePalindromePermutationViaSwapping(String s) {
+        if (s.length() == 0) return Collections.emptyList();
+        List<String> result = new ArrayList<>();
+        generatePalindromePermutationViaSwapping(s.toCharArray(), 0, result);
+        return result;
+    }
 
+    private static void generatePalindromePermutationViaSwapping(char[] arr, int start, List<String> result) {
+        if (start == arr.length) {
+            if (isPalindrome(new StringBuilder(new String(arr)))) {
+                result.add(new String(arr));
+            }
+            return;
+        }
+        Set<Character> explored = new HashSet<>();
+        for (int i = start; i < arr.length; i++) {
+            if (!explored.contains(arr[i])) {
+                explored.add(arr[i]);
+                swap(arr, start, i);
+                generatePalindromePermutationViaSwapping(arr, start + 1, result);
+                swap(arr, i, start); // Reset
+            }
+        }
+    }
+
+    private static void swap(char[] arr, int start, int i) {
+        char temp = arr[start];
+        arr[start] = arr[i];
+        arr[i] = temp;
+    }
+
+
+    /**
+     * https://www.youtube.com/watch?v=4xv76FOnrmE
+     * <p>
+     * Inspiration from above youtube video
+     */
     public static List<String> generatePalindromesOptimized(String s) {
         /**
          * We start by calculating all frequencies of character

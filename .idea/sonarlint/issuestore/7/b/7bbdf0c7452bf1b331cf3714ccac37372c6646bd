@@ -1,0 +1,19 @@
+
+˜	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÑˆıÿÿÿÿ8†¬¶±÷1J$b915a007-4f22-4344-87c9-578b39b57437
+˜	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÑˆıÿÿÿÿ8‡¬¶±÷1J$36c461f3-ff6c-4eef-9f0d-b6c05273a25f
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êƒì‚ûÿÿÿÿ8¬¶±÷1J$a149a214-0222-47ce-b5a3-7f5f83c40675
+˜
+java:S1149D"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ8–í¶±÷1J$6af994fc-adec-4cde-ac51-9ec23aa7c54b
+r	java:S106"+Replace this use of System.out by a logger.(£êÒƒøÿÿÿÿ8Áº¶±÷1J$da938505-5872-48a6-b2b2-ed4f39bbbfe6
+m	java:S106"+Replace this use of System.out by a logger.(İ¹”Í8Âº¶±÷1J$0216f809-28d0-4e5d-8fb0-218856d610bd
+m	java:S106"+Replace this use of System.out by a logger.(ÕÑµ—8Âº¶±÷1J$bb076fc9-933a-4a95-8f49-cb711eca3db6
+r	java:S106"+Replace this use of System.out by a logger.(˜æ´ˆıÿÿÿÿ8Ãº¶±÷1J$a9fa6489-ec2f-4ff7-9589-53f03fcd67dd
+m	java:S106"+Replace this use of System.out by a logger.(œ†õ€8Ãº¶±÷1J$a1d2185a-22cd-424f-860d-56aeafc75548
+r	java:S106"+Replace this use of System.out by a logger.(‡äÈİÿÿÿÿÿ8Ãº¶±÷1J$f1d2765f-8560-440c-8b26-9fd8770c7d60
+m	java:S106"+Replace this use of System.out by a logger.(Ë†¯·8Ãº¶±÷1J$422017c6-ddb7-43dd-824a-bbd2da794e99
+š
+java:S3776B"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Îú³şşÿÿÿÿ8³í¶±÷1J$80236b56-f51c-4a9b-b4a4-9eaf4ea77761
+
+java:S1854D"9Remove this useless assignment to local variable "stack".(û›şöıÿÿÿÿ8´í¶±÷1J$32f2f44b-d145-476f-8990-8e8fe289ae4a
+i
+java:S1659_"!Declare "ten" on a separate line.(ó©Ä™úÿÿÿÿ8·í¶±÷1J$05ac8d36-2138-479f-a0ac-db9d8ea1eb3d

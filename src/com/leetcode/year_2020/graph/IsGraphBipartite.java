@@ -28,6 +28,13 @@ public class IsGraphBipartite {
                 {0, 2}
         }));
 
+        System.out.println(isBipartiteUsingDFS(new int[][]{
+                {1, 3},
+                {0, 2},
+                {1, 3},
+                {0, 2}
+        }));
+
         /**
          * The graph looks like this:
          * 0----1
@@ -42,6 +49,50 @@ public class IsGraphBipartite {
                 {0, 1, 3},
                 {0, 2}
         }));
+
+        System.out.println(isBipartiteUsingDFS(new int[][]{
+                {1, 2, 3},
+                {0, 2},
+                {0, 1, 3},
+                {0, 2}
+        }));
+    }
+
+    public static boolean isBipartiteUsingDFS(int[][] graph) {
+        int[] color = new int[graph.length];
+        for (int i = 0; i < graph.length; i++) {
+            color[i] = -1; // Uncolored
+        }
+
+        // Let's do DFS from vertex 0;
+        boolean isBipartite = true;
+        for (int i = 0; i < graph.length; i++) {
+            if (color[i] == -1) {
+                // Only work with uncolored vertex, so that we are not revisiting node which is already processed
+                isBipartite = isBipartiteUsingDFS(graph, i, color, 0);
+                if (!isBipartite)
+                    break;
+            }
+        }
+        return isBipartite;
+    }
+
+    private static boolean isBipartiteUsingDFS(int[][] graph, int i, int[] color, int paintWith) {
+        color[i] = paintWith;
+
+        // Check for all adjacent Node
+        boolean isBipartite = true;
+        for (int neighbour : graph[i]) {
+            if (color[neighbour] == paintWith) {
+                // Means there  was a cycle and someone else already painted and can't be a bipartite
+                isBipartite = false;
+                break;
+            }
+            if (color[neighbour] == -1) {
+                isBipartite = isBipartiteUsingDFS(graph, neighbour, color, paintWith == 1 ? 0 : 1);
+            }
+        }
+        return isBipartite;
     }
 
     enum COLOR {RED, BLUE, UNCOLORED}

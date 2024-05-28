@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/combination-sum/
+ * https://leetcode.com/problems/combinat. ion-sum/
  *
  *  Find all unique combinations in candidates where the candidate numbers sums to target.
  *
@@ -21,6 +21,7 @@ public class CombinationSum {
         System.out.println(combinationSum(new int[]{1, 2, 3}, 3));
 
         System.out.println(combinationSumUnique(new int[]{1, 2, 3}, 3));
+        System.out.println(combinationSumUnique(new int[]{2,5,2,1,2}, 5));
         System.out.println(combinationSumUnique(new int[]{10, 1, 2, 7, 6, 1, 5}, 8));
     }
 

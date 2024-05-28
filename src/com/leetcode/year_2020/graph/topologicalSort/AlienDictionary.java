@@ -1,10 +1,6 @@
 package com.leetcode.year_2020.graph.topologicalSort;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * https://www.lintcode.com/problem/892/
@@ -18,11 +14,78 @@ public class AlienDictionary {
 
     public static void main(String[] args) {
         System.out.println(alienOrder(new String[]{"wrt", "wrf", "er", "ett", "rftt"}));
+        System.out.println(alienOrderV2(new String[]{"wrt", "wrf", "er", "ett", "rftt"}));
         System.out.println(alienOrder(new String[]{"z", "x"}));
+        System.out.println(alienOrderV2(new String[]{"z", "x"}));
         System.out.println(alienOrder(new String[]{"zy", "zx"}));
+        System.out.println(alienOrderV2(new String[]{"zy", "zx"}));
         System.out.println(alienOrder(new String[]{"zx", "zy"}));
+        System.out.println(alienOrderV2(new String[]{"zx", "zy"}));
         System.out.println(alienOrder(new String[]{"ab", "abc"}));
+        System.out.println(alienOrderV2(new String[]{"ab", "abc"}));
     }
+
+    /**
+     * Trying with simple approach in 2024
+     */
+    public static String alienOrderV2(String[] dictionary) {
+        List<Integer>[] adjListArray = new ArrayList[26];
+        for (int i = 0; i < 26; i++) {
+            adjListArray[i] = new ArrayList<>();
+        }
+        int[] indegree = new int[26];
+        Arrays.fill(indegree, -1);
+
+        for (int i = 0; i < dictionary.length; i++) {
+            for (char c : dictionary[i].toCharArray()) {
+                indegree[c - 'a'] = 0; // Touching all nodes
+            }
+        }
+
+        // Go to pairs and add check the order between them
+        // Build a directed graph from it along with indegree
+        // Perform topological sort
+        for (int i = 1; i < dictionary.length; i++) {
+            String order = compareAndReturnOrderOfLetter(dictionary[i - 1], dictionary[i]);
+            if (INVALID_STRING.equals(order)) return EMPTY_STRING;
+            if (!ALL_GOOD_NOTHING_TO_BE_MODIFIED.equals(order)) {
+                String orderSplit[] = order.split("<");
+                int firstVertex = orderSplit[0].charAt(0) - 'a';
+                int secondVertex = orderSplit[1].charAt(0) - 'a';
+                adjListArray[firstVertex].add(secondVertex);
+
+                // Increase the indegree
+                indegree[secondVertex] += 1;
+            }
+        }
+
+        // Perform Topological sort
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < indegree.length; i++) {
+            if (indegree[i] == 0) {
+                queue.add(i);
+            }
+        }
+        List<Integer> topoSort = new ArrayList<>();
+        while (!queue.isEmpty()) {
+            Integer polled = queue.poll();
+            topoSort.add(polled);
+
+            for (int adjacent : adjListArray[polled]) {
+                indegree[adjacent] -= 1;
+                if (indegree[adjacent] == 0) {
+                    queue.add(adjacent);
+                }
+            }
+        }
+
+        StringBuilder result = new StringBuilder();
+        for (int i : topoSort) {
+            result.append((char) (i + 'a'));
+        }
+        return result.toString();
+    }
+
 
     /**
      * Okay so my approach,

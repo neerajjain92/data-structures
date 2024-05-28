@@ -1,0 +1,32 @@
+
+R
+java:S1066¥"/Merge this if statement with the enclosing one.(Î¸¹õûÿÿÿÿ8òÿú1
+{
+java:S1104"YMake totalVertices a static final constant or non-public and provide accessors if needed.(‘èÎóûÿÿÿÿ8õÿú1
+y
+java:S1104"\Make adjacencyListArr a static final constant or non-public and provide accessors if needed.(¶æ§ß8õÿú1
+v
+java:S1104"TMake indegree a static final constant or non-public and provide accessors if needed.(»±ª¦şÿÿÿÿ8õÿú1
+w
+java:S1104"UMake outdegree a static final constant or non-public and provide accessors if needed.(©Û›–ÿÿÿÿÿ8õÿú1
+n
+java:S1104;"QMake color a static final constant or non-public and provide accessors if needed.(ê·®©8õÿú1
+s
+java:S1104<"QMake value a static final constant or non-public and provide accessors if needed.(‚¯¥ùÿÿÿÿ8õÿú1
+r
+java:S1149]"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ8½‘ÿú1
+n
+java:S1149¸"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Àñµš8½‘ÿú1
+n
+java:S1149Å"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".( ˜Âü8½‘ÿú1
+G	java:S106M"+Replace this use of System.out by a logger.(÷ÖŒµ8Ä‘ÿú1
+L	java:S106c"+Replace this use of System.out by a logger.(µçƒ‡ûÿÿÿÿ8Æ‘ÿú1
+G	java:S106v"+Replace this use of System.out by a logger.(êœô¶8È‘ÿú1
+\
+java:S1155‚">Use isEmpty() to check whether the collection is empty or not.(äÿ¼Ò8Ê‘ÿú1
+d
+java:S1126„"AReplace this if-then-else statement by a single return statement.(šóÁ’øÿÿÿÿ8Ê‘ÿú1
+M	java:S106¿"+Replace this use of System.out by a logger.(Ã‚úûÿÿÿÿ8Ï‘ÿú1
+_
+java:S1117×"<Rename "indegree" which hides the field declared at line 19.(ÈÍ¶¸şÿÿÿÿ8Ò‘ÿú1
+M	java:S106î"+Replace this use of System.out by a logger.(åÔ¦¿ûÿÿÿÿ8Õ‘ÿú1

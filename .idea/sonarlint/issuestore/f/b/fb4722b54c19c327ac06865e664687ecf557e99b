@@ -1,0 +1,7 @@
+
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³×æ–ùÿÿÿÿ8¼ú Œ÷1J$8d1f101b-5459-4ad6-9601-937fcd8179b5
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ýƒêÐúÿÿÿÿ8½ú Œ÷1J$42a48fa5-7641-4ea5-9737-b34c1e26229e
+
+java:S1854"<Remove this useless assignment to local variable "bookings".(Ü±¾²8Ñú Œ÷1J$de564f20-fe99-44a1-ae0f-447b3adf8f35
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ÌÑÚ±üÿÿÿÿ8Óú Œ÷1J$65af3d3b-1780-4aaa-b0d6-125499f313dd
+m	java:S106"+Replace this use of System.out by a logger.(»À€¯8Ôú Œ÷1J$2ed63096-9913-47b4-80a3-b36a56872f93

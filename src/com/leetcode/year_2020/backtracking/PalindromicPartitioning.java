@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * https://leetcode.com/problems/palindrome-partitioning/description/
+ *
  * @author neeraj on 10/04/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -11,7 +13,8 @@ import java.util.List;
 public class PalindromicPartitioning {
 
     public static void main(String[] args) {
-        System.out.println(partition("aab"));
+//        System.out.println(partition("aab"));
+        System.out.println(partition("aabb"));
     }
 
     public static List<List<String>> partition(String s) {

@@ -1,0 +1,24 @@
+
+˜
+java:S1104
+"UMake rowNumber a static final constant or non-public and provide accessors if needed.(¬œ÷8¬‘ë†û1J$18adbe0c-843b-4836-9248-94e65fd63284
+˜
+java:S1104"UMake colNumber a static final constant or non-public and provide accessors if needed.(‚›õì8¬‘ë†û1J$85bf82d2-90d2-4e8d-912d-27404f0b6508
+r
+java:S1444
+"/Make this "public static rowNumber" field final(¬œ÷8­‘ë†û1J$fabcd21d-f4b5-4413-b1c8-4a1a04475e5f
+r
+java:S1444"/Make this "public static colNumber" field final(‚›õì8­‘ë†û1J$e61b500a-4c21-4d41-be4a-7962f8980404
+k
+java:S5411>"(Use a primitive boolean expression here.(ËÕÕ—8®‘ë†û1J$1018adc4-955c-4eaa-b758-dcc4c3b3b694
+`
+java:S2386
+"Make this member "protected".(¬œ÷8ı‘ë†û1J$b2b658df-3dc5-4212-b2ff-75e358ef4fa2
+`
+java:S2386"Make this member "protected".(‚›õì8ı‘ë†û1J$73e38770-75df-4ebd-8123-536a2c4d2a27
+t
+java:S1197",Move the array designators [][] to the type.(¡‘ñÕşÿÿÿÿ8‚’ë†û1J$9904c119-6cc1-412e-aac2-128b1797cdd7
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ÑÃšÀøÿÿÿÿ8ƒ’ë†û1J$2998723a-f4c9-4559-97c2-487fdb545be1
+m	java:S106*"+Replace this use of System.out by a logger.(ç‡§”8Š’ë†û1J$6916a1cc-4f74-4492-bd05-346e34b956a0
+r	java:S106-"+Replace this use of System.out by a logger.(×ÕŒÊşÿÿÿÿ8‘’ë†û1J$7cae2bbd-7c6f-4de4-ac1b-4a261bba9696
+r	java:S106I"+Replace this use of System.out by a logger.(¿ğÖÎøÿÿÿÿ8Ûïî†û1J$fca660ee-f608-46c0-8176-b301c37f3b91

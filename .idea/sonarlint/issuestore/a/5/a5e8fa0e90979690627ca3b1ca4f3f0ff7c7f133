@@ -1,0 +1,16 @@
+
+”	java:S135y"YReduce the total number of break and continue statements in this loop to use at most one.(¶ô××J$5623816d-b6bb-47df-bf02-d7b9b8867269
+‹	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãëñ9J$c53b6bf7-fab4-44e9-936f-63521805be83
+Œ	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èèñ•J$69cc7bd4-ab2d-4731-96b0-add94f6e9033
+}
+java:S4973?"<Strings and Boxed types should be compared using "equals()".(‘àÜ¶ûÿÿÿÿJ$11217d69-3e03-46cd-84ab-83b92ff1c6de
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êƒì‚ûÿÿÿÿJ$ad8eac36-aa7e-4958-9c13-d1b0b96f8caa
+‘
+java:S1149l"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿJ$fccaef20-d483-44d5-9527-5760630017df
+k	java:S106&"+Replace this use of System.out by a logger.(ÈúõÛúÿÿÿÿJ$30a09cb8-8fa9-43b2-b668-3a54b3644197
+v	java:S125"<This block of commented-out lines of code should be removed.(÷Û&J$56d56f6f-be2f-4fbc-ae79-630df4043fc6
+k	java:S106*"+Replace this use of System.out by a logger.(ÈúõÛúÿÿÿÿJ$ee791d4a-74af-4aef-90d8-2df8c6c5805e
+k	java:S106-"+Replace this use of System.out by a logger.(ÈúõÛúÿÿÿÿJ$10dd3ab6-de0c-4ede-8709-d582ee0f8e41
+k	java:S1060"+Replace this use of System.out by a logger.(ÈúõÛúÿÿÿÿJ$20fe988d-866b-47a3-9217-f84d1d691e12
+“
+java:S3776`"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(Æ›É¸ùÿÿÿÿJ$43c957b2-08c2-403a-aec6-4cdcc683f724
