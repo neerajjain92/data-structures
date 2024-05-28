@@ -5,127 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Solving August leetcode 2021 challenge">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/HandOfStraights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LargestNumberWithKSwaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/NDigitNumberWithIncreasingDigit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/NumberOfDistinctIsland.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/ShortestPathInDirectedAcyclicGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/DeleteEveryAlternativeNodeInCircularList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/FlattenMultiLevelLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/LargestBSTBinaryTreeNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/MaximumSumBSTInBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bca228ca15756675d10a7ba6dcb0d7e066c9e55" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bca228ca15756675d10a7ba6dcb0d7e066c9e55" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cd4575b83b651958f2be26659328c3d663f1b3f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cd4575b83b651958f2be26659328c3d663f1b3f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/3724b029773a08cf894be9dca4e5d40a1d46b569" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/3724b029773a08cf894be9dca4e5d40a1d46b569" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dd065ec14e460d67c9b20f1a9f4101f28a37d9a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dd065ec14e460d67c9b20f1a9f4101f28a37d9a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5bad06b056383567e8d2911b6f5f0afde6f76ae9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5bad06b056383567e8d2911b6f5f0afde6f76ae9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a51629d0e9c1e55ade102b61e3ee7013905ffb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a51629d0e9c1e55ade102b61e3ee7013905ffb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9ffbc3978b2553558f50ed0b96776f6c3a6a5fc4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9ffbc3978b2553558f50ed0b96776f6c3a6a5fc4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/StackWithFindMiddle$DLL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/company/amazon/StackWithFindMiddle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/graph/NumberOfIsland.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/graph/NumberOfIsland.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/mustDoInterviewQuestions/string/PermutationOfString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$HorizontalDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$HorizontalDistance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$TopViewNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil$TopViewNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/datastructures/tree/binaryTree/BinaryTreeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/DoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/DoublyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/LinkedListUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/geeksforgeeks/linkedlist/LinkedListUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/backtracking/GenerateAllPossible_PowerSets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/linkedlist/LinkedListUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/problems/medium/FloodFill_733.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/problems/medium/FloodFill_733.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/tree/RecoverBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/tree/RecoverBinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/BrokenCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/BrokenCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/GasStation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/GasStation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LemonadeChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LemonadeChange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString$Pair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/LongestHappyString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/PatchingArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3$MyCalendarThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3$MyCalendarThree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/ImplementLFUCache$LFUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/ImplementLFUCache$LFUCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/LRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/LRUCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/MinStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AdditiveNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AdditiveNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/ArrayPermutations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/ArrayPermutations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CombinationSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CombinationSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CustomSortString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/CustomSortString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromePermutation_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromePermutation_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromicPartitioning.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/PalindromicPartitioning.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/Permutations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/Permutations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite$COLOR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite$COLOR.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/IsGraphBipartite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates$Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates$Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$ActionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo$ActionType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/TextEditorUndoRedo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/ValidParenthesisString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/stack/ValidParenthesisString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/tree/EqualTreePartition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data-structures/com/leetcode/year_2020/tree/EqualTreePartition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazon/ExtractLeavesFromBinaryTreeToDoublyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amazon/StackWithFindMiddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/StackWithFindMiddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/graph/NumberOfIsland.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/string/PermutationOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PermutationOfString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/tree/binaryTree/BinaryTreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/tree/binaryTree/BinaryTreeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/DoublyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/linkedlist/LinkedListUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/ComputeAllValidIPAddressFromRawIPString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/GenerateAllPossible_PowerSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/GenerateAllPossible_PowerSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/linkedlist/LinkedListUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FloodFill_733.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FloodFill_733.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/tree/RecoverBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/tree/RecoverBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/BrokenCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/DivideArrayInKConsecitiveIntegers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LemonadeChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/LongestHappyString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/PatchingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/PatchingArrayHard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/ReducedTheArraySizeToHalf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/ImplementLFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/ImplementLFUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CustomSortString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CustomSortString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/GenerateAllSubsetsofSizeK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/MatchAPatternAndStringWithoutRegularExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromePermutation_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/Permutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/RemoveInvalidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/IsGraphBipartite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/DetectADirectedGraphHasACycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/cycle_detection/FindEventualSafeStates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/AllNodesDistance_K_inBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/AllNodesDistance_K_inBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/AlienDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/TextEditorUndoRedo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/TextEditorUndoRedo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/ValidParenthesisString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/ValidParenthesisString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/EqualTreePartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/EqualTreePartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/ShortestPathInDirectedAcyclicGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/topologicalSort/ShortestPathInDirectedAcyclicGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,11 +36,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -217,7 +98,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AlienDictionary">
+  <component name="RunManager" selected="Application.ShortestPathInDirectedAcyclicGraph">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -281,12 +162,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfDistinctIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.dfs.NumberOfDistinctIsland" />
+    <configuration name="ShortestPathInDirectedAcyclicGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.topologicalSort.ShortestPathInDirectedAcyclicGraph" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.dfs.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.topologicalSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -296,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShortestPathInDirectedAcyclicGraph" />
         <item itemvalue="Application.AlienDictionary" />
         <item itemvalue="Application.FindEventualSafeStates" />
         <item itemvalue="Application.DetectADirectedGraphHasACycle" />
         <item itemvalue="Application.IsGraphBipartite" />
-        <item itemvalue="Application.NumberOfDistinctIsland" />
       </list>
     </recent_temporary>
   </component>
