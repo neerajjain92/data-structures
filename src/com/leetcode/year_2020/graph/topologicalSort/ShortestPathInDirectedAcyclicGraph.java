@@ -27,6 +27,7 @@ public class ShortestPathInDirectedAcyclicGraph {
         int vertex;
         int weight;
 
+        
         public Pair(int vertex, int weight) {
             this.vertex = vertex;
             this.weight = weight;
