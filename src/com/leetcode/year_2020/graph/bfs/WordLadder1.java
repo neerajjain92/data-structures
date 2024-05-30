@@ -2,15 +2,7 @@ package com.leetcode.year_2020.graph.bfs;
 
 import com.util.LogUtil;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/word-ladder/submissions/
@@ -21,7 +13,7 @@ import java.util.Set;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-public class StringTransformations {
+public class WordLadder1 {
 
     public static void main(String[] args) {
         LogUtil.logIt("Minimum Number of Transformation required for dog to lot is : " +
@@ -129,21 +121,16 @@ public class StringTransformations {
          * So we can basically try out 26 times [A-Z] changing each character at a time. Since we want minimum number
          * of transformation to achieve endWord,so we will do BFS.
          */
-        Queue<String> queue = new LinkedList<>();
+        Queue<Node> queue = new LinkedList<>();
         Set<String> visited = new HashSet<>();
 
-        queue.add(beginWord);
+        queue.add(new Node(beginWord, 1));
         visited.add(beginWord);
-        int currentLevel = 1;
-        int itemsLeftToProcessInLevel = 1; // For BFS
-        // For Word DOG we have 3 levels(indexed 0 basis)
-        // D | O | G
-        // 0   1   2
         while (!queue.isEmpty()) {
-            String intermediateWord = queue.poll();
-            System.out.print(intermediateWord + " ---> ");
-            for (int i = 0; i < intermediateWord.length(); i++) {
-                char[] charArr = intermediateWord.toCharArray();
+            Node intermediateWord = queue.poll();
+            System.out.print(intermediateWord.val + " ---> ");
+            for (int i = 0; i < intermediateWord.val.length(); i++) {
+                char[] charArr = intermediateWord.val.toCharArray();
 
                 for (char character = 'a'; character <= 'z'; character++) {
                     charArr[i] = character;
@@ -151,21 +138,14 @@ public class StringTransformations {
                     String transformedWord = new String(charArr);
                     if (transformedWord.equals(endWord)) {
                         System.out.println(transformedWord);
-                        return currentLevel + 1; // Since we are early exiting and hence increasing as we want to include destination also in the transformation sequence.
+                        return intermediateWord.distance + 1; // Since we are early exiting and hence increasing as we want to include destination also in the transformation sequence.
                     }
 
                     if (wordList.contains(transformedWord) && !visited.contains(transformedWord)) {
-                        queue.add(transformedWord);
+                        queue.add(new Node(transformedWord, intermediateWord.distance + 1));
                         visited.add(transformedWord);
                     }
                 }
-            }
-
-            itemsLeftToProcessInLevel--;
-
-            if (itemsLeftToProcessInLevel == 0) {
-                currentLevel++;
-                itemsLeftToProcessInLevel = queue.size();
             }
         }
         return 0;
