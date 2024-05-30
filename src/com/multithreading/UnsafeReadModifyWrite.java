@@ -1,7 +1,5 @@
 package com.multithreading;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 public class UnsafeReadModifyWrite {
     private int number;
 

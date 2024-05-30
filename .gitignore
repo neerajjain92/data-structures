@@ -193,3 +193,5 @@ fabric.properties
 .idea/
 
 # End of https://www.gitignore.io/api/eclipse,angular,intellij,intellij+all
+
+./out
