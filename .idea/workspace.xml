@@ -7,6 +7,8 @@
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Solving August leetcode 2021 challenge">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/DijkastraAlgorithmUsingPriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/NumberOfWaysToArriveDestinationDijkastra.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumberOfWaysToArriveDestinationDijkastra">
+  <component name="RunManager" selected="Application.PrimsAlgorithm">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -110,25 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheapestFlightsWithinKStops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.CheapestFlightsWithinKStops" />
+    <configuration name="DistanceFromSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.bellmen_ford.DistanceFromSource" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DijkastraAlgorithmUsingPriorityQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.bfs.DijkastraAlgorithmUsingPriorityQueue" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.bfs.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.bellmen_ford.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,11 +139,11 @@
       </method>
     </configuration>
     <configuration name="NumberOfWaysToArriveDestinationDijkastra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.bfs.NumberOfWaysToArriveDestinationDijkastra" />
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.djkastra.NumberOfWaysToArriveDestinationDijkastra" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.bfs.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.djkastra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,12 +151,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PathWithMinimumEffort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.bfs.PathWithMinimumEffort" />
+    <configuration name="PrimsAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.minimum_spanning_tree.PrimsAlgorithm" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.bfs.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.minimum_spanning_tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmallestNeighbourAtThresholdDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.djkastra.SmallestNeighbourAtThresholdDistance" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.djkastra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrimsAlgorithm" />
+        <item itemvalue="Application.SmallestNeighbourAtThresholdDistance" />
+        <item itemvalue="Application.DistanceFromSource" />
         <item itemvalue="Application.NumberOfWaysToArriveDestinationDijkastra" />
         <item itemvalue="Application.MinimumMovesToReachTargetScore" />
-        <item itemvalue="Application.CheapestFlightsWithinKStops" />
-        <item itemvalue="Application.PathWithMinimumEffort" />
-        <item itemvalue="Application.DijkastraAlgorithmUsingPriorityQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -3478,7 +3480,7 @@
           <option name="timeStamp" value="1255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/DijkastraAlgorithmUsingPriorityQueue.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/djkastra/DijkastraAlgorithmUsingPriorityQueue.java</url>
           <line>60</line>
           <option name="timeStamp" value="1267" />
         </line-breakpoint>
@@ -3496,6 +3498,26 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/MinimumMovesToReachTargetScore.java</url>
           <line>20</line>
           <option name="timeStamp" value="1285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bellmen_ford/DistanceFromSource.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/djkastra/SmallestNeighbourAtThresholdDistance.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/djkastra/SmallestNeighbourAtThresholdDistance.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="1295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/minimum_spanning_tree/PrimsAlgorithm.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1296" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>

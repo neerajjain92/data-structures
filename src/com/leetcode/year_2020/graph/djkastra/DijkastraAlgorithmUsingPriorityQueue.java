@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.graph.bfs;
+package com.leetcode.year_2020.graph.djkastra;
 
 import com.util.LogUtil;
 

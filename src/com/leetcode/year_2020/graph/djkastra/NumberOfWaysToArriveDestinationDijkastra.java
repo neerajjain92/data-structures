@@ -1,4 +1,4 @@
-package com.leetcode.year_2020.graph.bfs;
+package com.leetcode.year_2020.graph.djkastra;
 
 import java.util.*;
 
@@ -48,6 +48,6 @@ public class NumberOfWaysToArriveDestinationDijkastra {
                 }
             }
         }
-        return (ways[n - 1] % mod);
+        return (int) (ways[n - 1] % mod);
     }
 }
