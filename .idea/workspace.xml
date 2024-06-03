@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Solving August leetcode 2021 challenge">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/DisjointSetImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MakingALargeIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/NumberOfProvince.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/DijkastraAlgorithmUsingPriorityQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/NumberOfWaysToArriveDestinationDijkastra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/NumberOfIslands_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/NumberOfIslands_2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +103,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PrimsAlgorithm">
+  <component name="RunManager" selected="Application.MakingALargeIsland">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -112,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DistanceFromSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.bellmen_ford.DistanceFromSource" />
+    <configuration name="AccountsMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.AccountsMerge" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.bellmen_ford.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumMovesToReachTargetScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.MinimumMovesToReachTargetScore" />
+    <configuration name="DisjointSetImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.DisjointSetImplementation" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfWaysToArriveDestinationDijkastra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.djkastra.NumberOfWaysToArriveDestinationDijkastra" />
+    <configuration name="MakingALargeIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.MakingALargeIsland" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.djkastra.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimsAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.minimum_spanning_tree.PrimsAlgorithm" />
+    <configuration name="NumberOfIslands_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.NumberOfIslands_2" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.minimum_spanning_tree.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmallestNeighbourAtThresholdDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.djkastra.SmallestNeighbourAtThresholdDistance" />
+    <configuration name="NumberOfProvince" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.NumberOfProvince" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.djkastra.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrimsAlgorithm" />
-        <item itemvalue="Application.SmallestNeighbourAtThresholdDistance" />
-        <item itemvalue="Application.DistanceFromSource" />
-        <item itemvalue="Application.NumberOfWaysToArriveDestinationDijkastra" />
-        <item itemvalue="Application.MinimumMovesToReachTargetScore" />
+        <item itemvalue="Application.MakingALargeIsland" />
+        <item itemvalue="Application.NumberOfIslands_2" />
+        <item itemvalue="Application.NumberOfProvince" />
+        <item itemvalue="Application.AccountsMerge" />
+        <item itemvalue="Application.DisjointSetImplementation" />
       </list>
     </recent_temporary>
   </component>
@@ -1533,7 +1536,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
-          <line>105</line>
+          <line>114</line>
           <option name="timeStamp" value="487" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2154,12 +2157,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
-          <line>64</line>
+          <line>73</line>
           <option name="timeStamp" value="771" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
-          <line>61</line>
+          <line>70</line>
           <option name="timeStamp" value="772" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2732,12 +2735,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
-          <line>84</line>
+          <line>93</line>
           <option name="timeStamp" value="960" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java</url>
-          <line>82</line>
+          <line>91</line>
           <option name="timeStamp" value="961" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3518,6 +3521,21 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/minimum_spanning_tree/PrimsAlgorithm.java</url>
           <line>38</line>
           <option name="timeStamp" value="1296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MakingALargeIsland.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MakingALargeIsland.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="1299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MakingALargeIsland.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
