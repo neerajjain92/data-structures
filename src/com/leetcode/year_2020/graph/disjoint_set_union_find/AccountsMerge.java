@@ -23,6 +23,15 @@ public class AccountsMerge {
                 {"David", "2", "3"},
                 {"David", "1", "2"}
         });
+
+        solveIt(new String[][]{
+                {"John", "j1@com", "j2@com", "j3@com"},
+                {"John", "j4@com"},
+                {"Raj", "r1@com", "r2@com"},
+                {"John", "j1@com", "j5@com"},
+                {"Raj", "r2@com", "r3@com"},
+                {"Marry", "m1@com"},
+        });
     }
 
     public static void solveIt(String[][] accounts) {
