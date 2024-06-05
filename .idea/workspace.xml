@@ -1530,7 +1530,7 @@
           <option name="timeStamp" value="482" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MostStonesRemovedwithSameRoworColumn.java</url>
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MostStonesRemovedWithSameRowOrColumn.java</url>
           <line>124</line>
           <option name="timeStamp" value="483" />
         </line-breakpoint>
