@@ -1,14 +1,16 @@
 package com.leetcode.year_2020.graph.disjoint_set_union_find;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author neeraj on 30/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
-public class MostStonesRemovedwithSameRoworColumn {
+public class MostStonesRemovedWithSameRowOrColumn {
 
     public static void main(String[] args) {
         System.out.println(removeStones(new int[][]{
@@ -21,6 +23,16 @@ public class MostStonesRemovedwithSameRoworColumn {
                 {0, 0}
         }));
 
+        System.out.println(removeStonesV1(new int[][]{
+                {0, 0}, {0, 1}, {1, 0}, {1, 2}, {2, 1}, {2, 2}
+        }));
+        System.out.println(removeStonesV1(new int[][]{
+                {0, 0}, {0, 2}, {1, 1}, {2, 0}, {2, 2}
+        }));
+        System.out.println(removeStonesV1(new int[][]{
+                {0, 0}
+        }));
+
         System.out.println(removeStonesOptimal_O_N_solution(new int[][]{
                 {0, 0}, {0, 1}, {1, 0}, {1, 2}, {2, 1}, {2, 2}
         }));
@@ -30,6 +42,27 @@ public class MostStonesRemovedwithSameRoworColumn {
         System.out.println(removeStonesOptimal_O_N_solution(new int[][]{
                 {0, 0}
         }));
+    }
+
+    public static int removeStonesV1(int[][] stones) {
+        DisjointSetImplementation disjointSet = new DisjointSetImplementation(stones.length);
+
+        // This time we will be using just numeric(i) as the uniqueId
+        for (int i = 0; i < stones.length; i++) {
+            int[] stoneAtI = stones[i];
+            for (int j = 0; j < i; j++) {
+                int[] stoneAtJ = stones[j];
+                // If either sharing row or column, then put them in same group
+                if (stoneAtI[0] == stoneAtJ[0] || stoneAtI[1] == stoneAtJ[1]) {
+                    disjointSet.unionBySize(i, j);
+                }
+            }
+        }
+        Set<Integer> parents = new HashSet<>();
+        for (int i = 0; i < stones.length; i++) {
+            parents.add(disjointSet.findUltimateParent(i));
+        }
+        return stones.length - parents.size();
     }
 
     public static int removeStonesOptimal_O_N_solution(int[][] stones) {
