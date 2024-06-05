@@ -380,3 +380,7 @@ Wsrc/com/leetcode/year_2020/graph/disjoint_set_union_find/DisjointSetImplementat
 Nsrc/com/leetcode/year_2020/graph/disjoint_set_union_find/NumberOfProvince.java,e/e/ee2c2ae381b6bcf638b96ff86393c4a55fa84b8d
 €
 Psrc/com/leetcode/year_2020/graph/disjoint_set_union_find/MakingALargeIsland.java,3/8/384c66372c5754572589e27b29e384d55d8a8c33
+x
+Hsrc/com/leetcode/year_2020/binary_search/SingleElementInSortedArray.java,7/d/7dd21701f53cd61d79b2f924d6778aa88b4ab233
+|
+Lsrc/com/leetcode/year_2020/binary_search/MinimumNumberDaysMakeMBouquets.java,6/5/65006c279160c40c841baf1460fdbc7413cf6556
