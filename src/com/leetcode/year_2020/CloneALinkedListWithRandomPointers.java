@@ -10,6 +10,8 @@ import java.util.Map;
  */
 public class CloneALinkedListWithRandomPointers {
 
+    static Map<RandomListNode, RandomListNode> OG_TO_CN;
+
     public static void main(String[] args) {
         RandomListNode head = new RandomListNode(1);
         RandomListNode head_2 = new RandomListNode(2);
@@ -30,6 +32,9 @@ public class CloneALinkedListWithRandomPointers {
         head.printList(head);
         head = copyRandomListConstantSpace(head);
         head.printList(head);
+
+//        head = copyRandomListWithMap(head);
+//        head.printList(head);
 
     }
 
@@ -60,17 +65,17 @@ public class CloneALinkedListWithRandomPointers {
         // Now let's make the original list intact.
         curr = head;
         while (curr != null) {
-            if(clonedHead == null) { // This is our main head to the cloned copy.
+            if (clonedHead == null) { // This is our main head to the cloned copy.
                 clonedHead = curr.next;
             }
             RandomListNode clonedNode = curr.next;
             curr.next = curr.next.next;
-            if(curr.next != null) {
+            if (curr.next != null) {
                 clonedNode.next = curr.next.next;
             }
             curr = curr.next;
         }
-        return  clonedHead;
+        return clonedHead;
     }
 
     public static RandomListNode copyRandomList(RandomListNode head) {
@@ -98,5 +103,43 @@ public class CloneALinkedListWithRandomPointers {
         }
         // Now since we have the map
         return clonedCopy.next;
+    }
+
+    private static RandomListNode copyRandomListWithMap(RandomListNode head) {
+        RandomListNode t1 = head;
+        RandomListNode dummyHead = new RandomListNode(-1);
+        RandomListNode t2 = dummyHead;
+        OG_TO_CN = new HashMap<>();
+        while (t1 != null) {
+            boolean containsT1 = contains(t1);
+            boolean hasRandom = t1.random != null;
+            RandomListNode clonedRandomListNode = containsT1 ? get(t1) : new RandomListNode(t1.val);
+
+            t2.next = clonedRandomListNode;
+            put(t1, clonedRandomListNode);
+
+            boolean containsT1_RANDOM = contains(t1.random);
+            RandomListNode randomRandomListNode = containsT1_RANDOM ? get(t1.random) : (hasRandom ? new RandomListNode(t1.random.val) : null);
+            clonedRandomListNode.random = randomRandomListNode;
+
+            if (hasRandom) {
+                put(t1.random, randomRandomListNode);
+            }
+            t1 = t1.next;
+            t2 = t2.next;
+        }
+        return dummyHead.next;
+    }
+
+    private static boolean contains(RandomListNode node) {
+        return OG_TO_CN.containsKey(node);
+    }
+
+    private static RandomListNode get(RandomListNode node) {
+        return OG_TO_CN.get(node);
+    }
+
+    private static void put(RandomListNode node1, RandomListNode node2) {
+        OG_TO_CN.putIfAbsent(node1, node2);
     }
 }

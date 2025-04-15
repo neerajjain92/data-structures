@@ -1,5 +1,8 @@
 package com.leetcode.problems.medium;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @author neeraj on 15/09/19
  * Copyright (c) 2019, data-structures.
@@ -31,6 +34,8 @@ public class FindPeakElement_162 {
             if ((mid == nums.length -1) || (nums[mid] < nums[mid-1])) {
                 return binarySearch(nums, low, mid-1);
             }
+            Queue<Integer> queue = new LinkedList<>();
+
         }
         return -1;
     }

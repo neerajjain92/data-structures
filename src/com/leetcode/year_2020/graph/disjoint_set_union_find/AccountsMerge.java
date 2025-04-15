@@ -7,12 +7,13 @@ import java.util.*;
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
+@SuppressWarnings("GrazieInspection")
 public class AccountsMerge {
 
     public static void main(String[] args) {
         solveIt(new String[][]{
                 {"John", "johnsmith@mail.com", "john00@mail.com"},
-                {"John", "john_newyork@mail.com", "johnnybravo@mail.com"},
+                {"John", "johnnybravo@mail.com"},
                 {"John", "johnsmith@mail.com", "john_newyork@mail.com"},
                 {"Mary", "mary@mail.com"}
         });
@@ -39,95 +40,69 @@ public class AccountsMerge {
         for (String[] account : accounts) {
             accountsList.add(Arrays.asList(account));
         }
-//        System.out.println(accountsMergeUsingDFS(accountsList));
-        System.out.println(accountsMerge(accountsList));
+        System.out.println(accountsMergeUsingDFS(accountsList));
+//        System.out.println(accountsMerge(accountsList));
     }
 
     public static List<List<String>> accountsMerge(List<List<String>> accounts) {
-        /**
-         * What we can do is to make first emailId as the leader of that whole group
-         *
-         * a b c  //  b,c have parent a
-         * d e f  // e,f have parent d
-         * g a d  // abc and def have parent g
-         *
-         * parents populated after parsing 1st account: a b c
-         * a->a
-         * b->a
-         * c->a
-         *
-         * parents populated after parsing 2nd account: d e f
-         * d->d
-         * e->d
-         * f->d
-         *
-         * parents populated after parsing 3rd account: g a d
-         * g->g
-         * a->g
-         * d->g
-         */
-        Map<String, String> emailIdOwner = new HashMap<>();// <johnsmith@mail.com: John> , <mary@mail.com,Mary>
-        Map<String, String> emailIdLeaders = new HashMap<>(); // <Key, Value> key as the emailId and Value is respective leader.
-        Map<String, TreeSet<String>> leaderWithItsGroupEmails = new HashMap<>();
+        final Map<String, String> primaryEmailMap = new HashMap<>(); // Also known as leader
+        final Map<String, String> usernameMap = new HashMap<>();
+        final Map<String, TreeSet<String>> mergedAccount = new HashMap<>();
 
-        // Initially all emailIds are their own owner
+        // Initially every email's primary email is themself.
+        // and all emails in the row should point to their respective username[i.e 0th entry].
         for (List<String> account : accounts) {
+            final String username = account.get(0);
+
             for (int i = 1; i < account.size(); i++) {
-                emailIdLeaders.put(account.get(i), account.get(i));
-                emailIdOwner.put(account.get(i), account.get(0));
+                primaryEmailMap.put(account.get(i), account.get(i));
+                usernameMap.put(account.get(i), username);
             }
         }
 
-        // Now we will change the leader to the first person in the group
+        // Now all emails in the account should mark first email as their primaryEmail
         for (List<String> account : accounts) {
-            String leaderOfAccount = findLeader(account.get(1), emailIdLeaders);
+            final String primaryEmail = findPrimaryEmail(account.get(1), primaryEmailMap);
 
-            // Now we will change all other emailId's owner to this first leader of account
             for (int i = 2; i < account.size(); i++) {
-                emailIdLeaders.put(findLeader(account.get(i), emailIdLeaders), leaderOfAccount);
+                primaryEmailMap.put(findPrimaryEmail(account.get(i), primaryEmailMap), primaryEmail);
             }
         }
 
-        // Now we just have to do union.
+        // Now let's do our final merging of account(i.e Union)
         for (List<String> account : accounts) {
-            // This command of find Leader, will go all the way to top to find out the actual leader.
-            String leaderOfAccount = findLeader(account.get(1), emailIdLeaders);
+            final String primaryEmail = findPrimaryEmail(account.get(1), primaryEmailMap);
 
-            if (!leaderWithItsGroupEmails.containsKey(leaderOfAccount)) {
-                leaderWithItsGroupEmails.put(leaderOfAccount, new TreeSet<>());
-            }
+            mergedAccount.putIfAbsent(primaryEmail, new TreeSet<>());
 
             for (int i = 1; i < account.size(); i++) {
-                leaderWithItsGroupEmails.get(leaderOfAccount).add(account.get(i));
+                mergedAccount.get(primaryEmail).add(account.get(i));
             }
         }
 
-        // Now since output should be in format of
-        // LeaderName ----> EmailId's
-        List<List<String>> mergedAccounts = new ArrayList<>();
-        for (String leaderEmail : leaderWithItsGroupEmails.keySet()) {
-            String nameOfLeader = emailIdOwner.get(leaderEmail);
-            List<String> account = new ArrayList<>(leaderWithItsGroupEmails.get(leaderEmail));
-            account.add(0, nameOfLeader);
-            mergedAccounts.add(account);
+        final List<List<String>> mergedAccountWithUsername = new ArrayList<>();
+        // Finally we have all the merged account and we just have to put respective username in front of them
+        for (String primaryEmail : mergedAccount.keySet()) {
+            final List<String> account = new ArrayList<>(mergedAccount.get(primaryEmail));
+            account.add(0, usernameMap.get(primaryEmail)); // Get username of primary email
+            mergedAccountWithUsername.add(account);
         }
-        return mergedAccounts;
+        return mergedAccountWithUsername;
     }
 
-    private static String findLeader(String email, Map<String, String> emailIdLeaders) {
-        String leader = emailIdLeaders.get(email);
-
-        if (leader != email) { // Path Compression.
-            emailIdLeaders.put(email, findLeader(leader, emailIdLeaders));
-            leader = emailIdLeaders.get(email);
+    public static String findPrimaryEmail(final String email, final Map<String, String> primaryEmailMap) {
+        final String primaryEmail = primaryEmailMap.get(email);
+        if (!primaryEmail.equals(email)) {
+            primaryEmailMap.put(email, findPrimaryEmail(primaryEmail, primaryEmailMap));
         }
-        return leader;
+        return primaryEmailMap.get(email);
     }
+
 
     public static List<List<String>> accountsMergeUsingDFS(List<List<String>> accounts) {
         // Here we need 2 things
         // 1st edge between every two adjacent emailNodes.
-        /**
+        /*
          * Then we will do the DFS and visits all nodes
          * All related accounts will be visited in each iteration of DFS.
          */

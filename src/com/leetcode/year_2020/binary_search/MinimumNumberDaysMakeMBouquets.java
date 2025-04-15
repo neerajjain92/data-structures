@@ -35,8 +35,8 @@ public class MinimumNumberDaysMakeMBouquets {
     private static boolean canMakeMBoquets(int[] bloomDay, int day, int m, int k) {
         int count = 0;
         int noOfBoquet = 0;
-        for (int i = 0; i < bloomDay.length; i++) {
-            if (bloomDay[i] <= day) {
+        for (int j : bloomDay) {
+            if (j <= day) {
                 count++;
             } else {
                 noOfBoquet += count / k;

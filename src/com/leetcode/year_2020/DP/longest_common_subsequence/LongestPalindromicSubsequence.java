@@ -1,13 +1,21 @@
 package com.leetcode.year_2020.DP.longest_common_subsequence;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
+ * This same can be used to solve https://leetcode.com/problems/valid-palindrome-iii/description/
+ * 1216 Valid Palindrome III
+ *
  * @author neeraj on 08/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
  */
+@SuppressWarnings("JavadocLinkAsPlainText")
 public class LongestPalindromicSubsequence {
+
+    static int[][] cache; // Memorization Matrix.
 
     public static void main(String[] args) {
         System.out.println(longestPalindromeSubseqUsingLCS("bbbab"));
@@ -16,9 +24,12 @@ public class LongestPalindromicSubsequence {
         System.out.println(longestPalindromeSubseqUsingLCS("abcd"));
         System.out.println(longestPalindromeSubseqUsingLCS("aab"));
         System.out.println(longestPalindromeSubseqUsingLCS("aaaa"));
-    }
 
-    static int[][] cache; // Memorization Matrix.
+        System.out.println("Is Valid Palindrome abcdeca with k=2 ?" + isValidPalindrome("abcdeca", 2));
+        System.out.println("Is Valid Palindrome abcdeca with k=1 ?" + isValidPalindrome("abcdeca", 1));
+        System.out.println("Is Valid Palindrome abcdeca with k=2 ?" + isValidPalindrome("abbababa", 1));
+        System.out.println("Is Valid Palindrome abcdeca with k=0 ?" + isValidPalindrome("abbababa", 0));
+    }
 
     public static int longestPalindromeSubseqUsingLCS(String s) {
         /**
@@ -56,6 +67,7 @@ public class LongestPalindromicSubsequence {
         for (int[] row : cache) {
             Arrays.fill(row, -1);
         }
+
         return longestPalindromeSubseqUsingLCS(s.toCharArray(), new StringBuilder(s).reverse().toString().toCharArray(), s.length(), s.length());
     }
 
@@ -78,4 +90,38 @@ public class LongestPalindromicSubsequence {
                     longestPalindromeSubseqUsingLCS(X, Y, m, n - 1));
         }
     }
+
+    /**
+     * https://leetcode.ca/all/1216.html
+     * Given a string s and an integer k, return true if s is a k-palindrome.
+     * <p>
+     * A string is k-palindrome if it can be transformed into a palindrome by removing at most k characters from it.
+     * <p>
+     * If you notice carefully, All it wants basically is if we can somehow remove at most k items, can we convert this into palindrome
+     * Isn't it simply saying that if you can find out Longest Palindromic subsequence and then len(S) - len(LPS) <= k
+     * because if it's > k that means we had to skip more than k characters
+     */
+    public static boolean isValidPalindrome(String s, int k) {
+        cache = new int[s.length() + 1][s.length() + 1];
+
+        for (int[] row : cache) { // This is to basically memoize and figure out if we calculated the LPS of a particular combination
+            Arrays.fill(row, -1);
+        }
+
+        int lps = findLPS(s.toCharArray(), new StringBuilder(s).reverse().toString().toCharArray(), s.length(), s.length());
+        return s.length() - lps <= k;
+    }
+
+    private static int findLPS(char[] X, char[] Y, int m, int n) {
+        if (m == 0 || n == 0) return 0;
+        if (cache[m][n] > -1) return cache[m][n];
+
+        if (X[m - 1] == Y[n - 1]) {
+            return 1 + findLPS(X, Y, m - 1, n - 1);
+        } else {
+            return Math.max(findLPS(X, Y, m - 1, n), findLPS(X, Y, m, n - 1));
+        }
+    }
+
+
 }

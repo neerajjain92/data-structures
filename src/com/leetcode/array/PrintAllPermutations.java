@@ -20,7 +20,7 @@ public class PrintAllPermutations {
         permuteString("ABC");
 
         LogUtil.logIt("Permutation using Prefix and Suffix...........");
-        permute("", "ABC");
+        permute("", "ABCD");
     }
 
     private static void permute(String prefix, String suffix) {

@@ -2,8 +2,13 @@ package com.leetcode.year_2020.backtracking;
 
 import com.util.LogUtil;
 
+import java.util.Arrays;
+
 /**
  * https://www.geeksforgeeks.org/find-maximum-number-possible-by-doing-at-most-k-swaps/
+ * https://leetcode.com/problems/maximum-swap/description/
+ * <p>
+ * Leetcode 670. Maximum Swap
  * <p>
  * Given two positive integers M and K, find the maximum integer possible by doing at-most K swap operations on its digits.
  * <p>
@@ -37,7 +42,10 @@ import com.util.LogUtil;
  * Swap 9 with 8 so number becomes 999914281,
  * Swap 1 with 8 so number becomes 999984211
  */
+@SuppressWarnings("GrazieInspection")
 public class LargestNumberWithKSwaps {
+
+    private static Integer MAX_NUM;
 
     public static void main(String[] args) {
         findMaximumNum("254".toCharArray(), 1);
@@ -47,9 +55,22 @@ public class LargestNumberWithKSwaps {
         findMaximumNum("76543".toCharArray(), 1);
         findMaximumNum("76543".toCharArray(), 2);
         findMaximumNum("129814999".toCharArray(), 4);
-    }
 
-    private static Integer MAX_NUM;
+        findMaximumWithOneSwap(9973);
+        findMaximumWithOneSwap(2736);
+        findMaximumWithOneSwap(254);
+        findMaximumWithOneSwap(68543);
+        findMaximumWithOneSwap(7599);
+        findMaximumWithOneSwap(76543);
+        findMaximumWithOneSwap(76543);
+        findMaximumWithOneSwap(129814999);
+
+        LogUtil.printArray(findSecondLargestNumber(new int[]{2, 7, 3, 6}));
+        LogUtil.printArray(findSecondLargestNumber(new int[]{1, 2, 1, 1, 1}));
+        LogUtil.printArray(findSecondLargestNumber(new int[]{5, 9, 7, 6, 6, 3, 9, 6, 6}));
+        LogUtil.printArray(findSecondLargestNumber(new int[]{1}));
+        LogUtil.printArray(findSecondLargestNumber(new int[]{1,1,1,1,1}));
+    }
 
     private static void findMaximumNum(char[] str, int k) {
         MAX_NUM = Integer.parseInt(new String(str));
@@ -134,5 +155,79 @@ public class LargestNumberWithKSwaps {
         char temp = str[start];
         str[start] = str[i];
         str[i] = temp;
+    }
+
+    public static int findMaximumWithOneSwap(int num) {
+        // We know that we can make a maximum number at any index by replacing it with the largest number on it's right side
+        // and that too, the last index of that largest number on the right
+        // Couple of examples
+        // 7 3 4 4
+        // We know that 7 shouldn't be swapped with anyone on the right because its the largest
+        // so for 3 we have 2 choices, either with 1st 4 which gives 7 4 3 4 or with last 4 which gives
+        // 7 4 4 3 (which is correct)
+        // So how about if we can maintain all digits last index of their occurrence while traversing
+        // and find that occurrence of max in the right and that sovles the problem
+        // For Iterating we need O(N) time complexity but for every ith number we have to go from right
+        // to left to find largest index but good thing is that information can be kept in just
+        // 10 size array (as digits can just be 0-9) so that gives O(N) * O(10) ==> which is O(N) only drop the constant
+
+        int[] itemIndexes = new int[10];
+        Arrays.fill(itemIndexes, -1); // -1 to prove the number doesn't exist
+        String numStr = String.valueOf(num);
+        char[] charArray = numStr.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            char c = charArray[i];
+            itemIndexes[c - '0'] = i;
+        }
+
+        // Now for every i we find max in right
+        for (int i = 0; i < charArray.length; i++) {
+            int maxIndexInRight = findMaxInRight(itemIndexes, charArray[i] - '0', i);
+            if (maxIndexInRight != -1) {
+                swap(charArray, i, maxIndexInRight);
+                break;
+            }
+        }
+        System.out.println(Integer.parseInt(new String(charArray)));
+        return Integer.parseInt(new String(charArray));
+    }
+
+    private static int findMaxInRight(int[] itemIndexes, int item, int itemIndex) {
+        for (int j = itemIndexes.length - 1; j > item; j--) {
+            if (itemIndexes[j] > itemIndex) {
+                // Check if the itemIndex is indeed on the right side of item, else it's of no use
+                // and will decrease the number instead of increasing it post swap
+                return itemIndexes[j];
+            }
+        }
+        return -1;
+    }
+
+    public static int[] findSecondLargestNumber(int[] nums) {
+        int[] itemFreq = new int[10];
+        for (int c : nums) {
+            itemFreq[c] += 1;
+        }
+        int[] largestNumber = new int[nums.length];
+        int counter = 0;
+        for (int i = 9; i >= 0; i--) {
+            while (itemFreq[i] > 0) {
+                itemFreq[i] -= 1;
+                largestNumber[counter++] = i;
+            }
+        }
+
+        // Now we have the largest number, we will just keep iterating and replace the 2 least significant item
+        // when they are different
+        for (int i = largestNumber.length - 1; i > 0; i--) {
+            // Why > 0 since we want to check the current number with previous one
+            if (largestNumber[i] != largestNumber[i - 1]) {
+                int temp = largestNumber[i];
+                largestNumber[i] = largestNumber[i - 1];
+                largestNumber[i - 1] = temp;
+                break;
+            }
+        }
+        return largestNumber;
     }
 }

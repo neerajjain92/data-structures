@@ -13,6 +13,10 @@ public class KthMissingPositiveNumber {
         System.out.println(findKthPositiveViaBinarySearch(new int[]{2, 3, 4, 7, 11}, 5));
         System.out.println(findKthPositiveViaBinarySearch(new int[]{1, 2, 3, 4}, 2));
         System.out.println(findKthPositiveViaBinarySearch(new int[]{1, 2}, 1));
+
+        System.out.println(findKthPositiveMissingNumber(new int[]{2, 3, 4, 7, 11}, 5));
+        System.out.println(findKthPositiveMissingNumber(new int[]{1, 2, 3, 4}, 2));
+        System.out.println(findKthPositiveMissingNumber(new int[]{1, 2}, 1));
     }
 
     public static int findKthPositive(int[] arr, int k) {
@@ -26,6 +30,46 @@ public class KthMissingPositiveNumber {
             if (k == 0) return i;
         }
         return 0;
+    }
+
+    public static int findKthPositiveMissingNumber(int[] arr, int k) {
+        int start = 0;
+        int end = arr.length-1;
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            int totalMissingAtThisPoint = arr[mid] - (mid+1);// ?? why +1 because  index is from 0 and numbers are from 1
+            if (totalMissingAtThisPoint < k) {
+                start = mid + 1;
+            } else  {
+                end = mid-1;
+            }
+        }
+//        int remainingMissing = end == -1 ? k : (k - (arr[end] - (end+1)));
+//        return end == -1 ? remainingMissing : arr[end]+remainingMissing;
+        // The above statement is  correct, we can just  simplify it using maths
+
+        // when we reach at opposite polarity
+        //                        [2, 3, 4, 7, 11] and we have to find k=5th missing number
+        // Ideally here should be [1, 2, 3, 4, 5] ----> when no numbers were missing, but we have missing
+        // missing at this point  [1, 1, 1, 3, 6]
+        // So now if we have to find 5th missing it will be between 3rd and 4th index
+        // So after the loop is completed end will be started at 3rd and start will be at 4th
+        //                      [2, 3, 4, 7, 11]
+        //                                ||  ||
+        //                                ||  ||
+        //                               end  start
+        //
+        // So at end we have 3 missing, how many more do we need ?  2 more missing which can be get from k - (exising missing)
+        // k - (arr[index] - (index+1)) // Explained above
+        // So missing at end = k -  arr[end]-(end+1)
+
+        // Now how do we get the right missing from end,  arr[end]+more , so replacing more
+        // arr[end] + (k - (arr[end] - (end+1)))
+        // arr[end] + k - arr[end] + end + 1
+        // k + end + 1;
+        // or end + 1 + k
+        return end+1+k;
     }
 
     public static int findKthPositiveViaBinarySearch(int[] arr, int k) {

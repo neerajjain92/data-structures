@@ -74,11 +74,11 @@ public class DisjointSetImplementation {
 
     public static void main(String[] args) {
         DisjointSetImplementation disjointSet = new DisjointSetImplementation(7);
-        disjointSet.unionBySize(1, 2);
-        disjointSet.unionBySize(2, 3);
-        disjointSet.unionBySize(4, 5);
-        disjointSet.unionBySize(6, 7);
-        disjointSet.unionBySize(5, 6);
+        disjointSet.unionByRank(1, 2);
+        disjointSet.unionByRank(2, 3);
+        disjointSet.unionByRank(4, 5);
+        disjointSet.unionByRank(6, 7);
+        disjointSet.unionByRank(5, 6);
 
         // if 3 and 7 same or not
         if (disjointSet.findUltimateParent(3) == disjointSet.findUltimateParent(7)) {
@@ -87,7 +87,7 @@ public class DisjointSetImplementation {
             System.out.println("NOT SAME"); // This should be the right answer
         }
 
-        disjointSet.unionBySize(3, 7);
+        disjointSet.unionByRank(3, 7);
         if (disjointSet.findUltimateParent(3) == disjointSet.findUltimateParent(7)) {
             System.out.println("SAME"); // This should be true this time
         }

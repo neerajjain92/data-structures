@@ -15,13 +15,13 @@ public class RandomListNode {
 
     public void printList(RandomListNode head) {
         RandomListNode curr = head;
-        int next = -1;
-        int random = -1;
+        String next = "-1";
+        String random = "-1";
         System.out.println("NODE |   NEXT  |   RANDOM");
         while (curr != null) {
-            next = curr.next != null ? curr.next.val : -1;
-            random = curr.random != null ? curr.random.val : -1;
-            System.out.print(curr.val + "    |    " + next + "    |    " + random);
+            next = curr.next != null ? curr.next.val+ " HashCode[ " + curr.next.hashCode() + " ]" : "-1";
+            random = curr.random != null ? curr.random.val + " HashCode[ " + curr.random.hashCode() + " ]" : "-1";
+            System.out.print(curr.val + " HashCode ["+ curr.hashCode() + " ]" + "    |    " + next + "    |    " + random);
             curr = curr.next;
             System.out.println();
         }

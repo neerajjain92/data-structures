@@ -26,16 +26,16 @@ import java.util.List;
 public class MergeIntervals {
 
     public static void main(String[] args) {
-        /**
-         *
-         * I/p : [[1,4],[2,3]]
-         * o/P: [[1,4]]
-         *
-         * I/p: [[2,3],[4,5],[6,7],[8,9],[1,10]]
-         * O/p: [[1,10]]
-         *
-         * I/p: [[1,4],[0,4]]
-         * O/p: [[0,4]]
+        /*
+
+          I/p : [[1,4],[2,3]]
+          o/P: [[1,4]]
+
+          I/p: [[2,3],[4,5],[6,7],[8,9],[1,10]]
+          O/p: [[1,10]]
+
+          I/p: [[1,4],[0,4]]
+          O/p: [[0,4]]
          */
         LogUtil.printMultiDimensionArray(merge(new int[][]{
                 {1, 4}, {2, 3}
@@ -68,7 +68,7 @@ public class MergeIntervals {
          *      can be entirely merged into [1, 10].
          *    OR extend the baseInterval (i.e. if we have I/p : [[2,4],[3,8]] So we'll extend the base [[2,8]]
          */
-        Arrays.sort(intervals, Comparator.comparingInt(A -> A[0]));
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
         int[] baseInterval = intervals[0];
         List<int[]> result = new ArrayList<>();
 
