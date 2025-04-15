@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented LongestRepeatingCharacterReplacement sliding window problem">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/dynamic_programming_on_trees/DiameterOfNArrayTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/BagOfTokens.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/BoatsToSavePeople.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/BreakAPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/BrokenCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumTimeToMakeRopeColorful.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/RandomPickIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/RandomPickWithWeights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/SimplifyPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/SimplifyPath2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/two_pointers/BuildingsWithOceanView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/EarliestFullBloom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintSubsetOfAlphabets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintSubsetOfAlphabets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/RecursivelyRemoveAllAdjacentDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/RecursivelyRemoveAllAdjacentDuplicates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/array/PrintAllPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/array/PrintAllPermutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FindPeakElement_162.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/FindPeakElement_162.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/CloneALinkedListWithRandomPointers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/CloneALinkedListWithRandomPointers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/LongestPalindromicSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/LongestPalindromicSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/ImplementLFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/ImplementLFUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/RandomListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/RandomListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LargestNumberWithKSwaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/LargestNumberWithKSwaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MinimumNumberDaysMakeMBouquets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MinimumNumberDaysMakeMBouquets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/AccountsMerge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/DisjointSetImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/DisjointSetImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MostStonesRemovedwithSameRoworColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/MostStonesRemovedWithSameRowOrColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +90,8 @@
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
     "Application.DiameterOfNArrayTree.executor": "Run",
     "Application.DisjointSetImplementation.executor": "Run",
+    "Application.EarliestFullBloom (1).executor": "Run",
+    "Application.EarliestFullBloom.executor": "Run",
     "Application.KthMissingPositiveNumber.executor": "Run",
     "Application.LargestNumberWithKSwaps.executor": "Run",
     "Application.LongestPalindromicSubsequence.executor": "Run",
@@ -166,7 +139,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MinimumTimeToMakeRopeColorful">
+  <component name="RunManager" selected="Application.EarliestFullBloom (1)">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -174,32 +147,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountsMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.graph.disjoint_set_union_find.AccountsMerge" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.graph.disjoint_set_union_find.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BagOfTokens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.BagOfTokens" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,6 +177,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EarliestFullBloom (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.EarliestFullBloom" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EarliestFullBloom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.EarliestFullBloom" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MinimumTimeToMakeRopeColorful" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MinimumTimeToMakeRopeColorful" />
       <module name="data-structures" />
@@ -245,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EarliestFullBloom (1)" />
+        <item itemvalue="Application.EarliestFullBloom" />
         <item itemvalue="Application.MinimumTimeToMakeRopeColorful" />
         <item itemvalue="Application.BrokenCalculator" />
         <item itemvalue="Application.BreakAPalindrome" />
-        <item itemvalue="Application.BagOfTokens" />
-        <item itemvalue="Application.AccountsMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -541,7 +514,7 @@
       <workItem from="1744196468571" duration="18000000" />
       <workItem from="1744368070136" duration="12747000" />
       <workItem from="1744485808687" duration="67000" />
-      <workItem from="1744697179443" duration="3266000" />
+      <workItem from="1744697179443" duration="5085000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -3661,6 +3634,11 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/BagOfTokens.java</url>
           <line>20</line>
           <option name="timeStamp" value="1331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/EarliestFullBloom.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="1334" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
