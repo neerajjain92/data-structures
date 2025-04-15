@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented EarliestFullBloom.java">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/LongestPalindromeByConcatenatingTwoLetterWord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/Maximum69Number.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added more greedy problems">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MaximumBagsWithFullCapacityOfRocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +140,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestPalindromeByConcatenatingTwoLetterWord">
+  <component name="RunManager" selected="Application.MaximumBagsWithFullCapacityOfRocks">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -149,19 +148,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BrokenCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.BrokenCalculator" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,6 +191,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MaximumBagsWithFullCapacityOfRocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MaximumBagsWithFullCapacityOfRocks" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MinimumTimeToMakeRopeColorful" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MinimumTimeToMakeRopeColorful" />
       <module name="data-structures" />
@@ -220,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaximumBagsWithFullCapacityOfRocks" />
         <item itemvalue="Application.LongestPalindromeByConcatenatingTwoLetterWord" />
         <item itemvalue="Application.EarliestFullBloom (1)" />
         <item itemvalue="Application.EarliestFullBloom" />
         <item itemvalue="Application.MinimumTimeToMakeRopeColorful" />
-        <item itemvalue="Application.BrokenCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -516,7 +515,7 @@
       <workItem from="1744196468571" duration="18000000" />
       <workItem from="1744368070136" duration="12747000" />
       <workItem from="1744485808687" duration="67000" />
-      <workItem from="1744697179443" duration="13832000" />
+      <workItem from="1744697179443" duration="15270000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -709,7 +708,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744704594855</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added more greedy problems">
+      <option name="closed" value="true" />
+      <created>1744729597356</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1744729597356</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -738,7 +745,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PartitionToKEqualSumSubset problem, Recursive, Memorization and Bottom Up solutions." />
     <MESSAGE value="Added MinimumSubsetDifference problem with explanation in comments." />
     <MESSAGE value="Added CountTheNumberOfSubsetWithGivenDifference problem solution with comments." />
     <MESSAGE value="Added TargetSum problem solution with comments." />
@@ -763,7 +769,8 @@
     <MESSAGE value="Solving August leetcode 2021 challenge" />
     <MESSAGE value="Implemented LongestRepeatingCharacterReplacement sliding window problem" />
     <MESSAGE value="Implemented EarliestFullBloom.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented EarliestFullBloom.java" />
+    <MESSAGE value="Added more greedy problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more greedy problems" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
