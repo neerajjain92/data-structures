@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented LongestRepeatingCharacterReplacement sliding window problem">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/EarliestFullBloom.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented EarliestFullBloom.java">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/LongestPalindromeByConcatenatingTwoLetterWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/Maximum69Number.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +95,7 @@
     "Application.EarliestFullBloom.executor": "Run",
     "Application.KthMissingPositiveNumber.executor": "Run",
     "Application.LargestNumberWithKSwaps.executor": "Run",
+    "Application.LongestPalindromeByConcatenatingTwoLetterWord.executor": "Run",
     "Application.LongestPalindromicSubsequence.executor": "Run",
     "Application.LongestRepeatingCharacterReplacement.executor": "Run",
     "Application.MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother.executor": "Run",
@@ -139,7 +141,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EarliestFullBloom (1)">
+  <component name="RunManager" selected="Application.LongestPalindromeByConcatenatingTwoLetterWord">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -147,19 +149,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BreakAPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.BreakAPalindrome" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,6 +192,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LongestPalindromeByConcatenatingTwoLetterWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.LongestPalindromeByConcatenatingTwoLetterWord" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MinimumTimeToMakeRopeColorful" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MinimumTimeToMakeRopeColorful" />
       <module name="data-structures" />
@@ -218,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestPalindromeByConcatenatingTwoLetterWord" />
         <item itemvalue="Application.EarliestFullBloom (1)" />
         <item itemvalue="Application.EarliestFullBloom" />
         <item itemvalue="Application.MinimumTimeToMakeRopeColorful" />
         <item itemvalue="Application.BrokenCalculator" />
-        <item itemvalue="Application.BreakAPalindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +516,7 @@
       <workItem from="1744196468571" duration="18000000" />
       <workItem from="1744368070136" duration="12747000" />
       <workItem from="1744485808687" duration="67000" />
-      <workItem from="1744697179443" duration="5085000" />
+      <workItem from="1744697179443" duration="13832000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -699,7 +701,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732999617013</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Implemented EarliestFullBloom.java">
+      <option name="closed" value="true" />
+      <created>1744704594855</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1744704594855</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +738,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions." />
     <MESSAGE value="Added PartitionToKEqualSumSubset problem, Recursive, Memorization and Bottom Up solutions." />
     <MESSAGE value="Added MinimumSubsetDifference problem with explanation in comments." />
     <MESSAGE value="Added CountTheNumberOfSubsetWithGivenDifference problem solution with comments." />
@@ -753,7 +762,8 @@
     <MESSAGE value="Implemented multiple new algorithms question" />
     <MESSAGE value="Solving August leetcode 2021 challenge" />
     <MESSAGE value="Implemented LongestRepeatingCharacterReplacement sliding window problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented LongestRepeatingCharacterReplacement sliding window problem" />
+    <MESSAGE value="Implemented EarliestFullBloom.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented EarliestFullBloom.java" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -3640,6 +3650,16 @@
           <line>37</line>
           <option name="timeStamp" value="1334" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/LongestPalindromeByConcatenatingTwoLetterWord.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/LongestPalindromeByConcatenatingTwoLetterWord.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1341" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>34</line>
@@ -3728,6 +3748,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/LongestPalindromeByConcatenatingTwoLetterWord.java</url>
+          <line>18</line>
+          <properties class="com.leetcode.year_2020.Greedy.coding_with_mik.LongestPalindromeByConcatenatingTwoLetterWord" method="longestPalindrome">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1339" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
