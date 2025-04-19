@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added more greedy problems">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MaximumBagsWithFullCapacityOfRocks.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented Leetcode 2279 MaximumBagsWithFullCapacityOfRocks">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/DotaToSenate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/JobSequencingProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/JumpGame2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MaximumIceCreamBars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumNumberOfTapsToOpenToWaterAGarden.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumReplacementToSortTheArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumRoundsToCompleteAllTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/OptimalPartitionOfString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/NonOverLappingIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/NonOverLappingIntervals.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,16 +103,34 @@
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
     "Application.DiameterOfNArrayTree.executor": "Run",
     "Application.DisjointSetImplementation.executor": "Run",
+    "Application.DotaToSenate.executor": "Run",
     "Application.EarliestFullBloom (1).executor": "Run",
     "Application.EarliestFullBloom.executor": "Run",
+    "Application.FacebookScheduleTask.executor": "Debug",
+    "Application.GasStation.executor": "Run",
+    "Application.JobSequencingProblem.executor": "Run",
+    "Application.JumpGame2.executor": "Run",
     "Application.KthMissingPositiveNumber.executor": "Run",
     "Application.LargestNumberWithKSwaps.executor": "Run",
     "Application.LongestPalindromeByConcatenatingTwoLetterWord.executor": "Run",
     "Application.LongestPalindromicSubsequence.executor": "Run",
     "Application.LongestRepeatingCharacterReplacement.executor": "Run",
+    "Application.MaximumBagsWithFullCapacityOfRocks.executor": "Run",
+    "Application.MeetingRoom.executor": "Run",
+    "Application.MeetingRoom2.executor": "Run",
+    "Application.MeetingRoom3.executor": "Run",
     "Application.MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother.executor": "Run",
     "Application.MinimumRemoveToMakeValidParentheses.executor": "Debug",
+    "Application.MinimumReplacementToSortTheArray.executor": "Debug",
+    "Application.MinimumRoundsToCompleteAllTask.executor": "Run",
     "Application.MinimumTimeToMakeRopeColorful.executor": "Run",
+    "Application.MyCalendar_1 (1).executor": "Debug",
+    "Application.MyCalendar_1.executor": "Run",
+    "Application.MyCalendar_2 (1).executor": "Run",
+    "Application.MyCalendar_2.executor": "Debug",
+    "Application.MyCalendar_3.executor": "Run",
+    "Application.NonOverLappingIntervals.executor": "Run",
+    "Application.OptimalPartitionOfString.executor": "Run",
     "Application.PrintAllPermutations.executor": "Run",
     "Application.PrintShortestCommonSuperSequence.executor": "Run",
     "Application.PrintSubsetOfAlphabets.executor": "Run",
@@ -140,7 +171,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaximumBagsWithFullCapacityOfRocks">
+  <component name="RunManager" selected="Application.MyCalendar_3">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -152,12 +183,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EarliestFullBloom (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.EarliestFullBloom" />
+    <configuration name="MyCalendar_1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MyCalendar_1" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,12 +196,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EarliestFullBloom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.EarliestFullBloom" />
+    <configuration name="MyCalendar_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MyCalendar_1" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,12 +209,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestPalindromeByConcatenatingTwoLetterWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.LongestPalindromeByConcatenatingTwoLetterWord" />
+    <configuration name="MyCalendar_2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MyCalendar_2" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,12 +222,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumBagsWithFullCapacityOfRocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MaximumBagsWithFullCapacityOfRocks" />
+    <configuration name="MyCalendar_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MyCalendar_2" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,12 +235,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumTimeToMakeRopeColorful" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MinimumTimeToMakeRopeColorful" />
+    <configuration name="MyCalendar_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.interval_scheduling.MyCalendar_3" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.interval_scheduling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaximumBagsWithFullCapacityOfRocks" />
-        <item itemvalue="Application.LongestPalindromeByConcatenatingTwoLetterWord" />
-        <item itemvalue="Application.EarliestFullBloom (1)" />
-        <item itemvalue="Application.EarliestFullBloom" />
-        <item itemvalue="Application.MinimumTimeToMakeRopeColorful" />
+        <item itemvalue="Application.MyCalendar_3" />
+        <item itemvalue="Application.MyCalendar_2 (1)" />
+        <item itemvalue="Application.MyCalendar_2" />
+        <item itemvalue="Application.MyCalendar_1 (1)" />
+        <item itemvalue="Application.MyCalendar_1" />
       </list>
     </recent_temporary>
   </component>
@@ -515,7 +546,10 @@
       <workItem from="1744196468571" duration="18000000" />
       <workItem from="1744368070136" duration="12747000" />
       <workItem from="1744485808687" duration="67000" />
-      <workItem from="1744697179443" duration="15270000" />
+      <workItem from="1744697179443" duration="17272000" />
+      <workItem from="1744736580869" duration="22796000" />
+      <workItem from="1744908367998" duration="22046000" />
+      <workItem from="1745072439798" duration="8157000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -716,7 +750,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744729597356</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Implemented Leetcode 2279 MaximumBagsWithFullCapacityOfRocks">
+      <option name="closed" value="true" />
+      <created>1744731073104</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1744731073104</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -745,7 +787,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added MinimumSubsetDifference problem with explanation in comments." />
     <MESSAGE value="Added CountTheNumberOfSubsetWithGivenDifference problem solution with comments." />
     <MESSAGE value="Added TargetSum problem solution with comments." />
     <MESSAGE value="Updated BottomUp DP version of RodCuttingProblem." />
@@ -770,7 +811,8 @@
     <MESSAGE value="Implemented LongestRepeatingCharacterReplacement sliding window problem" />
     <MESSAGE value="Implemented EarliestFullBloom.java" />
     <MESSAGE value="Added more greedy problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more greedy problems" />
+    <MESSAGE value="Implemented Leetcode 2279 MaximumBagsWithFullCapacityOfRocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Leetcode 2279 MaximumBagsWithFullCapacityOfRocks" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -1445,16 +1487,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/NonOverLappingIntervals.java</url>
-          <line>38</line>
+          <line>85</line>
           <option name="timeStamp" value="421" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom2.java</url>
-          <line>66</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="422" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/MayChallenge/week3/FindAllAnagramsInAString.java</url>
@@ -1969,11 +2003,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/NumbersInPI_AlgoExpert.java</url>
           <line>40</line>
           <option name="timeStamp" value="632" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom2.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="638" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/SnakeAndLadder.java</url>
@@ -3060,7 +3089,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_1.java</url>
-          <line>41</line>
+          <line>43</line>
           <option name="timeStamp" value="1086" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3317,26 +3346,13 @@
           <option name="timeStamp" value="1203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="1206" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java</url>
-          <line>40</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="1207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_2.java</url>
           <line>28</line>
           <option name="timeStamp" value="1208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_2.java</url>
-          <line>47</line>
+          <line>119</line>
           <option name="timeStamp" value="1210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3353,11 +3369,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/HandOfStraights.java</url>
           <line>36</line>
           <option name="timeStamp" value="1213" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructures/mustDoInterviewQuestions/array/KadanesAlgo.java</url>
@@ -3666,6 +3677,61 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/LongestPalindromeByConcatenatingTwoLetterWord.java</url>
           <line>30</line>
           <option name="timeStamp" value="1341" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumRoundsToCompleteAllTask.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1342" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/GasStation.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/OptimalPartitionOfString.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/OptimalPartitionOfString.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumReplacementToSortTheArray.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="1352" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/JobSequencingProblem.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="1353" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/JobSequencingProblem.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MeetingRoom3.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1356" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/FacebookScheduleTask.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="1358" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_1.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1359" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/interval_scheduling/MyCalendar_2.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1360" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>

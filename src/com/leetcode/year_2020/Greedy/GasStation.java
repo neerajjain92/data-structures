@@ -21,20 +21,33 @@ public class GasStation {
         System.out.println(canCompleteCircuit(
                 new int[]{2, 3, 4},
                 new int[]{3, 4, 3}));
+
+        System.out.println(canCompleteCircuitON2(
+                new int[]{2, 3, 4},
+                new int[]{3, 4, 3}));
     }
 
     public static int canCompleteCircuitON2(int[] gas, int[] cost) {
 
-        for (int i=0;i<gas.length;i++) {
-            int gasRemaining = gas[i];
-            int nextStation = i; // Set to i initially
-            while(gasRemaining > 0) {
-                gasRemaining -= cost[nextStation];
-                if (gasRemaining >= 0) {
-                    nextStation = (nextStation + 1) % gas.length;
-                    gasRemaining += gas[nextStation];
-                    if (nextStation == i) return i;
+        for (int i = 0; i < gas.length; i++) {
+            if (gas[i] < cost[i]) {
+                continue;
+            }
+            int j = (i + 1) % gas.length;
+            int gasAtCurrentStation = gas[i];
+            int costForReachingNextStation = cost[i];
+            int gasAfterReachingNextStation = gasAtCurrentStation - costForReachingNextStation + gas[j];
+
+            while (i != j) {
+                if (gasAfterReachingNextStation < cost[j]) {
+                    break;
                 }
+                costForReachingNextStation = cost[j];
+                j = (j + 1) % gas.length;
+                gasAfterReachingNextStation = gasAfterReachingNextStation - costForReachingNextStation + gas[j];
+            }
+            if (i == j) {
+                return i;
             }
         }
         return -1;

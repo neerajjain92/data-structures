@@ -23,6 +23,8 @@ public class MyCalendar_1 {
 
     }
 
+
+
     private static void testMyCalendar(int[][] bookings) {
         MyCalendarWithSolutionOfKeepingInSortedOrder calendar = new MyCalendarWithSolutionOfKeepingInSortedOrder();
         for (int i = 0; i < bookings.length; i++) {
@@ -90,6 +92,9 @@ public class MyCalendar_1 {
      * case 3: b starts after a ends: (negative overlap)
      * a: a0 |----| a1
      * b:              b0 |----| b1
+     * case 4:
+     * a:                a0 |-------------| a1
+     * b:     b0 |--------------| b1
      * <p>
      * So the concept revolves around the maximum start, and minimum end
      */
@@ -101,9 +106,12 @@ public class MyCalendar_1 {
             bookings = new ArrayList<>();
         }
 
+        //NOT of this !(newEnd <= existingStart || newStart >= existingEnd)
         public boolean book(int start, int end) {
-            for (int[] booking : bookings) {
-                if (Math.max(booking[0], start) < Math.min(booking[1], end)) return false;
+            for(int [] booking : bookings) {
+                if (!(end <= booking[0] || start >= booking[1])) {
+                    return false;
+                }
             }
             bookings.add(new int[]{start, end});
             return true;

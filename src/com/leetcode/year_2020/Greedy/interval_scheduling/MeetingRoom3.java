@@ -1,8 +1,6 @@
 package com.leetcode.year_2020.Greedy.interval_scheduling;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * MeetingRoom3
@@ -18,8 +16,10 @@ public class MeetingRoom3 {
         System.out.println(mostBooked(2, new int[][]{{0, 1}, {1, 5}, {2, 7}, {3, 4}}));
         // n = 3, meetings = [[1,20],[2,10],[3,5],[4,9],[6,8]]
         System.out.println(mostBooked(3, new int[][]{{1, 20}, {2, 10}, {3, 5}, {4, 9}, {6, 8}}));
+        System.out.println(mostBooked(100, new int[][]{{0, 10}, {1, 5}, {2, 7}, {3, 4}}));
+        System.out.println(mostBooked(2, new int[][]{{0, 10}, {1, 5}, {2, 7}, {3, 4}}));
+        System.out.println(mostBooked(4, new int[][]{{18, 19}, {3, 12}, {17, 19}, {2, 13}, {7, 10}}));
     }
-
 
     /**
      * We need to keep track of which rooms are available to us for scheduling
@@ -47,10 +47,10 @@ public class MeetingRoom3 {
         for (int i = 0; i < n; i++) availableRooms.add(i);
 
         // Now try to schedule meetings into them
-        for (int i = 0; i < meetings.length; i++) {
-            int endTimeOfCurrentMeeting = meetings[i][1];
+        for (int[] meeting : meetings) {
+            int endTimeOfCurrentMeeting = meeting[1];
             // Finish the meetings which ended before this current meeting started
-            while (!usedRooms.isEmpty() && meetings[i][0] >= usedRooms.peek().endTime) {
+            while (!usedRooms.isEmpty() && meeting[0] >= usedRooms.peek().endTime) {
                 MeetingRoom roomToBeMarkedAvailable = usedRooms.poll();
                 availableRooms.add(roomToBeMarkedAvailable.roomNumber);
             }
@@ -58,7 +58,7 @@ public class MeetingRoom3 {
             // Now if the room is not available
             if (availableRooms.isEmpty()) {
                 MeetingRoom earliestMeetingFinishedRoom = usedRooms.poll();
-                endTimeOfCurrentMeeting = earliestMeetingFinishedRoom.endTime + (meetings[i][1] - meetings[i][0]);
+                endTimeOfCurrentMeeting = earliestMeetingFinishedRoom.endTime + (meeting[1] - meeting[0]);
                 availableRooms.add(earliestMeetingFinishedRoom.roomNumber);
             }
 
@@ -74,8 +74,8 @@ public class MeetingRoom3 {
             maximumScheduledMeetings = Math.max(maximumScheduledMeetings, totalMeetings[i]);
         }
 
-        for(int i=0;i<totalMeetings.length;i++) {
-            if(totalMeetings[i] == maximumScheduledMeetings) {
+        for (int i = 0; i < totalMeetings.length; i++) {
+            if (totalMeetings[i] == maximumScheduledMeetings) {
                 return i;
             }
         }
@@ -108,4 +108,6 @@ public class MeetingRoom3 {
             this.endTime = endTime;
         }
     }
+
+
 }
