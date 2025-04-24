@@ -28,4 +28,22 @@ public class MaximumNumberofCoinsYouCanGet {
         }
         return maxCoins;
     }
+
+    public int maxCoinsApproach2(int[] piles) {
+        Arrays.sort(piles);
+
+        // We know that piles are to be picked in 3
+        // So and we have 3n coins
+        // So n/3 is something which bob will anyways take since we are giving him smalles
+        // [1    2     3      4     5    6     7    8    9]
+        //  B    B     B      M     A    M     A    M    A
+        // So why not start our counter of Myself from n/3
+        int self = piles.length / 3;
+        int count = 0;
+        while (self < piles.length - 1) {
+            count += piles[self];
+            self+=2;
+        }
+        return count;
+    }
 }
