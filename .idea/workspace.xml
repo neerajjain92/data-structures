@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinHeap problems">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthSmallestPrimeFraction.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Solved KthSmallestPrimeFraction Leetcode 786">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +105,7 @@
     "Application.JumpGame2.executor": "Run",
     "Application.KthLargestElementInArray.executor": "Run",
     "Application.KthMissingPositiveNumber.executor": "Run",
-    "Application.KthSmallestPrimeFraction.executor": "Debug",
+    "Application.KthSmallestPrimeFraction.executor": "Run",
     "Application.LargestNumberWithKSwaps.executor": "Run",
     "Application.LeastNumberOfUniqueIntegersAfterKRemovals.executor": "Run",
     "Application.Leetcode621_TaskScheduler_Leetcode621.executor": "Run",
@@ -120,6 +120,7 @@
     "Application.MeetingRoom.executor": "Run",
     "Application.MeetingRoom2.executor": "Run",
     "Application.MeetingRoom3.executor": "Run",
+    "Application.MinimumCostToHireKWorkers.executor": "Debug",
     "Application.MinimumDeletionstoMakeCharacterFrequenciesUnique.executor": "Run",
     "Application.MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother.executor": "Run",
     "Application.MinimumNumberOfOperationsToMakeArrayEmpty.executor": "Run",
@@ -183,7 +184,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KthSmallestPrimeFraction">
+  <component name="RunManager" selected="Application.MinimumCostToHireKWorkers">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -191,19 +192,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindKPairWithSmallestSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.FindKPairWithSmallestSum" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,6 +235,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MinimumCostToHireKWorkers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.MinimumCostToHireKWorkers" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TaskScheduler_621" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.TaskScheduler_621" />
       <module name="data-structures" />
@@ -262,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinimumCostToHireKWorkers" />
         <item itemvalue="Application.KthSmallestPrimeFraction" />
         <item itemvalue="Application.Leetcode621_TaskScheduler_Leetcode621" />
         <item itemvalue="Application.TaskScheduler_621" />
         <item itemvalue="Application.KthLargestElementInArray" />
-        <item itemvalue="Application.FindKPairWithSmallestSum" />
       </list>
     </recent_temporary>
   </component>
@@ -563,7 +564,7 @@
       <workItem from="1744908367998" duration="22046000" />
       <workItem from="1745072439798" duration="10435000" />
       <workItem from="1745219451970" duration="1391000" />
-      <workItem from="1745230078937" duration="100467000" />
+      <workItem from="1745230078937" duration="102584000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -804,7 +805,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745570370421</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Solved KthSmallestPrimeFraction Leetcode 786">
+      <option name="closed" value="true" />
+      <created>1745613124289</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1745613124290</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -833,7 +842,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added CoinChange_MinCoins and CoinChange_NumberOfWays problem solution" />
     <MESSAGE value="Added LengthOfLongestCommonSubsequence recursive and bottom up approach." />
     <MESSAGE value="Renamed BottomUp with TopDown." />
     <MESSAGE value="Minor Refactoring" />
@@ -858,7 +866,8 @@
     <MESSAGE value="Added more greedy problems" />
     <MESSAGE value="Added More greedy problems" />
     <MESSAGE value="Added MinHeap problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MinHeap problems" />
+    <MESSAGE value="Solved KthSmallestPrimeFraction Leetcode 786" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved KthSmallestPrimeFraction Leetcode 786" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -3927,11 +3936,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthSmallestPrimeFraction.java</url>
-          <line>67</line>
+          <line>78</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="1413" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="1414" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
