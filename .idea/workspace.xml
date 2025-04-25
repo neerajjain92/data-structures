@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added MinHeap problems">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthLargestElementInArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/Leetcode621_TaskScheduler_Leetcode621.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthSmallestPrimeFraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/problems/medium/TaskScheduler_621.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/problems/medium/TaskScheduler_621.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/ReorganizeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/ReorganizeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/FindKPairWithSmallestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/FindKPairWithSmallestSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +105,7 @@
     "Application.JumpGame2.executor": "Run",
     "Application.KthLargestElementInArray.executor": "Run",
     "Application.KthMissingPositiveNumber.executor": "Run",
+    "Application.KthSmallestPrimeFraction.executor": "Debug",
     "Application.LargestNumberWithKSwaps.executor": "Run",
     "Application.LeastNumberOfUniqueIntegersAfterKRemovals.executor": "Run",
     "Application.Leetcode621_TaskScheduler_Leetcode621.executor": "Run",
@@ -186,7 +183,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Leetcode621_TaskScheduler_Leetcode621">
+  <component name="RunManager" selected="Application.KthSmallestPrimeFraction">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -224,6 +221,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KthSmallestPrimeFraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.KthSmallestPrimeFraction" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Leetcode621_TaskScheduler_Leetcode621" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.Leetcode621_TaskScheduler_Leetcode621" />
       <module name="data-structures" />
@@ -250,26 +260,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TotalCosToHireKWorkers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.TotalCosToHireKWorkers" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KthSmallestPrimeFraction" />
         <item itemvalue="Application.Leetcode621_TaskScheduler_Leetcode621" />
         <item itemvalue="Application.TaskScheduler_621" />
         <item itemvalue="Application.KthLargestElementInArray" />
         <item itemvalue="Application.FindKPairWithSmallestSum" />
-        <item itemvalue="Application.TotalCosToHireKWorkers" />
       </list>
     </recent_temporary>
   </component>
@@ -566,7 +563,7 @@
       <workItem from="1744908367998" duration="22046000" />
       <workItem from="1745072439798" duration="10435000" />
       <workItem from="1745219451970" duration="1391000" />
-      <workItem from="1745230078937" duration="95840000" />
+      <workItem from="1745230078937" duration="100467000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -3922,6 +3919,19 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/Leetcode621_TaskScheduler_Leetcode621.java</url>
           <line>14</line>
           <option name="timeStamp" value="1407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthSmallestPrimeFraction.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthSmallestPrimeFraction.java</url>
+          <line>67</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1413" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
