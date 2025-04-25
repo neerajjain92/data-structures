@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added more greedy problems">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/FindPolygonWithTheLargestPerimeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/FurthestBuildingYouCanReach.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/LeastNumberOfUniqueIntegersAfterKRemovals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumNumberOfOperationsToMakeArrayEmpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MinimumSprinklersToWaterThePlant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/FindMedianfromDataStream.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Added More greedy problems">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/FindKPairWithSmallestSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MaximumSubsequenceScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SingleThreadedCPU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TopKFrequentElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TotalCosToHireKWorkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MaximumNumberofCoinsYouCanGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/Greedy/coding_with_mik/MaximumNumberofCoinsYouCanGet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +102,7 @@
     "Application.EarliestFullBloom.executor": "Run",
     "Application.EliminateMaximumNumberofMonsters.executor": "Run",
     "Application.FacebookScheduleTask.executor": "Debug",
+    "Application.FindKPairWithSmallestSum.executor": "Run",
     "Application.FindPolygonWithTheLargestPerimeter.executor": "Run",
     "Application.FurthestBuildingYouCanReach.executor": "Run",
     "Application.GasStation.executor": "Run",
@@ -118,6 +118,7 @@
     "Application.MaximumElementAfterDecreasingAndRearranging.executor": "Run",
     "Application.MaximumNumberofCoinsYouCanGet.executor": "Debug",
     "Application.MaximumScoreofAGoodSubarray.executor": "Run",
+    "Application.MaximumSubsequenceScore.executor": "Run",
     "Application.MeetingRoom.executor": "Run",
     "Application.MeetingRoom2.executor": "Run",
     "Application.MeetingRoom3.executor": "Run",
@@ -145,6 +146,9 @@
     "Application.RemoveColoredPiecesIfBothNeighboursAreOfSameColor.executor": "Run",
     "Application.SimplifyPath.executor": "Run",
     "Application.SimplifyPath2.executor": "Run",
+    "Application.SingleThreadedCPU.executor": "Run",
+    "Application.TopKFrequentElements.executor": "Run",
+    "Application.TotalCosToHireKWorkers.executor": "Run",
     "Application.ValidParenthesisString.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -179,7 +183,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FurthestBuildingYouCanReach">
+  <component name="RunManager" selected="Application.FindKPairWithSmallestSum">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -191,12 +195,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindPolygonWithTheLargestPerimeter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.FindPolygonWithTheLargestPerimeter" />
+    <configuration name="FindKPairWithSmallestSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.FindKPairWithSmallestSum" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,12 +208,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FurthestBuildingYouCanReach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.FurthestBuildingYouCanReach" />
+    <configuration name="MaximumSubsequenceScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.MaximumSubsequenceScore" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,12 +221,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeastNumberOfUniqueIntegersAfterKRemovals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.LeastNumberOfUniqueIntegersAfterKRemovals" />
+    <configuration name="SingleThreadedCPU" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.SingleThreadedCPU" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,12 +234,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumNumberOfOperationsToMakeArrayEmpty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MinimumNumberOfOperationsToMakeArrayEmpty" />
+    <configuration name="TopKFrequentElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.TopKFrequentElements" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,12 +247,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumSprinklersToWaterThePlant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.Greedy.coding_with_mik.MinimumSprinklersToWaterThePlant" />
+    <configuration name="TotalCosToHireKWorkers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.TotalCosToHireKWorkers" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.Greedy.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FurthestBuildingYouCanReach" />
-        <item itemvalue="Application.LeastNumberOfUniqueIntegersAfterKRemovals" />
-        <item itemvalue="Application.FindPolygonWithTheLargestPerimeter" />
-        <item itemvalue="Application.MinimumSprinklersToWaterThePlant" />
-        <item itemvalue="Application.MinimumNumberOfOperationsToMakeArrayEmpty" />
+        <item itemvalue="Application.FindKPairWithSmallestSum" />
+        <item itemvalue="Application.TotalCosToHireKWorkers" />
+        <item itemvalue="Application.MaximumSubsequenceScore" />
+        <item itemvalue="Application.TopKFrequentElements" />
+        <item itemvalue="Application.SingleThreadedCPU" />
       </list>
     </recent_temporary>
   </component>
@@ -559,7 +563,7 @@
       <workItem from="1744908367998" duration="22046000" />
       <workItem from="1745072439798" duration="10435000" />
       <workItem from="1745219451970" duration="1391000" />
-      <workItem from="1745230078937" duration="53388000" />
+      <workItem from="1745230078937" duration="80385000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -784,7 +788,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745354382693</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Added More greedy problems">
+      <option name="closed" value="true" />
+      <created>1745479046174</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1745479046174</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -813,7 +825,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added TargetSum problem solution with comments." />
     <MESSAGE value="Updated BottomUp DP version of RodCuttingProblem." />
     <MESSAGE value="Added CoinChange_MinCoins and CoinChange_NumberOfWays problem solution" />
     <MESSAGE value="Added LengthOfLongestCommonSubsequence recursive and bottom up approach." />
@@ -838,7 +849,8 @@
     <MESSAGE value="Implemented Leetcode 2279 MaximumBagsWithFullCapacityOfRocks" />
     <MESSAGE value="Added multiple problems" />
     <MESSAGE value="Added more greedy problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more greedy problems" />
+    <MESSAGE value="Added More greedy problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added More greedy problems" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -3845,6 +3857,41 @@
           </properties>
           <option name="timeStamp" value="1391" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SingleThreadedCPU.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1393" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SingleThreadedCPU.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="1395" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TopKFrequentElements.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1396" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TopKFrequentElements.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1397" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MaximumSubsequenceScore.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="1398" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TotalCosToHireKWorkers.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1399" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/FindKPairWithSmallestSum.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1403" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>34</line>
@@ -3960,6 +4007,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1392" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TotalCosToHireKWorkers.java</url>
+          <line>13</line>
+          <properties class="com.leetcode.year_2020.heap.coding_with_mik.TotalCosToHireKWorkers" method="totalCost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1400" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
