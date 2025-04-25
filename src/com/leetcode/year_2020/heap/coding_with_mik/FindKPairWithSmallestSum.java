@@ -46,7 +46,7 @@ public class FindKPairWithSmallestSum {
         }
         return result;
     }
-    
+
     /**
      * Optimal Solution
      */
@@ -132,4 +132,6 @@ public class FindKPairWithSmallestSum {
             return Objects.hash(i, j, sum);
         }
     }
+
+
 }

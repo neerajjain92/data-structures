@@ -14,7 +14,7 @@ public class TaskScheduler_621 {
         System.out.println(leastInterval(new char[]{'A', 'A', 'A', 'A', 'A', 'A', 'B', 'C', 'D', 'E', 'F', 'G'}, 2));
     }
 
-    public static int leastInterval(char[] tasks, int n) {
+    public static int leastInterval(char[] tasks, int gapPeriod) {
         Map<Character, Integer> taskFrequencyMap = new HashMap<>();
         for (char c : tasks) {
             taskFrequencyMap.put(c, taskFrequencyMap.getOrDefault(c, 0) + 1);
@@ -27,8 +27,8 @@ public class TaskScheduler_621 {
         int cycles = 0;
         while (!maxHeap.isEmpty()) {
             List<Integer> tasksFrequencyList = new ArrayList<>();
-            // Why == n, because we don't want to wait for CPU to cool down if there are tasks to process
-            for (int i = 0; i <= n; i++) {
+            // Why == gapPeriod, because we don't want to wait for CPU to cool down if there are tasks to process
+            for (int i = 0; i <= gapPeriod; i++) {
                 if (!maxHeap.isEmpty()) {
                     tasksFrequencyList.add(maxHeap.remove());
                 }
@@ -48,7 +48,7 @@ public class TaskScheduler_621 {
             // For Example [A,A,A,B,B,B] coolDown = 2
             // MAX_HEAP = 3A, 3B
             // Tasks Processed --> A,B,CPU_COOL_DOWN,A,B,CPU_COOL_DOWN,A,B.
-            cycles += maxHeap.isEmpty() ? tasksFrequencyList.size() : n + 1;
+            cycles += maxHeap.isEmpty() ? tasksFrequencyList.size() : gapPeriod + 1;
         }
         return cycles;
     }

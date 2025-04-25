@@ -21,8 +21,12 @@ public class ReorganizeString {
 
     public static String reorganizeString(String S) {
         Map<Character, Integer> charFreq = new HashMap<>();
+        int n = S.length();
         for (char c : S.toCharArray()) {
             charFreq.put(c, charFreq.getOrDefault(c, 0) + 1);
+            if (charFreq.get(c) > (n+1)/2) {
+                return "";
+            }
         }
         PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> charFreq.get(b) - charFreq.get(a));
         maxHeap.addAll(charFreq.keySet());
