@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Solved KthSmallestPrimeFraction Leetcode 786">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented MinimumCostToHireKWorkers">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/IPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/LexicographicallyMinimumStringAfterRemovingStars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/RangeSumOfSortedSubArraySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SmallestRangeCoveringElementsfromKLists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +105,7 @@
     "Application.FindPolygonWithTheLargestPerimeter.executor": "Run",
     "Application.FurthestBuildingYouCanReach.executor": "Run",
     "Application.GasStation.executor": "Run",
+    "Application.IPO.executor": "Run",
     "Application.JobSequencingProblem.executor": "Run",
     "Application.JumpGame2.executor": "Run",
     "Application.KthLargestElementInArray.executor": "Run",
@@ -109,6 +114,7 @@
     "Application.LargestNumberWithKSwaps.executor": "Run",
     "Application.LeastNumberOfUniqueIntegersAfterKRemovals.executor": "Run",
     "Application.Leetcode621_TaskScheduler_Leetcode621.executor": "Run",
+    "Application.LexicographicallyMinimumStringAfterRemovingStars.executor": "Run",
     "Application.LongestPalindromeByConcatenatingTwoLetterWord.executor": "Run",
     "Application.LongestPalindromicSubsequence.executor": "Run",
     "Application.LongestRepeatingCharacterReplacement.executor": "Run",
@@ -120,7 +126,7 @@
     "Application.MeetingRoom.executor": "Run",
     "Application.MeetingRoom2.executor": "Run",
     "Application.MeetingRoom3.executor": "Run",
-    "Application.MinimumCostToHireKWorkers.executor": "Debug",
+    "Application.MinimumCostToHireKWorkers.executor": "Run",
     "Application.MinimumDeletionstoMakeCharacterFrequenciesUnique.executor": "Run",
     "Application.MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother.executor": "Run",
     "Application.MinimumNumberOfOperationsToMakeArrayEmpty.executor": "Run",
@@ -141,11 +147,13 @@
     "Application.PrintShortestCommonSuperSequence.executor": "Run",
     "Application.PrintSubsetOfAlphabets.executor": "Run",
     "Application.RandomPickWithWeights.executor": "Run",
+    "Application.RangeSumOfSortedSubArraySum.executor": "Run",
     "Application.RecursivelyRemoveAllAdjacentDuplicates.executor": "Run",
     "Application.RemoveColoredPiecesIfBothNeighboursAreOfSameColor.executor": "Run",
     "Application.SimplifyPath.executor": "Run",
     "Application.SimplifyPath2.executor": "Run",
     "Application.SingleThreadedCPU.executor": "Run",
+    "Application.SmallestRangeCoveringElementsfromKLists.executor": "Run",
     "Application.TaskScheduler_621.executor": "Run",
     "Application.TaskScheduler_Leetcode621.executor": "Run",
     "Application.TopKFrequentElements.executor": "Run",
@@ -184,7 +192,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MinimumCostToHireKWorkers">
+  <component name="RunManager" selected="Application.SmallestRangeCoveringElementsfromKLists">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -196,8 +204,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KthLargestElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.KthLargestElementInArray" />
+    <configuration name="IPO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.IPO" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -209,21 +217,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KthSmallestPrimeFraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.KthSmallestPrimeFraction" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Leetcode621_TaskScheduler_Leetcode621" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.Leetcode621_TaskScheduler_Leetcode621" />
+    <configuration name="LexicographicallyMinimumStringAfterRemovingStars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.LexicographicallyMinimumStringAfterRemovingStars" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -248,12 +243,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskScheduler_621" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.problems.medium.TaskScheduler_621" />
+    <configuration name="RangeSumOfSortedSubArraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.RangeSumOfSortedSubArraySum" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.problems.medium.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmallestRangeCoveringElementsfromKLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.SmallestRangeCoveringElementsfromKLists" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,11 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SmallestRangeCoveringElementsfromKLists" />
+        <item itemvalue="Application.RangeSumOfSortedSubArraySum" />
+        <item itemvalue="Application.IPO" />
+        <item itemvalue="Application.LexicographicallyMinimumStringAfterRemovingStars" />
         <item itemvalue="Application.MinimumCostToHireKWorkers" />
-        <item itemvalue="Application.KthSmallestPrimeFraction" />
-        <item itemvalue="Application.Leetcode621_TaskScheduler_Leetcode621" />
-        <item itemvalue="Application.TaskScheduler_621" />
-        <item itemvalue="Application.KthLargestElementInArray" />
       </list>
     </recent_temporary>
   </component>
@@ -564,7 +572,7 @@
       <workItem from="1744908367998" duration="22046000" />
       <workItem from="1745072439798" duration="10435000" />
       <workItem from="1745219451970" duration="1391000" />
-      <workItem from="1745230078937" duration="102584000" />
+      <workItem from="1745230078937" duration="124192000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -813,7 +821,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745613124290</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Implemented MinimumCostToHireKWorkers">
+      <option name="closed" value="true" />
+      <created>1745617234284</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1745617234284</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -842,7 +858,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added LengthOfLongestCommonSubsequence recursive and bottom up approach." />
     <MESSAGE value="Renamed BottomUp with TopDown." />
     <MESSAGE value="Minor Refactoring" />
     <MESSAGE value="Printing Longest Common Subsequence." />
@@ -867,7 +882,8 @@
     <MESSAGE value="Added More greedy problems" />
     <MESSAGE value="Added MinHeap problems" />
     <MESSAGE value="Solved KthSmallestPrimeFraction Leetcode 786" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved KthSmallestPrimeFraction Leetcode 786" />
+    <MESSAGE value="Implemented MinimumCostToHireKWorkers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented MinimumCostToHireKWorkers" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -3944,8 +3960,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java</url>
-          <line>75</line>
+          <line>82</line>
           <option name="timeStamp" value="1414" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/LexicographicallyMinimumStringAfterRemovingStars.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/IPO.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1421" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
@@ -4071,6 +4097,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1400" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java</url>
+          <line>81</line>
+          <properties class="com.leetcode.year_2020.heap.coding_with_mik.MinimumCostToHireKWorkers" method="mincostToHireWorkers">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1415" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/IPO.java</url>
+          <line>26</line>
+          <properties class="com.leetcode.year_2020.heap.coding_with_mik.IPO" method="findMaximizedCapital">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1424" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
