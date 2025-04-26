@@ -43,20 +43,24 @@ public class SmallestRangeCoveringElementsfromKLists {
             rangeEnd = Math.max(nums.get(i).get(0), rangeEnd);
         }
 
-        // Now MinHeap has smallest in all
+        // Now MinHeap has smallest from all list
         int minDiff = Integer.MAX_VALUE;
-        int bestStart = 0, bestEnd = 0;
+        int bestStart = minHeap.peek().item, bestEnd = rangeEnd;
         while (!minHeap.isEmpty()) {
+
+            // Check if this popped item is changing our range
             SmallestRangeTuple tuple = minHeap.poll();
             if (rangeEnd - tuple.item < minDiff) {
                 minDiff = rangeEnd - tuple.item;
                 bestStart = tuple.item;
                 bestEnd = rangeEnd;
             }
+
             // Now push next, if next is not present that's your final range
             if (tuple.indexInList + 1 < nums.get(tuple.listIndex).size()) {
                 // So we can push next item
                 int nextItem = nums.get(tuple.listIndex).get(tuple.indexInList + 1);
+                // If this new item is greater than the maxEnd value we have then  update it.
                 if (nextItem > rangeEnd) {
                     rangeEnd = nextItem;
                 }

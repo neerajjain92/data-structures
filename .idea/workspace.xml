@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented MinimumCostToHireKWorkers">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/IPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/LexicographicallyMinimumStringAfterRemovingStars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/RangeSumOfSortedSubArraySum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SmallestRangeCoveringElementsfromKLists.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented 632. Smallest Range Covering Elements from K Lists">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumCostToHireKWorkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SmallestRangeCoveringElementsfromKLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SmallestRangeCoveringElementsfromKLists.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -572,7 +568,7 @@
       <workItem from="1744908367998" duration="22046000" />
       <workItem from="1745072439798" duration="10435000" />
       <workItem from="1745219451970" duration="1391000" />
-      <workItem from="1745230078937" duration="124192000" />
+      <workItem from="1745230078937" duration="125556000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -829,7 +825,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745617234284</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Implemented 632. Smallest Range Covering Elements from K Lists">
+      <option name="closed" value="true" />
+      <created>1745670238298</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1745670238299</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -858,7 +862,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed BottomUp with TopDown." />
     <MESSAGE value="Minor Refactoring" />
     <MESSAGE value="Printing Longest Common Subsequence." />
     <MESSAGE value="Added ShortestCommonSuperSequence code." />
@@ -883,7 +886,8 @@
     <MESSAGE value="Added MinHeap problems" />
     <MESSAGE value="Solved KthSmallestPrimeFraction Leetcode 786" />
     <MESSAGE value="Implemented MinimumCostToHireKWorkers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented MinimumCostToHireKWorkers" />
+    <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented 632. Smallest Range Covering Elements from K Lists" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
