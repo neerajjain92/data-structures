@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented 632. Smallest Range Covering Elements from K Lists">
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented 632. Smallest Range Covering Elements from K Lists optimally">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/LongestHappyString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TrappingRainWater_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SmallestRangeCoveringElementsfromKLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/SmallestRangeCoveringElementsfromKLists.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +112,7 @@
     "Application.LeastNumberOfUniqueIntegersAfterKRemovals.executor": "Run",
     "Application.Leetcode621_TaskScheduler_Leetcode621.executor": "Run",
     "Application.LexicographicallyMinimumStringAfterRemovingStars.executor": "Run",
+    "Application.LongestHappyString.executor": "Run",
     "Application.LongestPalindromeByConcatenatingTwoLetterWord.executor": "Run",
     "Application.LongestPalindromicSubsequence.executor": "Run",
     "Application.LongestRepeatingCharacterReplacement.executor": "Run",
@@ -154,6 +156,7 @@
     "Application.TaskScheduler_Leetcode621.executor": "Run",
     "Application.TopKFrequentElements.executor": "Run",
     "Application.TotalCosToHireKWorkers.executor": "Run",
+    "Application.TrappingRainWater_2.executor": "Run",
     "Application.ValidParenthesisString.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -188,7 +191,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SmallestRangeCoveringElementsfromKLists">
+  <component name="RunManager" selected="Application.TrappingRainWater_2">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -213,21 +216,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LexicographicallyMinimumStringAfterRemovingStars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.LexicographicallyMinimumStringAfterRemovingStars" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MinimumCostToHireKWorkers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.MinimumCostToHireKWorkers" />
+    <configuration name="LongestHappyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.LongestHappyString" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -265,13 +255,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrappingRainWater_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.TrappingRainWater_2" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrappingRainWater_2" />
+        <item itemvalue="Application.LongestHappyString" />
         <item itemvalue="Application.SmallestRangeCoveringElementsfromKLists" />
         <item itemvalue="Application.RangeSumOfSortedSubArraySum" />
         <item itemvalue="Application.IPO" />
-        <item itemvalue="Application.LexicographicallyMinimumStringAfterRemovingStars" />
-        <item itemvalue="Application.MinimumCostToHireKWorkers" />
       </list>
     </recent_temporary>
   </component>
@@ -568,7 +571,7 @@
       <workItem from="1744908367998" duration="22046000" />
       <workItem from="1745072439798" duration="10435000" />
       <workItem from="1745219451970" duration="1391000" />
-      <workItem from="1745230078937" duration="125556000" />
+      <workItem from="1745230078937" duration="134284000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -833,7 +836,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745670238299</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Implemented 632. Smallest Range Covering Elements from K Lists optimally">
+      <option name="closed" value="true" />
+      <created>1745680583662</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1745680583662</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -862,7 +873,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor Refactoring" />
     <MESSAGE value="Printing Longest Common Subsequence." />
     <MESSAGE value="Added ShortestCommonSuperSequence code." />
     <MESSAGE value="Added MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother problem and it's solution." />
@@ -887,7 +897,8 @@
     <MESSAGE value="Solved KthSmallestPrimeFraction Leetcode 786" />
     <MESSAGE value="Implemented MinimumCostToHireKWorkers" />
     <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented 632. Smallest Range Covering Elements from K Lists" />
+    <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists optimally" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented 632. Smallest Range Covering Elements from K Lists optimally" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -3976,6 +3987,26 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/IPO.java</url>
           <line>17</line>
           <option name="timeStamp" value="1421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/LongestHappyString.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1429" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TrappingRainWater_2.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1430" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TrappingRainWater_2.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1431" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TrappingRainWater_2.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="1432" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
