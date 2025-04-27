@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented LongestHappyString and TrappingRainWater_2">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/ChooseKElementsWithMaximumSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumOperationsToExceedThresholdValueII.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Completed heap Problems">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/MaximumXOROfTwoNumbersInArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +114,7 @@
     "Application.LeastNumberOfUniqueIntegersAfterKRemovals.executor": "Run",
     "Application.Leetcode621_TaskScheduler_Leetcode621.executor": "Run",
     "Application.LexicographicallyMinimumStringAfterRemovingStars.executor": "Run",
+    "Application.LongestCommonSuffixQueries.executor": "Run",
     "Application.LongestHappyString.executor": "Run",
     "Application.LongestPalindromeByConcatenatingTwoLetterWord.executor": "Run",
     "Application.LongestPalindromicSubsequence.executor": "Run",
@@ -122,6 +124,7 @@
     "Application.MaximumNumberofCoinsYouCanGet.executor": "Debug",
     "Application.MaximumScoreofAGoodSubarray.executor": "Run",
     "Application.MaximumSubsequenceScore.executor": "Run",
+    "Application.MaximumXOROfTwoNumbersInArray.executor": "Run",
     "Application.MeetingRoom.executor": "Run",
     "Application.MeetingRoom2.executor": "Run",
     "Application.MeetingRoom3.executor": "Run",
@@ -160,6 +163,7 @@
     "Application.TotalCosToHireKWorkers.executor": "Run",
     "Application.TrappingRainWater_2.executor": "Run",
     "Application.ValidParenthesisString.executor": "Run",
+    "Application.WordSearch2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -193,7 +197,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ChooseKElementsWithMaximumSum">
+  <component name="RunManager" selected="Application.LongestCommonSuffixQueries">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -218,12 +222,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestHappyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.LongestHappyString" />
+    <configuration name="LongestCommonSuffixQueries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.trie.coding_with_mik.LongestCommonSuffixQueries" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.trie.coding_with_mik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumXOROfTwoNumbersInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.trie.coding_with_mik.MaximumXOROfTwoNumbersInArray" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.trie.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,25 +261,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmallestRangeCoveringElementsfromKLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.SmallestRangeCoveringElementsfromKLists" />
+    <configuration name="WordSearch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.trie.coding_with_mik.WordSearch2" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrappingRainWater_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.TrappingRainWater_2" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.trie.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,11 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestCommonSuffixQueries" />
+        <item itemvalue="Application.MaximumXOROfTwoNumbersInArray" />
+        <item itemvalue="Application.WordSearch2" />
         <item itemvalue="Application.ChooseKElementsWithMaximumSum" />
         <item itemvalue="Application.MinimumOperationsToExceedThresholdValueII" />
-        <item itemvalue="Application.TrappingRainWater_2" />
-        <item itemvalue="Application.LongestHappyString" />
-        <item itemvalue="Application.SmallestRangeCoveringElementsfromKLists" />
       </list>
     </recent_temporary>
   </component>
@@ -576,6 +580,8 @@
       <workItem from="1745230078937" duration="136265000" />
       <workItem from="1745739522783" duration="2820000" />
       <workItem from="1745746669045" duration="4217000" />
+      <workItem from="1745755864471" duration="7801000" />
+      <workItem from="1745777764893" duration="6615000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -856,7 +862,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745705416288</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Completed heap Problems">
+      <option name="closed" value="true" />
+      <created>1745755894225</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1745755894225</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -885,7 +899,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added ShortestCommonSuperSequence code." />
     <MESSAGE value="Added MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother problem and it's solution." />
     <MESSAGE value="Added PrintShortestCommonSuperSequence solution using LCS topDown approach." />
     <MESSAGE value="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution." />
@@ -910,7 +923,8 @@
     <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists" />
     <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists optimally" />
     <MESSAGE value="Implemented LongestHappyString and TrappingRainWater_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented LongestHappyString and TrappingRainWater_2" />
+    <MESSAGE value="Completed heap Problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed heap Problems" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -4033,6 +4047,36 @@
           </properties>
           <option name="timeStamp" value="1435" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="1439" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="1440" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/MaximumXOROfTwoNumbersInArray.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1441" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1442" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="1443" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="1444" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>34</line>
@@ -4175,6 +4219,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
+          <line>55</line>
+          <properties class="com.leetcode.year_2020.trie.coding_with_mik.LongestCommonSuffixQueries" method="stringIndices">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1446" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
+          <line>77</line>
+          <properties class="com.leetcode.year_2020.trie.coding_with_mik.LongestCommonSuffixQueries" method="findIndexOfLongestCommonSuffix">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1447" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
