@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented 632. Smallest Range Covering Elements from K Lists optimally">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/LongestHappyString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TrappingRainWater_2.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented LongestHappyString and TrappingRainWater_2">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/ChooseKElementsWithMaximumSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumOperationsToExceedThresholdValueII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +89,7 @@
     "Application.BrokenCalculator.executor": "Run",
     "Application.BuildingsWithOceanView.executor": "Run",
     "Application.Candy.executor": "Run",
+    "Application.ChooseKElementsWithMaximumSum.executor": "Debug",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
     "Application.DiameterOfNArrayTree.executor": "Run",
@@ -129,6 +130,7 @@
     "Application.MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother.executor": "Run",
     "Application.MinimumNumberOfOperationsToMakeArrayEmpty.executor": "Run",
     "Application.MinimumNumberOfPlatForm.executor": "Run",
+    "Application.MinimumOperationsToExceedThresholdValueII.executor": "Run",
     "Application.MinimumRemoveToMakeValidParentheses.executor": "Debug",
     "Application.MinimumReplacementToSortTheArray.executor": "Debug",
     "Application.MinimumRoundsToCompleteAllTask.executor": "Run",
@@ -191,7 +193,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TrappingRainWater_2">
+  <component name="RunManager" selected="Application.ChooseKElementsWithMaximumSum">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -203,8 +205,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.IPO" />
+    <configuration name="ChooseKElementsWithMaximumSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.ChooseKElementsWithMaximumSum" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -229,8 +231,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RangeSumOfSortedSubArraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.RangeSumOfSortedSubArraySum" />
+    <configuration name="MinimumOperationsToExceedThresholdValueII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.MinimumOperationsToExceedThresholdValueII" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -270,11 +272,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChooseKElementsWithMaximumSum" />
+        <item itemvalue="Application.MinimumOperationsToExceedThresholdValueII" />
         <item itemvalue="Application.TrappingRainWater_2" />
         <item itemvalue="Application.LongestHappyString" />
         <item itemvalue="Application.SmallestRangeCoveringElementsfromKLists" />
-        <item itemvalue="Application.RangeSumOfSortedSubArraySum" />
-        <item itemvalue="Application.IPO" />
       </list>
     </recent_temporary>
   </component>
@@ -571,7 +573,9 @@
       <workItem from="1744908367998" duration="22046000" />
       <workItem from="1745072439798" duration="10435000" />
       <workItem from="1745219451970" duration="1391000" />
-      <workItem from="1745230078937" duration="134284000" />
+      <workItem from="1745230078937" duration="136265000" />
+      <workItem from="1745739522783" duration="2820000" />
+      <workItem from="1745746669045" duration="4217000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -844,7 +848,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745680583662</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Implemented LongestHappyString and TrappingRainWater_2">
+      <option name="closed" value="true" />
+      <created>1745705416288</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1745705416288</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -873,7 +885,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Printing Longest Common Subsequence." />
     <MESSAGE value="Added ShortestCommonSuperSequence code." />
     <MESSAGE value="Added MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother problem and it's solution." />
     <MESSAGE value="Added PrintShortestCommonSuperSequence solution using LCS topDown approach." />
@@ -898,7 +909,8 @@
     <MESSAGE value="Implemented MinimumCostToHireKWorkers" />
     <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists" />
     <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists optimally" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented 632. Smallest Range Covering Elements from K Lists optimally" />
+    <MESSAGE value="Implemented LongestHappyString and TrappingRainWater_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented LongestHappyString and TrappingRainWater_2" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -4007,6 +4019,19 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/TrappingRainWater_2.java</url>
           <line>106</line>
           <option name="timeStamp" value="1432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/MinimumOperationsToExceedThresholdValueII.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1433" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/ChooseKElementsWithMaximumSum.java</url>
+          <line>21</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1435" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
