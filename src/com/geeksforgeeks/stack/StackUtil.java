@@ -10,38 +10,43 @@ public class StackUtil {
     int[] arr = new int[MAX];
     boolean isLogEnabled;
 
-    // Helper class to Implement Queue using Stack
-    class QueueImpl {
-        StackUtil pushStack;
-        StackUtil popStack;
+    public StackUtil(boolean isLogEnabled) {
+        top = -1;
+        this.isLogEnabled = isLogEnabled;
     }
-
-    //Helper Class to Implement Stack using Queue
-    class StackImpl<T> {
-        Queue<T> queue1;
-        Queue<T> queue2;
-
-        StackImpl() {
-            queue1 = new LinkedList<T>();
-            queue2 = new LinkedList<T>();
-        }
-    }
-
-    // Stack which will store the minimum Element
-//    StackUtil minStack = new StackUtil(false);
 
     public static void letsDo(String task) {
         System.out.println("==================" + task + "======================");
     }
 
+    // Stack which will store the minimum Element
+//    StackUtil minStack = new StackUtil(false);
+
     public static void newLine() {
         System.out.println();
     }
 
+    public static void main(String[] args) {
+        StackUtil stack = new StackUtil(true);
 
-    public StackUtil(boolean isLogEnabled) {
-        top = -1;
-        this.isLogEnabled = isLogEnabled;
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+
+        stack.printStack(stack.arr);
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.printStack(stack.arr);
+
+        letsDo("Implement Queue Using Stack");
+        stack.implementQueueUsingStack();
+
+        letsDo("Implement Stack Using Queue");
+        stack.implementStackUsingQueue();
     }
 
     public boolean isEmpty() {
@@ -117,7 +122,7 @@ public class StackUtil {
         while (!pushStack.isEmpty()) {
             popStack.push(pushStack.pop());
         }
-        if (popStack.isEmpty()) {
+        if (!popStack.isEmpty()) {
             System.out.println("Dequeue-ing...." + popStack.pop());
         } else {
             System.out.println("Nothing to deque");
@@ -131,7 +136,6 @@ public class StackUtil {
         StackUtil pushStack = queue.pushStack;
         pushStack.push(item);
     }
-
 
     private void implementStackUsingQueue() {
         StackImpl<Integer> stack = new StackImpl<>();
@@ -217,26 +221,20 @@ public class StackUtil {
         return stack.queue1.poll();
     }
 
-    public static void main(String[] args) {
-        StackUtil stack = new StackUtil(true);
+    // Helper class to Implement Queue using Stack
+    class QueueImpl {
+        StackUtil pushStack;
+        StackUtil popStack;
+    }
 
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
-        stack.push(5);
+    //Helper Class to Implement Stack using Queue
+    class StackImpl<T> {
+        Queue<T> queue1;
+        Queue<T> queue2;
 
-        stack.printStack(stack.arr);
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.printStack(stack.arr);
-
-        letsDo("Implement Queue Using Stack");
-        stack.implementQueueUsingStack();
-
-        letsDo("Implement Stack Using Queue");
-        stack.implementStackUsingQueue();
+        StackImpl() {
+            queue1 = new LinkedList<T>();
+            queue2 = new LinkedList<T>();
+        }
     }
 }

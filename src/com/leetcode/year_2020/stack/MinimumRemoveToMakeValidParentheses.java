@@ -28,6 +28,7 @@ public class MinimumRemoveToMakeValidParentheses {
         System.out.println(minRemoveToMakeValidViaPair("(a(b(c)d)"));
         System.out.println(minRemoveToMakeValidViaPairWithPushingSameBracketInStack("(a(b(c)d)"));
         System.out.println(minRemoveToMakeValidOptimalApproach("(a(b(c)d)"));
+
     }
 
     /**
@@ -37,8 +38,8 @@ public class MinimumRemoveToMakeValidParentheses {
         int total_opens = 0;
         int extra_opens = 0;
         final StringBuilder builder = new StringBuilder();
-        for(int i = 0; i < input.length(); i++) {
-            if(input.charAt(i) == '(') {
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == '(') {
                 // to evaluate at the end, how many open parentheses we should keep
                 // and how many we should kick out
                 total_opens++;
@@ -60,7 +61,7 @@ public class MinimumRemoveToMakeValidParentheses {
         // Now second pass to make sure we delete any extra open parentheses which didn't match
         int open_to_keep = total_opens - extra_opens;
         final StringBuilder result = new StringBuilder();
-        for(int i = 0; i < builder.length(); i++) {
+        for (int i = 0; i < builder.length(); i++) {
             if (builder.charAt(i) == '(') {
                 if (open_to_keep == 0) {
                     continue;
@@ -72,16 +73,6 @@ public class MinimumRemoveToMakeValidParentheses {
             }
         }
         return result.toString();
-    }
-
-    static class Pair {
-        char c;
-        int index;
-
-        public Pair(char c, int index) {
-            this.c = c;
-            this.index = index;
-        }
     }
 
     private static String minRemoveToMakeValidViaPairWithPushingSameBracketInStack(String s) {
@@ -171,5 +162,15 @@ public class MinimumRemoveToMakeValidParentheses {
         }
 
         return str.toString();
+    }
+
+    static class Pair {
+        char c;
+        int index;
+
+        public Pair(char c, int index) {
+            this.c = c;
+            this.index = index;
+        }
     }
 }

@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Completed heap Problems">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/MaximumXOROfTwoNumbersInArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented Trie Problems">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/BasicCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/BuildAnArrayWithStackOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/DailyTemperatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/EvaluateReversePolishNotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/MinimumRemoveToMakeValidParentheses_3Approaches.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/Pattern_132.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/RemoveKDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/SumofSubarrayMinimums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/FindLengthofLongestCommonPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/ReplaceWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/SumOfPrefixScoresOfStrings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/StockSpanProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/StockSpanProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,21 +97,26 @@
     "Application.AccountsMerge.executor": "Debug",
     "Application.AllPossibleStringsUsingSpaces.executor": "Run",
     "Application.BagOfTokens.executor": "Run",
+    "Application.BasicCalculator.executor": "Run",
     "Application.BreakAPalindrome.executor": "Run",
     "Application.BrokenCalculator.executor": "Run",
+    "Application.BuildAnArrayWithStackOperations.executor": "Debug",
     "Application.BuildingsWithOceanView.executor": "Run",
     "Application.Candy.executor": "Run",
     "Application.ChooseKElementsWithMaximumSum.executor": "Debug",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
+    "Application.DailyTemperatures.executor": "Run",
     "Application.DiameterOfNArrayTree.executor": "Run",
     "Application.DisjointSetImplementation.executor": "Run",
     "Application.DotaToSenate.executor": "Run",
     "Application.EarliestFullBloom (1).executor": "Run",
     "Application.EarliestFullBloom.executor": "Run",
     "Application.EliminateMaximumNumberofMonsters.executor": "Run",
+    "Application.EvaluateReversePolishNotation.executor": "Run",
     "Application.FacebookScheduleTask.executor": "Debug",
     "Application.FindKPairWithSmallestSum.executor": "Run",
+    "Application.FindLengthofLongestCommonPrefix.executor": "Run",
     "Application.FindPolygonWithTheLargestPerimeter.executor": "Run",
     "Application.FurthestBuildingYouCanReach.executor": "Run",
     "Application.GasStation.executor": "Run",
@@ -135,6 +151,7 @@
     "Application.MinimumNumberOfPlatForm.executor": "Run",
     "Application.MinimumOperationsToExceedThresholdValueII.executor": "Run",
     "Application.MinimumRemoveToMakeValidParentheses.executor": "Debug",
+    "Application.MinimumRemoveToMakeValidParentheses_3Approaches.executor": "Run",
     "Application.MinimumReplacementToSortTheArray.executor": "Debug",
     "Application.MinimumRoundsToCompleteAllTask.executor": "Run",
     "Application.MinimumSprinklersToWaterThePlant.executor": "Run",
@@ -144,8 +161,10 @@
     "Application.MyCalendar_2 (1).executor": "Run",
     "Application.MyCalendar_2.executor": "Debug",
     "Application.MyCalendar_3.executor": "Run",
+    "Application.NearestGreaterElementToTheLeft.executor": "Run",
     "Application.NonOverLappingIntervals.executor": "Run",
     "Application.OptimalPartitionOfString.executor": "Run",
+    "Application.Pattern_132.executor": "Run",
     "Application.PrintAllPermutations.executor": "Run",
     "Application.PrintShortestCommonSuperSequence.executor": "Run",
     "Application.PrintSubsetOfAlphabets.executor": "Run",
@@ -153,10 +172,16 @@
     "Application.RangeSumOfSortedSubArraySum.executor": "Run",
     "Application.RecursivelyRemoveAllAdjacentDuplicates.executor": "Run",
     "Application.RemoveColoredPiecesIfBothNeighboursAreOfSameColor.executor": "Run",
+    "Application.RemoveKDigits.executor": "Run",
+    "Application.ReplaceWords.executor": "Run",
     "Application.SimplifyPath.executor": "Run",
     "Application.SimplifyPath2.executor": "Run",
     "Application.SingleThreadedCPU.executor": "Run",
     "Application.SmallestRangeCoveringElementsfromKLists.executor": "Run",
+    "Application.StackUtil.executor": "Run",
+    "Application.StockSpanProblem.executor": "Run",
+    "Application.SumOfPrefixScoresOfStrings.executor": "Run",
+    "Application.SumofSubarrayMinimums.executor": "Run",
     "Application.TaskScheduler_621.executor": "Run",
     "Application.TaskScheduler_Leetcode621.executor": "Run",
     "Application.TopKFrequentElements.executor": "Run",
@@ -197,7 +222,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestCommonSuffixQueries">
+  <component name="RunManager" selected="Application.RemoveKDigits">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -209,12 +234,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChooseKElementsWithMaximumSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.ChooseKElementsWithMaximumSum" />
+    <configuration name="BuildAnArrayWithStackOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.BuildAnArrayWithStackOperations" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -222,12 +247,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestCommonSuffixQueries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.trie.coding_with_mik.LongestCommonSuffixQueries" />
+    <configuration name="MinimumRemoveToMakeValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.MinimumRemoveToMakeValidParentheses" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.trie.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -235,12 +260,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumXOROfTwoNumbersInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.trie.coding_with_mik.MaximumXOROfTwoNumbersInArray" />
+    <configuration name="MinimumRemoveToMakeValidParentheses_3Approaches" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.MinimumRemoveToMakeValidParentheses_3Approaches" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.trie.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,12 +273,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumOperationsToExceedThresholdValueII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.MinimumOperationsToExceedThresholdValueII" />
+    <configuration name="Pattern_132" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.Pattern_132" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -261,12 +286,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordSearch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.trie.coding_with_mik.WordSearch2" />
+    <configuration name="RemoveKDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.RemoveKDigits" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.trie.coding_with_mik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -276,11 +301,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LongestCommonSuffixQueries" />
-        <item itemvalue="Application.MaximumXOROfTwoNumbersInArray" />
-        <item itemvalue="Application.WordSearch2" />
-        <item itemvalue="Application.ChooseKElementsWithMaximumSum" />
-        <item itemvalue="Application.MinimumOperationsToExceedThresholdValueII" />
+        <item itemvalue="Application.RemoveKDigits" />
+        <item itemvalue="Application.MinimumRemoveToMakeValidParentheses_3Approaches" />
+        <item itemvalue="Application.MinimumRemoveToMakeValidParentheses" />
+        <item itemvalue="Application.BuildAnArrayWithStackOperations" />
+        <item itemvalue="Application.Pattern_132" />
       </list>
     </recent_temporary>
   </component>
@@ -581,7 +606,7 @@
       <workItem from="1745739522783" duration="2820000" />
       <workItem from="1745746669045" duration="4217000" />
       <workItem from="1745755864471" duration="7801000" />
-      <workItem from="1745777764893" duration="6615000" />
+      <workItem from="1745777764893" duration="47346000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -870,7 +895,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745755894225</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Implemented Trie Problems">
+      <option name="closed" value="true" />
+      <created>1745791828797</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1745791828797</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -899,7 +932,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added MinimumNumberOfInsertionsAndDeletionToTransformOneStringToAnother problem and it's solution." />
     <MESSAGE value="Added PrintShortestCommonSuperSequence solution using LCS topDown approach." />
     <MESSAGE value="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution." />
     <MESSAGE value="AdditiveNumber problem solved via backtracking" />
@@ -924,7 +956,8 @@
     <MESSAGE value="Implemented 632. Smallest Range Covering Elements from K Lists optimally" />
     <MESSAGE value="Implemented LongestHappyString and TrappingRainWater_2" />
     <MESSAGE value="Completed heap Problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed heap Problems" />
+    <MESSAGE value="Implemented Trie Problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Trie Problems" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -2821,7 +2854,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java</url>
-          <line>222</line>
+          <line>31</line>
           <option name="timeStamp" value="930" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2836,7 +2869,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/geeksforgeeks/stack/StackUtil.java</url>
-          <line>92</line>
+          <line>97</line>
           <option name="timeStamp" value="933" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3403,11 +3436,6 @@
           <option name="timeStamp" value="1182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PermutationOfString.java</url>
           <line>20</line>
           <option name="timeStamp" value="1187" />
@@ -3699,11 +3727,6 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java</url>
           <line>38</line>
           <option name="timeStamp" value="1305" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MinimumRemoveToMakeValidParentheses.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="1306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/SimplifyPath.java</url>
@@ -4064,18 +4087,102 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
-          <line>56</line>
+          <line>16</line>
           <option name="timeStamp" value="1442" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
-          <line>68</line>
+          <line>28</line>
           <option name="timeStamp" value="1443" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
-          <line>78</line>
+          <line>38</line>
           <option name="timeStamp" value="1444" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/ReplaceWords.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1448" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/ReplaceWords.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1449" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/ReplaceWords.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1450" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/FindLengthofLongestCommonPrefix.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1452" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/FindLengthofLongestCommonPrefix.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1453" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/FindLengthofLongestCommonPrefix.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1454" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/DailyTemperatures.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/BasicCalculator.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="1462" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/SumofSubarrayMinimums.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1464" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/SumofSubarrayMinimums.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="1465" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/SumofSubarrayMinimums.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="1467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/Pattern_132.java</url>
+          <option name="timeStamp" value="1470" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/Pattern_132.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="1471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/BuildAnArrayWithStackOperations.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/MinimumRemoveToMakeValidParentheses_3Approaches.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1474" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/MinimumRemoveToMakeValidParentheses_3Approaches.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="1475" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/RemoveKDigits.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1476" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
@@ -4222,7 +4329,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
-          <line>55</line>
+          <line>15</line>
           <properties class="com.leetcode.year_2020.trie.coding_with_mik.LongestCommonSuffixQueries" method="stringIndices">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -4231,7 +4338,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/LongestCommonSuffixQueries.java</url>
-          <line>77</line>
+          <line>37</line>
           <properties class="com.leetcode.year_2020.trie.coding_with_mik.LongestCommonSuffixQueries" method="findIndexOfLongestCommonSuffix">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
