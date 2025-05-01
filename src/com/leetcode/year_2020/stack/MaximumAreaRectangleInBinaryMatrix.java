@@ -45,6 +45,25 @@ public class MaximumAreaRectangleInBinaryMatrix {
          * So let's start from top-most row. 1*5 matrix into 1d
          * if we put it into 1D histogram then height will become --> 1 0 1 0 0  callHistogramOnIt();
          *
+         * Also important point when you are standing on a 1D array of 0s and 1s
+         *
+         * [ 1 1 0 1 1 1 1 0 1 1]
+         *   i
+         *
+         *   When standing at i how much right you can strech until you will meet a 0
+         *   same on the left side
+         *   so basically on every i which has 1 we are checking nearest 0 in both side
+         *   So it's kinda similar to finding NEAREST SMALLEST ELEMENT TO THE RIGHT and to THE LEFT as well
+         *   because 0 is smaller than 1
+         *   and ALSO whenever building a RECTANGLE, you want to make sure it's height is consitent as long as it's width is present right
+         *
+         *   this is a rectangle         This is not a rectangle, because a dip in height in between
+         *   |--------------|          |-------     ----------
+         *   |              |          |      |     |        |
+         *   |              |          |      |-----|        |
+         *   |             |          |       |     |       |
+         *   ------------------------------------------------
+         *
          * Now let's try to include 2nd Row(2*4 matrix into 1d) in this and see how much height we can achieve
          * [2, 0, 2, 1, 1]
          *

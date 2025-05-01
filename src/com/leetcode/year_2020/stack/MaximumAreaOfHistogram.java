@@ -30,8 +30,8 @@ public class MaximumAreaOfHistogram {
         System.out.println(findMaxArea_O_N(new int[]{6, 2, 5, 4, 5, 1, 6}));
         System.out.println(findMaxArea_O_N(new int[]{1, 1}));
         System.out.println(findMaxArea_O_N(new int[]{2, 2, 2, 2}));
-    }
 
+    }
 
     public static int findMaxArea(int[] height) {
         /**
