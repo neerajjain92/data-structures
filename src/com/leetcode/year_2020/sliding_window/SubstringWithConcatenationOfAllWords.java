@@ -15,7 +15,7 @@ import java.util.Map;
 public class SubstringWithConcatenationOfAllWords {
 
     public static void main(String[] args) {
-        System.out.println(findSubstring("barfoothefoobarman", new String[]{
+        System.out.println(findSubstring("xbarfoothefoobarmanbarfoo", new String[]{
                 "foo", "bar"
         }));
         System.out.println(findSubstring("wordgoodgoodgoodbestword", new String[]{

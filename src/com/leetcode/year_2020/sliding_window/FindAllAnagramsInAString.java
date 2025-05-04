@@ -18,6 +18,7 @@ import java.util.Map;
 public class FindAllAnagramsInAString {
 
     public static void main(String[] args) {
+        System.out.println(findAnagrams("forxxorfxdofr", "for"));
         System.out.println(findAnagrams("abab", "ab"));
         System.out.println(findAnagrams("cbaebabacd", "abc"));
         System.out.println(findAnagrams("baa", "aa"));

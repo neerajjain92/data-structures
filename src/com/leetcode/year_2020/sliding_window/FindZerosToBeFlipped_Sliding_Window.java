@@ -1,5 +1,8 @@
 package com.leetcode.year_2020.sliding_window;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * https://leetcode.com/problems/max-consecutive-ones-iii/
  * You are given with an array of 1s and 0s. And you are given with an integer m, which signifies number of flips allowed.
@@ -18,9 +21,11 @@ public class FindZerosToBeFlipped_Sliding_Window {
 
     public static void main(String[] args) {
         findZerosToBeFlippedToGetMaximumConsecutiveOnes(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2);
+        findZerosToBeFlippedToGetMaximumConsecutiveOnesNew(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2);
         System.out.println(longestOnes(new int[]{1, 0, 0, 1, 1, 0, 1, 0, 1, 1}, 2));
 
         findZerosToBeFlippedToGetMaximumConsecutiveOnes(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3);
+        findZerosToBeFlippedToGetMaximumConsecutiveOnesNew(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3);
         System.out.println(longestOnes(new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3));
     }
 
@@ -36,6 +41,36 @@ public class FindZerosToBeFlipped_Sliding_Window {
             answer = Math.max(answer, end - beg);
         }
         return answer;
+    }
+
+    public static void findZerosToBeFlippedToGetMaximumConsecutiveOnesNew(int[] arr, int maxZerosToBeFlipped) {
+        // {1, 0, 0, 1, 1, 0, 1, 0, 1, 1}
+        // 2
+        int begin = 0, end = 0;
+        Set<Integer> currentFlipIndex = new HashSet<>();
+        Set<Integer> zeroIndexForMaxConsecutiveOnes = new HashSet<>();
+        int MAX_LENGTH = Integer.MIN_VALUE;
+        while (end < arr.length) {
+            if (arr[end] == 0) {
+                maxZerosToBeFlipped--;
+                currentFlipIndex.add(end);
+            }
+            end++;
+
+            while (maxZerosToBeFlipped < 0) {
+                if (arr[begin] == 0) {
+                    maxZerosToBeFlipped++;
+                    currentFlipIndex.remove(begin);
+                }
+                begin++;
+            }
+
+            if (MAX_LENGTH < end - begin) {
+                MAX_LENGTH = end - begin;
+                zeroIndexForMaxConsecutiveOnes = new HashSet<>(currentFlipIndex);
+            }
+        }
+        System.out.println(zeroIndexForMaxConsecutiveOnes);
     }
 
     public static void findZerosToBeFlippedToGetMaximumConsecutiveOnes(int[] arr, int maxZerosToBeFlipped) {

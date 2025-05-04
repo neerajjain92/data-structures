@@ -17,6 +17,10 @@ public class ParsingABooleanExpression {
         System.out.println(obj.parseBoolExpr("&(|(f))"));
         System.out.println(obj.parseBoolExpr("|(f,f,f,t)"));
         System.out.println(obj.parseBoolExpr("!(&(f,t))"));
+
+        System.out.println(obj.parseBoolExprSingleStack("&(|(f))"));
+        System.out.println(obj.parseBoolExprSingleStack("|(f,f,f,t)"));
+        System.out.println(obj.parseBoolExprSingleStack("!(&(f,t))"));
     }
 
     public boolean parseBoolExpr(String expression) {
@@ -79,5 +83,42 @@ public class ParsingABooleanExpression {
             operands.pop(); // Remove this open it's job is done
         }
         return values;
+    }
+
+    public boolean parseBoolExprSingleStack(String expression) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : expression.toCharArray()) {
+            if (c != ')') {
+                stack.push(c);
+            } else {
+                // We found a closing bracket, let's solve everything inside the bracket
+                StringBuilder innerExpression = new StringBuilder();
+                while (stack.peek() != '(') {
+                    char popped = stack.pop();
+                    if (popped == 'f' || popped == 't') {
+                        innerExpression.append(popped);
+                    }
+                }
+                // Pop the opening bracket
+                stack.pop();
+                char result = evalExpression(innerExpression, stack.pop()); // this  pop is to pop the operator
+                if (stack.isEmpty()) {
+                    return result == 't';
+                } else {
+                    stack.push(result); // to combine with a bigger bracket
+                }
+            }
+        }
+        return false; // Nothing evaled out to true hence false
+    }
+
+    private char evalExpression(StringBuilder innerExpression, Character operator) {
+        if (operator == '&') {
+            return innerExpression.toString().contains("f") ? 'f' : 't';
+        } else if (operator == '|') {
+            return innerExpression.toString().contains("t") ? 't' : 'f';
+        } else {
+            return innerExpression.charAt(0) == 't' ? 'f' : 't';
+        }
     }
 }

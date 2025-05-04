@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented Stack Problems">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/AsteroidCollision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/MaximumScoreFromRemovingSubstrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/MinimumDeletionsToMakeStringBalanced.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/MinimumNumberofSwapstoMaketheStringBalanced.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/NumberOfAtoms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ParsingABooleanExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ReverseSubstringsBetweenEachPairofParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/RobotCollision.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented ParsingABooleanExpression">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/CountSubarraysWithFixedBounds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/CheckIfAParenthesesStringCanBeValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/RemoveAllOccurrencesofaSubstring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaOfHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/MaximumAreaRectangleInBinaryMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindAllAnagramsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindAllAnagramsInAString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindZerosToBeFlipped_Sliding_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindZerosToBeFlipped_Sliding_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SubstringWithConcatenationOfAllWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SubstringWithConcatenationOfAllWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ParsingABooleanExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ParsingABooleanExpression.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,9 +97,12 @@
     "Application.BuildAnArrayWithStackOperations.executor": "Debug",
     "Application.BuildingsWithOceanView.executor": "Run",
     "Application.Candy.executor": "Run",
+    "Application.CheckIfAParenthesesStringCanBeValid.executor": "Debug",
     "Application.ChooseKElementsWithMaximumSum.executor": "Debug",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
+    "Application.CountDistinctElementsInEveryWindowOfSizeK.executor": "Run",
+    "Application.CountSubarraysWithFixedBounds.executor": "Run",
     "Application.DailyTemperatures.executor": "Run",
     "Application.DiameterOfNArrayTree.executor": "Run",
     "Application.DisjointSetImplementation.executor": "Run",
@@ -112,9 +112,11 @@
     "Application.EliminateMaximumNumberofMonsters.executor": "Run",
     "Application.EvaluateReversePolishNotation.executor": "Run",
     "Application.FacebookScheduleTask.executor": "Debug",
+    "Application.FindAllAnagramsInAString.executor": "Run",
     "Application.FindKPairWithSmallestSum.executor": "Run",
     "Application.FindLengthofLongestCommonPrefix.executor": "Run",
     "Application.FindPolygonWithTheLargestPerimeter.executor": "Run",
+    "Application.FindZerosToBeFlipped_Sliding_Window.executor": "Run",
     "Application.FurthestBuildingYouCanReach.executor": "Run",
     "Application.GasStation.executor": "Run",
     "Application.IPO.executor": "Run",
@@ -132,6 +134,7 @@
     "Application.LongestPalindromeByConcatenatingTwoLetterWord.executor": "Run",
     "Application.LongestPalindromicSubsequence.executor": "Run",
     "Application.LongestRepeatingCharacterReplacement.executor": "Run",
+    "Application.LongestSubStringWithAtMostTwoDistinctCharacters.executor": "Debug",
     "Application.MaximumAreaOfHistogram.executor": "Run",
     "Application.MaximumBagsWithFullCapacityOfRocks.executor": "Run",
     "Application.MaximumElementAfterDecreasingAndRearranging.executor": "Run",
@@ -157,6 +160,7 @@
     "Application.MinimumRoundsToCompleteAllTask.executor": "Run",
     "Application.MinimumSprinklersToWaterThePlant.executor": "Run",
     "Application.MinimumTimeToMakeRopeColorful.executor": "Run",
+    "Application.MinimumWindowSubstring.executor": "Debug",
     "Application.MyCalendar_1 (1).executor": "Debug",
     "Application.MyCalendar_1.executor": "Run",
     "Application.MyCalendar_2 (1).executor": "Run",
@@ -174,6 +178,7 @@
     "Application.RandomPickWithWeights.executor": "Run",
     "Application.RangeSumOfSortedSubArraySum.executor": "Run",
     "Application.RecursivelyRemoveAllAdjacentDuplicates.executor": "Run",
+    "Application.RemoveAllOccurrencesofaSubstring.executor": "Run",
     "Application.RemoveColoredPiecesIfBothNeighboursAreOfSameColor.executor": "Run",
     "Application.RemoveKDigits.executor": "Run",
     "Application.ReplaceWords.executor": "Run",
@@ -185,6 +190,7 @@
     "Application.SmallestRangeCoveringElementsfromKLists.executor": "Run",
     "Application.StackUtil.executor": "Run",
     "Application.StockSpanProblem.executor": "Run",
+    "Application.SubstringWithConcatenationOfAllWords.executor": "Run",
     "Application.SumOfPrefixScoresOfStrings.executor": "Run",
     "Application.SumofSubarrayMinimums.executor": "Run",
     "Application.TaskScheduler_621.executor": "Run",
@@ -227,7 +233,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ParsingABooleanExpression">
+  <component name="RunManager" selected="Application.CountSubarraysWithFixedBounds">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -239,12 +245,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumDeletionsToMakeStringBalanced" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.MinimumDeletionsToMakeStringBalanced" />
+    <configuration name="CountDistinctElementsInEveryWindowOfSizeK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.CountDistinctElementsInEveryWindowOfSizeK" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -252,12 +258,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumNumberofSwapstoMaketheStringBalanced" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.MinimumNumberofSwapstoMaketheStringBalanced" />
+    <configuration name="CountSubarraysWithFixedBounds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.CountSubarraysWithFixedBounds" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -265,12 +271,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfAtoms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.NumberOfAtoms" />
+    <configuration name="FindZerosToBeFlipped_Sliding_Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.FindZerosToBeFlipped_Sliding_Window" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -278,12 +284,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParsingABooleanExpression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.ParsingABooleanExpression" />
+    <configuration name="MinimumWindowSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.MinimumWindowSubstring" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,12 +297,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RobotCollision" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.stack.codingWithMIK.RobotCollision" />
+    <configuration name="SubstringWithConcatenationOfAllWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.SubstringWithConcatenationOfAllWords" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.stack.codingWithMIK.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -306,11 +312,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ParsingABooleanExpression" />
-        <item itemvalue="Application.MinimumNumberofSwapstoMaketheStringBalanced" />
-        <item itemvalue="Application.MinimumDeletionsToMakeStringBalanced" />
-        <item itemvalue="Application.NumberOfAtoms" />
-        <item itemvalue="Application.RobotCollision" />
+        <item itemvalue="Application.CountSubarraysWithFixedBounds" />
+        <item itemvalue="Application.FindZerosToBeFlipped_Sliding_Window" />
+        <item itemvalue="Application.CountDistinctElementsInEveryWindowOfSizeK" />
+        <item itemvalue="Application.SubstringWithConcatenationOfAllWords" />
+        <item itemvalue="Application.MinimumWindowSubstring" />
       </list>
     </recent_temporary>
   </component>
@@ -612,7 +618,10 @@
       <workItem from="1745746669045" duration="4217000" />
       <workItem from="1745755864471" duration="7801000" />
       <workItem from="1745777764893" duration="62228000" />
-      <workItem from="1746017579488" duration="29481000" />
+      <workItem from="1746017579488" duration="41320000" />
+      <workItem from="1746167907775" duration="2649000" />
+      <workItem from="1746173395541" duration="9642000" />
+      <workItem from="1746196526073" duration="8660000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -917,7 +926,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745956635931</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Implemented ParsingABooleanExpression">
+      <option name="closed" value="true" />
+      <created>1746109608682</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1746109608682</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -946,7 +963,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added MinimumNumberOfInsertionInStringToMakeItPalindrome solution." />
     <MESSAGE value="AdditiveNumber problem solved via backtracking" />
     <MESSAGE value="Updated TimeComplexity of Backtracking general solutions" />
     <MESSAGE value="Refactoring, and adding new problems" />
@@ -971,7 +987,8 @@
     <MESSAGE value="Completed heap Problems" />
     <MESSAGE value="Implemented Trie Problems" />
     <MESSAGE value="Implemented Stack Problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Stack Problems" />
+    <MESSAGE value="Implemented ParsingABooleanExpression" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented ParsingABooleanExpression" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -2605,7 +2622,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindZerosToBeFlipped_Sliding_Window.java</url>
-          <line>27</line>
+          <line>32</line>
           <option name="timeStamp" value="844" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -4220,8 +4237,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ParsingABooleanExpression.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="1496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/CheckIfAParenthesesStringCanBeValid.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/RemoveAllOccurrencesofaSubstring.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="1501" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/RemoveAllOccurrencesofaSubstring.java</url>
           <line>25</line>
-          <option name="timeStamp" value="1494" />
+          <option name="timeStamp" value="1502" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindAllAnagramsInAString.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1503" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/MinimumWindowSubstring.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindZerosToBeFlipped_Sliding_Window.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1505" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/CountSubarraysWithFixedBounds.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1506" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
@@ -4392,15 +4444,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1489" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ParsingABooleanExpression.java</url>
-          <line>50</line>
-          <properties class="com.leetcode.year_2020.stack.codingWithMIK.ParsingABooleanExpression" method="evaluateNot">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1495" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
