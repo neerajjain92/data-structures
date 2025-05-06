@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented ParsingABooleanExpression">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/CountSubarraysWithFixedBounds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/CheckIfAParenthesesStringCanBeValid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/RemoveAllOccurrencesofaSubstring.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented CountSubarraysWithFixedBounds">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/FrequencyoftheMostFrequentElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/KRadiusSubarrayAverages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/LongestSubarrayOnesAfterDeletingOneElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/MaximizetheConfusionofanExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/MaximumNumberVowelsInSubstringofGivenLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/SlidingWindowMaximum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindAllAnagramsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindAllAnagramsInAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindZerosToBeFlipped_Sliding_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/FindZerosToBeFlipped_Sliding_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SubstringWithConcatenationOfAllWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/SubstringWithConcatenationOfAllWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ParsingABooleanExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/stack/codingWithMIK/ParsingABooleanExpression.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,11 +116,13 @@
     "Application.FindLengthofLongestCommonPrefix.executor": "Run",
     "Application.FindPolygonWithTheLargestPerimeter.executor": "Run",
     "Application.FindZerosToBeFlipped_Sliding_Window.executor": "Run",
+    "Application.FrequencyoftheMostFrequentElement.executor": "Debug",
     "Application.FurthestBuildingYouCanReach.executor": "Run",
     "Application.GasStation.executor": "Run",
     "Application.IPO.executor": "Run",
     "Application.JobSequencingProblem.executor": "Run",
     "Application.JumpGame2.executor": "Run",
+    "Application.KRadiusSubarrayAverages.executor": "Run",
     "Application.KthLargestElementInArray.executor": "Run",
     "Application.KthMissingPositiveNumber.executor": "Run",
     "Application.KthSmallestPrimeFraction.executor": "Run",
@@ -135,9 +136,12 @@
     "Application.LongestPalindromicSubsequence.executor": "Run",
     "Application.LongestRepeatingCharacterReplacement.executor": "Run",
     "Application.LongestSubStringWithAtMostTwoDistinctCharacters.executor": "Debug",
+    "Application.LongestSubarrayOnesAfterDeletingOneElement.executor": "Run",
+    "Application.MaximizetheConfusionofanExam.executor": "Run",
     "Application.MaximumAreaOfHistogram.executor": "Run",
     "Application.MaximumBagsWithFullCapacityOfRocks.executor": "Run",
     "Application.MaximumElementAfterDecreasingAndRearranging.executor": "Run",
+    "Application.MaximumNumberVowelsInSubstringofGivenLength.executor": "Run",
     "Application.MaximumNumberofCoinsYouCanGet.executor": "Debug",
     "Application.MaximumScoreFromRemovingSubstrings.executor": "Run",
     "Application.MaximumScoreofAGoodSubarray.executor": "Run",
@@ -187,6 +191,7 @@
     "Application.SimplifyPath.executor": "Run",
     "Application.SimplifyPath2.executor": "Run",
     "Application.SingleThreadedCPU.executor": "Run",
+    "Application.SlidingWindowMaximum.executor": "Run",
     "Application.SmallestRangeCoveringElementsfromKLists.executor": "Run",
     "Application.StackUtil.executor": "Run",
     "Application.StockSpanProblem.executor": "Run",
@@ -233,7 +238,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountSubarraysWithFixedBounds">
+  <component name="RunManager" selected="Application.FrequencyoftheMostFrequentElement">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -245,21 +250,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountDistinctElementsInEveryWindowOfSizeK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.CountDistinctElementsInEveryWindowOfSizeK" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountSubarraysWithFixedBounds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.CountSubarraysWithFixedBounds" />
+    <configuration name="FrequencyoftheMostFrequentElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.FrequencyoftheMostFrequentElement" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
@@ -271,12 +263,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindZerosToBeFlipped_Sliding_Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.FindZerosToBeFlipped_Sliding_Window" />
+    <configuration name="KRadiusSubarrayAverages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.KRadiusSubarrayAverages" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -284,12 +276,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumWindowSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.MinimumWindowSubstring" />
+    <configuration name="LongestSubarrayOnesAfterDeletingOneElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.LongestSubarrayOnesAfterDeletingOneElement" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -297,12 +289,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubstringWithConcatenationOfAllWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.SubstringWithConcatenationOfAllWords" />
+    <configuration name="MaximizetheConfusionofanExam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.MaximizetheConfusionofanExam" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SlidingWindowMaximum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.SlidingWindowMaximum" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -312,11 +317,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountSubarraysWithFixedBounds" />
-        <item itemvalue="Application.FindZerosToBeFlipped_Sliding_Window" />
-        <item itemvalue="Application.CountDistinctElementsInEveryWindowOfSizeK" />
-        <item itemvalue="Application.SubstringWithConcatenationOfAllWords" />
-        <item itemvalue="Application.MinimumWindowSubstring" />
+        <item itemvalue="Application.FrequencyoftheMostFrequentElement" />
+        <item itemvalue="Application.SlidingWindowMaximum" />
+        <item itemvalue="Application.MaximizetheConfusionofanExam" />
+        <item itemvalue="Application.LongestSubarrayOnesAfterDeletingOneElement" />
+        <item itemvalue="Application.KRadiusSubarrayAverages" />
       </list>
     </recent_temporary>
   </component>
@@ -621,7 +626,8 @@
       <workItem from="1746017579488" duration="41320000" />
       <workItem from="1746167907775" duration="2649000" />
       <workItem from="1746173395541" duration="9642000" />
-      <workItem from="1746196526073" duration="8660000" />
+      <workItem from="1746196526073" duration="47458000" />
+      <workItem from="1746517735487" duration="4603000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -934,7 +940,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746109608682</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Implemented CountSubarraysWithFixedBounds">
+      <option name="closed" value="true" />
+      <created>1746351227563</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1746351227563</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -963,7 +977,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AdditiveNumber problem solved via backtracking" />
     <MESSAGE value="Updated TimeComplexity of Backtracking general solutions" />
     <MESSAGE value="Refactoring, and adding new problems" />
     <MESSAGE value="Implemented Alien Dictionary" />
@@ -988,7 +1001,8 @@
     <MESSAGE value="Implemented Trie Problems" />
     <MESSAGE value="Implemented Stack Problems" />
     <MESSAGE value="Implemented ParsingABooleanExpression" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented ParsingABooleanExpression" />
+    <MESSAGE value="Implemented CountSubarraysWithFixedBounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented CountSubarraysWithFixedBounds" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -4275,6 +4289,26 @@
           <line>71</line>
           <option name="timeStamp" value="1506" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/MaximumNumberVowelsInSubstringofGivenLength.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1507" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/LongestSubarrayOnesAfterDeletingOneElement.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="1512" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/MaximizetheConfusionofanExam.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="1514" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/FrequencyoftheMostFrequentElement.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="1517" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>34</line>
@@ -4444,6 +4478,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1489" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/LongestSubarrayOnesAfterDeletingOneElement.java</url>
+          <line>50</line>
+          <properties class="com.leetcode.year_2020.sliding_window.codestorywithmik.LongestSubarrayOnesAfterDeletingOneElement" method="longestSubarray">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1513" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/FrequencyoftheMostFrequentElement.java</url>
+          <line>162</line>
+          <properties class="com.leetcode.year_2020.sliding_window.codestorywithmik.FrequencyoftheMostFrequentElement" method="maxFrequencyUsingSlidingWindow">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1518" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
