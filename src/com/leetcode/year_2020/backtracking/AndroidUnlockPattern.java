@@ -95,9 +95,6 @@ public class AndroidUnlockPattern {
     }
 
     private static int dfs(final boolean[] visited, final int[][] invalidPatterns, final int current, final int remaining) {
-        if (remaining < 0) {
-            return 0;
-        }
         if (remaining == 0) {
             return 1; // We reached our limit.
         }
@@ -105,7 +102,9 @@ public class AndroidUnlockPattern {
         visited[current] = true;
         int res = 0;
         for (int i = 1; i <= 9; i++) {
-            if (visited[i] || invalidPatterns[current][i] != 0 && !visited[invalidPatterns[current][i]]) {
+            if (visited[i] ||
+                    invalidPatterns[current][i] != 0 && !visited[invalidPatterns[current][i]]) {
+                // You have to jump, but the element in between is not visited yet
                 continue;
             }
             res += dfs(visited, invalidPatterns, i, remaining - 1);

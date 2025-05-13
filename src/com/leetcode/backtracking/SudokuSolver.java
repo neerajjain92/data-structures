@@ -22,7 +22,7 @@ public class SudokuSolver {
 
     private static int EMPTY_CELL = 0;
     private static int TRY_COUNTER = 0;
-    private static boolean SHOULD_ADD_SLEEP_AND_INTERMEDIATE_LOGS = false;
+    private static boolean SHOULD_ADD_SLEEP_AND_INTERMEDIATE_LOGS = true;
 
     public static void main(String[] args) {
 

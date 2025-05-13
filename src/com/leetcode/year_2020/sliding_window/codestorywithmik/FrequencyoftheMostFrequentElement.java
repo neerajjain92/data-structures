@@ -169,7 +169,12 @@ public class FrequencyoftheMostFrequentElement {
             currSum += nums[end];
 
             // If we need to add more than k, then shrink the window
-            while ((long) (end - begin + 1) * nums[end] - currSum > k) {
+            // FYI we can be smart about it as well, since we know that if we shrink the window we
+            // are reducing the windowSize and that won't give us a better answer
+            // so we need not keep shrinking, just shrink once and let the end increase to find a
+            // different window, so replacing while with if
+//            while ((long) (end - begin + 1) * nums[end] - currSum > k) {
+            if ((long) (end - begin + 1) * nums[end] - currSum > k) {
                 currSum -= nums[begin];
                 begin++;
             }

@@ -14,32 +14,64 @@ public class PalindromicPartitioning {
 
     public static void main(String[] args) {
 //        System.out.println(partition("aab"));
-        System.out.println(partition("aabb"));
+        PalindromicPartitioning p = new PalindromicPartitioning();
+//        System.out.println(p.partition("aabb"));
+        System.out.println(p.partition("aab"));
     }
 
-    public static List<List<String>> partition(String s) {
+    public List<List<String>> partition(String str) {
+        /*
+         * [a a b] ==> [[a, a, b], [aa, b]]
+         */
         List<List<String>> result = new ArrayList<>();
-        palindromicSubset(s, 0, new ArrayList<>(), result);
+        int partitionIndex = 0;
+        backtrack(partitionIndex, str, str.length(), result, new ArrayList<>());
         return result;
     }
 
-    private static void palindromicSubset(String s, int pointer, ArrayList<String> subset, List<List<String>> result) {
-        if (pointer == s.length()) {
-            System.out.println(subset);
-            result.add(new ArrayList<>(subset));
+    public void backtrack(int partitionIndex, String str, int len, List<List<String>> result, List<String> current) {
+        if (partitionIndex == len) {
+            result.add(new ArrayList<>(current));
             return;
         }
-        for (int i = pointer; i < s.length(); i++) {
-            if (isPalindrome(s.substring(pointer, i + 1))) {
-                subset.add(s.substring(pointer, i + 1));
-                palindromicSubset(s, i + 1, subset, result);
-                subset.remove(subset.size() - 1);
+
+        for (int i = partitionIndex; i < len; i++) {
+            String part = str.substring(partitionIndex, i + 1);
+            if (isPalindrome(part)) {
+                current.add(part);
+                backtrack(i+1, str, len, result, current);
+                current.remove(current.size() - 1);
             }
         }
     }
 
-    private static boolean isPalindrome(String str) {
-        String temp = str;
-        return new StringBuffer(str).reverse().toString().equals(temp);
+    private boolean isPalindrome(String part) {
+        return new StringBuilder(part).reverse().toString().equals(part);
     }
+
+//    public static List<List<String>> partition(String s) {
+//        List<List<String>> result = new ArrayList<>();
+//        palindromicSubset(s, 0, new ArrayList<>(), result);
+//        return result;
+//    }
+//
+//    private static void palindromicSubset(String s, int pointer, ArrayList<String> subset, List<List<String>> result) {
+//        if (pointer == s.length()) {
+//            System.out.println(subset);
+//            result.add(new ArrayList<>(subset));
+//            return;
+//        }
+//        for (int i = pointer; i < s.length(); i++) {
+//            if (isPalindrome(s.substring(pointer, i + 1))) {
+//                subset.add(s.substring(pointer, i + 1));
+//                palindromicSubset(s, i + 1, subset, result);
+//                subset.remove(subset.size() - 1);
+//            }
+//        }
+//    }
+//
+//    private static boolean isPalindrome(String str) {
+//        String temp = str;
+//        return new StringBuffer(str).reverse().toString().equals(temp);
+//    }
 }

@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented CountSubarraysWithFixedBounds">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/FrequencyoftheMostFrequentElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/KRadiusSubarrayAverages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/LongestSubarrayOnesAfterDeletingOneElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/MaximizetheConfusionofanExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/MaximumNumberVowelsInSubstringofGivenLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/SlidingWindowMaximum.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented FrequencyoftheMostFrequentElement">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/FairDistributionOfCookies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/MaximumNumberOfAchievableTransferRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/NonDecreasingSubsequences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/UniquePaths3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/BinarySubarraysWithSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/CountCompleteSubstrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/LengthofLongestSubarrayWithAtMostKFrequency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/MaximumSizeSubarraySumEqualsK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/NumberofSubmatricesThatSumToTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/SubArrayWithKDifferentIntegers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/AllMneMonicsOfPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/AllMneMonicsOfPhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/SudokuSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubArraySumDivisibleByK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubArraySumDivisibleByK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/FrequencyoftheMostFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/FrequencyoftheMostFrequentElement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +99,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AccountsMerge.executor": "Debug",
+    "Application.AdditiveNumber.executor": "Run",
+    "Application.AllMneMonicsOfPhoneNumber.executor": "Run",
     "Application.AllPossibleStringsUsingSpaces.executor": "Run",
+    "Application.AndroidUnlockPattern.executor": "Run",
     "Application.AsteroidCollision.executor": "Run",
     "Application.BagOfTokens.executor": "Run",
     "Application.BasicCalculator.executor": "Run",
+    "Application.BinarySubarraysWithSum.executor": "Debug",
     "Application.BreakAPalindrome.executor": "Run",
     "Application.BrokenCalculator.executor": "Run",
     "Application.BuildAnArrayWithStackOperations.executor": "Debug",
@@ -100,6 +116,7 @@
     "Application.ChooseKElementsWithMaximumSum.executor": "Debug",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
+    "Application.CountCompleteSubstrings.executor": "Run",
     "Application.CountDistinctElementsInEveryWindowOfSizeK.executor": "Run",
     "Application.CountSubarraysWithFixedBounds.executor": "Run",
     "Application.DailyTemperatures.executor": "Run",
@@ -111,12 +128,13 @@
     "Application.EliminateMaximumNumberofMonsters.executor": "Run",
     "Application.EvaluateReversePolishNotation.executor": "Run",
     "Application.FacebookScheduleTask.executor": "Debug",
+    "Application.FairDistributionOfCookies.executor": "Run",
     "Application.FindAllAnagramsInAString.executor": "Run",
     "Application.FindKPairWithSmallestSum.executor": "Run",
     "Application.FindLengthofLongestCommonPrefix.executor": "Run",
     "Application.FindPolygonWithTheLargestPerimeter.executor": "Run",
     "Application.FindZerosToBeFlipped_Sliding_Window.executor": "Run",
-    "Application.FrequencyoftheMostFrequentElement.executor": "Debug",
+    "Application.FrequencyoftheMostFrequentElement.executor": "Run",
     "Application.FurthestBuildingYouCanReach.executor": "Run",
     "Application.GasStation.executor": "Run",
     "Application.IPO.executor": "Run",
@@ -129,6 +147,7 @@
     "Application.LargestNumberWithKSwaps.executor": "Run",
     "Application.LeastNumberOfUniqueIntegersAfterKRemovals.executor": "Run",
     "Application.Leetcode621_TaskScheduler_Leetcode621.executor": "Run",
+    "Application.LengthofLongestSubarrayWithAtMostKFrequency.executor": "Run",
     "Application.LexicographicallyMinimumStringAfterRemovingStars.executor": "Run",
     "Application.LongestCommonSuffixQueries.executor": "Run",
     "Application.LongestHappyString.executor": "Run",
@@ -141,10 +160,12 @@
     "Application.MaximumAreaOfHistogram.executor": "Run",
     "Application.MaximumBagsWithFullCapacityOfRocks.executor": "Run",
     "Application.MaximumElementAfterDecreasingAndRearranging.executor": "Run",
+    "Application.MaximumNumberOfAchievableTransferRequests.executor": "Run",
     "Application.MaximumNumberVowelsInSubstringofGivenLength.executor": "Run",
     "Application.MaximumNumberofCoinsYouCanGet.executor": "Debug",
     "Application.MaximumScoreFromRemovingSubstrings.executor": "Run",
     "Application.MaximumScoreofAGoodSubarray.executor": "Run",
+    "Application.MaximumSizeSubarraySumEqualsK.executor": "Run",
     "Application.MaximumSubsequenceScore.executor": "Run",
     "Application.MaximumXOROfTwoNumbersInArray.executor": "Run",
     "Application.MeetingRoom.executor": "Run",
@@ -171,10 +192,14 @@
     "Application.MyCalendar_2.executor": "Debug",
     "Application.MyCalendar_3.executor": "Run",
     "Application.NearestGreaterElementToTheLeft.executor": "Run",
+    "Application.NonDecreasingSubsequences.executor": "Run",
     "Application.NonOverLappingIntervals.executor": "Run",
     "Application.NumberOfAtoms.executor": "Run",
+    "Application.NumberofSubmatricesThatSumToTarget.executor": "Run",
     "Application.OptimalPartitionOfString.executor": "Run",
+    "Application.PalindromicPartitioning.executor": "Run",
     "Application.ParsingABooleanExpression.executor": "Run",
+    "Application.Partition_To_K_EqualSum_SubSets.executor": "Run",
     "Application.Pattern_132.executor": "Run",
     "Application.PrintAllPermutations.executor": "Run",
     "Application.PrintShortestCommonSuperSequence.executor": "Run",
@@ -195,7 +220,10 @@
     "Application.SmallestRangeCoveringElementsfromKLists.executor": "Run",
     "Application.StackUtil.executor": "Run",
     "Application.StockSpanProblem.executor": "Run",
+    "Application.SubArraySumDivisibleByK.executor": "Run",
+    "Application.SubArrayWithKDifferentIntegers.executor": "Run",
     "Application.SubstringWithConcatenationOfAllWords.executor": "Run",
+    "Application.SudokuSolver.executor": "Run",
     "Application.SumOfPrefixScoresOfStrings.executor": "Run",
     "Application.SumofSubarrayMinimums.executor": "Run",
     "Application.TaskScheduler_621.executor": "Run",
@@ -203,6 +231,7 @@
     "Application.TopKFrequentElements.executor": "Run",
     "Application.TotalCosToHireKWorkers.executor": "Run",
     "Application.TrappingRainWater_2.executor": "Run",
+    "Application.UniquePaths3.executor": "Run",
     "Application.ValidParenthesisString.executor": "Run",
     "Application.WordSearch2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
@@ -238,7 +267,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FrequencyoftheMostFrequentElement">
+  <component name="RunManager" selected="Application.AndroidUnlockPattern">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -250,12 +279,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FrequencyoftheMostFrequentElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.FrequencyoftheMostFrequentElement" />
+    <configuration name="AdditiveNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.AdditiveNumber" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,12 +292,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KRadiusSubarrayAverages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.KRadiusSubarrayAverages" />
+    <configuration name="AllMneMonicsOfPhoneNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.backtracking.AllMneMonicsOfPhoneNumber" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
+          <option name="PATTERN" value="com.leetcode.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -276,12 +305,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestSubarrayOnesAfterDeletingOneElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.LongestSubarrayOnesAfterDeletingOneElement" />
+    <configuration name="AndroidUnlockPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.AndroidUnlockPattern" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -289,12 +318,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximizetheConfusionofanExam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.MaximizetheConfusionofanExam" />
+    <configuration name="Partition_To_K_EqualSum_SubSets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.backtracking.Partition_To_K_EqualSum_SubSets" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
+          <option name="PATTERN" value="com.leetcode.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -302,12 +331,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SlidingWindowMaximum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.codestorywithmik.SlidingWindowMaximum" />
+    <configuration name="SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.backtracking.SudokuSolver" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.codestorywithmik.*" />
+          <option name="PATTERN" value="com.leetcode.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -317,11 +346,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FrequencyoftheMostFrequentElement" />
-        <item itemvalue="Application.SlidingWindowMaximum" />
-        <item itemvalue="Application.MaximizetheConfusionofanExam" />
-        <item itemvalue="Application.LongestSubarrayOnesAfterDeletingOneElement" />
-        <item itemvalue="Application.KRadiusSubarrayAverages" />
+        <item itemvalue="Application.AndroidUnlockPattern" />
+        <item itemvalue="Application.AdditiveNumber" />
+        <item itemvalue="Application.Partition_To_K_EqualSum_SubSets" />
+        <item itemvalue="Application.AllMneMonicsOfPhoneNumber" />
+        <item itemvalue="Application.SudokuSolver" />
       </list>
     </recent_temporary>
   </component>
@@ -627,7 +656,11 @@
       <workItem from="1746167907775" duration="2649000" />
       <workItem from="1746173395541" duration="9642000" />
       <workItem from="1746196526073" duration="47458000" />
-      <workItem from="1746517735487" duration="4603000" />
+      <workItem from="1746517735487" duration="8889000" />
+      <workItem from="1746557525895" duration="25935000" />
+      <workItem from="1746690445726" duration="8882000" />
+      <workItem from="1746861607924" duration="3000" />
+      <workItem from="1746982374555" duration="41385000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -948,7 +981,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746351227563</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Implemented FrequencyoftheMostFrequentElement">
+      <option name="closed" value="true" />
+      <created>1746538800698</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1746538800698</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -977,7 +1018,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated TimeComplexity of Backtracking general solutions" />
     <MESSAGE value="Refactoring, and adding new problems" />
     <MESSAGE value="Implemented Alien Dictionary" />
     <MESSAGE value="Implemented GroupedShiftedStrings" />
@@ -1002,7 +1042,8 @@
     <MESSAGE value="Implemented Stack Problems" />
     <MESSAGE value="Implemented ParsingABooleanExpression" />
     <MESSAGE value="Implemented CountSubarraysWithFixedBounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented CountSubarraysWithFixedBounds" />
+    <MESSAGE value="Implemented FrequencyoftheMostFrequentElement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented FrequencyoftheMostFrequentElement" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -1138,7 +1179,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java</url>
-          <line>26</line>
+          <line>58</line>
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1707,7 +1748,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubArraySumDivisibleByK.java</url>
-          <line>105</line>
+          <line>106</line>
           <option name="timeStamp" value="438" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1996,7 +2037,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java</url>
-          <line>31</line>
+          <line>63</line>
           <option name="timeStamp" value="557" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2839,12 +2880,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java</url>
-          <line>40</line>
+          <line>81</line>
           <option name="timeStamp" value="908" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java</url>
-          <line>56</line>
+          <line>97</line>
           <option name="timeStamp" value="909" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -4309,6 +4350,101 @@
           <line>164</line>
           <option name="timeStamp" value="1517" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/CountCompleteSubstrings.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1526" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/CountCompleteSubstrings.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="1527" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/BinarySubarraysWithSum.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1530" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/LengthofLongestSubarrayWithAtMostKFrequency.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1532" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/codestorywithmik/SubArrayWithKDifferentIntegers.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1536" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/UniquePaths3.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1537" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/UniquePaths3.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1538" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/UniquePaths3.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="1540" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/UniquePaths3.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1541" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/NonDecreasingSubsequences.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1542" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/NonDecreasingSubsequences.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1544" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1545" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/PalindromicPartitioning.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1546" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/FairDistributionOfCookies.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="1548" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="1550" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/Partition_To_K_EqualSum_SubSets.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="1551" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1552" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AdditiveNumber.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1554" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="1555" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>34</line>
@@ -4496,6 +4632,33 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1518" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/prefix_sum_technique/SubArraySumDivisibleByK.java</url>
+          <line>24</line>
+          <properties class="com.leetcode.year_2020.prefix_sum_technique.SubArraySumDivisibleByK" method="subarraysDivByKNewOptimized">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1531" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/MaximumNumberOfAchievableTransferRequests.java</url>
+          <line>18</line>
+          <properties class="com.leetcode.year_2020.backtracking.codeStoryWithMik.MaximumNumberOfAchievableTransferRequests" method="backtrack">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1549" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/AndroidUnlockPattern.java</url>
+          <line>96</line>
+          <properties class="com.leetcode.year_2020.backtracking.AndroidUnlockPattern" method="dfs">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1557" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />

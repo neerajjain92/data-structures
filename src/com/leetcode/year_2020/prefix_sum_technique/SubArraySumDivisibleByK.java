@@ -15,6 +15,7 @@ public class SubArraySumDivisibleByK {
     public static void main(String[] args) {
         System.out.println(subarraysDivByK(new int[]{4, 5, 0, -2, -3, 1}, 5));
         System.out.println(subarraysDivByKNewOptimized(new int[]{4, 5, 0, -2, -3, 1}, 5));
+        System.out.println(subarraysDivByKNewOptimized(new int[]{2, 3, 5, 4, 5, 3, 4}, 7));
     }
 
     /**
