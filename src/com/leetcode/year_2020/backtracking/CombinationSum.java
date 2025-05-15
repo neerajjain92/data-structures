@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/combinat. ion-sum/
+ * https://leetcode.com/problems/combination-sum/
  *
  *  Find all unique combinations in candidates where the candidate numbers sums to target.
  *
