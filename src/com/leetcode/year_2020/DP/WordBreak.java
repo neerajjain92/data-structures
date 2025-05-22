@@ -34,7 +34,7 @@ public class WordBreak {
         System.out.println(wordBreak("pineapplepenapple", dictionary));
     }
 
-    public static boolean canBreakWordUsingBFS(String s, List<String> wordDictionary) {
+    public static boolean  canBreakWordUsingBFS(String s, List<String> wordDictionary) {
         /**
          * Why using BFS, since it will give you result faster than DFS,as we don't have to go deep into 1 route
          * and then backtrack.

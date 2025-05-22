@@ -8,6 +8,9 @@ import java.util.List;
  * Both
  * https://leetcode.com/problems/permutations/ (Non Duplicate)
  * https://leetcode.com/problems/permutations-ii/submissions/ (Duplicate check).
+ *
+ * // Similar Problem
+ * https://leetcode.com/problems/letter-tile-possibilities/submissions/1635864395/
  * <p>
  * No need to make it this complex see my solution on {@link  Permutations#permuteUtilWithJustSwapping(int[], int, List)} this is beating 99.99
  * Inspiration for this new  : https://www.youtube.com/watch?v=EnRciMd08_g&list=PL_z_8CaSLPWdbOTog8Jxk9XOjzUs3egMP&index=9

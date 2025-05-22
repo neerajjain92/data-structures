@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class WordSearch2 {
+public class  WordSearch2 {
 
     static TrieNode trie;
     Set<String> result;

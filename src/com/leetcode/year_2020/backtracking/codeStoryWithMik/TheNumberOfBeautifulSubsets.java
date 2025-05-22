@@ -30,11 +30,6 @@ public class TheNumberOfBeautifulSubsets {
         return solve(0, nums, k) - 1; // For the empty Subset explained below
     }
 
-    /**
-     * More optimal approach with take and not take
-     * [2,4,6], k = 2
-     * [1], k = 1
-     */
     private int solve(int index, int[] nums, int k) {
         if (index == nums.length) {
             // we reached at end so we must have found at least 1 subset

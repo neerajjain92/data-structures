@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="WIP">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/FindTheMinimumCostArrayPermutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/PathWithMaximumGold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/TheNumberOfBeautifulSubsets.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented more backtracking problems">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/MaximumScoreWordsFormedByLetters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/MaximumDifferenceBetweenNodeAndAncestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/ConstructTheLexicographicallyLargestValidSequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/TheNumberOfBeautifulSubsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/TheNumberOfBeautifulSubsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/FindLeavesOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/FindLeavesOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +67,7 @@
     <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/azul-11.0.17/Contents/Home/lib/src.zip!/java.base/java/lang/Math.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/util/Map.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
@@ -103,6 +108,7 @@
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
     "Application.CombinationSum.executor": "Debug",
+    "Application.ConstructTheLexicographicallyLargestValidSequence.executor": "Run",
     "Application.CountCompleteSubstrings.executor": "Run",
     "Application.CountDistinctElementsInEveryWindowOfSizeK.executor": "Run",
     "Application.CountSubarraysWithFixedBounds.executor": "Run",
@@ -118,6 +124,7 @@
     "Application.FairDistributionOfCookies.executor": "Run",
     "Application.FindAllAnagramsInAString.executor": "Run",
     "Application.FindKPairWithSmallestSum.executor": "Run",
+    "Application.FindLeavesOfBinaryTree.executor": "Run",
     "Application.FindLengthofLongestCommonPrefix.executor": "Run",
     "Application.FindPolygonWithTheLargestPerimeter.executor": "Run",
     "Application.FindTheMinimumCostArrayPermutation.executor": "Debug",
@@ -147,11 +154,13 @@
     "Application.MaximizetheConfusionofanExam.executor": "Run",
     "Application.MaximumAreaOfHistogram.executor": "Run",
     "Application.MaximumBagsWithFullCapacityOfRocks.executor": "Run",
+    "Application.MaximumDifferenceBetweenNodeAndAncestor.executor": "Run",
     "Application.MaximumElementAfterDecreasingAndRearranging.executor": "Run",
     "Application.MaximumNumberOfAchievableTransferRequests.executor": "Run",
     "Application.MaximumNumberVowelsInSubstringofGivenLength.executor": "Run",
     "Application.MaximumNumberofCoinsYouCanGet.executor": "Debug",
     "Application.MaximumScoreFromRemovingSubstrings.executor": "Run",
+    "Application.MaximumScoreWordsFormedByLetters.executor": "Run",
     "Application.MaximumScoreofAGoodSubarray.executor": "Run",
     "Application.MaximumSizeSubarraySumEqualsK.executor": "Run",
     "Application.MaximumSubsequenceScore.executor": "Run",
@@ -190,7 +199,10 @@
     "Application.Partition_To_K_EqualSum_SubSets.executor": "Run",
     "Application.PathWithMaximumGold.executor": "Run",
     "Application.Pattern_132.executor": "Run",
+    "Application.PermutationWithCaseChange.executor": "Run",
+    "Application.PermutationWithSpaces.executor": "Run",
     "Application.PrintAllPermutations.executor": "Run",
+    "Application.PrintAllSubsequenceOfString.executor": "Run",
     "Application.PrintShortestCommonSuperSequence.executor": "Run",
     "Application.PrintSubsetOfAlphabets.executor": "Run",
     "Application.RandomPickWithWeights.executor": "Run",
@@ -245,7 +257,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -257,7 +269,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TheNumberOfBeautifulSubsets">
+  <component name="RunManager" selected="Application.MaximumDifferenceBetweenNodeAndAncestor">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -269,12 +281,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AndroidUnlockPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.AndroidUnlockPattern" />
+    <configuration name="FindLeavesOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.tree.FindLeavesOfBinaryTree" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -282,12 +294,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.CombinationSum" />
+    <configuration name="MaximumDifferenceBetweenNodeAndAncestor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.tree.codestorywithmik.MaximumDifferenceBetweenNodeAndAncestor" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.tree.codestorywithmik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -295,12 +307,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindTheMinimumCostArrayPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.codeStoryWithMik.FindTheMinimumCostArrayPermutation" />
+    <configuration name="PermutationWithCaseChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PermutationWithCaseChange" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.codeStoryWithMik.*" />
+          <option name="PATTERN" value="com.datastructures.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -308,12 +320,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PathWithMaximumGold" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.codeStoryWithMik.PathWithMaximumGold" />
+    <configuration name="PermutationWithSpaces" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PermutationWithSpaces" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.codeStoryWithMik.*" />
+          <option name="PATTERN" value="com.datastructures.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -321,12 +333,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheNumberOfBeautifulSubsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.backtracking.codeStoryWithMik.TheNumberOfBeautifulSubsets" />
+    <configuration name="PrintSubsetOfAlphabets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PrintSubsetOfAlphabets" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.backtracking.codeStoryWithMik.*" />
+          <option name="PATTERN" value="com.datastructures.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -336,11 +348,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TheNumberOfBeautifulSubsets" />
-        <item itemvalue="Application.PathWithMaximumGold" />
-        <item itemvalue="Application.FindTheMinimumCostArrayPermutation" />
-        <item itemvalue="Application.CombinationSum" />
-        <item itemvalue="Application.AndroidUnlockPattern" />
+        <item itemvalue="Application.MaximumDifferenceBetweenNodeAndAncestor" />
+        <item itemvalue="Application.FindLeavesOfBinaryTree" />
+        <item itemvalue="Application.PermutationWithCaseChange" />
+        <item itemvalue="Application.PermutationWithSpaces" />
+        <item itemvalue="Application.PrintSubsetOfAlphabets" />
       </list>
     </recent_temporary>
   </component>
@@ -650,7 +662,9 @@
       <workItem from="1746557525895" duration="25935000" />
       <workItem from="1746690445726" duration="8882000" />
       <workItem from="1746861607924" duration="3000" />
-      <workItem from="1746982374555" duration="56266000" />
+      <workItem from="1746982374555" duration="72461000" />
+      <workItem from="1747421398344" duration="11577000" />
+      <workItem from="1747725568023" duration="9562000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -987,7 +1001,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747168354699</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Implemented more backtracking problems">
+      <option name="closed" value="true" />
+      <created>1747297717250</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1747297717250</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1016,7 +1038,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Alien Dictionary" />
     <MESSAGE value="Implemented GroupedShiftedStrings" />
     <MESSAGE value="Implemented PalindromePermutation_2, TaxBracketFacebookProblem, GroupedShiftedStrings, TaskScheduler" />
     <MESSAGE value="Implemented RobotRoomCleaner, SwapAdjacentInLRString.java, AboveAverageSubarrays, CustomSortString, KthMissingPositiveNumber,&#10;ArithmeticSlices_1_Subarrays, ArithmeticSlices_2_Subsequence, LongestArithmeticSequence, UpdateDistanceOfRoomsFromGates, PancakeSorting, BasicCalulator, MultiplyStrings, VerticalOrderTraversal" />
@@ -1041,7 +1062,8 @@
     <MESSAGE value="Implemented CountSubarraysWithFixedBounds" />
     <MESSAGE value="Implemented FrequencyoftheMostFrequentElement" />
     <MESSAGE value="WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
+    <MESSAGE value="Implemented more backtracking problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented more backtracking problems" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -4460,6 +4482,16 @@
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/PathWithMaximumGold.java</url>
           <line>82</line>
           <option name="timeStamp" value="1560" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/backtracking/MaximumScoreWordsFormedByLetters.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="1561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/ConstructTheLexicographicallyLargestValidSequence.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="1563" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>

@@ -2,10 +2,7 @@ package com.leetcode.year_2020.tree;
 
 import com.leetcode.year_2020.TreeNode;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * https://www.lintcode.com/problem/650/
@@ -27,6 +24,8 @@ public class FindLeavesOfBinaryTree {
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
         System.out.println(findLeaves(root));
+        FindLeavesOfBinaryTree obj = new FindLeavesOfBinaryTree();
+        System.out.println(obj.findLeavesNew(root));
 
         /**
          *
@@ -41,6 +40,7 @@ public class FindLeavesOfBinaryTree {
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
         System.out.println(findLeaves(root));
+        System.out.println(obj.findLeavesNew(root));
     }
 
     public static List<List<Integer>> findLeaves(TreeNode root) {
@@ -68,5 +68,25 @@ public class FindLeavesOfBinaryTree {
             seen.add(root);
         }
         return false;
+    }
+
+    public List<List<Integer>> findLeavesNew(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        distanceFromLeafNodes(root, result);
+        return result;
+    }
+
+    private int distanceFromLeafNodes(TreeNode root, List<List<Integer>> result) {
+        if (root == null) return 0;
+        int leftDistance = distanceFromLeafNodes(root.left, result);
+        int rightDistance = distanceFromLeafNodes(root.right, result);
+
+        int distance = Math.max(leftDistance, rightDistance) + 1;
+        if (result.size() < distance) {
+            List<Integer> leafs = new ArrayList<>();
+            result.add(leafs);
+        }
+        result.get(distance-1).add(root.val); // This -1 is because height we get is not 0 base dut ArrayList is 0 based
+        return distance;
     }
 }

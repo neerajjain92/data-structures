@@ -15,13 +15,14 @@ package com.datastructures.recursion;
  */
 public class PrintAllSubsequenceOfString {
     public static void main(String[] args) {
-        printAllSubsequenceNew("abc", "");
+//        printAllSubsequenceNew("abc", "");
+        printAllSubsequenceNew("aab", "");
         printAllSubsequenceNew("123", "");
         printAllSubsequenceNew("Geeks", "");
     }
 
     private static void printAllSubsequenceNew(String input, String output) {
-        if (input.length() == 0) {
+        if (input.isEmpty()) {
             if (!output.isEmpty()) {
                 System.out.println(output);
             }
