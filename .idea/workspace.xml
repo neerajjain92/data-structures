@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented more backtracking problems">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/backtracking/MaximumScoreWordsFormedByLetters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/MaximumDifferenceBetweenNodeAndAncestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/ConstructTheLexicographicallyLargestValidSequence.java" afterDir="false" />
+    <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented Trees problem">
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/AmountOfTimeForBinaryTreeToBeInfected.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/DistributeCoinsInBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/FindDuplicateSubtrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/MaximumProductOfSplittedBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/datastructures/recursion/PrintAllSubsequenceOfString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/WordBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/ArrayPermutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/TheNumberOfBeautifulSubsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/backtracking/codeStoryWithMik/TheNumberOfBeautifulSubsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/FindLeavesOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/FindLeavesOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/trie/coding_with_mik/WordSearch2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +62,7 @@
     <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/lang/Long.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/util/Map.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="KubernetesApiPersistence">
@@ -93,6 +89,7 @@
     "Application.AdditiveNumber.executor": "Run",
     "Application.AllMneMonicsOfPhoneNumber.executor": "Run",
     "Application.AllPossibleStringsUsingSpaces.executor": "Run",
+    "Application.AmountOfTimeForBinaryTreeToBeInfected.executor": "Run",
     "Application.AndroidUnlockPattern.executor": "Debug",
     "Application.AsteroidCollision.executor": "Run",
     "Application.BagOfTokens.executor": "Run",
@@ -269,7 +266,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaximumDifferenceBetweenNodeAndAncestor">
+  <component name="RunManager" selected="Application.AmountOfTimeForBinaryTreeToBeInfected">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -277,6 +274,19 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmountOfTimeForBinaryTreeToBeInfected" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.tree.codestorywithmik.AmountOfTimeForBinaryTreeToBeInfected" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.year_2020.tree.codestorywithmik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -333,26 +343,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintSubsetOfAlphabets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PrintSubsetOfAlphabets" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.datastructures.recursion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AmountOfTimeForBinaryTreeToBeInfected" />
         <item itemvalue="Application.MaximumDifferenceBetweenNodeAndAncestor" />
         <item itemvalue="Application.FindLeavesOfBinaryTree" />
         <item itemvalue="Application.PermutationWithCaseChange" />
         <item itemvalue="Application.PermutationWithSpaces" />
-        <item itemvalue="Application.PrintSubsetOfAlphabets" />
       </list>
     </recent_temporary>
   </component>
@@ -664,7 +661,8 @@
       <workItem from="1746861607924" duration="3000" />
       <workItem from="1746982374555" duration="72461000" />
       <workItem from="1747421398344" duration="11577000" />
-      <workItem from="1747725568023" duration="9562000" />
+      <workItem from="1747725568023" duration="19933000" />
+      <workItem from="1748098426158" duration="6316000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -1009,7 +1007,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747297717250</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Implemented Trees problem">
+      <option name="closed" value="true" />
+      <created>1747903550367</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1747903550367</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1038,7 +1044,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented GroupedShiftedStrings" />
     <MESSAGE value="Implemented PalindromePermutation_2, TaxBracketFacebookProblem, GroupedShiftedStrings, TaskScheduler" />
     <MESSAGE value="Implemented RobotRoomCleaner, SwapAdjacentInLRString.java, AboveAverageSubarrays, CustomSortString, KthMissingPositiveNumber,&#10;ArithmeticSlices_1_Subarrays, ArithmeticSlices_2_Subsequence, LongestArithmeticSequence, UpdateDistanceOfRoomsFromGates, PancakeSorting, BasicCalulator, MultiplyStrings, VerticalOrderTraversal" />
     <MESSAGE value="Implemented multiple new algorithms question" />
@@ -1063,7 +1068,8 @@
     <MESSAGE value="Implemented FrequencyoftheMostFrequentElement" />
     <MESSAGE value="WIP" />
     <MESSAGE value="Implemented more backtracking problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented more backtracking problems" />
+    <MESSAGE value="Implemented Trees problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Trees problem" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
