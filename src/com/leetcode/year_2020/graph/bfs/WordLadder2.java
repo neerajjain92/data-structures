@@ -14,7 +14,10 @@ public class WordLadder2 {
          *
          * DICTIONARY:==> PAT, BOT, POT, POZ, COZ
          */
-//        System.out.println(findLadders("pat", "coz", new ArrayList<>(Arrays.asList("bot", "pot", "poz", "coz"))));
+        // Answer to above is bat → pat → pot → poz→ coz
+        //  and              bat → bot → pot → poz→ coz
+        System.out.println(findLadders("bat", "coz", new ArrayList<>(Arrays.asList("pat", "bot", "pot", "poz", "coz"))));
+
         System.out.println(findLadders("red", "tax", new ArrayList<>(Arrays.asList("ted", "tex", "red", "tax", "tad", "den", "rex", "pee"))));
     }
 
@@ -35,7 +38,7 @@ public class WordLadder2 {
                 List<String> currentPath = queue.poll();
                 String lastWord = currentPath.get(currentPath.size() - 1);
 
-                for (String neighbour : getReachableWord(lastWord, wordList, visited)) {
+                for (String neighbour : getReachableWord(lastWord, wordList)) {
                     List<String> newPath = new ArrayList<>(currentPath);
                     newPath.add(neighbour);
                     visited.add(neighbour);
@@ -54,7 +57,7 @@ public class WordLadder2 {
         return result;
     }
 
-    private static List<String> getReachableWord(String lastWord, List<String> wordList, Set<String> visited) {
+    private static List<String> getReachableWord(String lastWord, List<String> wordList) {
         List<String> reachableWords = new ArrayList<>();
         for (int i = 0; i < lastWord.length(); i++) {
             char[] lastWordCharArr = lastWord.toCharArray();

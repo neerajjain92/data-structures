@@ -30,11 +30,25 @@ public class LengthofLongestCommonSubstring {
     }
 
     /**
-     * @param X S1 charArray representation
-     * @param Y S2 charArray representation
-     * @param m Length of S1
-     * @param n Length of S2
-     * @return Length of Longest Common SubString
+     * This is wrong approach for this, So IGNORE in future
+     * better and correct is top down
+     *
+     * Test Cases Passed:
+     * 53 /219
+     * For Input :
+     * KXCGMTMVVGFQQWSPD
+     * JXZADDUKVLQPKUZJZHWSUTPCAFSYAIBJHAMMEGWBTPQELRNKBLDXGUZGCSEC
+     * Your Code's output is:
+     * 1
+     * It's Correct output is:
+     * 2
+     * Output Difference:
+     * 12
+     *
+     * Aur isme bhi fatega
+     *
+     * PLEASE NOTE
+     * IN THIS QUESTION, THE RECURSIVE VARIATION ISN'T AS SIMPLE AS TO JUST CHANGE MAX CONDITION. WE HAVE TO MAKE ALL 3 CALLS EVERYTIME. TAKE THIS STRING "ABCFJSBC" AND "DHSJABC" .
      */
     private static int longestCommonSubString(char[] X, char[] Y, int m, int n) {
         if (m == 0 || n == 0) return 0; // if either of them is null we can't have anything in common.

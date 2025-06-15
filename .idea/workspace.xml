@@ -5,11 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afc79c-bd80-412d-9acb-43d370780b26" name="Default Changelist" comment="Implemented Trees problem">
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/AmountOfTimeForBinaryTreeToBeInfected.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/DistributeCoinsInBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/FindDuplicateSubtrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/tree/codestorywithmik/MaximumProductOfSplittedBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/array/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/array/GroupShiftedStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/FindInMountainArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/LastDayWhereYouCanStillCross.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MagneticForceBetweenTwoBalls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MaximumValueAtAGivenIndexInABoundedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MinimizeTheMaximumDifferenceOfPairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/NumberOfFlowersInFullBloom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/WordLadderTwoOptimized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/CheckingExistenceOfEdgeLengthLimitedPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/MinimumTimeToCollectAllApplesInATree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/NestedListWeightSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthSmallestDigitsSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/ConvertSortedListToBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/LargestColorValueInADirectedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/RemoveZeroSumConsecutiveNodesFromLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/ReverseLinkedList2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/coding_with_minmer_meta/MaxConsecutiveVacation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/two_pointers/ValidWordAbbreviation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/LengthofLongestCommonSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/LengthofLongestCommonSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/LongestRepeatingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/LongestRepeatingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/PrintShortestCommonSuperSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/PrintShortestCommonSuperSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/SequencePatternMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/SequencePatternMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CoinChange_MinCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CoinChange_MinCoins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/DP/zero_one_knapsack/TargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/AllocateMinimumNumberOfPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/AllocateMinimumNumberOfPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/WordLadder2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/WordLadder2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/SatisfiabilityofEqualityEquations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/SatisfiabilityofEqualityEquations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +90,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/lang/Long.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/util/List.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/util/Map.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="KubernetesApiPersistence">
@@ -101,14 +129,19 @@
     "Application.BuildingsWithOceanView.executor": "Run",
     "Application.Candy.executor": "Run",
     "Application.CheckIfAParenthesesStringCanBeValid.executor": "Debug",
+    "Application.CheckingExistenceOfEdgeLengthLimitedPaths.executor": "Debug",
     "Application.ChooseKElementsWithMaximumSum.executor": "Debug",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CloneALinkedListWithRandomPointers.executor": "Run",
+    "Application.CoinChange_MinCoins.executor": "Run",
     "Application.CombinationSum.executor": "Debug",
     "Application.ConstructTheLexicographicallyLargestValidSequence.executor": "Run",
+    "Application.ConvertSortedListToBinarySearchTree (1).executor": "Run",
+    "Application.ConvertSortedListToBinarySearchTree.executor": "Run",
     "Application.CountCompleteSubstrings.executor": "Run",
     "Application.CountDistinctElementsInEveryWindowOfSizeK.executor": "Run",
     "Application.CountSubarraysWithFixedBounds.executor": "Run",
+    "Application.CourseSchedule.executor": "Run",
     "Application.DailyTemperatures.executor": "Run",
     "Application.DiameterOfNArrayTree.executor": "Run",
     "Application.DisjointSetImplementation.executor": "Run",
@@ -129,14 +162,19 @@
     "Application.FrequencyoftheMostFrequentElement.executor": "Run",
     "Application.FurthestBuildingYouCanReach.executor": "Run",
     "Application.GasStation.executor": "Run",
+    "Application.GroupShiftedStrings.executor": "Run",
     "Application.IPO.executor": "Run",
     "Application.JobSequencingProblem.executor": "Run",
     "Application.JumpGame2.executor": "Run",
     "Application.KRadiusSubarrayAverages.executor": "Run",
     "Application.KthLargestElementInArray.executor": "Run",
     "Application.KthMissingPositiveNumber.executor": "Run",
+    "Application.KthSmallestDigitsSum.executor": "Run",
     "Application.KthSmallestPrimeFraction.executor": "Run",
+    "Application.LRUCache.executor": "Run",
+    "Application.LargestColorValueInADirectedGraph.executor": "Run",
     "Application.LargestNumberWithKSwaps.executor": "Run",
+    "Application.LastDayWhereYouCanStillCross.executor": "Debug",
     "Application.LeastNumberOfUniqueIntegersAfterKRemovals.executor": "Run",
     "Application.Leetcode621_TaskScheduler_Leetcode621.executor": "Run",
     "Application.LengthofLongestSubarrayWithAtMostKFrequency.executor": "Run",
@@ -148,6 +186,8 @@
     "Application.LongestRepeatingCharacterReplacement.executor": "Run",
     "Application.LongestSubStringWithAtMostTwoDistinctCharacters.executor": "Debug",
     "Application.LongestSubarrayOnesAfterDeletingOneElement.executor": "Run",
+    "Application.MagneticForceBetweenTwoBalls.executor": "Debug",
+    "Application.MaxConsecutiveVacation.executor": "Run",
     "Application.MaximizetheConfusionofanExam.executor": "Run",
     "Application.MaximumAreaOfHistogram.executor": "Run",
     "Application.MaximumBagsWithFullCapacityOfRocks.executor": "Run",
@@ -165,6 +205,7 @@
     "Application.MeetingRoom.executor": "Run",
     "Application.MeetingRoom2.executor": "Run",
     "Application.MeetingRoom3.executor": "Run",
+    "Application.MinimizeTheMaximumDifferenceOfPairs.executor": "Run",
     "Application.MinimumCostToHireKWorkers.executor": "Run",
     "Application.MinimumDeletionsToMakeStringBalanced.executor": "Run",
     "Application.MinimumDeletionstoMakeCharacterFrequenciesUnique.executor": "Run",
@@ -178,6 +219,7 @@
     "Application.MinimumReplacementToSortTheArray.executor": "Debug",
     "Application.MinimumRoundsToCompleteAllTask.executor": "Run",
     "Application.MinimumSprinklersToWaterThePlant.executor": "Run",
+    "Application.MinimumSubsetDifference.executor": "Run",
     "Application.MinimumTimeToMakeRopeColorful.executor": "Run",
     "Application.MinimumWindowSubstring.executor": "Debug",
     "Application.MyCalendar_1 (1).executor": "Debug",
@@ -186,9 +228,15 @@
     "Application.MyCalendar_2.executor": "Debug",
     "Application.MyCalendar_3.executor": "Run",
     "Application.NearestGreaterElementToTheLeft.executor": "Run",
+    "Application.NestedListWeightSum (1).executor": "Run",
+    "Application.NestedListWeightSum (2).executor": "Run",
+    "Application.NestedListWeightSum (3).executor": "Run",
+    "Application.NestedListWeightSum (4).executor": "Debug",
+    "Application.NestedListWeightSum.executor": "Debug",
     "Application.NonDecreasingSubsequences.executor": "Run",
     "Application.NonOverLappingIntervals.executor": "Run",
     "Application.NumberOfAtoms.executor": "Run",
+    "Application.NumberOfFlowersInFullBloom.executor": "Debug",
     "Application.NumberofSubmatricesThatSumToTarget.executor": "Run",
     "Application.OptimalPartitionOfString.executor": "Run",
     "Application.PalindromicPartitioning.executor": "Run",
@@ -208,9 +256,12 @@
     "Application.RemoveAllOccurrencesofaSubstring.executor": "Run",
     "Application.RemoveColoredPiecesIfBothNeighboursAreOfSameColor.executor": "Run",
     "Application.RemoveKDigits.executor": "Run",
+    "Application.RemoveZeroSumConsecutiveNodesFromLinkedList.executor": "Run",
     "Application.ReplaceWords.executor": "Run",
+    "Application.ReverseLinkedList2.executor": "Run",
     "Application.ReverseSubstringsBetweenEachPairofParentheses.executor": "Run",
     "Application.RobotCollision.executor": "Run",
+    "Application.SatisfiabilityofEqualityEquations.executor": "Run",
     "Application.SimplifyPath.executor": "Run",
     "Application.SimplifyPath2.executor": "Run",
     "Application.SingleThreadedCPU.executor": "Run",
@@ -220,18 +271,25 @@
     "Application.StockSpanProblem.executor": "Run",
     "Application.SubArraySumDivisibleByK.executor": "Run",
     "Application.SubArrayWithKDifferentIntegers.executor": "Run",
+    "Application.SubSet_Permutations_CombinationSum.executor": "Run",
     "Application.SubstringWithConcatenationOfAllWords.executor": "Run",
     "Application.SudokuSolver.executor": "Run",
     "Application.SumOfPrefixScoresOfStrings.executor": "Run",
     "Application.SumofSubarrayMinimums.executor": "Run",
+    "Application.TargetSum.executor": "Run",
     "Application.TaskScheduler_621.executor": "Run",
     "Application.TaskScheduler_Leetcode621.executor": "Run",
     "Application.TheNumberOfBeautifulSubsets.executor": "Run",
+    "Application.TicTacToe.executor": "Run",
     "Application.TopKFrequentElements.executor": "Run",
     "Application.TotalCosToHireKWorkers.executor": "Run",
     "Application.TrappingRainWater_2.executor": "Run",
     "Application.UniquePaths3.executor": "Run",
     "Application.ValidParenthesisString.executor": "Run",
+    "Application.ValidWordAbbreviation.executor": "Debug",
+    "Application.WordLadder1.executor": "Debug",
+    "Application.WordLadder2.executor": "Debug",
+    "Application.WordLadderTwoOptimized.executor": "Run",
     "Application.WordSearch2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -266,7 +324,7 @@
       <recent name="$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AmountOfTimeForBinaryTreeToBeInfected">
+  <component name="RunManager" selected="Application.GroupShiftedStrings">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -278,12 +336,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmountOfTimeForBinaryTreeToBeInfected" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.tree.codestorywithmik.AmountOfTimeForBinaryTreeToBeInfected" />
+    <configuration name="GroupShiftedStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.array.GroupShiftedStrings" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.tree.codestorywithmik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,12 +349,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindLeavesOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.tree.FindLeavesOfBinaryTree" />
+    <configuration name="KthSmallestDigitsSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.heap.coding_with_mik.KthSmallestDigitsSum" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.tree.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.heap.coding_with_mik.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -304,12 +362,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumDifferenceBetweenNodeAndAncestor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.tree.codestorywithmik.MaximumDifferenceBetweenNodeAndAncestor" />
+    <configuration name="MaxConsecutiveVacation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.sliding_window.coding_with_minmer_meta.MaxConsecutiveVacation" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.year_2020.tree.codestorywithmik.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.sliding_window.coding_with_minmer_meta.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -317,12 +375,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PermutationWithCaseChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PermutationWithCaseChange" />
+    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.array.TicTacToe" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.datastructures.recursion.*" />
+          <option name="PATTERN" value="com.leetcode.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -330,12 +388,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PermutationWithSpaces" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.datastructures.recursion.PermutationWithSpaces" />
+    <configuration name="ValidWordAbbreviation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.year_2020.two_pointers.ValidWordAbbreviation" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.datastructures.recursion.*" />
+          <option name="PATTERN" value="com.leetcode.year_2020.two_pointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -345,11 +403,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AmountOfTimeForBinaryTreeToBeInfected" />
-        <item itemvalue="Application.MaximumDifferenceBetweenNodeAndAncestor" />
-        <item itemvalue="Application.FindLeavesOfBinaryTree" />
-        <item itemvalue="Application.PermutationWithCaseChange" />
-        <item itemvalue="Application.PermutationWithSpaces" />
+        <item itemvalue="Application.GroupShiftedStrings" />
+        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.ValidWordAbbreviation" />
+        <item itemvalue="Application.MaxConsecutiveVacation" />
+        <item itemvalue="Application.KthSmallestDigitsSum" />
       </list>
     </recent_temporary>
   </component>
@@ -662,7 +720,23 @@
       <workItem from="1746982374555" duration="72461000" />
       <workItem from="1747421398344" duration="11577000" />
       <workItem from="1747725568023" duration="19933000" />
-      <workItem from="1748098426158" duration="6316000" />
+      <workItem from="1748098426158" duration="8998000" />
+      <workItem from="1748256260683" duration="18322000" />
+      <workItem from="1748590355266" duration="21947000" />
+      <workItem from="1748977303085" duration="8982000" />
+      <workItem from="1749120488802" duration="5561000" />
+      <workItem from="1749371015245" duration="4315000" />
+      <workItem from="1749405983590" duration="5067000" />
+      <workItem from="1749548787805" duration="10870000" />
+      <workItem from="1749621843810" duration="6723000" />
+      <workItem from="1749654001472" duration="8755000" />
+      <workItem from="1749679176122" duration="669000" />
+      <workItem from="1749711562592" duration="7639000" />
+      <workItem from="1749743801594" duration="2136000" />
+      <workItem from="1749763917404" duration="4945000" />
+      <workItem from="1749826277957" duration="10230000" />
+      <workItem from="1749889156421" duration="5071000" />
+      <workItem from="1749976700996" duration="24534000" />
     </task>
     <task id="LOCAL-00001" summary="Added PartitionEqualSubsetSum problem, Recursive, Memorization and Bottom Up solutions.">
       <created>1588607194470</created>
@@ -1375,18 +1449,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>40</line>
+          <line>18</line>
           <option name="timeStamp" value="257" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="258" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="259" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/SecondMinimumNodeInBinaryTree.java</url>
@@ -1594,12 +1658,12 @@
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="amount" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CoinChange_MinCoins.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CoinChange_MinCoins.java</url>
-          <line>28</line>
+          <line>29</line>
           <option name="timeStamp" value="365" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1614,7 +1678,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/LengthofLongestCommonSubstring.java</url>
-          <line>42</line>
+          <line>56</line>
           <option name="timeStamp" value="368" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1624,7 +1688,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/PrintShortestCommonSuperSequence.java</url>
-          <line>106</line>
+          <line>107</line>
           <option name="timeStamp" value="373" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3286,7 +3350,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/PrintShortestCommonSuperSequence.java</url>
-          <line>76</line>
+          <line>77</line>
           <option name="timeStamp" value="1059" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3296,7 +3360,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java</url>
-          <line>32</line>
+          <line>53</line>
           <option name="timeStamp" value="1063" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3661,43 +3725,28 @@
           <option name="timeStamp" value="1230" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/ListNode.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1231" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/ListNode.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1232" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/DeleteEveryAlternativeNodeInCircularList.java</url>
           <line>97</line>
           <option name="timeStamp" value="1233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="1234" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>50</line>
+          <line>48</line>
           <option name="timeStamp" value="1235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>99</line>
+          <line>91</line>
           <option name="timeStamp" value="1236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>55</line>
+          <line>53</line>
           <option name="timeStamp" value="1237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/LRUCache.java</url>
-          <line>87</line>
+          <line>79</line>
           <option name="timeStamp" value="1238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3827,12 +3876,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java</url>
-          <line>35</line>
+          <line>56</line>
           <option name="timeStamp" value="1304" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/KthMissingPositiveNumber.java</url>
-          <line>38</line>
+          <line>59</line>
           <option name="timeStamp" value="1305" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -3847,7 +3896,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/longest_common_subsequence/PrintShortestCommonSuperSequence.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="1318" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -4499,6 +4548,120 @@
           <line>58</line>
           <option name="timeStamp" value="1563" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/ConvertSortedListToBinarySearchTree.java</url>
+          <line>21</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1565" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/ConvertSortedListToBinarySearchTree.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1566" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/RemoveZeroSumConsecutiveNodesFromLinkedList.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/WordLadder1.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1570" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/WordLadder2.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1571" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/bfs/WordLadderTwoOptimized.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/LargestColorValueInADirectedGraph.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1575" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/CheckingExistenceOfEdgeLengthLimitedPaths.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1576" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/CheckingExistenceOfEdgeLengthLimitedPaths.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="1579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/LastDayWhereYouCanStillCross.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1584" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/LastDayWhereYouCanStillCross.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1585" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MagneticForceBetweenTwoBalls.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1586" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MagneticForceBetweenTwoBalls.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1588" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/NumberOfFlowersInFullBloom.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1589" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CoinChange_MinCoins.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="1590" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CoinChange_MinCoins.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="1591" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/NestedListWeightSum.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="1594" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/heap/coding_with_mik/KthSmallestDigitsSum.java</url>
+          <line>23</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1595" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/sliding_window/coding_with_minmer_meta/MaxConsecutiveVacation.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="1596" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/two_pointers/ValidWordAbbreviation.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1598" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/two_pointers/ValidWordAbbreviation.java</url>
+          <line>67</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1599" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/matrix_chain_multiplication/EggDropping.java</url>
           <line>34</line>
@@ -4714,10 +4877,61 @@
           </properties>
           <option name="timeStamp" value="1557" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/list/codestorywithmik/RemoveZeroSumConsecutiveNodesFromLinkedList.java</url>
+          <line>33</line>
+          <properties class="com.leetcode.year_2020.list.codestorywithmik.RemoveZeroSumConsecutiveNodesFromLinkedList" method="removeZeroSumSublists">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1569" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/dfs/MinimumTimeToCollectAllApplesInATree.java</url>
+          <line>58</line>
+          <properties class="com.leetcode.year_2020.graph.dfs.MinimumTimeToCollectAllApplesInATree" method="minTime">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1573" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/graph/disjoint_set_union_find/SatisfiabilityofEqualityEquations.java</url>
+          <line>95</line>
+          <properties class="com.leetcode.year_2020.graph.disjoint_set_union_find.SatisfiabilityofEqualityEquations">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/binary_search/MaximumValueAtAGivenIndexInABoundedArray.java</url>
+          <line>29</line>
+          <properties class="com.leetcode.year_2020.binary_search.MaximumValueAtAGivenIndexInABoundedArray.Solution" method="canPlace">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/year_2020/DP/unbounded_knapsack/CoinChange_MinCoins.java</url>
+          <line>56</line>
+          <properties class="com.leetcode.year_2020.DP.unbounded_knapsack.CoinChange_MinCoins" method="cointChangeMinCoins">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1592" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
           <option name="timeStamp" value="1257" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/com/leetcode/array/TicTacToe.java</url>
+          <line>16</line>
+          <properties field="n" class="com.leetcode.array.TicTacToe.TicTacToeGameOptimal" />
+          <option name="timeStamp" value="1600" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

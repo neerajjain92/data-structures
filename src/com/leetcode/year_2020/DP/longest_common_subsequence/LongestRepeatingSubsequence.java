@@ -43,7 +43,7 @@ public class LongestRepeatingSubsequence {
          *                            not in both, hence we can't include them in out LRS calculation.
          *
          * OK Mr. Neeraj we got that but how do you plan to not choose them,
-         * Neeraj :==> simple we know in both LCS(str, str) they exist in at same location i.e m == n for [E and D]
+         * Neeraj :==> simple we know in both LCS(str, str) they exist in at same location i.e m == n for [E and C]
          * so we will ignore (m == n).
          *
          * Perfect, but hey Mr. Neeraj what about A A B B D D they also come at same location in both matrix,are we saying

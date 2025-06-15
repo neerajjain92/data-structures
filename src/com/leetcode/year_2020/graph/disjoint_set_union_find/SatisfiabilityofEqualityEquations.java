@@ -10,26 +10,29 @@ import java.util.Map;
  */
 public class SatisfiabilityofEqualityEquations {
 
+    int[] parents;
+
     public static void main(String[] args) {
-        System.out.println(equationsPossible(new String[]{
+        SatisfiabilityofEqualityEquations obj = new SatisfiabilityofEqualityEquations();
+        System.out.println(obj.equationsPossible(new String[]{
                 "a==b", "b!=a"
         }));
-        System.out.println(equationsPossible(new String[]{
+        System.out.println(obj.equationsPossible(new String[]{
                 "b==a", "a==b"
         }));
-        System.out.println(equationsPossible(new String[]{
+        System.out.println(obj.equationsPossible(new String[]{
                 "a==b", "b==c", "a==c"
         }));
-        System.out.println(equationsPossible(new String[]{
+        System.out.println(obj.equationsPossible(new String[]{
                 "a==b", "b!=c", "c==a"
         }));
-        System.out.println(equationsPossible(new String[]{
+        System.out.println(obj.equationsPossible(new String[]{
                 "c==c", "b==d", "x!=z"
         }));
-        System.out.println(equationsPossible(new String[]{
+        System.out.println(obj.equationsPossible(new String[]{
                 "a==b", "e==c", "b==c", "a!=e"
         }));
-        System.out.println(equationsPossible(new String[]{
+        System.out.println(obj.equationsPossible(new String[]{
                 "a==b", "c==d", "a==c", "a!=d"
         }));
 
@@ -44,64 +47,51 @@ public class SatisfiabilityofEqualityEquations {
          */
     }
 
-    public static boolean equationsPossible(String[] equations) {
-        Map<Character, Character> leaders = new HashMap<>();
-        Map<Character, Integer> rank = new HashMap<>();
-        for (String eq : equations) {
-            // equation is in form
-            // a == b | a != b
-            // So we are interested in just 2 operands in this. 0th index and 3rd index.
-            final char first = eq.charAt(0);
-            final char last = eq.charAt(3);
-            if (!leaders.containsKey(first)) {
-                leaders.put(first, first);
-                rank.put(first, 0);
-            }
-            if (!leaders.containsKey(last)) {
-                leaders.put(last, last);
-                rank.put(last, 0);
-            }
+    public boolean equationsPossible(String[] equations) {
+        parents = new int[26];
+        for (int i = 0; i < 26; i++) {
+            parents[i] = i;
+        }
 
-            // we are just focusing on == equations
-            if (eq.charAt(1) == '=') {
-                Character leaderOfA = findLeader(first, leaders);
-                Character leaderOfB = findLeader(last, leaders);
-
-                if (leaderOfA == leaderOfB) continue;
-
-                if (rank.get(leaderOfA) >= rank.get(leaderOfB)) {
-                    leaders.put(leaderOfB, leaderOfA);
-
-                    if (rank.get(leaderOfA) == rank.get(leaderOfB)) {
-                        rank.put(leaderOfA, rank.get(leaderOfA) + 1);
-                    }
-                } else {
-                    leaders.put(leaderOfA, leaderOfB);
-                }
-
+        // On first pass focus on ==
+        for (String equation : equations) {
+            if (equation.charAt(1) == '=') {
+                char operand1 = equation.charAt(0);
+                char operand2 = equation.charAt(3);
+                union(operand1 - 'a', operand2 - 'a');
             }
         }
 
-        // Now we will focus on just != equations
-        for (String eq : equations) {
-            if (eq.charAt(1) == '!') {
-                Character leaderOfA = findLeader(eq.charAt(0), leaders);
-                Character leaderOfB = findLeader(eq.charAt(3), leaders);
-
-                if (leaderOfA == leaderOfB) return false;
+        // Now focus on !=
+        for (String equation : equations) {
+            if (equation.charAt(1) == '!') {
+                char operand1 = equation.charAt(0);
+                char operand2 = equation.charAt(3);
+                int parent1 = findParent(operand1 - 'a');
+                int parent2 = findParent(operand2 - 'a');
+                if (parent1 == parent2) {
+                    return false;
+                }
             }
         }
         return true;
     }
 
-    private static Character findLeader(Character operand,
-                                        Map<Character, Character> leaders) {
-        Character leader = leaders.get(operand);
-        if (leader != operand) {
-            // Path compression.
-            leaders.put(operand, findLeader(leader, leaders));
-            leader = leaders.get(operand);
+    private void union(int operand1, int operand2) {
+        int parent1 = findParent(operand1);
+        int parent2 = findParent(operand2);
+
+        if (parent1 != parent2) {
+            parents[parent1] = parent2;
         }
-        return leader;
     }
+
+    private int findParent(int operand) {
+        if (operand == parents[operand]) {
+            return parents[operand];
+        }
+        parents[operand] = findParent(parents[operand]);
+        return parents[operand];
+    }
+
 }

@@ -3,6 +3,7 @@ package com.leetcode.year_2020.DP.longest_common_subsequence;
 import com.util.LogUtil;
 
 /**
+ * https://leetcode.com/problems/shortest-common-supersequence/description/
  * @author neeraj on 08/05/20
  * Copyright (c) 2019, data-structures.
  * All rights reserved.
@@ -10,8 +11,8 @@ import com.util.LogUtil;
 public class PrintShortestCommonSuperSequence {
 
     public static void main(String[] args) {
-//        printShortestCommonSuperSequence("acbcf", "abcdaf");
-//        printShortestCommonSuperSequence("ac", "");
+        printShortestCommonSuperSequence("acbcf", "abcdaf");
+        printShortestCommonSuperSequence("ac", "");
         printShortestCommonSuperSequence("GEEK", "EKE");
     }
 
@@ -76,7 +77,7 @@ public class PrintShortestCommonSuperSequence {
 
         while (m > 0 && n > 0) {
             if (str1[m - 1] == str2[n - 1]) {
-                result.append(str1[m - 1]).append(" ");
+                result.append(str2[n - 1]).append(" ");
                 m--;
                 n--;
             } else {
@@ -109,15 +110,6 @@ public class PrintShortestCommonSuperSequence {
 
     public static int[][] getLCSMatrix(String X, String Y) {
         int[][] dp = new int[X.length() + 1][Y.length() + 1];
-
-        // Initialization Matrix.
-        for (int i = 0; i < dp.length; i++) {
-            for (int j = 0; j < dp[i].length; j++) {
-                if (i == 0 || j == 0) { // We don't have anything common
-                    dp[i][j] = 0;      // when either of the String is empty.
-                }
-            }
-        }
 
         // Now let's populate rest of LCS
         for (int i = 1; i < dp.length; i++) {

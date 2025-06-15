@@ -26,4 +26,14 @@ public class ListNode {
         }
         System.out.println();
     }
+
+    public static ListNode getInstance(int []arr) {
+        ListNode head = new ListNode(arr[0]);
+        ListNode curr = head;
+        for(int i=1;i<arr.length;i++) {
+            curr.next = new ListNode(arr[i]);
+            curr = curr.next;
+        }
+        return head;
+    }
 }

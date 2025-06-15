@@ -3,6 +3,9 @@ package com.leetcode.year_2020.binary_search;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Coding with minmer
+ */
 public class KthMissingPositiveNumber {
 
     public static void main(String[] args) {
@@ -10,6 +13,7 @@ public class KthMissingPositiveNumber {
         System.out.println(findKthPositive(new int[]{1, 2, 3, 4}, 2));
         System.out.println(findKthPositive(new int[]{1, 2}, 1));
 
+        // Code story with MIK
         System.out.println(findKthPositiveViaBinarySearch(new int[]{2, 3, 4, 7, 11}, 5));
         System.out.println(findKthPositiveViaBinarySearch(new int[]{1, 2, 3, 4}, 2));
         System.out.println(findKthPositiveViaBinarySearch(new int[]{1, 2}, 1));
@@ -17,6 +21,69 @@ public class KthMissingPositiveNumber {
         System.out.println(findKthPositiveMissingNumber(new int[]{2, 3, 4, 7, 11}, 5));
         System.out.println(findKthPositiveMissingNumber(new int[]{1, 2, 3, 4}, 2));
         System.out.println(findKthPositiveMissingNumber(new int[]{1, 2}, 1));
+    }
+
+    /**
+     * Given an integer array nums which is sorted in ascending order and all of its elements
+     * are unique and given also an integer k, return the kth missing number starting from
+     * the leftmost number of the array.
+     *
+     * Example:
+     *
+     * [4, 7, 9, 10] K=1;
+     *
+     * So for regular problem kth missing positive is just 1
+     * but in this variant, the kth missing starting from the leftMost number
+     * which is now 5, because after 4 and before 7 the first missing is 5
+     *
+     * How we get this simple
+     *
+     * [4 7 9 10]
+     *
+     * In original binary search we were doing arr[mid] - (mid+1)
+     *
+     * In this case first we should subtract the leftMost number
+     * so if we are stading at index=2 then total number between 9 and 4 is [9-4] which is 5 (4, 5, 6, 7, 8) ==> '4' is inclusive
+     * and how many are missing simple 5 - index = 5 - 2 which is 3 missing which are just [5, 6, 8]
+     *
+     * Tip: Meta will rephrase this problem by
+     * asking for the first day a project can be
+     * finished.
+     * nums will be a list of holidays that you
+     * cannot work, and K is the number of days
+     * required to complete the project.
+     *
+     * 💼 Meta Interview Variant – Project Deadline Problem
+     * You are given a list of integers days representing the days in a calendar year on which you cannot work (these are holidays). The list is sorted in strictly increasing order, and all values are unique. Days are numbered starting from 1.
+     *
+     * You are also given an integer k, which denotes the number of working days required to finish a project. You can only work on non-holiday days (i.e., days not present in the days array).
+     *
+     * Return the earliest calendar day on which the project will be completed if you start working on day 1.
+     *
+     */
+    public static int findKthPositiveViaBinarySearchForMETAVariant(int[] arr, int k) {
+        int low = 0, high = arr.length-1;
+        int leftMost = arr[0];
+        while(low <= high) {
+            int mid = low + (high - low)/2;
+            int missingTillNow  = arr[mid] - leftMost - mid;
+            if (missingTillNow < k) {
+                low = mid+1;
+            } else {
+                high = mid-1;
+            }
+        }
+
+        /*
+         * leftMost se kth missing dhoondhna ha
+         *
+         * so logically leftMost+k should give me answer but input me kch numbers aur bhi hai jo shayad is leftMost or kth ke bich me addd ho gye honge
+         *
+         * isliye apan leftMost + k + low[yehi khada hai jaha pe missing >=k hai]
+         *
+         * yaha tk chamak gya mast bas ye bata de -1 kyu kr rhe hai is it becasue leftMost jo hai vo 1 based hai aur array 0 based ?
+         */
+        return leftMost + k + low - 1;
     }
 
     public static int findKthPositive(int[] arr, int k) {
@@ -34,15 +101,15 @@ public class KthMissingPositiveNumber {
 
     public static int findKthPositiveMissingNumber(int[] arr, int k) {
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length - 1;
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            int totalMissingAtThisPoint = arr[mid] - (mid+1);// ?? why +1 because  index is from 0 and numbers are from 1
+            int totalMissingAtThisPoint = arr[mid] - (mid + 1);// ?? why +1 because  index is from 0 and numbers are from 1
             if (totalMissingAtThisPoint < k) {
                 start = mid + 1;
-            } else  {
-                end = mid-1;
+            } else {
+                end = mid - 1;
             }
         }
 //        int remainingMissing = end == -1 ? k : (k - (arr[end] - (end+1)));
@@ -69,7 +136,7 @@ public class KthMissingPositiveNumber {
         // arr[end] + k - arr[end] + end + 1
         // k + end + 1;
         // or end + 1 + k
-        return end+1+k;
+        return end + 1 + k;
     }
 
     public static int findKthPositiveViaBinarySearch(int[] arr, int k) {
@@ -108,4 +175,5 @@ public class KthMissingPositiveNumber {
         }
         return end + k;
     }
+
 }

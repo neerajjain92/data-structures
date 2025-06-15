@@ -109,4 +109,58 @@ public class AllocateMinimumNumberOfPages {
         }
         return students > 0;
     }
+
+    public static int findPages(int[] books, int students) {
+        if (books.length < students) return -1;
+        // code here
+        // Every student gets one book
+        // pages assigned continuously
+        // No book is assigned to more than 1
+
+        // Minimize the maximum number of pages each student will read
+
+        // So just think how many max pages a student can read, that's sum of all pages
+        // and what's the minimum pages anyone should read, that's the book with maxPages
+        // Why because you can't split books, so if a book has 300 pages atleast one person
+        // should read the entire book, hence minimum a person can read is 300 pages
+        int totalPages = 0;
+        int maxPages = 0;
+        for(int i: books) {
+            maxPages = Math.max(maxPages, i);
+            totalPages += i;
+        }
+
+        int low = maxPages;
+        int high = totalPages;
+        int minNumberOfMaxPagesStudentHasToRead = -1;
+        while (low <= high) {
+            int maxAllowedBooks = low + (high-low)/2;
+
+            if(canAllocatePages(books, maxAllowedBooks, students)) {
+                minNumberOfMaxPagesStudentHasToRead = maxAllowedBooks;
+                high = maxAllowedBooks-1; // see if we can still reduce
+            } else {
+                // Couldn't allocate all books to all students
+                // Expand the ,maxAllowedBooks
+                low = maxAllowedBooks + 1;
+            }
+        }
+        return minNumberOfMaxPagesStudentHasToRead;
+
+    }
+
+    private static boolean canAllocatePages(int[] books, int maxAllowedPages, int students) {
+        int runningSum = 0;
+        for(int pages: books) {
+            if (pages > maxAllowedPages) {
+                return false;
+            }
+            runningSum += pages;
+            if (runningSum > maxAllowedPages) {
+                students--; // allocated runningSum - pages to that student
+                runningSum = pages; // for new student that has to read these pages
+            }
+        }
+        return students > 0; // what we are simply saying that we were able to successfully allocate all books to each student without voilating anything
+    }
 }

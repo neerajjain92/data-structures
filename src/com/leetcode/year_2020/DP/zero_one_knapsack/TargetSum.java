@@ -107,13 +107,13 @@ public class TargetSum {
         for (int i : set) {
             TOTAL_SUM += i;
         }
-        if (TOTAL_SUM < difference) return 0;
-        if ((TOTAL_SUM + difference) % 2 != 0) return 0;
+        if (TOTAL_SUM < difference) return 0; // Difference is greater than total Sum, Assume totalSum to be 3 and diff = 5
+        if ((TOTAL_SUM + difference) % 2 != 0) return 0; // Not divisible by 2
         return countOfSubSetSum(set, (difference + TOTAL_SUM) / 2);
     }
 
     private static int countOfSubSetSum(int[] set, int total_sum) {
-        int t[][] = new int[set.length + 1][total_sum + 1];
+        int[][] t = new int[set.length + 1][total_sum + 1];
 
         // Initialize the matrix
         // Now the difference here is
